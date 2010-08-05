@@ -1,46 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
-
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
 
 <CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/CompressionEnable" android:text="Dynamic Range Compression"></CheckBox>
 <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-<TextView android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:text="Ratio" android:gravity="center"></TextView><SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Ratio"></SeekBar>
-<TextView android:text="1:x" android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/RatioLabel" android:gravity="center"></TextView>
+<TextView android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:gravity="left" android:text="Ratio:" android:paddingLeft="2sp"></TextView><SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/CompressionRatio"></SeekBar>
+<TextView android:layout_weight="0.1" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center_vertical" android:text="1.0:1" android:id="@+id/CompressionRatioLabel"></TextView>
 </TableRow>
 </TableLayout>
 
+<TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="10sp">
+<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ReverbEnable" android:text="Reverb" android:layout_weight="2"></CheckBox>
 
-<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ToneEnable" android:layout_marginTop="18px" android:text="5 Band Graphic Equalizer"></CheckBox>
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ReverbDeep" android:text="Deep" android:layout_weight="1"></CheckBox>
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wide" android:id="@+id/ReverbWide" android:layout_weight="1"></CheckBox>
+</TableRow>
+</TableLayout>
+<TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="10sp">
+<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TextView android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:gravity="left" android:text="Level:" android:paddingLeft="2sp"></TextView><SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ReverbLevel" android:layout_weight="1"></SeekBar>
+<TextView android:layout_width="wrap_content" android:gravity="center" android:text="+6 dB" android:layout_gravity="center_vertical" android:layout_weight="0.1" android:id="@+id/ReverbLevelLabel"></TextView>
+</TableRow>
+</TableLayout>
+
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ToneEnable" android:text="5 Band Graphic Equalizer" android:layout_marginTop="10sp"></CheckBox>
 <TableLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-<TextView android:layout_width="wrap_content" android:layout_gravity="center" android:layout_weight="0.1" android:gravity="center" android:text="63 Hz"></TextView><SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Eq1"></SeekBar>
-<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/Eq1Label" android:gravity="center"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_weight="0.1" android:text="63 Hz" android:gravity="right" android:layout_gravity="center_vertical" android:layout_marginRight="4sp"></TextView><SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ToneEq1"></SeekBar>
+<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ToneEq1Label"></TextView>
 </TableRow>
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-<TextView android:layout_width="wrap_content" android:layout_gravity="center" android:layout_weight="0.1" android:text="250 Hz" android:gravity="center"></TextView>
-<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Eq2"></SeekBar>
-<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/Eq2Label" android:gravity="center"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_weight="0.1" android:text="250 Hz" android:gravity="right" android:layout_gravity="center_vertical" android:layout_marginRight="4sp"></TextView>
+<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ToneEq2"></SeekBar>
+<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ToneEq2Label"></TextView>
 </TableRow>
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-<TextView android:layout_width="wrap_content" android:layout_gravity="center" android:layout_weight="0.1" android:text="1 kHz" android:gravity="center"></TextView>
-<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Eq3"></SeekBar>
-<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/Eq3Label" android:gravity="center"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_weight="0.1" android:text="1 kHz" android:layout_gravity="center_vertical" android:gravity="right" android:layout_marginRight="4sp"></TextView>
+<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ToneEq3"></SeekBar>
+<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ToneEq3Label"></TextView>
 </TableRow>
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-<TextView android:layout_width="wrap_content" android:layout_gravity="center" android:layout_weight="0.1" android:text="4 kHz" android:gravity="center"></TextView>
-<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Eq4"></SeekBar>
-<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/Eq4Label" android:gravity="center"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_weight="0.1" android:text="4 kHz" android:layout_gravity="center_vertical" android:gravity="right" android:layout_marginRight="4sp"></TextView>
+<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ToneEq4"></SeekBar>
+<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ToneEq4Label"></TextView>
 </TableRow>
 <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
-<TextView android:layout_width="wrap_content" android:layout_gravity="center" android:layout_weight="0.1" android:text="16 kHz" android:gravity="center"></TextView>
-<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Eq5"></SeekBar>
-<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/Eq5Label" android:gravity="center"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_weight="0.1" android:text="16 kHz" android:gravity="right" android:layout_gravity="center_vertical" android:layout_marginRight="4sp"></TextView>
+<SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/ToneEq5"></SeekBar>
+<TextView android:text="+6 dB" android:layout_weight="0.1" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ToneEq5Label"></TextView>
 </TableRow>
 </TableLayout>
 
-
-<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/HeadphoneEnable" android:layout_marginTop="18px" android:text="Headset Virtual Room Effect"></CheckBox>
+<CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/HeadphoneEnable" android:text="Headset Virtual Room Effect" android:layout_marginTop="10sp"></CheckBox>
 
 </LinearLayout>
