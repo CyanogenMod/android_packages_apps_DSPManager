@@ -43,7 +43,6 @@ public final class DSPScreen extends PreferenceActivity {
 		return super.getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + subPage.name(), mode);
 	}
 	
-	/* FIXME: how to properly reset settings? */
 	private void clearPrefs() {
 		SharedPreferences preferences = getSharedPreferences(null, 0);
 		SharedPreferences.Editor preferencesEditor = preferences.edit();
@@ -53,5 +52,8 @@ public final class DSPScreen extends PreferenceActivity {
 		}
 		
 		preferencesEditor.commit();
+		
+		/* Now do something to make existing preferences to notice that things changed. */
+		finish();
 	}
 }

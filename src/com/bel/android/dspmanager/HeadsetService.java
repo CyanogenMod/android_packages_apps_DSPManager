@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.media.AudioManager;
 import android.os.IBinder;
-import android.util.Log;
 
 public class HeadsetService extends Service {
 	private AudioManager audioManager;
@@ -18,8 +17,7 @@ public class HeadsetService extends Service {
 
 	private OnSharedPreferenceChangeListener preferenceChangeListener = new OnSharedPreferenceChangeListener() {
 		@Override
-		public void onSharedPreferenceChanged(
-				SharedPreferences sharedPreferences, String key) {
+		public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 			
 			updateDsp();
 		}		
@@ -63,7 +61,6 @@ public class HeadsetService extends Service {
 				"dsp.tone.enable",
 				"dsp.headphone.enable"
 		}) {
-			Log.i("DSP-b", "" + preferences.getBoolean(s, false));
 			audioManager.setParameters(s + "=" + (preferences.getBoolean(s, false) ? "1" : "0"));
 		}
 
@@ -71,7 +68,6 @@ public class HeadsetService extends Service {
 		for (String s : new String[] {
 				"dsp.tone.eq1", "dsp.tone.eq2", "dsp.tone.eq3", "dsp.tone.eq4", "dsp.tone.eq5",
 		}) {
-			Log.i("DSP-f", "" + preferences.getFloat(s, 0));
 			audioManager.setParameters(s + "=" + preferences.getFloat(s, 0));
 		}
 
@@ -79,7 +75,6 @@ public class HeadsetService extends Service {
 		for (String s : new String[] {
 				"dsp.compression.mode", "dsp.headphone.mode"
 		}) {
-			Log.i("DSP-s", preferences.getString(s, ""));
 			audioManager.setParameters(preferences.getString(s, ""));
 		}
 	}
