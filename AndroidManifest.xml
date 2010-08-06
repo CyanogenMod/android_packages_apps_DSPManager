@@ -5,7 +5,9 @@
 
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 		<activity android:name=".DSPManager" android:label="@string/app_name">
-			<intent-filter>
+			<intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"></action>
+
+</intent-filter><intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
@@ -20,14 +22,14 @@
 
 		<service android:exported="false"
 			android:enabled="true" android:name=".HeadsetService">
-			<intent-filter>
-				<action android:name="android.intent.action.HEADSET_PLUG"></action>
-				
-			<category android:name="android.intent.category.DEFAULT"></category>
-</intent-filter>
-		<intent-filter><action android:name="com.bel.android.dspmanager.UPDATE"></action><category android:name="android.intent.category.DEFAULT"></category></intent-filter>
-<intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"></action>
+			
+		
 
+<intent-filter><action android:name="android.intent.action.HEADSET_PLUGGED"></action>
+<category android:name="android.intent.category.DEFAULT"></category>
+</intent-filter>
+<intent-filter><action android:name="com.bel.android.dspmanager.UPDATE"></action>
+<category android:name="android.intent.category.DEFAULT"></category>
 </intent-filter>
 </service>
 	</application>

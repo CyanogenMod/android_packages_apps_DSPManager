@@ -38,6 +38,8 @@ public final class DSPManager extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        startService(new Intent("com.bel.android.dspmanager.UPDATE"));
+        
         ListView modeSelect = (ListView) findViewById(R.id.ModeSelect);
         final ArrayAdapter<Mode> items = new ArrayAdapter<Mode>(this, android.R.layout.simple_list_item_1);
         items.add(Mode.Headset);

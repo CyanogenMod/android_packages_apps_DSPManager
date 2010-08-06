@@ -28,7 +28,14 @@ public class HeadsetService extends Service {
 				
 				updateDsp();		
 			}
-		}, new IntentFilter());
+		}, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
+
+        registerReceiver(new BroadcastReceiver() {
+			@Override
+			public void onReceive(Context context, Intent intent) {
+				updateDsp();		
+			}
+		}, new IntentFilter("com.bel.android.dspmanager.UPDATE"));
 	}
 	
 	@Override
@@ -54,7 +61,7 @@ public class HeadsetService extends Service {
 				"dsp.reverb.level",
 				"dsp.tone.eq1", "dsp.tone.eq2", "dsp.tone.eq3", "dsp.tone.eq4", "dsp.tone.eq5"
 		}) {
-			audioManager.setParameters(s + "=" + preferences.getFloat(s, 0));
+			audioManager.setParameters(s + "=" + preferences.getFloat(s, 0f));
 		}
 	}
 }

@@ -54,10 +54,12 @@ public final class DSPScreen extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.select_effects);
 
+		disablePreferencesWriting = true;
 		bindCompression();
 		bindReverb();
 		bindTone();
 		bindHeadphone();
+		disablePreferencesWriting = false;
 		
 		readPrefs(getIntent());
 	}
@@ -79,9 +81,6 @@ public final class DSPScreen extends Activity {
 		compressionKnob.knob = (SeekBar) findViewById(R.id.CompressionRatio);
 		compressionKnob.label = (TextView) findViewById(R.id.CompressionRatioLabel);
 
-		compressionKnob.knob.setKeyProgressIncrement(1);
-		compressionKnob.knob.setMax(40);
-		compressionKnob.knob.setProgress(10);
 		compressionKnob.knob.setOnSeekBarChangeListener(new KnobTrack() {
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
@@ -90,6 +89,9 @@ public final class DSPScreen extends Activity {
 				writePrefs();
 			}
 		});
+		compressionKnob.knob.setKeyProgressIncrement(1);
+		compressionKnob.knob.setMax(40);
+		compressionKnob.knob.setProgress(10);
 	}
 
 	private void bindReverb() {
@@ -119,16 +121,16 @@ public final class DSPScreen extends Activity {
 
 		reverbKnob.knob = (SeekBar) findViewById(R.id.ReverbLevel);
 		reverbKnob.label = (TextView) findViewById(R.id.ReverbLevelLabel);
-		reverbKnob.knob.setKeyProgressIncrement(1);
-		reverbKnob.knob.setMax(200);
-		reverbKnob.knob.setProgress(100);
 		reverbKnob.knob.setOnSeekBarChangeListener(new KnobTrack() {
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-				float value = (progress - 100) / 10f;
+				float value = (progress - reverbKnob.knob.getMax() / 2) / 10f;
 				reverbKnob.label.setText(String.format("%+.1f dB", value));
 				writePrefs();
 			}
 		});
+		reverbKnob.knob.setKeyProgressIncrement(1);
+		reverbKnob.knob.setMax(200);
+		reverbKnob.knob.setProgress(reverbKnob.knob.getMax() / 2);
 	}
 
 	private void bindTone() {
@@ -156,16 +158,16 @@ public final class DSPScreen extends Activity {
 				throw new RuntimeException(e);
 			}
 				
-			toneKnob[i].knob.setKeyProgressIncrement(1);
-			toneKnob[i].knob.setMax(120);
-			toneKnob[i].knob.setProgress(60);
 			toneKnob[i].knob.setOnSeekBarChangeListener(new KnobTrack() {
 				public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-					float value = (progress - 60) / 10f;
+					float value = (progress - toneKnob[i].knob.getMax() / 2) / 10f;
 					toneKnob[i].label.setText(String.format("%+.1f dB", value));
 					writePrefs();
 				}
 			});
+			toneKnob[i].knob.setKeyProgressIncrement(1);
+			toneKnob[i].knob.setMax(120);
+			toneKnob[i].knob.setProgress(toneKnob[i].knob.getMax() / 2);
 		}
 	}
 	
@@ -185,15 +187,15 @@ public final class DSPScreen extends Activity {
 		SharedPreferences preferences = getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + mode.name(), 0);
 
 		compressionEnable.setChecked(preferences.getBoolean("dsp.compression.enable", false));
-		compressionKnob.knob.setProgress(preferences.getInt("dsp.compression.ratio", 10));
+		compressionKnob.knob.setProgress(Math.round(preferences.getFloat("dsp.compression.ratio", 0) * 10 - 10));
 		reverbEnable.setChecked(preferences.getBoolean("dsp.reverb.enable", false));
 		reverbDeep.setChecked(preferences.getBoolean("dsp.reverb.deep", true));
 		reverbWide.setChecked(preferences.getBoolean("dsp.reverb.wide", true));
-		reverbKnob.knob.setProgress(preferences.getInt("dsp.reverb.level", 100));
+		reverbKnob.knob.setProgress(Math.round(preferences.getFloat("dsp.reverb.level", 0) * 10 + reverbKnob.knob.getMax() / 2));
 
 		toneEnable.setChecked(preferences.getBoolean("dsp.tone.enable", false));
 		for (int i = 0; i < toneKnob.length; i++) {
-			toneKnob[i].knob.setProgress(preferences.getInt("dsp.tone.eq" + (i + 1), 60));
+			toneKnob[i].knob.setProgress(Math.round(preferences.getFloat("dsp.tone.eq" + (i + 1), 0) * 10 + toneKnob[i].knob.getMax() / 2));
 		}
 
 		headphoneEnable.setChecked(preferences.getBoolean("dsp.headphone.enable", false));
@@ -211,17 +213,16 @@ public final class DSPScreen extends Activity {
 		SharedPreferences.Editor preferencesEditor = preferences.edit();
 
 		preferencesEditor.putBoolean("dsp.compression.enable", compressionEnable.isChecked());
-		preferencesEditor.putInt("dsp.compression.ratio", compressionKnob.knob.getProgress());
+		preferencesEditor.putFloat("dsp.compression.ratio", 1f + compressionKnob.knob.getProgress() / 10f);
 
 		preferencesEditor.putBoolean("dsp.reverb.enable", reverbEnable.isChecked());
 		preferencesEditor.putBoolean("dsp.reverb.deep", reverbDeep.isChecked());
 		preferencesEditor.putBoolean("dsp.reverb.wide", reverbWide.isChecked());
-		preferencesEditor.putInt("dsp.reverb.level", reverbKnob.knob.getProgress());
+		preferencesEditor.putFloat("dsp.reverb.level", (reverbKnob.knob.getProgress() - reverbKnob.knob.getMax() / 2) / 10f);
 
 		preferencesEditor.putBoolean("dsp.tone.enable", toneEnable.isChecked());
 		for (int i = 0; i < toneKnob.length; i++) {
-			preferencesEditor.putInt("dsp.tone.eq" + (i + 1),
-					toneKnob[i].knob.getProgress());
+			preferencesEditor.putFloat("dsp.tone.eq" + (i+1), (toneKnob[i].knob.getProgress() - toneKnob[i].knob.getMax() / 2) / 10f);
 		}
 
 		preferencesEditor.putBoolean("dsp.headphone.enable", headphoneEnable.isChecked());
