@@ -4,6 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
@@ -60,15 +64,36 @@ public final class DSPScreen extends Activity {
 		bindTone();
 		bindHeadphone();
 		disablePreferencesWriting = false;
+		refreshVisibility();
 		
-		readPrefs(getIntent());
+		readPrefs();
 	}
 	
 	@Override
 	protected void onNewIntent(Intent intent) {
-		readPrefs(intent);
+		setIntent(intent);
+		refreshVisibility();
+		readPrefs();
 	}
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.menu, menu);
+	    return true;
+	}
+	
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.reset:
+			clearPrefs();
+			return true;
+		default:
+			return super.onMenuItemSelected(featureId, item);
+		}
+	}
+	
 	private void bindCompression() {
 		compressionEnable = (CheckBox) findViewById(R.id.CompressionEnable);
 		compressionEnable.setOnCheckedChangeListener(new OnCheckedChangeListener() {
@@ -180,10 +205,10 @@ public final class DSPScreen extends Activity {
 		});
 	}
 	
-	private void readPrefs(Intent intent) {
+	private void readPrefs() {
 		disablePreferencesWriting = true;
 		
-		mode = (DSPManager.Mode) intent.getSerializableExtra("mode");
+		mode = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
 		SharedPreferences preferences = getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + mode.name(), 0);
 
 		compressionEnable.setChecked(preferences.getBoolean("dsp.compression.enable", false));
@@ -199,7 +224,7 @@ public final class DSPScreen extends Activity {
 		}
 
 		headphoneEnable.setChecked(preferences.getBoolean("dsp.headphone.enable", false));
-		
+
 		disablePreferencesWriting = false;
 	}
 
@@ -230,5 +255,27 @@ public final class DSPScreen extends Activity {
 		preferencesEditor.commit();
 		
 		sendBroadcast(new Intent("com.bel.android.dspmanager.UPDATE"));
+	}
+	
+	private void clearPrefs() {
+		mode = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
+		SharedPreferences preferences = getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + mode.name(), 0);
+		SharedPreferences.Editor preferencesEditor = preferences.edit();
+		
+		for (String preference : preferences.getAll().keySet()) {
+			preferencesEditor.remove(preference);
+		}
+		
+		preferencesEditor.commit();
+		
+		readPrefs();
+
+		sendBroadcast(new Intent("com.bel.android.dspmanager.UPDATE"));
+	}
+
+	private void refreshVisibility() {
+		mode = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
+		int hiding = mode == DSPManager.Mode.Headset ? View.VISIBLE : View.GONE;
+		headphoneEnable.setVisibility(hiding);
 	}
 }
