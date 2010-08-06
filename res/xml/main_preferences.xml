@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="Select Configuration To Edit">
+
+
+
+
+
+
+
+<PreferenceScreen android:title="Headset" android:key="Headset">
+</PreferenceScreen><PreferenceScreen android:title="Phone Speaker" android:key="Speaker"></PreferenceScreen>
+</PreferenceScreen>

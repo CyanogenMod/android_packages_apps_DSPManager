@@ -8,44 +8,33 @@
 package com.bel.android.dspmanager;
 
 public final class R {
+    public static final class array {
+        public static final int compression_modes=0x7f050002;
+        public static final int compression_modes_values=0x7f050003;
+        public static final int headphone_modes=0x7f050000;
+        public static final int headphone_modes_values=0x7f050001;
+    }
     public static final class attr {
     }
     public static final class drawable {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int CompressionEnable=0x7f060001;
-        public static final int CompressionRatio=0x7f060002;
-        public static final int CompressionRatioLabel=0x7f060003;
-        public static final int HeadphoneEnable=0x7f060014;
-        public static final int ModeSelect=0x7f060000;
-        public static final int ReverbDeep=0x7f060005;
-        public static final int ReverbEnable=0x7f060004;
-        public static final int ReverbLevel=0x7f060007;
-        public static final int ReverbLevelLabel=0x7f060008;
-        public static final int ReverbWide=0x7f060006;
-        public static final int ToneEnable=0x7f060009;
-        public static final int ToneEq1=0x7f06000a;
-        public static final int ToneEq1Label=0x7f06000b;
-        public static final int ToneEq2=0x7f06000c;
-        public static final int ToneEq2Label=0x7f06000d;
-        public static final int ToneEq3=0x7f06000e;
-        public static final int ToneEq3Label=0x7f06000f;
-        public static final int ToneEq4=0x7f060010;
-        public static final int ToneEq4Label=0x7f060011;
-        public static final int ToneEq5=0x7f060012;
-        public static final int ToneEq5Label=0x7f060013;
-        public static final int reset=0x7f060015;
+        public static final int Label=0x7f080001;
+        public static final int Slider=0x7f080000;
+        public static final int reset=0x7f080002;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int select_effects=0x7f030001;
+        public static final int slider_preference=0x7f030000;
     }
     public static final class menu {
-        public static final int menu=0x7f050000;
+        public static final int menu=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
+        public static final int app_name=0x7f060000;
+    }
+    public static final class xml {
+        public static final int dsp_preferences=0x7f040000;
+        public static final int main_preferences=0x7f040001;
     }
 }
