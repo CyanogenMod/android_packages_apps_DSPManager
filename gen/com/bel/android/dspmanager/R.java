@@ -34,7 +34,8 @@ public final class R {
         public static final int app_name=0x7f060000;
     }
     public static final class xml {
-        public static final int dsp_preferences=0x7f040000;
+        public static final int headset_preferences=0x7f040000;
         public static final int main_preferences=0x7f040001;
+        public static final int speaker_preferences=0x7f040002;
     }
 }

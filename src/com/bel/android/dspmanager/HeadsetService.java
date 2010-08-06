@@ -39,10 +39,10 @@ public class HeadsetService extends Service {
 			}
 		}, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
 
-		SharedPreferences preferencesHeadset = getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + DSPManager.Mode.Headset.name(), 0);
+		SharedPreferences preferencesHeadset = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + DSPManager.Mode.Headset.name(), 0);
 		preferencesHeadset.registerOnSharedPreferenceChangeListener(preferenceChangeListener);
 
-		SharedPreferences preferencesSpeaker = getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + DSPManager.Mode.Speaker.name(), 0);
+		SharedPreferences preferencesSpeaker = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + DSPManager.Mode.Speaker.name(), 0);
 		preferencesSpeaker.registerOnSharedPreferenceChangeListener(preferenceChangeListener);
 	}
 	
@@ -53,7 +53,7 @@ public class HeadsetService extends Service {
 	
 	private void updateDsp() {
 		DSPManager.Mode mode = (useHeadphone ? DSPManager.Mode.Headset : DSPManager.Mode.Speaker);
-		SharedPreferences preferences = getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + mode.name(), 0);
+		SharedPreferences preferences = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode.name(), 0);
 		
 		/* Preferences that are boolean flags. */
 		for (String s : new String[] {

@@ -12,22 +12,20 @@ import android.preference.PreferenceScreen;
  * @author alankila
  */
 public final class DSPManager extends PreferenceActivity {
-	/* FIXME: find out how this is determined. */
-	public static final String PREFERENCES_SETTINGS_NAME = "com.bel.android.dspmanager";
+	public static final String SHARED_PREFERENCES_BASENAME = "com.bel.android.dspmanager";
 
 	public enum Mode {
-		Headset("Headset Mode"),
-		Speaker("Speaker Mode");
+		Headset(R.xml.headset_preferences),
+		Speaker(R.xml.speaker_preferences);
 		
-		private String value;
+		private int preferencesId;
 		
-		private Mode(String string) {
-			this.value = string;
+		private Mode(int preferencesId) {
+			this.preferencesId = preferencesId;
 		}
 		
-		@Override
-		public String toString() {
-			return value;
+		public int getPreferencesId() {
+			return preferencesId;
 		}
 	}
 

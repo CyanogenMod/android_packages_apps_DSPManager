@@ -16,7 +16,9 @@ public final class DSPScreen extends PreferenceActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		addPreferencesFromResource(R.xml.dsp_preferences);		
+		DSPManager.Mode subPage = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
+		
+		addPreferencesFromResource(subPage.getPreferencesId());
 	}
 	
 	@Override
@@ -40,7 +42,7 @@ public final class DSPScreen extends PreferenceActivity {
 	@Override
 	public SharedPreferences getSharedPreferences(String name, int mode) {
 		DSPManager.Mode subPage = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
-		return super.getSharedPreferences(DSPManager.PREFERENCES_SETTINGS_NAME + "." + subPage.name(), mode);
+		return super.getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + subPage.name(), mode);
 	}
 	
 	private void clearPrefs() {
