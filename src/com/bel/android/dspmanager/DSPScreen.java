@@ -70,13 +70,6 @@ public final class DSPScreen extends Activity {
 	}
 	
 	@Override
-	protected void onNewIntent(Intent intent) {
-		setIntent(intent);
-		refreshVisibility();
-		readPrefs();
-	}
-
-	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.menu, menu);

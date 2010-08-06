@@ -13,7 +13,7 @@
 			</intent-filter>
 		</activity>
 
-		<activity android:name=".DSPScreen" android:launchMode="singleTop">
+		<activity android:name=".DSPScreen">
 			<intent-filter>
 				<action android:name="com.bel.android.dspmanager.EDIT"></action>
 				<category android:name="android.intent.category.DEFAULT" />
