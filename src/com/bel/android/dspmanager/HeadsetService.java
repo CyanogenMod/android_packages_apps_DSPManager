@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.media.AudioManager;
 import android.os.IBinder;
 import android.util.Log;
@@ -32,9 +31,6 @@ public class HeadsetService extends Service {
 	private AudioManager audioManager;
 
 	private boolean useHeadphone;
-
-	SharedPreferences preferencesHeadset;
-	SharedPreferences preferencesSpeaker;
 	
 	/**
 	 * Update audio parameters when headset is plugged/unplugged.
@@ -48,17 +44,14 @@ public class HeadsetService extends Service {
 		}
 	};
 
-	/**
-	 * Update audio parameters when preferences change.
-	 */
-	private OnSharedPreferenceChangeListener preferenceChangeListener = new OnSharedPreferenceChangeListener() {
+    private BroadcastReceiver preferenceUpdateReceiver = new BroadcastReceiver() {
 		@Override
-		public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-			Log.i(TAG, "Shared preference update on key: " + key);
+		public void onReceive(Context context, Intent intent) {
+			Log.i(TAG, "Preferences updated.");
 			updateDsp();
 		}
 	};
-	
+
 	@Override
 	public void onCreate() {
 		super.onCreate();
@@ -67,12 +60,7 @@ public class HeadsetService extends Service {
 		audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
 
         registerReceiver(headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
-
-		preferencesHeadset = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + ".headset", 0);
-		preferencesHeadset.registerOnSharedPreferenceChangeListener(preferenceChangeListener);
-
-		preferencesSpeaker = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + ".speaker", 0);
-		preferencesSpeaker.registerOnSharedPreferenceChangeListener(preferenceChangeListener);
+        registerReceiver(preferenceUpdateReceiver, new IntentFilter("com.bel.android.dspmanager.UPDATE"));
 	}
 	
 	@Override
@@ -81,8 +69,7 @@ public class HeadsetService extends Service {
 		Log.i(TAG, "Stopping service.");
 
 		unregisterReceiver(headsetReceiver);
-		preferencesHeadset.unregisterOnSharedPreferenceChangeListener(preferenceChangeListener);
-		preferencesSpeaker.unregisterOnSharedPreferenceChangeListener(preferenceChangeListener);
+		unregisterReceiver(preferenceUpdateReceiver);
 	}
 	
 	@Override
