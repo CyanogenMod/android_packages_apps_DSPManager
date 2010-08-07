@@ -1,6 +1,8 @@
 package com.bel.android.dspmanager;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.view.Menu;
@@ -8,19 +10,51 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 /**
- * Setting utility for CyanogenMod's DSP capabilities.
+ * This class implements a general PreferencesActivity that we can use to
+ * adjust DSP settings. It adds a menu to clear the preferences on this page,
+ * and a listener that ensures that our {@link HeadsetService} is running if
+ * required.
  * 
  * @author alankila
  */
-public final class DSPScreen extends PreferenceActivity {
+public final class DSPScreen extends PreferenceActivity {	
+	private final OnSharedPreferenceChangeListener serviceLauncher = new OnSharedPreferenceChangeListener() {
+		@Override
+		public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+			sendBroadcast(new Intent("com.bel.android.dspmanager.UPDATE"));
+		}
+	};
+
+	/** Return the last component of the activity. */
+	private String getSubPage() {
+		String[] action = getIntent().getAction().split("\\.");
+		return action[action.length - 1].toLowerCase();
+	}
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		DSPManager.Mode subPage = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
+
+		try {
+			addPreferencesFromResource((Integer) R.xml.class.getField(getSubPage() + "_preferences").get(null));
+		}
+		catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 		
-		addPreferencesFromResource(subPage.getPreferencesId());
+		/* Register a listener that publishes UPDATE requests to the service starter. */
+		SharedPreferences preferences = getSharedPreferences(null, 0);
+		preferences.registerOnSharedPreferenceChangeListener(serviceLauncher);
 	}
 	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		
+		SharedPreferences preferences = getSharedPreferences(null, 0);
+		preferences.unregisterOnSharedPreferenceChangeListener(serviceLauncher);
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
@@ -39,10 +73,13 @@ public final class DSPScreen extends PreferenceActivity {
 		}
 	}
 	
+	/**
+	 * We select the specific SharedPreferences repository based on the details of the
+	 * Intent used to reach this action.
+	 */
 	@Override
 	public SharedPreferences getSharedPreferences(String name, int mode) {
-		DSPManager.Mode subPage = (DSPManager.Mode) getIntent().getSerializableExtra("mode");
-		return super.getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + subPage.name(), mode);
+		return super.getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + getSubPage(), mode);
 	}
 	
 	private void clearPrefs() {

@@ -6,9 +6,6 @@
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 		<activity android:name=".DSPManager" android:label="@string/app_name">
 			<intent-filter>
-				<action android:name="android.intent.action.BOOT_COMPLETED"></action>
-			</intent-filter>
-			<intent-filter>
 				<!-- When building for CyanogenMod, remove this intent to hide the application from launcher -->
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
@@ -21,7 +18,11 @@
 
 		<activity android:name=".DSPScreen">
 			<intent-filter>
-				<action android:name="com.bel.android.dspmanager.EDIT"></action>
+				<action android:name="com.bel.android.dspmanager.HEADSET" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.bel.android.dspmanager.SPEAKER" />
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 		</activity>
@@ -29,11 +30,23 @@
 		<service android:exported="false" android:enabled="true"
 			android:name=".HeadsetService">
 			<intent-filter>
-				<action android:name="com.bel.android.dspmanager.UPDATE"></action>
-				<category android:name="android.intent.category.DEFAULT"></category>
+				<action android:name="com.bel.android.dspmanager.HEADSET_PLUG" />
+				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 		</service>
+
+		<receiver android:name=".ServiceLaunchReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.bel.android.dspmanager.UPDATE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</receiver>
 	</application>
+
 
 	<uses-sdk android:minSdkVersion="8" />
 
