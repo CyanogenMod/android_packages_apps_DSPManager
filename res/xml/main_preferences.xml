@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="Select Configuration To Edit">
-	<PreferenceScreen android:title="Headset">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/select_configuration_title">
+	<PreferenceScreen android:title="@string/headset_title">
 		<intent android:action="com.bel.android.dspmanager.HEADSET" />
 	</PreferenceScreen>
-	<PreferenceScreen android:title="Phone Speaker">
+	<PreferenceScreen android:title="@string/speaker_title">
 		<intent android:action="com.bel.android.dspmanager.SPEAKER" />
 	</PreferenceScreen>
 </PreferenceScreen>
