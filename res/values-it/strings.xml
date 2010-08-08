@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Seleziona Configurazione Da modificare</string>
+    <string name="headset_title">Cuffie</string>
+    <string name="speaker_title">Speaker Telefono</string>
+    <string name="dsp_settings">Impostazioni DSP</string>
+    <string name="pref_dsp_title">Dynamic Range Compression</string>
+    <string name="pref_dsp_summary_on">Compressione attiva</string>
+    <string name="pref_dsp_summary_off">Compressione non attiva</string>
+    <string name="pref_dsp_enable">Attiva</string>
+    <string name="pref_effect_title">Seleziona Potenza Effetto</string>
+    <string name="dialog_effect">Potenza Effetto</string>
+    <string name="pref_equalizer_title">Equalizzatore</string>
+    <string name="pref_equalizer_summary_on">Equalizzatore attivo</string>
+    <string name="pref_equalizer_summary_off">Equalizzatore non attivo</string>
+    <string name="pref_equalizer_enable">Attiva</string>
+    <string name="pref_headset_virtual_title">Effetto Virtual Room</string>
+    <string name="pref_headset_virtual_summary_on">Virtual Room attivo</string>
+    <string name="pref_headset_virtual_summary_off">Virtual Room non attivo</string>
+    <string name="pref_headset_virtual_enable">Attiva</string>
+    <string name="pref_room_title">Seleziona Modalità Room</string>
+    <string name="dialog_room">Modalità Room</string>
+</resources>
