@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="headphone_modes">
+        <item>スタジオ</item>
+        <item>部屋</item>
+        <item>広い部屋</item>
+        <item>ステージ</item>
+    </string-array>
+
+    <string-array name="compression_modes">
+        <item>スライト</item>
+        <item>モデレート</item>
+        <item>エクストリーム</item>
+    </string-array>
+
+</resources>
