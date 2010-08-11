@@ -22,6 +22,10 @@
 				<action android:name="com.bel.android.dspmanager.SPEAKER" />
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
+			<intent-filter>
+				<action android:name="com.bel.android.dspmanager.BLUETOOTH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
 		</activity>
 
 		<service android:exported="false" android:enabled="true"
@@ -48,5 +52,6 @@
 	<uses-sdk android:minSdkVersion="8" />
 
 	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
 </manifest> 

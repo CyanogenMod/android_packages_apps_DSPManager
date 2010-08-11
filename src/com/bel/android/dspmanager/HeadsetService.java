@@ -1,5 +1,6 @@
 package com.bel.android.dspmanager;
 
+import android.app.Notification;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,6 +9,8 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.os.IBinder;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 
 /**
@@ -31,11 +34,26 @@ public class HeadsetService extends Service {
 	private AudioManager audioManager;
 
 	private boolean useHeadphone;
-	
+
+	private boolean inCall;
+
+	private boolean bluetoothAudio;
+
+	/**
+	 * Update audio parameters when preferences have been updated.
+	 */
+    private final BroadcastReceiver preferenceUpdateReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			Log.i(TAG, "Preferences updated.");
+			updateDsp();
+		}
+	};
+
 	/**
 	 * Update audio parameters when headset is plugged/unplugged.
 	 */
-    private BroadcastReceiver headsetReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver headsetReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			useHeadphone = intent.getIntExtra("state", 0) != 0;
@@ -44,10 +62,30 @@ public class HeadsetService extends Service {
 		}
 	};
 
-    private BroadcastReceiver preferenceUpdateReceiver = new BroadcastReceiver() {
+	private final BroadcastReceiver bluetoothReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			Log.i(TAG, "Preferences updated.");
+			Log.i(TAG, "Received bluetooth update");
+			int state = intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, AudioManager.SCO_AUDIO_STATE_DISCONNECTED);
+			bluetoothAudio = state == AudioManager.SCO_AUDIO_STATE_CONNECTED;
+			Log.i(TAG, "Bluetooth plugged: " + bluetoothAudio);
+		}
+	};
+
+	private final PhoneStateListener mPhoneListener = new PhoneStateListener() {
+		@Override
+		public void onCallStateChanged(int state, String incomingNumber) {
+			switch (state) {
+			default:
+				Log.i(TAG, "Disabling DSP during call.");
+				inCall = true;
+				break;
+			case TelephonyManager.CALL_STATE_IDLE:
+				Log.i(TAG, "Enabling DSP after call has ended.");
+				inCall = false;
+				break;
+			}
+
 			updateDsp();
 		}
 	};
@@ -57,10 +95,17 @@ public class HeadsetService extends Service {
 		super.onCreate();
 		Log.i(TAG, "Starting service.");
 
+		startForeground(DSPManager.NOTIFY_FOREGROUND_ID, new Notification());
+		
+		TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+		tm.listen(mPhoneListener, PhoneStateListener.LISTEN_CALL_STATE);
+		
 		audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
 
         registerReceiver(headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
         registerReceiver(preferenceUpdateReceiver, new IntentFilter("com.bel.android.dspmanager.UPDATE"));
+        
+        registerReceiver(bluetoothReceiver, new IntentFilter(AudioManager.ACTION_SCO_AUDIO_STATE_CHANGED));
 	}
 	
 	@Override
@@ -68,6 +113,8 @@ public class HeadsetService extends Service {
 		super.onDestroy();
 		Log.i(TAG, "Stopping service.");
 
+		stopForeground(true);
+		
 		unregisterReceiver(headsetReceiver);
 		unregisterReceiver(preferenceUpdateReceiver);
 	}
@@ -81,7 +128,18 @@ public class HeadsetService extends Service {
 	 * Push new configuration to audio stack.
 	 */
 	private void updateDsp() {
-		String mode = useHeadphone ? "headset" : "speaker";
+		final String mode;
+		
+		if (inCall) {
+			/* During calls, everything gets disabled; there is no configuration called 'disable' */
+			mode = "disable";
+		} else if (bluetoothAudio) {
+			/* Bluetooth takes precedence over everything else */
+			mode = "bluetooth";
+		} else {
+			/* Wired headset or internal speaker */
+			mode = useHeadphone ? "headset" : "speaker";
+		}
 		SharedPreferences preferences = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode, 0);
 		
 		/* Preferences that are boolean flags. */
