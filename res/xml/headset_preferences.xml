@@ -5,11 +5,11 @@
 	<PreferenceCategory android:title="@string/pref_dsp_title">
 		<CheckBoxPreference android:key="dsp.compression.enable"
 			android:summaryOn="@string/pref_dsp_summary_on" android:summaryOff="@string/pref_dsp_summary_off"
-			android:disableDependentsState="false" android:title="@string_pref_dsp_enable"></CheckBoxPreference>
+			android:disableDependentsState="false" android:title="@string/pref_dsp_enable"></CheckBoxPreference>
 		<com.bel.android.dspmanager.SummariedListPreference
 			android:entries="@array/compression_modes" android:key="dsp.compression.mode"
 			android:entryValues="@array/compression_modes_values" android:title="Select Effect Strength"
-			android:dialogTitle="@sytring/dialog_effect" android:defaultValue="dsp.compression.ratio=1.414" />
+			android:dialogTitle="@string/dialog_effect" android:defaultValue="dsp.compression.ratio=1.414" />
 	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/pref_equalizer_title">
