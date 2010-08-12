@@ -7,7 +7,7 @@
 	<PreferenceScreen android:title="@string/speaker_title">
 		<intent android:action="com.bel.android.dspmanager.SPEAKER" />
 	</PreferenceScreen>
-	<PreferenceScreen android:title="Bluetooth Device">
+	<PreferenceScreen android:title="@string/bluetooth_title">
 		<intent android:action="com.bel.android.dspmanager.BLUETOOTH" />
 	</PreferenceScreen>
 </PreferenceScreen>
