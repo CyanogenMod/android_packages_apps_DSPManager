@@ -13,6 +13,8 @@ import android.preference.PreferenceActivity;
 public final class DSPManager extends PreferenceActivity {
 	public static final String SHARED_PREFERENCES_BASENAME = "com.bel.android.dspmanager";
 
+	public static final int NOTIFY_FOREGROUND_ID = 1;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

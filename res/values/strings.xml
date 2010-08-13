@@ -5,6 +5,7 @@
     <string name="select_configuration_title">Select Configuration To Edit</string>
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Phone Speaker</string>
+    <string name="bluetooth_title">Bluetooth Device</string>
     <string name="dsp_settings">DSP Settings</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Compression is enabled</string>
