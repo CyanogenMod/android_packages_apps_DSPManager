@@ -5,6 +5,7 @@
     <string name="select_configuration_title">編集する設定を選択</string>
     <string name="headset_title">ヘッドセット</string>
     <string name="speaker_title">スピーカー</string>
+    <string name="bluetooth_title">Bluetoothデバイス</string>
     <string name="dsp_settings">DSP設定</string>
     <string name="pref_dsp_title">ダイナミックレンジコンプレッション</string>
     <string name="pref_dsp_summary_on">コンプレッションは有効</string>
