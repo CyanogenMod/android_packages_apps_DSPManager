@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/dsp_settings">
-
-
-<PreferenceCategory android:title="@string/pref_equalizer_title">
-<CheckBoxPreference android:disableDependentsState="false" android:key="dsp.tone.enable" android:summaryOn="@string/pref_equalizer_summary_on" android:summaryOff="@string/pref_equalizer_summary_off" android:title="@string/pref_equalizer_enable"></CheckBoxPreference>
-<com.bel.android.dspmanager.SliderPreference android:key="dsp.tone.eq1" android:title="63 Hz"></com.bel.android.dspmanager.SliderPreference>
-<com.bel.android.dspmanager.SliderPreference android:key="dsp.tone.eq2" android:title="250 Hz"></com.bel.android.dspmanager.SliderPreference>
-<com.bel.android.dspmanager.SliderPreference android:key="dsp.tone.eq3" android:title="1 kHz"></com.bel.android.dspmanager.SliderPreference>
-<com.bel.android.dspmanager.SliderPreference android:key="dsp.tone.eq4" android:title="4 kHz"></com.bel.android.dspmanager.SliderPreference>
-<com.bel.android.dspmanager.SliderPreference android:key="dsp.tone.eq5" android:title="16 kHz"></com.bel.android.dspmanager.SliderPreference>
-</PreferenceCategory>
-
-
-
+	android:title="@string/dsp_settings">
+	<PreferenceCategory android:title="@string/pref_equalizer_title">
+		<CheckBoxPreference android:disableDependentsState="false"
+			android:key="dsp.tone.enable" android:summaryOn="@string/pref_equalizer_summary_on"
+			android:summaryOff="@string/pref_equalizer_summary_off"
+			android:title="@string/pref_equalizer_enable"></CheckBoxPreference>
+		<com.bel.android.dspmanager.preference.EqualizerPreference
+			android:key="dsp.tone.eq" />
+	</PreferenceCategory>
 </PreferenceScreen>

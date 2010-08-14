@@ -1,4 +1,4 @@
-package com.bel.android.dspmanager;
+package com.bel.android.dspmanager.preference;
 
 import android.content.Context;
 import android.preference.ListPreference;

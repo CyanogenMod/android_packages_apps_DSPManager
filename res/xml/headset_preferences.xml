@@ -6,7 +6,7 @@
 		<CheckBoxPreference android:key="dsp.compression.enable"
 			android:summaryOn="@string/pref_dsp_summary_on" android:summaryOff="@string/pref_dsp_summary_off"
 			android:disableDependentsState="false" android:title="@string/pref_dsp_enable"></CheckBoxPreference>
-		<com.bel.android.dspmanager.SummariedListPreference
+		<com.bel.android.dspmanager.preference.SummariedListPreference
 			android:entries="@array/compression_modes" android:key="dsp.compression.mode"
 			android:entryValues="@array/compression_modes_values" android:title="Select Effect Strength"
 			android:dialogTitle="@string/dialog_effect" android:defaultValue="dsp.compression.ratio=1.414" />
@@ -16,23 +16,14 @@
 		<CheckBoxPreference android:disableDependentsState="false"
 			android:key="dsp.tone.enable" android:summaryOn="@string/pref_equalizer_summary_on"
 			android:summaryOff="@string/pref_equalizer_summary_off" android:title="@string/pref_equalizer_enable"></CheckBoxPreference>
-		<com.bel.android.dspmanager.SliderPreference
-			android:key="dsp.tone.eq1" android:title="63 Hz"></com.bel.android.dspmanager.SliderPreference>
-		<com.bel.android.dspmanager.SliderPreference
-			android:key="dsp.tone.eq2" android:title="250 Hz"></com.bel.android.dspmanager.SliderPreference>
-		<com.bel.android.dspmanager.SliderPreference
-			android:key="dsp.tone.eq3" android:title="1 kHz"></com.bel.android.dspmanager.SliderPreference>
-		<com.bel.android.dspmanager.SliderPreference
-			android:key="dsp.tone.eq4" android:title="4 kHz"></com.bel.android.dspmanager.SliderPreference>
-		<com.bel.android.dspmanager.SliderPreference
-			android:key="dsp.tone.eq5" android:title="16 kHz"></com.bel.android.dspmanager.SliderPreference>
+		<com.bel.android.dspmanager.preference.EqualizerPreference android:key="dsp.tone.eq"/>
 	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/pref_headset_virtual_title">
 		<CheckBoxPreference android:key="dsp.headphone.enable"
 			android:disableDependentsState="false" android:summaryOn="@string/pref_headset_virtual_summary_on"
 			android:summaryOff="@string/pref_headset_virtual_summary_off" android:title="@string/pref_headset_virtual_enable"></CheckBoxPreference>
-		<com.bel.android.dspmanager.SummariedListPreference
+		<com.bel.android.dspmanager.preference.SummariedListPreference
 			android:entries="@array/headphone_modes" android:title="@string/pref_room_title"
 			android:key="dsp.headphone.mode" android:dialogTitle="@string/dialog_room"
 			android:entryValues="@array/headphone_modes_values"

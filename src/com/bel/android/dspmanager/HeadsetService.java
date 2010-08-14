@@ -13,6 +13,8 @@ import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
+import com.bel.android.dspmanager.activity.DSPManager;
+
 /**
  * <p>
  * This calls listen to two kinds of events:
@@ -151,11 +153,10 @@ public class HeadsetService extends Service {
 			audioManager.setParameters(s + "=" + (preferences.getBoolean(s, false) ? "1" : "0"));
 		}
 
-		/* Preferences that are floating point values. */
-		for (String s : new String[] {
-				"dsp.tone.eq1", "dsp.tone.eq2", "dsp.tone.eq3", "dsp.tone.eq4", "dsp.tone.eq5",
-		}) {
-			audioManager.setParameters(s + "=" + preferences.getFloat(s, 0));
+		/* Equalizer state is in a single string preference with all values separated by ; */
+		String levels[] = preferences.getString("dsp.tone.eq", "0;0;0;0;0").split(";");
+		for (int i = 0; i < 5; i ++) {
+			audioManager.setParameters("dsp.tone.eq" + (i+1) + "=" + levels[i]);
 		}
 
 		/* Preferences that are strings which can be handled by AudioManager directly. */

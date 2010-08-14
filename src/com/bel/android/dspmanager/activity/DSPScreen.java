@@ -1,4 +1,4 @@
-package com.bel.android.dspmanager;
+package com.bel.android.dspmanager.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +8,9 @@ import android.preference.PreferenceActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import com.bel.android.dspmanager.HeadsetService;
+import com.bel.android.dspmanager.R;
 
 /**
  * This class implements a general PreferencesActivity that we can use to

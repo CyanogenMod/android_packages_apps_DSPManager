@@ -1,8 +1,10 @@
-package com.bel.android.dspmanager;
+package com.bel.android.dspmanager.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+
+import com.bel.android.dspmanager.R;
 
 /**
  * Setting utility for CyanogenMod's DSP capabilities.
