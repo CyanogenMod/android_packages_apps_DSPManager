@@ -180,6 +180,10 @@ public class EqualizerSurface extends SurfaceView {
 		postInvalidate();
 	}
 	
+	public float getBand(int i) {
+		return levels[i];
+	}
+	
 	@Override
 	protected void onDraw(Canvas canvas) {
 		/* clear canvas */
