@@ -2,6 +2,8 @@ package com.bel.android.dspmanager;
 
 import android.app.Notification;
 import android.app.Service;
+import android.bluetooth.BluetoothClass;
+import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -67,9 +69,17 @@ public class HeadsetService extends Service {
 	private final BroadcastReceiver bluetoothReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			Log.i(TAG, "Received bluetooth update");
-			int state = intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, AudioManager.SCO_AUDIO_STATE_DISCONNECTED);
-			bluetoothAudio = state == AudioManager.SCO_AUDIO_STATE_CONNECTED;
+			/* Work out what device was connected. Must be something that handles audio. */
+			BluetoothDevice bd = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+			Log.i(TAG, intent.getAction() + " Bluetooth class: " + bd.getBluetoothClass());
+			if (bd.getBluetoothClass().getMajorDeviceClass() != BluetoothClass.Device.Major.AUDIO_VIDEO) {
+				return;
+			}
+			
+			/* I don't actually know at this point if user will actually enable this device,
+			 * or whether it just remains "connected". Knowing this would be useful.
+			 */
+			bluetoothAudio = intent.getAction().equals(BluetoothDevice.ACTION_ACL_CONNECTED);
 			Log.i(TAG, "Bluetooth plugged: " + bluetoothAudio);
 		}
 	};
@@ -107,7 +117,10 @@ public class HeadsetService extends Service {
         registerReceiver(headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
         registerReceiver(preferenceUpdateReceiver, new IntentFilter("com.bel.android.dspmanager.UPDATE"));
         
-        registerReceiver(bluetoothReceiver, new IntentFilter(AudioManager.ACTION_SCO_AUDIO_STATE_CHANGED));
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(BluetoothDevice.ACTION_ACL_CONNECTED);
+        filter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);
+        registerReceiver(bluetoothReceiver, filter);
 	}
 	
 	@Override
