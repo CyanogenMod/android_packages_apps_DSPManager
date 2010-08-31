@@ -7,148 +7,22 @@ import android.graphics.Paint.Style;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
-/**
- * Java support for complex numbers.
- * 
- * @author alankila
- */
-class Complex {
-	final float re, im;
-	
-	protected Complex(float re, float im) {
-		this.re = re;
-		this.im = im;
-	}
-	
-	/**
-	 * Length of complex number
-	 * 
-	 * @return length
-	 */
-	protected float rho() {
-		return (float) Math.sqrt(re * re + im * im);
-	}
-	
-	/**
-	 * Argument of complex number
-	 * 
-	 * @return angle in radians
-	 */
-	protected float theta() {
-		return (float) Math.atan2(im, re);
-	}
-	
-	/**
-	 * Complex conjugate
-	 * 
-	 * @return conjugate
-	 */
-	protected Complex con() {
-		return new Complex(re, -im);
-	}
-
-	/**
-	 * Complex addition
-	 * 
-	 * @param other
-	 * @return sum
-	 */
-	protected Complex add(Complex other) {
-		return new Complex(re + other.re, im + other.im);
-	}
-	
-	/**
-	 * Complex multipply
-	 * 
-	 * @param other
-	 * @return multiplication result
-	 */
-	protected Complex mul(Complex other) {
-		return new Complex(re * other.re - im * other.im, re * other.im + im * other.re);
-	}
-	
-	/**
-	 * Complex multiply with real value
-	 * 
-	 * @param a
-	 * @return multiplication result
-	 */
-	protected Complex mul(float a) {
-		return new Complex(re * a, im * a);
-	}
-	
-	/**
-	 * Complex division
-	 * 
-	 * @param other
-	 * @return division result
-	 */
-	protected Complex div(Complex other) {
-	    float lengthSquared = other.re * other.re + other.im * other.im;
-	    return mul(other.con()).div(lengthSquared);
-	}
-	
-	/**
-	 * Complex division with real value
-	 * 
-	 * @param a
-	 * @return division result
-	 */
-	protected Complex div(float a) {
-		return new Complex(re/a, im/a);
-	}
-}
-
-/**
- * Evaluate transfer functions of biquad filters in direct form 1.
- * 
- * @author alankila
- */
-class Biquad {
-	private Complex b0, b1, b2, a0, a1, a2;
-
-	protected void setHighShelf(float centerFrequency, float samplingFrequency, float dbGain, float slope) {
-        double w0 = 2 * Math.PI * centerFrequency / samplingFrequency;
-        double A = Math.pow(10, dbGain/40);
-        double alpha = Math.sin(w0)/2 * Math.sqrt( (A + 1/A)*(1/slope - 1) + 2);
-
-        b0 = new Complex((float) (A*((A+1) + (A-1)   *Math.cos(w0) + 2*Math.sqrt(A)*alpha)), 0);
-        b1 = new Complex((float) (-2*A*((A-1) + (A+1)*Math.cos(w0))), 0);
-        b2 = new Complex((float) (A*((A+1) + (A-1)   *Math.cos(w0) - 2*Math.sqrt(A)*alpha)), 0);
-        a0 = new Complex((float) ((A+1) - (A-1)      *Math.cos(w0) + 2*Math.sqrt(A)*alpha), 0);
-        a1 = new Complex((float) (2*((A-1) - (A+1)   *Math.cos(w0))), 0);
-        a2 = new Complex((float) ((A+1) - (A-1)      *Math.cos(w0) - 2*Math.sqrt(A)*alpha), 0);
-	}
-	
-	protected Complex evaluateTransfer(Complex z) {
-		Complex zSquared = z.mul(z);
-		Complex nom = b0.add(b1.div(z)).add(b2.div(zSquared));
-		Complex den = a0.add(a1.div(z)).add(a2.div(zSquared));
-		return nom.div(den);
-	}
-}
-
 public class EqualizerSurface extends SurfaceView {
 	public static int MIN_FREQ = 20;
 	public static int MAX_FREQ = 20000;
 	public static int SAMPLING_RATE = 44100;
 	public static int MIN_DB = -6;
 	public static int MAX_DB = 6;
+	public static final float CURVE_RESOLUTION = 1.25f;
 	
-	private final int width;
-	private final int height;
+	private int width;
+	private int height;
 	
 	float[] levels = new float[5];
 	private final Paint white, gray, green, purple, red;
 	
 	public EqualizerSurface(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
-
-		/* One day when I'm crazy enough I'll work out how to extract this shit from attributeSet. */
-		/* Width can't be taken from the canvas itself passed to onDraw() because android passes
-		 * different sized canvases to the method. Yay android. */
-		width = 300;
-		height = 150;
 
 		/* Also, these fuckers by default disable their own drawing. WTF? */
 		setWillNotDraw(false);
@@ -173,6 +47,15 @@ public class EqualizerSurface extends SurfaceView {
 		red = new Paint();
 		red.setColor(0x88ff0000);
 		red.setStyle(Style.STROKE);
+		red.setStrokeWidth(2);
+	}
+
+	@Override
+	protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+		super.onLayout(changed, left, top, right, bottom);
+		
+		width = right - left;
+		height = bottom - top;
 	}
 
 	public void setBand(int i, float value) {
@@ -234,10 +117,10 @@ public class EqualizerSurface extends SurfaceView {
 		
 		/* Now evaluate the tone filter. This is a duplication of the filter design in AudioDSP.
 		 * The real filter is integer-based and suffers from approximations, which are not modeled. */
-		float oldx = 0;
+		float oldx = -1;
 		float olddB = 0;
 		//float olds = 0;
-		for (float freq = MIN_FREQ; freq < MAX_FREQ; freq *= 1.2f) {
+		for (float freq = MIN_FREQ / CURVE_RESOLUTION; freq < MAX_FREQ * CURVE_RESOLUTION; freq *= CURVE_RESOLUTION) {
 			float omega = freq / SAMPLING_RATE * (float) Math.PI * 2;
 			Complex z = new Complex((float) Math.cos(omega), (float) Math.sin(omega));
 
@@ -258,7 +141,7 @@ public class EqualizerSurface extends SurfaceView {
 			
 			float newx = projectX(freq) * width;
 			
-			if (oldx != 0) {
+			if (oldx != -1) {
 				canvas.drawLine(oldx, olddB, newx, newBb, green);
 				//canvas.drawLine(oldx, olds, newx, news, purple);
 			}
@@ -272,7 +155,7 @@ public class EqualizerSurface extends SurfaceView {
 			float x = projectX(freq) * width;
 			float y = projectY(levels[i]) * height;
 			canvas.drawLine(x, height/2, x, y, red);
-			canvas.drawCircle(x, y, 1, red);
+			canvas.drawCircle(x, y, 2, red);
 		}
 	}
 
@@ -291,5 +174,28 @@ public class EqualizerSurface extends SurfaceView {
 
 	private float lin2dB(float rho) {
 		return rho != 0 ? (float) (Math.log(rho) / Math.log(10) * 20) : -99f;
+	}
+
+	/**
+	 * Find the closest control to press coordinate for adjustment
+	 * 
+	 * @param px
+	 * @return index of best match
+	 */
+	public int findClosest(float px) {
+		int idx = 0;
+		float best = 99999;
+		for (int i = 0; i < levels.length; i ++) {
+			float freq = 62.5f * (float) Math.pow(4, i);
+			float cx = projectX(freq) * width;
+			float distance = Math.abs(cx - px);
+			
+			if (distance < best) {
+				idx = i;
+				best = distance;
+			}
+		}
+		
+		return idx;
 	}
 }

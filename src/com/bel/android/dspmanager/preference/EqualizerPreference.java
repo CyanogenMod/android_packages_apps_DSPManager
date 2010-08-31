@@ -16,7 +16,7 @@ public class EqualizerPreference extends DialogPreference {
 	public EqualizerPreference(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
 		setLayoutResource(R.layout.equalizer);
-		setDialogLayoutResource(R.layout.equalizer);
+		setDialogLayoutResource(R.layout.equalizer_popup);
 	}
 	
 	@Override
@@ -30,17 +30,10 @@ public class EqualizerPreference extends DialogPreference {
 				float x = event.getX();
 				float y = event.getY();
 				
-				int wx = v.getWidth();
-				int wy = v.getHeight();
-				
-				int band = (int) (x * 5 / wx);
-				if (band < 0) {
-					band = 0;
-				}
-				if (band > 4) {
-					band = 4;
-				}
+				/* Which band is closest to the position user pressed? */
+				int band = dialogEqualizer.findClosest(x);
 
+				int wy = v.getHeight();
 				float level = (y / wy) * (EqualizerSurface.MIN_DB - EqualizerSurface.MAX_DB) - EqualizerSurface.MIN_DB;
 				if (level < EqualizerSurface.MIN_DB) {
 					level = EqualizerSurface.MIN_DB;
