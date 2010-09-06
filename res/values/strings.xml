@@ -23,4 +23,5 @@
     <string name="pref_headset_virtual_enable">Enable</string>
     <string name="pref_room_title">Select Room Type</string>
     <string name="dialog_room">Room Type</string>
+    <string name="menu_reset">Reset</string>
 </resources>

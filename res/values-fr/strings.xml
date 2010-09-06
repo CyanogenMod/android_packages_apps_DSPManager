@@ -22,4 +22,5 @@
     <string name="pref_headset_virtual_enable">Activer</string>
     <string name="pref_room_title">Choisir le type de chambre</string>
     <string name="dialog_room">Type de chambre</string>
+    <string name="menu_reset">Remise à zéro</string>
 </resources>
