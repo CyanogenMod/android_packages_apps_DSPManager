@@ -8,7 +8,7 @@
 			android:disableDependentsState="false" android:title="@string/pref_dsp_enable"></CheckBoxPreference>
 		<com.bel.android.dspmanager.preference.SummariedListPreference
 			android:entries="@array/compression_modes" android:key="dsp.compression.mode"
-			android:entryValues="@array/compression_modes_values" android:title="Select Effect Strength"
+			android:entryValues="@array/compression_modes_values" android:title="@string/pref_effect_title"
 			android:dialogTitle="@string/dialog_effect" android:defaultValue="dsp.compression.ratio=1.414" />
 	</PreferenceCategory>
 
