@@ -71,8 +71,14 @@ public class HeadsetService extends Service {
 		public void onReceive(Context context, Intent intent) {
 			/* Work out what device was connected. Must be something that handles audio. */
 			BluetoothDevice bd = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-			Log.i(TAG, intent.getAction() + " Bluetooth class: " + bd.getBluetoothClass());
-			if (bd.getBluetoothClass().getMajorDeviceClass() != BluetoothClass.Device.Major.AUDIO_VIDEO) {
+			BluetoothClass bdc = bd.getBluetoothClass();
+			if (bdc == null) {
+				Log.i(TAG, intent.getAction() + ": missing class information on device: " + bd);
+				return;
+			}
+			
+			Log.i(TAG, intent.getAction() + ": bluetooth class is " + bdc);
+			if (bdc.getMajorDeviceClass() != BluetoothClass.Device.Major.AUDIO_VIDEO) {
 				return;
 			}
 			
