@@ -2,7 +2,9 @@ package com.bel.android.dspmanager.preference;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.LinearGradient;
 import android.graphics.Paint;
+import android.graphics.Shader;
 import android.graphics.Paint.Style;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
@@ -17,9 +19,10 @@ public class EqualizerSurface extends SurfaceView {
 	
 	private int width;
 	private int height;
+	private int barwidth;
 	
 	float[] levels = new float[5];
-	private final Paint white, gray, green, purple, red;
+	private final Paint white, gray, green, blue, purple, red;
 	
 	public EqualizerSurface(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
@@ -30,24 +33,36 @@ public class EqualizerSurface extends SurfaceView {
 		white = new Paint();
 		white.setColor(0xffffffff);
 		white.setStyle(Style.STROKE);
-		white.setTextSize(8);
-
+		white.setTextSize(14);
+		white.setAntiAlias(true);
+		white.setTextAlign(Paint.Align.CENTER);
+		
 		gray = new Paint();
-		gray.setColor(0x88ffffff);
+		gray.setColor(0x22ffffff);
 		gray.setStyle(Style.STROKE);
 
 		green = new Paint();
 		green.setColor(0x8800ff00);
 		green.setStyle(Style.STROKE);
-
+		green.setAntiAlias(true);
+		green.setStrokeWidth(4);
+		
 		purple = new Paint();
 		purple.setColor(0x88ff00ff);
 		purple.setStyle(Style.STROKE);
-
+		
+		blue = new Paint();
+		//blue.setColor(0xff1E90FF);
+		blue.setColor(0x880000ff);
+		blue.setStyle(Style.FILL_AND_STROKE);
+		blue.setStrokeWidth(1);
+		blue.setAntiAlias(true);
+		
 		red = new Paint();
 		red.setColor(0x88ff0000);
-		red.setStyle(Style.STROKE);
+		red.setStyle(Style.FILL_AND_STROKE);
 		red.setStrokeWidth(2);
+		red.setAntiAlias(true);
 	}
 
 	@Override
@@ -56,6 +71,8 @@ public class EqualizerSurface extends SurfaceView {
 		
 		width = right - left;
 		height = bottom - top;
+		barwidth = (width/(levels.length+1)) / 4;
+		green.setShader(new LinearGradient(0,0,0,height, 0xffbfff00, 0xff003300, Shader.TileMode.CLAMP));
 	}
 
 	public void setBand(int i, float value) {
@@ -72,8 +89,12 @@ public class EqualizerSurface extends SurfaceView {
 		/* clear canvas */
 		canvas.drawRGB(0, 0, 0);
 		
+		/* Set the width of the bars according to canvas size */
+		green.setStrokeWidth(barwidth);
+		
 		canvas.drawRect(0, 0, width-1, height-1, white);
 
+		/* draw vertical lines */
 		for (int freq = MIN_FREQ; freq < MAX_FREQ;) {
 			if (freq < 100) {
 				freq += 10;
@@ -92,9 +113,14 @@ public class EqualizerSurface extends SurfaceView {
 			}
 		}
 		
-		for (int dB = MIN_DB; dB < MAX_DB; dB += 3) {
+		/* draw horizontal lines */
+		for (int dB = MIN_DB; dB < MAX_DB; dB += 2) {
 			float y = projectY(dB) * height;
-			canvas.drawLine(0, y, width - 1, y, gray);
+			if (dB == 0) {
+				canvas.drawLine(0, y, width - 1, y, red);
+			} else {
+				canvas.drawLine(0, y, width - 1, y, gray);
+			}
 			canvas.drawText(String.format("%+d", dB), 1, y-1, white);
 		}
 		
@@ -142,7 +168,7 @@ public class EqualizerSurface extends SurfaceView {
 			float newx = projectX(freq) * width;
 			
 			if (oldx != -1) {
-				canvas.drawLine(oldx, olddB, newx, newBb, green);
+				canvas.drawLine(oldx, olddB, newx, newBb, blue);
 				//canvas.drawLine(oldx, olds, newx, news, purple);
 			}
 			oldx = newx;
@@ -154,8 +180,11 @@ public class EqualizerSurface extends SurfaceView {
 			float freq = 62.5f * (float) Math.pow(4, i);
 			float x = projectX(freq) * width;
 			float y = projectY(levels[i]) * height;
-			canvas.drawLine(x, height/2, x, y, red);
-			canvas.drawCircle(x, y, 2, red);
+			canvas.drawLine(x, height/2, x, y, green);
+			if (y < (height/2)) {
+				y -= white.getFontMetrics().ascent;
+			}
+			canvas.drawText(String.format("%1.1f", Math.abs(levels[i])), x, y, white);
 		}
 	}
 

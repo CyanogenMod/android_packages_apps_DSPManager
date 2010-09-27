@@ -22,7 +22,6 @@ import com.bel.android.dspmanager.R;
  */
 public final class DSPScreen extends PreferenceActivity {	
 	private final OnSharedPreferenceChangeListener serviceLauncher = new OnSharedPreferenceChangeListener() {
-		@Override
 		public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 			sendBroadcast(new Intent("com.bel.android.dspmanager.UPDATE"));
 		}
