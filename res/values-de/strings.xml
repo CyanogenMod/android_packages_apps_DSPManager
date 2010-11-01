@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Konfiguration zum Bearbeiten auswählen</string>
+    <string name="headset_title">Kopfhörer</string>
+    <string name="speaker_title">Lautsprecher</string>
+    <string name="bluetooth_title">Bluetooth-Gerät</string>
+    <string name="dsp_settings">DSP-Einstellungen</string>
+    <string name="pref_dsp_title">Dynamic Range Compression</string>
+    <string name="pref_dsp_summary_on">Kompression des Dynamikumfangs ist eingeschaltet</string>
+    <string name="pref_dsp_summary_off">Kompression des Dynamikumfangs ist ausgeschaltet</string>
+    <string name="pref_dsp_enable">Einschalten</string>
+    <string name="pref_effect_title">Effektstärke auswählen</string>
+    <string name="dialog_effect">Effektstärke</string>
+    <string name="pref_equalizer_title">Equalizer</string>
+    <string name="pref_equalizer_summary_on">Equalizer ist eingeschaltet</string>
+    <string name="pref_equalizer_summary_off">Equalizer ist ausgeschaltet</string>
+    <string name="pref_equalizer_enable">Einschalten</string>
+    <string name="pref_headset_virtual_title">Virtueller Raumklang</string>
+    <string name="pref_headset_virtual_summary_on">Virtueller Raumklang für Kopfhörer ist eingeschaltet</string>
+    <string name="pref_headset_virtual_summary_off">Virtueller Raumklang für Kopfhörer ist ausgeschaltet</string>
+    <string name="pref_headset_virtual_enable">Einschalten</string>
+    <string name="pref_room_title">Raumtyp</string>
+    <string name="dialog_room">Raumtyp</string>
+    <string name="menu_reset">Zurücksetzen</string>
+</resources>
