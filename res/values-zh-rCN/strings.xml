@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSP 管理器</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">选择配置编辑</string>
+    <string name="headset_title">耳机</string>
+    <string name="speaker_title">电话扬声器</string>
+    <string name="bluetooth_title">蓝牙设备</string>
+    <string name="dsp_settings">DSP 设置</string>
+    <string name="pref_dsp_title">动态范围压缩</string>
+    <string name="pref_dsp_summary_on">启用压缩</string>
+    <string name="pref_dsp_summary_off">禁用压缩</string>
+    <string name="pref_dsp_enable">启用</string>
+    <string name="pref_effect_title">选择效果强度</string>
+    <string name="dialog_effect">效果强度</string>
+    <string name="pref_equalizer_title">均衡器</string>
+    <string name="pref_equalizer_summary_on">启用均衡器</string>
+    <string name="pref_equalizer_summary_off">禁用均衡器</string>
+    <string name="pref_equalizer_enable">启用</string>
+    <string name="pref_headset_virtual_title">耳机虚拟空间效果</string>
+    <string name="pref_headset_virtual_summary_on">启用耳机虚拟空间</string>
+    <string name="pref_headset_virtual_summary_off">禁用耳机虚拟空间</string>
+    <string name="pref_headset_virtual_enable">启用</string>
+    <string name="pref_room_title">选择空间类型</string>
+    <string name="dialog_room">空间类型</string>
+</resources>
