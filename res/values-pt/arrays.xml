@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="headphone_modes">
+        <item>Estúdio</item>
+        <item>Sala</item>
+        <item>Salão</item>
+        <item>Teatro</item>
+    </string-array>
+    <string-array name="compression_modes">
+        <item>Leve</item>
+        <item>Moderado</item>
+        <item>Extremo</item>
+    </string-array>
+</resources>
