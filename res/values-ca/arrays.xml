@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="headphone_modes">
+        <item>Estudi</item>
+        <item>Habitació</item>
+        <item>Habitació gran</item>
+        <item>Teatre</item>
+    </string-array>
+
+    <string-array name="compression_modes">
+        <item>Lleuger</item>
+        <item>Mitjà</item>
+        <item>Extrem</item>
+    </string-array>
+</resources>
