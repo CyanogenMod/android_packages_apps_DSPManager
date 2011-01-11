@@ -1,11 +1,11 @@
 package com.bel.android.dspmanager;
 
-import com.bel.android.dspmanager.activity.DSPManager;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+
+import com.bel.android.dspmanager.activity.DSPManager;
 
 /**
  * This receiver keeps our HeadsetService running. It listens to UPDATE events which correspond to
@@ -28,9 +28,10 @@ public class ServiceLaunchReceiver extends BroadcastReceiver {
 				preferencesHeadset, preferencesSpeaker, preferencesBluetooth
 		}) {
 			for (String s : new String[] {
+					"dsp.bass.enable",
 					"dsp.compression.enable",
-					"dsp.tone.enable",
 					"dsp.headphone.enable",
+					"dsp.tone.enable",
 			}) {
 				if (p.getBoolean(s, false)) {
 					serviceNeeded = true;

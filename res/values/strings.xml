@@ -17,6 +17,10 @@
     <string name="pref_equalizer_summary_on">Equalizer is enabled</string>
     <string name="pref_equalizer_summary_off">Equalizer is disabled</string>
     <string name="pref_equalizer_enable">Enable</string>
+    <string name="pref_bassboost_title">Bass Boost</string>
+    <string name="pref_bassboost_summary_on">Bass Boost is enabled</string>
+    <string name="pref_bassboost_summary_off">Bass Boost is disabled</string>
+    <string name="pref_bassboost_enable">Enable</string>
     <string name="pref_headset_virtual_title">Headset Virtual Room Effect</string>
     <string name="pref_headset_virtual_summary_on">Headset Virtual Room is enabled</string>
     <string name="pref_headset_virtual_summary_off">Headset Virtual Room is disabled</string>

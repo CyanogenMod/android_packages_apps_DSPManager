@@ -1,5 +1,8 @@
 package com.bel.android.dspmanager;
 
+import java.lang.reflect.Method;
+import java.util.UUID;
+
 import android.app.Notification;
 import android.app.Service;
 import android.bluetooth.BluetoothClass;
@@ -9,7 +12,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.media.AudioManager;
+import android.media.audiofx.AudioEffect;
+import android.media.audiofx.BassBoost;
+import android.media.audiofx.Equalizer;
+import android.media.audiofx.Virtualizer;
 import android.os.IBinder;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
@@ -33,15 +39,22 @@ import com.bel.android.dspmanager.activity.DSPManager;
  * @author alankila
  */
 public class HeadsetService extends Service {
-	private static final String TAG = HeadsetService.class.getSimpleName();
+	protected static final String TAG = HeadsetService.class.getSimpleName();
 
-	private AudioManager audioManager;
+	public static final UUID EFFECT_TYPE_VOLUME = UUID.fromString("09e8ede0-ddde-11db-b4f6-0002a5d5c51b");
+	
+    public static final UUID EFFECT_TYPE_NULL = UUID.fromString("ec7178ec-e5e1-4432-a3f4-4657e6795210");
 
-	private boolean useHeadphone;
+    private AudioEffect compression;
+	private Equalizer equalizer;
+	private Virtualizer virtualizer;
+	private BassBoost bassBoost;
+	
+	protected boolean useHeadphone;
 
-	private boolean inCall;
+	protected boolean inCall;
 
-	private boolean bluetoothAudio;
+	protected boolean bluetoothAudio;
 
 	/**
 	 * Update audio parameters when preferences have been updated.
@@ -113,16 +126,33 @@ public class HeadsetService extends Service {
 		super.onCreate();
 		Log.i(TAG, "Starting service.");
 
+		try {
+			/* The AudioEffect with UUID constructor is not visible in SDK, but
+			 * it is available via reflection. Here's a kind request to Google:
+			 * please expose this method, and the parameter APIs, to make it
+			 * possible to create audio effects that aren't part of the official
+			 * platform without having to patch the platform itself. */
+			compression = AudioEffect.class
+			.getConstructor(UUID.class, UUID.class, Integer.TYPE, Integer.TYPE)
+			.newInstance(EFFECT_TYPE_VOLUME, EFFECT_TYPE_NULL, 0, 0);
+			/* Also, setParameter and getParameter() are hidden,
+			 * but both their signatures are byte[], byte[]. */
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to construct EFFECT_TYPE_VOLUME", e);
+		}
+
+		equalizer = new Equalizer(0, 0);
+		virtualizer = new Virtualizer(0, 0);
+		bassBoost = new BassBoost(0, 0);
+		
 		startForeground(DSPManager.NOTIFY_FOREGROUND_ID, new Notification());
 		
 		TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
 		tm.listen(mPhoneListener, PhoneStateListener.LISTEN_CALL_STATE);
 		
-		audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
-
         registerReceiver(headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
         registerReceiver(preferenceUpdateReceiver, new IntentFilter("com.bel.android.dspmanager.UPDATE"));
-        
+
         IntentFilter filter = new IntentFilter();
         filter.addAction(BluetoothDevice.ACTION_ACL_CONNECTED);
         filter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);
@@ -138,6 +168,9 @@ public class HeadsetService extends Service {
 		
 		unregisterReceiver(headsetReceiver);
 		unregisterReceiver(preferenceUpdateReceiver);
+		unregisterReceiver(bluetoothReceiver);
+		TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+		tm.listen(mPhoneListener, 0);
 	}
 	
 	@Override
@@ -148,7 +181,7 @@ public class HeadsetService extends Service {
 	/**
 	 * Push new configuration to audio stack.
 	 */
-	private void updateDsp() {
+	protected void updateDsp() {
 		final String mode;
 		
 		if (inCall) {
@@ -162,27 +195,43 @@ public class HeadsetService extends Service {
 			mode = useHeadphone ? "headset" : "speaker";
 		}
 		SharedPreferences preferences = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode, 0);
+
+		{
+			compression.setEnabled(preferences.getBoolean("dsp.compression.enable", false));
+			int strength = preferences.getInt("dsp.compression.strength", 0);
+			try {
+				Method setParameter = AudioEffect.class.getMethod("setParameter", byte[].class, byte[].class);
+				setParameter.invoke(compression, new byte[] { 0, 0, 0, 0, (byte) (strength >> 8), (byte) (strength & 0xff) }, new byte[4]);
+				/* Return array ignored, anyway... */
+			}
+			catch (Exception e) {
+				throw new RuntimeException(e);
+			}
+		}
 		
-		/* Preferences that are boolean flags. */
-		for (String s : new String[] {
-				"dsp.compression.enable",
-				"dsp.tone.enable",
-				"dsp.headphone.enable"
-		}) {
-			audioManager.setParameters(s + "=" + (preferences.getBoolean(s, false) ? "1" : "0"));
+		{
+			bassBoost.setEnabled(preferences.getBoolean("dsp.bass.enable", false));
+			if (bassBoost.getStrengthSupported()) {
+				String strength = preferences.getString("dsp.bass.mode", "0");
+				bassBoost.setStrength(Short.valueOf(strength));
+			}
 		}
 
-		/* Equalizer state is in a single string preference with all values separated by ; */
-		String levels[] = preferences.getString("dsp.tone.eq", "0;0;0;0;0").split(";");
-		for (int i = 0; i < 5; i ++) {
-			audioManager.setParameters("dsp.tone.eq" + (i+1) + "=" + levels[i]);
+		{
+			/* Equalizer state is in a single string preference with all values separated by ; */
+			equalizer.setEnabled(preferences.getBoolean("dsp.tone.enable", false));
+			String levels[] = preferences.getString("dsp.tone.eq", "0;0;0;0;0").split(";");
+			for (short i = 0; i < levels.length; i ++) {
+				equalizer.setBandLevel(i, (short) (Float.valueOf(levels[i]) * 100));
+			}
 		}
 
-		/* Preferences that are strings which can be handled by AudioManager directly. */
-		for (String s : new String[] {
-				"dsp.compression.mode", "dsp.headphone.mode"
-		}) {
-			audioManager.setParameters(preferences.getString(s, ""));
+		{
+			virtualizer.setEnabled(preferences.getBoolean("dsp.headphone.enable", false));
+			if (virtualizer.getStrengthSupported()) {
+				String strength = preferences.getString("dsp.headphone.mode", "0");
+				virtualizer.setStrength(Short.valueOf(strength));
+			}
 		}
 	}	
 }

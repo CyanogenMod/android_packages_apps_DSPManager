@@ -7,9 +7,21 @@
 			android:summaryOn="@string/pref_dsp_summary_on" android:summaryOff="@string/pref_dsp_summary_off"
 			android:disableDependentsState="false" android:title="@string/pref_dsp_enable"></CheckBoxPreference>
 		<com.bel.android.dspmanager.preference.SummariedListPreference
-			android:entries="@array/compression_modes" android:key="dsp.compression.mode"
-			android:entryValues="@array/compression_modes_values" android:title="@string/pref_effect_title"
-			android:dialogTitle="@string/dialog_effect" android:defaultValue="dsp.compression.ratio=1.414" />
+			android:entries="@array/compression_modes" android:dialogTitle="@string/dialog_effect" android:key="dsp.compression.mode" android:defaultValue="0" android:title="@string/pref_effect_title" android:entryValues="@array/compression_modes_values"/>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/pref_bassboost_title">
+		<CheckBoxPreference android:disableDependentsState="false"
+			android:key="dsp.bass.enable" android:summaryOn="@string/pref_bassboost_summary_on"
+			android:summaryOff="@string/pref_bassboost_summary_off"
+			android:title="@string/pref_bassboost_enable"></CheckBoxPreference>
+		<com.bel.android.dspmanager.preference.SummariedListPreference
+			android:entries="@array/bassboost_modes"
+			android:dialogTitle="@string/dialog_effect"
+			android:key="dsp.bass.mode"
+			android:defaultValue="0"
+			android:title="@string/pref_effect_title"
+			android:entryValues="@array/bassboost_modes_values"/>
 	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/pref_equalizer_title">
@@ -24,10 +36,7 @@
 			android:disableDependentsState="false" android:summaryOn="@string/pref_headset_virtual_summary_on"
 			android:summaryOff="@string/pref_headset_virtual_summary_off" android:title="@string/pref_headset_virtual_enable"></CheckBoxPreference>
 		<com.bel.android.dspmanager.preference.SummariedListPreference
-			android:entries="@array/headphone_modes" android:title="@string/pref_room_title"
-			android:key="dsp.headphone.mode" android:dialogTitle="@string/dialog_room"
-			android:entryValues="@array/headphone_modes_values"
-			android:defaultValue="dsp.headphone.deep=0;dsp.headphone.wide=0;dsp.headphone.level=-15" />
+			android:defaultValue="0" android:dialogTitle="@string/dialog_room" android:entries="@array/headphone_modes" android:entryValues="@array/headphone_modes_values" android:title="@string/pref_room_title" android:key="dsp.headphone.mode"/>
 	</PreferenceCategory>
 
 </PreferenceScreen>

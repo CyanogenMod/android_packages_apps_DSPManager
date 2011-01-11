@@ -4,8 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
-import android.graphics.Shader;
 import android.graphics.Paint.Style;
+import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
@@ -13,8 +13,8 @@ public class EqualizerSurface extends SurfaceView {
 	public static int MIN_FREQ = 20;
 	public static int MAX_FREQ = 20000;
 	public static int SAMPLING_RATE = 44100;
-	public static int MIN_DB = -6;
-	public static int MAX_DB = 6;
+	public static int MIN_DB = -10;
+	public static int MAX_DB = 10;
 	public static final float CURVE_RESOLUTION = 1.25f;
 	
 	private int width;
@@ -33,9 +33,8 @@ public class EqualizerSurface extends SurfaceView {
 		white = new Paint();
 		white.setColor(0xffffffff);
 		white.setStyle(Style.STROKE);
-		white.setTextSize(14);
+		white.setTextSize(13);
 		white.setAntiAlias(true);
-		white.setTextAlign(Paint.Align.CENTER);
 		
 		gray = new Paint();
 		gray.setColor(0x22ffffff);
@@ -114,14 +113,14 @@ public class EqualizerSurface extends SurfaceView {
 		}
 		
 		/* draw horizontal lines */
-		for (int dB = MIN_DB; dB < MAX_DB; dB += 2) {
+		for (int dB = MIN_DB; dB <= MAX_DB; dB += 5) {
 			float y = projectY(dB) * height;
 			if (dB == 0) {
 				canvas.drawLine(0, y, width - 1, y, red);
 			} else {
 				canvas.drawLine(0, y, width - 1, y, gray);
 			}
-			canvas.drawText(String.format("%+d", dB), 1, y-1, white);
+			canvas.drawText(String.format("%d", Math.abs(dB)), 1, y - 1, white);
 		}
 		
 		Biquad[] biquads = new Biquad[] {
