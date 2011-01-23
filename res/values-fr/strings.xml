@@ -16,6 +16,10 @@
     <string name="pref_equalizer_summary_on">L\'égaliseur est activé</string>
     <string name="pref_equalizer_summary_off">L\'égaliseur est désactivé</string>
     <string name="pref_equalizer_enable">Activer</string>
+    <string name="pref_bassboost_title">Bass Boost</string>
+    <string name="pref_bassboost_summary_on">Bass Boost est activé</string>
+    <string name="pref_bassboost_summary_off">Bass Boost est désactivé</string>
+    <string name="pref_bassboost_enable">Activer</string>
     <string name="pref_headset_virtual_title">Effet chambre virtuelle</string>
     <string name="pref_headset_virtual_summary_on">L\'effet chambre virtuelle est activé</string>
     <string name="pref_headset_virtual_summary_off">L\'effet chambre virtuelle est désactivé</string>

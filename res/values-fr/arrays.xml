@@ -12,4 +12,10 @@
         <item>Moyen</item>
         <item>Extrême</item>
     </string-array>
+
+    <string-array name="bassboost_modes">
+        <item>Léger</item>
+        <item>Moyen</item>
+        <item>Extrême</item>
+    </string-array>
 </resources>
