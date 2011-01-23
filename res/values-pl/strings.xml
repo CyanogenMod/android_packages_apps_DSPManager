@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Wybierz konfigurację do edycji</string>
+    <string name="headset_title">Zestaw słuchawkowy</string>
+    <string name="speaker_title">Głośnik</string>
+    <string name="bluetooth_title">Urządzenie Bluetooth</string>
+    <string name="dsp_settings">Ustawienia DSP</string>
+    <string name="pref_dsp_title">Kompresja zakresu dynamiki</string>
+    <string name="pref_dsp_summary_on">Kompresja jest włączona</string>
+    <string name="pref_dsp_summary_off">Kompresja jest wyłączona</string>
+    <string name="pref_dsp_enable">Włącz</string>
+    <string name="pref_effect_title">Wybierz siłę efektu</string>
+    <string name="dialog_effect">Siła efektu</string>
+    <string name="pref_equalizer_title">Equalizer</string>
+    <string name="pref_equalizer_summary_on">Equalizer jest aktywny</string>
+    <string name="pref_equalizer_summary_off">Equalizer jest nieaktywny</string>
+    <string name="pref_equalizer_enable">Włącz</string>
+    <string name="pref_bassboost_title">Podbicie basu</string>
+    <string name="pref_bassboost_summary_on">Podbicie basu jest włączone</string>
+    <string name="pref_bassboost_summary_off">Podbicie basu jest wyłączone</string>
+    <string name="pref_bassboost_enable">Włącz</string>
+    <string name="pref_headset_virtual_title">Efekt wirtualnego pokoju</string>
+    <string name="pref_headset_virtual_summary_on">Efekt wirtualnego pokoju jest włączony</string>
+    <string name="pref_headset_virtual_summary_off">Efekt wirtualnego pokoju jest wyłączony</string>
+    <string name="pref_headset_virtual_enable">Włącz</string>
+    <string name="pref_room_title">Wybierz typ pokoju</string>
+    <string name="dialog_room">Typ pokoju</string>
+    <string name="menu_reset">Przywróć domyślne</string>
+</resources>
