@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Valitse muokattava asetus</string>
+    <string name="headset_title">Kuulokkeet</string>
+    <string name="speaker_title">Kaiutin</string>
+    <string name="bluetooth_title">Bluetooth-laite</string>
+    <string name="dsp_settings">DSP-asetukset</string>
+    <string name="pref_dsp_title">Kompressointi</string>
+    <string name="pref_dsp_summary_on">Kompressointi päällä</string>
+    <string name="pref_dsp_summary_off">Kompressointi pois päältä</string>
+    <string name="pref_dsp_enable">Aseta</string>
+    <string name="pref_effect_title">Valitse voimakkuus</string>
+    <string name="dialog_effect">Efektin voimakkuus</string>
+    <string name="pref_equalizer_title">Ekvalisaattori</string>
+    <string name="pref_equalizer_summary_on">Ekvalisaattori päällä</string>
+    <string name="pref_equalizer_summary_off">Ekvalisaattori pois päältä</string>
+    <string name="pref_equalizer_enable">Aseta</string>
+    <string name="pref_bassboost_title">Bass Boost</string>
+    <string name="pref_bassboost_summary_on">Bass Boost päällä</string>
+    <string name="pref_bassboost_summary_off">Bass Boost pois päältä</string>
+    <string name="pref_bassboost_enable">Aseta</string>
+    <string name="pref_headset_virtual_title">Kuulokkeiden virtuaalihuone-efekti</string>
+    <string name="pref_headset_virtual_summary_on">Kuulokkeiden virtuaalihuone-efekti päällä</string>
+    <string name="pref_headset_virtual_summary_off">Kuulokkeiden virtuaalihuone-efekti pois päältä</string>
+    <string name="pref_headset_virtual_enable">Aseta</string>
+    <string name="pref_room_title">Valitse huonetyyppi</string>
+    <string name="dialog_room">Huonetyyppi</string>
+    <string name="menu_reset">Palauta oletukset</string>
+</resources>
