@@ -13,6 +13,10 @@
     <string name="pref_dsp_enable">有効にする</string>
     <string name="pref_effect_title">エフェクトの強度を選択</string>
     <string name="dialog_effect">エフェクト強度</string>
+    <string name="pref_bassboost_title">ベースブースト</string>
+    <string name="pref_bassboost_summary_on">ベースブーストは有効</string>
+    <string name="pref_bassboost_summary_off">ベースブーストは無効</string>
+    <string name="pref_bassboost_enable">有効にする</string>
     <string name="pref_equalizer_title">イコライザ</string>
     <string name="pref_equalizer_summary_on">イコライザは有効</string>
     <string name="pref_equalizer_summary_off">イコライザは無効</string>
@@ -23,4 +27,5 @@
     <string name="pref_headset_virtual_enable">有効にする</string>
     <string name="pref_room_title">部屋のタイプを選択</string>
     <string name="dialog_room">部屋のタイプ</string>
+    <string name="menu_reset">リセット</string>
 </resources>

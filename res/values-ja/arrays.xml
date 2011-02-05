@@ -14,4 +14,10 @@
         <item>エクストリーム</item>
     </string-array>
 
+    <string-array name="bassboost_modes">
+        <item>スライト</item>
+        <item>モデレート</item>
+        <item>エクストリーム</item>
+    </string-array>
+
 </resources>
