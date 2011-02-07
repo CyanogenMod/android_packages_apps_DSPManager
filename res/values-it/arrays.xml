@@ -2,10 +2,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
 
-    <string-array name="compression_modes"><item>Lieve</item>
+    <string-array name="compression_modes">
+        <item>Lieve</item>
         <item>Moderato</item>
         <item>Estremo</item>
     </string-array>
+
+    <string-array name="bassboost_modes">
+        <item>Lieve</item>
+        <item>Moderato</item>
+        <item>Estremo</item>
 
 
 </resources>
