@@ -6,13 +6,14 @@
         <item>Большая комната</item>
         <item>Арена</item>
     </string-array>
-	<string-array name="compression_modes">
-		<item>Слабый</item>
-		<item>Умеренный</item>
-		<item>Экстримальный</item>
-	</string-array>
-	<string-array name="bassboost_modes">
-	<item>Слабый</item>
-	<item>Умеренный</item>
-	<item>Экстримальный</item>
+    <string-array name="compression_modes">
+        <item>Слабый</item>
+        <item>Умеренный</item>
+        <item>Экстримальный</item>
+    </string-array>
+    <string-array name="bassboost_modes">
+        <item>Слабый</item>
+        <item>Умеренный</item>
+        <item>Экстримальный</item>
+    </string-array>
 </resources>
