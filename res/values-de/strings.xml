@@ -17,6 +17,10 @@
     <string name="pref_equalizer_summary_on">Equalizer ist eingeschaltet</string>
     <string name="pref_equalizer_summary_off">Equalizer ist ausgeschaltet</string>
     <string name="pref_equalizer_enable">Einschalten</string>
+    <string name="pref_bassboost_title">Bass-Verstärkung</string>
+    <string name="pref_bassboost_summary_on">Bass-Verstärkung ist eingeschaltet</string>
+    <string name="pref_bassboost_summary_off">Bass-Verstärkung ist ausgeschaltet</string>
+    <string name="pref_bassboost_enable">Einschalten</string>
     <string name="pref_headset_virtual_title">Virtueller Raumklang</string>
     <string name="pref_headset_virtual_summary_on">Virtueller Raumklang für Kopfhörer ist eingeschaltet</string>
     <string name="pref_headset_virtual_summary_off">Virtueller Raumklang für Kopfhörer ist ausgeschaltet</string>
