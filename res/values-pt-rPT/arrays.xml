@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="headphone_modes">
+        <item>Estúdio</item>
+        <item>Quarto</item>
+        <item>Quarto grande</item>
+        <item>Palco</item>
+    </string-array>
+
+    <string-array name="compression_modes">
+        <item>Pouco</item>
+        <item>Moderado</item>
+        <item>Extremo</item>
+    </string-array>
+
+    <string-array name="bassboost_modes">
+        <item>Pouco</item>
+        <item>Moderado</item>
+        <item>Extremo</item>
+    </string-array>
+</resources>

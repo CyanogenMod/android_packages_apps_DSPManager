@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Seleccione a Configuração Para Editar</string>
+    <string name="headset_title">Auriculares</string>
+    <string name="speaker_title">Coluna do Telemóvel</string>
+    <string name="bluetooth_title">Dispositivo Bluetooth</string>
+    <string name="dsp_settings">Definições DSP</string>
+    <string name="pref_dsp_title">Compressão da Faixa Dinâmica</string>
+    <string name="pref_dsp_summary_on">Compressão está activada</string>
+    <string name="pref_dsp_summary_off">Compressão está desactivada</string>
+    <string name="pref_dsp_enable">Activar</string>
+    <string name="pref_effect_title">Seleccionar Intensidade do Efeito</string>
+    <string name="dialog_effect">Intensidade do Efeito</string>
+    <string name="pref_equalizer_title">Equalizador</string>
+    <string name="pref_equalizer_summary_on">Equalizador está activado</string>
+    <string name="pref_equalizer_summary_off">Equalizador está desactivado</string>
+    <string name="pref_equalizer_enable">Activar</string>
+    <string name="pref_bassboost_title">Aumento dos Baixos</string>
+    <string name="pref_bassboost_summary_on">Aumento dos baixos está activado</string>
+    <string name="pref_bassboost_summary_off">Aumento dos baixos está desactivado</string>
+    <string name="pref_bassboost_enable">Activar</string>
+    <string name="pref_headset_virtual_title">Efeito de Auriculares Quarto Virtual</string>
+    <string name="pref_headset_virtual_summary_on">Efeito de Auriculares Quarto Virtual está activado</string>
+    <string name="pref_headset_virtual_summary_off">Efeito de Auriculares Quarto Virtual está desactivado</string>
+    <string name="pref_headset_virtual_enable">Activar</string>
+    <string name="pref_room_title">Seleccionar Tipo de Quarto</string>
+    <string name="dialog_room">Tipo de Quarto</string>
+    <string name="menu_reset">Restaurar</string>
+</resources>
