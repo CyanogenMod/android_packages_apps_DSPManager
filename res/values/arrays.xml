@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="headphone_modes">
-        <item>Studio</item>
-        <item>Room</item>
-        <item>Large room</item>
-        <item>Stage</item>
+  <string-array name="headphone_modes">
+    <item>Studio</item>
+    <item>Room</item>
+    <item>Large room</item>
+    <item>Stage</item>
     </string-array><string-array name="headphone_modes_values"><item>0</item>
-<item>333</item>
-<item>666</item>
-<item>1000</item>
-</string-array>
+    <item>333</item>
+    <item>666</item>
+    <item>1000</item>
+  </string-array>
 
-<string-array name="compression_modes"><item>Slight</item>
-<item>Moderate</item>
-<item>Extreme</item>
+  <string-array name="compression_modes">
+    <item>Slight</item>
+    <item>Moderate</item>
+    <item>Extreme</item>
+  </string-array>
 
-</string-array>
-<string-array name="compression_modes_values"><item>0</item>
-<item>500</item>
-<item>1000</item>
-</string-array>
+  <string-array name="compression_modes_values">
+    <item>0</item>
+    <item>500</item>
+    <item>1000</item>
+  </string-array>
 
-<string-array name="bassboost_modes"><item>Slight</item>
-<item>Moderate</item>
-<item>Extreme</item>
+  <string-array name="bassboost_modes">
+    <item>Slight</item>
+    <item>Moderate</item>
+    <item>Extreme</item>
+  </string-array>
 
-</string-array>
-<string-array name="bassboost_modes_values"><item>0</item>
-<item>500</item>
-<item>1000</item>
-</string-array>
-
+  <string-array name="bassboost_modes_values">
+    <item>0</item>
+    <item>500</item>
+    <item>1000</item>
+  </string-array>
 </resources>
