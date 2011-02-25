@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Konfiguráció kiválasztása szerkesztésre</string>
+    <string name="headset_title">Fejhallgató</string>
+    <string name="speaker_title">Telefon hangszóró</string>
+    <string name="bluetooth_title">Bluetooth-eszköz</string>
+    <string name="dsp_settings">DSP beállítások</string>
+    <string name="pref_dsp_title">Dinamikus Tömörítési Tartomány</string>
+    <string name="pref_dsp_summary_on">Tömörítés engedélyezve</string>
+    <string name="pref_dsp_summary_off">Tömörítés letiltva</string>
+    <string name="pref_dsp_enable">Engedélyezés</string>
+    <string name="pref_effect_title">Effekt erősség választása</string>
+    <string name="dialog_effect">Effekt erősség</string>
+    <string name="pref_equalizer_title">Hangszínszabályzó</string>
+    <string name="pref_equalizer_summary_on">Hangszínszabályzó engedélyezve</string>
+    <string name="pref_equalizer_summary_off">Hangszínszabályzó letiltva</string>
+    <string name="pref_equalizer_enable">Engedélyezve</string>
+    <string name="pref_bassboost_title">Mélyhang kiemelése</string>
+    <string name="pref_bassboost_summary_on">Mélyhang kiemelése engedélyezve</string>
+    <string name="pref_bassboost_summary_off">Mélyhang kiemelése engedélyezve</string>
+    <string name="pref_bassboost_enable">Engedélyezve</string>
+    <string name="pref_headset_virtual_title">Fejhallgató virtuális szoba-hatás</string>
+    <string name="pref_headset_virtual_summary_on">Fejhallgató virtuális szoba-hatás engedélyezve</string>
+    <string name="pref_headset_virtual_summary_off">Fejhallgató virtuális szoba-hatás letiltva</string>
+    <string name="pref_headset_virtual_enable">Engedélyezve</string>
+    <string name="pref_room_title">Szoba típusának kiválasztása</string>
+    <string name="dialog_room">Szoba típusa</string>
+    <string name="menu_reset">Visszaállítás</string>
+</resources>
