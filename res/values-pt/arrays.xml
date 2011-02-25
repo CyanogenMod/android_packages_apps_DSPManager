@@ -11,4 +11,9 @@
         <item>Moderado</item>
         <item>Extremo</item>
     </string-array>
+    <string-array name="bassboost_modes">
+    	<item>Leve</item>
+    	<item>Moderado</item>
+    	<item>Extremo</item>
+    </string-array>
 </resources>
