@@ -5,7 +5,10 @@
     <item>Room</item>
     <item>Large room</item>
     <item>Stage</item>
-    </string-array><string-array name="headphone_modes_values"><item>0</item>
+  </string-array>
+
+  <string-array name="headphone_modes_values" translatable="false">
+    <item>0</item>
     <item>333</item>
     <item>666</item>
     <item>1000</item>
@@ -17,7 +20,7 @@
     <item>Extreme</item>
   </string-array>
 
-  <string-array name="compression_modes_values">
+  <string-array name="compression_modes_values" translatable="false">
     <item>0</item>
     <item>500</item>
     <item>1000</item>
@@ -29,7 +32,7 @@
     <item>Extreme</item>
   </string-array>
 
-  <string-array name="bassboost_modes_values">
+  <string-array name="bassboost_modes_values" translatable="false">
     <item>0</item>
     <item>500</item>
     <item>1000</item>
