@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">數位訊號處理（DSP）總管</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">選擇要編輯的設置</string>
+    <string name="headset_title">有線耳機</string>
+    <string name="speaker_title">手機喇叭</string>
+    <string name="bluetooth_title">藍牙裝置</string>
+    <string name="dsp_settings">數位訊號處理（DSP）設定</string>
+    <string name="pref_dsp_title">動態範圍壓縮（DRC）</string>
+    <string name="pref_dsp_summary_on">已啟用壓縮</string>
+    <string name="pref_dsp_summary_off">已停用壓縮</string>
+    <string name="pref_dsp_enable">使用壓縮</string>
+    <string name="pref_effect_title">選擇效果程度</string>
+    <string name="dialog_effect">效果程度</string>
+    <string name="pref_equalizer_title">等化器</string>
+    <string name="pref_equalizer_summary_on">已啟用等化器</string>
+    <string name="pref_equalizer_summary_off">已停用等化器</string>
+    <string name="pref_equalizer_enable">使用等化器</string>
+    <string name="pref_bassboost_title">低音強化</string>
+    <string name="pref_bassboost_summary_on">已啟用低音強化</string>
+    <string name="pref_bassboost_summary_off">已停用低音強化</string>
+    <string name="pref_bassboost_enable">使用低音強化</string>
+    <string name="pref_headset_virtual_title">耳機虛擬室內效果</string>
+    <string name="pref_headset_virtual_summary_on">已啟用耳機虛擬室內</string>
+    <string name="pref_headset_virtual_summary_off">已停用耳機虛擬室內</string>
+    <string name="pref_headset_virtual_enable">使用耳機虛擬室內</string>
+    <string name="pref_room_title">選擇房間種類</string>
+    <string name="dialog_room">房間種類</string>
+    <string name="menu_reset">重設</string>
+</resources>
