@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">數位訊號處理（DSP）總管</string>
+    <string name="app_name">DSP 總管</string>
     <string name="dB">+0 dB</string>
     <string name="select_configuration_title">選擇要編輯的設置</string>
     <string name="headset_title">有線耳機</string>
