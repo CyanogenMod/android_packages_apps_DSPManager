@@ -6,7 +6,9 @@
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Phone Speaker</string>
     <string name="bluetooth_title">Bluetooth Device</string>
-    <string name="dsp_settings">DSP Settings</string>
+    <string name="dsp_settings_headset">DSP Settings - Headset</string>
+    <string name="dsp_settings_speaker">DSP Settings - Phone Speaker</string>
+    <string name="dsp_settings_bluetooth">DSP Settings - Bluetooth Device</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Compression is enabled</string>
     <string name="pref_dsp_summary_off">Compression is disabled</string>
@@ -17,6 +19,7 @@
     <string name="pref_equalizer_summary_on">Equalizer is enabled</string>
     <string name="pref_equalizer_summary_off">Equalizer is disabled</string>
     <string name="pref_equalizer_enable">Enable</string>
+    <string name="pref_equalizer_preset_title">Select Preset</string>
     <string name="pref_bassboost_title">Bass Boost</string>
     <string name="pref_bassboost_summary_on">Bass Boost is enabled</string>
     <string name="pref_bassboost_summary_off">Bass Boost is disabled</string>
@@ -28,4 +31,18 @@
     <string name="pref_room_title">Select Room Type</string>
     <string name="dialog_room">Room Type</string>
     <string name="menu_reset">Reset</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+    <string name="eq_preset_bass_booster">Bass Booster</string>
+    <string name="eq_preset_bass_reducer">Bass Reducer</string>
+    <string name="eq_preset_classical">Classical</string>
+    <string name="eq_preset_deep">Deep</string>
+    <string name="eq_preset_flat">Flat</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Small Speakers</string>
+    <string name="eq_preset_treble_booster">Treble Booster</string>
+    <string name="eq_preset_treble_reducer">Treble Reducer</string>
+    <string name="eq_preset_vocal_booster">Vocal Booster</string>
+    <string name="eq_preset_custom">Custom</string>
 </resources>

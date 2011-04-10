@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/dsp_settings">
+	android:title="@string/dsp_settings_headset">
 	<!-- <PreferenceCategory android:title="@string/pref_dsp_title">
 		<CheckBoxPreference android:key="dsp.compression.enable"
 			android:summaryOn="@string/pref_dsp_summary_on" android:summaryOff="@string/pref_dsp_summary_off"
@@ -28,7 +28,14 @@
 		<CheckBoxPreference android:disableDependentsState="false"
 			android:key="dsp.tone.enable" android:summaryOn="@string/pref_equalizer_summary_on"
 			android:summaryOff="@string/pref_equalizer_summary_off" android:title="@string/pref_equalizer_enable"></CheckBoxPreference>
-		<com.bel.android.dspmanager.preference.EqualizerPreference android:key="dsp.tone.eq"/>
+		<com.bel.android.dspmanager.preference.SummariedListPreference
+			android:entries="@array/equalizer_preset_modes"
+			android:dialogTitle="@string/pref_equalizer_preset_title"
+			android:key="dsp.tone.eq"
+			android:defaultValue="-1337"
+			android:title="@string/pref_equalizer_preset_title"
+			android:entryValues="@array/equalizer_preset_values"/>
+		<com.bel.android.dspmanager.preference.EqualizerPreference android:key="dsp.tone.eq.custom"/>
 	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/pref_headset_virtual_title">

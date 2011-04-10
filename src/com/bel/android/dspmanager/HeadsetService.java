@@ -221,6 +221,11 @@ public class HeadsetService extends Service {
 			/* Equalizer state is in a single string preference with all values separated by ; */
 			equalizer.setEnabled(preferences.getBoolean("dsp.tone.enable", false));
 			String levels[] = preferences.getString("dsp.tone.eq", "0;0;0;0;0").split(";");
+
+			if (levels[0].equals("-1337")) {
+				levels = preferences.getString("dsp.tone.eq.custom", "0;0;0;0;0").split(";");
+			}
+
 			for (short i = 0; i < levels.length; i ++) {
 				equalizer.setBandLevel(i, (short) (Float.valueOf(levels[i]) * 100));
 			}
