@@ -4,9 +4,11 @@
     <string name="dB">+0 dB</string>
     <string name="select_configuration_title">Seleziona Configurazione Da modificare</string>
     <string name="headset_title">Cuffie</string>
-    <string name="speaker_title">Speaker Telefono</string>
+    <string name="speaker_title">Altoparlante Telefono</string>
     <string name="bluetooth_title">Dispositivo Bluetooth</string>
-    <string name="dsp_settings">Impostazioni DSP</string>
+    <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
+    <string name="dsp_settings_speaker">Impostazioni DSP - Altoparlante Telefono</string>
+    <string name="dsp_settings_bluetooth">Impostazioni DSP - Dispositivo Bluetooth</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Compressione attiva</string>
     <string name="pref_dsp_summary_off">Compressione non attiva</string>
@@ -17,9 +19,10 @@
     <string name="pref_equalizer_summary_on">Equalizzatore attivo</string>
     <string name="pref_equalizer_summary_off">Equalizzatore non attivo</string>
     <string name="pref_equalizer_enable">Attiva</string>
-    <string name="pref_bassboost_title">Bass Boost</string>
-    <string name="pref_bassboost_summary_on">Bass Boost attivo</string>
-    <string name="pref_bassboost_summary_off">Bass Boost non attivo</string>
+    <string name="pref_equalizer_preset_title">Seleziona Preset</string>
+    <string name="pref_bassboost_title">Amplificazione Bassi</string>
+    <string name="pref_bassboost_summary_on">Amplificazione Bassi attiva</string>
+    <string name="pref_bassboost_summary_off">Amplificazione Bassi non attiva</string>
     <string name="pref_bassboost_enable">Attiva</string>
     <string name="pref_headset_virtual_title">Effetto Virtual Room</string>
     <string name="pref_headset_virtual_summary_on">Virtual Room attivo</string>
@@ -27,4 +30,18 @@
     <string name="pref_headset_virtual_enable">Attiva</string>
     <string name="pref_room_title">Seleziona Modalità Room</string>
     <string name="dialog_room">Modalità Room</string>
+
+    <string name="eq_preset_acoustic">Acustica</string>
+    <string name="eq_preset_bass_booster">Amplificazione Bassi</string>
+    <string name="eq_preset_bass_reducer">Riduzione Bassi</string>
+    <string name="eq_preset_classical">Classica</string>
+    <string name="eq_preset_deep">Deep</string>
+    <string name="eq_preset_flat">Flat</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Altoparlanti Piccoli</string>
+    <string name="eq_preset_treble_booster">Amplificazione Alti</string>
+    <string name="eq_preset_treble_reducer">Riduzione Alti</string>
+    <string name="eq_preset_vocal_booster">Amplificazione Voce</string>
+    <string name="eq_preset_custom">Manuale</string>
 </resources>
