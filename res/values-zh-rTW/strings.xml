@@ -6,7 +6,9 @@
     <string name="headset_title">有線耳機</string>
     <string name="speaker_title">手機喇叭</string>
     <string name="bluetooth_title">藍牙裝置</string>
-    <string name="dsp_settings">數位訊號處理（DSP）設定</string>
+    <string name="dsp_settings_headset">數位訊號處理（DSP）設定－有線耳機</string>
+    <string name="dsp_settings_speaker">數位訊號處理（DSP）設定－手機喇叭</string>
+    <string name="dsp_settings_bluetooth">數位訊號處理（DSP）設定－藍牙裝置</string>
     <string name="pref_dsp_title">動態範圍壓縮（DRC）</string>
     <string name="pref_dsp_summary_on">已啟用壓縮</string>
     <string name="pref_dsp_summary_off">已停用壓縮</string>
@@ -17,6 +19,7 @@
     <string name="pref_equalizer_summary_on">已啟用等化器</string>
     <string name="pref_equalizer_summary_off">已停用等化器</string>
     <string name="pref_equalizer_enable">使用等化器</string>
+    <string name="pref_equalizer_preset_title">選擇設置</string>
     <string name="pref_bassboost_title">低音強化</string>
     <string name="pref_bassboost_summary_on">已啟用低音強化</string>
     <string name="pref_bassboost_summary_off">已停用低音強化</string>
@@ -28,4 +31,18 @@
     <string name="pref_room_title">選擇房間種類</string>
     <string name="dialog_room">房間種類</string>
     <string name="menu_reset">重設</string>
+
+    <string name="eq_preset_acoustic">原音音樂</string>
+    <string name="eq_preset_bass_booster">低音強化</string>
+    <string name="eq_preset_bass_reducer">低音弱化</string>
+    <string name="eq_preset_classical">古典音樂</string>
+    <string name="eq_preset_deep">深沉</string>
+    <string name="eq_preset_flat">平淡</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">搖滾音樂</string>
+    <string name="eq_preset_small_speakers">小型喇叭</string>
+    <string name="eq_preset_treble_booster">高音強化</string>
+    <string name="eq_preset_treble_reducer">高音弱化</string>
+    <string name="eq_preset_vocal_booster">人聲強化</string>
+    <string name="eq_preset_custom">自訂</string>
 </resources>
