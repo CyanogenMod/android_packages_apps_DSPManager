@@ -28,4 +28,19 @@
     <string name="pref_room_title">Selecione o ambiente</string>
     <string name="dialog_room">Simulação de ambiente</string>
     <string name="menu_reset">Resetar</string>
+    <string name="dsp_settings_headset">Configurações Equalizador - Fone de Ouvido</string>
+    <string name="dsp_settings_speaker">Configurações Equalizador - Alto-falante</string>
+    <string name="dsp_settings_bluetooth">Configurações Equalizador - Dispositivo Bluetooth</string>
+    <string name="pref_equalizer_preset_title">Selecionar Predifinidos</string>
+    <string name="eq_preset_acoustic">Acústico</string>
+    <string name="eq_preset_bass_booster">Ganho de Grave</string>
+    <string name="eq_preset_bass_reducer">Redução de Grave</string>
+    <string name="eq_preset_classical">Clássico</string>
+    <string name="eq_preset_custom">Personalizado</string>
+    <string name="eq_preset_vocal_booster">Ganho de Voz</string>
+    <string name="eq_preset_treble_reducer">Redução de Agudo</string>
+    <string name="eq_preset_treble_booster">Ganho de Agudo</string>
+    <string name="eq_preset_small_speakers">Alto-falantes Pequenos</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_r_and_b">R&B</string>
 </resources>
