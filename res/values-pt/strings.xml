@@ -42,5 +42,5 @@
     <string name="eq_preset_treble_booster">Ganho de Agudo</string>
     <string name="eq_preset_small_speakers">Alto-falantes Pequenos</string>
     <string name="eq_preset_rock">Rock</string>
-    <string name="eq_preset_r_and_b">R&B</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
 </resources>
