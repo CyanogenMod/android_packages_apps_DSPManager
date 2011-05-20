@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DSPManager</string>
+    <string name="dB">+0 dB</string>
+    <string name="select_configuration_title">Selecteer configuratie om aan te passen</string>
+    <string name="headset_title">Koptelefoon</string>
+    <string name="speaker_title">Telefoon Speaker</string>
+    <string name="bluetooth_title">Bluetooth Apparaat</string>
+    <string name="dsp_settings_headset">DSP Instellingen - Koptelefoon</string>
+    <string name="dsp_settings_speaker">DSP Instellingen - Telefoon Speaker</string>
+    <string name="dsp_settings_bluetooth">DSP Instellingen - Bluetooth Apparaat</string>
+    <string name="pref_dsp_title">Dynamic Range Compressie</string>
+    <string name="pref_dsp_summary_on">Compressie is ingeschakeld</string>
+    <string name="pref_dsp_summary_off">Compressie is uitgeschakeld</string>
+    <string name="pref_dsp_enable">Activeren</string>
+    <string name="pref_effect_title">Selecteer Effect Sterkte</string>
+    <string name="dialog_effect">Effect Sterkte</string>
+    <string name="pref_equalizer_title">Equalizer</string>
+    <string name="pref_equalizer_summary_on">Equalizer is ingeschakeld</string>
+    <string name="pref_equalizer_summary_off">Equalizer is uitgeschakeld</string>
+    <string name="pref_equalizer_enable">Activeren</string>
+    <string name="pref_equalizer_preset_title">Selecteer Preset</string>
+    <string name="pref_bassboost_title">Bass Boost</string>
+    <string name="pref_bassboost_summary_on">Bass Boost is ingeschakeld</string>
+    <string name="pref_bassboost_summary_off">Bass Boost is uitgeschakeld</string>
+    <string name="pref_bassboost_enable">Activeren</string>
+    <string name="pref_headset_virtual_title">Headset Virtuele Ruimte Effect</string>
+    <string name="pref_headset_virtual_summary_on">Headset Virtuele Ruimte is ingeschakeld</string>
+    <string name="pref_headset_virtual_summary_off">Headset Virtuele Ruimte is uitgeschakeld</string>
+    <string name="pref_headset_virtual_enable">Activeren</string>
+    <string name="pref_room_title">Select Type ruimte</string>
+    <string name="dialog_room">Ruimte type</string>
+    <string name="menu_reset">Reset</string>
+
+    <string name="eq_preset_acoustic">Akoestiek</string>
+    <string name="eq_preset_bass_booster">Bass Booster</string>
+    <string name="eq_preset_bass_reducer">Minder Bass</string>
+    <string name="eq_preset_classical">Klassiek</string>
+    <string name="eq_preset_deep">Diep</string>
+    <string name="eq_preset_flat">Oppervlakkig</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Kleine Speakers</string>
+    <string name="eq_preset_treble_booster">Treble Booster</string>
+    <string name="eq_preset_treble_reducer">Minder Treble</string>
+    <string name="eq_preset_vocal_booster">Stem Booster</string>
+    <string name="eq_preset_custom">Aangepast</string>
+</resources>
