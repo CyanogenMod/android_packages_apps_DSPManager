@@ -6,8 +6,10 @@
     <string name="headset_title">Zestaw słuchawkowy</string>
     <string name="speaker_title">Głośnik</string>
     <string name="bluetooth_title">Urządzenie Bluetooth</string>
-    <string name="dsp_settings">Ustawienia DSP</string>
-    <string name="pref_dsp_title">Kompresja zakresu dynamiki</string>
+    <string name="dsp_settings_headset">Ustawienia DSP - Zestaw słuchawkowy</string>
+    <string name="dsp_settings_speaker">Ustawienia DSP - Głośnik</string>
+    <string name="dsp_settings_bluetooth">Ustawienia DSP - Bluetooth</string>
+    <string name="pref_dsp_title">Kompresja dynamiki</string>
     <string name="pref_dsp_summary_on">Kompresja jest włączona</string>
     <string name="pref_dsp_summary_off">Kompresja jest wyłączona</string>
     <string name="pref_dsp_enable">Włącz</string>
@@ -17,6 +19,7 @@
     <string name="pref_equalizer_summary_on">Equalizer jest aktywny</string>
     <string name="pref_equalizer_summary_off">Equalizer jest nieaktywny</string>
     <string name="pref_equalizer_enable">Włącz</string>
+    <string name="pref_equalizer_preset_title">Wybierz ustawienie</string>
     <string name="pref_bassboost_title">Podbicie basu</string>
     <string name="pref_bassboost_summary_on">Podbicie basu jest włączone</string>
     <string name="pref_bassboost_summary_off">Podbicie basu jest wyłączone</string>
@@ -28,4 +31,18 @@
     <string name="pref_room_title">Wybierz typ pokoju</string>
     <string name="dialog_room">Typ pokoju</string>
     <string name="menu_reset">Przywróć domyślne</string>
+
+    <string name="eq_preset_acoustic">Akustyczna</string>
+    <string name="eq_preset_bass_booster">Podbicie basu</string>
+    <string name="eq_preset_bass_reducer">Redukcja basu</string>
+    <string name="eq_preset_classical">Klasyczna</string>
+    <string name="eq_preset_deep">Głęboko</string>
+    <string name="eq_preset_flat">Płasko</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Małe głośniki</string>
+    <string name="eq_preset_treble_booster">Podbicie tonów wysokich</string>
+    <string name="eq_preset_treble_reducer">Redukcja tonów wysokich</string>
+    <string name="eq_preset_vocal_booster">Podbicie wokalu</string>
+    <string name="eq_preset_custom">Własne</string>
 </resources>
