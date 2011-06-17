@@ -38,7 +38,7 @@ public final class DSPScreen extends PreferenceActivity {
 		super.onCreate(savedInstanceState);
 
 		try {
-			addPreferencesFromResource((Integer) this.getResources().getIdentifier(getSubPage() + "_preferences","xml",this.getPackageName()));
+			addPreferencesFromResource(this.getResources().getIdentifier(getSubPage() + "_preferences","xml",this.getPackageName()));
 		}
 		catch (Exception e) {
 			throw new RuntimeException(e);

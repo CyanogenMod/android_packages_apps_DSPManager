@@ -10,7 +10,7 @@ import android.view.View.OnTouchListener;
 import com.bel.android.dspmanager.R;
 
 public class EqualizerPreference extends DialogPreference {
-	private EqualizerSurface listEqualizer, dialogEqualizer;
+	protected EqualizerSurface listEqualizer, dialogEqualizer;
 	private final float[] levels = new float[5];
 	
 	public EqualizerPreference(Context context, AttributeSet attributeSet) {
@@ -67,7 +67,7 @@ public class EqualizerPreference extends DialogPreference {
 		}
 	}
 	
-	private void refreshPreferenceFromEqualizer(EqualizerSurface equalizer) {
+	protected void refreshPreferenceFromEqualizer(EqualizerSurface equalizer) {
 		String levelString = "";
 		for (int i = 0; i < 5; i ++) {
 			float value = equalizer.getBand(i);

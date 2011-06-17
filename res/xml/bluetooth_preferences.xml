@@ -2,13 +2,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/dsp_settings_bluetooth">
-	<!-- <PreferenceCategory android:title="@string/pref_dsp_title">
+	<PreferenceCategory android:title="@string/pref_dsp_title">
 		<CheckBoxPreference android:key="dsp.compression.enable"
 			android:summaryOn="@string/pref_dsp_summary_on" android:summaryOff="@string/pref_dsp_summary_off"
 			android:disableDependentsState="false" android:title="@string/pref_dsp_enable"></CheckBoxPreference>
 		<com.bel.android.dspmanager.preference.SummariedListPreference
-			android:dialogTitle="@string/dialog_effect" android:entries="@array/compression_modes" android:defaultValue="dsp.compression.ratio=1.414" android:title="@string/pref_effect_title" android:key="0" android:entryValues="@array/compression_modes_values"/>
-	</PreferenceCategory> -->
+			android:dialogTitle="@string/dialog_effect" android:entries="@array/compression_modes" android:defaultValue="50" android:title="@string/pref_effect_title" android:key="0" android:entryValues="@array/compression_modes_values"/>
+	</PreferenceCategory>
 
 	<PreferenceCategory android:title="@string/pref_bassboost_title">
 		<CheckBoxPreference android:disableDependentsState="false"
