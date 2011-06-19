@@ -33,7 +33,7 @@
 		<service android:exported="false" android:enabled="true"
 			android:name=".HeadsetService">
 			<intent-filter>
-				<action android:name="com.bel.android.dspmanager.HEADSET_PLUG" />
+				<action android:name="com.bel.android.dspmanager.HEADSET_SERVICE"/>
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 		</service>
@@ -41,10 +41,6 @@
 		<receiver android:name=".ServiceLaunchReceiver">
 			<intent-filter>
 				<action android:name="android.intent.action.BOOT_COMPLETED" />
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-			<intent-filter>
-				<action android:name="com.bel.android.dspmanager.UPDATE" />
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 		</receiver>

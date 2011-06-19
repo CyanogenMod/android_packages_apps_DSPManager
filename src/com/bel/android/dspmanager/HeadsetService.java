@@ -40,13 +40,15 @@ import com.bel.android.dspmanager.activity.DSPManager;
  * @author alankila
  */
 public class HeadsetService extends Service {
+	public static final String NAME = "com.bel.android.dspmanager.HEADSET_SERVICE";
+
 	protected static final String TAG = HeadsetService.class.getSimpleName();
 
 	public static final UUID EFFECT_TYPE_VOLUME = UUID.fromString("09e8ede0-ddde-11db-b4f6-0002a5d5c51b");
 	
     public static final UUID EFFECT_TYPE_NULL = UUID.fromString("ec7178ec-e5e1-4432-a3f4-4657e6795210");
 
-        protected Map<Integer, AudioEffect> compressionSessions = new HashMap<Integer, AudioEffect>();
+    protected Map<Integer, AudioEffect> compressionSessions = new HashMap<Integer, AudioEffect>();
 
     private AudioManager mAudioManager;
 	private Equalizer equalizer;
@@ -116,11 +118,11 @@ public class HeadsetService extends Service {
 		public void onCallStateChanged(int state, String incomingNumber) {
 			switch (state) {
 			default:
-				Log.i(TAG, "Disabling DSP during call.");
+				Log.i(TAG, "During phone call: disable DSP.");
 				inCall = true;
 				break;
 			case TelephonyManager.CALL_STATE_IDLE:
-				Log.i(TAG, "Enabling DSP after call has ended.");
+				Log.i(TAG, "Phone status idle: enable DSP.");
 				inCall = false;
 				break;
 			}
@@ -147,9 +149,9 @@ public class HeadsetService extends Service {
 		audioFilter.addAction(AudioEffect.ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION);
 		registerReceiver(audioSessionReceiver, audioFilter);
 		registerReceiver(headsetReceiver, new IntentFilter(Intent.ACTION_HEADSET_PLUG));
-		registerReceiver(preferenceUpdateReceiver, new IntentFilter("com.bel.android.dspmanager.UPDATE"));
+		registerReceiver(preferenceUpdateReceiver, new IntentFilter(DSPManager.ACTION_UPDATE_PREFERENCES));
 		Context context = getApplicationContext();
-		mAudioManager = (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
+		mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 	}
 	
 	@Override
@@ -159,7 +161,7 @@ public class HeadsetService extends Service {
 
 		stopForeground(true);
 		
-                unregisterReceiver(audioSessionReceiver);
+		unregisterReceiver(audioSessionReceiver);
 		unregisterReceiver(headsetReceiver);
 		unregisterReceiver(preferenceUpdateReceiver);
 		TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
@@ -189,13 +191,12 @@ public class HeadsetService extends Service {
 		}
 		SharedPreferences preferences = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode, 0);
 
-                for (AudioEffect compression : compressionSessions.values()) {
+		for (AudioEffect compression : compressionSessions.values()) {
 			compression.setEnabled(preferences.getBoolean("dsp.compression.enable", false));
-			String strength = preferences.getString("dsp.compression.mode", "0");
-                        short v = Short.valueOf(strength);
+			short strength = Short.valueOf(preferences.getString("dsp.compression.mode", "0"));
 			try {
 				Method setParameter = AudioEffect.class.getMethod("setParameter", byte[].class, byte[].class);
-				setParameter.invoke(compression, new byte[] { 0, 0, 0, 0, (byte) (v & 0xff), (byte) (v >> 8) }, new byte[4]);
+				setParameter.invoke(compression, new byte[] { 0, 0, 0, 0, (byte) (strength & 0xff), (byte) (strength >> 8) }, new byte[] { 0, 0, 0, 0 });
 				/* Return array ignored, anyway... */
 			}
 			catch (Exception e) {
