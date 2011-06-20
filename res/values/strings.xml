@@ -20,7 +20,7 @@
     <string name="pref_equalizer_summary_off">Equalizer is disabled</string>
     <string name="pref_equalizer_enable">Enable</string>
     <string name="pref_equalizer_preset_title">Select Preset</string>
-    <string name="pref_bassboost_title">Bass Boost</string>
+    <string name="pref_equalizer_loudness_title">Loudness compensation</string><string name="pref_bassboost_title">Bass Boost</string>
     <string name="pref_bassboost_summary_on">Bass Boost is enabled</string>
     <string name="pref_bassboost_summary_off">Bass Boost is disabled</string>
     <string name="pref_bassboost_enable">Enable</string>
@@ -45,4 +45,5 @@
     <string name="eq_preset_treble_reducer">Treble Reducer</string>
     <string name="eq_preset_vocal_booster">Vocal Booster</string>
     <string name="eq_preset_custom">Custom</string>
+    
 </resources>

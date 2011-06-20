@@ -224,6 +224,17 @@ public class HeadsetService extends Service {
 			for (short i = 0; i < levels.length; i ++) {
 				equalizer.setBandLevel(i, (short) (Float.valueOf(levels[i]) * 100));
 			}
+
+			/* Send custom loudness instruction. */
+			short loudness = Short.valueOf(preferences.getString("dsp.tone.loudness", "10000"));
+			try {
+				Method setParameter = AudioEffect.class.getMethod("setParameter", byte[].class, byte[].class);
+				setParameter.invoke(equalizer, new byte[] { (byte) (1000 & 0xff), (byte) (1000 >> 8), 0, 0, (byte) (loudness & 0xff), (byte) (loudness >> 8) }, new byte[] { 0, 0, 0, 0 });
+				/* Return array ignored, anyway... */
+			}
+			catch (Exception e) {
+				throw new RuntimeException(e);
+			}
 		}
 
 		{

@@ -30,6 +30,26 @@
     <item>@string/eq_preset_custom</item>
   </string-array>
 
+  <string-array name="equalizer_loudness_modes">
+      <item>Disabled</item>
+      <item>Weakest</item>
+      <item>Weaker</item>
+      <item>Weak</item>
+      <item>Strong</item>
+      <item>Stronger</item>
+      <item>Strongest</item>
+  </string-array>
+  
+  <string-array name="equalizer_loudness_values">
+      <item>10000</item>
+      <item>5000</item>
+      <item>4000</item>
+      <item>3000</item>
+      <item>2000</item>
+      <item>1000</item>
+      <item>0</item>
+  </string-array>
+  
   <string-array name="equalizer_preset_values" translatable="false">
     <item>4.5;3.5;1.75;3.5;2.5;</item>      <!-- Acoustic -->
     <item>6.5;4.0;0.0;0.0;0.0;</item>       <!-- Bass Booster -->
@@ -69,4 +89,6 @@
     <item>500</item>
     <item>1000</item>
   </string-array>
+  
+  
 </resources>
