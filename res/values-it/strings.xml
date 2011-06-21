@@ -20,16 +20,17 @@
     <string name="pref_equalizer_summary_off">Equalizzatore non attivo</string>
     <string name="pref_equalizer_enable">Attiva</string>
     <string name="pref_equalizer_preset_title">Seleziona Preset</string>
+    <string name="pref_equalizer_loudness_title">Loudness</string>
     <string name="pref_bassboost_title">Amplificazione Bassi</string>
     <string name="pref_bassboost_summary_on">Amplificazione Bassi attiva</string>
     <string name="pref_bassboost_summary_off">Amplificazione Bassi non attiva</string>
     <string name="pref_bassboost_enable">Attiva</string>
-    <string name="pref_headset_virtual_title">Effetto Virtual Room</string>
-    <string name="pref_headset_virtual_summary_on">Virtual Room attivo</string>
-    <string name="pref_headset_virtual_summary_off">Virtual Room non attivo</string>
+    <string name="pref_headset_virtual_title">Effetto Stanza Virtuale</string>
+    <string name="pref_headset_virtual_summary_on">Stanza Virtuale attiva</string>
+    <string name="pref_headset_virtual_summary_off">Stanza Virtuale non attiva</string>
     <string name="pref_headset_virtual_enable">Attiva</string>
-    <string name="pref_room_title">Seleziona Modalità Room</string>
-    <string name="dialog_room">Modalità Room</string>
+    <string name="pref_room_title">Seleziona Stanza</string>
+    <string name="dialog_room">Tipologia di Stanza</string>
 
     <string name="eq_preset_acoustic">Acustica</string>
     <string name="eq_preset_bass_booster">Amplificazione Bassi</string>
