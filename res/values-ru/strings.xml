@@ -20,6 +20,7 @@
     <string name="pref_equalizer_summary_off">Эквалайзер выключен</string>
     <string name="pref_equalizer_enable">Включить</string>
     <string name="pref_equalizer_preset_title">Выбор предустановок</string>
+    <string name="pref_equalizer_loudness_title">Тонкомпенсация</string>
     <string name="pref_bassboost_title">Низкие частоты</string>
     <string name="pref_bassboost_summary_on">Низкие частоты включены</string>
     <string name="pref_bassboost_summary_off">Низкие частоты выключены</string>

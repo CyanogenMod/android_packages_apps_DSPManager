@@ -16,4 +16,13 @@
         <item>Умеренный</item>
         <item>Экстримальный</item>
     </string-array>
+  <string-array name="equalizer_loudness_modes">
+      <item>Откл.</item>
+      <item>Слабейшая</item>
+      <item>Слабее</item>
+      <item>Слабая</item>
+      <item>Сильная</item>
+      <item>Сильнее</item>
+      <item>Сильнейшая</item>
+  </string-array>
 </resources>
