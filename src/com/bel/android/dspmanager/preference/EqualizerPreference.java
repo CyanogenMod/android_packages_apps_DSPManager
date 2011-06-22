@@ -1,8 +1,11 @@
 package com.bel.android.dspmanager.preference;
 
+import java.util.Locale;
+
 import android.content.Context;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -71,8 +74,10 @@ public class EqualizerPreference extends DialogPreference {
 		String levelString = "";
 		for (int i = 0; i < 5; i ++) {
 			float value = equalizer.getBand(i);
-			levelString += value + ";";
+			/* Rounding is to canonicalize -0.0 to 0.0. */
+			levelString += String.format(Locale.ROOT, "%.1f", Math.round(value * 10.f) / 10.f) + ";";
 		}
+		Log.i("tmp", levelString);
 		EqualizerPreference.this.persistString(levelString);
 	}
 
@@ -94,5 +99,9 @@ public class EqualizerPreference extends DialogPreference {
 				levels[i] = Float.valueOf(levelsStr[i]);
 			}
 		}
+	}
+	
+	public void refreshFromPreference() {
+		onSetInitialValue(true, "0.0;0.0;0.0;0.0;0.0;");
 	}
 }

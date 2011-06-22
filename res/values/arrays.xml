@@ -63,7 +63,7 @@
     <item>0.0;0.0;0.0;4.0;6.5;</item>       <!-- Treble Booster -->
     <item>0.0;0.0;0.0;-6.5;-4.0;</item>     <!-- Treble Reducer -->
     <item>-2.5;0.0;3.5;1.5;-2.0;</item>     <!-- Vocal Booster -->
-    <item>-1337</item>                      <!-- Custom -->
+    <item>custom</item>                      <!-- Custom -->
   </string-array>
 
   <string-array name="compression_modes">

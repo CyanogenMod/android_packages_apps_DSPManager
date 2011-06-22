@@ -22,12 +22,10 @@ public class EqualizerSurface extends SurfaceView {
 	private int barwidth;
 	
 	float[] levels = new float[5];
-	private final Paint white, gray, green, blue, purple, red;
+	private final Paint white, whiteCentered, gray, green, blue, purple, red;
 	
 	public EqualizerSurface(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
-
-		/* Also, these fuckers by default disable their own drawing. WTF? */
 		setWillNotDraw(false);
 		
 		white = new Paint();
@@ -35,6 +33,9 @@ public class EqualizerSurface extends SurfaceView {
 		white.setStyle(Style.STROKE);
 		white.setTextSize(13);
 		white.setAntiAlias(true);
+		
+		whiteCentered = new Paint(white);
+		whiteCentered.setTextAlign(Paint.Align.CENTER);
 		
 		gray = new Paint();
 		gray.setColor(0x22ffffff);
@@ -51,7 +52,6 @@ public class EqualizerSurface extends SurfaceView {
 		purple.setStyle(Style.STROKE);
 		
 		blue = new Paint();
-		//blue.setColor(0xff1E90FF);
 		blue.setColor(0x880000ff);
 		blue.setStyle(Style.FILL_AND_STROKE);
 		blue.setStrokeWidth(1);
@@ -140,8 +140,6 @@ public class EqualizerSurface extends SurfaceView {
 		biquads[2].setHighShelf(4000f / 2, SAMPLING_RATE, levels[3] - levels[2], 1f);
 		biquads[3].setHighShelf(16000f / 2, SAMPLING_RATE, levels[4] - levels[3], 1f);
 		
-		/* Now evaluate the tone filter. This is a duplication of the filter design in AudioDSP.
-		 * The real filter is integer-based and suffers from approximations, which are not modeled. */
 		float oldx = -1;
 		float olddB = 0;
 		//float olds = 0;
@@ -180,12 +178,7 @@ public class EqualizerSurface extends SurfaceView {
 			float x = projectX(freq) * width;
 			float y = projectY(levels[i]) * height;
 			canvas.drawLine(x, height/2, x, y, green);
-			if (y < (height/2)) {
-				y -= white.getFontMetrics().ascent;
-			}
-		
-			y = height / 2;
-			canvas.drawText(String.format("%1.1f", Math.abs(levels[i])), x, y, white);
+			canvas.drawText(String.format("%1.1f", Math.abs(levels[i])), x, height/2, whiteCentered);
 		}
 	}
 

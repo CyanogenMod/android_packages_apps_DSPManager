@@ -23,4 +23,9 @@ public class SummariedListPreference extends ListPreference {
 			}
 		}
 	}
+
+
+	public void refreshFromPreference() {
+		onSetInitialValue(true, null);
+	}
 }
