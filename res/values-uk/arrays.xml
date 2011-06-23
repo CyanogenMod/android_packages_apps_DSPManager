@@ -6,6 +6,15 @@
     <item>Велика кімната</item>
     <item>Сцена</item>
   </string-array>
+  <string-array name="equalizer_loudness_modes">
+    <item>Вимкнена</item>
+    <item>Найслабкіша</item>
+    <item>Слабкіша</item>
+    <item>Слабка</item>
+    <item>Сильна</item>
+    <item>Сильніша</item>
+    <item>Найсильніша</item>
+  </string-array>
   <string-array name="compression_modes">
     <item>Слабке</item>
     <item>Помірне</item>

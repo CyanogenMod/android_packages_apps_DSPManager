@@ -21,6 +21,7 @@
   <string name="pref_equalizer_summary_off">Еквалайзер вимкнено</string>
   <string name="pref_equalizer_enable">Увімкнути</string>
   <string name="pref_equalizer_preset_title">Напередзадані налаштування</string>
+  <string name="pref_equalizer_loudness_title">Тонкомпенсація</string>
   <string name="pref_bassboost_title">Підсилення НЧ</string>
   <string name="pref_bassboost_summary_on">Підсилення НЧ увімкнено</string>
   <string name="pref_bassboost_summary_off">Підсилення НЧ вимкнено</string>
