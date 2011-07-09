@@ -43,4 +43,7 @@
     <string name="eq_preset_small_speakers">Alto-falantes Pequenos</string>
     <string name="eq_preset_rock">Rock</string>
     <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="pref_equalizer_loudness_title">Compensação de ruído</string>
+    <string name="eq_preset_deep">Profundo</string>
+    <string name="eq_preset_flat">Plano</string>
 </resources>
