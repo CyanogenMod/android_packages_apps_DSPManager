@@ -5,8 +5,10 @@
     <string name="select_configuration_title">Välj Konfiguration Att Ändra</string>
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Telefonhögtalare</string>
-    <string name="bluetooth_title">Bluetooth-Enhet</string>
-    <string name="dsp_settings">DSP-Inställningar</string>
+    <string name="bluetooth_title">Bluetooth-enhet</string>
+    <string name="dsp_settings_headset">DSP-Inställningar - Headset</string>
+    <string name="dsp_settings_speaker">DSP-Inställningar - Telefonhögtalare</string>
+    <string name="dsp_settings_bluetooth">DSP-Inställningar - Bluetooth-enhet</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Kompression är aktiverat</string>
     <string name="pref_dsp_summary_off">Kompression är inaktiverat</string>
@@ -17,6 +19,8 @@
     <string name="pref_equalizer_summary_on">Equalizern är aktiverad</string>
     <string name="pref_equalizer_summary_off">Equalizern är inaktiverad</string>
     <string name="pref_equalizer_enable">Aktivera</string>
+    <string name="pref_equalizer_preset_title">Välj förinställning</string>
+    <string name="pref_equalizer_loudness_title">Kompensering för ljudstyrka</string>
     <string name="pref_bassboost_title">Basförstärkning</string>
     <string name="pref_bassboost_summary_on">Basförstärkning är aktiverat</string>
     <string name="pref_bassboost_summary_off">Basförstärkning är inaktiverat</string>
@@ -28,4 +32,18 @@
     <string name="pref_room_title">Välj rumstyp</string>
     <string name="dialog_room">Rumstyp</string>
     <string name="menu_reset">Återställ</string>
+
+    <string name="eq_preset_acoustic">Akustisk</string>
+    <string name="eq_preset_bass_booster">Basförstärkare</string>
+    <string name="eq_preset_bass_reducer">Basreducerare</string>
+    <string name="eq_preset_classical">Klassisk</string>
+    <string name="eq_preset_deep">Djup</string>
+    <string name="eq_preset_flat">Platt</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Små högtalare</string>
+    <string name="eq_preset_treble_booster">Diskantförstärkare</string>
+    <string name="eq_preset_treble_reducer">Diskantreducerare</string>
+    <string name="eq_preset_vocal_booster">Sångförstärkare</string>
+    <string name="eq_preset_custom">Anpassad</string>
 </resources>
