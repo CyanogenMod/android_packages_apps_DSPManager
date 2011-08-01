@@ -14,7 +14,7 @@
     <item>1000</item>
   </string-array>
 
-  <string-array name="equalizer_preset_modes">
+  <string-array name="equalizer_preset_modes" translatable="false">
     <item>@string/eq_preset_acoustic</item>
     <item>@string/eq_preset_bass_booster</item>
     <item>@string/eq_preset_bass_reducer</item>
@@ -40,7 +40,7 @@
       <item>Strongest</item>
   </string-array>
   
-  <string-array name="equalizer_loudness_values">
+  <string-array name="equalizer_loudness_values" translatable="false">
       <item>10000</item>
       <item>5000</item>
       <item>4000</item>
