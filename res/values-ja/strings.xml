@@ -24,6 +24,7 @@
     <string name="pref_equalizer_summary_on">イコライザは有効</string>
     <string name="pref_equalizer_summary_off">イコライザは無効</string>
     <string name="pref_equalizer_enable">有効にする</string>
+    <string name="pref_equalizer_loudness_title">ラウドネス補正</string>
     <string name="pref_headset_virtual_title">ヘッドセットバーチャルルームエフェクト</string>
     <string name="pref_headset_virtual_summary_on">ヘッドセットバーチャルルームエフェクトは有効</string>
     <string name="pref_headset_virtual_summary_off">ヘッドセットバーチャルルームエフェクトは無効</string>
@@ -31,6 +32,7 @@
     <string name="pref_room_title">部屋のタイプを選択</string>
     <string name="dialog_room">部屋のタイプ</string>
     <string name="menu_reset">リセット</string>
+
 
     <string name="eq_preset_acoustic">アコースティック</string>
     <string name="eq_preset_bass_booster">ベースブースト</string>
