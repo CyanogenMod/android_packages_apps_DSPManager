@@ -2,7 +2,6 @@
 
 <resources>
   <string name="app_name">Менеджер ЦОС</string>
-  <string name="dB">+0 дБ</string>
   <string name="select_configuration_title">Виберіть конфігурацію для редагування</string>
   <string name="headset_title">Гарнітура</string>
   <string name="speaker_title">Динамік телефону</string>
