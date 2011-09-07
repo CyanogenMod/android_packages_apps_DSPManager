@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="select_configuration_title">Zvolte konfiguraci ke změně</string>
+  <string name="headset_title">Sluchátka</string>
+  <string name="speaker_title">Reproduktor</string>
+  <string name="bluetooth_title">Zařízení bluetooth</string>
+  <string name="dsp_settings_headset">Nastavení DSP - sluchátka</string>
+  <string name="dsp_settings_speaker">Nastavení DSP - reproduktor</string>
+  <string name="dsp_settings_bluetooth">Nastavení DSP - zařízení bluetooth</string>
+  <string name="pref_dsp_title">Komprese dynamiky signálu (DRC)</string>
+  <string name="pref_dsp_summary_on">Komprese povolena</string>
+  <string name="pref_dsp_summary_off">Komprese zakázána</string>
+  <string name="pref_dsp_enable">Povolit</string>
+  <string name="pref_effect_title">Zvolte sílu efektu</string>
+  <string name="dialog_effect">Síla efektu</string>
+  <string name="pref_equalizer_title">Ekvalizér</string>
+  <string name="pref_equalizer_summary_on">Ekvalizér povolen</string>
+  <string name="pref_equalizer_summary_off">Ekvalizér zakázán</string>
+  <string name="pref_equalizer_enable">Povolit</string>
+  <string name="pref_equalizer_preset_title">Zvolte předvolbu</string>
+  <string name="pref_equalizer_loudness_title">Kompenzace hlasitosti</string>
+  <string name="pref_bassboost_title">Zvýraznění basů</string>
+  <string name="pref_bassboost_summary_on">Zvýraznění basů povoleno</string>
+  <string name="pref_bassboost_summary_off">Zvýraznění basů zakázáno</string>
+  <string name="pref_bassboost_enable">Povolit</string>
+  <string name="pref_headset_virtual_title">Efekt virtuálního prostoru pro sluchátka</string>
+  <string name="pref_headset_virtual_summary_on">Virtuální prostor povolen</string>
+  <string name="pref_headset_virtual_summary_off">Virtuální prostor zakázán</string>
+  <string name="pref_headset_virtual_enable">Povolit</string>
+  <string name="pref_room_title">Zvolte typ prostoru</string>
+  <string name="dialog_room">Typ prostoru</string>
+  <string name="menu_reset">Vynulovat</string>
+
+  <string name="eq_preset_acoustic">Akustický</string>
+  <string name="eq_preset_bass_booster">Zvýraznění basů</string>
+  <string name="eq_preset_bass_reducer">Potlačení basů</string>
+  <string name="eq_preset_classical">Klasika</string>
+  <string name="eq_preset_deep">Hluboký</string>
+  <string name="eq_preset_flat">Plochý</string>
+  <string name="eq_preset_small_speakers">Malé reproduktory</string>
+  <string name="eq_preset_treble_booster">Zvýraznění výšek</string>
+  <string name="eq_preset_treble_reducer">Potlačení výšek</string>
+  <string name="eq_preset_vocal_booster">Zvýraznění řeči</string>
+  <string name="eq_preset_custom">Vlastní</string>
+
+</resources>

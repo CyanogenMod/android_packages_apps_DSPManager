@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="headphone_modes">
+    <item>Studio</item>
+    <item>Pokoj</item>
+    <item>Hala</item>
+    <item>Stadion</item>
+  </string-array>
+
+  <string-array name="equalizer_loudness_modes">
+    <item>Vypnutý</item>
+    <item>Nejslabší</item>
+    <item>Slabší</item>
+    <item>Slabý</item>
+    <item>Silný</item>
+    <item>Silnější</item>
+    <item>Nejsilnější</item>
+  </string-array>
+
+  <string-array name="compression_modes">
+    <item>Mírný</item>
+    <item>Střední</item>
+    <item>Největší</item>
+  </string-array>
+
+  <string-array name="bassboost_modes">
+    <item>Mírný</item>
+    <item>Střední</item>
+    <item>Největší</item>
+  </string-array>
+
+</resources>
