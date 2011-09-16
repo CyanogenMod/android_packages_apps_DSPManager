@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.SurfaceView;
 
 public class EqualizerSurface extends SurfaceView {
-	public static int MIN_FREQ = 20;
+	public static int MIN_FREQ = 10;
 	public static int MAX_FREQ = 20000;
 	public static int SAMPLING_RATE = 44100;
 	public static int MIN_DB = -10;
@@ -20,8 +20,9 @@ public class EqualizerSurface extends SurfaceView {
 	private int width;
 	private int height;
 	private int barwidth;
-	
-	float[] levels = new float[5];
+
+	/* Fixme: generalize with frequencies read from equalizer object */	
+	private float[] levels = new float[6];
 	private final Paint white, whiteCentered, gray, green, blue, purple, red;
 	
 	public EqualizerSurface(Context context, AttributeSet attributeSet) {
@@ -75,7 +76,7 @@ public class EqualizerSurface extends SurfaceView {
 	}
 
 	public void setBand(int i, float value) {
-		levels[i] = value;		
+		levels[i] = value;
 		postInvalidate();
 	}
 	
@@ -128,6 +129,7 @@ public class EqualizerSurface extends SurfaceView {
 				new Biquad(),
 				new Biquad(),
 				new Biquad(),
+				new Biquad(),
 		};
 		
 		/* The filtering is realized with cascaded 2nd order high shelves, and each band
@@ -135,10 +137,10 @@ public class EqualizerSurface extends SurfaceView {
 		 * 1st band has no previous band, so it's just a fixed gain.
 		 */
 		float gain = (float) Math.pow(10, levels[0] / 20);
-		biquads[0].setHighShelf(250f / 2f, SAMPLING_RATE, levels[1] - levels[0], 1f);
-		biquads[1].setHighShelf(1000f / 2, SAMPLING_RATE, levels[2] - levels[1], 1f);
-		biquads[2].setHighShelf(4000f / 2, SAMPLING_RATE, levels[3] - levels[2], 1f);
-		biquads[3].setHighShelf(16000f / 2, SAMPLING_RATE, levels[4] - levels[3], 1f);
+		for (int i = 0; i < biquads.length; i ++) {
+			float freq = 15.625f * (float) Math.pow(4, i);
+			biquads[i].setHighShelf(freq * 2f, SAMPLING_RATE, levels[i + 1] - levels[i], 1f);
+		}
 		
 		float oldx = -1;
 		float olddB = 0;
@@ -153,13 +155,14 @@ public class EqualizerSurface extends SurfaceView {
 			Complex z3 = biquads[1].evaluateTransfer(z);
 			Complex z4 = biquads[2].evaluateTransfer(z);
 			Complex z5 = biquads[3].evaluateTransfer(z);
+			Complex z6 = biquads[4].evaluateTransfer(z);
 
 			/* Magnitude response, dB */
-			float dB = lin2dB(z1.rho() * z2.rho() * z3.rho() * z4.rho() * z5.rho());
+			float dB = lin2dB(z1.rho() * z2.rho() * z3.rho() * z4.rho() * z5.rho() * z6.rho());
 			float newBb = projectY(dB) * height;
 
 			/* Time delay response, s */
-			//float s = (z1.theta() + z2.theta() + z3.theta() + z4.theta() + z5.theta()) / (float) Math.PI / freq;
+			//float s = (z1.theta() + z2.theta() + z3.theta() + z4.theta() + z5.theta() + z6.theta()) / (float) Math.PI / freq;
 			//float news = projectY(s * 1000) * height;
 			
 			float newx = projectX(freq) * width;
@@ -174,7 +177,7 @@ public class EqualizerSurface extends SurfaceView {
 		}
 		
 		for (int i = 0; i < levels.length; i ++) {
-			float freq = 62.5f * (float) Math.pow(4, i);
+			float freq = 15.625f * (float) Math.pow(4, i);
 			float x = projectX(freq) * width;
 			float y = projectY(levels[i]) * height;
 			canvas.drawLine(x, height/2, x, y, green);
@@ -209,7 +212,7 @@ public class EqualizerSurface extends SurfaceView {
 		int idx = 0;
 		float best = 99999;
 		for (int i = 0; i < levels.length; i ++) {
-			float freq = 62.5f * (float) Math.pow(4, i);
+			float freq = 15.625f * (float) Math.pow(4, i);
 			float cx = projectX(freq) * width;
 			float distance = Math.abs(cx - px);
 			
