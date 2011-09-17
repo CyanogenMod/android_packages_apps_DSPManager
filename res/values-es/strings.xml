@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DSPManager</string>
-    <string name="dB">+0 dB</string>
     <string name="select_configuration_title">Seleccione configuración a editar</string>
     <string name="headset_title">Auriculares</string>
     <string name="speaker_title">Altavoz teléfono</string>
     <string name="bluetooth_title">Dispositivo Bluetooth</string>
-    <string name="dsp_settings">Configuración DSP</string>
     <string name="pref_dsp_title">Rango Dinámico de Compresión</string>
     <string name="pref_dsp_summary_on">Compresión activada</string>
     <string name="pref_dsp_summary_off">Compresión desactivada</string>
