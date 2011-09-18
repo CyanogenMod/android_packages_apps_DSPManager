@@ -5,7 +5,25 @@
     <item>房間</item>
     <item>大房間</item>
     <item>舞台</item>
-    </string-array>
+  </string-array>
+
+  <!-- skipping untranslatable /resources:0/string-array:name=headphone_modes_values -->
+
+  <!-- skipping untranslatable /resources:0/string-array:name=equalizer_preset_modes -->
+
+  <string-array name="equalizer_loudness_modes">
+      <item>停用</item>
+      <item>最弱</item>
+      <item>更弱</item>
+      <item>弱</item>
+      <item>強</item>
+      <item>更強</item>
+      <item>最強</item>
+  </string-array>
+
+  <!-- skipping untranslatable /resources:0/string-array:name=equalizer_loudness_values -->
+
+  <!-- skipping untranslatable /resources:0/string-array:name=equalizer_preset_values -->
 
   <string-array name="compression_modes">
     <item>輕微</item>
@@ -13,10 +31,14 @@
     <item>極端</item>
   </string-array>
 
+  <!-- skipping untranslatable /resources:0/string-array:name=compression_modes_values -->
+
   <string-array name="bassboost_modes">
     <item>輕微</item>
     <item>中等</item>
     <item>極端</item>
   </string-array>
+
+  <!-- skipping untranslatable /resources:0/string-array:name=bassboost_modes_values -->
 
 </resources>
