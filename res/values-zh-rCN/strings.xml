@@ -5,6 +5,13 @@
     <string name="headset_title">耳机</string>
     <string name="speaker_title">电话扬声器</string>
     <string name="bluetooth_title">蓝牙设备</string>
+    <string name="dsp_settings_headset">DSP设置-耳机</string>
+    <string name="dsp_settings_speaker">DSP设置-电话扬声器</string>
+    <string name="dsp_settings_bluetooth">DSP设置-蓝牙设备</string>
+    <string name="pref_equalizer_loudness_title">响度补偿</string>
+    <string name="pref_bassboost_title">低音增强</string>
+    <string name="pref_bassboost_summary_on">开启低音增强</string>
+    <string name="pref_bassboost_summary_off">禁用低音增强</string>
     <string name="pref_dsp_title">动态范围压缩</string>
     <string name="pref_dsp_summary_on">启用压缩</string>
     <string name="pref_dsp_summary_off">禁用压缩</string>
@@ -15,10 +22,26 @@
     <string name="pref_equalizer_summary_on">启用均衡器</string>
     <string name="pref_equalizer_summary_off">禁用均衡器</string>
     <string name="pref_equalizer_enable">启用</string>
+    <string name="pref_equalizer_preset_title">选择预设</string>
+    <string name="pref_bassboost_enable">启用</string>
     <string name="pref_headset_virtual_title">耳机虚拟空间效果</string>
     <string name="pref_headset_virtual_summary_on">启用耳机虚拟空间</string>
     <string name="pref_headset_virtual_summary_off">禁用耳机虚拟空间</string>
     <string name="pref_headset_virtual_enable">启用</string>
     <string name="pref_room_title">选择空间类型</string>
     <string name="dialog_room">空间类型</string>
+
+    <string name="eq_preset_acoustic">原音音乐</string>
+    <string name="eq_preset_bass_booster">低音强化</string>
+    <string name="eq_preset_bass_reducer">低音弱化</string>
+    <string name="eq_preset_classical">古典音乐</string>
+    <string name="eq_preset_deep">深沉</string>
+    <string name="eq_preset_flat">平淡</string>
+    <string name="eq_preset_r_and_b">节奏怨曲</string>
+    <string name="eq_preset_rock">摇滚音乐</string>
+    <string name="eq_preset_small_speakers">小型喇叭</string>
+    <string name="eq_preset_treble_booster">高音强化</string>
+    <string name="eq_preset_treble_reducer">高音弱化</string>
+    <string name="eq_preset_vocal_booster">人声强化</string>
+    <string name="eq_preset_custom">自定义</string>
 </resources>
