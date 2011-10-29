@@ -1,8 +1,9 @@
 package com.bel.android.dspmanager.preference;
 
-import java.util.Locale;
-
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.Bundle;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -10,18 +11,27 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 
+import java.util.Arrays;
+import java.util.Locale;
+
 import com.bel.android.dspmanager.R;
 
 public class EqualizerPreference extends DialogPreference {
 	protected EqualizerSurface listEqualizer, dialogEqualizer;
-	private final float[] levels = new float[6];
-	
+	private float[] levels = new float[6];
+	private float[] initialLevels = new float[6];
+
+	/* Little hack used to counting showed dialogs and prevent rollbacking
+	   preference, while dialog closed by system (in case when screen orientation
+	   is changed, for example), and new dialog already showed. */
+	private static int showedDialogCount;
+
 	public EqualizerPreference(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
 		setLayoutResource(R.layout.equalizer);
 		setDialogLayoutResource(R.layout.equalizer_popup);
 	}
-	
+
 	@Override
 	protected void onBindDialogView(View view) {
 		super.onBindDialogView(view);
@@ -31,7 +41,7 @@ public class EqualizerPreference extends DialogPreference {
 			public boolean onTouch(View v, MotionEvent event) {
 				float x = event.getX();
 				float y = event.getY();
-				
+
 				/* Which band is closest to the position user pressed? */
 				int band = dialogEqualizer.findClosest(x);
 
@@ -43,9 +53,10 @@ public class EqualizerPreference extends DialogPreference {
 				if (level > EqualizerSurface.MAX_DB) {
 					level = EqualizerSurface.MAX_DB;
 				}
-				
+
 				dialogEqualizer.setBand(band, level);
-				refreshPreferenceFromEqualizer(dialogEqualizer);
+				levels[band] = level;
+				refreshPreference(levels);
 				return true;
 			}
 		});
@@ -54,28 +65,32 @@ public class EqualizerPreference extends DialogPreference {
 			dialogEqualizer.setBand(i, levels[i]);
 		}
 	}
-	
+
 	@Override
 	protected void onDialogClosed(boolean positiveResult) {
 		if (positiveResult) {
-			refreshPreferenceFromEqualizer(dialogEqualizer);
-			for (int i = 0; i < levels.length; i ++) {
-				float value = dialogEqualizer.getBand(i);
-				listEqualizer.setBand(i, value);
-				levels[i] = value;
+			initialLevels = Arrays.copyOf(levels, levels.length);
+			if (listEqualizer != null) {
+				for (int i = 0; i < levels.length; i ++) {
+					listEqualizer.setBand(i, levels[i]);
+				}
 			}
+			refreshPreference(levels);
 			notifyChanged();
-		} else {
-			refreshPreferenceFromEqualizer(listEqualizer);
+		} else if (showedDialogCount == 1) {
+			/* Rollback, if only one instance of it dialog is showed. */
+			levels = Arrays.copyOf(initialLevels, levels.length);
+			refreshPreference(levels);
+			notifyChanged();
 		}
+		showedDialogCount--;
 	}
-	
-	protected void refreshPreferenceFromEqualizer(EqualizerSurface equalizer) {
+
+	protected void refreshPreference(float[] levels) {
 		String levelString = "";
 		for (int i = 0; i < levels.length; i ++) {
-			float value = equalizer.getBand(i);
 			/* Rounding is to canonicalize -0.0 to 0.0. */
-			levelString += String.format(Locale.ROOT, "%.1f", Math.round(value * 10.f) / 10.f) + ";";
+			levelString += String.format(Locale.ROOT, "%.1f", Math.round(levels[i] * 10.f) / 10.f) + ";";
 		}
 		Log.i("tmp", levelString);
 		EqualizerPreference.this.persistString(levelString);
@@ -89,7 +104,7 @@ public class EqualizerPreference extends DialogPreference {
 			listEqualizer.setBand(i, levels[i]);
 		}
 	}
-	
+
 	@Override
 	protected void onSetInitialValue(boolean restorePersistedValue, Object defaultValue) {
 		String levelString = restorePersistedValue ? getPersistedString(null) : (String) defaultValue;
@@ -98,13 +113,67 @@ public class EqualizerPreference extends DialogPreference {
 			if (levelsStr.length != levels.length) {
 				return;
 			}
-			for (int i = 0; i < levelsStr.length; i ++) {
-				levels[i] = Float.valueOf(levelsStr[i]);
+			for (int i = 0; i < levels.length; i ++) {
+				initialLevels[i] = levels[i] = Float.valueOf(levelsStr[i]);
 			}
 		}
 	}
-	
+
+	@Override
+	protected void showDialog (Bundle state) {
+		super.showDialog(state);
+		showedDialogCount++;
+	}
+
+	@Override
+	protected Parcelable onSaveInstanceState () {
+		Parcelable superState = super.onSaveInstanceState();
+		SavedLevels savedLevels = new SavedLevels(superState);
+		savedLevels.levels = levels;
+		savedLevels.initialLevels = initialLevels;
+		return savedLevels;
+	}
+
+        @Override
+        protected void onRestoreInstanceState (Parcelable state) {
+		SavedLevels levelsState = (SavedLevels)state;
+		levels = levelsState.levels;
+		initialLevels = levelsState.initialLevels;
+		super.onRestoreInstanceState (levelsState.getSuperState());
+	}
+
 	public void refreshFromPreference() {
 		onSetInitialValue(true, "0.0;0.0;0.0;0.0;0.0;0.0;");
+	}
+
+	public static class SavedLevels extends BaseSavedState {
+		private float[] initialLevels;
+		private float[] levels;
+
+		@Override
+		public void writeToParcel (Parcel out, int flags) {
+			out.writeFloatArray(levels);
+			out.writeFloatArray(initialLevels);
+		}
+
+		public static final Parcelable.Creator<SavedLevels> CREATOR = new Parcelable.Creator<SavedLevels>() {
+			public SavedLevels createFromParcel (Parcel in) {
+				return new SavedLevels(in);
+			}
+
+			public SavedLevels[] newArray (int size) {
+				return new SavedLevels[size];
+			}
+		};
+
+		private SavedLevels (Parcel in) {
+			super(in);
+			in.readFloatArray(levels);
+			in.readFloatArray(initialLevels);
+		}
+
+		private SavedLevels (Parcelable parcelable) {
+			super(parcelable);
+		}
 	}
 }
