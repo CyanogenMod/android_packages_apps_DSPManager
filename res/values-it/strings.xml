@@ -8,6 +8,7 @@
     <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
     <string name="dsp_settings_speaker">Impostazioni DSP - Altoparlante Telefono</string>
     <string name="dsp_settings_bluetooth">Impostazioni DSP - Dispositivo Bluetooth</string>
+    <string name="audio_effects">Effetti audio</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Compressione attiva</string>
     <string name="pref_dsp_summary_off">Compressione non attiva</string>

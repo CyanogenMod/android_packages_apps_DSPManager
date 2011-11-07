@@ -8,6 +8,7 @@
     <string name="dsp_settings_headset">Paramètres DSP - Casque</string>
     <string name="dsp_settings_speaker">Paramètres DSP - Haut-parleur</string>
     <string name="dsp_settings_bluetooth">Paramètres DSP - Bluetooth</string>
+    <string name="audio_effects">Autres effets audio</string>
     <string name="pref_dsp_title">Compresseur audio dynamique</string>
     <string name="pref_dsp_summary_on">La compression est activée</string>
     <string name="pref_dsp_summary_off">La compression est désactivée</string>

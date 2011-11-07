@@ -5,6 +5,7 @@
     <string name="headset_title">Kopfhörer</string>
     <string name="speaker_title">Lautsprecher</string>
     <string name="bluetooth_title">Bluetooth-Gerät</string>
+    <string name="audio_effects">Audio-Effekte</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Kompression des Dynamikumfangs ist eingeschaltet</string>
     <string name="pref_dsp_summary_off">Kompression des Dynamikumfangs ist ausgeschaltet</string>

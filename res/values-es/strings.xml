@@ -5,6 +5,7 @@
     <string name="headset_title">Auriculares</string>
     <string name="speaker_title">Altavoz teléfono</string>
     <string name="bluetooth_title">Dispositivo Bluetooth</string>
+    <string name="audio_effects">Filtros de audio</string>
     <string name="pref_dsp_title">Rango Dinámico de Compresión</string>
     <string name="pref_dsp_summary_on">Compresión activada</string>
     <string name="pref_dsp_summary_off">Compresión desactivada</string>
