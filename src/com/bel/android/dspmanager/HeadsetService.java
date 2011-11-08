@@ -117,11 +117,11 @@ public class HeadsetService extends Service {
 		@Override
 		public void onCallStateChanged(int state, String incomingNumber) {
 			switch (state) {
-			default:
-				Log.i(TAG, "During phone call: disable DSP.");
+			case TelephonyManager.CALL_STATE_OFFHOOK:
+				Log.i(TAG, "After phone call off-hook: disable DSP.");
 				inCall = true;
 				break;
-			case TelephonyManager.CALL_STATE_IDLE:
+			default:
 				Log.i(TAG, "Phone status idle: enable DSP.");
 				inCall = false;
 				break;
