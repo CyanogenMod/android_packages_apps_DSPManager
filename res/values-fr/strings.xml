@@ -5,6 +5,9 @@
     <string name="headset_title">Casque</string>
     <string name="speaker_title">Haut-parleur du téléphone</string>
     <string name="bluetooth_title">Périphérique Bluetooth</string>
+    <string name="dsp_settings_headset">Paramètres DSP - Casque</string>
+    <string name="dsp_settings_speaker">Paramètres DSP - Haut-parleur</string>
+    <string name="dsp_settings_bluetooth">Paramètres DSP - Bluetooth</string>
     <string name="pref_dsp_title">Compresseur audio dynamique</string>
     <string name="pref_dsp_summary_on">La compression est activée</string>
     <string name="pref_dsp_summary_off">La compression est désactivée</string>
@@ -15,6 +18,8 @@
     <string name="pref_equalizer_summary_on">L\'égaliseur est activé</string>
     <string name="pref_equalizer_summary_off">L\'égaliseur est désactivé</string>
     <string name="pref_equalizer_enable">Activer</string>
+    <string name="pref_equalizer_preset_title">Profil audio</string>
+    <string name="pref_equalizer_loudness_title">Compenser les graves</string>
     <string name="pref_bassboost_title">Bass Boost</string>
     <string name="pref_bassboost_summary_on">Bass Boost est activé</string>
     <string name="pref_bassboost_summary_off">Bass Boost est désactivé</string>
@@ -23,7 +28,20 @@
     <string name="pref_headset_virtual_summary_on">L\'effet chambre virtuelle est activé</string>
     <string name="pref_headset_virtual_summary_off">L\'effet chambre virtuelle est désactivé</string>
     <string name="pref_headset_virtual_enable">Activer</string>
-    <string name="pref_room_title">Choisir le type de chambre</string>
+    <string name="pref_room_title">Type de chambre</string>
     <string name="dialog_room">Type de chambre</string>
     <string name="menu_reset">Remise à zéro</string>
+    <string name="eq_preset_acoustic">Acoustique</string>
+    <string name="eq_preset_bass_booster">Amplification des basses</string>
+    <string name="eq_preset_bass_reducer">Réduction des basses</string>
+    <string name="eq_preset_classical">Classique</string>
+    <string name="eq_preset_deep">Deep</string>
+    <string name="eq_preset_flat">Plat</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Petits haut-parleurs</string>
+    <string name="eq_preset_treble_booster">Amplification des aiguës</string>
+    <string name="eq_preset_treble_reducer">Réduction des aiguës</string>
+    <string name="eq_preset_vocal_booster">Amplification de la voix</string>
+    <string name="eq_preset_custom">Perso.</string>
 </resources>
