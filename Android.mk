@@ -1,3 +1,6 @@
+# Froyo didn't have the strategy/effects APIs
+ifneq ($(BOARD_USES_FROYO_AUDIOPOLICY),true)
+
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -12,3 +15,5 @@ include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif # BOARD_USES_FROYO_AUDIOPOLICY
