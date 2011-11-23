@@ -5,6 +5,7 @@
     <string name="headset_title">耳机</string>
     <string name="speaker_title">电话扬声器</string>
     <string name="bluetooth_title">蓝牙设备</string>
+    <string name="audio_effects">音频效果</string>
     <string name="dsp_settings_headset">DSP设置-耳机</string>
     <string name="dsp_settings_speaker">DSP设置-电话扬声器</string>
     <string name="dsp_settings_bluetooth">DSP设置-蓝牙设备</string>
