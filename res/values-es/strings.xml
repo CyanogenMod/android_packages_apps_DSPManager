@@ -6,7 +6,10 @@
     <string name="speaker_title">Altavoz teléfono</string>
     <string name="bluetooth_title">Dispositivo Bluetooth</string>
     <string name="audio_effects">Filtros de audio</string>
-    <string name="pref_dsp_title">Rango Dinámico de Compresión</string>
+    <string name="dsp_settings_headset">Ajustes DSP - Auriculares</string>
+    <string name="dsp_settings_speaker">Ajustes DSP - Altavoz teléfono</string>
+    <string name="dsp_settings_bluetooth">Ajustes DSP - Dispositivo bluetooth</string>
+    <string name="pref_dsp_title">Rango Dinámico de Compresión (DSP)</string>
     <string name="pref_dsp_summary_on">Compresión activada</string>
     <string name="pref_dsp_summary_off">Compresión desactivada</string>
     <string name="pref_dsp_enable">Habilitar</string>
@@ -16,6 +19,8 @@
     <string name="pref_equalizer_summary_on">Ecualizador activado</string>
     <string name="pref_equalizer_summary_off">Ecualizador desactivado</string>
     <string name="pref_equalizer_enable">Habilitar</string>
+    <string name="pref_equalizer_preset_title">Seleccionar Predefinidos</string>
+    <string name="pref_equalizer_loudness_title">Modo Loudness</string>
     <string name="pref_bassboost_title">Bass Boost</string>
     <string name="pref_bassboost_summary_on">Bass Boost activado</string>
     <string name="pref_bassboost_summary_off">Bass Boost desactivado</string>
@@ -24,7 +29,22 @@
     <string name="pref_headset_virtual_summary_on">Efectos de Sala activados</string>
     <string name="pref_headset_virtual_summary_off">Efectos de Sala desactivados</string>
     <string name="pref_headset_virtual_enable">Habilitar</string>
-    <string name="pref_room_title">Seleccione tipo de Habitación</string>
-    <string name="dialog_room">Tipo de Habitación</string>
-    <string name="menu_reset">Resetear</string>
+    <string name="pref_room_title">Seleccione tipo de sala</string>
+    <string name="dialog_room">Tipo de sala</string>
+    <string name="menu_reset">Restablecer</string>
+
+    <string name="eq_preset_acoustic">Acústico</string>
+    <string name="eq_preset_bass_booster">Refuerzo Graves</string>
+    <string name="eq_preset_bass_reducer">Redudor Graves</string>
+    <string name="eq_preset_classical">Clásica</string>
+    <string name="eq_preset_deep">Profundo</string>
+    <string name="eq_preset_flat">Plano</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Altavoces PequeñosSmall Speakers</string>
+    <string name="eq_preset_treble_booster">Refuerzo Agudos</string>
+    <string name="eq_preset_treble_reducer">Reductor Agudos</string>
+    <string name="eq_preset_vocal_booster">Refuerzo Voces</string>
+    <string name="eq_preset_custom">Personalizado</string>
+
 </resources>
