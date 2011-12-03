@@ -18,9 +18,9 @@
   </string-array>
 
   <string-array name="compression_modes">
-    <item>Ligera</item>
-    <item>Moderada</item>
-    <item>Extrema</item>
+    <item>Ligero</item>
+    <item>Moderado</item>
+    <item>Extremo</item>
   </string-array>
 
   <string-array name="bassboost_modes">
