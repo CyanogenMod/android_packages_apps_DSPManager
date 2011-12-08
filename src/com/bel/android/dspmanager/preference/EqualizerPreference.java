@@ -1,18 +1,17 @@
 package com.bel.android.dspmanager.preference;
 
+import java.util.Arrays;
+import java.util.Locale;
+
 import android.content.Context;
+import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.Bundle;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
-
-import java.util.Arrays;
-import java.util.Locale;
 
 import com.bel.android.dspmanager.R;
 
@@ -38,6 +37,7 @@ public class EqualizerPreference extends DialogPreference {
 
 		dialogEqualizer = (EqualizerSurface) view.findViewById(R.id.FrequencyResponse);
 		dialogEqualizer.setOnTouchListener(new OnTouchListener() {
+			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				float x = event.getX();
 				float y = event.getY();
@@ -92,7 +92,6 @@ public class EqualizerPreference extends DialogPreference {
 			/* Rounding is to canonicalize -0.0 to 0.0. */
 			levelString += String.format(Locale.ROOT, "%.1f", Math.round(levels[i] * 10.f) / 10.f) + ";";
 		}
-		Log.i("tmp", levelString);
 		EqualizerPreference.this.persistString(levelString);
 	}
 
@@ -134,8 +133,8 @@ public class EqualizerPreference extends DialogPreference {
 		return savedLevels;
 	}
 
-        @Override
-        protected void onRestoreInstanceState (Parcelable state) {
+	@Override
+	protected void onRestoreInstanceState (Parcelable state) {
 		SavedLevels levelsState = (SavedLevels)state;
 		levels = levelsState.levels;
 		initialLevels = levelsState.initialLevels;
@@ -157,10 +156,12 @@ public class EqualizerPreference extends DialogPreference {
 		}
 
 		public static final Parcelable.Creator<SavedLevels> CREATOR = new Parcelable.Creator<SavedLevels>() {
+			@Override
 			public SavedLevels createFromParcel (Parcel in) {
 				return new SavedLevels(in);
 			}
 
+			@Override
 			public SavedLevels[] newArray (int size) {
 				return new SavedLevels[size];
 			}

@@ -8,6 +8,7 @@ import android.graphics.Paint.Style;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
+import android.view.View;
 
 public class EqualizerSurface extends SurfaceView {
 	public static int MIN_FREQ = 10;
@@ -16,28 +17,28 @@ public class EqualizerSurface extends SurfaceView {
 	public static int MIN_DB = -10;
 	public static int MAX_DB = 10;
 	public static final float CURVE_RESOLUTION = 1.25f;
-	
+
 	private int width;
 	private int height;
 	private int barwidth;
 
-	/* Fixme: generalize with frequencies read from equalizer object */	
-	private float[] levels = new float[6];
+	/* Fixme: generalize with frequencies read from equalizer object */
+	private final float[] levels = new float[6];
 	private final Paint white, whiteCentered, gray, green, blue, purple, red;
-	
+
 	public EqualizerSurface(Context context, AttributeSet attributeSet) {
 		super(context, attributeSet);
 		setWillNotDraw(false);
-		
+
 		white = new Paint();
 		white.setColor(0xffffffff);
 		white.setStyle(Style.STROKE);
 		white.setTextSize(13);
 		white.setAntiAlias(true);
-		
+
 		whiteCentered = new Paint(white);
 		whiteCentered.setTextAlign(Paint.Align.CENTER);
-		
+
 		gray = new Paint();
 		gray.setColor(0x22ffffff);
 		gray.setStyle(Style.STROKE);
@@ -47,17 +48,17 @@ public class EqualizerSurface extends SurfaceView {
 		green.setStyle(Style.STROKE);
 		green.setAntiAlias(true);
 		green.setStrokeWidth(4);
-		
+
 		purple = new Paint();
 		purple.setColor(0x88ff00ff);
 		purple.setStyle(Style.STROKE);
-		
+
 		blue = new Paint();
 		blue.setColor(0x880000ff);
 		blue.setStyle(Style.FILL_AND_STROKE);
 		blue.setStrokeWidth(1);
 		blue.setAntiAlias(true);
-		
+
 		red = new Paint();
 		red.setColor(0x88ff0000);
 		red.setStyle(Style.FILL_AND_STROKE);
@@ -66,9 +67,17 @@ public class EqualizerSurface extends SurfaceView {
 	}
 
 	@Override
+	protected void onAttachedToWindow() {
+		super.onAttachedToWindow();
+
+		setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		buildLayer();
+	}
+
+	@Override
 	protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
 		super.onLayout(changed, left, top, right, bottom);
-		
+
 		width = right - left;
 		height = bottom - top;
 		barwidth = (width/(levels.length+1)) / 4;
@@ -79,19 +88,19 @@ public class EqualizerSurface extends SurfaceView {
 		levels[i] = value;
 		postInvalidate();
 	}
-	
+
 	public float getBand(int i) {
 		return levels[i];
 	}
-	
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 		/* clear canvas */
 		canvas.drawRGB(0, 0, 0);
-		
+
 		/* Set the width of the bars according to canvas size */
 		green.setStrokeWidth(barwidth);
-		
+
 		canvas.drawRect(0, 0, width-1, height-1, white);
 
 		/* draw vertical lines */
@@ -100,19 +109,19 @@ public class EqualizerSurface extends SurfaceView {
 				freq += 10;
 			} else if (freq < 1000) {
 				freq += 100;
-			} else if (freq < 10000){ 
+			} else if (freq < 10000) {
 				freq += 1000;
 			} else {
 				freq += 10000;
 			}
-			
+
 			float x = projectX(freq) * width;
 			canvas.drawLine(x, 0, x, height - 1, gray);
 			if (freq == 100 || freq == 1000 || freq == 10000) {
 				canvas.drawText(freq < 1000 ? "" + freq : freq/1000 + "k", x, height-1, white);
 			}
 		}
-		
+
 		/* draw horizontal lines */
 		for (int dB = MIN_DB; dB <= MAX_DB; dB += 5) {
 			float y = projectY(dB) * height;
@@ -123,7 +132,7 @@ public class EqualizerSurface extends SurfaceView {
 			}
 			canvas.drawText(String.format("%d", Math.abs(dB)), 1, y - 1, white);
 		}
-		
+
 		Biquad[] biquads = new Biquad[] {
 				new Biquad(),
 				new Biquad(),
@@ -131,7 +140,7 @@ public class EqualizerSurface extends SurfaceView {
 				new Biquad(),
 				new Biquad(),
 		};
-		
+
 		/* The filtering is realized with cascaded 2nd order high shelves, and each band
 		 * is realized as a transition relative to the previous band.
 		 * 1st band has no previous band, so it's just a fixed gain.
@@ -141,7 +150,7 @@ public class EqualizerSurface extends SurfaceView {
 			float freq = 15.625f * (float) Math.pow(4, i);
 			biquads[i].setHighShelf(freq * 2f, SAMPLING_RATE, levels[i + 1] - levels[i], 1f);
 		}
-		
+
 		float oldx = -1;
 		float olddB = 0;
 		//float olds = 0;
@@ -164,9 +173,9 @@ public class EqualizerSurface extends SurfaceView {
 			/* Time delay response, s */
 			//float s = (z1.theta() + z2.theta() + z3.theta() + z4.theta() + z5.theta() + z6.theta()) / (float) Math.PI / freq;
 			//float news = projectY(s * 1000) * height;
-			
+
 			float newx = projectX(freq) * width;
-			
+
 			if (oldx != -1) {
 				canvas.drawLine(oldx, olddB, newx, newBb, blue);
 				//canvas.drawLine(oldx, olds, newx, news, purple);
@@ -175,7 +184,7 @@ public class EqualizerSurface extends SurfaceView {
 			olddB = newBb;
 			//olds = news;
 		}
-		
+
 		for (int i = 0; i < levels.length; i ++) {
 			float freq = 15.625f * (float) Math.pow(4, i);
 			float x = projectX(freq) * width;
@@ -204,7 +213,7 @@ public class EqualizerSurface extends SurfaceView {
 
 	/**
 	 * Find the closest control to press coordinate for adjustment
-	 * 
+	 *
 	 * @param px
 	 * @return index of best match
 	 */
@@ -215,13 +224,13 @@ public class EqualizerSurface extends SurfaceView {
 			float freq = 15.625f * (float) Math.pow(4, i);
 			float cx = projectX(freq) * width;
 			float distance = Math.abs(cx - px);
-			
+
 			if (distance < best) {
 				idx = i;
 				best = distance;
 			}
 		}
-		
+
 		return idx;
 	}
 }

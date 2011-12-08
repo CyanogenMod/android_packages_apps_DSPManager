@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.bel.android.dspmanager" android:versionCode="1"
-	android:versionName="1.0">
+	package="com.bel.android.dspmanager" android:versionCode="2"
+	android:versionName="2.0">
 
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
 		<activity android:label="@string/app_name" android:name=".activity.DSPManager">
@@ -31,14 +31,10 @@
 		</activity>
 
 		<service android:exported="false" android:enabled="true"
-			android:name=".HeadsetService">
-			<intent-filter>
-				<action android:name="com.bel.android.dspmanager.HEADSET_SERVICE"/>
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
+			android:name=".service.HeadsetService">
 		</service>
 
-		<receiver android:name=".ServiceLaunchReceiver">
+		<receiver android:name=".receiver.BootCompletedReceiver">
 			<intent-filter>
 				<action android:name="android.intent.action.BOOT_COMPLETED" />
 				<category android:name="android.intent.category.DEFAULT" />
@@ -46,11 +42,10 @@
 		</receiver>
 	</application>
 
+	<uses-sdk android:minSdkVersion="14"/>
 
-	<uses-sdk android:minSdkVersion="9"/>
-
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"></uses-permission>
-	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
-<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+	<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
 </manifest> 

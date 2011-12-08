@@ -2,7 +2,7 @@ package com.bel.android.dspmanager.preference;
 
 /**
  * Evaluate transfer functions of biquad filters in direct form 1.
- * 
+ *
  * @author alankila
  */
 class Biquad {
@@ -20,7 +20,7 @@ class Biquad {
         a1 = new Complex((float) (2*((A-1) - (A+1)   *Math.cos(w0))), 0);
         a2 = new Complex((float) ((A+1) - (A-1)      *Math.cos(w0) - 2*Math.sqrt(A)*alpha), 0);
 	}
-	
+
 	protected Complex evaluateTransfer(Complex z) {
 		Complex zSquared = z.mul(z);
 		Complex nom = b0.add(b1.div(z)).add(b2.div(zSquared));
