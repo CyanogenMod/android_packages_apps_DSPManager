@@ -6,9 +6,9 @@ package com.bel.android.dspmanager.preference;
  * @author alankila
  */
 class Complex {
-	final float re, im;
+	private final double re, im;
 
-	protected Complex(float re, float im) {
+	protected Complex(double re, double im) {
 		this.re = re;
 		this.im = im;
 	}
@@ -18,8 +18,8 @@ class Complex {
 	 *
 	 * @return length
 	 */
-	protected float rho() {
-		return (float) Math.sqrt(re * re + im * im);
+	protected double rho() {
+		return Math.sqrt(re * re + im * im);
 	}
 
 	/**
@@ -27,8 +27,8 @@ class Complex {
 	 *
 	 * @return angle in radians
 	 */
-	protected float theta() {
-		return (float) Math.atan2(im, re);
+	protected double theta() {
+		return Math.atan2(im, re);
 	}
 
 	/**
@@ -66,7 +66,7 @@ class Complex {
 	 * @param a
 	 * @return multiplication result
 	 */
-	protected Complex mul(float a) {
+	protected Complex mul(double a) {
 		return new Complex(re * a, im * a);
 	}
 
@@ -77,7 +77,7 @@ class Complex {
 	 * @return division result
 	 */
 	protected Complex div(Complex other) {
-	    float lengthSquared = other.re * other.re + other.im * other.im;
+	    double lengthSquared = other.re * other.re + other.im * other.im;
 	    return mul(other.con()).div(lengthSquared);
 	}
 
@@ -87,7 +87,7 @@ class Complex {
 	 * @param a
 	 * @return division result
 	 */
-	protected Complex div(float a) {
+	protected Complex div(double a) {
 		return new Complex(re/a, im/a);
 	}
 }

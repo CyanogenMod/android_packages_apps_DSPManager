@@ -9,7 +9,6 @@ public class SummariedListPreference extends ListPreference {
 		super(context, set);
 	}
 
-
 	@Override
 	public void setValue(String value) {
 		super.setValue(value);
@@ -23,7 +22,6 @@ public class SummariedListPreference extends ListPreference {
 			}
 		}
 	}
-
 
 	public void refreshFromPreference() {
 		onSetInitialValue(true, null);

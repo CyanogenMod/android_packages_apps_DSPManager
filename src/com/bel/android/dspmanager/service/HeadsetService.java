@@ -132,6 +132,9 @@ public class HeadsetService extends Service {
 	/** Are we during phone call? */
 	protected boolean mInCall;
 
+	/** Has DSPManager assumed control of equalizer levels? */
+	private float[] mOverriddenEqualizerLevels;
+
 	/**
 	 * Receive new broadcast intents for adding DSP to session
 	 */
@@ -281,6 +284,17 @@ public class HeadsetService extends Service {
 	}
 
 	/**
+	 * Gain temporary control over the global equalizer.
+	 * Used by DSPManager when testing a new equalizer setting.
+	 *
+	 * @param levels
+	 */
+	public void setEqualizerLevels(float[] levels) {
+		mOverriddenEqualizerLevels = levels;
+		updateDsp();
+	}
+
+	/**
 	 * There appears to be no way to find out what the current actual audio routing is.
 	 * For instance, if a wired headset is plugged in, the following objects/classes are involved:</p>
 	 * <ol>
@@ -336,9 +350,15 @@ public class HeadsetService extends Service {
 
 		/* Equalizer state is in a single string preference with all values separated by ; */
 		mEqualizer.setEnabled(preferences.getBoolean("dsp.tone.enable", false));
-		String[] levels = preferences.getString("dsp.tone.eq.custom", "0;0;0;0;0").split(";");
-		for (short i = 0; i < levels.length; i ++) {
-			mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(levels[i]) * 100));
+		if (mOverriddenEqualizerLevels != null) {
+			for (short i = 0; i < mOverriddenEqualizerLevels.length; i ++) {
+				mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(mOverriddenEqualizerLevels[i]) * 100));
+			}
+		} else {
+			String[] levels = preferences.getString("dsp.tone.eq.custom", "0;0;0;0;0").split(";");
+			for (short i = 0; i < levels.length; i ++) {
+				mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(levels[i]) * 100));
+			}
 		}
 		EffectSet.setParameter(mEqualizer, 1000, Short.valueOf(preferences.getString("dsp.tone.loudness", "10000")));
 

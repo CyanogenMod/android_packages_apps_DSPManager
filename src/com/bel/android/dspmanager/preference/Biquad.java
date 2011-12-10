@@ -8,17 +8,17 @@ package com.bel.android.dspmanager.preference;
 class Biquad {
 	private Complex b0, b1, b2, a0, a1, a2;
 
-	protected void setHighShelf(float centerFrequency, float samplingFrequency, float dbGain, float slope) {
+	protected void setHighShelf(double centerFrequency, double samplingFrequency, double dbGain, double slope) {
         double w0 = 2 * Math.PI * centerFrequency / samplingFrequency;
         double A = Math.pow(10, dbGain/40);
         double alpha = Math.sin(w0)/2 * Math.sqrt( (A + 1/A)*(1/slope - 1) + 2);
 
-        b0 = new Complex((float) (A*((A+1) + (A-1)   *Math.cos(w0) + 2*Math.sqrt(A)*alpha)), 0);
-        b1 = new Complex((float) (-2*A*((A-1) + (A+1)*Math.cos(w0))), 0);
-        b2 = new Complex((float) (A*((A+1) + (A-1)   *Math.cos(w0) - 2*Math.sqrt(A)*alpha)), 0);
-        a0 = new Complex((float) ((A+1) - (A-1)      *Math.cos(w0) + 2*Math.sqrt(A)*alpha), 0);
-        a1 = new Complex((float) (2*((A-1) - (A+1)   *Math.cos(w0))), 0);
-        a2 = new Complex((float) ((A+1) - (A-1)      *Math.cos(w0) - 2*Math.sqrt(A)*alpha), 0);
+        b0 = new Complex(A*((A+1) + (A-1)   *Math.cos(w0) + 2*Math.sqrt(A)*alpha), 0);
+        b1 = new Complex(-2*A*((A-1) + (A+1)*Math.cos(w0)), 0);
+        b2 = new Complex(A*((A+1) + (A-1)   *Math.cos(w0) - 2*Math.sqrt(A)*alpha), 0);
+        a0 = new Complex((A+1) - (A-1)      *Math.cos(w0) + 2*Math.sqrt(A)*alpha, 0);
+        a1 = new Complex(2*((A-1) - (A+1)   *Math.cos(w0)), 0);
+        a2 = new Complex((A+1) - (A-1)      *Math.cos(w0) - 2*Math.sqrt(A)*alpha, 0);
 	}
 
 	protected Complex evaluateTransfer(Complex z) {
