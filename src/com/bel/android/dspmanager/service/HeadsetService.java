@@ -1,6 +1,7 @@
 package com.bel.android.dspmanager.service;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -20,8 +21,6 @@ import android.media.audiofx.Equalizer;
 import android.media.audiofx.Virtualizer;
 import android.os.Binder;
 import android.os.IBinder;
-import android.telephony.PhoneStateListener;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.bel.android.dspmanager.activity.DSPManager;
@@ -51,6 +50,12 @@ public class HeadsetService extends Service {
 
 		/** Session-specific dynamic range compressor */
 		public final AudioEffect mCompression;
+		/** Session-specific equalizer */
+		private final Equalizer mEqualizer;
+		/** Session-specific bassboost */
+		private final BassBoost mBassBoost;
+		/** Session-specific virtualizer */
+		private final Virtualizer mVirtualizer;
 
 		protected EffectSet(int sessionId) {
 			try {
@@ -64,6 +69,16 @@ public class HeadsetService extends Service {
 			} catch (Exception e) {
 				throw new RuntimeException(e);
 			}
+			mEqualizer = new Equalizer(0, sessionId);
+			mBassBoost = new BassBoost(0, sessionId);
+			mVirtualizer = new Virtualizer(0, sessionId);
+		}
+
+		protected void release() {
+			mCompression.release();
+			mEqualizer.release();
+			mBassBoost.release();
+			mVirtualizer.release();
 		}
 
 		/**
@@ -111,15 +126,6 @@ public class HeadsetService extends Service {
 
 	private final LocalBinder mBinder = new LocalBinder();
 
-	/** Global output mix equalizer */
-	private Equalizer mEqualizer;
-
-	/** Global output mix bassboost */
-	private BassBoost mBassBoost;
-
-	/** Global output mix virtualizer */
-	private Virtualizer mVirtualizer;
-
 	/** Known audio sessions and their associated audioeffect suites. */
 	protected final Map<Integer, EffectSet> mAudioSessions = new HashMap<Integer, EffectSet>();
 
@@ -128,9 +134,6 @@ public class HeadsetService extends Service {
 
 	/** Is bluetooth headset plugged in? */
 	protected boolean mUseBluetooth;
-
-	/** Are we during phone call? */
-	protected boolean mInCall;
 
 	/** Has DSPManager assumed control of equalizer levels? */
 	private float[] mOverriddenEqualizerLevels;
@@ -145,11 +148,16 @@ public class HeadsetService extends Service {
 			int sessionId = intent.getIntExtra(AudioEffect.EXTRA_AUDIO_SESSION, 0);
 			if (action.equals(AudioEffect.ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION)) {
 				Log.i(TAG, String.format("New audio session: %d", sessionId));
-				mAudioSessions.put(sessionId, new EffectSet(sessionId));
+				if (! mAudioSessions.containsKey(sessionId)) {
+					mAudioSessions.put(sessionId, new EffectSet(sessionId));
+				}
 			}
 			if (action.equals(AudioEffect.ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION)) {
 				Log.i(TAG, String.format("Audio session removed: %d", sessionId));
-				mAudioSessions.remove(sessionId);
+				EffectSet gone = mAudioSessions.remove(sessionId);
+				if (gone != null) {
+					gone.release();
+				}
 			}
 			updateDsp();
 		}
@@ -163,31 +171,6 @@ public class HeadsetService extends Service {
 		public void onReceive(Context context, Intent intent) {
 			Log.i(TAG, "Preferences updated.");
 			updateDsp();
-		}
-	};
-
-	/**
-	 * Listen to events from telephone state, disabling DSP during phone calls.
-	 */
-	private final PhoneStateListener mPhoneListener = new PhoneStateListener() {
-		@Override
-		public void onCallStateChanged(int state, String incomingNumber) {
-			final boolean prevInCall = mInCall;
-
-			switch (state) {
-			case TelephonyManager.CALL_STATE_OFFHOOK:
-				Log.i(TAG, "After phone call off-hook: disable DSP.");
-				mInCall = true;
-				break;
-			default:
-				Log.i(TAG, "Phone status idle: enable DSP.");
-				mInCall = false;
-				break;
-			}
-
-			if (prevInCall != mInCall) {
-				updateDsp();
-			}
 		}
 	};
 
@@ -239,14 +222,6 @@ public class HeadsetService extends Service {
 		super.onCreate();
 		Log.i(TAG, "Starting service.");
 
-		/*
-		 * Note that Google has deprecated the use of Equalizer and Virtualizer
-		 * on the global output mix. It still works for now, though.
-		 */
-		mEqualizer = new Equalizer(0, 0);
-		mBassBoost = new BassBoost(0, 0);
-		mVirtualizer = new Virtualizer(0, 0);
-
 		IntentFilter audioFilter = new IntentFilter();
 		audioFilter.addAction(AudioEffect.ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION);
 		audioFilter.addAction(AudioEffect.ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION);
@@ -260,9 +235,6 @@ public class HeadsetService extends Service {
 
 		registerReceiver(mPreferenceUpdateReceiver,
 				new IntentFilter(DSPManager.ACTION_UPDATE_PREFERENCES));
-
-		TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
-		tm.listen(mPhoneListener, PhoneStateListener.LISTEN_CALL_STATE);
 	}
 
 	@Override
@@ -273,9 +245,6 @@ public class HeadsetService extends Service {
 		unregisterReceiver(mAudioSessionReceiver);
 		unregisterReceiver(mRoutingReceiver);
 		unregisterReceiver(mPreferenceUpdateReceiver);
-
-		TelephonyManager tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
-		tm.listen(mPhoneListener, 0);
 	}
 
 	@Override
@@ -320,9 +289,6 @@ public class HeadsetService extends Service {
 	 * @return string token that identifies configuration to use
 	 */
 	public String getAudioOutputRouting() {
-		if (mInCall) {
-			return "disable";
-		}
 		if (mUseBluetooth) {
 			return "bluetooth";
 		}
@@ -337,32 +303,42 @@ public class HeadsetService extends Service {
 	 */
 	protected void updateDsp() {
 		final String mode = getAudioOutputRouting();
+		SharedPreferences preferences = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode, 0);
 		Log.i(TAG, "Selected configuration: " + mode);
 
-		SharedPreferences preferences = getSharedPreferences(DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode, 0);
-		for (EffectSet session : mAudioSessions.values()) {
-			session.mCompression.setEnabled(preferences.getBoolean("dsp.compression.enable", false));
-			EffectSet.setParameter(session.mCompression, 0, Short.valueOf(preferences.getString("dsp.compression.mode", "0")));
+		for (Integer sessionId : new ArrayList<Integer>(mAudioSessions.keySet())) {
+			try {
+				updateDsp(preferences, mAudioSessions.get(sessionId));
+			}
+			catch (Exception e) {
+				Log.w(TAG, String.format("Trouble trying to manage session %d, removing...", sessionId), e);
+				mAudioSessions.remove(sessionId);
+			}
 		}
+	}
 
-		mBassBoost.setEnabled(preferences.getBoolean("dsp.bass.enable", false));
-		mBassBoost.setStrength(Short.valueOf(preferences.getString("dsp.bass.mode", "0")));
+	private void updateDsp(SharedPreferences preferences, EffectSet session) {
+		session.mCompression.setEnabled(preferences.getBoolean("dsp.compression.enable", false));
+		EffectSet.setParameter(session.mCompression, 0, Short.valueOf(preferences.getString("dsp.compression.mode", "0")));
+
+		session.mBassBoost.setEnabled(preferences.getBoolean("dsp.bass.enable", false));
+		session.mBassBoost.setStrength(Short.valueOf(preferences.getString("dsp.bass.mode", "0")));
 
 		/* Equalizer state is in a single string preference with all values separated by ; */
-		mEqualizer.setEnabled(preferences.getBoolean("dsp.tone.enable", false));
+		session.mEqualizer.setEnabled(preferences.getBoolean("dsp.tone.enable", false));
 		if (mOverriddenEqualizerLevels != null) {
 			for (short i = 0; i < mOverriddenEqualizerLevels.length; i ++) {
-				mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(mOverriddenEqualizerLevels[i]) * 100));
+				session.mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(mOverriddenEqualizerLevels[i]) * 100));
 			}
 		} else {
 			String[] levels = preferences.getString("dsp.tone.eq.custom", "0;0;0;0;0").split(";");
 			for (short i = 0; i < levels.length; i ++) {
-				mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(levels[i]) * 100));
+				session.mEqualizer.setBandLevel(i, (short) Math.round(Float.valueOf(levels[i]) * 100));
 			}
 		}
-		EffectSet.setParameter(mEqualizer, 1000, Short.valueOf(preferences.getString("dsp.tone.loudness", "10000")));
+		EffectSet.setParameter(session.mEqualizer, 1000, Short.valueOf(preferences.getString("dsp.tone.loudness", "10000")));
 
-		mVirtualizer.setEnabled(preferences.getBoolean("dsp.headphone.enable", false));
-		mVirtualizer.setStrength(Short.valueOf(preferences.getString("dsp.headphone.mode", "0")));
+		session.mVirtualizer.setEnabled(preferences.getBoolean("dsp.headphone.enable", false));
+		session.mVirtualizer.setStrength(Short.valueOf(preferences.getString("dsp.headphone.mode", "0")));
 	}
 }
