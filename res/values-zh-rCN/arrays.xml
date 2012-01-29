@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="microphone_recording_presets">
+        <item>原始的</item>
+        <item>均衡的</item>
+        <item>高敏感度</item>
+        <item>吵闹环境</item>
+    </string-array>
+    <!-- skip 'microphone_recording_presets_values' translation -->
     <string-array name="headphone_modes">
         <item>工作室</item>
         <item>房间</item>
@@ -25,4 +32,9 @@
         <item>更强</item>
         <item>最强</item>
     </string-array>
+    <string-array name="wm8994_bassboost_modes">
+        <item>标准</item>
+        <item>小喇叭</item>
+    </string-array>
+    <!-- do not translate 'wm8994_bassboost_modes_values' -->
 </resources>
