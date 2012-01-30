@@ -3,10 +3,11 @@
   <string name="select_configuration_title">Zvolte konfiguraci ke změně</string>
   <string name="headset_title">Sluchátka</string>
   <string name="speaker_title">Reproduktor</string>
-  <string name="bluetooth_title">Zařízení bluetooth</string>
+  <string name="bluetooth_title">Zařízení Bluetooth</string>
+  <string name="audio_effects">Zvukové efekty</string>
   <string name="dsp_settings_headset">Nastavení DSP - sluchátka</string>
   <string name="dsp_settings_speaker">Nastavení DSP - reproduktor</string>
-  <string name="dsp_settings_bluetooth">Nastavení DSP - zařízení bluetooth</string>
+  <string name="dsp_settings_bluetooth">Nastavení DSP - zařízení Bluetooth</string>
   <string name="pref_dsp_title">Komprese dynamiky signálu (DRC)</string>
   <string name="pref_dsp_summary_on">Komprese povolena</string>
   <string name="pref_dsp_summary_off">Komprese zakázána</string>
