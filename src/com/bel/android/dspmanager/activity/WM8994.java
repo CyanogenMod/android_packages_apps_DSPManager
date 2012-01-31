@@ -23,14 +23,18 @@ import android.content.SharedPreferences.Editor;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
+import android.preference.DialogPreference;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.util.Log;
 
 import com.bel.android.dspmanager.R;
+import com.bel.android.dspmanager.preference.HeadsetAmplifierPreference;
 
 public class WM8994 extends PreferenceFragment {
     protected static final String TAG = WM8994.class.getSimpleName();
@@ -55,6 +59,7 @@ public class WM8994 extends PreferenceFragment {
 
     public static final String BASS_BOOST_ENABLE_PREF = "dsp.wm8994.bassboost.enable";
     public static final String BASS_BOOST_PRESET_PREF = "dsp.wm8994.bassboost.preset";
+    public static final String BASS_BOOST_GAIN_RANGE_PREF = "dsp.wm8994.bassboost.gainrange";
 
     public static final String BASS_BOOST_PREF_GAIN = "dsp.wm8994.bassboost.gain";
     public static final String BASS_BOOST_PREF_RANGE = "dsp.wm8994.bassboost.range";
@@ -133,7 +138,33 @@ public class WM8994 extends PreferenceFragment {
             if (isSupported(aOptionControl[iPosition][0])) {
                 cbpStatus[iPosition] = (CheckBoxPreference) prefSet.findPreference(aOptionControl[iPosition][1]);
                 cbpStatus[iPosition].setChecked(PREF_ENABLED.equals(Utils.readOneLine(aOptionControl[iPosition][0])));
+            } else {
+                cbpStatus[iPosition] = (CheckBoxPreference) prefSet.findPreference(aOptionControl[iPosition][1]);
+                cbpStatus[iPosition].setSummary(R.string.pref_unavailable);
+                cbpStatus[iPosition].setEnabled(false);
             }
+        }
+
+        if (!isSupported(HeadsetAmplifierPreference.FILE_PATH)) {
+            Preference mHeadSet = prefSet.findPreference("headphone_amp");
+            PreferenceCategory mHeadSetCategory = (PreferenceCategory) prefSet.findPreference("wm8994_headphone_amp_category");
+            mHeadSetCategory.removePreference(mHeadSet);
+            prefSet.removePreference(mHeadSetCategory);
+        }
+        if (!isSupported(microphone_recording_preset[0][0])) {
+            Preference mMicrophone = prefSet.findPreference(microphone_recording_preset[0][1]);
+            PreferenceCategory mMicrophoneCategory = (PreferenceCategory) prefSet.findPreference("wm8994_microphone_recording_category");
+            mMicrophoneCategory.removePreference(mMicrophone);
+            prefSet.removePreference(mMicrophoneCategory);
+        }
+        if (!isSupported(BASS_BOOST_ENABLE_FILE)) {
+            Preference mBassBoostEnable = prefSet.findPreference(BASS_BOOST_ENABLE_PREF);
+            Preference mBassBoostPreset = prefSet.findPreference(BASS_BOOST_PRESET_PREF);
+            Preference mBassBoostGainRange = prefSet.findPreference(BASS_BOOST_GAIN_RANGE_PREF);
+            PreferenceCategory mBassBoostCategory = (PreferenceCategory) prefSet.findPreference("wm8994_signal_processing_category");
+            mBassBoostCategory.removePreference(mBassBoostEnable);
+            mBassBoostCategory.removePreference(mBassBoostPreset);
+            mBassBoostCategory.removePreference(mBassBoostGainRange);
         }
 
         getPreferenceManager().getSharedPreferences().registerOnSharedPreferenceChangeListener(listener);
@@ -181,17 +212,11 @@ public class WM8994 extends PreferenceFragment {
             Utils.writeValue(microphone_recording_preset[0][0], sharedPrefs.getString(microphone_recording_preset[0][1], Utils.readOneLine(microphone_recording_preset[0][0])));
         }
 
-        if (sharedPrefs.contains("dsp.wm8994.bassboost.gain")) {
-            Log.d(TAG,"PREFS dsp.wm8994.bassboost.gain == " + sharedPrefs.getInt("dsp.wm8994.bassboost.gain",1111));
-        }
-        if (sharedPrefs.contains("dsp.wm8994.bassboost.range")) {
-            Log.d(TAG,"PREFS dsp.wm8994.bassboost.range == " + sharedPrefs.getInt("dsp.wm8994.bassboost.range",1111));
-        }
+        HeadsetAmplifierPreference.restore(context);
 
     }
 
     public void writeBassBoost() {
-        //SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences sharedPrefs = getPreferenceManager().getSharedPreferences();
         int mGain = sharedPrefs.getInt(BASS_BOOST_PREF_GAIN, MAX_VALUE_GAIN);
         int mRange = sharedPrefs.getInt(BASS_BOOST_PREF_RANGE, MAX_VALUE_RANGE);
