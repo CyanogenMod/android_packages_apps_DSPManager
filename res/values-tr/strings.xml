@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ses Yöneticisi</string>
+    <string name="select_configuration_title">Düzenlemek İçin Yapılandırma Seçin</string>
+    <string name="headset_title">Kulaklık</string>
+    <string name="speaker_title">Telefon Hoparlörü</string>
+    <string name="bluetooth_title">Bluetooth Aygıtı</string>
+    <string name="audio_effects">Ses Efektleri</string>
+    <string name="dsp_settings_headset">Ses Ayarları - Kulaklık</string>
+    <string name="dsp_settings_speaker">Ses Ayarları - Telefon Hoparlörü</string>
+    <string name="dsp_settings_bluetooth">Ses Ayarları - Bluetooth Aygıtı</string>
+    <string name="pref_dsp_title">Dinamik Dizi Sıkıştırması</string>
+    <string name="pref_dsp_summary_on">Sıkıştırma etkin</string>
+    <string name="pref_dsp_summary_off">Sıkıştırma etkin değil</string>
+    <string name="pref_dsp_enable">Etkinleştir</string>
+    <string name="pref_effect_title">Efekt Şiddetini Seçin</string>
+    <string name="dialog_effect">Efekt Şiddeti</string>
+    <string name="pref_equalizer_title">Ekolayzer</string>
+    <string name="pref_equalizer_summary_on">Ekolayzer etkin</string>
+    <string name="pref_equalizer_summary_off">Ekolayzer etkin değil</string>
+    <string name="pref_equalizer_enable">Etkinleştir</string>
+    <string name="pref_equalizer_preset_title">Önayar Seçin</string>
+    <string name="pref_equalizer_loudness_title">Ses şiddeti dengeleyicisi</string>
+    <string name="pref_bassboost_title">Bas Yükseltici</string>
+    <string name="pref_bassboost_summary_on">Bas Yükseltici</string>
+    <string name="pref_bassboost_summary_off">Bas Yükseltici etkin değil</string>
+    <string name="pref_bassboost_enable">Etkinleştir</string>
+    <string name="pref_headset_virtual_title">Kulaklık Sanal Oda Efekti</string>
+    <string name="pref_headset_virtual_summary_on">Kulaklık Sanal Oda Efekti etkin</string>
+    <string name="pref_headset_virtual_summary_off">Kulaklık Sanal Oda Efekti etkin değil</string>
+    <string name="pref_headset_virtual_enable">Etkinleştir</string>
+    <string name="pref_room_title">Oda Tipini Seç</string>
+    <string name="dialog_room">Oda Tipi</string>
+    <string name="menu_reset">Sıfırla</string>
+
+    <string name="eq_preset_acoustic">Akustik</string>
+    <string name="eq_preset_bass_booster">Bas Yükseltici</string>
+    <string name="eq_preset_bass_reducer">Bas Azaltıcı</string>
+    <string name="eq_preset_classical">Klasik</string>
+    <string name="eq_preset_deep">Derin</string>
+    <string name="eq_preset_flat">Düz</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rak</string>
+    <string name="eq_preset_small_speakers">Küçük Hoparlörler</string>
+    <string name="eq_preset_treble_booster">Tiz Yükseltisi</string>
+    <string name="eq_preset_treble_reducer">Tiz Azaltıcı</string>
+    <string name="eq_preset_vocal_booster">Ses Yükseltici</string>
+    <string name="eq_preset_custom">Özel</string>
+
+</resources>
