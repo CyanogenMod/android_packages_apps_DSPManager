@@ -34,6 +34,7 @@ import android.preference.PreferenceScreen;
 import android.util.Log;
 
 import com.bel.android.dspmanager.R;
+import com.bel.android.dspmanager.preference.BassBoostPreference;
 import com.bel.android.dspmanager.preference.HeadsetAmplifierPreference;
 
 public class WM8994 extends PreferenceFragment {
@@ -210,6 +211,10 @@ public class WM8994 extends PreferenceFragment {
         if (isSupported(microphone_recording_preset[0][0])) {
             Log.d(TAG,"Does " + microphone_recording_preset[0][1] + " exist == " + sharedPrefs.contains(microphone_recording_preset[0][1]));
             Utils.writeValue(microphone_recording_preset[0][0], sharedPrefs.getString(microphone_recording_preset[0][1], Utils.readOneLine(microphone_recording_preset[0][0])));
+        }
+
+        if (isSupported(BASS_BOOST_ENABLE_FILE)) {
+            BassBoostPreference.restore(context);
         }
 
         HeadsetAmplifierPreference.restore(context);

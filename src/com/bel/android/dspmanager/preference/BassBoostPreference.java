@@ -81,14 +81,41 @@ public class BassBoostPreference extends DialogPreference {
         }
     }
 
+    public static boolean isSupported(String FILE) {
+        return Utils.fileExists(FILE);
+    }
+
     public static void restore(Context context) {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         Log.d(TAG, "restore");
-        for (String mPref : WM8994.BASS_BOOST_PREFS) {
-            //String sDefaultValue = Utils.readOneLine(filePath);
-            //int iValue = sharedPrefs.getInt(filePath, Integer.valueOf(sDefaultValue));
-            //Utils.writeValue(filePath, String.valueOf((long) iValue));
+        writeBassBoost(context);
+    }
+
+    public static void writeBassBoost(Context context) {
+
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        //SharedPreferences sharedPrefs = getPreferenceManager().getSharedPreferences();
+        int mGain = sharedPrefs.getInt(WM8994.BASS_BOOST_PREF_GAIN, WM8994.MAX_VALUE_GAIN);
+        int mRange = sharedPrefs.getInt(WM8994.BASS_BOOST_PREF_RANGE, WM8994.MAX_VALUE_RANGE);
+        String mPreset = sharedPrefs.getString(WM8994.BASS_BOOST_PRESET_PREF, "0");
+
+        double mDigitalGain = (double) mRange;
+        int mGain1 = 1;
+        int mGain2 = 1;
+        if (mPreset.equals("0")) {
+            mGain2 = 0;
+        } else {
+            mGain1 = -1;
         }
+
+        mDigitalGain = (mDigitalGain / 5) * (mGain * 1000);
+        Log.d(TAG, "mDigitalGain == " + mDigitalGain);
+        Utils.writeValue(WM8994.BASS_BOOST_FILES[0], String.valueOf((long) mDigitalGain * -1));
+        Utils.writeValue(WM8994.BASS_BOOST_FILES[1], String.valueOf((long) mGain * mGain1));
+        Utils.writeValue(WM8994.BASS_BOOST_FILES[2], String.valueOf((long) mGain * mGain2));
+        //Utils.writeValue("/sys/class/misc/wm8994_sound/digital_gain", String.valueOf((long) mGain));
+        Log.d(TAG, "writeBassBoost");
+
     }
 
     class BassBoostSeekBar implements SeekBar.OnSeekBarChangeListener {
@@ -142,34 +169,7 @@ public class BassBoostPreference extends DialogPreference {
             Editor editor = getEditor();
             editor.putInt(mPref, iValue);
             editor.commit();
-            writeBassBoost();
-        }
-
-        public void writeBassBoost() {
-
-            //SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-            SharedPreferences sharedPrefs = getPreferenceManager().getSharedPreferences();
-            int mGain = sharedPrefs.getInt(WM8994.BASS_BOOST_PREF_GAIN, WM8994.MAX_VALUE_GAIN);
-            int mRange = sharedPrefs.getInt(WM8994.BASS_BOOST_PREF_RANGE, WM8994.MAX_VALUE_RANGE);
-            String mPreset = sharedPrefs.getString(WM8994.BASS_BOOST_PRESET_PREF, "0");
-
-            double mDigitalGain = (double) mRange;
-            int mGain1 = 1;
-            int mGain2 = 1;
-            if (mPreset.equals("0")) {
-                mGain2 = 0;
-            } else {
-                mGain1 = -1;
-            }
-
-            mDigitalGain = (mDigitalGain / 5) * (mGain * 1000);
-            Log.d(TAG, "mDigitalGain == " + mDigitalGain);
-            Utils.writeValue(WM8994.BASS_BOOST_FILES[0], String.valueOf((long) mDigitalGain * -1));
-            Utils.writeValue(WM8994.BASS_BOOST_FILES[1], String.valueOf((long) mGain * mGain1));
-            Utils.writeValue(WM8994.BASS_BOOST_FILES[2], String.valueOf((long) mGain * mGain2));
-            //Utils.writeValue("/sys/class/misc/wm8994_sound/digital_gain", String.valueOf((long) mGain));
-            Log.d(TAG, "writeBassBoost");
-
+            BassBoostPreference.this.writeBassBoost(getContext());
         }
 
         @Override
