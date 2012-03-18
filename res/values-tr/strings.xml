@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources>
+    <string name="app_name">Ses Yöneticisi</string>
+    <string name="select_configuration_title">Düzenlemek İçin Yapılandırma Seçin</string>
+    <string name="headset_title">Kulaklık</string>
+    <string name="speaker_title">Hoparlör</string>
+    <string name="bluetooth_title">Bluetooth</string>
+    <string name="wm8994_title">WM8994</string>
+    <string name="audio_effects">Ses Efektleri</string>
+    <string name="pref_unavailable">Bu işlevsellik cihazınızda desteklenmez</string>
+    <string name="dsp_settings_headset">Ses Ayarları - Kulaklık</string>
+    <string name="dsp_settings_speaker">Ses Ayarları - Telefon Hoparlörü</string>
+    <string name="dsp_settings_bluetooth">Ses Ayarları - Bluetooth Aygıtı</string>
+    <string name="dsp_settings_wm8994">Ses Ayarları - WM8994</string>
+    <string name="pref_dsp_title">Dinamik Dizi Sıkıştırması</string>
+    <string name="pref_dsp_summary_on">Sıkıştırma etkin</string>
+    <string name="pref_dsp_summary_off">Sıkıştırma etkin değil</string>
+    <string name="pref_dsp_enable">Etkinleştir</string>
+    <string name="pref_effect_title">Efekt Şiddetini Seçin</string>
+    <string name="dialog_effect">Efekt Şiddeti</string>
+    <string name="pref_equalizer_title">Ekolayzer</string>
+    <string name="pref_equalizer_summary_on">Ekolayzer etkin</string>
+    <string name="pref_equalizer_summary_off">Ekolayzer etkin değil</string>
+    <string name="pref_equalizer_enable">Etkinleştir</string>
+    <string name="pref_equalizer_preset_title">Önayar Seçin</string>
+    <string name="pref_equalizer_loudness_title">Ses şiddeti dengeleyicisi</string>
+    <string name="pref_bassboost_title">Bas Yükseltici</string>
+    <string name="pref_bassboost_summary_on">Bas Yükseltici etkin</string>
+    <string name="pref_bassboost_summary_off">Bas Yükseltici etkin değil</string>
+    <string name="pref_bassboost_enable">Etkinleştir</string>
+    <string name="pref_headset_virtual_title">Kulaklık Sanal Oda Efekti</string>
+    <string name="pref_headset_virtual_summary_on">Kulaklık Sanal Oda Efekti etkin</string>
+    <string name="pref_headset_virtual_summary_off">Kulaklık Sanal Oda Efekti etkin değil</string>
+    <string name="pref_headset_virtual_enable">Etkinleştir</string>
+    <string name="pref_room_title">Oda Tipini Seçin</string>
+    <string name="dialog_room">Oda Tipi</string>
+    <string name="menu_reset">Sıfırla</string>
+
+    <string name="eq_preset_acoustic">Akustik</string>
+    <string name="eq_preset_bass_booster">Bas Yükseltici</string>
+    <string name="eq_preset_bass_reducer">Bas Azaltıcı</string>
+    <string name="eq_preset_classical">Klasik</string>
+    <string name="eq_preset_deep">Derin</string>
+    <string name="eq_preset_flat">Düz</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rak</string>
+    <string name="eq_preset_small_speakers">Küçük Hoparlörler</string>
+    <string name="eq_preset_treble_booster">Tiz Yükseltisi</string>
+    <string name="eq_preset_treble_reducer">Tiz Azaltıcı</string>
+    <string name="eq_preset_vocal_booster">Ses Yükseltici</string>
+    <string name="eq_preset_custom">Özel</string>
+
+    <string name="category_wm8994_internal_speaker">Hoparlör</string>
+    <string name="category_wm8994_signal_processing">Sinyal İşleme</string>
+    <string name="category_wm8994_headphone_amp">Kulaklık</string>
+    <string name="category_wm8994_codec_optimization">Codec Optimizasyonu</string>
+    <string name="category_wm8994_dac_config">Dijital/Analog Dönüştürücü Ayarları</string>
+    <string name="category_wm8994_analog_path">Analog Kanal Yapılandırması</string>
+    <string name="category_wm8994_mic_settings">Mikrofon Ayarları</string>
+    <string name="category_wm8994_microphone_recording">Mikrofon</string>
+
+    <string name="wm8994_settings_title_head">Ses Ayarları</string>
+    <string name="wm8994_settings_title_subhead">Ses Ayarları</string>
+    <string name="wm8994_settings_summary_head">WM8994 ses işlemcisinin gelişmiş ayarları</string>
+    <string name="pref_wm8994_microphone_recording_title">Kaydetme önayarı</string>
+    <string name="pref_wm8994_headphone_amp_title">Yükseltici seviyesi</string>
+    <string name="pref_wm8994_headphone_amp_summary">Analog yükselticiyi özelleştir</string>
+    <string name="pref_wm8994_headphone_amp_dlg_title">Kulaklık yükseltici seviyesi</string>
+    <string name="pref_wm8994_headphone_amp_dlg_desc">Analog yükseltici</string>
+    <string name="pref_wm8994_bass_boost_enable_title">Bas yükseltici</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Bas yükseltme için gelişmiş ayarlar</string>
+    <string name="pref_wm8994_bass_boost_title">Bas yükseltme aralığı</string>
+    <string name="pref_wm8994_bass_boost_summary">Gelişmiş dinamik dizi yönetimi</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Bas yükseltici önayarı</string>
+    <string name="pref_wm8994_bass_boost_dlg_title">Bas yükseltici</string>
+    <string name="pref_wm8994_bass_boost_gain_dlg_desc">Yükselt</string>
+    <string name="pref_wm8994_bass_boost_range_dlg_desc">Bas yükseltme aralığı</string>
+    <string name="pref_wm8994_control_enable_title">WM8994 Etkinleştir</string>
+    <string name="pref_wm8994_control_enable_summary">WM8994 ses işlemcisinin gelişmiş ayarları</string>
+    <string name="pref_wm8994_speaker_tuning_title">Müzik için ayarla</string>
+    <string name="pref_wm8994_speaker_tuning_summary">Daha fazla bas ve dengeli ses için donanım EQ ayarla</string>
+    <string name="pref_wm8994_mono_downmix_title">Mono çevrimi</string>
+    <string name="pref_wm8994_mono_downmix_summary">Stereo sesi monoya çevir (kulaklık gibi stereo çıkışlar içindir)</string>
+    <string name="pref_wm8994_stereo_expansion_title">Stereo genişlet</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Dijital sinyal işleyicisi ile stereo sesi \'Genişlet\'</string>
+    <string name="pref_wm8994_dac_direct_title">D/AC direct</string>
+    <string name="pref_wm8994_dac_direct_summary">Kanal karıştırıcıyı es geçip direkt dijital/analog dönüştürücüye eriş. Daha temiz ses üretir (daha düşük sinyal-gürültü oranı)</string>
+    <string name="pref_wm8994_dac_osr128_title">Hi-fi yürütme</string>
+    <string name="pref_wm8994_dac_osr128_summary">128x örnekleme ile dijitalden-analoga dönüştürücü -- müzik çalarken daha temiz ses</string>
+    <string name="pref_wm8994_adc_osr128_title">Hi-fi kaydetme</string>
+    <string name="pref_wm8994_adc_osr128_summary">128x örnekleme ile analogdan-dijitale dönüştürücü -- kaydedilen seslerin kalitesini arttırır</string>
+    <string name="pref_wm8994_fll_tuning_title">Ayarlı ses frekansı</string>
+    <string name="pref_wm8994_fll_tuning_summary">Ayarlı WM8994 ses frekans kaynağını kullan -- sesin kalitesini arttırır</string>
+
+</resources>
