@@ -8,6 +8,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
@@ -15,7 +16,6 @@ import android.os.IBinder;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 
 import com.bel.android.dspmanager.R;
 import com.bel.android.dspmanager.service.HeadsetService;
@@ -41,7 +41,7 @@ public final class DSPManager extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.top);
 
-        pagerAdapter = new MyAdapter(getFragmentManager());
+        pagerAdapter = new MyAdapter(getFragmentManager(), this);
         actionBar = getActionBar();
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
@@ -123,20 +123,20 @@ public final class DSPManager extends FragmentActivity {
 }
 
 class MyAdapter extends FragmentPagerAdapter {
-    private final ArrayList tmpEntries;
+    private final ArrayList<String> tmpEntries;
     private final String[] entries;
 
-    public MyAdapter(FragmentManager fm) {
+    public MyAdapter(FragmentManager fm, Context context) {
         super(fm);
 
-        tmpEntries = new ArrayList();
+        tmpEntries = new ArrayList<String>();
         tmpEntries.add("headset");
         tmpEntries.add("speaker");
         tmpEntries.add("bluetooth");
 
         // Determine if WM8994 is supported
-        if (WM8994.isSupported(WM8994.WM8994_ENABLE_FILE)) {
-            tmpEntries.add("wm8994");
+        if (WM8994.isSupported(context)) {
+            tmpEntries.add(WM8994.NAME);
         }
 
         entries = (String[]) tmpEntries.toArray(new String[tmpEntries.size()]);
@@ -155,12 +155,8 @@ class MyAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         // Determine if fragment is WM8994
-        if (entries[position].equals(WM8994.WM8994_CONFIG)) {
-            final WM8994 wm8994Fragment = new WM8994();
-            Bundle b = new Bundle();
-            b.putString("config", entries[position]);
-            wm8994Fragment.setArguments(b);
-            return wm8994Fragment;
+        if (entries[position].equals(WM8994.NAME)) {
+            return new WM8994();
         } else {
             final DSPScreen dspFragment = new DSPScreen();
             Bundle b = new Bundle();

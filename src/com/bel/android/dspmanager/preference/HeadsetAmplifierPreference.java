@@ -16,19 +16,19 @@ import com.bel.android.dspmanager.activity.Utils;
 
 public class HeadsetAmplifierPreference extends DialogPreference {
 
-    private static final String TAG = "HEADSET...";
+    private static final String TAG = "HeadsetAmplifierPreference";
 
     private static final int SEEKBAR_ID = R.id.headphone_amplifier_level_seekbar;
-
     private static final int VALUE_DISPLAY_ID = R.id.headphone_amplifier_level_value;
 
-    private HeadsetAmplifierSeekBar mSeekBar;
-
     private static final int MAX_VALUE = 62;
-
     private static final int OFFSET_VALUE = 57;
 
-    public static final String FILE_PATH = "/sys/class/misc/wm8994_sound/headphone_amplifier_level";
+    public static final String FILE_PATH = "/sys/class/misc/voodoo_sound/headphone_amplifier_level";
+
+    private static int sInstances = 0;
+
+    private HeadsetAmplifierSeekBar mSeekBar;
 
     public HeadsetAmplifierPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -40,18 +40,22 @@ public class HeadsetAmplifierPreference extends DialogPreference {
     protected void onBindDialogView(View view) {
         super.onBindDialogView(view);
 
-            SeekBar seekBar = (SeekBar) view.findViewById(SEEKBAR_ID);
-            TextView valueDisplay = (TextView) view.findViewById(VALUE_DISPLAY_ID);
-            mSeekBar = new HeadsetAmplifierSeekBar(seekBar, valueDisplay, FILE_PATH);
+        sInstances++;
+
+        SeekBar seekBar = (SeekBar) view.findViewById(SEEKBAR_ID);
+        TextView valueDisplay = (TextView) view.findViewById(VALUE_DISPLAY_ID);
+        mSeekBar = new HeadsetAmplifierSeekBar(seekBar, valueDisplay, FILE_PATH);
     }
 
     @Override
     protected void onDialogClosed(boolean positiveResult) {
         super.onDialogClosed(positiveResult);
 
+        sInstances--;
+
         if (positiveResult) {
             mSeekBar.save();
-        } else {
+        } else if (sInstances == 0) {
             mSeekBar.reset();
         }
     }
@@ -63,48 +67,30 @@ public class HeadsetAmplifierPreference extends DialogPreference {
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         Log.d(TAG, "restore");
-        if (isSupported(FILE_PATH)) {
-            String sDefaultValue = Utils.readOneLine(FILE_PATH);
-            int iValue = sharedPrefs.getInt(FILE_PATH, Integer.valueOf(sDefaultValue));
-            Utils.writeValue(FILE_PATH, String.valueOf((long) iValue));
-        }
+        String sDefaultValue = Utils.readOneLine(FILE_PATH);
+        int value = sharedPrefs.getInt(FILE_PATH, Integer.valueOf(sDefaultValue));
+        Utils.writeValue(FILE_PATH, String.valueOf(value));
     }
 
     public static boolean isSupported() {
         return Utils.fileExists(FILE_PATH);
     }
 
-    public static boolean isSupported(String FILE) {
-        return Utils.fileExists(FILE);
-    }
-
     class HeadsetAmplifierSeekBar implements SeekBar.OnSeekBarChangeListener {
 
         private String mFilePath;
-
         private int mOriginal;
-
         private SeekBar mSeekBar;
-
         private TextView mValueDisplay;
 
         public HeadsetAmplifierSeekBar(SeekBar seekBar, TextView valueDisplay, String filePath) {
-            int iValue;
-
             mSeekBar = seekBar;
             mValueDisplay = valueDisplay;
             mFilePath = filePath;
 
-            SharedPreferences sharedPreferences = getSharedPreferences();
-
             // Read original value
-            if (Utils.fileExists(mFilePath)) {
-                String sDefaultValue = Utils.readOneLine(mFilePath);
-                iValue = Integer.valueOf(sDefaultValue);
-            } else {
-                iValue = MAX_VALUE;
-            }
-            mOriginal = iValue;
+            SharedPreferences sharedPreferences = getSharedPreferences();
+            mOriginal = sharedPreferences.getInt(mFilePath, Integer.valueOf(Utils.readOneLine(mFilePath)));
 
             mSeekBar.setMax(MAX_VALUE);
             reset();
@@ -113,30 +99,24 @@ public class HeadsetAmplifierPreference extends DialogPreference {
 
         public void reset() {
             Log.d(TAG, "reset");
-            int iValue;
 
-            iValue = mOriginal - OFFSET_VALUE;
             mSeekBar.setProgress(mOriginal);
-            updateValue(iValue);
+            updateValue(mOriginal);
         }
 
         public void save() {
             Log.d(TAG, "save");
-            int iValue;
 
-            iValue = mSeekBar.getProgress();
+            int value = mSeekBar.getProgress();
             Editor editor = getEditor();
-            editor.putInt(mFilePath, iValue);
+            editor.putInt(mFilePath, value);
             editor.commit();
         }
 
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-            int iValue;
-
-            iValue = progress - OFFSET_VALUE;
-            Utils.writeValue(mFilePath, String.valueOf((long) progress));
-            updateValue(iValue);
+            Utils.writeValue(FILE_PATH, String.valueOf(progress));
+            updateValue(progress);
         }
 
         @Override
@@ -150,7 +130,7 @@ public class HeadsetAmplifierPreference extends DialogPreference {
         }
 
         private void updateValue(int progress) {
-            mValueDisplay.setText(String.format("%d", (int) progress) + " dB");
+            mValueDisplay.setText((progress - OFFSET_VALUE) + " dB");
         }
 
     }
