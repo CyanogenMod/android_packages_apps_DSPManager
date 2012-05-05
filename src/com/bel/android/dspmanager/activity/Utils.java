@@ -72,38 +72,8 @@ public class Utils {
      * @param filename The filename
      * @param value The value
      */
-    public static void writeValue(String filename, Boolean value) {
-        FileOutputStream fos = null;
-        String sEnvia;
-        try {
-            fos = new FileOutputStream(new File(filename), false);
-            if (value)
-                sEnvia = "1";
-            else
-                sEnvia = "0";
-            fos.write(sEnvia.getBytes());
-            fos.flush();
-            // fos.getFD().sync();
-        } catch (FileNotFoundException ex) {
-            Log.w(TAG, "File " + filename + " not found: " + ex);
-        } catch (SyncFailedException ex) {
-            Log.w(TAG, "File " + filename + " sync failed: " + ex);
-        } catch (IOException ex) {
-            Log.w(TAG, "IOException trying to sync " + filename + ": " + ex);
-        } catch (RuntimeException ex) {
-            Log.w(TAG, "RuntimeException while syncing file: ", ex);
-        } finally {
-            if (fos != null) {
-                try {
-                    Log.w(TAG_WRITE, "File " + filename + ": " + value);
-                    fos.close();
-                } catch (IOException ex) {
-                    Log.w(TAG, "IOException while closing synced file: ", ex);
-                } catch (RuntimeException ex) {
-                    Log.w(TAG, "RuntimeException while closing file: ", ex);
-                }
-            }
-        }
+    public static void writeValue(String filename, boolean value) {
+        writeValue(filename, value ? "1" : "0");
     }
 
     /**

@@ -5,9 +5,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.bel.android.dspmanager.service.HeadsetService;
 import com.bel.android.dspmanager.activity.WM8994;
-import com.bel.android.dspmanager.preference.HeadsetAmplifierPreference;
+import com.bel.android.dspmanager.service.HeadsetService;
 
 /**
  * This receiver starts our {@link HeadsetService} after system boot. Since
@@ -20,7 +19,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         context.startService(new Intent(context, HeadsetService.class));
-        if (WM8994.isSupported(WM8994.WM8994_ENABLE_FILE)) {
+        if (WM8994.isSupported(context)) {
             WM8994.restore(context);
         }
     }
