@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="headphone_modes">
+    <item>Studio</item>
+    <item>Huone</item>
+    <item>Iso huone</item>
+    <item>Lava</item>
+  </string-array>
 
-	<string-array name="compression_modes">
-		<item>Kevyt</item>
-		<item>Keskitaso</item>
-		<item>Vahva</item>
-	</string-array>
+  <string-array name="equalizer_loudness_modes">
+      <item>Pois käytöstä</item>
+      <item>Heikoin</item>
+      <item>Heikompi</item>
+      <item>Heikko</item>
+      <item>Vahva</item>
+      <item>Vahvempi</item>
+      <item>Vahvin</item>
+  </string-array>
+
+  <string-array name="compression_modes">
+    <item>Kevyt</item>
+    <item>Keskitaso</item>
+    <item>Vahva</item>
+  </string-array>
+
+  <string-array name="bassboost_modes">
+    <item>Kevyt</item>
+    <item>Keskitaso</item>
+    <item>Vahva</item>
+  </string-array>
 </resources>
