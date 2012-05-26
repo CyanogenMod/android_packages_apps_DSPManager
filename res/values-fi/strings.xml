@@ -5,6 +5,10 @@
     <string name="headset_title">Kuulokkeet</string>
     <string name="speaker_title">Kaiutin</string>
     <string name="bluetooth_title">Bluetooth-laite</string>
+    <string name="audio_effects">Audio Effects</string>
+    <string name="dsp_settings_headset">DSP Asetukset - Kuulokkeet</string>
+    <string name="dsp_settings_speaker">DSP Asetukset - Puhelimen kaiutin</string>
+    <string name="dsp_settings_bluetooth">DSP Asetukset - Bluetooth-laite</string>
     <string name="pref_dsp_title">Kompressointi</string>
     <string name="pref_dsp_summary_on">Kompressointi päällä</string>
     <string name="pref_dsp_summary_off">Kompressointi pois päältä</string>
@@ -15,6 +19,8 @@
     <string name="pref_equalizer_summary_on">Ekvalisaattori päällä</string>
     <string name="pref_equalizer_summary_off">Ekvalisaattori pois päältä</string>
     <string name="pref_equalizer_enable">Aseta</string>
+    <string name="pref_equalizer_preset_title">Aseta Esiasetettu</string>
+    <string name="pref_equalizer_loudness_title">Äänen kompensointi</string>
     <string name="pref_bassboost_title">Bass Boost</string>
     <string name="pref_bassboost_summary_on">Bass Boost päällä</string>
     <string name="pref_bassboost_summary_off">Bass Boost pois päältä</string>
@@ -26,4 +32,18 @@
     <string name="pref_room_title">Valitse huonetyyppi</string>
     <string name="dialog_room">Huonetyyppi</string>
     <string name="menu_reset">Palauta oletukset</string>
+
+    <string name="eq_preset_acoustic">Akustinen</string>
+    <string name="eq_preset_bass_booster">Basson Tehostus</string>
+    <string name="eq_preset_bass_reducer">Basson Alennus</string>
+    <string name="eq_preset_classical">Classical</string>
+    <string name="eq_preset_deep">Syvä</string>
+    <string name="eq_preset_flat">Tasainen</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Pienet kaiuttimet</string>
+    <string name="eq_preset_treble_booster">Diskantin Tehostus</string>
+    <string name="eq_preset_treble_reducer">Diskantin Alennus</string>
+    <string name="eq_preset_vocal_booster">Laulu Tehostin</string>
+    <string name="eq_preset_custom">Kustomoitu</string>
 </resources>
