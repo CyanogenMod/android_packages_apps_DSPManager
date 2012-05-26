@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
 <resources>
     <string name="app_name">DSPManager</string>
-    <string name="select_configuration_title">Seleziona Configurazione Da modificare</string>
+    <string name="select_configuration_title">Seleziona configurazione da modificare</string>
     <string name="headset_title">Cuffie</string>
     <string name="speaker_title">Altoparlante Telefono</string>
     <string name="bluetooth_title">Dispositivo Bluetooth</string>
+    <string name="wm8994_title">WM8994</string>
+    <string name="audio_effects">Effetti Audio</string>
+    <string name="pref_unavailable">Funzionalità non disponibile sul tuo dispositivo</string>
     <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
     <string name="dsp_settings_speaker">Impostazioni DSP - Altoparlante Telefono</string>
     <string name="dsp_settings_bluetooth">Impostazioni DSP - Dispositivo Bluetooth</string>
-    <string name="audio_effects">Effetti audio</string>
+    <string name="dsp_settings_wm8994">Impostazioni DSP - WM8994</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Compressione attiva</string>
     <string name="pref_dsp_summary_off">Compressione non attiva</string>
@@ -20,7 +38,7 @@
     <string name="pref_equalizer_summary_off">Equalizzatore non attivo</string>
     <string name="pref_equalizer_enable">Attiva</string>
     <string name="pref_equalizer_preset_title">Seleziona Preset</string>
-    <string name="pref_equalizer_loudness_title">Loudness</string>
+    <string name="pref_equalizer_loudness_title">Compensazione rumorosità</string>
     <string name="pref_bassboost_title">Amplificazione Bassi</string>
     <string name="pref_bassboost_summary_on">Amplificazione Bassi attiva</string>
     <string name="pref_bassboost_summary_off">Amplificazione Bassi non attiva</string>
@@ -31,7 +49,7 @@
     <string name="pref_headset_virtual_enable">Attiva</string>
     <string name="pref_room_title">Seleziona Stanza</string>
     <string name="dialog_room">Tipologia di Stanza</string>
-
+    <string name="menu_reset">Resetta</string>
     <string name="eq_preset_acoustic">Acustica</string>
     <string name="eq_preset_bass_booster">Amplificazione Bassi</string>
     <string name="eq_preset_bass_reducer">Riduzione Bassi</string>
@@ -45,4 +63,44 @@
     <string name="eq_preset_treble_reducer">Riduzione Alti</string>
     <string name="eq_preset_vocal_booster">Amplificazione Voce</string>
     <string name="eq_preset_custom">Manuale</string>
+    <string name="category_wm8994_internal_speaker">Configurazione Speaker Interno</string>
+    <string name="category_wm8994_signal_processing">Elaborazione Segnale</string>
+    <string name="category_wm8994_headphone_amp">Amplificatore Cuffie</string>
+    <string name="category_wm8994_codec_optimization">Ottimizzazione Codec</string>
+    <string name="category_wm8994_dac_config">Impostazioni del Convertitore Digitale/Analogico</string>
+    <string name="category_wm8994_analog_path">Configurazione del Percorso Analogico</string>
+    <string name="category_wm8994_mic_settings">Impostazioni Microfono</string>
+    <string name="category_wm8994_microphone_recording">Microfono</string>
+    <string name="wm8994_settings_title_head">Impostazioni Audio</string>
+    <string name="wm8994_settings_title_subhead">Impostazioni Audio</string>
+    <string name="wm8994_settings_summary_head">Controllo avanzato del processore audio hardware WM8994</string>
+    <string name="pref_wm8994_microphone_recording_title">Registrazione preimpostata</string>
+    <string name="pref_wm8994_headphone_amp_title">Livello amplificatore</string>
+    <string name="pref_wm8994_headphone_amp_summary">Personalizza il miglioramento analogico</string>
+    <string name="pref_wm8994_headphone_amp_dlg_title">Livello Amplificatore Cuffie</string>
+    <string name="pref_wm8994_headphone_amp_dlg_desc">Miglioramento Analogico</string>
+    <string name="pref_wm8994_bass_boost_enable_title">Amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Controlli avanzati dell\'Amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_title">Intervallo Amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_summary">Gestione avanzata dynamic range</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Amplificazione Bassi preimpostata</string>
+    <string name="pref_wm8994_bass_boost_dlg_title">Amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_gain_dlg_desc">Miglioramento</string>
+    <string name="pref_wm8994_bass_boost_range_dlg_desc">Intervallo Amplificazione Bassi</string>
+    <string name="pref_wm8994_control_enable_title">Abilita il Controllo di WM8994</string>
+    <string name="pref_wm8994_control_enable_summary">Abilita i controlli avanzati per il processore audio hardware WM8994</string>
+    <string name="pref_wm8994_speaker_tuning_title">Regola l\'altoparlante per la musica</string>
+    <string name="pref_wm8994_speaker_tuning_summary">Riconfigura l\'equalizzatore hardware per ottenere maggiori bassi ed un suono bilanciato</string>
+    <string name="pref_wm8994_mono_downmix_title">Mono downmix</string>
+    <string name="pref_wm8994_mono_downmix_summary">Downmix stereo sound to mono (per le uscite stereo, come le cuffie)</string>
+    <string name="pref_wm8994_stereo_expansion_title">Espansione stereo</string>
+    <string name="pref_wm8994_stereo_expansion_summary">"Espandi" suono stereo attraverso l\'elaborazione digitale del segnale</string>
+    <string name="pref_wm8994_dac_direct_title">D/AC diretto</string>
+    <string name="pref_wm8994_dac_direct_summary">Accedi al convertitore digitale/analogico direttamente, aggirando il canale del mixer. Produce audio più pulito (rapporto segnale-rumore minore)</string>
+    <string name="pref_wm8994_dac_osr128_title">Riproduzione hi-fi</string>
+    <string name="pref_wm8994_dac_osr128_summary">Convertitore digitale-analogico con sovracampionamento a 128x -- suoni più puliti quando riproduci musica</string>
+    <string name="pref_wm8994_adc_osr128_title">Registrazione hi-fi</string>
+    <string name="pref_wm8994_adc_osr128_summary">Convertitore analogico-digitale con sovracampionamento a 128x -- incrementa la qualità delle registrazioni</string>
+    <string name="pref_wm8994_fll_tuning_title">Regola il clock audio</string>
+    <string name="pref_wm8994_fll_tuning_summary">Usa il clock regolato della sorgente audio WM8994 -- migliora la qualità del suono</string>
 </resources>
