@@ -53,9 +53,10 @@ int32_t EffectVirtualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCm
             return 0;
         }
 
-        /* Haas effect delay */
-        mReverbDelayL.setParameters(mSamplingRate, 0.025f);
-        mReverbDelayR.setParameters(mSamplingRate, 0.025f);
+        /* Haas effect delay -- slight difference between L & R
+	 * to reduce artificialness of the ping-pong. */
+        mReverbDelayL.setParameters(mSamplingRate, 0.029f);
+        mReverbDelayR.setParameters(mSamplingRate, 0.023f);
         /* the -3 dB point is around 650 Hz, giving about 300 us to work with */
         mLocalization.setHighShelf(0, 800.0f, mSamplingRate, -11.0f, 0.72f, 0);
 
@@ -124,8 +125,10 @@ void EffectVirtualizer::refreshStrength()
     mDeep = mStrength != 0;
     mWide = mStrength >= 500;
 
-    /* -15 .. -5 dB */
-    float roomEcho = powf(10.0f, (mStrength / 100.0f - 15.0f) / 20.0f);
+    float start = -15.0f;
+    float end = -6.0f;
+    float attenuation = start + (end - start) * (mStrength / 1000.0f);
+    float roomEcho = powf(10.0f, attenuation / 20.0f);
     mLevel = int64_t(roomEcho * (int64_t(1) << 32));
 }
 
