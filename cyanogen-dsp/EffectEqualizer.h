@@ -15,17 +15,20 @@ class EffectEqualizer : public Effect {
     /* Automatic equalizer */
     float mLoudnessAdjustment;
 
-    float mLoudness;
+    float mLoudnessL;
+    float mLoudnessR;
     int32_t mNextUpdate;
     int32_t mNextUpdateInterval;
-    int64_t mPowerSquared;
+    int64_t mPowerSquaredL;
+    int64_t mPowerSquaredR;
 
     /* Smooth enable/disable */
     int32_t mFade;
 
     void setBand(int32_t idx, float dB);
-    float getAdjustedBand(int32_t idx);
+    float getAdjustedBand(int32_t idx, float loudness);
     void refreshBands();
+    void updateLoudnessEstimate(float& loudness, int64_t powerSquared);
 
     public:
     EffectEqualizer();

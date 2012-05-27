@@ -61,7 +61,8 @@ static int64_t toFixedPoint(float in) {
 }
 
 EffectEqualizer::EffectEqualizer()
-    : mLoudnessAdjustment(10000.f), mLoudness(50.f), mNextUpdate(0), mNextUpdateInterval(1000), mPowerSquared(0), mFade(0)
+    : mLoudnessAdjustment(10000.f), mLoudnessL(50.f), mLoudnessR(50.f),
+      mNextUpdate(0), mNextUpdateInterval(1000), mPowerSquaredL(0), mPowerSquaredR(0), mFade(0)
 {
     for (int32_t i = 0; i < 6; i ++) {
         mBand[i] = 0;
@@ -192,27 +193,25 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
  * sound pressure level.
  *
  * The boost can be calculated as linear scaling of the following adjustment:
- *     20 Hz +41 dB
- *   62.5 Hz +28 dB
- *    250 Hz +10 dB
- *   1000 Hz   0 dB
- *   4000 Hz  -3 dB
- *  16000 Hz  +8 dB
+ *     20 Hz  0.0 .. 41.0 dB
+ *   62.5 Hz  0.0 .. 28.0 dB
+ *    250 Hz  0.0 .. 10.0 dB
+ *   1000 Hz  0.0 ..  0,0 dB
+ *   4000 Hz -1.0 .. -3.0 dB
+ *  16000 Hz -1.5 ..  8.0 dB
  *
  * The boost will be applied maximally for signals of 20 dB and less,
  * and linearly decreased for signals 20 dB ... 100 dB, and no adjustment is
  * made for 100 dB or higher. User must configure a reference level that maps the
- * digital sound level against the audio.
+ * digital sound level against the SPL achieved in the ear.
  */
-float EffectEqualizer::getAdjustedBand(int32_t band) {
+float EffectEqualizer::getAdjustedBand(int32_t band, float loudness) {
     /* 1st derived by linear extrapolation from (62.5, 28) to (20, 41) */
-    const float adj[6] = { 42.3, 28.0, 10.0, 0.0, -3.0, 8.0 };
-
-    /* The 15.625 band is not exposed externally, so first point is duplicated. */
-    float f = mBand[band];
+    const float adj_beg[6] = {  0.0,  0.0,  0.0,  0.0, -1.0, -1.5 };
+    const float adj_end[6] = { 42.3, 28.0, 10.0,  0.0, -3.0,  8.0 };
 
     /* Add loudness adjustment */
-    float loudnessLevel = mLoudness + mLoudnessAdjustment;
+    float loudnessLevel = loudness + mLoudnessAdjustment;
     if (loudnessLevel > 100.f) {
         loudnessLevel = 100.f;
     }
@@ -220,9 +219,13 @@ float EffectEqualizer::getAdjustedBand(int32_t band) {
         loudnessLevel = 20.f;
     }
     /* Maximum loudness = no adj (reference behavior at 100 dB) */
-    loudnessLevel = (loudnessLevel - 20) / (100 - 20);
-    f += adj[band] * (1. - loudnessLevel);
+    loudnessLevel = (loudnessLevel - 20.0f) / (100.0f - 20.0f);
 
+    /* Read user setting */
+    float f = mBand[band];
+    /* Add compensation values */
+    f += adj_beg[band] + (adj_end[band] - adj_beg[band]) * (1.0f - loudnessLevel);
+    /* Account for effect smooth fade in/out */
     return f * (mFade / 100.f);
 }
 
@@ -231,28 +234,41 @@ void EffectEqualizer::refreshBands()
     for (int32_t band = 0; band < 5; band ++) {
         /* 15.625, 62.5, 250, 1000, 4000, 16000 */
         float centerFrequency = 15.625f * powf(4, band);
-        float dB = getAdjustedBand(band + 1) - getAdjustedBand(band);
 
-        float overallGain = band == 0 ? getAdjustedBand(0) : 0.0f;
+        float dBL = getAdjustedBand(band + 1, mLoudnessL) - getAdjustedBand(band, mLoudnessL);
+        float overallGainL = band == 0 ? getAdjustedBand(0, mLoudnessL) : 0.0f;
+        mFilterL[band].setHighShelf(mNextUpdateInterval, centerFrequency * 2.0f, mSamplingRate, dBL, 1.0f, overallGainL);
 
-        mFilterL[band].setHighShelf(mNextUpdateInterval, centerFrequency * 2.0f, mSamplingRate, dB, 1.0f, overallGain);
-        mFilterR[band].setHighShelf(mNextUpdateInterval, centerFrequency * 2.0f, mSamplingRate, dB, 1.0f, overallGain);
+        float dBR = getAdjustedBand(band + 1, mLoudnessR) - getAdjustedBand(band, mLoudnessR);
+        float overallGainR = band == 0 ? getAdjustedBand(0, mLoudnessR) : 0.0f;
+        mFilterR[band].setHighShelf(mNextUpdateInterval, centerFrequency * 2.0f, mSamplingRate, dBR, 1.0f, overallGainR);
+    }
+}
+
+void EffectEqualizer::updateLoudnessEstimate(float& loudness, int64_t powerSquared) {
+    float signalPowerDb = 96.0f + logf(powerSquared / mNextUpdateInterval / float(int64_t(1) << 48) + 1e-10f) / logf(10.0f) * 10.0f;
+    /* Immediate rise-time, and perceptibly linear 10 dB/s decay */
+    if (loudness > signalPowerDb + 0.1f) {
+        loudness -= 0.1f;
+    } else {
+        loudness = signalPowerDb;
     }
 }
 
 int32_t EffectEqualizer::process(audio_buffer_t *in, audio_buffer_t *out)
 {
     for (uint32_t i = 0; i < in->frameCount; i ++) {
+        /* Update EQ? */
         if (mNextUpdate == 0) {
-            float signalPowerDb = logf(mPowerSquared / mNextUpdateInterval / float(int64_t(1) << 48) + 1e-10f) / logf(10.0f) * 10.0f;
-            signalPowerDb += 96.0f - 6.0f;
+            mNextUpdate = mNextUpdateInterval;
 
-            /* Immediate rise-time, and linear 10 dB/s decay */
-            if (mLoudness > signalPowerDb + 0.1) {
-                mLoudness -= 0.1;
-            } else {
-                mLoudness = signalPowerDb;
-            }
+            //LOGI("powerSqL: %lld, powerSqR: %lld", mPowerSquaredL, mPowerSquaredR);
+            updateLoudnessEstimate(mLoudnessL, mPowerSquaredL);
+            updateLoudnessEstimate(mLoudnessR, mPowerSquaredR);
+            //LOGI("loudnessL: %f, loudnessR: %f", mLoudnessL, mLoudnessR);
+            mPowerSquaredL = 0;
+            mPowerSquaredR = 0;
+
 
             if (mEnable && mFade < 100) {
                 mFade += 1;
@@ -261,23 +277,18 @@ int32_t EffectEqualizer::process(audio_buffer_t *in, audio_buffer_t *out)
                 mFade -= 1;
             }
 
-            /* Update EQ. */
             refreshBands();
-
-            mNextUpdate = mNextUpdateInterval;
-            mPowerSquared = 0;
         }
         mNextUpdate --;
 
         int32_t tmpL = read(in, i * 2);
         int32_t tmpR = read(in, i * 2 + 1);
 
-        /* Calculate signal loudness estimate.
-         * XXX: should we be independent per channel? */
-        int64_t weight = tmpL + tmpR;
-        mPowerSquared += weight * weight;
+        /* Update signal loudness estimate in SPL */
+        mPowerSquaredL += int64_t(tmpL) * tmpL;
+        mPowerSquaredR += int64_t(tmpR) * tmpR;
 
-        /* evaluate the other filters. */
+        /* Evaluate EQ filters */
         for (int32_t j = 0; j < 5; j ++) {
             tmpL = mFilterL[j].process(tmpL);
             tmpR = mFilterR[j].process(tmpR);
