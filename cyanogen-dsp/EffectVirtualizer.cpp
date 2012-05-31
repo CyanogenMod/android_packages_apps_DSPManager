@@ -54,7 +54,7 @@ int32_t EffectVirtualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCm
         }
 
         /* Haas effect delay -- slight difference between L & R
-	 * to reduce artificialness of the ping-pong. */
+         * to reduce artificialness of the ping-pong. */
         mReverbDelayL.setParameters(mSamplingRate, 0.029f);
         mReverbDelayR.setParameters(mSamplingRate, 0.023f);
         /* the -3 dB point is around 650 Hz, giving about 300 us to work with */
@@ -125,11 +125,15 @@ void EffectVirtualizer::refreshStrength()
     mDeep = mStrength != 0;
     mWide = mStrength >= 500;
 
-    float start = -15.0f;
-    float end = -6.0f;
-    float attenuation = start + (end - start) * (mStrength / 1000.0f);
-    float roomEcho = powf(10.0f, attenuation / 20.0f);
-    mLevel = int64_t(roomEcho * (int64_t(1) << 32));
+    if (mStrength != 0) {
+        float start = -15.0f;
+        float end = -5.0f;
+        float attenuation = start + (end - start) * (mStrength / 1000.0f);
+        float roomEcho = powf(10.0f, attenuation / 20.0f);
+        mLevel = int64_t(roomEcho * (int64_t(1) << 32));
+    } else {
+        mLevel = 0;
+    }
 }
 
 int32_t EffectVirtualizer::process(audio_buffer_t* in, audio_buffer_t* out)
