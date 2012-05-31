@@ -4,6 +4,7 @@ package com.bel.android.dspmanager.activity;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -16,6 +17,13 @@ import android.os.IBinder;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.bel.android.dspmanager.R;
 import com.bel.android.dspmanager.service.HeadsetService;
@@ -119,6 +127,35 @@ public final class DSPManager extends FragmentActivity {
         };
         Intent serviceIntent = new Intent(this, HeadsetService.class);
         bindService(serviceIntent, connection, 0);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int choice = item.getItemId();
+        switch (choice) {
+            case R.id.help:
+                DialogFragment df = new DialogFragment() {
+			@Override
+			public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
+				View v = inflater.inflate(R.layout.help, null);
+				TextView tv = (TextView) v.findViewById(R.id.help);
+				tv.setText(R.string.help_text);
+				return v;
+			}
+		};
+		df.setStyle(DialogFragment.STYLE_NO_TITLE, 0);
+                df.show(getFragmentManager(), "help");
+                return true;
+            default:
+                return false;
+        }
     }
 }
 

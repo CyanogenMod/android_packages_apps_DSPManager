@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/reset"
-          android:title="@string/menu_reset" android:icon="@android:drawable/ic_menu_delete"/>
+    <item android:id="@+id/help"
+          android:title="@string/help_title" android:icon="@android:drawable/ic_menu_help"/>
 </menu>
