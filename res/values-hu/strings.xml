@@ -5,9 +5,13 @@
     <string name="headset_title">Fejhallgató</string>
     <string name="speaker_title">Telefon hangszóró</string>
     <string name="bluetooth_title">Bluetooth-eszköz</string>
+    <string name="wm8994_title">WM8994</string>
+    <string name="audio_effects">Hangeffektek</string>
+    <string name="pref_unavailable">A funkció nem elérhető ezen az eszközön.</string>
     <string name="dsp_settings_headset">DSP Beállítások - Fejhallgató</string>
     <string name="dsp_settings_speaker">DSP Beállítások - Telefon hangszóró</string>
     <string name="dsp_settings_bluetooth">DSP Beállítások - Bluetooth-eszköz</string>
+    <string name="dsp_settings_wm8994">DSP Beállítások - WM8994</string>
     <string name="pref_dsp_title">Dinamikus Tömörítési Tartomány</string>
     <string name="pref_dsp_summary_on">Tömörítés engedélyezve</string>
     <string name="pref_dsp_summary_off">Tömörítés letiltva</string>
@@ -45,5 +49,128 @@
     <string name="eq_preset_treble_reducer">Magas csökkentés</string>
     <string name="eq_preset_vocal_booster">Ének kiemelés</string>
     <string name="eq_preset_custom">Egyéni</string>
+
+    <!--  WM8994 -->
+    <!--  Categories -->
+    <string name="category_wm8994_internal_speaker">Hangszóró</string>
+    <string name="category_wm8994_signal_processing">Jelfeldolgozás</string>
+    <string name="category_wm8994_headphone_amp">Fülhallgató</string>
+    <string name="category_wm8994_codec_optimization">Kodek optimalizálás</string>
+    <string name="category_wm8994_dac_config">Digitális/Analóg átalakító beállítások</string>
+    <string name="category_wm8994_analog_path">Analóg útvonal beállítások</string>
+    <string name="category_wm8994_mic_settings">Mikrofonbeállítások</string>
+    <string name="category_wm8994_microphone_recording">Mikrofon</string>
+    <!--  Titles/Summaries -->
+    <string name="wm8994_settings_title_head">Hangbeállítások</string>
+    <string name="wm8994_settings_title_subhead">Hangbeállítások</string>
+    <string name="wm8994_settings_summary_head">WM8994 hangfeldolgozó részletes beállításai</string>
+    <string name="pref_wm8994_microphone_recording_title">Felvételi profil</string>
+    <string name="pref_wm8994_headphone_amp_title">Erősítő szint</string>
+    <string name="pref_wm8994_headphone_amp_summary">Analóg erősítés beállítása</string>
+    <string name="pref_wm8994_headphone_amp_dlg_title">Fülhallgató erősítő szint</string>
+    <string name="pref_wm8994_headphone_amp_dlg_desc">Analóg erősítés</string>
+    <string name="pref_wm8994_bass_boost_enable_title">Mélyhang-kiemelés</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Mélyhangkiemelés részletes beállításai</string>
+    <string name="pref_wm8994_bass_boost_title">Mélyhangkiemelés tartománya</string>
+    <string name="pref_wm8994_bass_boost_summary">Részletes dinamikus tartománykezelés</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Mélyhangkiemelési profil</string>
+    <string name="pref_wm8994_bass_boost_dlg_title">Mélyhangkiemelés</string>
+    <string name="pref_wm8994_bass_boost_gain_dlg_desc">Erősítés</string>
+    <string name="pref_wm8994_bass_boost_range_dlg_desc">Mélyhangkiemelés tartománya</string>
+    <string name="pref_wm8994_control_enable_title">WM8994 szabályozás engedélyezése</string>
+    <string name="pref_wm8994_control_enable_summary">WM8994 hangfeldolgozó szabályozása</string>
+    <string name="pref_wm8994_speaker_tuning_title">Zenére hangolás</string>
+    <string name="pref_wm8994_speaker_tuning_summary">Átállítja a hardveres hangszínszabályzót több mélyhangért és kiegyensúlyozottabb hangzásért.</string>
+    <string name="pref_wm8994_mono_downmix_title">Egy hangsávra keverés</string>
+    <string name="pref_wm8994_mono_downmix_summary">Kettőről egy hangsávra kever (Sztereó kimenetekhez, mint például fülhallgatók)</string>
+    <string name="pref_wm8994_stereo_expansion_title">Sztereó kiterjesztés</string>
+    <string name="pref_wm8994_stereo_expansion_summary">"Kiterjeszti" a sztereó hangzást digitális jelfeldolgozási eszközökkel</string>
+    <string name="pref_wm8994_dac_direct_title">Közvetlen D/A átalakítás</string>
+    <string name="pref_wm8994_dac_direct_summary">Digitális/analóg átalakító közvetlen elérése megkerülve a sávkeverőt. Tisztább hangot (kevesebb zajt) eredményez</string>
+    <string name="pref_wm8994_dac_osr128_title">Hi-fi lejátszás</string>
+    <string name="pref_wm8994_dac_osr128_summary">Digitális-analóg átalakító 128x túlmintavételezés -- tisztább hangok zene lejátszásakor</string>
+    <string name="pref_wm8994_adc_osr128_title">Hi-fi felvétel</string>
+    <string name="pref_wm8994_adc_osr128_summary">Analóg-digitális átalakító 128x túlmintavételezés -- javítja a felvételek minőségét</string>
+    <string name="pref_wm8994_fll_tuning_title">Hangolt audió órajel</string>
+    <string name="pref_wm8994_fll_tuning_summary">Hangolt WM8994 audió órajelforrás használata -- javítja a hang minőségét</string>
+
+    <string name="help_title">Felhasználói segédlet</string>
+    <string name="help_text"><b>Mi is a DSPManager?</b>
+\n
+\nA DSPManager egy alkalmazás, ami a kiadott hangok módosítására szolgál. A <i>DSP</i> a
+Digital Signal Processing, vagyis digitális jelfeldolgozás rövidítése, a <i>Manager</i>
+(kezelő) rész pedig arra utal, hogy a DSP valójában nem az alkalmazásban fut - a kezelő
+csak engedélyezni tudja olyan alkalmazások számára, melyek képesek együttműködni az Android
+hangeffekt-specifikációjával. Ilyenek például a különféle zenelejátszók.
+\n
+\n<b>Célok</b>
+\n
+\nA CyanogenMod hangfeldolgozó programja három különböző kimenetet támogat:
+vezetékes fejhallgatókat, az eszköz beépített hangszóróit, valamint Bluetooth hangeszközöket
+(autós kihangosító, headset, stb.). Mindegyik eszköztípus számára külön vezérlőpanel
+áll rendelkezésre. A DSPManager célja ezen eszközök sajátos hibáinak kiküszöbölése optimális
+zenehallgatási élmény elérése érdekében.
+\n
+\nAz AOSP hangeffektektől eltérően nincsenek alkalmazásokhoz rendelhető beállítások. Ez szándékos
+tervezés eredménye: nem az számít, hogy mi adja ki a hangot, hanem az a lényeges, hogy a kiadott
+hang jól szóljon.
+\n
+\n<b>Funkciók</b>
+\n
+\nA segédlet további fejezetei leírják az egyes hangeffektek funkcióját és azok felhasználási
+területeit.
+\n
+\n1. <b>Dinamikus tömörítési tartomány (DRC)</b>
+\n
+\nEz az effekt megpróbálja megbecsülni azt a hangosságot, amit egy átlagos hallgató
+érzékel és az erősítés szabályozását ennek megfelelően végzi. Elsősorban zajos környezetben,
+például autóban, vagy utcán érdemes használni, ahol a zene halk részeit a környező zaj elnyomhatja.
+\n
+\nAz egyetlen beállítási lehetőség azt adja meg, hogy a DSPManager milyen erősen
+próbálja a hangosságot szinten tartani. Ennek az effektnek nincs AOSP megfelelője.
+\n
+\n2. <b>Mélyhangkimenelés</b>
+\n
+\nA mélyhangkiemelés technikailag egy egyszerű aluláteresztő szűrő amit az 55 Hz és az alatti frekvenciájú
+hangok nyomatékosítására lehet használni. A kiemelés nagyjából 6 dB értékű és hat rá az "erősség"
+paraméter, ami szűrési rezonanciát ad az 55 Hz-es sávnak, így az a frekvencia még inkább kiemelésre
+kerül. Az effektet arra tervezték, hogy a kis hangszórókra és fülön ülő fejhallgatókra (melyek a
+hallgató hallójáratához nem illeszkednek szorosan) jellemző gyenge mélyhangokat élvezhető szintűre erősítse.
+\n
+\n3. <b>Hangszínszabályzó</b>
+\n
+\nEz egy hatsávos hangszínszabályzó, melynek sávjai 16, 64, 250, 1000, 4000 and 16000 Hz-nél vannak.
+Adott néhány gyakori hangprofil, valamint a frekvenciaválasz (a különféle magasságú hangok erőssége)
+személyre szabható a szabályzó grafikonját megérintve. Az effekt arra lett tervezve, hogy a kiadott
+zene hangzása megfeleljen a felhasználó ízlésének, vagy, az elérhető fejhallgató, vagy hangszóró
+képességeinek.
+\n
+\nA hangszínszabályzó tartalmaz még egy hangosságkompenzáló szűrőt is, ami a felhasználó fülét elérő
+hangnyomásből származó hatásokat küszöböli ki. Ennek használatához vezetékes fejhallgatóra van szükség,
+a paraméter értékét pedig helyesen kell beállítani ahhoz, hogy a tervezett hatást elérhesse.
+\n
+\nA kompenzáció helyes értékének kiválasztásához használja a leghalkabb hangerőt és hozzá valami
+széles spektrumú, zajos zenét, mint amilyen a rock, vagy metál zenék. Próbáljon meg olyan
+beállítást találni, ami a mélyhangokat hallható szintre viszi vissza és azok az anyag többi részével
+egyensúlyba kerülnek. Miután a kompenzációt helyesen beállította, a mélyhangoknak a többi hangszerhez
+képest a hangerőtől függetlenül azonos szinten kell lennie. Máskézről, ha hangosabbra állítva a
+zenében túl erőssé válnának a mélyhangok, a kompenzáció valószínűleg túl erős, azt csökkenteni kell.
+\n
+\nA kompenzáció hozzáadódik a felhasználó beállításaihoz. Ha csak a kompenzációt kívánja alkalmazni,
+a hangszínszabályzót állítsa "Lapos" profilra.
+\n
+\n4. <b>Fejhallgató szűrő</b>
+\n
+\nA fejhallgató szűrő crossfeed tervezésű, melyet a híres bs2b analóg áramkör ihletett.
+Az effekt a mono hangot változatlanul hagyja és a sztereó hang sávjainak különbségét egy aluláteresztő
+szűrőn engedi át, ami mind a fej árnyékolását, mind a hallójáratok késleltetését közelíti, így a felhasználó
+fülei számára egy természetesebb hangzást biztosít. A szűrő célja megelőzni a hallgató kifáradását,
+ami a valószínűtlen, a két különböző hangsáv okozta hanghatásokból fakadhat. Ezek a hatások a
+fejhallgatók velejárói, így az effektet ajánlott mindig bekapcsolni, amikor sztereó fejhallgatót használ.
+\n
+\nMivel a keverés valamelyest csökkenti a sztereó sávok szétválasztását, Haas-visszhang alakul ki, melyet
+fel lehet használni az érzékelt sztereó hatás "szélességének" növelésére. Ezt a "Szoba típusa" beállítással
+lehet módosítani.
+    </string>
 
 </resources>

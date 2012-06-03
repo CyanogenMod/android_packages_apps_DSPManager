@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="microphone_recording_presets">
+    <item>Eredeti</item>
+    <item>Kiegyensúlyozott</item>
+    <item>Nagy érzékenységű</item>
+    <item>Hangos környezet</item>
+  </string-array>
+
   <string-array name="headphone_modes">
     <item>Stúdió</item>
     <item>Szoba</item>
@@ -27,6 +34,11 @@
     <item>Enyhe</item>
     <item>Mérsékelt</item>
     <item>Extrém</item>
+  </string-array>
+
+  <string-array name="wm8994_bassboost_modes">
+    <item>Általános</item>
+    <item>Kis hangszórók</item>
   </string-array>
 
 </resources>
