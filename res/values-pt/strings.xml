@@ -24,7 +24,7 @@
     <string name="pref_headset_virtual_summary_off">A simulação está desativada</string>
     <string name="pref_headset_virtual_enable">Ativar</string>
     <string name="pref_room_title">Selecione o ambiente</string>
-    <string name="dialog_room">Simulação de ambiente</string>
+    <string name="dialog_room">Simulação de Ambiente</string>
     <string name="menu_reset">Resetar</string>
     <string name="dsp_settings_headset">Configurações Equalizador - Fone de Ouvido</string>
     <string name="dsp_settings_speaker">Configurações Equalizador - Alto-falante</string>
@@ -87,4 +87,92 @@
     <string name="pref_wm8994_fll_tuning_title">Tempo do audio sintonizado</string>
     <string name="pref_wm8994_fll_tuning_summary">Usar fonte de tempo de audio WM8994 sintonizado -- melhora qualidade do som</string>
     <string name="dsp_settings_wm8994">Configurações DSP - WM8994</string>
+    <string name="help_title">Guia de usuário</string>
+    <string name="help_text"><b>O que é o Equalizador??</b>
+\n
+\nEqualizador é uma aplicação para ajuste de áudio por canal. <i>Equalizador</i>
+usa Processamento de áudio digital. O equalizador não é executado dentro da
+applicação; O equalizador somente funciona para aplicações que está de acordo
+com a especificação de efeito de áudio do Android. Ex. maioria dos tocadores
+de música.
+\n
+\n<b>Filosofia</b>
+\n
+\nO processamento de aúdio do CyanogenMod suporta três diferentes cantegorias de
+saídas: fone de ouvido com fio, alto-falante do telefone e fone bluetooth. Existe
+um painel de configuração separado para cada categoria de saída. A filosofia do
+Equalizador é para corrigir cada saída de áudio das deficiências para conseguir a
+maior eficiência para ouvir som de cada saída.
+\n
+\nAo contrário dos efeitos de áudio do projeto oficial do Android, não existe
+configurações por aplicações. Isto foi uma escolha intencional: nós preocupamos
+com a saída em si, e não qual aplicação gera o áudio para o Equalizador
+manipulá-lo.
+\n
+\n<b>Características</b>
+\n
+\nO resto deste documento descreve cada efeito de áudio e seu uso pretendido em
+cada cenário.
+\n
+\n1. <b>Compressão dinâmica de faixa (CDF)</b>
+\n
+\nEste efeito estima o volume do áudio como pode ser percibido por um ouvinte
+comum e configura o controle de ganho baseado nesta estimativa. O caso de uso
+primário é para ambientes barulhentos como dentro de carros ou na rua, onde
+partes da música com som baixo tem o risco de ser sobreposto pelo som
+ambiente.
+\n
+\nO ajuste determina o quanto o Equalizador vai tentar manter o volume de áudio
+no nível desejado. Não há nenhum equivalente no projeto oficial do Android
+para este efeito de equalização.
+\n
+\n2. <b>Reforço de Grave</b>
+\n
+\nO reforço de grave é um simples filtro passa-baixo que pode ser usado para
+adicionar uma ênfase aos 55 Hz ou frequências mais baixas. O ganho é em média 6 dB,
+e modificado pelo parâmetro força, no qual adiciona filtro de ressonância
+na faixa de 55 Hz, dando ênfase extra a aquela frequência. O efeito foi criado para
+combater a perda de frequência de grave que é comum em alto-falantes pequenos e
+fones de ouvidos quem não acomodam perfeitamente no ouvido do usuário.
+\n
+\n3. <b>Equalizador</b>
+\n
+\nIsto é um equalizador de 6 faixas que são: 16, 64, 250, 1000, 4000 e 16000 Hz.
+Algumas predefinições comuns são fornecidas, e a frequência de reposta também pode
+ser personalizada ao tocar no gráfico do equalizador. O efeito deve ser usado para
+ajustar a frequência de resposta ao gosto do usuário, ou para as capacidades
+particulares dos alto-falantes ou fones de ouvido disponíveis.
+\n
+\nO Equalizador também contém um filtro de compensação de ruído, que equaliza as
+alterações nas frequências de resposta do ouvido baseadas no nível de pressão do som
+no qual chega ao ouvido do usuário. O uso de fone de ouvido com fio é necessário, e
+o valor do parâmetro força deve ser ajustado corretamente antes do efeito funcionar
+corretamente.
+\n
+\nPara selecionar o valor correto para a compensação de força, use o volume mais
+baixo da música, e escolha algum espectro amplo de música barulhenta como rock ou
+metal. Tente encontrar a configuração em que o grave tenha aumentado até chegar de
+volta à audibilidade e pareça balanceado com o resto da música. Depois da compensação
+ser configurada corretamente, o grave deve permanecer ao mesmo nível relativo aos
+outros instrumentos independente do nível do volume. Por outro lado, se a música
+começar a soar com muito grave em níveis de volume alto, a compensação provavelmentem
+definida muito forte, e deve ser reduzida.
+\n
+\nA compensação é adicionada aos ajustes escolhidos do usuário. Se somente a
+compensação é desejada, o equalizador deve ser deixado na configuração "Plano".
+\n
+\n4. <b>Filtro de Fone de Ouvido</b>
+\n
+\nO filtro de fone de ouvido é um projeto de alimentação cruzada inspirado no famoso
+circuito analógico bs2b. O efeito passa o som mono inalterado, e ajusta a diferença de
+sinal através de um filtro passa-baixo que aproxima que aproxima tanto sombra da
+cabeça e atraso interaural de uma só vez, dando o tipo certo de pistas psicoacústicas
+para os ouvidos do usuário. A intenção é previnir a fadiga do ouvinte decorrente da
+separação estéreo implausível inerente a todos fones de ouvido. O efeito deve ser
+ativado quando usando fones de ouvido estéreo.
+\n
+\nDevido à mistura reduzir um pouco a separação estéreo, existe um efeito de
+reverbação Haas, que pode ser usado aumentar a largura de imagem estéreo percebida.
+Isto é controlado pelo controle "Simulação de Ambiente".
+    </string>
 </resources>
