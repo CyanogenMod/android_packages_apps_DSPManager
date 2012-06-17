@@ -6,7 +6,8 @@
     <string name="speaker_title">Lautsprecher</string>
     <string name="bluetooth_title">Bluetooth-Gerät</string>
     <string name="audio_effects">Audio-Effekte</string>
-    <string name="pref_dsp_title">Dynamic Range Compression</string>
+    <string name="pref_unavailable">Diese Funktion ist auf diesem Gerät nicht verfügbar</string>
+    <string name="pref_dsp_title">Kompression des Dynamikumfangs</string>
     <string name="pref_dsp_summary_on">Kompression des Dynamikumfangs ist eingeschaltet</string>
     <string name="pref_dsp_summary_off">Kompression des Dynamikumfangs ist ausgeschaltet</string>
     <string name="pref_dsp_enable">Einschalten</string>
@@ -16,6 +17,8 @@
     <string name="pref_equalizer_summary_on">Equalizer ist eingeschaltet</string>
     <string name="pref_equalizer_summary_off">Equalizer ist ausgeschaltet</string>
     <string name="pref_equalizer_enable">Einschalten</string>
+    <string name="pref_equalizer_preset_title">Voreinstellung auswählen</string>
+    <string name="pref_equalizer_loudness_title">Loudness-Kompensation</string>
     <string name="pref_bassboost_title">Bass-Verstärkung</string>
     <string name="pref_bassboost_summary_on">Bass-Verstärkung ist eingeschaltet</string>
     <string name="pref_bassboost_summary_off">Bass-Verstärkung ist ausgeschaltet</string>
@@ -27,4 +30,64 @@
     <string name="pref_room_title">Raumtyp</string>
     <string name="dialog_room">Raumtyp</string>
     <string name="menu_reset">Zurücksetzen</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+    <string name="eq_preset_bass_booster">Mehr Bässe</string>
+    <string name="eq_preset_bass_reducer">Weniger Bässe</string>
+    <string name="eq_preset_classical">Klassik</string>
+    <string name="eq_preset_deep">Deep</string>
+    <string name="eq_preset_flat">Aus</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Kleine Boxen</string>
+    <string name="eq_preset_treble_booster">Mehr Höhen</string>
+    <string name="eq_preset_treble_reducer">Weniger Höhen</string>
+    <string name="eq_preset_vocal_booster">Sprache</string>
+    <string name="eq_preset_custom">Benutzerdefiniert</string>
+
+    <!--  WM8994 -->
+    <!--  Categories -->
+    <string name="category_wm8994_internal_speaker">Lautsprecher</string>
+    <string name="category_wm8994_signal_processing">Signalverarbeitung</string>
+    <string name="category_wm8994_headphone_amp">Kopfhörer</string>
+    <string name="category_wm8994_codec_optimization">Codec-Optimierung</string>
+    <string name="category_wm8994_dac_config">D/A-Wander-Einstellungen</string>
+    <string name="category_wm8994_analog_path">Analogpfad-Einstellungen</string>
+    <string name="category_wm8994_mic_settings">Mikrofon-Einstellungen</string>
+    <string name="category_wm8994_microphone_recording">Mikrofon</string>
+    <!--  Titles/Summaries -->
+    <string name="wm8994_settings_title_head">Klang-Einstellungen</string>
+    <string name="wm8994_settings_title_subhead">Klang-Einstellungen</string>
+    <string name="wm8994_settings_summary_head">Erweiterte Steuerung des WM8994-Codecs</string>
+    <string name="pref_wm8994_microphone_recording_title">Aufnahme-Voreinstellung</string>
+    <string name="pref_wm8994_headphone_amp_title">Verstärker-Pegel</string>
+    <string name="pref_wm8994_headphone_amp_summary">Analogverstärkung anpassen</string>
+    <string name="pref_wm8994_headphone_amp_dlg_title">Pegel Kopfhörerverstärker</string>
+    <string name="pref_wm8994_headphone_amp_dlg_desc">Analogverstärkung</string>
+    <string name="pref_wm8994_bass_boost_enable_title">Bassanhebung</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Erweiterte Steuerung der Bassanhebung</string>
+    <string name="pref_wm8994_bass_boost_title">Bandbreite der Bassanhebung</string>
+    <string name="pref_wm8994_bass_boost_summary">Erweiterte, dynamische Bandbreitensteuerung</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Voreinstellung der Bassanhebung</string>
+    <string name="pref_wm8994_bass_boost_dlg_title">Bassanhebung</string>
+    <string name="pref_wm8994_bass_boost_gain_dlg_desc">Verstärkung</string>
+    <string name="pref_wm8994_bass_boost_range_dlg_desc">Bandbreite der Bassanhebung</string>
+    <string name="pref_wm8994_control_enable_title">WM8994-Steuerung aktivieren</string>
+    <string name="pref_wm8994_control_enable_summary">Erweiterte Steuerung des WM8994-Codecs</string>
+    <string name="pref_wm8994_speaker_tuning_title">Für Musik abstimmen</string>
+    <string name="pref_wm8994_speaker_tuning_summary">Rekonfiguriert den Hardware EQ für mehr Bass und ein ausgewogenes Klangbild</string>
+    <string name="pref_wm8994_mono_downmix_title">Mono Downmix</string>
+    <string name="pref_wm8994_mono_downmix_summary">Stereo zu Mono heruntermischen (Für Stereo Ausgänge wie z.B. Kopfhörer)</string>
+    <string name="pref_wm8994_stereo_expansion_title">Stereoverbreiterung</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Stereo durch digitale Signalverarbeitung verbreitern</string>
+    <string name="pref_wm8994_dac_direct_title">Direktzugriff D/A-Wandler</string>
+    <string name="pref_wm8994_dac_direct_summary">Direktzugriff auf den D/A-Wandler durch umgehen des Kanalmischers. Erzeugt saubereren Klang (höheres Signal-Rausch-Verhältnis)</string>
+    <string name="pref_wm8994_dac_osr128_title">Hi-Fi-Wiedergabe</string>
+    <string name="pref_wm8994_dac_osr128_summary">D/A-Wandler 128x Oversampling -- Sauberer Klang bei Musikwiedergabe</string>
+    <string name="pref_wm8994_adc_osr128_title">Hi-Fi-Aufnahme</string>
+    <string name="pref_wm8994_adc_osr128_summary">A/D-Wandler 128x Oversampling -- Erhöht die Aufnahmequalität</string>
+    <string name="pref_wm8994_fll_tuning_title">Stabilisierter Audio-Takt</string>
+    <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen -- Verbessert die Klangqualität</string>
+
+    <string name="help_title">Bedienungsanleitung</string>
 </resources>

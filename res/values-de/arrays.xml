@@ -18,4 +18,14 @@
     <item>Mittel</item>
     <item>Extrem</item>
   </string-array>
+
+  <string-array name="equalizer_loudness_modes">
+      <item>Deaktiviert</item>
+      <item>Sehr schwach</item>
+      <item>Schwächer</item>
+      <item>Schwach</item>
+      <item>Stark</item>
+      <item>Stärker</item>
+      <item>Sehr stark</item>
+  </string-array>
 </resources>
