@@ -45,7 +45,7 @@ EffectVirtualizer::EffectVirtualizer()
 
 int32_t EffectVirtualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdData, uint32_t* replySize, void* pReplyData)
 {
-    if (cmdCode == EFFECT_CMD_CONFIGURE) {
+    if (cmdCode == EFFECT_CMD_SET_CONFIG) {
         int32_t ret = Effect::configure(pCmdData);
         if (ret != 0) {
             int32_t *replyData = (int32_t *) pReplyData;
@@ -90,7 +90,7 @@ int32_t EffectVirtualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCm
             }
         }
 
-        LOGE("Unknown GET_PARAM of %d bytes", cep->psize);
+        ALOGE("Unknown GET_PARAM of %d bytes", cep->psize);
         effect_param_t *replyData = (effect_param_t *) pReplyData;
         replyData->status = -EINVAL;
         replyData->vsize = 0;
@@ -111,7 +111,7 @@ int32_t EffectVirtualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCm
             }
         }
 
-        LOGE("Unknown SET_PARAM of %d, %d bytes", cep->psize, cep->vsize);
+        ALOGE("Unknown SET_PARAM of %d, %d bytes", cep->psize, cep->vsize);
         int32_t *replyData = (int32_t *) pReplyData;
         *replyData = -EINVAL;
         return 0;

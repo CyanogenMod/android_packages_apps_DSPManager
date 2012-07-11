@@ -43,7 +43,7 @@ EffectCompression::EffectCompression()
 
 int32_t EffectCompression::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdData, uint32_t* replySize, void* pReplyData)
 {
-    if (cmdCode == EFFECT_CMD_CONFIGURE) {
+    if (cmdCode == EFFECT_CMD_SET_CONFIG) {
         int32_t *replyData = (int32_t *) pReplyData;
         int32_t ret = Effect::configure(pCmdData);
         if (ret != 0) {
@@ -68,29 +68,29 @@ int32_t EffectCompression::command(uint32_t cmdCode, uint32_t cmdSize, void* pCm
             if (strength->code == 0) {
                 /* 1.0 .. 11.0 */
                 mCompressionRatio = 1.f + strength->value / 100.f;
-                LOGI("Compression factor set to: %f", mCompressionRatio);
+                ALOGI("Compression factor set to: %f", mCompressionRatio);
                 *replyData = 0;
                 return 0;
             }
         }
 
-        LOGE("Unknown SET_PARAM of %d, %d bytes", cep->psize, cep->vsize);
+        ALOGE("Unknown SET_PARAM of %d, %d bytes", cep->psize, cep->vsize);
         return -1;
     }
 
     if (cmdCode == EFFECT_CMD_SET_VOLUME && cmdSize == 8) {
-        LOGI("Setting volumes");
+        ALOGI("Setting volumes");
 
         if (pReplyData != NULL) {
             int32_t *userVols = (int32_t *) pCmdData;
             for (uint32_t i = 0; i < cmdSize / 4; i ++) {
-                LOGI("user volume on channel %d: %d", i, userVols[i]);
+                ALOGI("user volume on channel %d: %d", i, userVols[i]);
                 mUserLevel[i] = userVols[i];
             }
 
             int32_t *myVols = (int32_t *) pReplyData;
             for (uint32_t i = 0; i < *replySize / 4; i ++) {
-                LOGI("Returning unity for our pre-requested volume on channel %d", i);
+                ALOGI("Returning unity for our pre-requested volume on channel %d", i);
                 myVols[i] = 1 << 24; /* Unity gain */
             }
         } else {
@@ -106,7 +106,7 @@ int32_t EffectCompression::command(uint32_t cmdCode, uint32_t cmdSize, void* pCm
     /* Init to current volume level on enabling effect to prevent
      * initial fade in / other shite */
     if (cmdCode == EFFECT_CMD_ENABLE) {
-        LOGI("Copying user levels as initial loudness.");
+        ALOGI("Copying user levels as initial loudness.");
         /* Unfortunately Android calls SET_VOLUME after ENABLE for us.
          * so we can't really use those volumes. It's safest just to fade in
          * each time. */

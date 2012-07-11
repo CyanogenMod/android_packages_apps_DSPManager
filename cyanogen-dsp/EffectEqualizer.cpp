@@ -71,10 +71,10 @@ EffectEqualizer::EffectEqualizer()
 
 int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdData, uint32_t* replySize, void* pReplyData)
 {
-    if (cmdCode == EFFECT_CMD_CONFIGURE) {
+    if (cmdCode == EFFECT_CMD_SET_CONFIG) {
         int32_t ret = Effect::configure(pCmdData);
         if (ret != 0) {
-            LOGE("EFFECT_CMD_CONFIGURE failed");
+            ALOGE("EFFECT_CMD_SET_CONFIG failed");
             int32_t *replyData = (int32_t *) pReplyData;
             *replyData = ret;
             return 0;
@@ -140,7 +140,7 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
         }
 
         /* Didn't support this command. We'll just set error status. */
-        LOGE("Unknown GET_PARAM of size %d", cep->psize);
+        ALOGE("Unknown GET_PARAM of size %d", cep->psize);
         effect_param_t *replyData = (effect_param_t *) pReplyData;
         replyData->status = -EINVAL;
         replyData->vsize = 0;
@@ -157,7 +157,7 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
             if (cmd == CUSTOM_EQ_PARAM_LOUDNESS_CORRECTION) {
                 int16_t value = ((int16_t *) cep)[8];
                 mLoudnessAdjustment = value / 100.0f;
-                LOGI("Setting loudness correction reference to %f dB", mLoudnessAdjustment);
+                ALOGI("Setting loudness correction reference to %f dB", mLoudnessAdjustment);
                 *replyData = 0;
                 return 0;
             }
@@ -170,13 +170,13 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
             if (cmd == EQ_PARAM_BAND_LEVEL && arg >= 0 && arg < 6) {
                 *replyData = 0;
                 int16_t value = ((int16_t *) cep)[10];
-                LOGI("Setting band %d to %d", arg, value);
+                ALOGI("Setting band %d to %d", arg, value);
                 mBand[arg] = value / 100.0f;
                 return 0;
             }
         }
 
-        LOGE("Unknown SET_PARAM size %d, %d bytes", cep->psize, cep->vsize);
+        ALOGE("Unknown SET_PARAM size %d, %d bytes", cep->psize, cep->vsize);
         *replyData = -EINVAL;
         return 0;
     }
@@ -262,10 +262,10 @@ int32_t EffectEqualizer::process(audio_buffer_t *in, audio_buffer_t *out)
         if (mNextUpdate == 0) {
             mNextUpdate = mNextUpdateInterval;
 
-            //LOGI("powerSqL: %lld, powerSqR: %lld", mPowerSquaredL, mPowerSquaredR);
+            //ALOGI("powerSqL: %lld, powerSqR: %lld", mPowerSquaredL, mPowerSquaredR);
             updateLoudnessEstimate(mLoudnessL, mPowerSquaredL);
             updateLoudnessEstimate(mLoudnessR, mPowerSquaredR);
-            //LOGI("loudnessL: %f, loudnessR: %f", mLoudnessL, mLoudnessR);
+            //ALOGI("loudnessL: %f, loudnessR: %f", mLoudnessL, mLoudnessR);
             mPowerSquaredL = 0;
             mPowerSquaredR = 0;
 

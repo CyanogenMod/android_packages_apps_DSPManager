@@ -131,7 +131,7 @@ int32_t EffectQueryEffect(uint32_t num, effect_descriptor_t *pDescriptor) {
 	return 0;
 }
 
-int32_t EffectCreate(effect_uuid_t *uuid, int32_t sessionId, int32_t ioId, effect_handle_t *pEffect) {
+int32_t EffectCreate(const effect_uuid_t *uuid, int32_t sessionId, int32_t ioId, effect_handle_t *pEffect) {
 	if (memcmp(uuid, &compression_descriptor.uuid, sizeof(effect_uuid_t)) == 0) {
 		struct effect_module_s *e = (struct effect_module_s *) calloc(1, sizeof(struct effect_module_s));
 		e->itfe = &generic_interface;
@@ -175,7 +175,7 @@ int32_t EffectRelease(effect_handle_t ei) {
 	return 0;
 }
 
-int32_t EffectGetDescriptor(effect_uuid_t *uuid, effect_descriptor_t *pDescriptor) {
+int32_t EffectGetDescriptor(const effect_uuid_t *uuid, effect_descriptor_t *pDescriptor) {
 	if (memcmp(uuid, &compression_descriptor.uuid, sizeof(effect_uuid_t)) == 0) {
 	    memcpy(pDescriptor, &compression_descriptor, sizeof(effect_descriptor_t));
 	    return 0;
