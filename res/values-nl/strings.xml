@@ -92,7 +92,7 @@
     <string name="pref_wm8994_mono_downmix_title">Downmixen naar mono</string>
     <string name="pref_wm8994_mono_downmix_summary">Stereo- naar monogeluid downmixen (voor stereo-uitvoer, zoals headsets)</string>
     <string name="pref_wm8994_stereo_expansion_title">Stereo-uitbreiding</string>
-    <string name="pref_wm8994_stereo_expansion_summary">Stereogeluid \'uitbreiden\' d.m.v. digitale geluidsverwerking</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Stereogeluid &#8220;uitbreiden&#8221; d.m.v. digitale geluidsverwerking</string>
     <string name="pref_wm8994_dac_direct_title">Directe digitaal/analoog-omzetter</string>
     <string name="pref_wm8994_dac_direct_summary">Verkrijg meteen toegang tot de digitaal/analoog-omzetter en omzeil de kanalenmixer. Zorgt voor helderder geluid (lagere signaal-ruisverhouding)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-fi afspelen</string>

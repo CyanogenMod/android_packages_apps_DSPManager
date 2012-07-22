@@ -77,15 +77,15 @@
     <string name="pref_wm8994_mono_downmix_title">Remixar mono</string>
     <string name="pref_wm8994_mono_downmix_summary">Remixar som estéreo para mono (para saída estéreo, tipo fones de ouvido)</string>
     <string name="pref_wm8994_stereo_expansion_title">Expanção estéreo</string>
-    <string name="pref_wm8994_stereo_expansion_summary">"Expandir" som estéreo com processamento de sinal digital</string>
+    <string name="pref_wm8994_stereo_expansion_summary">&#8220;Expandir&#8221; som estéreo com processamento de sinal digital</string>
     <string name="pref_wm8994_dac_direct_title">D/AC direto</string>
     <string name="pref_wm8994_dac_direct_summary">Acessar conversor digital/analógico diretamente, ignorando o equalizador de canais. Produz audio mais limpo (diminui razão de sinal-para-ruído)</string>
     <string name="pref_wm8994_dac_osr128_title">Reprodução hi-fi</string>
-    <string name="pref_wm8994_dac_osr128_summary">Conversor digital-para-analógico 128x de sobreamostragem -- som mais limpo quando tocando música</string>
+    <string name="pref_wm8994_dac_osr128_summary">Conversor digital-para-analógico 128x de sobreamostragem &#8212; som mais limpo quando tocando música</string>
     <string name="pref_wm8994_adc_osr128_title">Gravação hi-fi</string>
-    <string name="pref_wm8994_adc_osr128_summary">Conversor digital-para-analógico 128x de sobreamostragem -- aumenta a qualidade das gravações</string>
+    <string name="pref_wm8994_adc_osr128_summary">Conversor digital-para-analógico 128x de sobreamostragem &#8212; aumenta a qualidade das gravações</string>
     <string name="pref_wm8994_fll_tuning_title">Tempo do audio sintonizado</string>
-    <string name="pref_wm8994_fll_tuning_summary">Usar fonte de tempo de audio WM8994 sintonizado -- melhora qualidade do som</string>
+    <string name="pref_wm8994_fll_tuning_summary">Usar fonte de tempo de audio WM8994 sintonizado &#8212; melhora qualidade do som</string>
     <string name="dsp_settings_wm8994">Configurações DSP - WM8994</string>
     <string name="help_title">Guia de usuário</string>
     <string name="help_text"><b>O que é o Equalizador??</b>
@@ -159,7 +159,7 @@ começar a soar com muito grave em níveis de volume alto, a compensação prova
 definida muito forte, e deve ser reduzida.
 \n
 \nA compensação é adicionada aos ajustes escolhidos do usuário. Se somente a
-compensação é desejada, o equalizador deve ser deixado na configuração "Plano".
+compensação é desejada, o equalizador deve ser deixado na configuração &#8220;Plano&#8221;.
 \n
 \n4. <b>Filtro de Fone de Ouvido</b>
 \n
@@ -173,6 +173,6 @@ ativado quando usando fones de ouvido estéreo.
 \n
 \nDevido à mistura reduzir um pouco a separação estéreo, existe um efeito de
 reverbação Haas, que pode ser usado aumentar a largura de imagem estéreo percebida.
-Isto é controlado pelo controle "Simulação de Ambiente".
+Isto é controlado pelo controle &#8220;Simulação de Ambiente&#8221;.
     </string>
 </resources>

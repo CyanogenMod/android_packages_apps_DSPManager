@@ -82,7 +82,7 @@
     <string name="pref_wm8994_mono_downmix_title">Перевод в моно</string>
     <string name="pref_wm8994_mono_downmix_summary">Переводит стерео в моно (для стерео вывода, напр. наушников)</string>
     <string name="pref_wm8994_stereo_expansion_title">Расширение стерео</string>
-    <string name="pref_wm8994_stereo_expansion_summary">"Расширение" стерео благодаря цифровой обработке сигнала</string>
+    <string name="pref_wm8994_stereo_expansion_summary">&#8220;Расширение&#8221; стерео благодаря цифровой обработке сигнала</string>
     <string name="pref_wm8994_dac_direct_title">Прямой доступ к ЦАП</string>
     <string name="pref_wm8994_dac_direct_summary">Прямой доступ к цифро-аналоговому преобразователю, миную канальный микшер. Достигается чистый звук (более низкое соотношение сигнал-шум)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-fi воспроизведение</string>

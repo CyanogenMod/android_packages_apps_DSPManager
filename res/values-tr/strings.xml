@@ -96,14 +96,14 @@
     <string name="pref_wm8994_mono_downmix_title">Mono çevrimi</string>
     <string name="pref_wm8994_mono_downmix_summary">Stereo sesi monoya çevir (kulaklık gibi stereo çıkışlar içindir)</string>
     <string name="pref_wm8994_stereo_expansion_title">Stereo genişlet</string>
-    <string name="pref_wm8994_stereo_expansion_summary">Dijital sinyal işleyicisi ile stereo sesi \'Genişlet\'</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Dijital sinyal işleyicisi ile stereo sesi &#8220;Genişlet&#8221;</string>
     <string name="pref_wm8994_dac_direct_title">D/AC direct</string>
     <string name="pref_wm8994_dac_direct_summary">Kanal karıştırıcıyı es geçip direkt dijital/analog dönüştürücüye eriş. Daha temiz ses üretir (daha düşük sinyal-gürültü oranı)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-fi yürütme</string>
-    <string name="pref_wm8994_dac_osr128_summary">128x örnekleme ile dijitalden-analoga dönüştürücü -- müzik çalarken daha temiz ses</string>
+    <string name="pref_wm8994_dac_osr128_summary">128x örnekleme ile dijitalden-analoga dönüştürücü &#8212; müzik çalarken daha temiz ses</string>
     <string name="pref_wm8994_adc_osr128_title">Hi-fi kaydetme</string>
-    <string name="pref_wm8994_adc_osr128_summary">128x örnekleme ile analogdan-dijitale dönüştürücü -- kaydedilen seslerin kalitesini arttırır</string>
+    <string name="pref_wm8994_adc_osr128_summary">128x örnekleme ile analogdan-dijitale dönüştürücü &#8212; kaydedilen seslerin kalitesini arttırır</string>
     <string name="pref_wm8994_fll_tuning_title">Ayarlı ses frekansı</string>
-    <string name="pref_wm8994_fll_tuning_summary">Ayarlı WM8994 ses frekans kaynağını kullan -- sesin kalitesini arttırır</string>
+    <string name="pref_wm8994_fll_tuning_summary">Ayarlı WM8994 ses frekans kaynağını kullan &#8212; sesin kalitesini arttırır</string>
 
 </resources>

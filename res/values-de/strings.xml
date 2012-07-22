@@ -83,11 +83,11 @@
     <string name="pref_wm8994_dac_direct_title">Direktzugriff D/A-Wandler</string>
     <string name="pref_wm8994_dac_direct_summary">Direktzugriff auf den D/A-Wandler durch umgehen des Kanalmischers. Erzeugt saubereren Klang (höheres Signal-Rausch-Verhältnis)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-Fi-Wiedergabe</string>
-    <string name="pref_wm8994_dac_osr128_summary">D/A-Wandler 128x Oversampling -- Sauberer Klang bei Musikwiedergabe</string>
+    <string name="pref_wm8994_dac_osr128_summary">D/A-Wandler 128x Oversampling &#8212; Sauberer Klang bei Musikwiedergabe</string>
     <string name="pref_wm8994_adc_osr128_title">Hi-Fi-Aufnahme</string>
-    <string name="pref_wm8994_adc_osr128_summary">A/D-Wandler 128x Oversampling -- Erhöht die Aufnahmequalität</string>
+    <string name="pref_wm8994_adc_osr128_summary">A/D-Wandler 128x Oversampling &#8212; Erhöht die Aufnahmequalität</string>
     <string name="pref_wm8994_fll_tuning_title">Stabilisierter Audio-Takt</string>
-    <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen -- Verbessert die Klangqualität</string>
+    <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen &#8212; Verbessert die Klangqualität</string>
 
     <string name="help_title">Bedienungsanleitung</string>
 </resources>

@@ -6,14 +6,13 @@
 
     <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:paddingBottom="20dip">
 
         <TextView android:id="@+id/bass_boost_gain_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/bass_boost_gainn"
                 android:text="@string/pref_wm8994_bass_boost_gain_dlg_desc"
                 android:paddingTop="10dip"
                 android:paddingLeft="20dip"
@@ -21,7 +20,6 @@
         <TextView android:id="@+id/bass_boost_gain_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/bass_boost_gainn"
                 android:layout_alignParentRight="true"
                 android:paddingTop="10dip"
                 android:paddingLeft="20dip"
