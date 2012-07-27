@@ -14,35 +14,40 @@
     limitations under the License.
 -->
 <resources>
-    <string name="app_name">DSP-instellingen</string>
-    <string name="select_configuration_title">Selecteer configuratie om te bewerken</string>
-    <string name="bluetooth_title">Bluetoothapparaat</string>
-    <string name="audio_effects">Audio-effecten</string>
+    <string name="select_configuration_title">Kies configuratie om te bewerken</string>
+    <string name="bluetooth_title">Bluetooth-apparaat</string>
+    <string name="audio_effects">Geluidseffecten</string>
     <string name="pref_unavailable">Functionaliteit is niet beschikbaar voor uw apparaat</string>
     <string name="dsp_settings_headset">DSP-instellingen - Headset</string>
     <string name="dsp_settings_speaker">DSP-instellingen - Telefoonspeaker</string>
-    <string name="dsp_settings_bluetooth">DSP-instellingen - Bluetoothapparaat</string>
+    <string name="dsp_settings_bluetooth">DSP-instellingen - Bluetooth-apparaat</string>
     <string name="dsp_settings_wm8994">DSP-instellingen - WM8994</string>
+
     <string name="pref_dsp_title">Dynamisch bereikcompressie</string>
-    <string name="pref_dsp_summary_on">Compressie is ingeschakeld</string>
-    <string name="pref_dsp_summary_off">Compressie is uitgeschakeld</string>
+    <string name="pref_dsp_summary_on">Dynamisch bereikcompressie ingeschakeld</string>
+    <string name="pref_dsp_summary_off">Dynamisch bereikcompressie uitgeschakeld</string>
     <string name="pref_dsp_enable">Inschakelen</string>
-    <string name="pref_effect_title">Selecteer effectsterkte</string>
+
+    <string name="pref_effect_title">Effectsterkte</string>
     <string name="dialog_effect">Effectsterkte</string>
+
     <string name="pref_equalizer_summary_on">Equalizer ingeschakeld</string>
     <string name="pref_equalizer_summary_off">Equalizer uitgeschakeld</string>
     <string name="pref_equalizer_enable">Inschakelen</string>
-    <string name="pref_equalizer_preset_title">Selecteer vooraf ingestelde</string>
+    <string name="pref_equalizer_preset_title">Kies preset</string>
     <string name="pref_equalizer_loudness_title">Luidheidscompensatie</string>
+
     <string name="pref_bassboost_title">Basversterker</string>
     <string name="pref_bassboost_summary_on">Basversterker ingeschakeld</string>
     <string name="pref_bassboost_summary_off">Basversterker uitgeschakeld</string>
     <string name="pref_bassboost_enable">Inschakelen</string>
+
     <string name="pref_headset_virtual_title">Headset in virtuele ruimte-effect</string>
-    <string name="pref_headset_virtual_summary_on">Effect ingeschakeld</string>
-    <string name="pref_headset_virtual_summary_off">Effect uitgeschakeld</string>
+    <string name="pref_headset_virtual_summary_on">\'Headset in virtuele ruimte-effect\' ingeschakeld</string>
+    <string name="pref_headset_virtual_summary_off">\'Headset in virtuele ruimte-effect\' uitgeschakeld</string>
     <string name="pref_headset_virtual_enable">Inschakelen</string>
-    <string name="pref_room_title">Type ruimte selecteren</string>
+
+    <string name="pref_room_title">Type ruimte</string>
     <string name="dialog_room">Type ruimte</string>
     <string name="menu_reset">Herstellen</string>
 
@@ -72,7 +77,7 @@
     <string name="wm8994_settings_title_head">Geluidsinstellingen</string>
     <string name="wm8994_settings_title_subhead">Geluidsinstellingen</string>
     <string name="wm8994_settings_summary_head">Geavanceerd beheer van de WM8994-geluidsprocessor</string>
-    <string name="pref_wm8994_microphone_recording_title">Voorgaf ingesteld voor opnemen</string>
+    <string name="pref_wm8994_microphone_recording_title">Preset voor opnemen</string>
     <string name="pref_wm8994_headphone_amp_title">Versterkerniveau</string>
     <string name="pref_wm8994_headphone_amp_summary">Analoge gain wijzigen</string>
     <string name="pref_wm8994_headphone_amp_dlg_title">Headsetversterkerniveau</string>
@@ -81,7 +86,7 @@
     <string name="pref_wm8994_bass_boost_enable_summary">Geavanceerd beheer van basversterker</string>
     <string name="pref_wm8994_bass_boost_title">Bereik basversterker</string>
     <string name="pref_wm8994_bass_boost_summary">Geavanceerd beheer van dynamisch bereik</string>
-    <string name="pref_wm8994_bass_boost_preset_title">Vooraf ingesteld voor basversterker</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Preset voor basversterker</string>
     <string name="pref_wm8994_bass_boost_dlg_title">Basversterker</string>
     <string name="pref_wm8994_bass_boost_gain_dlg_desc">Gain</string>
     <string name="pref_wm8994_bass_boost_range_dlg_desc">Bereik van basversterker</string>
@@ -92,7 +97,7 @@
     <string name="pref_wm8994_mono_downmix_title">Downmixen naar mono</string>
     <string name="pref_wm8994_mono_downmix_summary">Stereo- naar monogeluid downmixen (voor stereo-uitvoer, zoals headsets)</string>
     <string name="pref_wm8994_stereo_expansion_title">Stereo-uitbreiding</string>
-    <string name="pref_wm8994_stereo_expansion_summary">Stereogeluid &#8220;uitbreiden&#8221; d.m.v. digitale geluidsverwerking</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Stereogeluid \'uitbreiden\u2019 d.m.v. digitale geluidsverwerking</string>
     <string name="pref_wm8994_dac_direct_title">Directe digitaal/analoog-omzetter</string>
     <string name="pref_wm8994_dac_direct_summary">Verkrijg meteen toegang tot de digitaal/analoog-omzetter en omzeil de kanalenmixer. Zorgt voor helderder geluid (lagere signaal-ruisverhouding)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-fi afspelen</string>
@@ -102,12 +107,13 @@
     <string name="pref_wm8994_fll_tuning_title">Afgestemde geluidsklok</string>
     <string name="pref_wm8994_fll_tuning_summary">Gebruik afgestemde bron van WM8994-geluidsklok (verbetert geluidskwaliteit)</string>
 
+    <!-- Help -->
     <string name="help_title">Gebruikershandleiding</string>
     <string name="help_text"><b>Wat is DSPManager?</b>
 \n
-\nDSPManager is een geluidsmanipulatie-app per uitvoersoort. <i>DSP</i> staat
+\nDSPManager is een geluidsmanipulatie-app. <i>DSP</i> staat
 voor \'Digital Signal Processing\' (digitale signalenverwerking) en het
-<i>\'Manager\'</i>-deel (beheerdersdeel) staat voor het feit dat de verwerking niet
+<i>\'Manager\'</i>-deel staat voor het feit dat de verwerking niet
 gebeurt in de app zelf; de beheerder kan dit alleen inschakelen voor apps die
 compatibel zijn met de geluidseffectenspecificaties van Android, zoals de meeste
 muziekspelers.
@@ -133,7 +139,7 @@ het bedoeld is.
 \n
 \nDit effect schat het geluidsniveau van het geluid in zoals door de gemiddelde
 luisteraar gehoord zou worden en stuurt een geluidsversterker aan die gebaseerd is op
-die inschatting. Dit wordt meestal gebruikt in luidruchtige omgevingen zoals
+die inschatting. Dit wordt meestal gebruikt in luidruchtige omgevingen zoals bij
 auto\'s op de weg, waarbij rustige delen van het geluid overstemd zouden kunnen
 worden door de geluiden op de achtergrond.
 \n
@@ -143,11 +149,12 @@ proberen om het geluidsniveau te behouden op het beoogde niveau. Iets soortgelij
 van Google is niet beschikbaar.
 \n
 \n2. <b>Basversterker</b>
-De basversterker is een simpel laagdoorlatend filter dat gebruikt kan worden om de
+\n
+\nDe basversterker is een simpel laagdoorlatend filter dat gebruikt kan worden om de
 nadruk te leggen op frequenties tot 55 Hz. De versterking is ongeveer 6 dB en kan
-worden aangepast met de \'sterkte\'-parameter, die bijdraagt aan de respons bij
-55 Hz, waardoor deze frequentie extra benadrukt wordt. Het effect is ontworpen om
-het verlies van lage frequenties te bestrijden zoals die optreedt bij kleine
+worden aangepast met de \'sterkte\'-parameter, die bijdraagt aan de respons beneden de
+55 Hz, waardoor deze frequenties extra benadrukt worden. Het effect is ontworpen om
+het verlies van lage frequenties te bestrijden zoals dat optreedt bij kleine
 luidsprekers en in-oor headsets die niet goed aansluiten op het gehoorkanaal van
 de gebruiker.
 \n
@@ -155,40 +162,39 @@ de gebruiker.
 \n
 \nDit is een 6-bands equalizer met banden op 16, 64, 250, 1000, 4000 en 16000 Hz.
 Enkele veel voorkomende instellingen zijn kant-en-klaar beschikbaar, maar de
-frequentierespons kan ook op maat worden ingesteld door te tikken op de equalizer
-grafiek. Het effect wordt gebruikt voor het afstemmen van de frequentie naar de wens
-van de gebruiker of de specifieke mogelijkheden van de beschikbare
+frequentierespons kan ook op maat worden ingesteld door te tikken op de
+equalizergrafiek. Het effect wordt gebruikt voor het afstemmen van de frequentie
+naar de wens van de gebruiker of de specifieke mogelijkheden van de beschikbare
 headset/luidsprekers.
 \n
 \nDe equalizer bevat ook een luidheidscompensatiefilter, dat veranderingen van de
 frequentie in het oor egaliseert op basis van de geluidsdruk die het oor van de
-gebruiker bereikt. Het gebruik van een bedrade headset is nodig en de
+gebruiker bereikt. Het gebruik van een bedrade headset is noodzakelijk en de
 compensatiewaarde moet correct worden afgestemd voordat het effect werkt zoals
 ontworpen.
 \n
-\nOm de luidheidscompensatie juist af te stemmen, dient u het laagste muziekvolume
+\nOm de luidheidscompensatie correct af te stemmen, dient u het laagste muziekvolume
 te kiezen en breed-spectrum lawaaierige muziek, zoals rock of metal, af te spelen.
 Probeer een compensatie-instelling te vinden waarbij de bas voldoende is versterkt om
 hoorbaar te zijn en waarbij de muziek goed in balans lijkt te zijn. De compensatiewaarde
 is correct afgestemd indien de bas op hetzelfde niveau ten opzichte van de andere
-instrumenten ligt, ongeacht het volumeniveau. Aan de andere kant, als muziek een te
-sterke bas heeft bij hoge niveaus, is de compensatiewaarde waarschijnlijk te sterk
-en moet deze worden verminderd.
+instrumenten ligt, ongeacht het volumeniveau. Als muziek een te sterke bas heeft bij hoge
+niveaus, is de compensatiewaarde waarschijnlijk te sterk en moet deze worden verminderd.
 \n
-\nDe ingestelde compensatie wordt toegevoegd aan de gekozen instellingen van de
-gebruiker. Als enkel compensatie nodig is moet de equalizer op \'vlak\' blijven ingesteld.
+\nDe ingestelde compensatie wordt toegevoegd aan de gekozen instelling van de
+equalizer. Als enkel compensatie nodig is, moet de equalizer op \'vlak\' blijven ingesteld.
 \n
 \n4. <b>Headsetfilter</b>
 \n
-\nHet headsetfilter is een crossfeed ontwerp geïnspireerd door het beroemde bs2b
-analoge circuit. Het filter geeft monogeluid ongewijzigd door en laat het
+\nHet headsetfilter is een crossfeed-ontwerp, geïnspireerd door het beroemde bs2b
+analoge circuit. Het filter laat monogeluid ongewijzigd door en laat het
 verschil in signaal door een laagdoorlaatfilter gaan dat zowel hoofdschaduw als
 in-oor-vertraging nabootst, wat het juiste psychologische effect voor de oren van de
 gebruiker oplevert. Het is de bedoeling te voorkomen dat de luisteraar vermoeid wordt
 als gevolg van de onwaarschijnlijke stereoscheiding die inherent is aan alle headsets.
-Het effect moet worden ingeschakeld indien een stereoheadsetswordt gebruikt.
+Het effect moet worden ingeschakeld indien een stereoheadset wordt gebruikt.
 \n
-\nOmdat het mengen de stereoweergave enigszins vermindert, kan er een Haas-effect
+\nOmdat het mengen het stereobeeld enigszins vermindert, kan er een Haas-effect
 galm ontstaan, die kan worden gebruikt om de waargenomen breedte van het stereobeeld te
 verhogen. Dit kan worden afgestemd door de \'Type ruimte\'-instelling.
     </string>
