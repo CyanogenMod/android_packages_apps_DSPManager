@@ -90,4 +90,74 @@
     <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen &#8212; Verbessert die Klangqualität</string>
 
     <string name="help_title">Bedienungsanleitung</string>
+    <string name="help_text"><b>Was ist der DSPManager?</b>
+\n
+\nDSPManager (Digital Signal Processing) ist eine Anwendung, mit der die Audioausgabe über diverse E
+instellungen beeinflusst werden kann. Die Signalverarbeitung findet nicht im DSPManager statt, sonde
+rn wird durch diesen gesteuert. Anwendungen, z.B. die meisten Musik-Player, die kompatibel zu den An
+droid-Audio-Effekten sind können den DSPManager verwenden.
+\n
+\n<b>Philosophie</b>
+\n
+\nCyanogenMod unterstützt drei verschiedene Audio-Ausgabewege:
+Kopfhörer, Lautsprecher und Bluetooth-Geräte. Für jedes dieser Geräte gibt es ein eigenes Konfigurat
+ionspanel. Die Idee hinter dem DSPManager ist es, die Fehler jeder Besonderheiten so zu korrigieren,
+dass ein optimales Hörerlebnis möglich ist.
+\n
+\nIm Gegensatz zu den AOSP-Audio-Effekten gibt es keine anwendungsspezifischen Einstellungsmöglichke
+iten. Dies wurde mit Absicht so konzipiert: Denn die Audio-Ausgabe ist uns wichtig, nicht die Anwend
+ung, die die (Audio-)Daten an den DSPManager übergibt.
+\n
+\n<b>Effekte</b>
+\n
+\nIm Folgenden wird jeder Audio-Effekt beschrieben und wann diese benutzt werden sollten.
+\n
+\n1. <b>Kompression des Dynamikumfangs</b>
+\n
+\nDieser Effekt ermittelt die Lautstärke für einen durchschnittlichen Hörer und regelt sie anhand de
+r Ermittlung. Dieser Effekt soll dafür sorgen, dass eine Audiowiedergabe weniger durch Hintergrundge
+räusche, z.B. Straßenlärm, übertönt werden kann.
+\n
+\nDer Effektstärke-Regler bestimmt, wie stark der DSPManager die Lautstärke des Tones beeinflussen soll. Für diesen DSP-Effekt gibt es keinen entsprechendenen AOSP-Effekt.
+\n
+\n2. <b>Bass-Verstärkung</b>
+\n
+\nDie Bass-Verstärkung ist ein einfacher Tiefpassfilter, welcher benutzt werden kann, um die Betonun
+g auf den Bass zu setzen. Die Verstärkung beträgt ca. 6 dB und wird durch den "Stärke"-Parameter ang
+epasst. Der Effekt ist konzipiert um den Verlust von Bassfrequenz bei Lautsprechern und (ohr-)auflie
+genden Kopfhörern, die sich nicht eng am Gehörgang befinden, zu bekämpfen.
+\n
+\n3. <b>Equalizer</b>
+\n
+\nEs handelt sich hier um einen Equalizer mit Frequenzbändern bei 16, 64, 250, 1000, 4000 und 16000
+Hz. Einige gemeinsame Voreinstellungen sind verfügbar, außerdem kann der Frequenzgang durch Berühren des
+Equalizer-Graphen angepasst werden. Der Effekt sollte dafür benutzt werden, den Frequenzgang an den
+persönlichen Geschmack oder den Besonderheiten der Kopfhörern oder Lautsprechern abzustimmen.
+\n
+\nDer Equalizer enthält auch eine Loudness-Kompensation, die die Veränderungen in der Frequenz, die
+auf dem Schalldruckpegel, der das Ohr des Benutzers erreicht, basiert, ausgleicht. Hierbei sind Kabelkopfhörer erforderlich, außerdem muss zuerst der richtige Wert im Menü eingestellt
+werden, bevor der Effekt so funktioniert wie gewünscht.
+\n
+\nUm die Effektstärke der Loudness-Kompensation einzustellen, sollte breitbandige Musik, z.B. Rock o
+der Metal leise abgespielt werden. Man sollte versuchen eine Einstellung zu finden, bei der die Hörb
+arkeit des Basses gesteigert wird, aber noch nicht hervorsticht. Nachdem die Kompensation richtig ko
+nfiguriert wurde, sollte der Bass-Pegel, unabhängig von der Hörlautstärke im Vergleich zum Pegel der
+anderen Instrumente, gleich bleiben. Wenn mit steigender Hörlautstärke die Musik basslastig wird, i
+st die Kompensation wahrscheinlich zu stark, und sollte reduziert werden.
+\n
+\nDie Loudness-Kompensation wirkt zusätzlich zur gewählten Einstellung des Equalizers. Falls nur ein
+e Kompensation erwünscht ist, sollte die Equalizer-Voreinstellung "Aus" gewählt werden.
+\n
+\n4. <b>Virtueller Raumklang</b>
+\n
+\nDer "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspir
+iert wurde. Der Effekt bleibt bei Mono unverändert, bei Stereo wird der Unterschied zwischen den zwe
+i Signalen durch einen Tiefpassfilter, also näher oder weiter entfernt vom Benutzer, dargestellt. Da
+hinter steckt die Absicht, den Benutzer vor einer Hörermüdung, die durch unplausible Stereo-Trennung
+entsteht, zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
+\n
+\nDa das Mischen die (Stereo-)Kanaltrennung reduziert, entsteht ein Echo-Effekt, das für die Erhöhun
+g der Basisbreite verwendet werden kann. Dieser Effekt wird durch die Raumtyp-Einstellung beinflusst
+.
+    </string>
 </resources>
