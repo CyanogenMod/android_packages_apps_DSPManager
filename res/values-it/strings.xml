@@ -18,10 +18,10 @@
     <string name="app_name">DSPManager</string>
     <string name="select_configuration_title">Seleziona configurazione da modificare</string>
     <string name="headset_title">Cuffie</string>
-    <string name="speaker_title">Altoparlante Telefono</string>
-    <string name="bluetooth_title">Dispositivo Bluetooth</string>
+    <string name="speaker_title">Altoparlante telefono</string>
+    <string name="bluetooth_title">Dispositivo bluetooth</string>
     <string name="wm8994_title">WM8994</string>
-    <string name="audio_effects">Effetti Audio</string>
+    <string name="audio_effects">Effetti audio</string>
     <string name="pref_unavailable">Funzionalità non disponibile sul tuo dispositivo</string>
     <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
     <string name="dsp_settings_speaker">Impostazioni DSP - Altoparlante Telefono</string>
@@ -31,76 +31,157 @@
     <string name="pref_dsp_summary_on">Compressione attiva</string>
     <string name="pref_dsp_summary_off">Compressione non attiva</string>
     <string name="pref_dsp_enable">Attiva</string>
-    <string name="pref_effect_title">Seleziona Potenza Effetto</string>
-    <string name="dialog_effect">Potenza Effetto</string>
+    <string name="pref_effect_title">Seleziona potenza effetto</string>
+    <string name="dialog_effect">Potenza effetto</string>
     <string name="pref_equalizer_title">Equalizzatore</string>
     <string name="pref_equalizer_summary_on">Equalizzatore attivo</string>
     <string name="pref_equalizer_summary_off">Equalizzatore non attivo</string>
     <string name="pref_equalizer_enable">Attiva</string>
-    <string name="pref_equalizer_preset_title">Seleziona Preset</string>
+    <string name="pref_equalizer_preset_title">Seleziona modello</string>
     <string name="pref_equalizer_loudness_title">Compensazione rumorosità</string>
-    <string name="pref_bassboost_title">Amplificazione Bassi</string>
-    <string name="pref_bassboost_summary_on">Amplificazione Bassi attiva</string>
-    <string name="pref_bassboost_summary_off">Amplificazione Bassi non attiva</string>
+    <string name="pref_bassboost_title">Amplificazione bassi</string>
+    <string name="pref_bassboost_summary_on">Amplificazione bassi attivata</string>
+    <string name="pref_bassboost_summary_off">Amplificazione bassi non attivata</string>
     <string name="pref_bassboost_enable">Attiva</string>
-    <string name="pref_headset_virtual_title">Effetto Stanza Virtuale</string>
-    <string name="pref_headset_virtual_summary_on">Stanza Virtuale attiva</string>
-    <string name="pref_headset_virtual_summary_off">Stanza Virtuale non attiva</string>
+    <string name="pref_headset_virtual_title">Effetto stanza virtuale</string>
+    <string name="pref_headset_virtual_summary_on">Effetto stanza virtuale attivato</string>
+    <string name="pref_headset_virtual_summary_off">Effetto stanza virtuale non attivato</string>
     <string name="pref_headset_virtual_enable">Attiva</string>
-    <string name="pref_room_title">Seleziona Stanza</string>
-    <string name="dialog_room">Tipologia di Stanza</string>
-    <string name="menu_reset">Resetta</string>
+    <string name="pref_room_title">Seleziona stanza</string>
+    <string name="dialog_room">Tipo di stanza</string>
+    <string name="menu_reset">Ripristina</string>
     <string name="eq_preset_acoustic">Acustica</string>
-    <string name="eq_preset_bass_booster">Amplificazione Bassi</string>
-    <string name="eq_preset_bass_reducer">Riduzione Bassi</string>
+    <string name="eq_preset_bass_booster">Amplificazione bassi</string>
+    <string name="eq_preset_bass_reducer">Riduzione bassi</string>
     <string name="eq_preset_classical">Classica</string>
-    <string name="eq_preset_deep">Deep</string>
-    <string name="eq_preset_flat">Flat</string>
+    <string name="eq_preset_deep">Intenso</string>
+    <string name="eq_preset_flat">Uniforme</string>
     <string name="eq_preset_r_and_b">R&amp;B</string>
     <string name="eq_preset_rock">Rock</string>
-    <string name="eq_preset_small_speakers">Altoparlanti Piccoli</string>
-    <string name="eq_preset_treble_booster">Amplificazione Alti</string>
-    <string name="eq_preset_treble_reducer">Riduzione Alti</string>
-    <string name="eq_preset_vocal_booster">Amplificazione Voce</string>
+    <string name="eq_preset_small_speakers">Altoparlanti piccoli</string>
+    <string name="eq_preset_treble_booster">Amplificazione alti</string>
+    <string name="eq_preset_treble_reducer">Riduzione alti</string>
+    <string name="eq_preset_vocal_booster">Amplificazione voce</string>
     <string name="eq_preset_custom">Manuale</string>
-    <string name="category_wm8994_internal_speaker">Configurazione Speaker Interno</string>
-    <string name="category_wm8994_signal_processing">Elaborazione Segnale</string>
-    <string name="category_wm8994_headphone_amp">Amplificatore Cuffie</string>
-    <string name="category_wm8994_codec_optimization">Ottimizzazione Codec</string>
-    <string name="category_wm8994_dac_config">Impostazioni del Convertitore Digitale/Analogico</string>
-    <string name="category_wm8994_analog_path">Configurazione del Percorso Analogico</string>
-    <string name="category_wm8994_mic_settings">Impostazioni Microfono</string>
+    <string name="category_wm8994_internal_speaker">Configurazione speaker interno</string>
+    <string name="category_wm8994_signal_processing">Elaborazione segnale</string>
+    <string name="category_wm8994_headphone_amp">Amplificatore cuffie</string>
+    <string name="category_wm8994_codec_optimization">Ottimizzazione codec</string>
+    <string name="category_wm8994_dac_config">Impostazioni del convertitore digitale/analogico</string>
+    <string name="category_wm8994_analog_path">Configurazione del percorso analogico</string>
+    <string name="category_wm8994_mic_settings">Impostazioni microfono</string>
     <string name="category_wm8994_microphone_recording">Microfono</string>
-    <string name="wm8994_settings_title_head">Impostazioni Audio</string>
-    <string name="wm8994_settings_title_subhead">Impostazioni Audio</string>
+    <string name="wm8994_settings_title_head">Impostazioni audio</string>
+    <string name="wm8994_settings_title_subhead">Impostazioni audio</string>
     <string name="wm8994_settings_summary_head">Controllo avanzato del processore audio hardware WM8994</string>
-    <string name="pref_wm8994_microphone_recording_title">Registrazione preimpostata</string>
+    <string name="pref_wm8994_microphone_recording_title">Registrazione</string>
     <string name="pref_wm8994_headphone_amp_title">Livello amplificatore</string>
     <string name="pref_wm8994_headphone_amp_summary">Personalizza il miglioramento analogico</string>
-    <string name="pref_wm8994_headphone_amp_dlg_title">Livello Amplificatore Cuffie</string>
-    <string name="pref_wm8994_headphone_amp_dlg_desc">Miglioramento Analogico</string>
-    <string name="pref_wm8994_bass_boost_enable_title">Amplificazione Bassi</string>
-    <string name="pref_wm8994_bass_boost_enable_summary">Controlli avanzati dell\'Amplificazione Bassi</string>
-    <string name="pref_wm8994_bass_boost_title">Intervallo Amplificazione Bassi</string>
+    <string name="pref_wm8994_headphone_amp_dlg_title">Livello amplificatore cuffie</string>
+    <string name="pref_wm8994_headphone_amp_dlg_desc">Miglioramento analogico</string>
+    <string name="pref_wm8994_bass_boost_enable_title">Amplificazione bassi</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Controlli avanzati dell\'amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_title">Intervallo amplificazione bassi</string>
     <string name="pref_wm8994_bass_boost_summary">Gestione avanzata dynamic range</string>
-    <string name="pref_wm8994_bass_boost_preset_title">Amplificazione Bassi preimpostata</string>
-    <string name="pref_wm8994_bass_boost_dlg_title">Amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Effetto amplificazione bassi</string>
+    <string name="pref_wm8994_bass_boost_dlg_title">Amplificazione bassi</string>
     <string name="pref_wm8994_bass_boost_gain_dlg_desc">Miglioramento</string>
-    <string name="pref_wm8994_bass_boost_range_dlg_desc">Intervallo Amplificazione Bassi</string>
-    <string name="pref_wm8994_control_enable_title">Abilita il Controllo di WM8994</string>
+    <string name="pref_wm8994_bass_boost_range_dlg_desc">Intervallo amplificazione bassi</string>
+    <string name="pref_wm8994_control_enable_title">Abilita il controllo di WM8994</string>
     <string name="pref_wm8994_control_enable_summary">Abilita i controlli avanzati per il processore audio hardware WM8994</string>
-    <string name="pref_wm8994_speaker_tuning_title">Regola l\'altoparlante per la musica</string>
+    <string name="pref_wm8994_speaker_tuning_title">Regola altoparlante</string>
     <string name="pref_wm8994_speaker_tuning_summary">Riconfigura l\'equalizzatore hardware per ottenere maggiori bassi ed un suono bilanciato</string>
-    <string name="pref_wm8994_mono_downmix_title">Mono downmix</string>
-    <string name="pref_wm8994_mono_downmix_summary">Downmix stereo sound to mono (per le uscite stereo, come le cuffie)</string>
+    <string name="pref_wm8994_mono_downmix_title">Mono</string>
+    <string name="pref_wm8994_mono_downmix_summary">Rendi mono il suono di tipo stereo (per le uscite stereo, come le cuffie)</string>
     <string name="pref_wm8994_stereo_expansion_title">Espansione stereo</string>
-    <string name="pref_wm8994_stereo_expansion_summary">&#8220;Espandi&#8221; suono stereo attraverso l\'elaborazione digitale del segnale</string>
+    <string name="pref_wm8994_stereo_expansion_summary">&#8220;Espandi&#8221; il suono stereo attraverso l\'elaborazione digitale del segnale</string>
     <string name="pref_wm8994_dac_direct_title">D/AC diretto</string>
-    <string name="pref_wm8994_dac_direct_summary">Accedi al convertitore digitale/analogico direttamente, aggirando il canale del mixer. Produce audio più pulito (rapporto segnale-rumore minore)</string>
-    <string name="pref_wm8994_dac_osr128_title">Riproduzione hi-fi</string>
-    <string name="pref_wm8994_dac_osr128_summary">Convertitore digitale-analogico con sovracampionamento a 128x &#8212; suoni più puliti quando riproduci musica</string>
-    <string name="pref_wm8994_adc_osr128_title">Registrazione hi-fi</string>
-    <string name="pref_wm8994_adc_osr128_summary">Convertitore analogico-digitale con sovracampionamento a 128x &#8212; incrementa la qualità delle registrazioni</string>
-    <string name="pref_wm8994_fll_tuning_title">Regola il clock audio</string>
-    <string name="pref_wm8994_fll_tuning_summary">Usa il clock regolato della sorgente audio WM8994 &#8212; migliora la qualità del suono</string>
+    <string name="pref_wm8994_dac_direct_summary">Accedi al convertitore digitale/analogico direttamente, aggirando il canale del mixer. &#8212; Produce audio più pulito (rapporto segnale-rumore maggiore)</string>
+    <string name="pref_wm8994_dac_osr128_title">Riproduzione Hi-Fi</string>
+    <string name="pref_wm8994_dac_osr128_summary">Convertitore digitale-analogico con sovracampionamento a 128x &#8212; Suoni più puliti quando si riproduce musica</string>
+    <string name="pref_wm8994_adc_osr128_title">Registrazione Hi-Fi</string>
+    <string name="pref_wm8994_adc_osr128_summary">Convertitore analogico-digitale con sovracampionamento a 128x &#8212; Incrementa la qualità delle registrazioni</string>
+    <string name="pref_wm8994_fll_tuning_title">Regola clock audio</string>
+    <string name="pref_wm8994_fll_tuning_summary">Usa il clock regolato della sorgente audio WM8994 &#8212; Migliora la qualità del suono</string>
+    <string name="help_title">Manuale d\'uso</string>
+    <string name="help_text"><b>Che cos\'è DSPManager?</b>
+\n
+\nDSPManager è un\'applicazione per la regolazione dell\'audio in uscita
+<i>DSP</i> sta per Digital Signal Processing, mentre <i>Manager</i> si riferisce
+al fatto che l\'elaborazione del segnale digitale non viene effettivamente
+eseguita all\'interno della stessa applicazione, il gestore può solo attivarla
+per le applicazioni che sono compatibili con le specifiche degli effetti audio di
+Android, vale a dire la maggior parte dei lettori musicali.
+\n
+\n<b>Filosofia</b>
+\n
+\nL\'elaborazione audio CyanogenMod supporta tre diverse categorie di uscita:
+auricolare, vivavoce e auricolare bluetooth. Vi è un pannello di configurazione
+per ciascuna categoria di uscita. La filosofia di DSPManager è quella di
+correggere le particolari carenze di ogni uscita audio per raggiungere la più
+ottimale esperienza d\'ascolto.
+\n
+\nA differenza degli effetti audio AOSP, non ci sono impostazioni per ogni
+applicazione. Questa è una scelta di progettazione: è l\'output che ci interessa,
+non quale applicazione lo genera.
+\n
+\n<b>Funzionalità</b>
+\n
+\nIl resto di questo documento descrive ogni effetto audio e il relativo utilizzo
+previsto in uno scenario.
+\n
+\n1. <b>Dynamic range compression (DRC)</b>
+\n
+\nQuesto effetto valuta la qualità dell\'audio percepito da un ascoltatore medio e
+guida un controllo di guadagno basato su questa stima. Il caso di uso principale
+è in ambienti rumorosi come in macchine o su strada, dove la parte meno intensa
+di una traccia musicale può essere coperta dal rumore di fondo.
+\n
+\n2. <b>Bass Boost</b>
+\n
+\nIl bass boost è un semplice filtro passabasso che può essere utilizzato per
+aggiungere un\'enfasi ai 55 Hz e alle frequenze più basse. L\'incremento è di
+circa 6 dB, e modificato dal parametro &#8220;forza&#8221;, che aggiunge la risonanza del
+filtro alla banda dei 55 Hz, dando enfasi aggiuntiva a questa frequenza.
+L\'effetto è stato progettato per combattere la perdita dei bassi frequente con
+piccoli altoparlanti e cuffie.
+\n
+\n3. <b>Equalizzatore</b>
+\n
+\nSi tratta di un equalizzatore a 6 bande con bande a 16, 64, 250, 1000, 4000 e
+16000 Hz. Alcuni dei più comuni effetti sono già inseriti, e la frequenza può anche
+essere personalizzata toccando l\'equalizzatore grafico. L\'effetto può essere
+utilizzato per soddisfare i gusti personali dell\'ascoltatore, o per meglio ridefinire
+le capacità di auticolari o altoparlanti.
+\n
+\nL\'equalizzatore contiene anche un filtro che compensa i cambiamenti della risposta
+dell\'orecchio in base al livello di pressione sonora che lo raggiunge. E\' richiesto
+l\'uso di una cuffia, e la &#8220;forza&#8221; è il parametro che deve essere sintonizzato
+correttamente prima che l\'effetto funzioni come dovuto.
+\n
+\nPer selezionare il giusto valore per la resistenza di compensazione, si consiglia di
+utilizzare musica ad ampio spettro come il rock o metal a basso volume. Provare a trovare
+una regolazione in cui i bassi vengono incrementati e la sonorità sembri bilanciata con
+il resto della musica. Se la configurazione è corretta, i bassi dovrebbero essere allo
+stesso livello degli altri strumenti, indipendentemente dal livello di ascolto.
+Altrimenti, se i bassi ad un volume alto sono troppo forti, la compensazione probabilmente
+è troppo forte, e deve essere ridotta.
+\n
+\nLa compensazione viene aggiunta alle regolazioni scelte dell\'utente.Se si desidera solo
+la compensazione, \l'equalizzatore dovrebbe essere impostato sul modello &#8220;Uniforme&#8221;.
+\n
+\n4. <b>Filtro cuffie</b>
+\n
+\nIl filtro auricolare è un progetto ispirato dal famoso circuito bs2b analogico. L\'effetto
+lascia il suono mono invariato, e regola la differenza di segnale attraverso un filtro
+passa-basso che approssima sia ombre acustiche sia ritardo interaurale contemporaneamente,
+dando il giusto tipo di indizi psicoacustici per all\'orecchio dell\'utente. L'\intento è
+quello di prevenire l\' affaticamento d\'ascolto derivante dall\'inverosimile separazione
+stereo insita in tutte le cuffie. L\'effetto dovrebbe essere attivato quando si utilizzano
+auricolari stereo.
+\n
+\nPoiché la miscelazione riduce la separazione leggermente, vi è un effetto che può essere
+usato per aumentare la larghezza dell\'immagine stereo percepita, quest\'impostazione è
+&#8220;Tipo di stanza&#8221;.
+    </string>
 </resources>
