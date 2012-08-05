@@ -168,14 +168,14 @@ Altrimenti, se i bassi ad un volume alto sono troppo forti, la compensazione pro
 è troppo forte, e deve essere ridotta.
 \n
 \nLa compensazione viene aggiunta alle regolazioni scelte dell\'utente.Se si desidera solo
-la compensazione, \l'equalizzatore dovrebbe essere impostato sul modello &#8220;Uniforme&#8221;.
+la compensazione, l\'equalizzatore dovrebbe essere impostato sul modello &#8220;Uniforme&#8221;.
 \n
 \n4. <b>Filtro cuffie</b>
 \n
 \nIl filtro auricolare è un progetto ispirato dal famoso circuito bs2b analogico. L\'effetto
 lascia il suono mono invariato, e regola la differenza di segnale attraverso un filtro
 passa-basso che approssima sia ombre acustiche sia ritardo interaurale contemporaneamente,
-dando il giusto tipo di indizi psicoacustici per all\'orecchio dell\'utente. L'\intento è
+dando il giusto tipo di indizi psicoacustici per all\'orecchio dell\'utente. L\'intento è
 quello di prevenire l\' affaticamento d\'ascolto derivante dall\'inverosimile separazione
 stereo insita in tutte le cuffie. L\'effetto dovrebbe essere attivato quando si utilizzano
 auricolari stereo.
