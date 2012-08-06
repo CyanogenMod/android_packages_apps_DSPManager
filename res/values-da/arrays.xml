@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="microphone_recording_presets">
+    <item>Original</item>
+    <item>Balanceret</item>
+    <item>Høj følsomhed</item>
+    <item>Højlydt miljø</item>
+  </string-array>
+
+  <string-array name="headphone_modes">
+    <item>Studie</item>
+    <item>Rum</item>
+    <item>Stort rum</item>
+    <item>Scene</item>
+  </string-array>
+
+  <string-array name="equalizer_loudness_modes">
+      <item>Deaktiveret</item>
+      <item>Svagest</item>
+      <item>Svagere</item>
+      <item>Svag</item>
+      <item>Stærk</item>
+      <item>Stærkere</item>
+      <item>Stærkest</item>
+  </string-array>
+
+  <string-array name="compression_modes">
+    <item>Let</item>
+    <item>Moderat</item>
+    <item>Ekstrem</item>
+  </string-array>
+
+  <string-array name="bassboost_modes">
+    <item>Let</item>
+    <item>Moderat</item>
+    <item>Ekstrem</item>
+  </string-array>
+
+  <string-array name="wm8994_bassboost_modes">
+    <item>Standard</item>
+    <item>Små højttalere</item>
+  </string-array>
+</resources>
