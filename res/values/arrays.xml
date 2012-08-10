@@ -7,7 +7,7 @@
     <item>Loud Environment</item>
   </string-array>
 
-  <string-array name="microphone_recording_presets_values">
+  <string-array name="microphone_recording_presets_values" translatable="false">
     <item>0</item>
     <item>1</item>
     <item>2</item>
