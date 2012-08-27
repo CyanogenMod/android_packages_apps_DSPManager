@@ -95,5 +95,5 @@
     <string name="pref_wm8994_fll_tuning_summary">Anvend afstemt WM8994 lydfrekvens &#8212; forbedrer lydkvaliteten</string>
 
     <string name="help_title">Brugervejledning</string>
-    <string name="help_text"><b>Hvad er DSPManager?</b>
+    <string name="help_text"><b>Hvad er DSPManager?</b></string>
 </resources>
