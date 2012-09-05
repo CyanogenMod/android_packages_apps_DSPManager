@@ -6,7 +6,8 @@
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Reproduktor Telefónu</string>
     <string name="bluetooth_title">Zariadenie Bluetooth</string>
-    <string name="dsp_settings_headset">DSP Nastavenia - Headset</string>
+  <string name="audio_effects">Zvukové efekty</string>
+    <string name="dsp_settings_headset">DSP Nastavenia - Slúchadlá</string>
     <string name="dsp_settings_speaker">DSP Nastavenia - Reproduktor Telefónu</string>
     <string name="dsp_settings_bluetooth">DSP Nastavenia - Zariadenie Bluetooth</string>
     <string name="pref_dsp_title">Dynamická Kompresia Rozsahu</string>
@@ -20,9 +21,10 @@
     <string name="pref_equalizer_summary_off">Ekvalizér je zakázaný</string>
     <string name="pref_equalizer_enable">Povoliť</string>
     <string name="pref_equalizer_preset_title">Vyberte predvoľbu</string>
-    <string name="pref_equalizer_loudness_title">Kompenzácia Hlasitosti</string><string name="pref_bassboost_title">Bass Boost</string>
-    <string name="pref_bassboost_summary_on">Bass Boost je povolený</string>
-    <string name="pref_bassboost_summary_off">Bass Boost je zakázaný</string>
+    <string name="pref_equalizer_loudness_title">Kompenzácia Hlasitosti</string>
+    <string name="pref_bassboost_title">Zosilnenie basov</string>
+    <string name="pref_bassboost_summary_on">Zosilnenie basov je povolené</string>
+    <string name="pref_bassboost_summary_off">Zosilnenie basov je zakázané</string>
     <string name="pref_bassboost_enable">Povoliť</string>
     <string name="pref_headset_virtual_title">Efekt virtuálnej miesntosti pre Headset</string>
     <string name="pref_headset_virtual_summary_on">Efekt virtuálnej miestnosti je povolený</string>
@@ -38,8 +40,6 @@
     <string name="eq_preset_classical">Klasický</string>
     <string name="eq_preset_deep">Hlboký</string>
     <string name="eq_preset_flat">Plochý</string>
-    <string name="eq_preset_r_and_b">R&amp;B</string>
-    <string name="eq_preset_rock">Rock</string>
     <string name="eq_preset_small_speakers">Malé Reproduktory</string>
     <string name="eq_preset_treble_booster">Zosilnenie Výšok</string>
     <string name="eq_preset_treble_reducer">Zoslabenie Výšok</string>
