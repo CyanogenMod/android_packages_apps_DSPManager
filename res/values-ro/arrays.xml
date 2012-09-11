@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="microphone_recording_presets">
+        <item>Original</item>
+        <item>Echilibrat</item>
+        <item>Sensibilitate Înaltă</item>
+        <item>Mediu Zgomotos</item>
+    </string-array>
+    <string-array name="headphone_modes">
+        <item>Studiou</item>
+        <item>Cameră</item>
+        <item>Cameră mare</item>
+        <item>Stadion</item>
+    </string-array>
+    <string-array name="equalizer_loudness_modes">
+        <item>Dezactivat</item>
+        <item>Cel mai slab</item>
+        <item>Mai slab</item>
+        <item>Slab</item>
+        <item>Puternic</item>
+        <item>Mai puternic</item>
+        <item>Cel mai puternic</item>
+    </string-array>
+    <string-array name="compression_modes">
+        <item>Slab</item>
+        <item>Moderat</item>
+        <item>Extrem</item>
+    </string-array>
+    <string-array name="bassboost_modes">
+        <item>Slab</item>
+        <item>Moderat</item>
+        <item>Extrem</item>
+    </string-array>
+    <string-array name="wm8994_bassboost_modes">
+        <item>Standard</item>
+        <item>Boxe Mici</item>
+    </string-array>
+</resources>
