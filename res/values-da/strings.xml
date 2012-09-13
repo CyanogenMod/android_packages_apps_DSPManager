@@ -95,5 +95,43 @@
     <string name="pref_wm8994_fll_tuning_summary">Anvend afstemt WM8994-lydfrekvens &#8212; forbedrer lydkvaliteten</string>
 
     <string name="help_title">Brugervejledning</string>
-    <string name="help_text"><b>Hvad er DSPManager?</b></string>
+    <string name="help_text"><b>Hvad er DSPManager?</b>
+\n
+\nDSPManager er en lydjusteringsapplikation per udgang. <i>DSP</i> står for Digital Signal Processor, og <i>Manager</i>-delen refererer til det faktum, at DSP\'en faktisk ikke kører i selve applikationen; manageren kan kun aktivere det for applikationer, der er kompatible med Android\'s lydeffekt-specifikation, dvs. de fleste musikafspillere.
+\n
+\n<b>Filosofi</b>
+\n
+\nCyanogenMod\'s lydbehandling understøtter tre forskellige udgangs-kategorier: kablede hovedtelefoner, telefonens højttaler og bluetooth-hovedtelefoner. Der er et separat konfigurationspanel for hver udgangs-kategori. DSPManager\'s filosofi er at korrigere konkrete mangler, for at opnå den mest optimale lytteoplevelse, for hver lydudgang.
+\n
+\nI modsætning til AOSP-lydeffekter er der ingen indstillinger per applikation. Dette er et bevidst designvalg: det er resultatet som vi interesserer os for, ikke hvilken applikation der genererer lyden, som DSPManager skal arbejde med.
+\n
+\n<b>Funktioner</b>
+\n
+\nResten af dette dokument beskriver hver lydeffekt og dets anvendelse.
+\n
+\n1. <b>Kompression af dynamikområdet</b>
+\n
+\nDenne effekt vurderer lydstyrken for en gennemsnitlig lytter og regulerer den på grundlag af denne vurdering. Den primære anvendelse er ved støjende miljøer, såsom i biler eller på gaden, hvor stille dele af musikken risikerer at blive overdøvet af baggrundsstøj.
+\n
+\nDenne justering afgør, hvor hårdt DSPManager vil forsøge at fastholde lydniveauet til det målsatte niveau. Der er ingen tilsvarende AOSP-variant for denne DSP-effekt.
+\n
+\n2. <b>Basforstærkning</b>
+\n
+\nBasforstærkningen er et simpelt lavpasfilter, som kan anvendes til at tilføje særlig vægt ved 55 Hz og lavere frekvenser. Forstærkningen er omkring 6 dB og ændret af &#8220;styrke&#8221;-parameteren, som tilføjer filter resonans ved 55 Hz-båndet, hvilket giver denne frekvens ekstra vægt. Effekten er designet til at bekæmpe tab af basfrekvens, som ved små højttalere og over-øre hovedtelefoner, som ikke sidder helt tæt ind til brugerens øregang.
+\n
+\n3. <b>Equalizer</b>
+\n
+\nDette er en 6-båndsequalizer med bånd ved 16, 64, 250, 1000, 4000 og 16000 Hz. Nogle af de almindelige forudindstillinger findes, og frekvensgangen kan også tilpasses ved at trykke på equalizerkurven. Effekten bør anvendes til at indstille frekvensgengivelsen, til brugerens personlige smag, eller til de bestemte muligheder for de tilgængelige hovedtelefoner eller højttalere.
+\n
+\nEqualizer indeholder også et kompensationsfilter for lydstyrken, som udligner ændringerne for frekvensgangen i øret, baseret på det lydtryksniveau, som når brugerens øre. Anvendelse af kabelforbundne hovedtelefoner er påkrævet, og værdien for styrkeparameteren skal indstilles korrekt, før effekten fungerer som beregnet.
+\n
+\nFor at vælge den rigtige værdi for kompensationsstyrken, anvend den mest stille lydstyrke, og vælg noget bredspektret støjende musik, som rock eller metal. Forsøg at finde en indstilling, hvor bassen forstærkes tilbage til hørbarhed og virker afbalanceret med resten af materialet. Efter at kompensationen er korrekt konfigureret, bør bassen forblive på samme niveau i forhold til andre instrumenter uafhængigt af lydniveauet. På den anden side, hvis musikken begynder at lyde bas-tung ved højere lydniveauer, er kompensationen sandsynligvis indstillet for stærkt, og bør reduceres.
+\n
+\nKompensationen føjes til brugerens valgte justeringer. Hvis der kun ønskes kompensation, bør equalizeren være i indstillingen &#8220;Flad&#8221;.
+\n
+\n4. <b>Hovedtelefon-filter</b>
+\n
+\nHovedtelefon-filteret er et såkaldt "crossfeed-design", inspireret af det berømte analoge kredsløb bs2b. Effekten passerer monolyd uændret og justerer signal-differencen gennem et lavpasfilter, som estimerer lyden i hovedet og den interaurale forsinkelse på én gang, hvilket giver rigtige psykoakustiske spor for brugerens ører. Hensigten er at forhindre lyttetræthed som følge af usandsynlig stereoseparation, indbygget i alle hovedtelefoner. Effekten bør aktiveres, hver gang der anvendes stereo-hovedtelefoner.
+\n
+\nFordi blandingen reducerer stereoadskillelsen en smule, er der en efterklangseffekt, som kan anvendes til at øge bredden på det oplevede stereobillede. Dette styres af indstillingen &#8220;Rumtype&#8221;.</string>
 </resources>
