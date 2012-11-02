@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string-array name="microphone_recording_presets">
+        <item>Original</item>
+        <item>Equilibré</item>
+        <item>Haute sensibilité</item>
+        <item>Environnement bruyant</item>
+    </string-array>
+
     <string-array name="headphone_modes">
         <item>Studio</item>
         <item>Chambre</item>
         <item>Grande chambre</item>
         <item>Scène</item>
+    </string-array>
+
+    <string-array name="equalizer_loudness_modes">
+        <item>Désactivé</item>
+        <item>Le plus faible</item>
+        <item>Plus faible</item>
+        <item>Faible</item>
+        <item>Fort</item>
+        <item>Plus fort</item>
+        <item>Le plus fort</item>
     </string-array>
 
     <string-array name="compression_modes">
@@ -18,4 +36,10 @@
         <item>Moyen</item>
         <item>Extrême</item>
     </string-array>
+
+    <string-array name="wm8994_bassboost_modes">
+        <item>Standard</item>
+        <item>Petit haut-parleur</item>
+    </string-array>
+
 </resources>
