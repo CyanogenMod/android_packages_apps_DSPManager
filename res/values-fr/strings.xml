@@ -45,4 +45,47 @@
     <string name="eq_preset_treble_reducer">Réduction des aiguës</string>
     <string name="eq_preset_vocal_booster">Amplification de la voix</string>
     <string name="eq_preset_custom">Perso.</string>
+
+    <string name="help_title">Guide utilisateur</string>
+    <string name="help_text"><b>Qu\'est-ce que DSPManager ?</b>
+\n
+\nDSPManager est une application d\'ajustement de sortie audio. <i>DSP</i> signifie Digital Signal Processing, et <i>Manager</i> signifie qu\'il n\'est pas intégré dans les applications tiers; il ne peut fonctionner qu\'avec les applications compatibles avec les spécifications audio d\'Android, c\'est à dire la plupart des lecteurs audio.
+\n
+\n<b>Philosophie</b>
+\n
+\nLe traitement audio de CyanogenMod prend en charge trois types de sortie différentes : casque filaire, haut parleur et casque bluetooth. Il y a un panneau de configuration pour chaque sortie. La philosophie de DSPManager est de corriger les lacunes de chaque type de sortie de manière différente afin d\'obtenir l\'expérience utilisateur optimum.
+\n
+\nContrairement aux effets audio AOSP, il n\'existe pas de paramètres pour chaque application. C\'est un choix de conception délibérée: c\'est la sortie qui nous intéresse, pas l\'application avec laquelle doit travailler DSPManager.
+\n
+\n<b>Fonctionnalités</b>
+\n
+\nLe reste de ce document décrit chaque effet audio et son usage.
+\n
+\n1. <b>Compression audio dynamique</b>
+\n
+\nCet effet fait une estimation du niveau sonore du signal audio tel qu\'il est perçu par un auditeur moyen et corrige le gain sur la base de cette estimation. La principale utilisation sera dans les environnements bruyants comme dans les voitures ou dans la rue, là où les parties calmes de la musique risquent d\'être noyé par le bruit de fond.
+\n
+\nLe paramètre détermine avec quel force le DSPManager va essayer de maintenir l\'intensité sonore. Il n \'existe aucun équivalent AOSP à cet effet.
+\n
+\n2. <b>Bass Boost</b>
+\n
+\nL\'accentuation des graves est un filtre passe-bas simple qui peut être utilisé pour accentuer les fréquences à partir de 55 Hz et les plus basses fréquences. L\'augmentation est d\'environ 6 dB, et est modifiable par le paramètre dit de &#8220;Force&#8221;. Cela ajoute de la résonance au filtre de bande des 55 Hz, ce qui met un accent supplémentaire sur ces fréquences. L\'effet est conçu pour lutter contre la perte des basses fréquences avec de petits haut-parleurs ou des casques supra-oral, qui ne se colle pas correctement avec le conduit auditif de l\'utilisateur.
+\n
+\n3. <b>Égaliseur</b>
+\n
+\nIl s\'agit d\'un égaliseur 6 bandes positionnées à 16, 64, 250, 1000, 4000 et 16000 Hz. Certaines pré-sélections sont disponibles, et une personnalisation des fréquences peut également être faites en appuyant sur le graphique de l\'égaliseur. Cet effet peut être utilisé pour ajuster les fréquences à ces goûts personnels, ou aux capacités des écouteurs ou du haut-parleurs utilisés.
+\n
+\nL\'égaliseur contient également un filtre de compensation du volume qui égalise les variations de fréquence dans l\'oreille en fonction du niveau de pression acoustique qui est atteint à l\'intérieur de l\'oreille de l\'utilisateur. L\'utilisation d\'un casque filaire est requis, et la valeur du paramètre de force doit être réglé correctement avant pour que l\'effet fonctionne comme voulu.
+\n
+\nPour sélectionner la bonne valeur pour la force de compensation, utilisez un volume bas pour la musique, et choisissez de la musique à large spectre comme du rock ou du métal. Essayez de trouver un réglage où les basses sont augmentées et semblent équilibrées avec le reste des instruments. Après que la compensation est été correctement configurée, les basses doivent rester au même niveau que les aux autres instruments quel que soit le niveau d\'écoute. D\'autre part, si la musique commence à sonner avec des basses lourdes à des niveaux plus élevés d\'écoute, la compensation est probablement trop forte, et elle devrait être réduite.
+\n
+\nLa compensation est ajoutée aux ajustements choisis par l\'utilisateur. Si aucune compensation n\'est désirée, l\'égaliseur doit être paramétré avec le réglage &#8220;Plat&#8221;.
+\n
+\n4. <b>Filtre du casque</b>
+\n
+\nLe filtre du casque est un modèle d\'intercommunication inspiré du célèbre circuit analogique bs2b. L\'effet passe le son en mono sans le changer, et ajuste les différents signaux à travers un filtre passe-bas puis le renvoi au coté opposé à la fois en arrière plan et avec un retard inter-oral, ce qui donne un bon indice psycho-acoustique pour les oreilles de l\'utilisateur. Le but est de prévenir la fatigue d\'écoute résultant de la séparation de la stéréo inhérente à tous les casques. L\'effet devrait être activé lorsque vous utilisez des écouteurs stéréo.
+\n
+\nL\'égaliseur réduit un peu la séparation stéréo, vous pouvez utiliser un effet de réverbération Haas pour augmenter la largeur de stéréo perçue. Ceci est contrôlé avec le paramètre &#8220;Type de chambre&#8221;.
+    </string>
+
 </resources>
