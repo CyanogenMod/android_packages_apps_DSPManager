@@ -1,10 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="microphone_recording_presets">
+    <item>Původní</item>
+    <item>Vyvážený</item>
+    <item>Vysoká citlivost</item>
+    <item>Hlasité prostředí</item>
+  </string-array>
+
   <string-array name="headphone_modes">
     <item>Studio</item>
     <item>Pokoj</item>
     <item>Hala</item>
-    <item>Stadion</item>
+    <item>Koncert</item>
   </string-array>
 
   <string-array name="equalizer_loudness_modes">
@@ -20,13 +27,18 @@
   <string-array name="compression_modes">
     <item>Mírný</item>
     <item>Střední</item>
-    <item>Největší</item>
+    <item>Extrémní</item>
   </string-array>
 
   <string-array name="bassboost_modes">
     <item>Mírný</item>
     <item>Střední</item>
-    <item>Největší</item>
+    <item>Extrémní</item>
+  </string-array>
+
+  <string-array name="wm8994_bassboost_modes">
+    <item>Standardní</item>
+    <item>Malé reproduktury</item>
   </string-array>
 
 </resources>
