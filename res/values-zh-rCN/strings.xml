@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DSP 管理器</string>
-    <string name="select_configuration_title">选择配置编辑</string>
+    <string name="select_configuration_title">选择配置即可编辑</string>
     <string name="headset_title">耳机</string>
     <string name="speaker_title">扬声器</string>
     <string name="bluetooth_title">蓝牙</string>
-    <!-- skip 'wm8994_title' translation -->
-    <string name="dsp_settings_headset">DSP设置-耳机</string>
-    <string name="dsp_settings_speaker">DSP设置-电话扬声器</string>
-    <string name="dsp_settings_bluetooth">DSP设置-蓝牙设备</string>
-    <string name="dsp_settings_wm8994">DSP设置-WM8994</string>
-    <string name="pref_equalizer_loudness_title">响度补偿</string>
-    <string name="pref_bassboost_title">低音增强</string>
-    <string name="pref_bassboost_summary_on">开启低音增强</string>
-    <string name="pref_bassboost_summary_off">禁用低音增强</string>
+    <string name="audio_effects">音效</string>
+    <string name="pref_unavailable">此功能在您的设备上不可用</string>
+    <string name="dsp_settings_headset">DSP 设置 - 耳机</string>
+    <string name="dsp_settings_speaker">DSP 设置 - 电话扬声器</string>
+    <string name="dsp_settings_bluetooth">DSP 设置 - 蓝牙设备</string>
+    <string name="dsp_settings_wm8994">DSP设置 - WM8994</string>
     <string name="pref_dsp_title">动态范围压缩</string>
     <string name="pref_dsp_summary_on">启用压缩</string>
     <string name="pref_dsp_summary_off">禁用压缩</string>
@@ -25,6 +22,10 @@
     <string name="pref_equalizer_summary_off">禁用均衡器</string>
     <string name="pref_equalizer_enable">启用</string>
     <string name="pref_equalizer_preset_title">选择预设</string>
+    <string name="pref_equalizer_loudness_title">响度补偿</string>
+    <string name="pref_bassboost_title">低音增强</string>
+    <string name="pref_bassboost_summary_on">开启低音增强</string>
+    <string name="pref_bassboost_summary_off">禁用低音增强</string>
     <string name="pref_bassboost_enable">启用</string>
     <string name="pref_headset_virtual_title">耳机虚拟空间效果</string>
     <string name="pref_headset_virtual_summary_on">启用耳机虚拟空间</string>
@@ -32,6 +33,7 @@
     <string name="pref_headset_virtual_enable">启用</string>
     <string name="pref_room_title">选择空间类型</string>
     <string name="dialog_room">空间类型</string>
+    <string name="menu_reset">重置</string>
 
     <string name="eq_preset_acoustic">原音音乐</string>
     <string name="eq_preset_bass_booster">低音强化</string>
@@ -79,15 +81,62 @@
     <string name="pref_wm8994_speaker_tuning_title">音乐调整</string>
     <string name="pref_wm8994_speaker_tuning_summary">重新设置硬件均衡器来获取更加低音及均衡的音效</string>
     <string name="pref_wm8994_mono_downmix_title">单声道混合</string>
-    <string name="pref_wm8994_mono_downmix_summary">将立体声道混合成单声道（用于立体声道输出，例如耳机）</string>
+    <string name="pref_wm8994_mono_downmix_summary">将立体声道混合成单声道 (用于立体声道输出, 例如耳机)</string>
     <string name="pref_wm8994_stereo_expansion_title">立体声道扩展</string>
     <string name="pref_wm8994_stereo_expansion_summary">通过信号处理来&#8220;扩展&#8221;立体声</string>
     <string name="pref_wm8994_dac_direct_title">直接数模转换</string>
-    <string name="pref_wm8994_dac_direct_summary">绕过频道混音器，直接访问数模转换器，来产生更清晰的音频（较低的信噪比）</string>
+    <string name="pref_wm8994_dac_direct_summary">绕过频道混音器, 直接访问数模转换器, 来产生更清晰的音频 (较低的信噪比)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-Fi 回放</string>
-    <string name="pref_wm8994_dac_osr128_summary">数模转换器128倍过密采样，使播放音乐时的音质更加清晰</string>
+    <string name="pref_wm8994_dac_osr128_summary">数模转换器 128 倍过密采样, 使播放音乐时的音质更加清晰</string>
     <string name="pref_wm8994_adc_osr128_title">Hi-Fi 录音</string>
-    <string name="pref_wm8994_adc_osr128_summary">数模转换器128倍过密采样，提高录音品质</string>
+    <string name="pref_wm8994_adc_osr128_summary">数模转换器 128 倍过密采样, 提高录音品质</string>
     <string name="pref_wm8994_fll_tuning_title">调整音频时钟</string>
-    <string name="pref_wm8994_fll_tuning_summary">使用调整过的 WM8994 音频时钟源，改善音效品质</string>
+    <string name="pref_wm8994_fll_tuning_summary">使用调整过的 WM8994 音频时钟源, 改善音效品质</string>
+
+    <string name="help_title">用户手册</string>
+    <string name="help_text"><b>什么是 DSP 管理器?</b>
+\n
+\nDSP 管理器是一个进行音频调整的程序. <i>&#8220;DSP&#8221;</i> 是
+\'Digital Signal Processing\', 或数字信号处理的缩写. <i>&#8220;管理器&#8221;</i> 代表着 DSP 并不是在一个程序内运行; 此管理器只与符合 Android 音频效果规格的程序 (例如大部分音乐播放器) 协作运行并进行调整.
+\n
+\n<b>目标</b>
+\n
+\nCyanogenMod 的音频处理支持三种输出类别:
+有线耳机, 扬声器, 与蓝牙耳机.  每一个输出类别拥有自己特定的面板.  DSP 管理器的目标是为了纠正每个输出类别拥有的缺陷, 以便带来最好的音效体验.
+\n
+\n与 AOSP 音效不同的一点就是这里没有给每个程序单独设置的功能. 这是一个刻意的设计: 我们仅关心音频的输出, 不关心与 DSP 管理器协作的程序.
+
+\n
+\n<b>功能</b>
+\n
+\n本手册的其余部分将描述每一个音频效果以及应该如何使用.
+\n
+\n1. <b>动态范围压缩</b>
+\n
+\n此效果将估计音频对一个平常人有多大声并使用此估计进行一个增益控制. 此功能的主要案例是在吵闹的环境下, 音乐安静的部分可能被外围声音所淹没.
+\n
+\n唯一可调信号将定制 DSP 管理器如何尽力的保持音乐响度在设定的等级. 此 DSP 效果与 AOSP 无重叠.
+\n
+\n2. <b>低音增强</b>
+\n
+\n低音增强是一个简单的低通滤波器, 用于增强在 55 Hz 或更低的频率. 低音的增强是 6 dB 左右, 并可以使用 &#8220;强度&#8221; 设置进行调整. 这同时也会在 55 Hz 频带加入滤波器谐振, 使此频率被特别增强. 此效果主要用于弥补使用小音箱或贴耳式耳机可能带来的低音损失.
+\n
+\n3. <b>均衡器</b>
+\n
+\n这是一个 6 频率均衡器, 拥有 16, 64, 250, 1000, 4000, 和 16000 Hz 的频率调整. 一些常用的预设已为您提供, 您可以通过均衡器的图表自定义频率响应. 这些效
+果可以让用户把频率响应调整为自己的喜好或可用音响/耳机的能力.
+\n
+\n同时均衡器也包括一个响度补偿过滤器, 根据进入用户耳朵的声压对频率响应进行改变. 此效果需要您使用有线耳机并对强度设置进行正确的调整才能够达到最佳效果.
+\n
+\n在选择响度补偿强度值时, 先使用最安静的音乐音量, 然后选择一些宽波谱与嘈杂的音乐 (例如摇滚乐或重金属音乐). 尝试选择一个能够将低音增强到与剩下的音频达到平衡的设置. 补偿设置被正确的调整后, 低音应该在所有类型的音乐内与所有音量等级上停留在比较一致的等级上. 如果在较高音量的音乐上发现低音过重, 补偿设置估计太强了, 需要降低.
+\n
+\n此补偿是通过用户调整而加入的. 如果您只想要补偿的话, 均衡器选择应该设为 &#8220;平淡&#8221;.
+\n
+\n4. <b>耳机过滤器</b>
+\n
+\n耳机过滤器是从著名的 bs2b 模拟电路得到启发的交输设计. 此效果不改变单声道, 而把有差异的信号通过一个能够估计声影与两耳间的延迟的低通滤波器进行调整. 这将为您带来正确的心理声学, 达到防止立体声分离而导致听觉疲劳的目标. 此效果适用于使用立体声耳机时启用.
+\n
+\n混频带来减少立体声分离的效果, 同时也会导致哈斯效应回响. 我们可以通过此效应而增加立体声声象. 此效应可以通过 &#8220;空间类型&#8221; 设置进行控制.
+    </string>
+
 </resources>
