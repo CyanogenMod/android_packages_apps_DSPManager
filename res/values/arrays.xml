@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="microphone_recording_presets">
     <item>Original</item>
     <item>Balanced</item>
@@ -45,23 +46,23 @@
   </string-array>
 
   <string-array name="equalizer_loudness_modes">
-      <item>Disabled</item>
-      <item>Weakest</item>
-      <item>Weaker</item>
-      <item>Weak</item>
-      <item>Strong</item>
-      <item>Stronger</item>
-      <item>Strongest</item>
+    <item>Disabled</item>
+    <item>Weakest</item>
+    <item>Weaker</item>
+    <item>Weak</item>
+    <item>Strong</item>
+    <item>Stronger</item>
+    <item>Strongest</item>
   </string-array>
 
   <string-array name="equalizer_loudness_values" translatable="false">
-      <item>10000</item>
-      <item>5000</item>
-      <item>4500</item>
-      <item>4000</item>
-      <item>3500</item>
-      <item>3000</item>
-      <item>2500</item>
+    <item>10000</item>
+    <item>5000</item>
+    <item>4500</item>
+    <item>4000</item>
+    <item>3500</item>
+    <item>3000</item>
+    <item>2500</item>
   </string-array>
 
   <string-array name="equalizer_preset_values" translatable="false">
@@ -113,5 +114,4 @@
     <item>0</item>
     <item>-1</item>
   </string-array>
-
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="headphone_modes">
     <item>Studio</item>
     <item>Raum</item>
@@ -8,7 +9,7 @@
   </string-array>
 
   <string-array name="compression_modes">
-    <item>Wenig</item>
+    <item>Schwach</item>
     <item>Mittel</item>
     <item>Extrem</item>
   </string-array>
@@ -20,12 +21,12 @@
   </string-array>
 
   <string-array name="equalizer_loudness_modes">
-      <item>Deaktiviert</item>
-      <item>Sehr schwach</item>
-      <item>Schwächer</item>
-      <item>Schwach</item>
-      <item>Stark</item>
-      <item>Stärker</item>
-      <item>Sehr stark</item>
+    <item>Deaktiviert</item>
+    <item>Sehr schwach</item>
+    <item>Schwächer</item>
+    <item>Schwach</item>
+    <item>Stark</item>
+    <item>Stärker</item>
+    <item>Sehr stark</item>
   </string-array>
 </resources>
