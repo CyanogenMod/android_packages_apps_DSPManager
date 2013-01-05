@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">"DSPManager"</string>
     <string name="select_configuration_title">"Selectaţi Configurarea pentru Editare"</string>
     <string name="headset_title">"Set cu cască"</string>
     <string name="speaker_title">"Difuzor"</string>
