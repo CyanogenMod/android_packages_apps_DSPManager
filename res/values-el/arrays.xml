@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="microphone_recording_presets">
+    <item>Αρχικό</item>
+    <item>Ισορροπημένο</item>
+    <item>Υψηλή ευαισθησία</item>
+    <item>Loud Environment</item>
+  </string-array>
+
+  <string-array name="headphone_modes">
+    <item>Studio</item>
+    <item>Δωμάτιο</item>
+    <item>Μεγάλο δωμάτιο</item>
+    <item>Σκηνή</item>
+  </string-array>
+
+  <string-array name="equalizer_loudness_modes">
+      <item>Απενεργοποιημένη</item>
+      <item>Ασθενέσθατη</item>
+      <item>Ασθενέστερη</item>
+      <item>Ασθενής</item>
+      <item>Ισχυρή</item>
+      <item>Ισχυρότερη</item>
+      <item>Ισχυρότατη</item>
+  </string-array>
+
+  <string-array name="compression_modes">
+    <item>Μικρή</item>
+    <item>Μεσαία</item>
+    <item>Μεγάλη</item>
+  </string-array>
+
+  <string-array name="bassboost_modes">
+    <item>Μικρή</item>
+    <item>Μεσαία</item>
+    <item>Μεγάλη</item>
+  </string-array>
+
+  <string-array name="wm8994_bassboost_modes">
+    <item>Κανονική</item>
+    <item>Μικρά ηχεία</item>
+  </string-array>
+
+</resources>
