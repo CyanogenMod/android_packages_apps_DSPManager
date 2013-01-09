@@ -21,17 +21,17 @@
     <string name="pref_equalizer_title">Hangszínszabályzó</string>
     <string name="pref_equalizer_summary_on">Hangszínszabályzó engedélyezve</string>
     <string name="pref_equalizer_summary_off">Hangszínszabályzó letiltva</string>
-    <string name="pref_equalizer_enable">Engedélyezve</string>
+    <string name="pref_equalizer_enable">Engedélyezés</string>
     <string name="pref_equalizer_preset_title">Válassz profilt</string>
     <string name="pref_equalizer_loudness_title">Hangerő kompenzáció</string>
     <string name="pref_bassboost_title">Mélyhang kiemelése</string>
-    <string name="pref_bassboost_summary_on">Mélyhang kiemelése engedélyezve</string>
-    <string name="pref_bassboost_summary_off">Mélyhang kiemelése letiltva</string>
-    <string name="pref_bassboost_enable">Engedélyezve</string>
+    <string name="pref_bassboost_summary_on">Mélyhangkiemelés engedélyezve</string>
+    <string name="pref_bassboost_summary_off">Mélyhangkiemelés letiltva</string>
+    <string name="pref_bassboost_enable">Engedélyezés</string>
     <string name="pref_headset_virtual_title">Fejhallgató virtuális szoba-hatás</string>
     <string name="pref_headset_virtual_summary_on">Fejhallgató virtuális szoba-hatás engedélyezve</string>
     <string name="pref_headset_virtual_summary_off">Fejhallgató virtuális szoba-hatás letiltva</string>
-    <string name="pref_headset_virtual_enable">Engedélyezve</string>
+    <string name="pref_headset_virtual_enable">Engedélyezés</string>
     <string name="pref_room_title">Szoba típusának kiválasztása</string>
     <string name="dialog_room">Szoba típusa</string>
     <string name="menu_reset">Visszaállítás</string>
@@ -87,9 +87,9 @@
     <string name="pref_wm8994_stereo_expansion_summary">&#8220;Kiterjeszti&#8221; a sztereó hangzást digitális jelfeldolgozási eszközökkel</string>
     <string name="pref_wm8994_dac_direct_title">Közvetlen D/A átalakítás</string>
     <string name="pref_wm8994_dac_direct_summary">Digitális/analóg átalakító közvetlen elérése megkerülve a sávkeverőt. Tisztább hangot (kevesebb zajt) eredményez</string>
-    <string name="pref_wm8994_dac_osr128_title">Hi-fi lejátszás</string>
+    <string name="pref_wm8994_dac_osr128_title">Hi-Fi lejátszás</string>
     <string name="pref_wm8994_dac_osr128_summary">Digitális-analóg átalakító 128x túlmintavételezés &#8212; tisztább hangok zene lejátszásakor</string>
-    <string name="pref_wm8994_adc_osr128_title">Hi-fi felvétel</string>
+    <string name="pref_wm8994_adc_osr128_title">Hi-Fi felvétel</string>
     <string name="pref_wm8994_adc_osr128_summary">Analóg-digitális átalakító 128x túlmintavételezés &#8212; javítja a felvételek minőségét</string>
     <string name="pref_wm8994_fll_tuning_title">Hangolt audió órajel</string>
     <string name="pref_wm8994_fll_tuning_summary">Hangolt WM8994 audió órajelforrás használata &#8212; javítja a hang minőségét</string>
@@ -108,7 +108,7 @@ hangeffekt-specifikációjával. Ilyenek például a különféle zenelejátszó
 \nA CyanogenMod hangfeldolgozó programja három különböző kimenetet támogat:
 vezetékes fejhallgatókat, az eszköz beépített hangszóróit, valamint Bluetooth hangeszközöket
 (autós kihangosító, headset, stb.). Mindegyik eszköztípus számára külön vezérlőpanel
-áll rendelkezésre. A DSPManager célja ezen eszközök sajátos hibáinak kiküszöbölése optimális
+áll rendelkezésre. A DSPManager célja ezen eszközök sajátos hibáinak kiküszöbölése az optimális
 zenehallgatási élmény elérése érdekében.
 \n
 \nAz AOSP hangeffektektől eltérően nincsenek alkalmazásokhoz rendelhető beállítások. Ez szándékos
@@ -129,9 +129,9 @@ például autóban, vagy utcán érdemes használni, ahol a zene halk részeit a
 \nAz egyetlen beállítási lehetőség azt adja meg, hogy a DSPManager milyen erősen
 próbálja a hangosságot szinten tartani. Ennek az effektnek nincs AOSP megfelelője.
 \n
-\n2. <b>Mélyhangkimenelés</b>
+\n2. <b>Mélyhangkiemelés</b>
 \n
-\nA mélyhangkiemelés technikailag egy egyszerű aluláteresztő szűrő amit az 55 Hz és az alatti frekvenciájú
+\nA mélyhangkiemelés technikailag egy egyszerű aluláteresztő szűrő, amit az 55 Hz és az alatti frekvenciájú
 hangok nyomatékosítására lehet használni. A kiemelés nagyjából 6 dB értékű és hat rá az &#8220;erősség&#8221;
 paraméter, ami szűrési rezonanciát ad az 55 Hz-es sávnak, így az a frekvencia még inkább kiemelésre
 kerül. Az effektet arra tervezték, hogy a kis hangszórókra és fülön ülő fejhallgatókra (melyek a
@@ -139,22 +139,22 @@ hallgató hallójáratához nem illeszkednek szorosan) jellemző gyenge mélyhan
 \n
 \n3. <b>Hangszínszabályzó</b>
 \n
-\nEz egy hatsávos hangszínszabályzó, melynek sávjai 16, 64, 250, 1000, 4000 and 16000 Hz-nél vannak.
+\nEz egy hatsávos hangszínszabályzó, melynek sávjai 16, 64, 250, 1000, 4000 és 16000 Hz-nél vannak.
 Adott néhány gyakori hangprofil, valamint a frekvenciaválasz (a különféle magasságú hangok erőssége)
 személyre szabható a szabályzó grafikonját megérintve. Az effekt arra lett tervezve, hogy a kiadott
-zene hangzása megfeleljen a felhasználó ízlésének, vagy, az elérhető fejhallgató, vagy hangszóró
+zene hangzása megfeleljen a felhasználó ízlésének és a fejhallgató vagy hangszóró
 képességeinek.
 \n
 \nA hangszínszabályzó tartalmaz még egy hangosságkompenzáló szűrőt is, ami a felhasználó fülét elérő
-hangnyomásből származó hatásokat küszöböli ki. Ennek használatához vezetékes fejhallgatóra van szükség,
+hangnyomásból származó hatásokat küszöböli ki. Használatához vezetékes fejhallgatóra van szükség,
 a paraméter értékét pedig helyesen kell beállítani ahhoz, hogy a tervezett hatást elérhesse.
 \n
 \nA kompenzáció helyes értékének kiválasztásához használja a leghalkabb hangerőt és hozzá valami
-széles spektrumú, zajos zenét, mint amilyen a rock, vagy metál zenék. Próbáljon meg olyan
-beállítást találni, ami a mélyhangokat hallható szintre viszi vissza és azok az anyag többi részével
-egyensúlyba kerülnek. Miután a kompenzációt helyesen beállította, a mélyhangoknak a többi hangszerhez
-képest a hangerőtől függetlenül azonos szinten kell lennie. Máskézről, ha hangosabbra állítva a
-zenében túl erőssé válnának a mélyhangok, a kompenzáció valószínűleg túl erős, azt csökkenteni kell.
+széles spektrumú, zajos zenét, pl. rock, vagy metál zenét. Próbáljon meg olyan beállítást találni,
+ami a mélyhangokat hallható szintre viszi vissza és azok az anyag többi részével egyensúlyba kerülnek.
+Miután a kompenzációt helyesen beállította, a mélyhangoknak a többi hangszerhez képest a hangerőtől
+függetlenül azonos szinten kell lennie. Amennyiben hangosabbra állítva a zenében túl erőssé válnának a
+mélyhangok, a kompenzáció valószínűleg túl erős, azt csökkenteni kell.
 \n
 \nA kompenzáció hozzáadódik a felhasználó beállításaihoz. Ha csak a kompenzációt kívánja alkalmazni,
 a hangszínszabályzót állítsa &#8220;Lapos&#8221; profilra.
