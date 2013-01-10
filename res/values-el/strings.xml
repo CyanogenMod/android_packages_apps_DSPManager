@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_configuration_title">Επιλέξτε ρύθμιση για επεξεργασία</string>
+    <string name="headset_title">Ακουστικά</string>
+    <string name="speaker_title">Ηχείο</string>
+    <string name="bluetooth_title">Bluetooth</string>
+    <string name="audio_effects">Ηχητικά εφέ</string>
+    <string name="dsp_settings_headset">Ρυθμίσεις DSP - Ακουστικά</string>
+    <string name="dsp_settings_speaker">Ρυθμίσεις DSP - Ηχείο</string>
+    <string name="dsp_settings_bluetooth">Ρυθμίσεις DSP - Συσκευή Bluetooth</string>
+    <string name="pref_dsp_title">Συμπίεση δυναμικού εύρους</string>
+    <string name="pref_dsp_summary_on">Συμπίεση ενεργοποιημένη</string>
+    <string name="pref_dsp_summary_off">Συμπίεση απενεργοποιημένη</string>
+    <string name="pref_dsp_enable">Ενεργοποίηση</string>
+    <string name="pref_effect_title">Επίδραση εφέ</string>
+    <string name="dialog_effect">Επίδραση εφέ</string>
+    <string name="pref_equalizer_title">Ισοσταθμιστής</string>
+    <string name="pref_equalizer_summary_on">Ισοσταθμιστής ενεργοποιημένος</string>
+    <string name="pref_equalizer_summary_off">Ισοσταθμιστής απενεργοποιημένος</string>
+    <string name="pref_equalizer_enable">Ενεργοποίηση</string>
+    <string name="pref_equalizer_preset_title">Επιλογή προκαθορισμένου</string>
+    <string name="pref_equalizer_loudness_title">Ενίσχ. υψηλών και χαμηλών συχν.</string>
+    <string name="pref_bassboost_title">Ενίσχυση μπάσου</string>
+    <string name="pref_bassboost_summary_on">Ενίσχυση μπάσου ενεργοποιημένη</string>
+    <string name="pref_bassboost_summary_off">Ενίσχυση μπάσου απενεργοποιημένη</string>
+    <string name="pref_bassboost_enable">Ενεργοποίηση</string>
+    <string name="pref_headset_virtual_title">Εφέ εικονικού δωματίου</string>
+    <string name="pref_headset_virtual_summary_on">Εφέ εικονικού δωματίου ενεργοποιημένο</string>
+    <string name="pref_headset_virtual_summary_off">Εφέ εικονικού δωματίου απενεργοποιημένο</string>
+    <string name="pref_headset_virtual_enable">Ενεργοποίηση</string>
+    <string name="pref_room_title">Επιλογή τύπου δωματίου</string>
+    <string name="dialog_room">Τύπος δωματίου</string>
+    <string name="menu_reset">Επαναφορά</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+    <string name="eq_preset_bass_booster">Ενίσχυση μπάσου</string>
+    <string name="eq_preset_bass_reducer">Μείωση μπάσου</string>
+    <string name="eq_preset_classical">Κλασική</string>
+    <string name="eq_preset_deep">Deep</string>
+    <string name="eq_preset_flat">Επίπεδο</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Ροκ</string>
+    <string name="eq_preset_small_speakers">Μικρά ηχεία</string>
+    <string name="eq_preset_treble_booster">Ενίσχυση πρίμα</string>
+    <string name="eq_preset_treble_reducer">Μείωση πρίμα</string>
+    <string name="eq_preset_vocal_booster">Ενίσχυση φωνητικών</string>
+    <string name="eq_preset_custom">Προσαρμοσμένο</string>
+</resources>
