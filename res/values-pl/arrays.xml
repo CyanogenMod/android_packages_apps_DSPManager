@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Pokój</item>
-    <item>Duży pokój</item>
-    <item>Scena</item>
-  </string-array>
-  <string-array name="compression_modes">
-    <item>Lekka</item>
-    <item>Umiarkowana</item>
-    <item>Silna</item>
-  </string-array>
-  <string-array name="bassboost_modes">
-    <item>Lekkie</item>
-    <item>Umiarkowane</item>
-    <item>Silne</item>
-  </string-array>
+    <string-array name="headphone_modes">
+        <item>Studio</item>
+        <item>Pokój</item>
+        <item>Duży pokój</item>
+        <item>Scena</item>
+    </string-array>
+
+    <string-array name="compression_modes">
+        <item>Lekka</item>
+        <item>Umiarkowana</item>
+        <item>Silna</item>
+    </string-array>
+
+    <string-array name="bassboost_modes">
+        <item>Lekkie</item>
+        <item>Umiarkowane</item>
+        <item>Silne</item>
+    </string-array>
 </resources>

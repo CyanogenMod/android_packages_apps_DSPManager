@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
     <string name="select_configuration_title">Choisir la configuration à éditer</string>
     <string name="headset_title">Casque</string>
     <string name="speaker_title">Haut-parleur du téléphone</string>
@@ -32,6 +31,7 @@
     <string name="pref_room_title">Type de chambre</string>
     <string name="dialog_room">Type de chambre</string>
     <string name="menu_reset">Remise à zéro</string>
+
     <string name="eq_preset_acoustic">Acoustique</string>
     <string name="eq_preset_bass_booster">Amplification des basses</string>
     <string name="eq_preset_bass_reducer">Réduction des basses</string>

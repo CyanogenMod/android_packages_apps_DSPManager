@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Rum</item>
-    <item>Stort rum</item>
-    <item>Scen</item>
+    <string-array name="headphone_modes">
+        <item>Studio</item>
+        <item>Rum</item>
+        <item>Stort rum</item>
+        <item>Scen</item>
     </string-array>
 
-  <string-array name="equalizer_loudness_modes">
-      <item>Inaktiverad</item>
-      <item>Svagast</item>
-      <item>Svagare</item>
-      <item>Svag</item>
-      <item>Stark</item>
-      <item>Starkare</item>
-      <item>Starkast</item>
-  </string-array>
+    <string-array name="equalizer_loudness_modes">
+        <item>Inaktiverad</item>
+        <item>Svagast</item>
+        <item>Svagare</item>
+        <item>Svag</item>
+        <item>Stark</item>
+        <item>Starkare</item>
+        <item>Starkast</item>
+    </string-array>
 
-  <string-array name="compression_modes">
-    <item>Lätt</item>
-    <item>Måttlig</item>
-    <item>Extrem</item>
-  </string-array>
+    <string-array name="compression_modes">
+        <item>Lätt</item>
+        <item>Måttlig</item>
+        <item>Extrem</item>
+    </string-array>
 
-  <string-array name="bassboost_modes">
-    <item>Lätt</item>
-    <item>Måttlig</item>
-    <item>Extrem</item>
-  </string-array>
-
+    <string-array name="bassboost_modes">
+        <item>Lätt</item>
+        <item>Måttlig</item>
+        <item>Extrem</item>
+    </string-array>
 </resources>

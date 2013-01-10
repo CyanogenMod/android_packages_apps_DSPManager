@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="headphone_modes">
-    <item>Stúdió</item>
-    <item>Szoba</item>
-    <item>Nagy szoba</item>
-    <item>Színpad</item>
-  </string-array>
+    <string-array name="headphone_modes">
+        <item>Stúdió</item>
+        <item>Szoba</item>
+        <item>Nagy szoba</item>
+        <item>Színpad</item>
+    </string-array>
 
-  <string-array name="equalizer_loudness_modes">
-      <item>Kikapcsolva</item>
-      <item>Leggyengébb</item>
-      <item>Gyengébb</item>
-      <item>Gyenge</item>
-      <item>Erős</item>
-      <item>Erősebb</item>
-      <item>Legerősebb</item>
-  </string-array>
+    <string-array name="equalizer_loudness_modes">
+        <item>Kikapcsolva</item>
+        <item>Leggyengébb</item>
+        <item>Gyengébb</item>
+        <item>Gyenge</item>
+        <item>Erős</item>
+        <item>Erősebb</item>
+        <item>Legerősebb</item>
+    </string-array>
 
-  <string-array name="compression_modes">
-    <item>Enyhe</item>
-    <item>Mérsékelt</item>
-    <item>Extrém</item>
-  </string-array>
+    <string-array name="compression_modes">
+        <item>Enyhe</item>
+        <item>Mérsékelt</item>
+        <item>Extrém</item>
+    </string-array>
 
-  <string-array name="bassboost_modes">
-    <item>Enyhe</item>
-    <item>Mérsékelt</item>
-    <item>Extrém</item>
-  </string-array>
-
+    <string-array name="bassboost_modes">
+        <item>Enyhe</item>
+        <item>Mérsékelt</item>
+        <item>Extrém</item>
+    </string-array>
 </resources>

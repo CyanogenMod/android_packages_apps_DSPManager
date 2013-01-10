@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="headphone_modes">
-    <item>Štúdio</item>
-    <item>Izba</item>
-    <item>Hala</item>
-    <item>Štadión</item>
-  </string-array>
+    <string-array name="headphone_modes">
+        <item>Štúdio</item>
+        <item>Izba</item>
+        <item>Hala</item>
+        <item>Štadión</item>
+    </string-array>
 
-  <string-array name="equalizer_loudness_modes">
-    <item>Vypnutý</item>
-    <item>Najslabší</item>
-    <item>Slabší</item>
-    <item>Slabý</item>
-    <item>Silný</item>
-    <item>Silnejší</item>
-    <item>Najsilnejší</item>
-  </string-array>
+    <string-array name="equalizer_loudness_modes">
+        <item>Vypnutý</item>
+        <item>Najslabší</item>
+        <item>Slabší</item>
+        <item>Slabý</item>
+        <item>Silný</item>
+        <item>Silnejší</item>
+        <item>Najsilnejší</item>
+    </string-array>
 
-  <string-array name="compression_modes">
-    <item>Mierny</item>
-    <item>Stredný</item>
-    <item>Najväčší</item>
-  </string-array>
+    <string-array name="compression_modes">
+        <item>Mierny</item>
+        <item>Stredný</item>
+        <item>Najväčší</item>
+    </string-array>
 
-  <string-array name="bassboost_modes">
-    <item>Mierny</item>
-    <item>Stredný</item>
-    <item>Najväčší</item>
-  </string-array>
-
+    <string-array name="bassboost_modes">
+        <item>Mierny</item>
+        <item>Stredný</item>
+        <item>Najväčší</item>
+    </string-array>
 </resources>

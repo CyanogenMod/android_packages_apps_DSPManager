@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
     <string name="select_configuration_title">Seleccione configuración a editar</string>
     <string name="headset_title">Auriculares</string>
     <string name="speaker_title">Altavoz teléfono</string>
@@ -46,5 +45,4 @@
     <string name="eq_preset_treble_reducer">Reductor Agudos</string>
     <string name="eq_preset_vocal_booster">Refuerzo Voces</string>
     <string name="eq_preset_custom">Personalizado</string>
-
 </resources>

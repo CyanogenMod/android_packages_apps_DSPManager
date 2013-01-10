@@ -6,16 +6,7 @@
         <item>大房间</item>
         <item>舞台</item>
     </string-array>
-    <string-array name="compression_modes">
-        <item>轻微</item>
-        <item>中等</item>
-        <item>极致</item>
-    </string-array>
-    <string-array name="bassboost_modes">
-        <item>轻微</item>
-        <item>中等</item>
-        <item>极致</item>
-    </string-array>
+
     <string-array name="equalizer_loudness_modes">
         <item>禁用</item>
         <item>最弱</item>
@@ -24,5 +15,17 @@
         <item>强</item>
         <item>更强</item>
         <item>最强</item>
+    </string-array>
+
+    <string-array name="compression_modes">
+        <item>轻微</item>
+        <item>中等</item>
+        <item>极致</item>
+    </string-array>
+
+    <string-array name="bassboost_modes">
+        <item>轻微</item>
+        <item>中等</item>
+        <item>极致</item>
     </string-array>
 </resources>

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <string-array name="headphone_modes">
         <item>スタジオ</item>
         <item>部屋</item>
         <item>広い部屋</item>
         <item>ステージ</item>
+    </string-array>
+
+    <string-array name="equalizer_loudness_modes">
+        <item>無効</item>
+        <item>最弱</item>
+        <item>より弱</item>
+        <item>弱</item>
+        <item>強</item>
+        <item>より強</item>
+        <item>最強</item>
     </string-array>
 
     <string-array name="compression_modes">
@@ -19,15 +28,4 @@
         <item>モデレート</item>
         <item>エクストリーム</item>
     </string-array>
-
-  <string-array name="equalizer_loudness_modes">
-      <item>無効</item>
-      <item>最弱</item>
-      <item>より弱</item>
-      <item>弱</item>
-      <item>強</item>
-      <item>より強</item>
-      <item>最強</item>
-  </string-array>
-
 </resources>

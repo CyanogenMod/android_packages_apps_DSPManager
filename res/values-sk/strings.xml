@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
-    <string name="dB">+0 dB</string>
     <string name="select_configuration_title">Vyberte konfiguráciu pre upravenie</string>
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Reproduktor Telefónu</string>
     <string name="bluetooth_title">Zariadenie Bluetooth</string>
-  <string name="audio_effects">Zvukové efekty</string>
+    <string name="audio_effects">Zvukové efekty</string>
     <string name="dsp_settings_headset">DSP Nastavenia - Slúchadlá</string>
     <string name="dsp_settings_speaker">DSP Nastavenia - Reproduktor Telefónu</string>
     <string name="dsp_settings_bluetooth">DSP Nastavenia - Zariadenie Bluetooth</string>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
     <string name="select_configuration_title">Konfiguráció kiválasztása szerkesztésre</string>
     <string name="headset_title">Fejhallgató</string>
     <string name="speaker_title">Telefon hangszóró</string>
@@ -45,5 +44,4 @@
     <string name="eq_preset_treble_reducer">Magas csökkentés</string>
     <string name="eq_preset_vocal_booster">Ének kiemelés</string>
     <string name="eq_preset_custom">Egyéni</string>
-
 </resources>

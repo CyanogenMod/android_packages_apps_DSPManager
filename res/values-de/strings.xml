@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSP-Einstellungen</string>
     <string name="select_configuration_title">Zu bearbeitende Konfiguration auswählen</string>
     <string name="headset_title">Kopfhörer</string>
     <string name="speaker_title">Lautsprecher</string>
@@ -46,5 +45,4 @@
     <string name="eq_preset_treble_reducer">Höhen vermindern</string>
     <string name="eq_preset_vocal_booster">Stimmen betonen</string>
     <string name="eq_preset_custom">Benutzerdefiniert</string>
-
 </resources>

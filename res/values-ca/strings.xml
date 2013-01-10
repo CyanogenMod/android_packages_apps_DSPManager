@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">DSPManager</string>
-  <string name="select_configuration_title">Seleccioneu configuració a editar</string>
-  <string name="headset_title">Auriculars</string>
-  <string name="speaker_title">Altaveu del telèfon</string>
-  <string name="bluetooth_title">Dispositiu Bluetooth</string>
-  <string name="pref_dsp_title">Compressió del rang dinàmic</string>
-  <string name="pref_dsp_summary_on">La compressió està habilitada</string>
-  <string name="pref_dsp_summary_off">La compressió està deshabilitada</string>
-  <string name="pref_dsp_enable">Habilita</string>
-  <string name="pref_effect_title">Seleccioneu la potència dels efectes</string>
-  <string name="dialog_effect">Potència dels efectes</string>
-  <string name="pref_equalizer_title">Equalitzador</string>
-  <string name="pref_equalizer_summary_on">L\'equalitzador està activat</string>
-  <string name="pref_equalizer_summary_off">L\'equalitzador està desactivat</string>
-  <string name="pref_equalizer_enable">Habilita</string>
-  <string name="pref_headset_virtual_title">Efecte d\'habitació virtual per als auriculars</string>
-  <string name="pref_headset_virtual_summary_on">Efecte d\'habitació virtual habilitat</string>
-  <string name="pref_headset_virtual_summary_off">Efecte d\'habitació virtual deshabilitat</string>
-  <string name="pref_headset_virtual_enable">Habilita</string>
-  <string name="pref_room_title">Seleccioneu el tipus d\'habitació</string>
-  <string name="dialog_room">Tipus d\'habitació</string>
-  <string name="menu_reset">Reestableix</string>
+    <string name="select_configuration_title">Seleccioneu configuració a editar</string>
+    <string name="headset_title">Auriculars</string>
+    <string name="speaker_title">Altaveu del telèfon</string>
+    <string name="bluetooth_title">Dispositiu Bluetooth</string>
+    <string name="pref_dsp_title">Compressió del rang dinàmic</string>
+    <string name="pref_dsp_summary_on">La compressió està habilitada</string>
+    <string name="pref_dsp_summary_off">La compressió està deshabilitada</string>
+    <string name="pref_dsp_enable">Habilita</string>
+    <string name="pref_effect_title">Seleccioneu la potència dels efectes</string>
+    <string name="dialog_effect">Potència dels efectes</string>
+    <string name="pref_equalizer_title">Equalitzador</string>
+    <string name="pref_equalizer_summary_on">L\'equalitzador està activat</string>
+    <string name="pref_equalizer_summary_off">L\'equalitzador està desactivat</string>
+    <string name="pref_equalizer_enable">Habilita</string>
+    <string name="pref_headset_virtual_title">Efecte d\'habitació virtual per als auriculars</string>
+    <string name="pref_headset_virtual_summary_on">Efecte d\'habitació virtual habilitat</string>
+    <string name="pref_headset_virtual_summary_off">Efecte d\'habitació virtual deshabilitat</string>
+    <string name="pref_headset_virtual_enable">Habilita</string>
+    <string name="pref_room_title">Seleccioneu el tipus d\'habitació</string>
+    <string name="dialog_room">Tipus d\'habitació</string>
+    <string name="menu_reset">Reestableix</string>
 </resources>

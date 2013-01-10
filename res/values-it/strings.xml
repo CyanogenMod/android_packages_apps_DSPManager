@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
     <string name="select_configuration_title">Seleziona Configurazione Da modificare</string>
     <string name="headset_title">Cuffie</string>
     <string name="speaker_title">Altoparlante Telefono</string>

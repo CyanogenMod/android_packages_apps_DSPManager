@@ -6,6 +6,7 @@
         <item>Grote ruimte</item>
         <item>Podium</item>
     </string-array>
+
     <string-array name="equalizer_loudness_modes">
         <item>Uitgeschakeld</item>
         <item>Zwakst</item>
@@ -15,11 +16,13 @@
         <item>Sterker</item>
         <item>Sterkst</item>
     </string-array>
+
     <string-array name="compression_modes">
         <item>Licht</item>
         <item>Normaal</item>
         <item>Extreem</item>
     </string-array>
+
     <string-array name="bassboost_modes">
         <item>Licht</item>
         <item>Normaal</item>

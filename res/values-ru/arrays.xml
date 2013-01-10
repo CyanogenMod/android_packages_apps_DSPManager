@@ -6,23 +6,26 @@
         <item>Большая комната</item>
         <item>Арена</item>
     </string-array>
+
+    <string-array name="equalizer_loudness_modes">
+        <item>Откл.</item>
+        <item>Слабейшая</item>
+        <item>Слабее</item>
+        <item>Слабая</item>
+        <item>Сильная</item>
+        <item>Сильнее</item>
+        <item>Сильнейшая</item>
+    </string-array>
+
     <string-array name="compression_modes">
         <item>Слабый</item>
         <item>Умеренный</item>
         <item>Экстремальный</item>
     </string-array>
+
     <string-array name="bassboost_modes">
         <item>Слабый</item>
         <item>Умеренный</item>
         <item>Экстремальный</item>
     </string-array>
-  <string-array name="equalizer_loudness_modes">
-      <item>Откл.</item>
-      <item>Слабейшая</item>
-      <item>Слабее</item>
-      <item>Слабая</item>
-      <item>Сильная</item>
-      <item>Сильнее</item>
-      <item>Сильнейшая</item>
-  </string-array>
 </resources>

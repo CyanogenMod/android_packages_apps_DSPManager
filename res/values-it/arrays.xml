@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="headphone_modes">
-       <item>Studio</item>
-       <item>Sala</item>
-       <item>Sala grande</item>
-       <item>Palco</item>
+        <item>Studio</item>
+        <item>Sala</item>
+        <item>Sala grande</item>
+        <item>Palco</item>
+    </string-array>
+
+    <string-array name="equalizer_loudness_modes">
+        <item>Non attivo</item>
+        <item>Molto debole</item>
+        <item>Più debole</item>
+        <item>Debole</item>
+        <item>Forte</item>
+        <item>Più forte</item>
+        <item>Molto forte</item>
     </string-array>
 
     <string-array name="compression_modes">
@@ -18,15 +28,4 @@
         <item>Moderato</item>
         <item>Estremo</item>
     </string-array>
-
-    <string-array name="equalizer_loudness_modes">
-      <item>Non attivo</item>
-      <item>Molto debole</item>
-      <item>Più debole</item>
-      <item>Debole</item>
-      <item>Forte</item>
-      <item>Più forte</item>
-      <item>Molto forte</item>
-  </string-array>
-
 </resources>

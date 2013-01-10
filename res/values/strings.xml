@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
+    <string name="app_name" translatable="false">DSP Manager</string>
     <string name="select_configuration_title">Select Configuration To Edit</string>
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Phone Speaker</string>
@@ -46,5 +46,4 @@
     <string name="eq_preset_treble_reducer">Treble Reducer</string>
     <string name="eq_preset_vocal_booster">Vocal Booster</string>
     <string name="eq_preset_custom">Custom</string>
-
 </resources>

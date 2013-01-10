@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ses Yöneticisi</string>
     <string name="select_configuration_title">Düzenlemek İçin Yapılandırma Seçin</string>
     <string name="headset_title">Kulaklık</string>
     <string name="speaker_title">Telefon Hoparlörü</string>
@@ -46,5 +45,4 @@
     <string name="eq_preset_treble_reducer">Tiz Azaltıcı</string>
     <string name="eq_preset_vocal_booster">Ses Yükseltici</string>
     <string name="eq_preset_custom">Özel</string>
-
 </resources>

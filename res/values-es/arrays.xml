@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="headphone_modes">
-    <item>Estudio</item>
-    <item>Habitación</item>
-    <item>Sala amplia</item>
-    <item>Escenario</item>
+    <string-array name="headphone_modes">
+        <item>Estudio</item>
+        <item>Habitación</item>
+        <item>Sala amplia</item>
+        <item>Escenario</item>
     </string-array>
 
-  <string-array name="equalizer_loudness_modes">
-      <item>Deshabilitado</item>
-      <item>Muy débil</item>
-      <item>Débil</item>
-      <item>Ligero</item>
-      <item>Moderado</item>
-      <item>Fuerte</item>
-      <item>Muy fuerte</item>
-  </string-array>
+    <string-array name="equalizer_loudness_modes">
+        <item>Deshabilitado</item>
+        <item>Muy débil</item>
+        <item>Débil</item>
+        <item>Ligero</item>
+        <item>Moderado</item>
+        <item>Fuerte</item>
+        <item>Muy fuerte</item>
+    </string-array>
 
-  <string-array name="compression_modes">
-    <item>Ligero</item>
-    <item>Moderado</item>
-    <item>Extremo</item>
-  </string-array>
+    <string-array name="compression_modes">
+        <item>Ligero</item>
+        <item>Moderado</item>
+        <item>Extremo</item>
+    </string-array>
 
-  <string-array name="bassboost_modes">
-    <item>Ligero</item>
-    <item>Moderado</item>
-    <item>Extremo</item>
-  </string-array>
-
+    <string-array name="bassboost_modes">
+        <item>Ligero</item>
+        <item>Moderado</item>
+        <item>Extremo</item>
+    </string-array>
 </resources>
