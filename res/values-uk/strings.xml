@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Менеджер ЦОС</string>
     <string name="select_configuration_title">Виберіть конфігурацію для редагування</string>
     <string name="headset_title">Гарнітура</string>
     <string name="speaker_title">Динамік телефону</string>

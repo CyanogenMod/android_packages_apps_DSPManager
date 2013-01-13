@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Ses Yöneticisi</string>
     <string name="select_configuration_title">Düzenlemek İçin Yapılandırma Seçin</string>
     <string name="headset_title">Kulaklık</string>
     <string name="speaker_title">Telefon Hoparlörü</string>
