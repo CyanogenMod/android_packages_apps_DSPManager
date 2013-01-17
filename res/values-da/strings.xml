@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources  xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DSPManager</string>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Vælg en konfiguration, der skal redigeres</string>
     <string name="headset_title">Hovedtlf.</string>
     <string name="speaker_title">Højttaler</string>
     <string name="bluetooth_title">Bluetooth</string>
-    <string name="wm8994_title" tools:ignore="MissingTranslation">WM8994</string>
     <string name="audio_effects">Lydeffekter</string>
     <string name="pref_unavailable">Funktionaliteten er ikke tilgængelig på din enhed</string>
     <string name="dsp_settings_headset">DSP indstillinger - Hovedtelefoner</string>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">DSPManager</string>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Wybierz konfigurację do edycji</string>
     <string name="headset_title">Zestaw słuchawkowy</string>
     <string name="speaker_title">Głośnik</string>
     <string name="bluetooth_title">Urządzenie Bluetooth</string>
-    <string name="wm8994_title">WM8994</string>
     <string name="audio_effects">Efekty dźwiękowe</string>
     <string name="pref_unavailable">Funkcjonalność niedostępna dla urządzenia</string>
     <string name="dsp_settings_headset">Ustawienia DSP - Zestaw słuchawkowy</string>

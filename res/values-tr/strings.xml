@@ -13,13 +13,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Ses Yöneticisi</string>
     <string name="select_configuration_title">Düzenlemek İçin Yapılandırma Seçin</string>
     <string name="headset_title">Kulaklık</string>
     <string name="speaker_title">Hoparlör</string>
     <string name="bluetooth_title">Bluetooth</string>
-    <string name="wm8994_title">WM8994</string>
     <string name="audio_effects">Ses Efektleri</string>
     <string name="pref_unavailable">Bu işlevsellik cihazınızda desteklenmez</string>
     <string name="dsp_settings_headset">Ses Ayarları - Kulaklık</string>

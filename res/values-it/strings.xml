@@ -14,13 +14,12 @@
      limitations under the License.
 -->
 
-<resources>
-    <string name="app_name">DSPManager</string>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Seleziona configurazione da modificare</string>
     <string name="headset_title">Cuffie</string>
     <string name="speaker_title">Altoparlante telefono</string>
     <string name="bluetooth_title">Dispositivo bluetooth</string>
-    <string name="wm8994_title">WM8994</string>
     <string name="audio_effects">Effetti audio</string>
     <string name="pref_unavailable">Funzionalità non disponibile sul tuo dispositivo</string>
     <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
