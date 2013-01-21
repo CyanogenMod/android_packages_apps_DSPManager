@@ -94,9 +94,9 @@
     <string name="pref_wm8994_fll_tuning_summary">Hangolt WM8994 audió órajelforrás használata &#8212; javítja a hang minőségét</string>
 
     <string name="help_title">Felhasználói segédlet</string>
-    <string name="help_text"><b>Mi is a DSPManager?</b>
+    <string name="help_text"><b>Mi is a DSP Manager?</b>
 \n
-\nA DSPManager egy alkalmazás, ami a kiadott hangok módosítására szolgál. A <i>DSP</i> a
+\nA DSP Manager egy alkalmazás, ami a kiadott hangok módosítására szolgál. A <i>DSP</i> a
 Digital Signal Processing, vagyis digitális jelfeldolgozás rövidítése, a <i>Manager</i>
 (kezelő) rész pedig arra utal, hogy a DSP valójában nem az alkalmazásban fut - a kezelő
 csak engedélyezni tudja olyan alkalmazások számára, melyek képesek együttműködni az Android
@@ -107,7 +107,7 @@ hangeffekt-specifikációjával. Ilyenek például a különféle zenelejátszó
 \nA CyanogenMod hangfeldolgozó programja három különböző kimenetet támogat:
 vezetékes fejhallgatókat, az eszköz beépített hangszóróit, valamint Bluetooth hangeszközöket
 (autós kihangosító, headset, stb.). Mindegyik eszköztípus számára külön vezérlőpanel
-áll rendelkezésre. A DSPManager célja ezen eszközök sajátos hibáinak kiküszöbölése az optimális
+áll rendelkezésre. A DSP Manager célja ezen eszközök sajátos hibáinak kiküszöbölése az optimális
 zenehallgatási élmény elérése érdekében.
 \n
 \nAz AOSP hangeffektektől eltérően nincsenek alkalmazásokhoz rendelhető beállítások. Ez szándékos
@@ -125,7 +125,7 @@ területeit.
 érzékel és az erősítés szabályozását ennek megfelelően végzi. Elsősorban zajos környezetben,
 például autóban, vagy utcán érdemes használni, ahol a zene halk részeit a környező zaj elnyomhatja.
 \n
-\nAz egyetlen beállítási lehetőség azt adja meg, hogy a DSPManager milyen erősen
+\nAz egyetlen beállítási lehetőség azt adja meg, hogy a DSP Manager milyen erősen
 próbálja a hangosságot szinten tartani. Ennek az effektnek nincs AOSP megfelelője.
 \n
 \n2. <b>Mélyhangkiemelés</b>

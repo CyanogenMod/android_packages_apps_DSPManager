@@ -103,9 +103,9 @@
     <string name="pref_wm8994_fll_tuning_title">Regola clock audio</string>
     <string name="pref_wm8994_fll_tuning_summary">Usa il clock regolato della sorgente audio WM8994 &#8212; Migliora la qualità del suono</string>
     <string name="help_title">Manuale d\'uso</string>
-    <string name="help_text"><b>Che cos\'è DSPManager?</b>
+    <string name="help_text"><b>Che cos\'è DSP Manager?</b>
 \n
-\nDSPManager è un\'applicazione per la regolazione dell\'audio in uscita
+\nDSP Manager è un\'applicazione per la regolazione dell\'audio in uscita
 <i>DSP</i> sta per Digital Signal Processing, mentre <i>Manager</i> si riferisce
 al fatto che l\'elaborazione del segnale digitale non viene effettivamente
 eseguita all\'interno della stessa applicazione, il gestore può solo attivarla
@@ -116,7 +116,7 @@ Android, vale a dire la maggior parte dei lettori musicali.
 \n
 \nL\'elaborazione audio CyanogenMod supporta tre diverse categorie di uscita:
 auricolare, vivavoce e auricolare bluetooth. Vi è un pannello di configurazione
-per ciascuna categoria di uscita. La filosofia di DSPManager è quella di
+per ciascuna categoria di uscita. La filosofia di DSP Manager è quella di
 correggere le particolari carenze di ogni uscita audio per raggiungere la più
 ottimale esperienza d\'ascolto.
 \n

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DSPManager</string>
     <string name="select_configuration_title">Choisir la configuration à éditer</string>
     <string name="headset_title">Casque</string>
     <string name="speaker_title">Haut-parleur du téléphone</string>
@@ -47,15 +46,15 @@
     <string name="eq_preset_custom">Perso.</string>
 
     <string name="help_title">Guide utilisateur</string>
-    <string name="help_text"><b>Qu\'est-ce que DSPManager ?</b>
+    <string name="help_text"><b>Qu\'est-ce que DSP Manager ?</b>
 \n
-\nDSPManager est une application d\'ajustement de sortie audio. <i>DSP</i> signifie Digital Signal Processing, et <i>Manager</i> signifie qu\'il n\'est pas intégré dans les applications tiers; il ne peut fonctionner qu\'avec les applications compatibles avec les spécifications audio d\'Android, c\'est à dire la plupart des lecteurs audio.
+\nDSP Manager est une application d\'ajustement de sortie audio. <i>DSP</i> signifie Digital Signal Processing, et <i>Manager</i> signifie qu\'il n\'est pas intégré dans les applications tiers; il ne peut fonctionner qu\'avec les applications compatibles avec les spécifications audio d\'Android, c\'est à dire la plupart des lecteurs audio.
 \n
 \n<b>Philosophie</b>
 \n
-\nLe traitement audio de CyanogenMod prend en charge trois types de sortie différentes : casque filaire, haut parleur et casque bluetooth. Il y a un panneau de configuration pour chaque sortie. La philosophie de DSPManager est de corriger les lacunes de chaque type de sortie de manière différente afin d\'obtenir l\'expérience utilisateur optimum.
+\nLe traitement audio de CyanogenMod prend en charge trois types de sortie différentes : casque filaire, haut parleur et casque bluetooth. Il y a un panneau de configuration pour chaque sortie. La philosophie de DSP Manager est de corriger les lacunes de chaque type de sortie de manière différente afin d\'obtenir l\'expérience utilisateur optimum.
 \n
-\nContrairement aux effets audio AOSP, il n\'existe pas de paramètres pour chaque application. C\'est un choix de conception délibérée: c\'est la sortie qui nous intéresse, pas l\'application avec laquelle doit travailler DSPManager.
+\nContrairement aux effets audio AOSP, il n\'existe pas de paramètres pour chaque application. C\'est un choix de conception délibérée: c\'est la sortie qui nous intéresse, pas l\'application avec laquelle doit travailler DSP Manager.
 \n
 \n<b>Fonctionnalités</b>
 \n
@@ -65,7 +64,7 @@
 \n
 \nCet effet fait une estimation du niveau sonore du signal audio tel qu\'il est perçu par un auditeur moyen et corrige le gain sur la base de cette estimation. La principale utilisation sera dans les environnements bruyants comme dans les voitures ou dans la rue, là où les parties calmes de la musique risquent d\'être noyé par le bruit de fond.
 \n
-\nLe paramètre détermine avec quel force le DSPManager va essayer de maintenir l\'intensité sonore. Il n \'existe aucun équivalent AOSP à cet effet.
+\nLe paramètre détermine avec quel force le DSP Manager va essayer de maintenir l\'intensité sonore. Il n \'existe aucun équivalent AOSP à cet effet.
 \n
 \n2. <b>Bass Boost</b>
 \n

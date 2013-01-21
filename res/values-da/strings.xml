@@ -94,15 +94,15 @@
     <string name="pref_wm8994_fll_tuning_summary">Anvend afstemt WM8994-lydfrekvens &#8212; forbedrer lydkvaliteten</string>
 
     <string name="help_title">Brugervejledning</string>
-    <string name="help_text"><b>Hvad er DSPManager?</b>
+    <string name="help_text"><b>Hvad er DSP Manager?</b>
 \n
-\nDSPManager er en lydjusteringsapplikation per udgang. <i>DSP</i> står for Digital Signal Processor, og <i>Manager</i>-delen refererer til det faktum, at DSP\'en faktisk ikke kører i selve applikationen; manageren kan kun aktivere det for applikationer, der er kompatible med Android\'s lydeffekt-specifikation, dvs. de fleste musikafspillere.
+\nDSP Manager er en lydjusteringsapplikation per udgang. <i>DSP</i> står for Digital Signal Processor, og <i>Manager</i>-delen refererer til det faktum, at DSP\'en faktisk ikke kører i selve applikationen; manageren kan kun aktivere det for applikationer, der er kompatible med Android\'s lydeffekt-specifikation, dvs. de fleste musikafspillere.
 \n
 \n<b>Filosofi</b>
 \n
-\nCyanogenMod\'s lydbehandling understøtter tre forskellige udgangs-kategorier: kablede hovedtelefoner, telefonens højttaler og bluetooth-hovedtelefoner. Der er et separat konfigurationspanel for hver udgangs-kategori. DSPManager\'s filosofi er at korrigere konkrete mangler, for at opnå den mest optimale lytteoplevelse, for hver lydudgang.
+\nCyanogenMod\'s lydbehandling understøtter tre forskellige udgangs-kategorier: kablede hovedtelefoner, telefonens højttaler og bluetooth-hovedtelefoner. Der er et separat konfigurationspanel for hver udgangs-kategori. DSP Manager\'s filosofi er at korrigere konkrete mangler, for at opnå den mest optimale lytteoplevelse, for hver lydudgang.
 \n
-\nI modsætning til AOSP-lydeffekter er der ingen indstillinger per applikation. Dette er et bevidst designvalg: det er resultatet som vi interesserer os for, ikke hvilken applikation der genererer lyden, som DSPManager skal arbejde med.
+\nI modsætning til AOSP-lydeffekter er der ingen indstillinger per applikation. Dette er et bevidst designvalg: det er resultatet som vi interesserer os for, ikke hvilken applikation der genererer lyden, som DSP Manager skal arbejde med.
 \n
 \n<b>Funktioner</b>
 \n
@@ -112,7 +112,7 @@
 \n
 \nDenne effekt vurderer lydstyrken for en gennemsnitlig lytter og regulerer den på grundlag af denne vurdering. Den primære anvendelse er ved støjende miljøer, såsom i biler eller på gaden, hvor stille dele af musikken risikerer at blive overdøvet af baggrundsstøj.
 \n
-\nDenne justering afgør, hvor hårdt DSPManager vil forsøge at fastholde lydniveauet til det målsatte niveau. Der er ingen tilsvarende AOSP-variant for denne DSP-effekt.
+\nDenne justering afgør, hvor hårdt DSP Manager vil forsøge at fastholde lydniveauet til det målsatte niveau. Der er ingen tilsvarende AOSP-variant for denne DSP-effekt.
 \n
 \n2. <b>Basforstærkning</b>
 \n

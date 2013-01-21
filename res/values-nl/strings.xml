@@ -109,9 +109,9 @@
 
     <!-- Help -->
     <string name="help_title">Gebruikershandleiding</string>
-    <string name="help_text"><b>Wat is DSPManager?</b>
+    <string name="help_text"><b>Wat is DSP Manager?</b>
 \n
-\nDSPManager is een geluidsmanipulatie-app. <i>DSP</i> staat
+\nDSP Manager is een geluidsmanipulatie-app. <i>DSP</i> staat
 voor \'Digital Signal Processing\' (digitale signalenverwerking) en het
 <i>\'Manager\'</i>-deel staat voor het feit dat de verwerking niet
 gebeurt in de app zelf; de beheerder kan dit alleen inschakelen voor apps die
@@ -123,7 +123,7 @@ muziekspelers.
 \nDe mogelijkheden van het geluidsverwerkingssysteem van CyanogenMod biedt
 ondersteuning voor 3 uitvoersoorten: bedrade headset,
 telefoonluidspreker en bluetoothheadset. Voor elke categorie bestaat er
-een configuratiepaneel. De filosofie van DSPManager is om de geluidsuitvoer zo
+een configuratiepaneel. De filosofie van DSP Manager is om de geluidsuitvoer zo
 te manipuleren, dat het geluid het best beleefd kan worden.
 \n
 \nIn tegenstelling tot de standaard geluidseffecten van Android zijn er geen aparte
@@ -144,7 +144,7 @@ auto\'s op de weg, waarbij rustige delen van het geluid overstemd zouden kunnen
 worden door de geluiden op de achtergrond.
 \n
 \n
-Het enige wat handmatig gewijzigd kan worden is hoe hard DSPManager moet
+Het enige wat handmatig gewijzigd kan worden is hoe hard DSP Manager moet
 proberen om het geluidsniveau te behouden op het beoogde niveau. Iets soortgelijks
 van Google is niet beschikbaar.
 \n
