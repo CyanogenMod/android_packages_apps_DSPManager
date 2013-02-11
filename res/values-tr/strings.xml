@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,13 +13,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Ses Yöneticisi</string>
     <string name="select_configuration_title">Düzenlemek İçin Yapılandırma Seçin</string>
     <string name="headset_title">Kulaklık</string>
     <string name="speaker_title">Hoparlör</string>
     <string name="bluetooth_title">Bluetooth</string>
-    <string name="wm8994_title">WM8994</string>
     <string name="audio_effects">Ses Efektleri</string>
     <string name="pref_unavailable">Bu işlevsellik cihazınızda desteklenmez</string>
     <string name="dsp_settings_headset">Ses Ayarları - Kulaklık</string>
@@ -64,6 +64,8 @@
     <string name="eq_preset_vocal_booster">Ses Yükseltici</string>
     <string name="eq_preset_custom">Özel</string>
 
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Hoparlör</string>
     <string name="category_wm8994_signal_processing">Sinyal İşleme</string>
     <string name="category_wm8994_headphone_amp">Kulaklık</string>
@@ -73,6 +75,7 @@
     <string name="category_wm8994_mic_settings">Mikrofon Ayarları</string>
     <string name="category_wm8994_microphone_recording">Mikrofon</string>
 
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Ses Ayarları</string>
     <string name="wm8994_settings_title_subhead">Ses Ayarları</string>
     <string name="wm8994_settings_summary_head">WM8994 ses işlemcisinin gelişmiş ayarları</string>

@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Equalizador</string>
     <string name="select_configuration_title">Selecione o tipo de dispositivo</string>
     <string name="headset_title">Fones de ouvido</string>
     <string name="speaker_title">Auto-falantes do aparelho</string>
     <string name="bluetooth_title">Dispositivos bluetooth</string>
+    <string name="audio_effects">Efeitos de Áudio</string>
+    <string name="pref_unavailable">Funcionalidade não está disponível em seu dispositivo</string>
+    <string name="dsp_settings_headset">Configurações Equalizador - Fone de Ouvido</string>
+    <string name="dsp_settings_speaker">Configurações Equalizador - Alto-falante</string>
+    <string name="dsp_settings_bluetooth">Configurações Equalizador - Dispositivo Bluetooth</string>
+    <string name="dsp_settings_wm8994">Configurações DSP - WM8994</string>
     <string name="pref_dsp_title">Compressão de volume</string>
     <string name="pref_dsp_summary_on">A compressão está ativada</string>
     <string name="pref_dsp_summary_off">A compressão está desativada</string>
@@ -15,6 +36,8 @@
     <string name="pref_equalizer_summary_on">O equalizador está ativado</string>
     <string name="pref_equalizer_summary_off">O equalizador está desativado</string>
     <string name="pref_equalizer_enable">Ativar</string>
+    <string name="pref_equalizer_preset_title">Selecionar Predifinidos</string>
+    <string name="pref_equalizer_loudness_title">Compensação de ruído</string>
     <string name="pref_bassboost_title">Ganho de Grave</string>
     <string name="pref_bassboost_summary_on">Ganho de Grave está habilitado</string>
     <string name="pref_bassboost_summary_off">Ganho de Grave está desabilitado</string>
@@ -26,26 +49,23 @@
     <string name="pref_room_title">Selecione o ambiente</string>
     <string name="dialog_room">Simulação de Ambiente</string>
     <string name="menu_reset">Resetar</string>
-    <string name="dsp_settings_headset">Configurações Equalizador - Fone de Ouvido</string>
-    <string name="dsp_settings_speaker">Configurações Equalizador - Alto-falante</string>
-    <string name="dsp_settings_bluetooth">Configurações Equalizador - Dispositivo Bluetooth</string>
-    <string name="pref_equalizer_preset_title">Selecionar Predifinidos</string>
+
     <string name="eq_preset_acoustic">Acústico</string>
     <string name="eq_preset_bass_booster">Ganho de Grave</string>
     <string name="eq_preset_bass_reducer">Redução de Grave</string>
     <string name="eq_preset_classical">Clássico</string>
-    <string name="eq_preset_custom">Personalizado</string>
-    <string name="eq_preset_vocal_booster">Ganho de Voz</string>
-    <string name="eq_preset_treble_reducer">Redução de Agudo</string>
-    <string name="eq_preset_treble_booster">Ganho de Agudo</string>
-    <string name="eq_preset_small_speakers">Alto-falantes Pequenos</string>
-    <string name="eq_preset_rock">Rock</string>
-    <string name="eq_preset_r_and_b">R&amp;B</string>
-    <string name="pref_equalizer_loudness_title">Compensação de ruído</string>
     <string name="eq_preset_deep">Profundo</string>
     <string name="eq_preset_flat">Plano</string>
-    <string name="audio_effects">Efeitos de Áudio</string>
-    <string name="pref_unavailable">Funcionalidade não está disponível em seu dispositivo</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_small_speakers">Alto-falantes Pequenos</string>
+    <string name="eq_preset_treble_booster">Ganho de Agudo</string>
+    <string name="eq_preset_treble_reducer">Redução de Agudo</string>
+    <string name="eq_preset_vocal_booster">Ganho de Voz</string>
+    <string name="eq_preset_custom">Personalizado</string>
+
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Alto-falante</string>
     <string name="category_wm8994_signal_processing">Processamento de sinal</string>
     <string name="category_wm8994_headphone_amp">Fone</string>
@@ -54,6 +74,8 @@
     <string name="category_wm8994_analog_path">Conf. do trajeto analógico</string>
     <string name="category_wm8994_mic_settings">Conf. de Microfone</string>
     <string name="category_wm8994_microphone_recording">Microfone</string>
+
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Conf. de Som</string>
     <string name="wm8994_settings_title_subhead">Conf. de Som</string>
     <string name="wm8994_settings_summary_head">Controle avançado do processador de som WM8994</string>
@@ -86,7 +108,7 @@
     <string name="pref_wm8994_adc_osr128_summary">Conversor digital-para-analógico 128x de sobreamostragem &#8212; aumenta a qualidade das gravações</string>
     <string name="pref_wm8994_fll_tuning_title">Tempo do audio sintonizado</string>
     <string name="pref_wm8994_fll_tuning_summary">Usar fonte de tempo de audio WM8994 sintonizado &#8212; melhora qualidade do som</string>
-    <string name="dsp_settings_wm8994">Configurações DSP - WM8994</string>
+
     <string name="help_title">Guia de usuário</string>
     <string name="help_text"><b>O que é o Equalizador??</b>
 \n
@@ -173,6 +195,5 @@ ativado quando usando fones de ouvido estéreo.
 \n
 \nDevido à mistura reduzir um pouco a separação estéreo, existe um efeito de
 reverbação Haas, que pode ser usado aumentar a largura de imagem estéreo percebida.
-Isto é controlado pelo controle &#8220;Simulação de Ambiente&#8221;.
-    </string>
+Isto é controlado pelo controle &#8220;Simulação de Ambiente&#8221;.</string>
 </resources>

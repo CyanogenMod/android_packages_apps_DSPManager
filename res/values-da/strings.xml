@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources  xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DSPManager</string>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Vælg en konfiguration, der skal redigeres</string>
     <string name="headset_title">Hovedtlf.</string>
     <string name="speaker_title">Højttaler</string>
     <string name="bluetooth_title">Bluetooth</string>
-    <string name="wm8994_title" tools:ignore="MissingTranslation">WM8994</string>
     <string name="audio_effects">Lydeffekter</string>
     <string name="pref_unavailable">Funktionaliteten er ikke tilgængelig på din enhed</string>
     <string name="dsp_settings_headset">DSP indstillinger - Hovedtelefoner</string>
@@ -50,8 +63,8 @@
     <string name="eq_preset_vocal_booster">Mere vokal</string>
     <string name="eq_preset_custom">Brugerdefineret</string>
 
-    <!--  WM8994 -->
-    <!--  Categories -->
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Højttaler</string>
     <string name="category_wm8994_signal_processing">Signalbehandling</string>
     <string name="category_wm8994_headphone_amp">Hovedtelefoner</string>
@@ -60,7 +73,8 @@
     <string name="category_wm8994_analog_path">Analog kanalkonfigurering</string>
     <string name="category_wm8994_mic_settings">Mikrofonindstillinger</string>
     <string name="category_wm8994_microphone_recording">Mikrofon</string>
-    <!--  Titles/Summaries -->
+
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Lydindstillinger</string>
     <string name="wm8994_settings_title_subhead">Lydindstillinger</string>
     <string name="wm8994_settings_summary_head">Avanceret styring af WM8994-codec</string>
@@ -95,15 +109,15 @@
     <string name="pref_wm8994_fll_tuning_summary">Anvend afstemt WM8994-lydfrekvens &#8212; forbedrer lydkvaliteten</string>
 
     <string name="help_title">Brugervejledning</string>
-    <string name="help_text"><b>Hvad er DSPManager?</b>
+    <string name="help_text"><b>Hvad er DSP Manager?</b>
 \n
-\nDSPManager er en lydjusteringsapplikation per udgang. <i>DSP</i> står for Digital Signal Processor, og <i>Manager</i>-delen refererer til det faktum, at DSP\'en faktisk ikke kører i selve applikationen; manageren kan kun aktivere det for applikationer, der er kompatible med Android\'s lydeffekt-specifikation, dvs. de fleste musikafspillere.
+\nDSP Manager er en lydjusteringsapplikation per udgang. <i>DSP</i> står for Digital Signal Processor, og <i>Manager</i>-delen refererer til det faktum, at DSP\'en faktisk ikke kører i selve applikationen; manageren kan kun aktivere det for applikationer, der er kompatible med Android\'s lydeffekt-specifikation, dvs. de fleste musikafspillere.
 \n
 \n<b>Filosofi</b>
 \n
-\nCyanogenMod\'s lydbehandling understøtter tre forskellige udgangs-kategorier: kablede hovedtelefoner, telefonens højttaler og bluetooth-hovedtelefoner. Der er et separat konfigurationspanel for hver udgangs-kategori. DSPManager\'s filosofi er at korrigere konkrete mangler, for at opnå den mest optimale lytteoplevelse, for hver lydudgang.
+\nCyanogenMod\'s lydbehandling understøtter tre forskellige udgangs-kategorier: kablede hovedtelefoner, telefonens højttaler og bluetooth-hovedtelefoner. Der er et separat konfigurationspanel for hver udgangs-kategori. DSP Manager\'s filosofi er at korrigere konkrete mangler, for at opnå den mest optimale lytteoplevelse, for hver lydudgang.
 \n
-\nI modsætning til AOSP-lydeffekter er der ingen indstillinger per applikation. Dette er et bevidst designvalg: det er resultatet som vi interesserer os for, ikke hvilken applikation der genererer lyden, som DSPManager skal arbejde med.
+\nI modsætning til AOSP-lydeffekter er der ingen indstillinger per applikation. Dette er et bevidst designvalg: det er resultatet som vi interesserer os for, ikke hvilken applikation der genererer lyden, som DSP Manager skal arbejde med.
 \n
 \n<b>Funktioner</b>
 \n
@@ -113,7 +127,7 @@
 \n
 \nDenne effekt vurderer lydstyrken for en gennemsnitlig lytter og regulerer den på grundlag af denne vurdering. Den primære anvendelse er ved støjende miljøer, såsom i biler eller på gaden, hvor stille dele af musikken risikerer at blive overdøvet af baggrundsstøj.
 \n
-\nDenne justering afgør, hvor hårdt DSPManager vil forsøge at fastholde lydniveauet til det målsatte niveau. Der er ingen tilsvarende AOSP-variant for denne DSP-effekt.
+\nDenne justering afgør, hvor hårdt DSP Manager vil forsøge at fastholde lydniveauet til det målsatte niveau. Der er ingen tilsvarende AOSP-variant for denne DSP-effekt.
 \n
 \n2. <b>Basforstærkning</b>
 \n

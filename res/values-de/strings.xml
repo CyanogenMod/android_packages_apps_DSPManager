@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">DSPManager</string>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">DSP-Manager</string>
     <string name="select_configuration_title">Konfiguration zum Bearbeiten auswählen</string>
     <string name="headset_title">Kopfhörer</string>
     <string name="speaker_title">Lautsprecher</string>
     <string name="bluetooth_title">Bluetooth-Gerät</string>
-    <string name="audio_effects">Audio-Effekte</string>
+    <string name="audio_effects">Audioeffekte</string>
     <string name="pref_unavailable">Diese Funktion ist auf diesem Gerät nicht verfügbar</string>
     <string name="pref_dsp_title">Kompression des Dynamikumfangs</string>
     <string name="pref_dsp_summary_on">Kompression des Dynamikumfangs ist eingeschaltet</string>
@@ -19,13 +34,13 @@
     <string name="pref_equalizer_enable">Einschalten</string>
     <string name="pref_equalizer_preset_title">Voreinstellung auswählen</string>
     <string name="pref_equalizer_loudness_title">Loudness-Kompensation</string>
-    <string name="pref_bassboost_title">Bass-Verstärkung</string>
-    <string name="pref_bassboost_summary_on">Bass-Verstärkung ist eingeschaltet</string>
-    <string name="pref_bassboost_summary_off">Bass-Verstärkung ist ausgeschaltet</string>
+    <string name="pref_bassboost_title">Bassverstärkung</string>
+    <string name="pref_bassboost_summary_on">Bassverstärkung ist eingeschaltet</string>
+    <string name="pref_bassboost_summary_off">Bassverstärkung ist ausgeschaltet</string>
     <string name="pref_bassboost_enable">Einschalten</string>
     <string name="pref_headset_virtual_title">Virtueller Raumklang</string>
-    <string name="pref_headset_virtual_summary_on">Virtueller Raumklang für Kopfhörer ist eingeschaltet</string>
-    <string name="pref_headset_virtual_summary_off">Virtueller Raumklang für Kopfhörer ist ausgeschaltet</string>
+    <string name="pref_headset_virtual_summary_on">Virtueller Raumklang ist eingeschaltet</string>
+    <string name="pref_headset_virtual_summary_off">Virtueller Raumklang ist ausgeschaltet</string>
     <string name="pref_headset_virtual_enable">Einschalten</string>
     <string name="pref_room_title">Raumtyp</string>
     <string name="dialog_room">Raumtyp</string>
@@ -45,8 +60,8 @@
     <string name="eq_preset_vocal_booster">Sprache</string>
     <string name="eq_preset_custom">Benutzerdefiniert</string>
 
-    <!--  WM8994 -->
-    <!--  Categories -->
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Lautsprecher</string>
     <string name="category_wm8994_signal_processing">Signalverarbeitung</string>
     <string name="category_wm8994_headphone_amp">Kopfhörer</string>
@@ -55,9 +70,10 @@
     <string name="category_wm8994_analog_path">Analogpfad-Einstellungen</string>
     <string name="category_wm8994_mic_settings">Mikrofon-Einstellungen</string>
     <string name="category_wm8994_microphone_recording">Mikrofon</string>
-    <!--  Titles/Summaries -->
-    <string name="wm8994_settings_title_head">Klang-Einstellungen</string>
-    <string name="wm8994_settings_title_subhead">Klang-Einstellungen</string>
+
+    <!-- Titles/Summaries -->
+    <string name="wm8994_settings_title_head">Klangeinstellungen</string>
+    <string name="wm8994_settings_title_subhead">Klangeinstellungen</string>
     <string name="wm8994_settings_summary_head">Erweiterte Steuerung des WM8994-Codecs</string>
     <string name="pref_wm8994_microphone_recording_title">Aufnahme-Voreinstellung</string>
     <string name="pref_wm8994_headphone_amp_title">Verstärker-Pegel</string>
@@ -76,7 +92,7 @@
     <string name="pref_wm8994_control_enable_summary">Erweiterte Steuerung des WM8994-Codecs</string>
     <string name="pref_wm8994_speaker_tuning_title">Für Musik abstimmen</string>
     <string name="pref_wm8994_speaker_tuning_summary">Rekonfiguriert den Hardware EQ für mehr Bass und ein ausgewogenes Klangbild</string>
-    <string name="pref_wm8994_mono_downmix_title">Mono Downmix</string>
+    <string name="pref_wm8994_mono_downmix_title">Mono-Downmix</string>
     <string name="pref_wm8994_mono_downmix_summary">Stereo zu Mono heruntermischen (Für Stereo Ausgänge wie z.B. Kopfhörer)</string>
     <string name="pref_wm8994_stereo_expansion_title">Stereoverbreiterung</string>
     <string name="pref_wm8994_stereo_expansion_summary">Stereo durch digitale Signalverarbeitung verbreitern</string>
@@ -89,47 +105,43 @@
     <string name="pref_wm8994_fll_tuning_title">Stabilisierter Audio-Takt</string>
     <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen &#8212; Verbessert die Klangqualität</string>
 
-    <string name="help_title">Bedienungsanleitung</string>
-    <string name="help_text"><b>Was ist der DSPManager?</b>
-\n
-\nDSPManager (Digital Signal Processing) ist eine Anwendung, mit der die Audioausgabe über diverse Einstellungen beeinflusst werden kann. Die Signalverarbeitung findet nicht im DSPManager statt, sondern wird durch diesen gesteuert. Anwendungen, z.B. die meisten Musik-Player, die kompatibel zu den Android-Audio-Effekten sind können den DSPManager verwenden.
-\n
-\n<b>Philosophie</b>
-\n
-\nCyanogenMod unterstützt drei verschiedene Audio-Ausgabewege:
-Kopfhörer, Lautsprecher und Bluetooth-Geräte. Für jedes dieser Geräte gibt es ein eigenes Konfigurationspanel. Die Idee hinter dem DSPManager ist es, die Fehler jeder Besonderheiten so zu korrigieren,
-dass ein optimales Hörerlebnis möglich ist.
-\n
-\nIm Gegensatz zu den AOSP-Audio-Effekten gibt es keine anwendungsspezifischen Einstellungsmöglichkeiten. Dies wurde mit Absicht so konzipiert: Denn die Audio-Ausgabe ist uns wichtig, nicht die Anwendung, welche die (Audio-)Daten an den DSPManager übergibt.
-\n
-\n<b>Effekte</b>
-\n
-\nIm Folgenden wird jeder Audio-Effekt beschrieben und wann diese benutzt werden sollten.
-\n
-\n1. <b>Kompression des Dynamikumfangs</b>
-\n
-\nDieser Effekt ermittelt die Lautstärke für einen durchschnittlichen Hörer und regelt sie anhand der Ermittlung. Dieser Effekt soll dafür sorgen, dass eine Audiowiedergabe weniger durch Hintergrundgeräusche, z.B. Straßenlärm, übertönt werden kann.
-\n
-\nDer Effektstärke-Regler bestimmt, wie stark der DSPManager die Lautstärke des Tones beeinflussen soll. Für diesen DSP-Effekt gibt es keinen entsprechendenen AOSP-Effekt.
-\n
-\n2. <b>Bass-Verstärkung</b>
-\n
-\nDie Bass-Verstärkung ist ein einfacher Tiefpassfilter, welcher benutzt werden kann, um die Betonung auf den Bass zu setzen. Die Verstärkung beträgt ca. 6 dB und wird durch den "Stärke"-Parameter angepasst. Der Effekt ist konzipiert um den Verlust von Bassfrequenz bei Lautsprechern und (ohr-)aufliegenden Kopfhörern, die sich nicht eng am Gehörgang befinden, zu bekämpfen.
-\n
-\n3. <b>Equalizer</b>
-\n
-\nEs handelt sich hier um einen Equalizer mit Frequenzbändern bei 16, 64, 250, 1000, 4000 und 16000 Hz. Einige gemeinsame Voreinstellungen sind verfügbar, außerdem kann der Frequenzgang durch Berühren des Equalizer-Graphen angepasst werden. Der Effekt sollte dafür benutzt werden, den Frequenzgang an den persönlichen Geschmack oder den Besonderheiten der Kopfhörern oder Lautsprechern abzustimmen.
-\n
-\nDer Equalizer enthält auch eine Loudness-Kompensation, die die Veränderungen in der Frequenz, die auf dem Schalldruckpegel, der das Ohr des Benutzers erreicht, basiert, ausgleicht. Hierbei sind Kabelkopfhörer erforderlich, außerdem muss zuerst der richtige Wert im Menü eingestellt werden, bevor der Effekt so funktioniert wie gewünscht.
-\n
-\nUm die Effektstärke der Loudness-Kompensation einzustellen, sollte breitbandige Musik, z.B. Rock oder Metal leise abgespielt werden. Man sollte versuchen eine Einstellung zu finden, bei der die Hörbarkeit des Basses gesteigert wird, aber noch nicht hervorsticht. Nachdem die Kompensation richtig konfiguriert wurde, sollte der Bass-Pegel, unabhängig von der Hörlautstärke im Vergleich zum Pegel der anderen Instrumente, gleich bleiben. Wenn mit steigender Hörlautstärke die Musik basslastig wird, ist die Kompensation wahrscheinlich zu stark, und sollte reduziert werden.
-\n
-\nDie Loudness-Kompensation wirkt zusätzlich zur gewählten Einstellung des Equalizers. Falls nur eine Kompensation erwünscht ist, sollte die Equalizer-Voreinstellung "Aus" gewählt werden.
-\n
-\n4. <b>Virtueller Raumklang</b>
-\n
-\nDer "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspiriert wurde. Der Effekt bleibt bei Mono unverändert, bei Stereo wird der Unterschied zwischen den zwei Signalen durch einen Tiefpassfilter, also näher oder weiter entfernt vom Benutzer, dargestellt. Dahinter steckt die Absicht, den Benutzer vor einer Hörermüdung, die durch unplausible Stereo-Trennung entsteht, zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
-\n
-\nDa das Mischen die (Stereo-)Kanaltrennung reduziert, entsteht ein Echo-Effekt, das für die Erhöhung der Basisbreite verwendet werden kann. Dieser Effekt wird durch die Raumtyp-Einstellung beinflusst.
-    </string>
+    <string name="help_title">Über</string>
+    <string name="help_text"><b>Was ist der DSP Manager?</b>
+\n\n
+Der DSP Manager (Digital Signal Processing) ist eine Anwendung, mit der die Audioausgabe beeinflusst werden kann. Die Signalverarbeitung findet nicht im DSP Manager statt, sondern wird durch diesen gesteuert. Der DSP Manager kann von allen zu den Android-Audioeffekten kompatiblen Anwendungen verwendet werden.
+\n\n\n
+<b>Philosophie</b>
+\n\n
+CyanogenMod unterstützt drei verschiedene Audio-Ausgabewege:
+Kopfhörer, Lautsprecher und Bluetooth-Geräte. Für jeden Ausgabeweg gibt es ein eigenes Konfigurationspanel, in dem die Besonderheiten des jeweiligen Ausgabeweges für ein optimales Hörerlebnis angepasst werden können.
+\n\n
+Im Gegensatz zu den AOSP-Audioeffekten gibt es keine anwendungsspezifischen Einstellungen. Dies wurde mit Absicht so konzipiert, denn die Audio-Ausgabe ist uns wichtig, nicht die Anwendung, welche die (Audio-)Daten an den DSP Manager übergibt.
+\n\n\n
+<b>Effekte</b>
+\n\n
+1. <b>Dynamikumfangskompression</b>
+\n\n
+Die Lautstärke wird an einen durchschnittlichen Hörer angepasst. Die Audiowiedergabe soll durch diesen Effekt weniger von Hintergrundgeräuschen, z.B. Straßenlärm, übertönt werden.
+\n\n
+Der Effektstärke-Regler bestimmt, wie stark der DSP Manager die Lautstärke des Tones beeinflussen soll. Für diesen DSP-Effekt gibt es keinen entsprechendenen AOSP-Effekt.
+\n\n\n
+2. <b>Bassverstärkung</b>
+\n\n
+Die Bassverstärkung wird durch einen Tiefpassfilter erzeugt, Dabei wird versucht, die Betonung auf den Bass zu legen. Die Itensität der Verstärkung kann in den Einstellung geregelt werden.
+\n\n\n
+3. <b>Equalizer</b>
+\n\n
+Es handelt sich hier um einen Equalizer mit Frequenzbändern bei 16, 64, 250, 1000, 4000 und 16000 Hz. Einige gemeinsame Voreinstellungen sind verfügbar, außerdem kann der Frequenzgang durch Berühren des Equalizer-Graphen angepasst werden. Der Effekt sollte dafür benutzt werden, den Frequenzgang an den persönlichen Geschmack oder den Besonderheiten der Kopfhörer oder Lautsprecher abzustimmen.
+\n\n
+Bei Verwendung eines kabelgebundenen Kopfhörers erlaubt der Equalizer auch eine Loudness-Kompensation, welche die durch den Schalldruckpegel am Ohr des Benutzers entstehenden Frequenzveränderungen ausgleicht. Damit der gewünschte Effekt eintritt, muss zuerst im entsprechenden Menü der richtige Wert gewählt werden.
+\n\n
+Um die Effektstärke der Loudness-Kompensation einzustellen, sollte breitbandige Musik, z.B. Rock oder Metal, leise abgespielt werden. Man sollte versuchen, eine Einstellung zu finden, bei der die Hörbarkeit des Basses gesteigert wird, aber noch nicht hervorsticht. Nachdem die Kompensation richtig konfiguriert wurde, sollte der Bass-Pegel, unabhängig von der Hörlautstärke im Vergleich zum Pegel der anderen Instrumente, gleich bleiben. Wenn mit steigender Hörlautstärke die Musik basslastig wird, ist die Kompensation wahrscheinlich zu stark und sollte reduziert werden.
+\n\n
+Die Loudness-Kompensation wirkt zusätzlich zur gewählten Einstellung des Equalizers. Falls nur eine Kompensation erwünscht ist, sollte die Equalizer-Voreinstellung "Aus" gewählt werden.
+\n\n\n
+4. <b>Virtueller Raumklang</b>
+\n\n
+Der "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspiriert wurde. Der Effekt bleibt bei Mono unverändert, bei Stereo wird der Unterschied zwischen den zwei Signalen durch einen Tiefpassfilter, also näher oder weiter entfernt vom Benutzer, dargestellt. Dahinter steckt die Absicht, den Benutzer vor einer Hörermüdung, die durch unplausible Stereo-Trennung entsteht, zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
+\n\n
+Da das Mischen die (Stereo-)Kanaltrennung reduziert, entsteht ein Echo-Effekt, der für die Erhöhung der Basisbreite verwendet werden kann. Dieser Effekt wird durch die Raumtyp-Einstellung beinflusst.</string>
 </resources>

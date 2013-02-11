@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">DSPManager</string>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">"Seleccionar configuración a editar"</string>
     <string name="headset_title">"Auriculares"</string>
     <string name="speaker_title">"Altavoz"</string>
     <string name="bluetooth_title">"Bluetooth"</string>
-    <string name="wm8994_title">"WM8994"</string>
     <string name="audio_effects">"Filtros de audio"</string>
     <string name="pref_unavailable">"Funcionalidad no disponible para el dispositivo"</string>
     <string name="dsp_settings_headset">"Ajustes DSP - Auriculares"</string>
@@ -35,6 +48,7 @@
     <string name="pref_room_title">"Seleccionar tipo de habitación"</string>
     <string name="dialog_room">"Tipo de habitación"</string>
     <string name="menu_reset">"Restaurar"</string>
+
     <string name="eq_preset_acoustic">"Acústico"</string>
     <string name="eq_preset_bass_booster">"Potenciar bajos"</string>
     <string name="eq_preset_bass_reducer">"Reducir bajos"</string>
@@ -48,6 +62,9 @@
     <string name="eq_preset_treble_reducer">"Reducir agudos"</string>
     <string name="eq_preset_vocal_booster">"Potenciador vocal"</string>
     <string name="eq_preset_custom">"Personalizado"</string>
+
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">"Altavoz"</string>
     <string name="category_wm8994_signal_processing">"Procesamiento de señal"</string>
     <string name="category_wm8994_headphone_amp">"Auriculares"</string>
@@ -56,6 +73,8 @@
     <string name="category_wm8994_analog_path">"Configuración de ruta analógica"</string>
     <string name="category_wm8994_mic_settings">"Ajustes de micrófono"</string>
     <string name="category_wm8994_microphone_recording">"Micrófono"</string>
+
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">"Ajustes de sonido"</string>
     <string name="wm8994_settings_title_subhead">"Ajustes de sonido"</string>
     <string name="wm8994_settings_summary_head">"Ajustes avanzados del procesador de sonido WM8994"</string>
@@ -88,101 +107,101 @@
     <string name="pref_wm8994_adc_osr128_summary">"Sobremuestreo a 128x de conversión analógico-a-digital (incrementa la calidad de las grabaciones)"</string>
     <string name="pref_wm8994_fll_tuning_title">"Reloj de audio ajustado"</string>
     <string name="pref_wm8994_fll_tuning_summary">"Usar reloj de audio WM8994 ajustado (Mejora la calidad del sonido)"</string>
+
     <string name="help_title">"Guía de usuario"</string>
-    <string name="help_text"><b>¿Que es DSPManager?</b>\n
+    <string name="help_text"><b>¿Que es DSP Manager?</b>\n
 \n
-DSPManager es una aplicación de ajuste de audio. <i>DSP</i> que significa 
-Digital Signal Processing, y <i>Manager</i> se refiere al hecho de que DSP 
-no funciona actualmente dentro de aplicación en sí mismo, sino que el gestor 
-solo puede habilitarla para otras aplicaciones que son compatibles la 
-especificación de audio de Android, por ejemplo la mayoría de los 
+DSP Manager es una aplicación de ajuste de audio. <i>DSP</i> que significa
+Digital Signal Processing, y <i>Manager</i> se refiere al hecho de que DSP
+no funciona actualmente dentro de aplicación en sí mismo, sino que el gestor
+solo puede habilitarla para otras aplicaciones que son compatibles la
+especificación de audio de Android, por ejemplo la mayoría de los
 reproductores de música.\n
 \n
 <b>Filosofía</b>\n
 \n
-El procesamiento de audio de CyanogenMod soporta 3 diferentes categorías de 
-salida de audio: Auriculares cableados, altavoces internos del teléfono y 
-auriculares Bluetooth. Hay un panel de configuración separada para cada 
-categoría de salida de audio. La filosofía de DSPManager es corregir para 
-cada salida de audio las deficiencias particulares en orden a conseguir la 
+El procesamiento de audio de CyanogenMod soporta 3 diferentes categorías de
+salida de audio: Auriculares cableados, altavoces internos del teléfono y
+auriculares Bluetooth. Hay un panel de configuración separada para cada
+categoría de salida de audio. La filosofía de DSP Manager es corregir para
+cada salida de audio las deficiencias particulares en orden a conseguir la
 más optima experiencia de sonido para cada una de ellas.\n
 \n
-A diferencia de los efectos de audio AOSP, no existen ajustes por aplicación. 
-Este es una decisión deliberada: es la salida sobre en lo que hay que 
-centrarse, no en que aplicaciones generan audio para las que DSPManager 
+A diferencia de los efectos de audio AOSP, no existen ajustes por aplicación.
+Este es una decisión deliberada: es la salida sobre en lo que hay que
+centrarse, no en que aplicaciones generan audio para las que DSP Manager
 debe de funcionar.\n
 \n
 <b>Características</b>\n
 \n
-El resto de este documento describe cada efecto de audio y su uso en cada 
+El resto de este documento describe cada efecto de audio y su uso en cada
 escenario.\n
 \n
 1. <b>Rango de compresión dinámico (DRC)</b>\n
 \n
-Este efecto estima el reducción de audio percibida como una media del oyente 
-y dirige un control de ganancia basada en esta estimación. El uso principal 
-es en entornos con un alto ruido, tales como en coches o en la calle, donde 
-las partes con volumen bajo de la música están en riesgo de no ser percibidas 
+Este efecto estima el reducción de audio percibida como una media del oyente
+y dirige un control de ganancia basada en esta estimación. El uso principal
+es en entornos con un alto ruido, tales como en coches o en la calle, donde
+las partes con volumen bajo de la música están en riesgo de no ser percibidas
 por el ruido de fondo.\n
 \n
-Los ajustes únicos determinan cuan duro DSPManager tratará de mantener la 
-reducción de audio a los nivel seleccionado. No existe equivalente en AOSP 
+Los ajustes únicos determinan cuan duro DSP Manager tratará de mantener la
+reducción de audio a los nivel seleccionado. No existe equivalente en AOSP
 para este efecto DSP.\n
 \n
 2. <b>Bass Boost</b>\n
 \n
-Bass Boost es un filtro simple a bajo nivel que puede ser usado para agregar 
-énfasis a frecuencias de 55 Hz y menores. La mejora es del alrededor de 6 dB, 
-y modificada por el parámetro &#8220;fuerza&#8221;, el cual añade un filtro 
-de resonancia en la banda de 55 Hz, dando a dicha frecuencia un énfasis 
-adicional. El efecto es diseñado para combatir la pérdida de la frecuencia de 
-bajos en los altavoces y auriculares supra-aurales, los cuales, los cuales no 
+Bass Boost es un filtro simple a bajo nivel que puede ser usado para agregar
+énfasis a frecuencias de 55 Hz y menores. La mejora es del alrededor de 6 dB,
+y modificada por el parámetro &#8220;fuerza&#8221;, el cual añade un filtro
+de resonancia en la banda de 55 Hz, dando a dicha frecuencia un énfasis
+adicional. El efecto es diseñado para combatir la pérdida de la frecuencia de
+bajos en los altavoces y auriculares supra-aurales, los cuales, los cuales no
 se acoplan totalmente con canal auditivo del usuario.\n
 \n
 3. <b>Ecualizador</b>\n
 \n
-Este es un ecualizador a 6 bandas, con bandas a 16, 64, 250, 1000, 4000 y 
-16000 Hz. Se proveen algunos ajustes predeterminados, y la frecuencia de 
-respuesta puede ser personalizada, también, tocando sobre el gráfico del 
-ecualizador. El efecto debe ser usado para ajustar la frecuencia de respuesta 
-según el gusto personal del usuario, o para ajustarse a las características y 
+Este es un ecualizador a 6 bandas, con bandas a 16, 64, 250, 1000, 4000 y
+16000 Hz. Se proveen algunos ajustes predeterminados, y la frecuencia de
+respuesta puede ser personalizada, también, tocando sobre el gráfico del
+ecualizador. El efecto debe ser usado para ajustar la frecuencia de respuesta
+según el gusto personal del usuario, o para ajustarse a las características y
 capacidades de los auriculares y altavoces disponibles.\n
 \n
-El ecualizador también contiene un filtro de compensación de ruido, el cual 
-iguala el cambio en la frecuencia de respuesta en el oído, basado en el nivel 
-presión del sonido generado en oído del usuario. El uso de auriculares 
-cableados es necesario, y el valor del parámetro fuerza debe de ser ajustado 
+El ecualizador también contiene un filtro de compensación de ruido, el cual
+iguala el cambio en la frecuencia de respuesta en el oído, basado en el nivel
+presión del sonido generado en oído del usuario. El uso de auriculares
+cableados es necesario, y el valor del parámetro fuerza debe de ser ajustado
 correctamente antes de que el efecto pueda trabajar tal y como fue diseñado.\n
 \n
-Para seleccionar el valor correcto para la compensación de fuerza, utilice 
-música con un nivel de volumen bajo, y escoja algún tipo de música con un 
-espectro de ruido alto, como el rock o el metal. Pruebe a encontrar un ajuste 
-donde los bajos sean potenciados de nuevo a niveles audibles y parezcan 
-balanceados con el resto del audio. Después de que la compensación haya sido 
-correctamente configurada los bajos deberían permanecer en los mismos 
-niveles relativos al del resto de otros instrumentos independientemente del 
-nivel del audio. Por otra parte, si la música comienza a oírse muy altos los 
-tonos bajos en niveles altos de audio, probablemente, la compensación a sido 
+Para seleccionar el valor correcto para la compensación de fuerza, utilice
+música con un nivel de volumen bajo, y escoja algún tipo de música con un
+espectro de ruido alto, como el rock o el metal. Pruebe a encontrar un ajuste
+donde los bajos sean potenciados de nuevo a niveles audibles y parezcan
+balanceados con el resto del audio. Después de que la compensación haya sido
+correctamente configurada los bajos deberían permanecer en los mismos
+niveles relativos al del resto de otros instrumentos independientemente del
+nivel del audio. Por otra parte, si la música comienza a oírse muy altos los
+tonos bajos en niveles altos de audio, probablemente, la compensación a sido
 establecida demasiado fuerte, y debe de ser reducida.\n
 \n
-La compensación ha sido añadida dentro de los ajustes de usuario. Si solo se 
-desea utilizar compensación, entonces el ecualizador debe de ser establecido 
+La compensación ha sido añadida dentro de los ajustes de usuario. Si solo se
+desea utilizar compensación, entonces el ecualizador debe de ser establecido
 al tipo de ajuste &#8220;Plano&#8221;.\n
 \n
 4. <b>Filtro de Auriculares</b>\n
 \n
-El filtro de auriculares es un diseñado inspirado en el famoso circuito 
-analógico bs2b. El efecto deja sin cambios el sonido Mono, y ajusta la 
-diferencia de señal a través de filtro de bajo nivel, el cual aproxima 
-tanto el audio en la cabeza como el retardo interaural a la vez dando la 
-el correcto efecto psicoacústico al oído del usuario. La intención es prevenir 
-la creciente fatiga auditiva increíble separación estéreo, inherente a todos 
-los auriculares. El efecto debe de ser habilitado cuando se utilicen 
+El filtro de auriculares es un diseñado inspirado en el famoso circuito
+analógico bs2b. El efecto deja sin cambios el sonido Mono, y ajusta la
+diferencia de señal a través de filtro de bajo nivel, el cual aproxima
+tanto el audio en la cabeza como el retardo interaural a la vez dando la
+el correcto efecto psicoacústico al oído del usuario. La intención es prevenir
+la creciente fatiga auditiva increíble separación estéreo, inherente a todos
+los auriculares. El efecto debe de ser habilitado cuando se utilicen
 auriculares estéreo.\n
 \n
-A consecuencia del mezclado se reduce la algo la separación estéreo, habiendo 
-un efecto de reverberación Haas, el cual puede ser utilizado para incrementar 
-el ancho de la imagen estéreo percibido. Esto es controlado por el 
-ajuste &#8220;Tipo de Habitación&#8221;.\n
-\n</string>
+A consecuencia del mezclado se reduce la algo la separación estéreo, habiendo
+un efecto de reverberación Haas, el cual puede ser utilizado para incrementar
+el ancho de la imagen estéreo percibido. Esto es controlado por el
+ajuste &#8220;Tipo de Habitación&#8221;.</string>
 </resources>

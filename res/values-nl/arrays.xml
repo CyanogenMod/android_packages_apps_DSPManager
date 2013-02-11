@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,19 +13,22 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="microphone_recording_presets">
         <item>Origineel</item>
         <item>Gebalanceerd</item>
         <item>Zeer gevoelig</item>
         <item>Luide omgeving</item>
     </string-array>
+
     <string-array name="headphone_modes">
         <item>Studio</item>
         <item>Ruimte</item>
         <item>Grote ruimte</item>
         <item>Podium</item>
     </string-array>
+
     <string-array name="equalizer_loudness_modes">
         <item>Uitgeschakeld</item>
         <item>Zwakst</item>
@@ -35,16 +38,19 @@
         <item>Sterker</item>
         <item>Sterkst</item>
     </string-array>
+
     <string-array name="compression_modes">
         <item>Licht</item>
         <item>Normaal</item>
         <item>Extreem</item>
     </string-array>
+
     <string-array name="bassboost_modes">
         <item>Licht</item>
         <item>Normaal</item>
         <item>Extreem</item>
     </string-array>
+
     <string-array name="wm8994_bassboost_modes">
         <item>Standaard</item>
         <item>Kleine speakers</item>

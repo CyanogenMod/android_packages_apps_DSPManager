@@ -1,44 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="headphone_modes">
-    <item>工作室</item>
-    <item>房間</item>
-    <item>大房間</item>
-    <item>舞台</item>
-  </string-array>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
-  <!-- skipping untranslatable /resources:0/string-array:name=headphone_modes_values -->
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
 
-  <!-- skipping untranslatable /resources:0/string-array:name=equalizer_preset_modes -->
+          http://www.apache.org/licenses/LICENSE-2.0
 
-  <string-array name="equalizer_loudness_modes">
-      <item>停用</item>
-      <item>最弱</item>
-      <item>更弱</item>
-      <item>弱</item>
-      <item>強</item>
-      <item>更強</item>
-      <item>最強</item>
-  </string-array>
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="headphone_modes">
+        <item>工作室</item>
+        <item>房間</item>
+        <item>大房間</item>
+        <item>舞台</item>
+    </string-array>
 
-  <!-- skipping untranslatable /resources:0/string-array:name=equalizer_loudness_values -->
+    <string-array name="equalizer_loudness_modes">
+        <item>停用</item>
+        <item>最弱</item>
+        <item>更弱</item>
+        <item>弱</item>
+        <item>強</item>
+        <item>更強</item>
+        <item>最強</item>
+    </string-array>
 
-  <!-- skipping untranslatable /resources:0/string-array:name=equalizer_preset_values -->
+    <string-array name="compression_modes">
+        <item>輕微</item>
+        <item>中等</item>
+        <item>極端</item>
+    </string-array>
 
-  <string-array name="compression_modes">
-    <item>輕微</item>
-    <item>中等</item>
-    <item>極端</item>
-  </string-array>
-
-  <!-- skipping untranslatable /resources:0/string-array:name=compression_modes_values -->
-
-  <string-array name="bassboost_modes">
-    <item>輕微</item>
-    <item>中等</item>
-    <item>極端</item>
-  </string-array>
-
-  <!-- skipping untranslatable /resources:0/string-array:name=bassboost_modes_values -->
-
+    <string-array name="bassboost_modes">
+        <item>輕微</item>
+        <item>中等</item>
+        <item>極端</item>
+    </string-array>
 </resources>

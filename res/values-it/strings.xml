@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2012 The Android Open Source Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -12,15 +12,13 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
-
-<resources>
-    <string name="app_name">DSPManager</string>
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Seleziona configurazione da modificare</string>
     <string name="headset_title">Cuffie</string>
     <string name="speaker_title">Altoparlante telefono</string>
     <string name="bluetooth_title">Dispositivo bluetooth</string>
-    <string name="wm8994_title">WM8994</string>
     <string name="audio_effects">Effetti audio</string>
     <string name="pref_unavailable">Funzionalità non disponibile sul tuo dispositivo</string>
     <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
@@ -50,6 +48,7 @@
     <string name="pref_room_title">Seleziona stanza</string>
     <string name="dialog_room">Tipo di stanza</string>
     <string name="menu_reset">Ripristina</string>
+
     <string name="eq_preset_acoustic">Acustica</string>
     <string name="eq_preset_bass_booster">Amplificazione bassi</string>
     <string name="eq_preset_bass_reducer">Riduzione bassi</string>
@@ -63,6 +62,9 @@
     <string name="eq_preset_treble_reducer">Riduzione alti</string>
     <string name="eq_preset_vocal_booster">Amplificazione voce</string>
     <string name="eq_preset_custom">Manuale</string>
+
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Configurazione speaker interno</string>
     <string name="category_wm8994_signal_processing">Elaborazione segnale</string>
     <string name="category_wm8994_headphone_amp">Amplificatore cuffie</string>
@@ -71,6 +73,8 @@
     <string name="category_wm8994_analog_path">Configurazione del percorso analogico</string>
     <string name="category_wm8994_mic_settings">Impostazioni microfono</string>
     <string name="category_wm8994_microphone_recording">Microfono</string>
+
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Impostazioni audio</string>
     <string name="wm8994_settings_title_subhead">Impostazioni audio</string>
     <string name="wm8994_settings_summary_head">Controllo avanzato del processore audio hardware WM8994</string>
@@ -103,10 +107,11 @@
     <string name="pref_wm8994_adc_osr128_summary">Convertitore analogico-digitale con sovracampionamento a 128x &#8212; Incrementa la qualità delle registrazioni</string>
     <string name="pref_wm8994_fll_tuning_title">Regola clock audio</string>
     <string name="pref_wm8994_fll_tuning_summary">Usa il clock regolato della sorgente audio WM8994 &#8212; Migliora la qualità del suono</string>
+
     <string name="help_title">Manuale d\'uso</string>
-    <string name="help_text"><b>Che cos\'è DSPManager?</b>
+    <string name="help_text"><b>Che cos\'è DSP Manager?</b>
 \n
-\nDSPManager è un\'applicazione per la regolazione dell\'audio in uscita
+\nDSP Manager è un\'applicazione per la regolazione dell\'audio in uscita
 <i>DSP</i> sta per Digital Signal Processing, mentre <i>Manager</i> si riferisce
 al fatto che l\'elaborazione del segnale digitale non viene effettivamente
 eseguita all\'interno della stessa applicazione, il gestore può solo attivarla
@@ -117,7 +122,7 @@ Android, vale a dire la maggior parte dei lettori musicali.
 \n
 \nL\'elaborazione audio CyanogenMod supporta tre diverse categorie di uscita:
 auricolare, vivavoce e auricolare bluetooth. Vi è un pannello di configurazione
-per ciascuna categoria di uscita. La filosofia di DSPManager è quella di
+per ciascuna categoria di uscita. La filosofia di DSP Manager è quella di
 correggere le particolari carenze di ogni uscita audio per raggiungere la più
 ottimale esperienza d\'ascolto.
 \n
@@ -182,6 +187,5 @@ auricolari stereo.
 \n
 \nPoiché la miscelazione riduce la separazione leggermente, vi è un effetto che può essere
 usato per aumentare la larghezza dell\'immagine stereo percepita, quest\'impostazione è
-&#8220;Tipo di stanza&#8221;.
-    </string>
+&#8220;Tipo di stanza&#8221;.</string>
 </resources>

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources  xmlns:tools="http://schemas.android.com/tools">
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Επιλέξτε ρύθμιση για επεξεργασία</string>
     <string name="headset_title">Ακουστικά</string>
     <string name="speaker_title">Ηχείο</string>
@@ -48,8 +63,8 @@
     <string name="eq_preset_vocal_booster">Ενίσχυση φωνητικών</string>
     <string name="eq_preset_custom">Προσαρμοσμένο</string>
 
-    <!--  WM8994 -->
-    <!--  Categories -->
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Ηχείο</string>
     <string name="category_wm8994_signal_processing">Επεξεργασία σήματος</string>
     <string name="category_wm8994_headphone_amp">Ακουστικά</string>
@@ -58,7 +73,8 @@
     <string name="category_wm8994_analog_path">Ρύθμιση διαδρομής αναλογικού</string>
     <string name="category_wm8994_mic_settings">Ρυθμίσεις μικροφώνου</string>
     <string name="category_wm8994_microphone_recording">Μικρόφωνο</string>
-    <!--  Titles/Summaries -->
+
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Ρυθμίσεις ήχου</string>
     <string name="wm8994_settings_title_subhead">Ρυθμίσεις ήχου</string>
     <string name="wm8994_settings_summary_head">Προηγμένος έλεγχος του επεξεργαστή ήχου WM8994</string>
@@ -93,5 +109,4 @@
     <string name="pref_wm8994_fll_tuning_summary">Χρήση βελτιωμένου audio clock στο WM8994 &#8212; βελτιώνει την ποιότητα του ήχου</string>
 
     <string name="help_title">Οδηγός χρήσης</string>
-
 </resources>

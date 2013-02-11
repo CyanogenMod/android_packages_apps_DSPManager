@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">DSPManager</string>
+<!-- Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Wybierz konfigurację do edycji</string>
     <string name="headset_title">Zestaw słuchawkowy</string>
     <string name="speaker_title">Głośnik</string>
     <string name="bluetooth_title">Urządzenie Bluetooth</string>
-    <string name="wm8994_title">WM8994</string>
     <string name="audio_effects">Efekty dźwiękowe</string>
     <string name="pref_unavailable">Funkcjonalność niedostępna dla urządzenia</string>
     <string name="dsp_settings_headset">Ustawienia DSP - Zestaw słuchawkowy</string>
@@ -49,9 +62,9 @@
     <string name="eq_preset_treble_reducer">Redukcja tonów wysokich</string>
     <string name="eq_preset_vocal_booster">Podbicie wokalu</string>
     <string name="eq_preset_custom">Własne</string>
-    
-    <!--  WM8994 -->
-    <!--  Categories -->
+
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Głośnik</string>
     <string name="category_wm8994_signal_processing">Przetwarzanie sygnału</string>
     <string name="category_wm8994_headphone_amp">Zestaw słuchawkowy</string>
@@ -60,7 +73,8 @@
     <string name="category_wm8994_analog_path">Konfiguracja ścieżki analogowej</string>
     <string name="category_wm8994_mic_settings">Ustawienia mikrofonu</string>
     <string name="category_wm8994_microphone_recording">Mikrofon</string>
-    <!--  Titles/Summaries -->
+
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Ustawienia dźwięku</string>
     <string name="wm8994_settings_title_subhead">Ustawienia dźwięku</string>
     <string name="wm8994_settings_summary_head">Zaawansowane ustawienia przetwornika WM8994</string>

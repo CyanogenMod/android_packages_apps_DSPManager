@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
 
-        http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
--->
-<resources>
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="select_configuration_title">Kies configuratie om te bewerken</string>
     <string name="bluetooth_title">Bluetoothapparaat</string>
     <string name="audio_effects">Geluidseffecten</string>
@@ -22,31 +23,25 @@
     <string name="dsp_settings_speaker">DSP-instellingen - Telefoonspeaker</string>
     <string name="dsp_settings_bluetooth">DSP-instellingen - Bluetoothapparaat</string>
     <string name="dsp_settings_wm8994">DSP-instellingen - WM8994</string>
-
     <string name="pref_dsp_title">Dynamisch bereikcompressie</string>
     <string name="pref_dsp_summary_on">Dynamisch bereikcompressie ingeschakeld</string>
     <string name="pref_dsp_summary_off">Dynamisch bereikcompressie uitgeschakeld</string>
     <string name="pref_dsp_enable">Inschakelen</string>
-
     <string name="pref_effect_title">Effectsterkte</string>
     <string name="dialog_effect">Effectsterkte</string>
-
     <string name="pref_equalizer_summary_on">Equalizer ingeschakeld</string>
     <string name="pref_equalizer_summary_off">Equalizer uitgeschakeld</string>
     <string name="pref_equalizer_enable">Inschakelen</string>
     <string name="pref_equalizer_preset_title">Kies preset</string>
     <string name="pref_equalizer_loudness_title">Luidheidscompensatie</string>
-
     <string name="pref_bassboost_title">Basversterker</string>
     <string name="pref_bassboost_summary_on">Basversterker ingeschakeld</string>
     <string name="pref_bassboost_summary_off">Basversterker uitgeschakeld</string>
     <string name="pref_bassboost_enable">Inschakelen</string>
-
     <string name="pref_headset_virtual_title">Headset in virtuele ruimte-effect</string>
     <string name="pref_headset_virtual_summary_on">\'Headset in virtuele ruimte-effect\' ingeschakeld</string>
     <string name="pref_headset_virtual_summary_off">\'Headset in virtuele ruimte-effect\' uitgeschakeld</string>
     <string name="pref_headset_virtual_enable">Inschakelen</string>
-
     <string name="pref_room_title">Type ruimte</string>
     <string name="dialog_room">Type ruimte</string>
     <string name="menu_reset">Herstellen</string>
@@ -63,9 +58,8 @@
     <string name="eq_preset_vocal_booster">Stemversterker</string>
     <string name="eq_preset_custom">Aangepast</string>
 
-    <!--  WM8994 -->
-
-    <!--  Categories -->
+    <!-- WM8994 -->
+    <!-- Categories -->
     <string name="category_wm8994_signal_processing">Signaalverwerking</string>
     <string name="category_wm8994_codec_optimization">Codecoptimalisatie</string>
     <string name="category_wm8994_dac_config">Digitaal/analoog-conversie-instellingen</string>
@@ -73,7 +67,7 @@
     <string name="category_wm8994_mic_settings">Microfooninstellingen</string>
     <string name="category_wm8994_microphone_recording">Microfoon</string>
 
-    <!--  Titles/Summaries -->
+    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Geluidsinstellingen</string>
     <string name="wm8994_settings_title_subhead">Geluidsinstellingen</string>
     <string name="wm8994_settings_summary_head">Geavanceerd beheer van de WM8994-geluidsprocessor</string>
@@ -107,11 +101,10 @@
     <string name="pref_wm8994_fll_tuning_title">Afgestemde geluidsklok</string>
     <string name="pref_wm8994_fll_tuning_summary">Gebruik afgestemde bron van WM8994-geluidsklok (verbetert geluidskwaliteit)</string>
 
-    <!-- Help -->
     <string name="help_title">Gebruikershandleiding</string>
-    <string name="help_text"><b>Wat is DSPManager?</b>
+    <string name="help_text"><b>Wat is DSP Manager?</b>
 \n
-\nDSPManager is een geluidsmanipulatie-app. <i>DSP</i> staat
+\nDSP Manager is een geluidsmanipulatie-app. <i>DSP</i> staat
 voor \'Digital Signal Processing\' (digitale signalenverwerking) en het
 <i>\'Manager\'</i>-deel staat voor het feit dat de verwerking niet
 gebeurt in de app zelf; de beheerder kan dit alleen inschakelen voor apps die
@@ -123,7 +116,7 @@ muziekspelers.
 \nDe mogelijkheden van het geluidsverwerkingssysteem van CyanogenMod biedt
 ondersteuning voor 3 uitvoersoorten: bedrade headset,
 telefoonluidspreker en bluetoothheadset. Voor elke categorie bestaat er
-een configuratiepaneel. De filosofie van DSPManager is om de geluidsuitvoer zo
+een configuratiepaneel. De filosofie van DSP Manager is om de geluidsuitvoer zo
 te manipuleren, dat het geluid het best beleefd kan worden.
 \n
 \nIn tegenstelling tot de standaard geluidseffecten van Android zijn er geen aparte
@@ -144,7 +137,7 @@ auto\'s op de weg, waarbij rustige delen van het geluid overstemd zouden kunnen
 worden door de geluiden op de achtergrond.
 \n
 \n
-Het enige wat handmatig gewijzigd kan worden is hoe hard DSPManager moet
+Het enige wat handmatig gewijzigd kan worden is hoe hard DSP Manager moet
 proberen om het geluidsniveau te behouden op het beoogde niveau. Iets soortgelijks
 van Google is niet beschikbaar.
 \n
@@ -196,6 +189,5 @@ Het effect moet worden ingeschakeld indien een stereoheadset wordt gebruikt.
 \n
 \nOmdat het mengen het stereobeeld enigszins vermindert, kan er een Haas-effect
 galm ontstaan, die kan worden gebruikt om de waargenomen breedte van het stereobeeld te
-verhogen. Dit kan worden afgestemd door de \'Type ruimte\'-instelling.
-    </string>
+verhogen. Dit kan worden afgestemd door de \'Type ruimte\'-instelling.</string>
 </resources>
