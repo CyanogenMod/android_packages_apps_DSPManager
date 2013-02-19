@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -99,7 +99,7 @@
     <string name="pref_wm8994_stereo_expansion_title">Stereo-uitbreiding</string>
     <string name="pref_wm8994_stereo_expansion_summary">Stereogeluid \'uitbreiden\u2019 d.m.v. digitale geluidsverwerking</string>
     <string name="pref_wm8994_dac_direct_title">Directe digitaal/analoog-omzetter</string>
-    <string name="pref_wm8994_dac_direct_summary">Verkrijg meteen toegang tot de digitaal/analoog-omzetter en omzeil de kanalenmixer. Zorgt voor helderder geluid (lagere signaal-ruisverhouding)</string>
+    <string name="pref_wm8994_dac_direct_summary">Direct toegang verkrijgen tot de digitaal/analoog-omzetter en de kanalenmixer omzeilen voor helderder geluid (lagere signaal-ruisverhouding)</string>
     <string name="pref_wm8994_dac_osr128_title">Hifi afspelen</string>
     <string name="pref_wm8994_dac_osr128_summary">Digitaal-naar-analoog-omzetter 128 keer overbemonsteren (zuiverder geluid bij het afspelen van muziek)</string>
     <string name="pref_wm8994_adc_osr128_title">Hifi opnemen</string>
@@ -108,7 +108,7 @@
     <string name="pref_wm8994_fll_tuning_summary">Gebruik afgestemde bron van WM8994-geluidsklok (verbetert geluidskwaliteit)</string>
 
     <!-- Help -->
-    <string name="help_title">Gebruikershandleiding</string>
+    <string name="help_title">Help</string>
     <string name="help_text"><b>Wat is DSP Manager?</b>
 \n
 \nDSP Manager is een geluidsmanipulatie-app. <i>DSP</i> staat
