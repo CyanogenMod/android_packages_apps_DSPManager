@@ -44,6 +44,16 @@ public final class DSPManager extends FragmentActivity {
     protected ActionBar actionBar;
     protected ViewPager viewPager;
 
+    public static class HelpFragment extends DialogFragment {
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
+            View v = inflater.inflate(R.layout.help, null);
+            TextView tv = (TextView) v.findViewById(R.id.help);
+            tv.setText(R.string.help_text);
+            return v;
+        }
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -141,16 +151,8 @@ public final class DSPManager extends FragmentActivity {
         int choice = item.getItemId();
         switch (choice) {
             case R.id.help:
-                DialogFragment df = new DialogFragment() {
-			@Override
-			public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
-				View v = inflater.inflate(R.layout.help, null);
-				TextView tv = (TextView) v.findViewById(R.id.help);
-				tv.setText(R.string.help_text);
-				return v;
-			}
-		};
-		df.setStyle(DialogFragment.STYLE_NO_TITLE, 0);
+                DialogFragment df = new HelpFragment();
+                df.setStyle(DialogFragment.STYLE_NO_TITLE, 0);
                 df.show(getFragmentManager(), "help");
                 return true;
             default:
