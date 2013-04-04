@@ -87,7 +87,7 @@
     <string name="pref_wm8994_fll_tuning_title">Tempo do audio sintonizado</string>
     <string name="pref_wm8994_fll_tuning_summary">Usar fonte de tempo de audio WM8994 sintonizado &#8212; melhora qualidade do som</string>
     <string name="dsp_settings_wm8994">Configurações DSP - WM8994</string>
-    <string name="help_title">Guia de usuário</string>
+    <string name="help_title">Ajuda</string>
     <string name="help_text"><b>O que é o Equalizador??</b>
 \n
 \nEqualizador é uma aplicação para ajuste de áudio por canal. <i>Equalizador</i>
