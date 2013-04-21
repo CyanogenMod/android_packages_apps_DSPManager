@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">DSP Bestuurder</string>
+    <string name="app_name">DSV Bestuurder</string>
     <string name="select_configuration_title">Kies konfigurasie om te verander</string>
     <string name="headset_title">Oorfone</string>
     <string name="speaker_title">Luidspreker</string>
@@ -9,10 +9,10 @@
     <string name="audio_effects">Klank effekte</string>
     <string name="pref_unavailable">Nie beskikbaar op toestel nie</string>
 
-    <string name="dsp_settings_headset">DSP instellings - Oorfone</string>
-    <string name="dsp_settings_speaker">DSP instellings - Luidspreker</string>
-    <string name="dsp_settings_bluetooth">DSP instellings - Bluetooth</string>
-    <string name="dsp_settings_wm8994">DSP instellings - WM8994</string>
+    <string name="dsp_settings_headset">DSV instellings - Oorfone</string>
+    <string name="dsp_settings_speaker">DSV instellings - Luidspreker</string>
+    <string name="dsp_settings_bluetooth">DSV instellings - Bluetooth</string>
+    <string name="dsp_settings_wm8994">DSV instellings - WM8994</string>
     <string name="pref_dsp_title">Dinamiese bereik kompressie</string>
     <string name="pref_dsp_summary_on">Kompressie geaktiveer</string>
     <string name="pref_dsp_summary_off">Kompressie gedeaktiveer</string>
@@ -20,9 +20,9 @@
     <string name="pref_effect_title">Kies effek sterkte</string>
     <string name="dialog_effect">Effek sterkte</string>
 
-    <string name="pref_equalizer_title">Equalizer</string>
-    <string name="pref_equalizer_summary_on">Equalizer geaktiveer</string>
-    <string name="pref_equalizer_summary_off">Equalizer gedeaktiveer</string>
+    <string name="pref_equalizer_title">Gelykmaker</string>
+    <string name="pref_equalizer_summary_on">Gelykmaker geaktiveer</string>
+    <string name="pref_equalizer_summary_off">Gelykmaker gedeaktiveer</string>
     <string name="pref_equalizer_enable">Aktiveer</string>
     <string name="pref_equalizer_preset_title">Kies voorafstelling</string>
     <string name="pref_equalizer_loudness_title">Hardheid kompensasie</string>
@@ -60,7 +60,7 @@
     <string name="category_wm8994_internal_speaker">Luidspreker</string>
     <string name="category_wm8994_signal_processing">Sein prosessering</string>
     <string name="category_wm8994_headphone_amp">Oorfone</string>
-    <string name="category_wm8994_codec_optimization">Codec optimalisering</string>
+    <string name="category_wm8994_codec_optimization">Kodering optimalisering</string>
     <string name="category_wm8994_dac_config">Digitaal/Analoog omskakelaar instellings</string>
     <string name="category_wm8994_analog_path">Analoog konfigurasie</string>
     <string name="category_wm8994_mic_settings">Mikrofoon instellings</string>
@@ -86,19 +86,100 @@
     <string name="pref_wm8994_control_enable_title">Aktiveer WM8994 beheer</string>
     <string name="pref_wm8994_control_enable_summary">Gevorderde WM8994 klank verwerker beheer</string>
     <string name="pref_wm8994_speaker_tuning_title">Musiek instemming</string>
-    <string name="pref_wm8994_speaker_tuning_summary">Herkonfigureer die hardeware EQ vir meer bas en gebalanseerde klank</string>
+    <string name="pref_wm8994_speaker_tuning_summary">Herkonfigureer die hardeware gelykmaker (\'EQ\') vir meer bas en gebalanseerde klank</string>
     <string name="pref_wm8994_mono_downmix_title">Mono \'downmix\'</string>
     <string name="pref_wm8994_mono_downmix_summary">\'Downmix\' stereo klank na mono (vir stereo uitsette soos oorfone)</string>
     <string name="pref_wm8994_stereo_expansion_title">Stereo uitbreiding</string>
-    <string name="pref_wm8994_stereo_expansion_summary">\'Expand\' stereo klank via digitale seinverwerking</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Stereo klank uitbreiding via digitale seinverwerking</string>
     <string name="pref_wm8994_dac_direct_title">D/AC direk</string>
     <string name="pref_wm8994_dac_direct_summary">Verkry direkte toegang tot die Digitaal/Analoog omskakelaar en vermy die kanaal menger. Produseer skoner klank (hoër sein-tot-ruis verhouding)</string>
-    <string name="pref_wm8994_dac_osr128_title">Hi-fi terugspeel</string>
+    <string name="pref_wm8994_dac_osr128_title">Hoëtrou terugspeel</string>
     <string name="pref_wm8994_dac_osr128_summary">Digitaal-na-analoog omskakelaar 128x oormonstering &#8212; skoner klank wanneer musiek gespeel word</string>
-    <string name="pref_wm8994_adc_osr128_title">Hi-fi recording</string>
+    <string name="pref_wm8994_adc_osr128_title">Hoëtrou opnames</string>
     <string name="pref_wm8994_adc_osr128_summary">Analoog-na-digitaal omskakelaar 128x oormonstering &#8212; verhoog gehalte van opnames</string>
     <string name="pref_wm8994_fll_tuning_title">Ingestemde klank-klok</string>
     <string name="pref_wm8994_fll_tuning_summary">Gebruik ingestemde WM8994 klank-klok bron &#8212; verhoog kwaliteit van die klank</string>
 
     <string name="help_title">Aangaande</string>
+    <string name="help_text"><b>Wat is DSV Bestuurder?</b> <!-- Translation done by Brand van Sittert  -->
+\n\n
+DSV Bestuurder is \'n per-uitsettings klank aanpassings program. <i>DSV</i> staan vir Digitale Sein Verwerking
+(\'Digital Signal Processing (DSP)\'), en die <i>Bestuurder</i> gedeelte verwys na die feit dat die DSV in
+werklikheid nie van binne die program self uitgevoer word nie; die bestuurder kan dit slegs in werking
+stel vir programme wat voldoen aan Android se klank effek spesifikasies,
+d.w.s. die meeste Android aanpasbare musiek spelers.
+\n\n\n
+<b>Filosofie</b>
+\n\n
+CyanogenMod se klank verwerking  ondersteun drie verskillende uitset kategorieë:
+bedrade oorfoone, foon luidspreker en Bluetooth oorfone. Daar is \'n aparte
+verstellings paneel vir elke uitset kategorie. DSV Bestuurder se filosofie is om
+elke klank uitset se bepaalde leemtes reg te stel ten einde
+die mees optimale luister ervaring met elkeen te bereik.
+\n\n
+Anders as met \'AOSP\' klank effekte, is daar geen per-program instellings nie. Hierdie is \'n
+doelbewuste ontwerp keuse: dit is die uitset waarin ons belangstel, nie watter program
+se klank die DSV Bestuurder mee werk nie.
+\n\n\n
+<b>Kenmerke</b>
+\n\n
+1. <b>Dinamiese Reeks Samepersing (DRS)</b>
+\n\n
+Hierdie effek beraam die hardheid van die klank soos waargeneem deur \'n gemiddelde
+luisteraar en dryf \'n verkrygings kontrole gabasseer op hierdie beraming. Die
+hoof gebruikersgeval is met lawaaierige omgewings soos in \'n kar of in die straat,
+waar sagte gedeeltes van musiek die gevaar loop om verswelg te word deur agtergrond lawaai.
+\n\n
+Die enkel verstelbare bepaal hoe hard DSV Bestuurder sal probeer om die audio hardheid
+op die teikenvlak te behou. Daar is geen \'AOSP\' ekwivalent vir hierdie DSP effek nie.
+\n\n\n
+2. <b>Bas Versterking</b>
+\n\n
+Die Bas Versterking is \'n eenvoudige laagdeurlaatfilter wat gebruik kan word om klem by
+frekwesies van 55 Hz en laer te voeg. Die versterking is omtrent 6 dB, en word aangepas
+deur die \'strength\' parameter, wat filter resonansie by die 55 Hz band voeg, en
+daardeur ekstra klem lê op daardie frekwensie. Die effek is ontwerp om die verlies van
+bas frekwensie wat algemeen by klein luidsprekers en supra-aurale (bo die oor)
+oorfone voorkom wat nie stewig koppel met die gebruiker se oorkanaal nie te beveg.
+\n\n\n
+3. <b>Gelykmaker</b>
+\n\n
+Dit is \'n 6-band gelykmaker met \'n band op 16, 64, 250, 1000, 4000 en 16000 Hz.
+Sommige algemene vooruitinstellings word voorsien, en die frekwensie reaksie kan
+ook doelgemaak word deur op die gelykmaker grafiek te tik. Die frekwensie moet
+gebruik word om die frekwensie in te stem op die gebruiker se persoonlike smaak,
+of op die spesifieke vermoë van die beskikbare oorfone of luidsprekers.
+\n\n
+Gelykmaker bevat ook \'n hardheids kompenserings filter, wat die veranderinge in
+die oor frekwensie reaksie gelyk maak gebaseer op die klank  drukvlak wat die
+gebruiker se oor bereik. Die gebruik van bedrade oorfone word benodig, en die
+sterkte parameter waarde moet korrek ingestem wees voor die effek sal werk soos
+ontwerp.
+\n\n
+Om die regte waarde vir die kompensasie sterkte te kies, gebruik die sagste musiek
+volume, en kies breë spektrum raserige musiek soos rock of metal. Probeer om \'n
+instelling te vind waar die bas versterk word totdat dit gehoor kan word en
+gebalanseerd voorkom met die res van die materiaal. Nadat die kompensasie korrek
+ingestel is, moet die bas op die selfde vlak bly relatief tot die ander instrumente
+ongeag die luister vlak. Aan die ander kant, as die musiek begin om bas-swaar te
+klink op hoër luistervlakke, dan is die die kompensasie waarskynlik te sterk gestel
+en sal verminder moet word.
+\n\n
+Die kompensasie word by die gebruiker se gekose verstellings bygevoeg. Indien slegs
+kompensasie verlang word, moet die gelykmaker in die \'Flat\' verstelling gelos word.
+\n\n\n
+4. <b>Oorfone filter</b>
+\n\n
+Die Oorfone filter is \'n kruisvoer ontwerp wat geïnspireer is deur die beroemde bs2b
+analoog kringbaan. Die effek laat mono klank onveranderd deur, en verstel die verskil
+sein deur \'n laagdeurlaat filter wat beide die kop sadu en interoor vertraging dadadelik
+beraam, en geen daardeur die regte tipe tipe psigoakkoestiese leidrade vir die gebruiker
+se ore gee. Die bedoeling is om luisteraar moegheid te voorkom wat teweeg gebring word
+deur die ongeloofwaardige stereoverwyderding wat inherent is aan alle oorfone. Die
+effek moet geaktiveer word wanneerookal stereo oorfone gebruik word.
+\n\n
+Omdat die vermenging die stereo skeiding ietwat verminder, is daar \'n Haas effek galm,
+wat gebruik kan word om die waargenome stereo beeld verbreed. Dit word beheer deur die
+\'Room type\' kontrole.
+</string>
 </resources>
