@@ -15,11 +15,11 @@
     </string-array>
 
   <string-array name="equalizer_loudness_modes">
-      <item>Deshabilitado</item>
+      <item>Deshabilitada</item>
       <item>Muy débil</item>
       <item>Débil</item>
-      <item>Ligero</item>
-      <item>Moderado</item>
+      <item>Ligera</item>
+      <item>Moderada</item>
       <item>Fuerte</item>
       <item>Muy fuerte</item>
   </string-array>
