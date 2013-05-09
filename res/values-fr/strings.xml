@@ -13,7 +13,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Effets audio</string>
     <string name="select_configuration_title">Choisir la configuration à éditer</string>
     <string name="headset_title">Casque</string>
     <string name="speaker_title">Haut-parleur du téléphone</string>
@@ -47,7 +48,6 @@
     <string name="pref_room_title">Type de chambre</string>
     <string name="dialog_room">Type de chambre</string>
     <string name="menu_reset">Remise à zéro</string>
-
     <string name="eq_preset_acoustic">Acoustique</string>
     <string name="eq_preset_bass_booster">Amplification des basses</string>
     <string name="eq_preset_bass_reducer">Réduction des basses</string>
@@ -61,9 +61,6 @@
     <string name="eq_preset_treble_reducer">Réduction des aiguës</string>
     <string name="eq_preset_vocal_booster">Amplification de la voix</string>
     <string name="eq_preset_custom">Personnalisé</string>
-
-    <!-- WM8994 -->
-    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Haut-parleur</string>
     <string name="category_wm8994_signal_processing">Traitement du signal</string>
     <string name="category_wm8994_headphone_amp">Casque</string>
@@ -72,8 +69,6 @@
     <string name="category_wm8994_analog_path">Configuration du chemin analogique</string>
     <string name="category_wm8994_mic_settings">Paramètre du microphone</string>
     <string name="category_wm8994_microphone_recording">Microphone</string>
-
-    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Paramètres audio</string>
     <string name="wm8994_settings_title_subhead">Paramètres audio</string>
     <string name="wm8994_settings_summary_head">Contrôles avancés du processeur audio WM8994</string>
@@ -106,7 +101,6 @@
     <string name="pref_wm8994_adc_osr128_summary">Convertisseur analogique vers digital, suréchantillonnage de 128x &#8212; augmente la qualité des enregistrements</string>
     <string name="pref_wm8994_fll_tuning_title">Horloge audio personalisée</string>
     <string name="pref_wm8994_fll_tuning_summary">Utiliser une horloge audio pour WM8994 personnalisée &#8212; améliore la qualité du son</string>
-
     <string name="help_title">Guide utilisateur</string>
     <string name="help_text"><b>Qu\'est-ce que DSP Manager ?</b>
 \n
@@ -148,5 +142,4 @@
 \n
 \nL\'égaliseur réduit un peu la séparation stéréo, vous pouvez utiliser un effet de réverbération Haas pour augmenter la largeur de stéréo perçue. Ceci est contrôlé avec le paramètre &#8220;Type de chambre&#8221;.
     </string>
-
 </resources>
