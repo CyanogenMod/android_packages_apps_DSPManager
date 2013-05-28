@@ -8,6 +8,10 @@
     <string name="bluetooth_title">Bluetooth-Gerät</string>
     <string name="audio_effects">Audioeffekte</string>
     <string name="pref_unavailable">Diese Funktion ist auf diesem Gerät nicht verfügbar</string>
+    <string name="dsp_settings_headset">DSP-Einstellungen - Kopfhörer</string>
+    <string name="dsp_settings_speaker">DSP-Einstellungen - Lautsprecher</string>
+    <string name="dsp_settings_bluetooth">DSP-Einstellungen - Bluetooth-Gerät</string>
+    <string name="dsp_settings_wm8994">DSP-Einstellungen - WM8994</string>
     <string name="pref_dsp_title">Kompression des Dynamikumfangs</string>
     <string name="pref_dsp_summary_on">Kompression des Dynamikumfangs ist eingeschaltet</string>
     <string name="pref_dsp_summary_off">Kompression des Dynamikumfangs ist ausgeschaltet</string>
