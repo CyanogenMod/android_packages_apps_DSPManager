@@ -13,8 +13,11 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">DSP Manager</string>
     <string name="select_configuration_title">Kies configuratie om te bewerken</string>
+    <string name="headset_title">Headset</string>
+    <string name="speaker_title">Speaker</string>
     <string name="bluetooth_title">Bluetoothapparaat</string>
     <string name="audio_effects">Geluidseffecten</string>
     <string name="pref_unavailable">Functionaliteit is niet beschikbaar voor uw apparaat</string>
@@ -22,31 +25,26 @@
     <string name="dsp_settings_speaker">DSP-instellingen - Telefoonspeaker</string>
     <string name="dsp_settings_bluetooth">DSP-instellingen - Bluetoothapparaat</string>
     <string name="dsp_settings_wm8994">DSP-instellingen - WM8994</string>
-
     <string name="pref_dsp_title">Dynamisch bereikcompressie</string>
     <string name="pref_dsp_summary_on">Dynamisch bereikcompressie ingeschakeld</string>
     <string name="pref_dsp_summary_off">Dynamisch bereikcompressie uitgeschakeld</string>
     <string name="pref_dsp_enable">Inschakelen</string>
-
     <string name="pref_effect_title">Effectsterkte</string>
     <string name="dialog_effect">Effectsterkte</string>
-
+    <string name="pref_equalizer_title">Equalizer</string>
     <string name="pref_equalizer_summary_on">Equalizer ingeschakeld</string>
     <string name="pref_equalizer_summary_off">Equalizer uitgeschakeld</string>
     <string name="pref_equalizer_enable">Inschakelen</string>
     <string name="pref_equalizer_preset_title">Kies preset</string>
     <string name="pref_equalizer_loudness_title">Luidheidscompensatie</string>
-
     <string name="pref_bassboost_title">Basversterker</string>
     <string name="pref_bassboost_summary_on">Basversterker ingeschakeld</string>
     <string name="pref_bassboost_summary_off">Basversterker uitgeschakeld</string>
     <string name="pref_bassboost_enable">Inschakelen</string>
-
     <string name="pref_headset_virtual_title">Headset in virtuele ruimte-effect</string>
     <string name="pref_headset_virtual_summary_on">\'Headset in virtuele ruimte-effect\' ingeschakeld</string>
     <string name="pref_headset_virtual_summary_off">\'Headset in virtuele ruimte-effect\' uitgeschakeld</string>
     <string name="pref_headset_virtual_enable">Inschakelen</string>
-
     <string name="pref_room_title">Type ruimte</string>
     <string name="dialog_room">Type ruimte</string>
     <string name="menu_reset">Herstellen</string>
@@ -56,24 +54,24 @@
     <string name="eq_preset_bass_reducer">Basverzwakker</string>
     <string name="eq_preset_classical">Klassiek</string>
     <string name="eq_preset_deep">Diep</string>
-    <string name="eq_preset_flat">Oppervlakkig</string>
+    <string name="eq_preset_flat">Vlak</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
+    <string name="eq_preset_rock">Rock</string>
     <string name="eq_preset_small_speakers">Kleine speakers</string>
     <string name="eq_preset_treble_booster">Hoge tonenversterker</string>
     <string name="eq_preset_treble_reducer">Hoge tonenverzwakker</string>
     <string name="eq_preset_vocal_booster">Stemversterker</string>
     <string name="eq_preset_custom">Aangepast</string>
 
-    <!--  WM8994 -->
-
-    <!--  Categories -->
+    <string name="category_wm8994_internal_speaker">Speaker</string>
     <string name="category_wm8994_signal_processing">Signaalverwerking</string>
+    <string name="category_wm8994_headphone_amp">Headset</string>
     <string name="category_wm8994_codec_optimization">Codecoptimalisatie</string>
     <string name="category_wm8994_dac_config">Digitaal/analoog-conversie-instellingen</string>
     <string name="category_wm8994_analog_path">Analoge padenconfiguratie</string>
     <string name="category_wm8994_mic_settings">Microfooninstellingen</string>
     <string name="category_wm8994_microphone_recording">Microfoon</string>
 
-    <!--  Titles/Summaries -->
     <string name="wm8994_settings_title_head">Geluidsinstellingen</string>
     <string name="wm8994_settings_title_subhead">Geluidsinstellingen</string>
     <string name="wm8994_settings_summary_head">Geavanceerd beheer van de WM8994-geluidsprocessor</string>
@@ -107,7 +105,6 @@
     <string name="pref_wm8994_fll_tuning_title">Afgestemde geluidsklok</string>
     <string name="pref_wm8994_fll_tuning_summary">Gebruik afgestemde bron van WM8994-geluidsklok (verbetert geluidskwaliteit)</string>
 
-    <!-- Help -->
     <string name="help_title">Help</string>
     <string name="help_text"><b>Wat is DSP Manager?</b>
 \n
