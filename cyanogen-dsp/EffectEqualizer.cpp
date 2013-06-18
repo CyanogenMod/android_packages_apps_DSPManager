@@ -56,6 +56,24 @@ typedef struct {
     int32_t data;
 } reply2x4_1x4_t;
 
+typedef struct {
+    int32_t status;
+    uint32_t psize;
+    uint32_t vsize;
+    int32_t cmd;
+    int32_t arg;
+    int32_t data1;
+    int32_t data2;
+} reply2x4_2x4_t;
+
+typedef struct {
+    int32_t status;
+    uint32_t psize;
+    uint32_t vsize;
+    int32_t cmd;
+    int16_t data[8]; // numbands (6) + 2
+} reply1x4_props_t;
+
 static int64_t toFixedPoint(float in) {
     return (int64_t) (0.5 + in * ((int64_t) 1 << 32));
 }
@@ -117,6 +135,18 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
                 *replySize = sizeof(reply1x4_1x2_t);
                 return 0;
             }
+            if (cmd == EQ_PARAM_PROPERTIES) {
+                reply1x4_props_t *replyData = (reply1x4_props_t *) pReplyData;
+                replyData->status = 0;
+                replyData->vsize = 2*8;
+                replyData->data[0] = (int16_t)-1; // PRESET_CUSTOM
+                replyData->data[1] = (int16_t)6;  // number of bands
+                for (int i = 0; i < 6; i++) {
+                    replyData->data[2 + i] = (int16_t)(mBand[i] * 100 + 0.5f); // band levels
+                }
+                *replySize = sizeof(reply1x4_props_t);
+                return 0;
+            }
         } else if (cep->psize == 8) {
             int32_t cmd = ((int32_t *) cep)[3];
             int32_t arg = ((int32_t *) cep)[4];
@@ -135,6 +165,27 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
                 replyData->vsize = 4;
                 replyData->data = int32_t(centerFrequency * 1000);
                 *replySize = sizeof(reply2x4_1x4_t);
+                return 0;
+            }
+            if (cmd == EQ_PARAM_GET_BAND) {
+                float band = log(float(arg / 1000) / 15.625f) / log(4);
+                reply2x4_1x2_t *replyData = (reply2x4_1x2_t *) pReplyData;
+                replyData->status = 0;
+                replyData->vsize = 2;
+                replyData->data = int16_t(band);
+                *replySize = sizeof(reply2x4_1x2_t);
+                return 0;
+            }
+            if (cmd == EQ_PARAM_BAND_FREQ_RANGE && arg >= 0 && arg < 6) {
+                float centerFrequency = 15.625f * powf(4, arg);
+                float topFrequency = ((1.5f * 15.625f) * powf(4, arg));
+                float bottomFrequency = (centerFrequency - (topFrequency - centerFrequency));
+                reply2x4_2x4_t *replyData = (reply2x4_2x4_t *) pReplyData;
+                replyData->status = 0;
+                replyData->vsize = 8;
+                replyData->data1 = int32_t(bottomFrequency * 1000);
+                replyData->data2 = int32_t(topFrequency * 1000);
+                *replySize = sizeof(reply2x4_2x4_t);
                 return 0;
             }
         }
@@ -172,6 +223,28 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
                 int16_t value = ((int16_t *) cep)[10];
                 ALOGI("Setting band %d to %d", arg, value);
                 mBand[arg] = value / 100.0f;
+                return 0;
+            }
+        }
+
+        if (cep->psize == 4 && cep->vsize >= 4 && cep->vsize <= 16) {
+            int32_t cmd = ((int32_t *) cep)[3];
+            if (cmd == EQ_PARAM_PROPERTIES) {
+                *replyData = 0;
+                if ((((int16_t *) cep)[8]) >= 0) {
+                    *replyData = -EINVAL;
+                    ALOGE("Asking for non-existing preset ID");
+                    return 0;
+                }
+                if ((((int16_t *) cep)[9]) != 6) {
+                    *replyData = -EINVAL;
+                    ALOGE("Asking to manipulate invalid number of bands");
+                    return 0;
+                }
+                for (int i = 0; i < 6; i++) {
+                    mBand[i] = ((int16_t *) cep)[10 + i] / 100.0f;
+                }
+
                 return 0;
             }
         }
