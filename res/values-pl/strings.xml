@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Menedżer DSP</string>
     <string name="select_configuration_title">Wybierz konfigurację do edycji</string>
     <string name="headset_title">Zestaw słuchawkowy</string>
     <string name="speaker_title">Głośnik</string>
@@ -92,4 +93,5 @@
     <string name="pref_wm8994_adc_osr128_summary">128-krotne nadpróbkowanie przetwornika analogowo-cyfrowego - poprawia jakość nagrywania</string>
     <string name="pref_wm8994_fll_tuning_title">Regulacja zegara przetwornika</string>
     <string name="pref_wm8994_fll_tuning_summary">Użyj wyregulowanych źródeł zegara WM8994 - poprawia jakość dźwięku</string>
+    <string name="help_title">Pomoc</string>
 </resources>
