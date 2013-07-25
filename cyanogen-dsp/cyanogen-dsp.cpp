@@ -106,6 +106,7 @@ static const struct effect_interface_s generic_interface = {
 	NULL
 };
 
+/*
 int32_t EffectQueryNumberEffects(uint32_t *num) {
 	*num = 4;
 	return 0;
@@ -130,6 +131,8 @@ int32_t EffectQueryEffect(uint32_t num, effect_descriptor_t *pDescriptor) {
 	}
 	return 0;
 }
+
+*/
 
 int32_t EffectCreate(const effect_uuid_t *uuid, int32_t sessionId, int32_t ioId, effect_handle_t *pEffect) {
 	if (memcmp(uuid, &compression_descriptor.uuid, sizeof(effect_uuid_t)) == 0) {
@@ -202,8 +205,6 @@ audio_effect_library_t AUDIO_EFFECT_LIBRARY_INFO_SYM = {
     version : EFFECT_LIBRARY_API_VERSION,
     name : "CyanogenMod's Effect Library",
     implementor : "Antti S. Lankila",
-    query_num_effects : EffectQueryNumberEffects,
-    query_effect : EffectQueryEffect,
     create_effect : EffectCreate,
     release_effect : EffectRelease,
     get_descriptor : EffectGetDescriptor,
