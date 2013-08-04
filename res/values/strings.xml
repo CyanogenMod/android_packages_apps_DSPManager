@@ -114,7 +114,7 @@
 \n\n
 DSP Manager is a per-output audio adjustment app. <i>DSP</i> stands for
 Digital signal processing, and the <i>Manager</i> part refers to the fact that the
-DSP is actually not ran inside the app itself; the manager can only
+DSP is actually not run inside the app itself; the manager can only
 enable it for apps which are compliant with Android\'s audio effect
 specification, i.e. most music players.
 \n\n\n
