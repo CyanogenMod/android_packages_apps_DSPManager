@@ -106,34 +106,6 @@ static const struct effect_interface_s generic_interface = {
 	NULL
 };
 
-/*
-int32_t EffectQueryNumberEffects(uint32_t *num) {
-	*num = 4;
-	return 0;
-}
-
-int32_t EffectQueryEffect(uint32_t num, effect_descriptor_t *pDescriptor) {
-	switch (num) {
-	case 0:
-		memcpy(pDescriptor, &compression_descriptor, sizeof(effect_descriptor_t));
-		break;
-	case 1:
-		memcpy(pDescriptor, &equalizer_descriptor, sizeof(effect_descriptor_t));
-		break;
-	case 2:
-		memcpy(pDescriptor, &virtualizer_descriptor, sizeof(effect_descriptor_t));
-		break;
-	case 3:
-		memcpy(pDescriptor, &bassboost_descriptor, sizeof(effect_descriptor_t));
-		break;
-	default:
-		return -ENOENT;
-	}
-	return 0;
-}
-
-*/
-
 int32_t EffectCreate(const effect_uuid_t *uuid, int32_t sessionId, int32_t ioId, effect_handle_t *pEffect) {
 	if (memcmp(uuid, &compression_descriptor.uuid, sizeof(effect_uuid_t)) == 0) {
 		struct effect_module_s *e = (struct effect_module_s *) calloc(1, sizeof(struct effect_module_s));
