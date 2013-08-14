@@ -172,6 +172,7 @@ class MyAdapter extends FragmentPagerAdapter {
         tmpEntries.add("headset");
         tmpEntries.add("speaker");
         tmpEntries.add("bluetooth");
+        tmpEntries.add("usb");
 
         // Determine if WM8994 is supported
         if (WM8994.isSupported(context)) {

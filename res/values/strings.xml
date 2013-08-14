@@ -19,12 +19,14 @@
     <string name="headset_title">Headset</string>
     <string name="speaker_title">Speaker</string>
     <string name="bluetooth_title">Bluetooth</string>
+    <string name="usb_title">USB/Dock</string>
     <string name="wm8994_title" translatable="false">WM8994</string>
     <string name="audio_effects">Audio effects</string>
     <string name="pref_unavailable">Functionality is not available on your device</string>
     <string name="dsp_settings_headset">DSP settings - Headset</string>
     <string name="dsp_settings_speaker">DSP settings - Phone speaker</string>
     <string name="dsp_settings_bluetooth">DSP settings - Bluetooth device</string>
+    <string name="dsp_settings_usb">DSP settings - USB device</string>
     <string name="dsp_settings_wm8994">DSP settings - WM8994</string>
     <string name="pref_dsp_title">Dynamic range compression</string>
     <string name="pref_dsp_summary_on">Compression is enabled</string>
@@ -121,7 +123,7 @@ specification, i.e. most music players.
 <b>Philosophy</b>
 \n\n
 CyanogenMod\'s audio processing supports three different output categories:
-wired headset, phone speaker and bluetooth headset. There is a separate
+wired headset, USB audio, phone speaker and bluetooth headset. There is a separate
 configuration panel for each output category. DSP Manager\'s philosophy is to
 correct each audio output\'s particular deficiencies in order to reach the most
 optimal listening experience with each.

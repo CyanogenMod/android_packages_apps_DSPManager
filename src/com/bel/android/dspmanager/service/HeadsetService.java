@@ -136,6 +136,9 @@ public class HeadsetService extends Service {
 	/** Is bluetooth headset plugged in? */
 	protected boolean mUseBluetooth;
 
+	/** Is a dock or USB audio device plugged in? */
+	protected boolean mUseUSB;
+
 	/** Has DSPManager assumed control of equalizer levels? */
 	private float[] mOverriddenEqualizerLevels;
 
@@ -186,6 +189,7 @@ public class HeadsetService extends Service {
 			final String action = intent.getAction();
 			final boolean prevUseHeadset = mUseHeadset;
 			final boolean prevUseBluetooth = mUseBluetooth;
+			final boolean prevUseUSB = mUseUSB;
 			final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 			if (action.equals(Intent.ACTION_HEADSET_PLUG)) {
 				mUseHeadset = intent.getIntExtra("state", 0) == 1;
@@ -205,6 +209,8 @@ public class HeadsetService extends Service {
 						|| (deviceClass == BluetoothClass.Device.AUDIO_VIDEO_WEARABLE_HEADSET)) {
 					mUseBluetooth = true;
 				}
+			} else if (action.equals(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG)) {
+			    mUseUSB = intent.getIntExtra("state", 0) == 1;
 			} else if (action.equals(AudioManager.ACTION_AUDIO_BECOMING_NOISY)) {
 				mUseBluetooth = audioManager.isBluetoothA2dpOn();
 				mUseHeadset = audioManager.isWiredHeadsetOn();
@@ -221,9 +227,11 @@ public class HeadsetService extends Service {
 				}
 			}
 
-            Log.i(TAG, "Headset=" + mUseHeadset + "; Bluetooth=" + mUseBluetooth);
+            Log.i(TAG, "Headset=" + mUseHeadset + "; Bluetooth=" + mUseBluetooth +
+                       " ; USB=" + mUseUSB);
 			if (prevUseHeadset != mUseHeadset
-					|| prevUseBluetooth != mUseBluetooth) {
+					|| prevUseBluetooth != mUseBluetooth
+					|| prevUseUSB != mUseUSB) {
 				updateDsp();
 			}
         }
@@ -242,6 +250,7 @@ public class HeadsetService extends Service {
 		final IntentFilter intentFilter = new IntentFilter(Intent.ACTION_HEADSET_PLUG);
 		intentFilter.addAction(BluetoothDevice.ACTION_ACL_CONNECTED);
 		intentFilter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);
+		intentFilter.addAction(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG);
 		intentFilter.addAction(AudioManager.ACTION_AUDIO_BECOMING_NOISY);
 		registerReceiver(mRoutingReceiver, intentFilter);
 
@@ -306,6 +315,9 @@ public class HeadsetService extends Service {
 		}
 		if (mUseHeadset) {
 			return "headset";
+		}
+		if (mUseUSB) {
+		    return "usb";
 		}
 		return "speaker";
 	}
