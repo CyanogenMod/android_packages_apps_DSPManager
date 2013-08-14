@@ -175,4 +175,6 @@ ativado quando usando fones de ouvido estéreo.
 reverbação Haas, que pode ser usado aumentar a largura de imagem estéreo percebida.
 Isto é controlado pelo controle &#8220;Simulação de Ambiente&#8221;.
     </string>
+    <string name="usb_title">USB/Dock</string>
+    <string name="dsp_settings_usb">Configurações Equalizador - Dispositivo USB</string>
 </resources>
