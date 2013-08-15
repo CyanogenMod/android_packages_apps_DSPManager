@@ -98,8 +98,8 @@ de música.
 \n
 \n<b>Filosofia</b>
 \n
-\nO processamento de aúdio do CyanogenMod suporta três diferentes cantegorias de
-saídas: fone de ouvido com fio, alto-falante do telefone e fone bluetooth. Existe
+\nO processamento de aúdio do CyanogenMod suporta quatro diferentes cantegorias de
+saídas: fone de ouvido com fio, áudio USB, alto-falante do telefone e fone bluetooth. Existe
 um painel de configuração separado para cada categoria de saída. A filosofia do
 Equalizador é para corrigir cada saída de áudio das deficiências para conseguir a
 maior eficiência para ouvir som de cada saída.
