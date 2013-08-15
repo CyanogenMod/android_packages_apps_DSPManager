@@ -6,11 +6,13 @@
     <string name="headset_title">Auriculares</string>
     <string name="speaker_title">Altavoz</string>
     <string name="bluetooth_title">Bluetooth</string>
+    <string name="usb_title">USB/Base</string>
     <string name="audio_effects">Filtros de audio</string>
     <string name="pref_unavailable">Funcionalidad no disponible para el dispositivo</string>
     <string name="dsp_settings_headset">Ajustes - Auriculares</string>
     <string name="dsp_settings_speaker">Ajustes - Altavoces</string>
     <string name="dsp_settings_bluetooth">Ajustes - Bluetooth</string>
+    <string name="dsp_settings_usb">Ajustes - Dispositivo USB</string>
     <string name="dsp_settings_wm8994">Ajustes - WM8994</string>
     <string name="pref_dsp_title">Rango de Compresión Dinámica</string>
     <string name="pref_dsp_summary_on">Compresión activada</string>
@@ -101,10 +103,10 @@ reproductores de música.
 \n\n\n
 <b>Filosofía</b>
 \n\n
-El procesamiento de audio de CyanogenMod soporta tres categorías diferentes
-de salida de audio: Auriculares cableados, altavoces internos del teléfono
-y auriculares Bluetooth. Hay un panel de configuración separado para cada
-categoría de salida de audio. La filosofía de DSP Manager es corregir en
+El procesamiento de audio de CyanogenMod soporta cuatro categorías diferentes
+de salida de audio: Auriculares cableados, altavoces internos del teléfono,
+audio USB y auriculares Bluetooth. Hay un panel de configuración separado para
+cada categoría de salida de audio. La filosofía de DSP Manager es corregir en
 la salida de audio las deficiencias particulares, con objeto de conseguir
 la más óptima experiencia de sonido en cada una de ellas.
 \n\n
@@ -165,14 +167,14 @@ nivel de sonido. Por otra parte, si la música comienza a oírse con frecuencias
 bajas excesivamente fuertes en niveles altos de sonido, probablemente la
 compensación haya sido establecida demasiado fuerte, y deberá ser reducida.
 \n\n
-La compensación ha sido añadida dentro de los ajustes de usuario. Si sólo se
+La compensación ha sido añadida dentro de los ajustes de usuario. Si solo se
 desea utilizar compensación, entonces el ecualizador debe ser establecido
 al tipo de ajuste \u00ABPlano\u00BB.
 \n\n
 4. <b>Filtro de auriculares</b>
 \n\n
 El filtro de auriculares es un diseño inspirado en el famoso circuito
-analógico \u00ABbs2b\u00BB. El efecto deja sin cambios el sonido Mono, y ajusta
+analógico \u00ABbs2b\u00BB. El efecto deja sin cambios el sonido mono, y ajusta
 la diferencia de señal a través del filtro de bajo nivel, el cual aproxima
 tanto el audio en la cabeza como el retardo interaural a la vez, dando el
 correcto efecto psicoacústico al oído del usuario. La intención es prevenir
