@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!--
+    Copyright (C) 2012-2013 The CyanogenMod Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
     <string name="app_name">DSP-Manager</string>
     <string name="select_configuration_title">Konfiguration zum Bearbeiten auswählen</string>
     <string name="headset_title">Kopfhörer</string>
     <string name="speaker_title">Lautsprecher</string>
     <string name="bluetooth_title">Bluetooth-Gerät</string>
+    <string name="usb_title">USB/Dock</string>
     <string name="audio_effects">Audioeffekte</string>
     <string name="pref_unavailable">Diese Funktion ist auf diesem Gerät nicht verfügbar</string>
     <string name="dsp_settings_headset">DSP-Einstellungen - Kopfhörer</string>
     <string name="dsp_settings_speaker">DSP-Einstellungen - Lautsprecher</string>
     <string name="dsp_settings_bluetooth">DSP-Einstellungen - Bluetooth-Gerät</string>
     <string name="dsp_settings_wm8994">DSP-Einstellungen - WM8994</string>
+    <string name="dsp_settings_usb">DSP-Einstellungen - USB-Gerät</string>
     <string name="pref_dsp_title">Kompression des Dynamikumfangs</string>
     <string name="pref_dsp_summary_on">Kompression des Dynamikumfangs ist eingeschaltet</string>
     <string name="pref_dsp_summary_off">Kompression des Dynamikumfangs ist ausgeschaltet</string>
@@ -35,7 +51,6 @@
     <string name="pref_room_title">Raumtyp</string>
     <string name="dialog_room">Raumtyp</string>
     <string name="menu_reset">Zurücksetzen</string>
-
     <string name="eq_preset_acoustic">Acoustic</string>
     <string name="eq_preset_bass_booster">Mehr Bässe</string>
     <string name="eq_preset_bass_reducer">Weniger Bässe</string>
@@ -49,9 +64,6 @@
     <string name="eq_preset_treble_reducer">Weniger Höhen</string>
     <string name="eq_preset_vocal_booster">Sprache</string>
     <string name="eq_preset_custom">Benutzerdefiniert</string>
-
-    <!-- WM8994 -->
-    <!-- Categories -->
     <string name="category_wm8994_internal_speaker">Lautsprecher</string>
     <string name="category_wm8994_signal_processing">Signalverarbeitung</string>
     <string name="category_wm8994_headphone_amp">Kopfhörer</string>
@@ -60,8 +72,6 @@
     <string name="category_wm8994_analog_path">Analogpfad-Einstellungen</string>
     <string name="category_wm8994_mic_settings">Mikrofon-Einstellungen</string>
     <string name="category_wm8994_microphone_recording">Mikrofon</string>
-
-    <!-- Titles/Summaries -->
     <string name="wm8994_settings_title_head">Klangeinstellungen</string>
     <string name="wm8994_settings_title_subhead">Klangeinstellungen</string>
     <string name="wm8994_settings_summary_head">Erweiterte Steuerung des WM8994-Codecs</string>
@@ -94,7 +104,6 @@
     <string name="pref_wm8994_adc_osr128_summary">A/D-Wandler 128x Oversampling &#8212; Erhöht die Aufnahmequalität</string>
     <string name="pref_wm8994_fll_tuning_title">Stabilisierter Audio-Takt</string>
     <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen &#8212; Verbessert die Klangqualität</string>
-
     <string name="help_title">Über</string>
     <string name="help_text"><b>Was ist der DSP Manager?</b>
 \n\n
@@ -102,8 +111,8 @@ Der DSP Manager (Digital Signal Processing) ist eine Anwendung, mit der die Audi
 \n\n\n
 <b>Philosophie</b>
 \n\n
-CyanogenMod unterstützt drei verschiedene Audio-Ausgabewege:
-Kopfhörer, Lautsprecher und Bluetooth-Geräte. Für jeden Ausgabeweg gibt es ein eigenes Konfigurationspanel, in dem die Besonderheiten des jeweiligen Ausgabeweges für ein optimales Hörerlebnis angepasst werden können.
+CyanogenMod unterstützt vier verschiedene Audio-Ausgabewege:
+Kopfhörer, USB-Audio, Lautsprecher und Bluetooth-Geräte. Für jeden Ausgabeweg gibt es ein eigenes Konfigurationspanel, in dem die Besonderheiten des jeweiligen Ausgabeweges für ein optimales Hörerlebnis angepasst werden können.
 \n\n
 Im Gegensatz zu den AOSP-Audioeffekten gibt es keine anwendungsspezifischen Einstellungen. Dies wurde mit Absicht so konzipiert, denn die Audio-Ausgabe ist uns wichtig, nicht die Anwendung, welche die (Audio-)Daten an den DSP Manager übergibt.
 \n\n\n
