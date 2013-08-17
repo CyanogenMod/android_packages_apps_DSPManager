@@ -16,15 +16,18 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">DSP Manager</string>
     <string name="select_configuration_title">Seleziona configurazione da modificare</string>
     <string name="headset_title">Cuffie</string>
     <string name="speaker_title">Altoparlante telefono</string>
     <string name="bluetooth_title">Dispositivo bluetooth</string>
+    <string name="usb_title">Dispositivo USB/Dock</string>
     <string name="audio_effects">Effetti audio</string>
     <string name="pref_unavailable">Funzionalità non disponibile sul tuo dispositivo</string>
     <string name="dsp_settings_headset">Impostazioni DSP - Cuffie</string>
     <string name="dsp_settings_speaker">Impostazioni DSP - Altoparlante Telefono</string>
     <string name="dsp_settings_bluetooth">Impostazioni DSP - Dispositivo Bluetooth</string>
+    <string name="dsp_settings_usb">Impostazioni DSP - Dispositivo USB</string>
     <string name="dsp_settings_wm8994">Impostazioni DSP - WM8994</string>
     <string name="pref_dsp_title">Dynamic Range Compression</string>
     <string name="pref_dsp_summary_on">Compressione attiva</string>
@@ -114,8 +117,8 @@ Android, vale a dire la maggior parte dei lettori musicali.
 \n
 \n<b>Filosofia</b>
 \n
-\nL\'elaborazione audio CyanogenMod supporta tre diverse categorie di uscita:
-auricolare, vivavoce e auricolare bluetooth. Vi è un pannello di configurazione
+\nL\'elaborazione audio CyanogenMod supporta quattro diverse categorie di uscita:
+auricolare, vivavoce, auricolare bluetooth e audio USB. Vi è un pannello di configurazione
 per ciascuna categoria di uscita. La filosofia di DSP Manager è quella di
 correggere le particolari carenze di ogni uscita audio per raggiungere la più
 ottimale esperienza d\'ascolto.
