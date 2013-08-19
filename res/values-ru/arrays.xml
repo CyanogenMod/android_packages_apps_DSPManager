@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="headphone_modes">
-        <item>Студия</item>
-        <item>Комната</item>
-        <item>Большая комната</item>
-        <item>Арена</item>
-    </string-array>
-    <string-array name="compression_modes">
-        <item>Слабый</item>
-        <item>Умеренный</item>
-        <item>Экстремальный</item>
-    </string-array>
-    <string-array name="bassboost_modes">
-        <item>Слабый</item>
-        <item>Умеренный</item>
-        <item>Экстремальный</item>
-    </string-array>
+  <string-array name="microphone_recording_presets">
+    <item>Оригинальный</item>
+    <item>Сбалансированный</item>
+    <item>Выс. чувствительность</item>
+    <item>Шумная обстановка</item>
+  </string-array>
+  <string-array name="headphone_modes">
+    <item>Студия</item>
+    <item>Комната</item>
+    <item>Большая комната</item>
+    <item>Арена</item>
+  </string-array>
+  <string-array name="compression_modes">
+    <item>Слабый</item>
+    <item>Умеренный</item>
+    <item>Экстремальный</item>
+  </string-array>
+  <string-array name="bassboost_modes">
+    <item>Слабый</item>
+    <item>Умеренный</item>
+    <item>Экстремальный</item>
+  </string-array>
   <string-array name="equalizer_loudness_modes">
-      <item>Откл.</item>
-      <item>Слабейшая</item>
-      <item>Слабее</item>
-      <item>Слабая</item>
-      <item>Сильная</item>
-      <item>Сильнее</item>
-      <item>Сильнейшая</item>
+    <item>Откл.</item>
+    <item>Слабейшая</item>
+    <item>Слабее</item>
+    <item>Слабая</item>
+    <item>Сильная</item>
+    <item>Сильнее</item>
+    <item>Сильнейшая</item>
+  </string-array>
+  <string-array name="wm8994_bassboost_modes">
+    <item>Стандартный</item>
+    <item>Маленькие динамики</item>
   </string-array>
 </resources>
