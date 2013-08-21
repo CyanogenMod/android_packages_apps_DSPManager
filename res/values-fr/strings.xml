@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2012-2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,11 +20,13 @@
     <string name="headset_title">Casque</string>
     <string name="speaker_title">Haut-parleur du téléphone</string>
     <string name="bluetooth_title">Périphérique Bluetooth</string>
+    <string name="usb_title">USB/Station d\'accueil</string>
     <string name="audio_effects">Autres effets audio</string>
     <string name="pref_unavailable">Fonctionnalité non disponible pour votre appareil</string>
     <string name="dsp_settings_headset">Paramètres DSP - Casque</string>
     <string name="dsp_settings_speaker">Paramètres DSP - Haut-parleur</string>
     <string name="dsp_settings_bluetooth">Paramètres DSP - Bluetooth</string>
+    <string name="dsp_settings_usb">Paramètres DSP - Appareil USB</string>
     <string name="dsp_settings_wm8994">Paramètres DSP - WM8994</string>
     <string name="pref_dsp_title">Compresseur audio dynamique</string>
     <string name="pref_dsp_summary_on">La compression est activée</string>
@@ -108,7 +111,7 @@
 \n
 \n<b>Philosophie</b>
 \n
-\nLe traitement audio de CyanogenMod prend en charge trois types de sortie différents : casque filaire, haut parleur et casque bluetooth. Il y a un panneau de configuration pour chaque sortie. La philosophie de DSP Manager est de corriger les lacunes de chaque type de sortie de manière différente afin d\'obtenir l\'expérience utilisateur optimum.
+\nLe traitement audio de CyanogenMod prend en charge quatre types de sortie différents : casque filaire, haut parleur, casque bluetooth et l\'audio via USB. Il y a un panneau de configuration pour chaque sortie. La philosophie de DSP Manager est de corriger les lacunes de chaque type de sortie de manière différente afin d\'obtenir l\'expérience utilisateur optimum.
 \n
 \nContrairement aux effets audio AOSP, il n\'existe pas de paramètres pour chaque application. C\'est un choix de conception délibérée: c\'est la sortie qui nous intéresse, pas l\'application avec laquelle doit travailler DSP Manager.
 \n
