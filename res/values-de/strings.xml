@@ -126,7 +126,7 @@ Der Effektstärke-Regler bestimmt, wie stark der DSP Manager die Lautstärke des
 \n\n\n
 2. <b>Bassverstärkung</b>
 \n\n
-Die Bassverstärkung wird durch einen Tiefpassfilter erzeugt, Dabei wird versucht, die Betonung auf den Bass zu legen. Die Itensität der Verstärkung kann in den Einstellung geregelt werden.
+Die Bassverstärkung wird durch einen Tiefpassfilter erzeugt, wobei versucht wird, die Betonung auf den Bass zu legen. Die Intensität der Verstärkung kann in den Einstellung geregelt werden.
 \n\n\n
 3. <b>Equalizer</b>
 \n\n
@@ -140,7 +140,7 @@ Die Loudness-Kompensation wirkt zusätzlich zur gewählten Einstellung des Equal
 \n\n\n
 4. <b>Virtueller Raumklang</b>
 \n\n
-Der "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspiriert wurde. Der Effekt bleibt bei Mono unverändert, bei Stereo wird der Unterschied zwischen den zwei Signalen durch einen Tiefpassfilter, also näher oder weiter entfernt vom Benutzer, dargestellt. Dahinter steckt die Absicht, den Benutzer vor einer Hörermüdung, die durch unplausible Stereo-Trennung entsteht, zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
+Der "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspiriert wurde. Er lässt Monosignale unverändert passieren; lediglich das Differenzsignal wird mittels eines Tiefpassfilters beeinflusst. Der Filter erzeugt gleichzeitig einen Kopfschatteneffekt und eine interaurale Laufzeitdifferenz, um dem Hörer einen korrekten psychoakustischen Eindruck zu vermitteln. Dahinter steckt die Absicht, den Benutzer vor einer Hörermüdung durch unplausible Stereo-Trennung zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
 \n\n
 Da das Mischen die (Stereo-)Kanaltrennung reduziert, entsteht ein Echo-Effekt, der für die Erhöhung der Basisbreite verwendet werden kann. Dieser Effekt wird durch die Raumtyp-Einstellung beinflusst.</string>
 </resources>
