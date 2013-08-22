@@ -6,7 +6,6 @@
     <item>Stort rum</item>
     <item>Scen</item>
     </string-array>
-
   <string-array name="equalizer_loudness_modes">
       <item>Inaktiverad</item>
       <item>Svagast</item>
@@ -16,17 +15,14 @@
       <item>Starkare</item>
       <item>Starkast</item>
   </string-array>
-
   <string-array name="compression_modes">
     <item>Lätt</item>
     <item>Måttlig</item>
     <item>Extrem</item>
   </string-array>
-
   <string-array name="bassboost_modes">
     <item>Lätt</item>
     <item>Måttlig</item>
     <item>Extrem</item>
   </string-array>
-
 </resources>
