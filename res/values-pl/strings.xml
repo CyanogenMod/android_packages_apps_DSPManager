@@ -6,11 +6,13 @@
     <string name="headset_title">Zestaw słuchawkowy</string>
     <string name="speaker_title">Głośnik</string>
     <string name="bluetooth_title">Urządzenie Bluetooth</string>
+    <string name="usb_title">USB/Stacja dokująca</string>
     <string name="audio_effects">Efekty dźwiękowe</string>
     <string name="pref_unavailable">Funkcjonalność niedostępna dla urządzenia</string>
     <string name="dsp_settings_headset">Ustawienia DSP - Zestaw słuchawkowy</string>
     <string name="dsp_settings_speaker">Ustawienia DSP - Głośnik</string>
     <string name="dsp_settings_bluetooth">Ustawienia DSP - Bluetooth</string>
+    <string name="dsp_settings_usb">Ustawienia DSP - Urządzenie USB</string>
     <string name="dsp_settings_wm8994">Ustawienia DSP - WM8994</string>
     <string name="pref_dsp_title">Kompresja zakresu dynamiki</string>
     <string name="pref_dsp_summary_on">Kompresja jest włączona</string>
