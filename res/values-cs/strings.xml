@@ -1,14 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <resources>
   <string name="select_configuration_title">Zvolte nastavení ke změně</string>
   <string name="headset_title">Sluchátka</string>
   <string name="speaker_title">Reproduktor</string>
   <string name="bluetooth_title">Zařízení Bluetooth</string>
+  <string name="usb_title">USB/Dok</string>
   <string name="audio_effects">Zvukové efekty</string>
   <string name="pref_unavailable">Tato funkce není na Vašem zařízení dostupná.</string>
   <string name="dsp_settings_headset">Nastavení DSP - sluchátka</string>
   <string name="dsp_settings_speaker">Nastavení DSP - reproduktor</string>
   <string name="dsp_settings_bluetooth">Nastavení DSP - zařízení Bluetooth</string>
+  <string name="dsp_settings_usb">Nastavení DSP - zařízení USB</string>
   <string name="dsp_settings_wm8994">Nastavení DSP - WM8994</string>
   <string name="pref_dsp_title">Komprese dynamiky signálu (DRC)</string>
   <string name="pref_dsp_summary_on">Komprese povolena</string>
@@ -98,11 +115,11 @@ není součástí vlastní aplikace, která vytváří zvuk; tento správce mů�
 toto DSP aktivovat pro Android aplikace, které jsou vytvořeny v souladu se
 specifikací zvukového subsystému Androidu - což splňuje většina přehrávačů.\n
 \n<b>Filozofie</b>\n
-\nZvukové zpracování v CyanogenModu podporuje tři různé výstupní kategorie:
-drátová sluchátka, telefonní reproduktor a sluchátka připojené pomocí
-Bluetooth. Pro každou tuto kategorii je vlastní konfigurační panel. Filozofie
-DSPManagera je upravit jednotlivý zvukový výstup tak, aby bylo docíleno
-nejlepšího poslechu.\n
+\nZvukové zpracování v CyanogenModu podporuje čtyři různé výstupní kategorie:
+drátová sluchátka, USB audio, telefonní reproduktor a sluchátka připojené
+pomocí Bluetooth. Pro každou tuto kategorii je vlastní konfigurační panel.
+Filozofie DSPManagera je upravit jednotlivý zvukový výstup tak, aby bylo
+docíleno nejlepšího poslechu.\n
 \nNa rozdíl od zvukových efektů AOSP není toto nastavení rozlišeno na
 jednotlivé aplikace, což byl hlavní záměr této aplikace: upravuje se konkrétní
 zvukový výstup a je jedno, která aplikace do tohoto výstupu generuje zvuk.\n
