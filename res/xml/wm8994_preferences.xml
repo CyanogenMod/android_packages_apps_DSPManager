@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/dsp_settings_wm8994" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--  Speaker options -->
     <PreferenceCategory
