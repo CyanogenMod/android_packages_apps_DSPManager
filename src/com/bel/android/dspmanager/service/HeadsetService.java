@@ -19,9 +19,6 @@ import android.util.Log;
 
 import com.bel.android.dspmanager.activity.DSPManager;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -46,8 +43,6 @@ public class HeadsetService extends Service {
     protected static class EffectSet {
         private static final UUID EFFECT_TYPE_VOLUME =
                 UUID.fromString("09e8ede0-ddde-11db-b4f6-0002a5d5c51b");
-        private static final UUID EFFECT_TYPE_NULL =
-                UUID.fromString("ec7178ec-e5e1-4432-a3f4-4657e6795210");
 
         /** Session-specific dynamic range compressor */
         public final AudioEffect mCompression;
@@ -60,17 +55,14 @@ public class HeadsetService extends Service {
 
         protected EffectSet(int sessionId) {
             try {
-                /*
-                 * AudioEffect constructor is not part of SDK. We use reflection
-                 * to access it.
-                 */
-                Constructor<AudioEffect> constructor = AudioEffect.class.getConstructor(
-                        UUID.class, UUID.class, Integer.TYPE, Integer.TYPE);
-                mCompression = constructor.newInstance(EFFECT_TYPE_VOLUME,
-                        EFFECT_TYPE_NULL, 0, sessionId);
-            } catch (Exception e) {
+                mCompression = new AudioEffect(EFFECT_TYPE_VOLUME,
+                        AudioEffect.EFFECT_TYPE_NULL, 0, sessionId);
+            } catch (IllegalArgumentException e) {
+                throw new RuntimeException(e);
+            } catch (UnsupportedOperationException e) {
                 throw new RuntimeException(e);
             }
+
             mEqualizer = new Equalizer(0, sessionId);
             mBassBoost = new BassBoost(0, sessionId);
             mVirtualizer = new Virtualizer(0, sessionId);
@@ -81,41 +73,6 @@ public class HeadsetService extends Service {
             mEqualizer.release();
             mBassBoost.release();
             mVirtualizer.release();
-        }
-
-        /**
-         * Proxies call to AudioEffect.setParameter(byte[], byte[]) which is
-         * available via reflection.
-         *
-         * @param audioEffect
-         * @param parameter
-         * @param value
-         */
-        private static void setParameter(AudioEffect audioEffect, int parameter, short value) {
-            try {
-                byte[] arguments = new byte[] {
-                    (byte) (parameter),
-                    (byte) (parameter >> 8),
-                    (byte) (parameter >> 16),
-                    (byte) (parameter >> 24)
-                };
-                byte[] result = new byte[] {
-                    (byte) (value),
-                    (byte) (value >> 8)
-                };
-
-                Method setParameter = AudioEffect.class.getMethod(
-                        "setParameter", byte[].class, byte[].class);
-                int returnValue = (Integer) setParameter.invoke(audioEffect, arguments, result);
-
-                if (returnValue != 0) {
-                    Log.e(TAG, String.format(
-                            "Invalid argument error in setParameter(%d, (short) %d) == %d",
-                            parameter, value, returnValue));
-                }
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 
@@ -325,33 +282,51 @@ public class HeadsetService extends Service {
         }
     }
 
-    private void updateDsp(SharedPreferences preferences, EffectSet session) {
-        session.mCompression.setEnabled(preferences.getBoolean("dsp.compression.enable", false));
-        EffectSet.setParameter(session.mCompression, 0,
-                Short.valueOf(preferences.getString("dsp.compression.mode", "0")));
+    private void updateDsp(SharedPreferences prefs, EffectSet session) {
+        session.mCompression.setEnabled(prefs.getBoolean("dsp.compression.enable", false));
+        session.mCompression.setParameter(intToByteArray(0),
+                shortToByteArray(Short.valueOf(prefs.getString("dsp.compression.mode", "0"))));
 
-        session.mBassBoost.setEnabled(preferences.getBoolean("dsp.bass.enable", false));
-        session.mBassBoost.setStrength(Short.valueOf(preferences.getString("dsp.bass.mode", "0")));
+        session.mBassBoost.setEnabled(prefs.getBoolean("dsp.bass.enable", false));
+        session.mBassBoost.setStrength(Short.valueOf(prefs.getString("dsp.bass.mode", "0")));
 
-        session.mEqualizer.setEnabled(preferences.getBoolean("dsp.tone.enable", false));
+        session.mEqualizer.setEnabled(prefs.getBoolean("dsp.tone.enable", false));
+        float[] equalizerLevels;
         if (mOverriddenEqualizerLevels != null) {
-            for (short i = 0; i < mOverriddenEqualizerLevels.length; i ++) {
-                session.mEqualizer.setBandLevel(i,
-                        (short) Math.round((mOverriddenEqualizerLevels[i] * 100)));
-            }
+            equalizerLevels = mOverriddenEqualizerLevels;
         } else {
             /* Equalizer state is in a single string preference with all values separated by ; */
-            String[] levels = preferences.getString("dsp.tone.eq.custom", "0;0;0;0;0").split(";");
-            for (short i = 0; i < levels.length; i ++) {
-                session.mEqualizer.setBandLevel(i,
-                        (short) Math.round(Float.valueOf(levels[i]) * 100));
+            String[] levels = prefs.getString("dsp.tone.eq.custom", "0;0;0;0;0").split(";");
+            equalizerLevels = new float[levels.length];
+            for (int i = 0; i < levels.length; i++) {
+                equalizerLevels[i] = Float.valueOf(levels[i]);
             }
         }
-        EffectSet.setParameter(session.mEqualizer, 1000,
-                Short.valueOf(preferences.getString("dsp.tone.loudness", "10000")));
 
-        session.mVirtualizer.setEnabled(preferences.getBoolean("dsp.headphone.enable", false));
+        for (short i = 0; i < equalizerLevels.length; i ++) {
+            session.mEqualizer.setBandLevel(i, (short) Math.round(equalizerLevels[i] * 100));
+        }
+        session.mEqualizer.setParameter(intToByteArray(1000),
+                shortToByteArray(Short.valueOf(prefs.getString("dsp.tone.loudness", "10000"))));
+
+        session.mVirtualizer.setEnabled(prefs.getBoolean("dsp.headphone.enable", false));
         session.mVirtualizer.setStrength(
-                Short.valueOf(preferences.getString("dsp.headphone.mode", "0")));
+                Short.valueOf(prefs.getString("dsp.headphone.mode", "0")));
+    }
+
+    private static byte[] intToByteArray(int value) {
+        return new byte[] {
+            (byte) (value),
+            (byte) (value >> 8),
+            (byte) (value >> 16),
+            (byte) (value >> 24)
+        };
+    }
+
+    private static byte[] shortToByteArray(short value) {
+        return new byte[] {
+            (byte) (value),
+            (byte) (value >> 8)
+        };
     }
 }
