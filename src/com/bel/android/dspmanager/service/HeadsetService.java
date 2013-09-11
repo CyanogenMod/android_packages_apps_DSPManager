@@ -1,7 +1,6 @@
 package com.bel.android.dspmanager.service;
 
 import android.app.Service;
-import android.bluetooth.BluetoothClass;
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -205,31 +204,14 @@ public class HeadsetService extends Service {
                     playerIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(playerIntent);
                 }
-            } else if (action.equals(BluetoothDevice.ACTION_ACL_CONNECTED)) {
-                final BluetoothDevice device =
-                        (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                final int deviceClass = device.getBluetoothClass().getDeviceClass();
-
-                if (deviceClass == BluetoothClass.Device.AUDIO_VIDEO_HEADPHONES
-                        || deviceClass == BluetoothClass.Device.AUDIO_VIDEO_WEARABLE_HEADSET) {
-                    mUseBluetooth = true;
-                }
+            } else if (action.equals(BluetoothDevice.ACTION_ACL_CONNECTED)
+                    || action.equals(BluetoothDevice.ACTION_ACL_DISCONNECTED)) {
+                mUseBluetooth = am.isBluetoothA2dpOn();
             } else if (action.equals(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG)) {
                 mUseUSB = intent.getIntExtra("state", 0) == 1;
             } else if (action.equals(AudioManager.ACTION_AUDIO_BECOMING_NOISY)) {
                 mUseBluetooth = am.isBluetoothA2dpOn();
                 mUseHeadset = am.isWiredHeadsetOn();
-            } else if (action.equals(BluetoothDevice.ACTION_ACL_DISCONNECTED)) {
-                final BluetoothDevice device =
-                        (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                if (device == null || device.getBluetoothClass() == null) {
-                    return;
-                }
-                final int deviceClass = device.getBluetoothClass().getDeviceClass();
-                if (deviceClass == BluetoothClass.Device.AUDIO_VIDEO_HEADPHONES
-                        || deviceClass == BluetoothClass.Device.AUDIO_VIDEO_WEARABLE_HEADSET) {
-                    mUseBluetooth = false;
-                }
             }
 
             Log.i(TAG, "Headset=" + mUseHeadset + "; Bluetooth="
