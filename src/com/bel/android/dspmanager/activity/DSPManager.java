@@ -72,7 +72,8 @@ public final class DSPManager extends FragmentActivity {
         viewPager.setAdapter(pagerAdapter);
 
         pagerTabStrip.setDrawFullUnderline(true);
-        pagerTabStrip.setTabIndicatorColor(getResources().getColor(android.R.color.holo_blue_light));
+        pagerTabStrip.setTabIndicatorColor(
+                getResources().getColor(android.R.color.holo_blue_light));
     }
 
     @Override

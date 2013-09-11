@@ -79,7 +79,8 @@ public class BassBoostPreference extends DialogPreference {
         for (int i = 0; i < SEEKBAR_ID.length; i++) {
             SeekBar seekBar = (SeekBar) view.findViewById(SEEKBAR_ID[i]);
             TextView valueDisplay = (TextView) view.findViewById(VALUE_DISPLAY_ID[i]);
-            mSeekBars[i] = new BassBoostSeekBar(seekBar, valueDisplay, BASS_BOOST_PREFS[i], SEEKBAR_MAX_VALUE[i], SEEKBAR_UOM[i]);
+            mSeekBars[i] = new BassBoostSeekBar(seekBar, valueDisplay,
+                    BASS_BOOST_PREFS[i], SEEKBAR_MAX_VALUE[i], SEEKBAR_UOM[i]);
         }
     }
 
@@ -145,9 +146,8 @@ public class BassBoostPreference extends DialogPreference {
         private int mSeekbarMax;
         private String mSeekbarUnit;
 
-        public BassBoostSeekBar(SeekBar seekBar, TextView valueDisplay, String pref, int maxValue, String uom) {
-            Log.d(TAG, "BassBoostSeekBar");
-
+        public BassBoostSeekBar(SeekBar seekBar, TextView valueDisplay,
+                String pref, int maxValue, String uom) {
             mSeekBar = seekBar;
             mValueDisplay = valueDisplay;
             mPref = pref;

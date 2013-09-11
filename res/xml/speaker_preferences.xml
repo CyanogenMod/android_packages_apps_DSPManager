@@ -1,34 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/dsp_settings_speaker">
-	<PreferenceCategory android:title="@string/pref_bassboost_title">
-		<CheckBoxPreference android:disableDependentsState="false"
-			android:key="dsp.bass.enable" android:summaryOn="@string/pref_bassboost_summary_on"
-			android:summaryOff="@string/pref_bassboost_summary_off"
-			android:title="@string/pref_bassboost_enable"></CheckBoxPreference>
-		<com.bel.android.dspmanager.preference.SummariedListPreference
-			android:entries="@array/bassboost_modes"
-			android:dialogTitle="@string/dialog_effect"
-			android:key="dsp.bass.mode"
-			android:defaultValue="0"
-			android:title="@string/pref_effect_title"
-			android:entryValues="@array/bassboost_modes_values"/>
-	</PreferenceCategory>
-	
-	<PreferenceCategory android:title="@string/pref_equalizer_title">
-		<CheckBoxPreference android:disableDependentsState="false"
-			android:key="dsp.tone.enable" android:summaryOn="@string/pref_equalizer_summary_on"
-			android:summaryOff="@string/pref_equalizer_summary_off"
-			android:title="@string/pref_equalizer_enable"></CheckBoxPreference>
-		<com.bel.android.dspmanager.preference.SummariedListPreference
-			android:entries="@array/equalizer_preset_modes"
-			android:dialogTitle="@string/pref_equalizer_preset_title"
-			android:key="dsp.tone.eq"
-			android:defaultValue="0.0;0.0;0.0;0.0;0.0;"
-			android:title="@string/pref_equalizer_preset_title"
-			android:entryValues="@array/equalizer_preset_values"/>
-		<com.bel.android.dspmanager.preference.EqualizerPreference 
-			android:key="dsp.tone.eq.custom"/>>
-	</PreferenceCategory>
+    android:title="@string/dsp_settings_speaker">
+
+    <PreferenceCategory
+        android:title="@string/pref_bassboost_title">
+
+        <CheckBoxPreference
+            android:key="dsp.bass.enable"
+            android:disableDependentsState="false"
+            android:summaryOn="@string/pref_bassboost_summary_on"
+            android:summaryOff="@string/pref_bassboost_summary_off"
+            android:title="@string/pref_bassboost_enable" />
+
+        <com.bel.android.dspmanager.preference.SummariedListPreference
+            android:key="dsp.bass.mode"
+            android:entries="@array/bassboost_modes"
+            android:dialogTitle="@string/dialog_effect"
+            android:defaultValue="0"
+            android:title="@string/pref_effect_title"
+            android:entryValues="@array/bassboost_modes_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_equalizer_title">
+
+        <CheckBoxPreference
+            android:key="dsp.tone.enable"
+            android:disableDependentsState="false"
+            android:summaryOn="@string/pref_equalizer_summary_on"
+            android:summaryOff="@string/pref_equalizer_summary_off"
+            android:title="@string/pref_equalizer_enable" />
+
+        <com.bel.android.dspmanager.preference.SummariedListPreference
+            android:key="dsp.tone.eq"
+            android:entries="@array/equalizer_preset_modes"
+            android:dialogTitle="@string/pref_equalizer_preset_title"
+            android:defaultValue="0.0;0.0;0.0;0.0;0.0;"
+            android:title="@string/pref_equalizer_preset_title"
+            android:entryValues="@array/equalizer_preset_values" />
+
+        <com.bel.android.dspmanager.preference.EqualizerPreference 
+            android:key="dsp.tone.eq.custom" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
