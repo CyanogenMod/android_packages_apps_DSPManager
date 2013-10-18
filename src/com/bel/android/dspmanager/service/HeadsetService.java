@@ -271,8 +271,9 @@ public class HeadsetService extends Service {
 
     private void updateDsp(SharedPreferences prefs, EffectSet session) {
         session.mCompression.setEnabled(prefs.getBoolean("dsp.compression.enable", false));
-        session.mCompression.setParameter(intToByteArray(0),
-                shortToByteArray(Short.valueOf(prefs.getString("dsp.compression.mode", "0"))));
+        session.mCompression.setParameter(session.mCompression.intToByteArray(0),
+                session.mCompression.shortToByteArray(
+                        Short.valueOf(prefs.getString("dsp.compression.mode", "0"))));
 
         session.mBassBoost.setEnabled(prefs.getBoolean("dsp.bass.enable", false));
         session.mBassBoost.setStrength(Short.valueOf(prefs.getString("dsp.bass.mode", "0")));
@@ -293,27 +294,12 @@ public class HeadsetService extends Service {
         for (short i = 0; i < equalizerLevels.length; i ++) {
             session.mEqualizer.setBandLevel(i, (short) Math.round(equalizerLevels[i] * 100));
         }
-        session.mEqualizer.setParameter(intToByteArray(1000),
-                shortToByteArray(Short.valueOf(prefs.getString("dsp.tone.loudness", "10000"))));
+        session.mEqualizer.setParameter(session.mEqualizer.intToByteArray(1000),
+                session.mEqualizer.shortToByteArray(
+                        Short.valueOf(prefs.getString("dsp.tone.loudness", "10000"))));
 
         session.mVirtualizer.setEnabled(prefs.getBoolean("dsp.headphone.enable", false));
         session.mVirtualizer.setStrength(
                 Short.valueOf(prefs.getString("dsp.headphone.mode", "0")));
-    }
-
-    private static byte[] intToByteArray(int value) {
-        return new byte[] {
-            (byte) (value),
-            (byte) (value >> 8),
-            (byte) (value >> 16),
-            (byte) (value >> 24)
-        };
-    }
-
-    private static byte[] shortToByteArray(short value) {
-        return new byte[] {
-            (byte) (value),
-            (byte) (value >> 8)
-        };
     }
 }
