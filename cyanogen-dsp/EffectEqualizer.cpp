@@ -279,8 +279,8 @@ int32_t EffectEqualizer::command(uint32_t cmdCode, uint32_t cmdSize, void* pCmdD
         }
 
         if (cep->psize == 4 && cep->vsize == 2) {
-            int32_t cmd = ((int32_t *) cep)[3];
-            int32_t arg = ((int32_t *) cep)[4];
+            int32_t cmd = *((int32_t *) cep->data);
+            int16_t arg = *((int16_t *) (cep->data + sizeof(int32_t)));
 
             if (cmd == EQ_PARAM_CUR_PRESET && arg >= 0 && arg < gNumPresets) {
                     sizeof(const int16_t *);
