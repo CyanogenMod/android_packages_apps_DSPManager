@@ -28,12 +28,12 @@
   </string-array>
   <string-array name="equalizer_loudness_modes">
     <item>Išjungta</item>
-    <item>Silpniausias</item>
-    <item>Silpnesnis</item>
-    <item>Silpnas</item>
-    <item>Stiprus</item>
-    <item>Stipresnis</item>
-    <item>Stipriausias</item>
+    <item>Silpniausia</item>
+    <item>Silpnesnė</item>
+    <item>Silpna</item>
+    <item>Stipri</item>
+    <item>Stipresnė</item>
+    <item>Stipriausia</item>
   </string-array>
   <string-array name="compression_modes">
     <item>Silpnas</item>

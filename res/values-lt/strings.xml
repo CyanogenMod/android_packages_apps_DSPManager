@@ -15,7 +15,7 @@
     limitations under the License.
 -->
 <resources>
-    <string name="app_name">DSP Manager</string>
+    <string name="app_name">Garso valdymas</string>
     <string name="select_configuration_title">Pasirinkite redaguoti norimą konfigūraciją</string>
     <string name="headset_title">Laisvų rankų įranga</string>
     <string name="speaker_title">Garsiakalbis</string>
@@ -29,8 +29,8 @@
     <string name="dsp_settings_usb">DSP nustatymai - USB prietaisas</string>
     <string name="dsp_settings_wm8994">DSP nustatymai - WM8994</string>
     <string name="pref_dsp_title">Dinaminė diapazono kompresija</string>
-    <string name="pref_dsp_summary_on">Kompresija įjungta</string>
-    <string name="pref_dsp_summary_off">Kompresija išjungta</string>
+    <string name="pref_dsp_summary_on">Dinaminė diapazono kompresija įjungta</string>
+    <string name="pref_dsp_summary_off">Dinaminė diapazono kompresija išjungta</string>
     <string name="pref_dsp_enable">Įjungti</string>
     <string name="pref_effect_title">Pasirinkite efekto stiprumą</string>
     <string name="dialog_effect">Efekto stiprumas</string>
@@ -38,7 +38,7 @@
     <string name="pref_equalizer_summary_on">Ekvalaizeris įjungtas</string>
     <string name="pref_equalizer_summary_off">Ekvalaizeris išjungtas</string>
     <string name="pref_equalizer_enable">Įjungti</string>
-    <string name="pref_equalizer_preset_title">Pasirinkite iš anksto nustatytus</string>
+    <string name="pref_equalizer_preset_title">Išankstiniai nustatymai</string>
     <string name="pref_equalizer_loudness_title">Garsumo kompensacija</string>
     <string name="pref_bassboost_title">Žemų dažnių stiprintuvas</string>
     <string name="pref_bassboost_summary_on">Žemų dažnių stiprintuvas įjungtas</string>
@@ -75,7 +75,7 @@
     <string name="wm8994_settings_title_head">Garso nustatymai</string>
     <string name="wm8994_settings_title_subhead">Garso nustatymai</string>
     <string name="wm8994_settings_summary_head">Išplėstinė WM8994 garso procesoriaus kontrolė</string>
-    <string name="pref_wm8994_microphone_recording_title">Įrašymo išankstiniai nustatymai</string>
+    <string name="pref_wm8994_microphone_recording_title">Išankstiniai nustatymai</string>
     <string name="pref_wm8994_headphone_amp_title">Stiprintuvo lygis</string>
     <string name="pref_wm8994_headphone_amp_summary">Redaguoti analoginį stiprintuvą</string>
     <string name="pref_wm8994_headphone_amp_dlg_title">Laisvų rankų įrangos stiprintuvo lygis</string>
@@ -84,7 +84,7 @@
     <string name="pref_wm8994_bass_boost_enable_summary">Išplėstinė žemų dažnių stiprintuvo kontrolė</string>
     <string name="pref_wm8994_bass_boost_title">Žemų dažnių diapazonas</string>
     <string name="pref_wm8994_bass_boost_summary">Išplėstinis dinaminio diapazono valdymas</string>
-    <string name="pref_wm8994_bass_boost_preset_title">Žemų dažnių išankstiniai nustatymai</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Išankstiniai nustatymai</string>
     <string name="pref_wm8994_bass_boost_dlg_title">Žemi dažniai</string>
     <string name="pref_wm8994_bass_boost_gain_dlg_desc">Stiprintuvas</string>
     <string name="pref_wm8994_bass_boost_range_dlg_desc">Žemų dažnių diapazonas</string>
@@ -95,7 +95,7 @@
     <string name="pref_wm8994_mono_downmix_title">Mono konvertavimas</string>
     <string name="pref_wm8994_mono_downmix_summary">Konvertuoti stereo garsą į mono (stereo išėjimams, pavyzdžiui, ausinėms)</string>
     <string name="pref_wm8994_stereo_expansion_title">Stereo plėtra</string>
-    <string name="pref_wm8994_stereo_expansion_summary">Išplėsti stereo garsą per skaitmeninių signalų apdorojimą</string>
+    <string name="pref_wm8994_stereo_expansion_summary">Išplėsti stereo garsą naudojant skaitmeninio signalo apdorojimą</string>
     <string name="pref_wm8994_dac_direct_title">Tiesioginis D/AC</string>
     <string name="pref_wm8994_dac_direct_summary">Prieiga prie skaitmeninio/analoginio konverterio tiesiogiai, apeinant kanalų mikserį. Gamina aiškesnį garsą (didesnis signalo/triukšmo santykis)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-fi atkūrimas</string>
@@ -104,4 +104,5 @@
     <string name="pref_wm8994_adc_osr128_summary">Analoginis-skaitmeninis keitiklis, 128x perviršinė atskaita - pagerina įrašų kokybę</string>
     <string name="pref_wm8994_fll_tuning_title">Suderintas garso dažnis</string>
     <string name="pref_wm8994_fll_tuning_summary">Naudokite suderintą WM8994 garso dažnį - pagerina garso kokybę</string>
+    <string name="help_title">Pagalba</string>
 </resources>
