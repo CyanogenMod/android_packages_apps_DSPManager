@@ -155,7 +155,8 @@ public class HeadsetService extends Service {
                 int state = intent.getIntExtra(BluetoothA2dp.EXTRA_STATE,
                         BluetoothA2dp.STATE_DISCONNECTED);
                 mUseBluetooth = state == BluetoothA2dp.STATE_CONNECTED;
-            } else if (action.equals(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG)) {
+            } else if (action.equals(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG) ||
+                       action.equals(Intent.ACTION_DIGITAL_AUDIO_DOCK_PLUG)) {
                 mUseUSB = intent.getIntExtra("state", 0) == 1;
             }
 
