@@ -15,7 +15,7 @@
     limitations under the License.
 -->
 <resources>
-    <string name="app_name">Garso valdymas</string>
+    <string name="app_name">DSP Manager</string>
     <string name="select_configuration_title">Pasirinkite redaguoti norimą konfigūraciją</string>
     <string name="headset_title">Laisvų rankų įranga</string>
     <string name="speaker_title">Garsiakalbis</string>
