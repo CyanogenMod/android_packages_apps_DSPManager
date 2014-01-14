@@ -106,41 +106,23 @@
     <string name="pref_wm8994_fll_tuning_summary">Stabilisierten WM8994-Audio-Takt benutzen &#8212; Verbessert die Klangqualität</string>
     <string name="help_title">Über</string>
     <string name="help_text"><b>Was ist der DSP Manager?</b>
-\n\n
-Der DSP Manager (Digital Signal Processing) ist eine Anwendung, mit der die Audioausgabe beeinflusst werden kann. Die Signalverarbeitung findet nicht im DSP Manager statt, sondern wird durch diesen gesteuert. Der DSP Manager kann von allen zu den Android-Audioeffekten kompatiblen Anwendungen verwendet werden.
-\n\n\n
-<b>Philosophie</b>
-\n\n
-CyanogenMod unterstützt vier verschiedene Audio-Ausgabewege:
+\nDer DSP Manager (Digital Signal Processing) ist eine Anwendung, mit der die Audioausgabe beeinflusst werden kann. Die Signalverarbeitung findet nicht im DSP Manager statt, sondern wird durch diesen gesteuert. Der DSP Manager kann von allen zu den Android-Audioeffekten kompatiblen Anwendungen verwendet werden.\n
+\n<b>Philosophie</b>
+\nCyanogenMod unterstützt vier verschiedene Audio-Ausgabewege:
 Kopfhörer, USB-Audio, Lautsprecher und Bluetooth-Geräte. Für jeden Ausgabeweg gibt es ein eigenes Konfigurationspanel, in dem die Besonderheiten des jeweiligen Ausgabeweges für ein optimales Hörerlebnis angepasst werden können.
-\n\n
-Im Gegensatz zu den AOSP-Audioeffekten gibt es keine anwendungsspezifischen Einstellungen. Dies wurde mit Absicht so konzipiert, denn die Audio-Ausgabe ist uns wichtig, nicht die Anwendung, welche die (Audio-)Daten an den DSP Manager übergibt.
-\n\n\n
-<b>Effekte</b>
-\n\n
-1. <b>Dynamikumfangskompression</b>
-\n\n
-Die Lautstärke wird an einen durchschnittlichen Hörer angepasst. Die Audiowiedergabe soll durch diesen Effekt weniger von Hintergrundgeräuschen, z.B. Straßenlärm, übertönt werden.
-\n\n
-Der Effektstärke-Regler bestimmt, wie stark der DSP Manager die Lautstärke des Tones beeinflussen soll. Für diesen DSP-Effekt gibt es keinen entsprechendenen AOSP-Effekt.
-\n\n\n
-2. <b>Bassverstärkung</b>
-\n\n
-Die Bassverstärkung wird durch einen Tiefpassfilter erzeugt, wobei versucht wird, die Betonung auf den Bass zu legen. Die Intensität der Verstärkung kann in den Einstellung geregelt werden.
-\n\n\n
-3. <b>Equalizer</b>
-\n\n
-Es handelt sich hier um einen Equalizer mit Frequenzbändern bei 16, 64, 250, 1000, 4000 und 16000 Hz. Einige gemeinsame Voreinstellungen sind verfügbar, außerdem kann der Frequenzgang durch Berühren des Equalizer-Graphen angepasst werden. Der Effekt sollte dafür benutzt werden, den Frequenzgang an den persönlichen Geschmack oder den Besonderheiten der Kopfhörer oder Lautsprecher abzustimmen.
-\n\n
-Bei Verwendung eines kabelgebundenen Kopfhörers erlaubt der Equalizer auch eine Loudness-Kompensation, welche die durch den Schalldruckpegel am Ohr des Benutzers entstehenden Frequenzveränderungen ausgleicht. Damit der gewünschte Effekt eintritt, muss zuerst im entsprechenden Menü der richtige Wert gewählt werden.
-\n\n
-Um die Effektstärke der Loudness-Kompensation einzustellen, sollte breitbandige Musik, z.B. Rock oder Metal, leise abgespielt werden. Man sollte versuchen, eine Einstellung zu finden, bei der die Hörbarkeit des Basses gesteigert wird, aber noch nicht hervorsticht. Nachdem die Kompensation richtig konfiguriert wurde, sollte der Bass-Pegel, unabhängig von der Hörlautstärke im Vergleich zum Pegel der anderen Instrumente, gleich bleiben. Wenn mit steigender Hörlautstärke die Musik basslastig wird, ist die Kompensation wahrscheinlich zu stark und sollte reduziert werden.
-\n\n
-Die Loudness-Kompensation wirkt zusätzlich zur gewählten Einstellung des Equalizers. Falls nur eine Kompensation erwünscht ist, sollte die Equalizer-Voreinstellung "Aus" gewählt werden.
-\n\n\n
-4. <b>Virtueller Raumklang</b>
-\n\n
-Der "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspiriert wurde. Er lässt Monosignale unverändert passieren; lediglich das Differenzsignal wird mittels eines Tiefpassfilters beeinflusst. Der Filter erzeugt gleichzeitig einen Kopfschatteneffekt und eine interaurale Laufzeitdifferenz, um dem Hörer einen korrekten psychoakustischen Eindruck zu vermitteln. Dahinter steckt die Absicht, den Benutzer vor einer Hörermüdung durch unplausible Stereo-Trennung zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
-\n\n
-Da das Mischen die (Stereo-)Kanaltrennung reduziert, entsteht ein Echo-Effekt, der für die Erhöhung der Basisbreite verwendet werden kann. Dieser Effekt wird durch die Raumtyp-Einstellung beinflusst.</string>
+\nIm Gegensatz zu den AOSP-Audioeffekten gibt es keine anwendungsspezifischen Einstellungen. Dies wurde mit Absicht so konzipiert, denn die Audio-Ausgabe ist uns wichtig, nicht die Anwendung, welche die (Audio-)Daten an den DSP Manager übergibt.\n
+\n<b>Effekte</b>
+\n1. <b>Dynamikumfangskompression</b>
+\nDie Lautstärke wird an einen durchschnittlichen Hörer angepasst. Die Audiowiedergabe soll durch diesen Effekt weniger von Hintergrundgeräuschen, z.B. Straßenlärm, übertönt werden.
+\nDer Effektstärke-Regler bestimmt, wie stark der DSP Manager die Lautstärke des Tones beeinflussen soll. Für diesen DSP-Effekt gibt es keinen entsprechendenen AOSP-Effekt.\n
+\n2. <b>Bassverstärkung</b>
+\nDie Bassverstärkung wird durch einen Tiefpassfilter erzeugt, wobei versucht wird, die Betonung auf den Bass zu legen. Die Intensität der Verstärkung kann in den Einstellung geregelt werden.\n
+\n3. <b>Equalizer</b>
+\nEs handelt sich hier um einen Equalizer mit Frequenzbändern bei 16, 64, 250, 1000, 4000 und 16000 Hz. Einige gemeinsame Voreinstellungen sind verfügbar, außerdem kann der Frequenzgang durch Berühren des Equalizer-Graphen angepasst werden. Der Effekt sollte dafür benutzt werden, den Frequenzgang an den persönlichen Geschmack oder den Besonderheiten der Kopfhörer oder Lautsprecher abzustimmen.
+\nBei Verwendung eines kabelgebundenen Kopfhörers erlaubt der Equalizer auch eine Loudness-Kompensation, welche die durch den Schalldruckpegel am Ohr des Benutzers entstehenden Frequenzveränderungen ausgleicht. Damit der gewünschte Effekt eintritt, muss zuerst im entsprechenden Menü der richtige Wert gewählt werden.\n
+\nUm die Effektstärke der Loudness-Kompensation einzustellen, sollte breitbandige Musik, z.B. Rock oder Metal, leise abgespielt werden. Man sollte versuchen, eine Einstellung zu finden, bei der die Hörbarkeit des Basses gesteigert wird, aber noch nicht hervorsticht. Nachdem die Kompensation richtig konfiguriert wurde, sollte der Bass-Pegel, unabhängig von der Hörlautstärke im Vergleich zum Pegel der anderen Instrumente, gleich bleiben. Wenn mit steigender Hörlautstärke die Musik basslastig wird, ist die Kompensation wahrscheinlich zu stark und sollte reduziert werden.
+\nDie Loudness-Kompensation wirkt zusätzlich zur gewählten Einstellung des Equalizers. Falls nur eine Kompensation erwünscht ist, sollte die Equalizer-Voreinstellung "Aus" gewählt werden.\n
+\n4. <b>Virtueller Raumklang</b>
+\nDer "Headset-Filter" ist ein "Crossfeed-Design", das von der berühmten bs2b-Analogschaltung inspiriert wurde. Er lässt Monosignale unverändert passieren; lediglich das Differenzsignal wird mittels eines Tiefpassfilters beeinflusst. Der Filter erzeugt gleichzeitig einen Kopfschatteneffekt und eine interaurale Laufzeitdifferenz, um dem Hörer einen korrekten psychoakustischen Eindruck zu vermitteln. Dahinter steckt die Absicht, den Benutzer vor einer Hörermüdung durch unplausible Stereo-Trennung zu schützen. Der Effekt sollte bei allen Stereo-Kopfhörern verwendet werden.
+\nDa das Mischen die (Stereo-)Kanaltrennung reduziert, entsteht ein Echo-Effekt, der für die Erhöhung der Basisbreite verwendet werden kann. Dieser Effekt wird durch die Raumtyp-Einstellung beinflusst.</string>
 </resources>
