@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="microphone_recording_presets">
+    <item>Orixinal</item>
+    <item>Equilibráu</item>
+    <item>Alta sensibilidá</item>
+    <item>Entornu ruidosu</item>
+  </string-array>
+
+  <string-array name="headphone_modes">
+    <item>Estudiu</item>
+    <item>Habitación</item>
+    <item>Gran habitación</item>
+    <item>Escenariu</item>
+    </string-array>
+
+  <string-array name="equalizer_loudness_modes">
+      <item>Deshabilitada</item>
+      <item>Mui feble</item>
+      <item>Feble</item>
+      <item>Llixera</item>
+      <item>Moderada</item>
+      <item>Fuerte</item>
+      <item>Mui fuerte</item>
+  </string-array>
+
+  <string-array name="compression_modes">
+    <item>Llixeru</item>
+    <item>Moderáu</item>
+    <item>Fuerte</item>
+  </string-array>
+
+  <string-array name="bassboost_modes">
+    <item>Llixeru</item>
+    <item>Moderáu</item>
+    <item>Fuerte</item>
+  </string-array>
+
+  <string-array name="wm8994_bassboost_modes">
+    <item>Estándar</item>
+    <item>Altavoces pequeños</item>
+  </string-array>
+
+</resources>
