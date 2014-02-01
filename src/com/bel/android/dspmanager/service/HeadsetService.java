@@ -183,6 +183,7 @@ public class HeadsetService extends Service {
         final IntentFilter intentFilter = new IntentFilter(Intent.ACTION_HEADSET_PLUG);
         intentFilter.addAction(BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED);
         intentFilter.addAction(Intent.ACTION_ANALOG_AUDIO_DOCK_PLUG);
+        intentFilter.addAction(Intent.ACTION_DIGITAL_AUDIO_DOCK_PLUG);
         intentFilter.addAction(AudioManager.ACTION_AUDIO_BECOMING_NOISY);
         registerReceiver(mRoutingReceiver, intentFilter);
 
@@ -258,7 +259,7 @@ public class HeadsetService extends Service {
     /**
      * Push new configuration to audio stack.
      */
-    protected void updateDsp() {
+    protected synchronized void updateDsp() {
         final String mode = getAudioOutputRouting();
         SharedPreferences preferences = getSharedPreferences(
                 DSPManager.SHARED_PREFERENCES_BASENAME + "." + mode, 0);
