@@ -59,7 +59,7 @@
     <string name="eq_preset_classical">Classical</string>
     <string name="eq_preset_deep">Deep</string>
     <string name="eq_preset_flat">Flat</string>
-    <string name="eq_preset_r_and_b">R\u0026B</string>
+    <string name="eq_preset_r_and_b">R&amp;B</string>
     <string name="eq_preset_rock">Rock</string>
     <string name="eq_preset_small_speakers">Small speakers</string>
     <string name="eq_preset_treble_booster">Treble booster</string>
@@ -106,12 +106,91 @@
     <string name="pref_wm8994_dac_direct_title">D/AC direct</string>
     <string name="pref_wm8994_dac_direct_summary">Access digital/analog converter directly, bypassing the channel mixer. Produces cleaner audio (higher signal-to-noise ratio)</string>
     <string name="pref_wm8994_dac_osr128_title">Hi-fi playback</string>
-    <string name="pref_wm8994_dac_osr128_summary">Digital-to-analog converter 128x oversampling \u2014 cleaner sound when playing music</string>
+    <string name="pref_wm8994_dac_osr128_summary">Digital-to-analog converter 128x oversampling &#8212; cleaner sound when playing music</string>
     <string name="pref_wm8994_adc_osr128_title">Hi-fi recording</string>
-    <string name="pref_wm8994_adc_osr128_summary">Analog-to-digital converter 128x oversampling \u2014 increases quality of recordings</string>
+    <string name="pref_wm8994_adc_osr128_summary">Analog-to-digital converter 128x oversampling &#8212; increases quality of recordings</string>
     <string name="pref_wm8994_fll_tuning_title">Tuned audio clock</string>
-    <string name="pref_wm8994_fll_tuning_summary">Use tuned WM8994 audio clock source \u2014 improves quality of sound</string>
+    <string name="pref_wm8994_fll_tuning_summary">Use tuned WM8994 audio clock source &#8212; improves quality of sound</string>
 
     <string name="help_title">Help</string>
-    <string name="help_text"><b>What is DSP Manager?</b>\n\nDSP Manager is a per-output audio adjustment app. <i>DSP</i> stands for Digital signal processing, and the <i>Manager</i> part refers to the fact that the DSP is actually not run inside the app itself; the manager can only enable it for apps which are compliant with Android\u0027s audio effect specification, i.e. most music players.\n\n\n<b>Philosophy</b>\n\nCyanogenMod\u0027s audio processing supports four different output categories: wired headset, USB audio, phone speaker and bluetooth headset. There is a separate configuration panel for each output category. DSP Manager\u0027s philosophy is to correct each audio output\u0027s particular deficiencies in order to reach the most optimal listening experience with each.\n\nUnlike with AOSP audio effects, there are no per-app settings. This is a deliberate design choice: it is the output we care about, not which app generates the audio for DSP Manager to work with.\n\n\n<b>Features</b>\n\n1. <b>Dynamic range compression (DRC)</b>\n\nThis effect estimates the loudness of the audio as perceived by an average listener and drives a gain control based on this estimate. The primary use case is with noisy environments such as in cars or on street, where quiet parts of music are in risk of being drowned out by background noise.\n\nThe sole tunable determines how hard DSP Manager will try to maintain audio loudness at the target level. There is no AOSP equivalent for this DSP effect.\n\n\n2. <b>Bass boost</b>\n\nThe bass boost is a simple lowpass filter which can be used to add an emphasis at 55 Hz and lower frequencies. The boost is around 6 dB, and modified by the \u2018strength\u2019 parameter, which adds filter resonance at the 55 Hz band, giving that frequency extra emphasis. The effect is designed to combat loss of bass frequency common with small speakers and supra-aural headsets which do not couple tightly with user\u0027s ear canal.\n\n\n3. <b>Equalizer</b>\n\nThis is a 6-band equalizer with bands at 16, 64, 250, 1000, 4000 and 16000 Hz. Some common presets are provided, and the frequency response can also be customized by tapping on the equalizer graph. The effect should be used to tune the frequency response to user\u0027s personal taste, or to the particular capabilities of the available headset or speakers.\n\n Equalizer also contains a loudness compensation filter, which equalizes the changes in ear frequency response based on the sound pressure level which reaches the user\u0027s ear. Use of a wired headset is required, and the strength parameter value must be tuned correctly before the effect will work as designed.\n\nTo select the right value for the compensation strength, use the quietest music volume, and choose some wide-spectrum noisy music such as rock or metal. Try to find a setting where the bass is boosted back into audibility and seems balanced with the rest of the material. After the compensation has been correctly configured, bass should remain at the same level relative to the other instruments regardless of the listening level. On the other hand, if music starts to sound bass heavy at higher listening levels, the compensation is probably set too strong, and should be reduced.\n\nThe compensation is added to the user\u0027s chosen adjustments. If only compensation is desired, the equalizer should be left in the \u2018Flat\u2019 setting.\n\n\n4. <b>Headset Filter</b>\n\nThe headset filter is a crossfeed design inspired by the famous bs2b analog circuit. The effect passes mono sound unchanged, and adjusts the difference signal through a lowpass filter which approximates both head shadow and interaural delay at once, giving right kind of psychoacoustic clues for user\u0027s ears. The intention is to prevent listener fatigue arising from the implausible stereo separation inherent with all headsets. The effect should be enabled whenever using stereo headsets.\n\nBecause the mixing reduces the stereo separation somewhat, there is a Haas effect reverb, which can be used to increase the perceived stereo image width. This is controlled by the \u2018Room type\u2019 control.</string>
+    <string name="help_text"><b>What is DSP Manager?</b>
+\n\n
+DSP Manager is a per-output audio adjustment app. <i>DSP</i> stands for
+Digital signal processing, and the <i>Manager</i> part refers to the fact that the
+DSP is actually not run inside the app itself; the manager can only
+enable it for apps which are compliant with Android\'s audio effect
+specification, i.e. most music players.
+\n\n\n
+<b>Philosophy</b>
+\n\n
+CyanogenMod\'s audio processing supports four different output categories:
+wired headset, USB audio, phone speaker and bluetooth headset. There is a separate
+configuration panel for each output category. DSP Manager\'s philosophy is to
+correct each audio output\'s particular deficiencies in order to reach the most
+optimal listening experience with each.
+\n\n
+Unlike with AOSP audio effects, there are no per-app settings. This is
+a deliberate design choice: it is the output we care about, not which
+app generates the audio for DSP Manager to work with.
+\n\n\n
+<b>Features</b>
+\n\n
+1. <b>Dynamic range compression (DRC)</b>
+\n\n
+This effect estimates the loudness of the audio as perceived by an average
+listener and drives a gain control based on this estimate. The primary use case
+is with noisy environments such as in cars or on street, where quiet parts of
+music are in risk of being drowned out by background noise.
+\n\n
+The sole tunable determines how hard DSP Manager will try to maintain audio
+loudness at the target level. There is no AOSP equivalent for this DSP effect.
+\n\n\n
+2. <b>Bass boost</b>
+\n\n
+The bass boost is a simple lowpass filter which can be used to add an emphasis
+at 55 Hz and lower frequencies. The boost is around 6 dB, and modified by the
+\'strength\' parameter, which adds filter resonance at the 55 Hz band, giving
+that frequency extra emphasis. The effect is designed to combat loss of bass
+frequency common with small speakers and supra-aural headsets which do not
+couple tightly with user\'s ear canal.
+\n\n\n
+3. <b>Equalizer</b>
+\n\n
+This is a 6-band equalizer with bands at 16, 64, 250, 1000, 4000 and 16000 Hz.
+Some common presets are provided, and the frequency response can also be
+customized by tapping on the equalizer graph. The effect should be used to tune
+the frequency response to user\'s personal taste, or to the particular
+capabilities of the available headset or speakers.
+\n\n
+Equalizer also contains a loudness compensation filter, which equalizes the
+changes in ear frequency response based on the sound pressure level which
+reaches the user\'s ear. Use of a wired headset is required, and the strength
+parameter value must be tuned correctly before the effect will work as
+designed.
+\n\n
+To select the right value for the compensation strength, use the quietest music
+volume, and choose some wide-spectrum noisy music such as rock or metal. Try
+to find a setting where the bass is boosted back into audibility and seems
+balanced with the rest of the material. After the compensation has been
+correctly configured, bass should remain at the same level relative to the
+other instruments regardless of the listening level. On the other hand, if
+music starts to sound bass heavy at higher listening levels, the compensation
+is probably set too strong, and should be reduced.
+\n\n
+The compensation is added to the user\'s chosen adjustments. If only compensation
+is desired, the equalizer should be left in the \'Flat\' setting.
+\n\n\n
+4. <b>Headset Filter</b>
+\n\n
+The headset filter is a crossfeed design inspired by the famous bs2b analog
+circuit. The effect passes mono sound unchanged, and adjusts the difference
+signal through a lowpass filter which approximates both head shadow and
+interaural delay at once, giving right kind of psychoacoustic clues for user\'s
+ears. The intention is to prevent listener fatigue arising from the
+implausible stereo separation inherent with all headsets. The effect should be
+enabled whenever using stereo headsets.
+\n\n
+Because the mixing reduces the stereo separation somewhat, there is a
+Haas effect reverb, which can be used to increase the perceived stereo image
+width. This is controlled by the \'Room type\' control.</string>
 </resources>
