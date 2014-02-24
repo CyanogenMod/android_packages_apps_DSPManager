@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!--
+     Copyright (C) 2010-2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
     <string name="app_name">Ecualizador</string>
     <string name="select_configuration_title">Seleccionar configuración a editar</string>
     <string name="headset_title">Auriculares</string>
@@ -70,7 +84,7 @@
     <string name="pref_wm8994_bass_boost_enable_summary">Ajustes avanzados de Bass Boost</string>
     <string name="pref_wm8994_bass_boost_title">Rango Bass Boost</string>
     <string name="pref_wm8994_bass_boost_summary">Gestión avanzada de rango dinámico</string>
-    <string name="pref_wm8994_bass_boost_preset_title">Bass Bost predefinido</string>
+    <string name="pref_wm8994_bass_boost_preset_title">Bass Boost predefinido</string>
     <string name="pref_wm8994_bass_boost_dlg_title">Bass Boost</string>
     <string name="pref_wm8994_bass_boost_gain_dlg_desc">Ganancia</string>
     <string name="pref_wm8994_bass_boost_range_dlg_desc">Rango Bass Boost</string>
@@ -83,7 +97,7 @@
     <string name="pref_wm8994_stereo_expansion_title">Expansión estéreo</string>
     <string name="pref_wm8994_stereo_expansion_summary">Expandir el sonido estéreo a través del procesamiento de señales digitales</string>
     <string name="pref_wm8994_dac_direct_title">Acceso D/A directo</string>
-    <string name="pref_wm8994_dac_direct_summary">Acceder conversor digital/analógico directamente, pasando por alto el canal mezclador. Produce un sonido más limpio (un mayor ratio de señal-a-sonido)</string>
+    <string name="pref_wm8994_dac_direct_summary">Acceder al conversor digital/analógico directamente, pasando por alto el canal mezclador. Produce un sonido más limpio (un mayor ratio de señal-a-sonido)</string>
     <string name="pref_wm8994_dac_osr128_title">Reproducción Hi-Fi</string>
     <string name="pref_wm8994_dac_osr128_summary">Sobremuestreo a 128x de conversión digital-a-analógico (limpia el sonido mientras se reproduce música)</string>
     <string name="pref_wm8994_adc_osr128_title">Grabación Hi-Fi</string>
@@ -91,7 +105,8 @@
     <string name="pref_wm8994_fll_tuning_title">Reloj de audio ajustado</string>
     <string name="pref_wm8994_fll_tuning_summary">Usar reloj de audio WM8994 ajustado (mejora la calidad del sonido)</string>
     <string name="help_title">Ayuda</string>
-    <string name="help_text"><b>¿Qué es DSP Manager?</b>
+    <string name="help_text">
+<b>¿Qué es DSP Manager?</b>
 \n\n
 DSP Manager (Ecualizador) es una aplicación para el ajuste del sonido.
 <i>DSP</i> significa Digital Signal Processing (Procesamiento de Señal Digital),
@@ -185,5 +200,5 @@ auriculares estéreo.
 A consecuencia del mezclado, se reduce algo la separación estéreo, teniendo
 un efecto de reverberación Haas, el cual puede ser utilizado para incrementar
 el ancho de la imagen estéreo percibida. Esto es controlado por el
-ajuste \u00ABTipo de habitación\u00BB.\n</string>
+ajuste \u00ABTipo de habitación\u00BB.</string>
 </resources>
