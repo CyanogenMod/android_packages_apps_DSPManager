@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2012 The Android Open Source Project
+<!--
+     Copyright (C) 2010-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,9 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">DSP Manager</string>
     <string name="select_configuration_title">Seleziona configurazione da modificare</string>
     <string name="headset_title">Cuffie</string>
@@ -82,21 +81,21 @@
     <string name="pref_wm8994_headphone_amp_dlg_title">Livello amplificatore cuffie</string>
     <string name="pref_wm8994_headphone_amp_dlg_desc">Miglioramento analogico</string>
     <string name="pref_wm8994_bass_boost_enable_title">Amplificazione bassi</string>
-    <string name="pref_wm8994_bass_boost_enable_summary">Controlli avanzati dell\'amplificazione Bassi</string>
+    <string name="pref_wm8994_bass_boost_enable_summary">Controlli avanzati dell\'amplificazione bassi</string>
     <string name="pref_wm8994_bass_boost_title">Intervallo amplificazione bassi</string>
     <string name="pref_wm8994_bass_boost_summary">Gestione avanzata dynamic range</string>
     <string name="pref_wm8994_bass_boost_preset_title">Effetto amplificazione bassi</string>
     <string name="pref_wm8994_bass_boost_dlg_title">Amplificazione bassi</string>
     <string name="pref_wm8994_bass_boost_gain_dlg_desc">Miglioramento</string>
     <string name="pref_wm8994_bass_boost_range_dlg_desc">Intervallo amplificazione bassi</string>
-    <string name="pref_wm8994_control_enable_title">Abilita il controllo di WM8994</string>
-    <string name="pref_wm8994_control_enable_summary">Abilita i controlli avanzati per il processore audio hardware WM8994</string>
+    <string name="pref_wm8994_control_enable_title">Attiva il controllo di WM8994</string>
+    <string name="pref_wm8994_control_enable_summary">Attiva i controlli avanzati per il processore audio hardware WM8994</string>
     <string name="pref_wm8994_speaker_tuning_title">Regola altoparlante</string>
     <string name="pref_wm8994_speaker_tuning_summary">Riconfigura l\'equalizzatore hardware per ottenere maggiori bassi ed un suono bilanciato</string>
     <string name="pref_wm8994_mono_downmix_title">Mono</string>
     <string name="pref_wm8994_mono_downmix_summary">Rendi mono il suono di tipo stereo (per le uscite stereo, come le cuffie)</string>
     <string name="pref_wm8994_stereo_expansion_title">Espansione stereo</string>
-    <string name="pref_wm8994_stereo_expansion_summary">&#8220;Espandi&#8221; il suono stereo attraverso l\'elaborazione digitale del segnale</string>
+    <string name="pref_wm8994_stereo_expansion_summary">\'Espandi\' il suono stereo attraverso l\'elaborazione digitale del segnale</string>
     <string name="pref_wm8994_dac_direct_title">D/AC diretto</string>
     <string name="pref_wm8994_dac_direct_summary">Accedi al convertitore digitale/analogico direttamente, aggirando il canale del mixer &#8212; Produce audio più pulito (rapporto segnale-rumore maggiore)</string>
     <string name="pref_wm8994_dac_osr128_title">Riproduzione Hi-Fi</string>
@@ -143,7 +142,7 @@ di una traccia musicale può essere coperta dal rumore di fondo.
 \n
 \nIl bass boost è un semplice filtro passabasso che può essere utilizzato per
 aggiungere un\'enfasi ai 55 Hz e alle frequenze più basse. L\'incremento è di
-circa 6 dB, e modificato dal parametro &#8220;forza&#8221;, che aggiunge la risonanza del
+circa 6 dB, e modificato dal parametro \'forza\', che aggiunge la risonanza del
 filtro alla banda dei 55 Hz, dando enfasi aggiuntiva a questa frequenza.
 L\'effetto è stato progettato per combattere la perdita dei bassi frequente con
 piccoli altoparlanti e cuffie.
@@ -158,7 +157,7 @@ le capacità di auticolari o altoparlanti.
 \n
 \nL\'equalizzatore contiene anche un filtro che compensa i cambiamenti della risposta
 dell\'orecchio in base al livello di pressione sonora che lo raggiunge. E\' richiesto
-l\'uso di una cuffia, e la &#8220;forza&#8221; è il parametro che deve essere sintonizzato
+l\'uso di una cuffia, e la \'forza\' è il parametro che deve essere sintonizzato
 correttamente prima che l\'effetto funzioni come dovuto.
 \n
 \nPer selezionare il giusto valore per la resistenza di compensazione, si consiglia di
@@ -170,7 +169,7 @@ Altrimenti, se i bassi ad un volume alto sono troppo forti, la compensazione pro
 è troppo forte, e deve essere ridotta.
 \n
 \nLa compensazione viene aggiunta alle regolazioni scelte dell\'utente.Se si desidera solo
-la compensazione, l\'equalizzatore dovrebbe essere impostato sul modello &#8220;Uniforme&#8221;.
+la compensazione, l\'equalizzatore dovrebbe essere impostato sul modello \'Uniforme\'.
 \n
 \n4. <b>Filtro cuffie</b>
 \n
@@ -183,7 +182,6 @@ stereo insita in tutte le cuffie. L\'effetto dovrebbe essere attivato quando si 
 auricolari stereo.
 \n
 \nPoiché la miscelazione riduce la separazione leggermente, vi è un effetto che può essere
-usato per aumentare la larghezza dell\'immagine stereo percepita, quest\'impostazione è
-&#8220;Tipo di stanza&#8221;.
+usato per aumentare la larghezza dell\'immagine stereo percepita, quest\'impostazione è \'Tipo di stanza\'.
     </string>
 </resources>

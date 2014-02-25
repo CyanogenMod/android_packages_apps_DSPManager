@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2012 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,41 +14,40 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string-array name="microphone_recording_presets">
-    <item>Originale</item>
-    <item>Bilanciato</item>
-    <item>Alta Sensibilità</item>
-    <item>Ambiente Rumoroso</item>
-  </string-array>
-  <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Sala</item>
-    <item>Sala grande</item>
-    <item>Palco</item>
-  </string-array>
-  <string-array name="equalizer_loudness_modes">
-    <item>Non attivo</item>
-    <item>Molto debole</item>
-    <item>Più debole</item>
-    <item>Debole</item>
-    <item>Forte</item>
-    <item>Più forte</item>
-    <item>Molto forte</item>
-   </string-array>
-  <string-array name="compression_modes">
-    <item>Lieve</item>
-    <item>Moderato</item>
-    <item>Estremo</item>
-  </string-array>
-  <string-array name="bassboost_modes">
-    <item>Lieve</item>
-    <item>Moderato</item>
-    <item>Estremo</item>
-  </string-array>
-  <string-array name="wm8994_bassboost_modes">
-    <item>Standard</item>
-    <item>Altoparlanti piccoli</item>
-  </string-array>
+    <string-array name="microphone_recording_presets">
+        <item>Originale</item>
+        <item>Bilanciato</item>
+        <item>Alta sensibilità</item>
+        <item>Ambiente rumoroso</item>
+    </string-array>
+    <string-array name="headphone_modes">
+        <item>Studio</item>
+        <item>Sala</item>
+        <item>Sala grande</item>
+        <item>Palco</item>
+    </string-array>
+    <string-array name="equalizer_loudness_modes">
+        <item>Non attivo</item>
+        <item>Molto debole</item>
+        <item>Più debole</item>
+        <item>Debole</item>
+        <item>Forte</item>
+        <item>Più forte</item>
+        <item>Molto forte</item>
+    </string-array>
+    <string-array name="compression_modes">
+        <item>Lieve</item>
+        <item>Moderato</item>
+        <item>Estremo</item>
+    </string-array>
+    <string-array name="bassboost_modes">
+        <item>Lieve</item>
+        <item>Moderato</item>
+        <item>Estremo</item>
+    </string-array>
+    <string-array name="wm8994_bassboost_modes">
+        <item>Standard</item>
+        <item>Altoparlanti piccoli</item>
+    </string-array>
 </resources>
