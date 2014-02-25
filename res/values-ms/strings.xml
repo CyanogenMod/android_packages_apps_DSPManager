@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010-2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Pengurus DSP</string>
+  <string name="select_configuration_title">Pilih konfigurasi untuk disunting</string>
+  <string name="headset_title">Fon kepala</string>
+  <string name="speaker_title">Pembesar suara</string>
+  <string name="bluetooth_title">Bluetooth</string>
+  <string name="usb_title">USB/Dok</string>
+  <string name="audio_effects">Efek audio</string>
+  <string name="pref_unavailable">Fungsi tidak ada pada peranti anda</string>
+  <string name="dsp_settings_headset">Tetapan DSP - Fon kepala</string>
+  <string name="dsp_settings_speaker">Tetapan DSP - Pembesar suara</string>
+  <string name="dsp_settings_bluetooth">Tetapan DSP - Peranti Bluetooth</string>
+  <string name="dsp_settings_usb">Tetapan DSP - Peranti USB</string>
+  <string name="dsp_settings_wm8994">Tetapan DSP - WM8994</string>
+  <string name="pref_dsp_title">Mampatan julat dinamik</string>
+  <string name="pref_dsp_summary_on">Mampatan diaktifkan</string>
+  <string name="pref_dsp_summary_off">Mampatan dinyah-aktifkan</string>
+  <string name="pref_dsp_enable">Aktif</string>
+  <string name="pref_effect_title">Pilih kekuatan efek</string>
+  <string name="dialog_effect">Kekuatan efek</string>
+  <string name="pref_equalizer_title">Penyama</string>
+  <string name="pref_equalizer_summary_on">Penyama diaktifkan</string>
+  <string name="pref_equalizer_summary_off">Penyama dinyah-aktifkan</string>
+  <string name="pref_equalizer_enable">Aktif</string>
+  <string name="pref_equalizer_preset_title">Pilih pratetap</string>
+  <string name="pref_equalizer_loudness_title">Pampasan kelantangan</string>
+  <string name="pref_bassboost_title">Rangsangan bass</string>
+  <string name="pref_bassboost_summary_on">Rangsangan bass diaktifkan</string>
+  <string name="pref_bassboost_summary_off">Rangsangan bass dinyah-aktifkan</string>
+  <string name="pref_bassboost_enable">Aktif</string>
+  <string name="pref_headset_virtual_title">Efek Bilik Virtual Fon Kepala</string>
+  <string name="pref_headset_virtual_summary_on">Bilik virtual fon kepala diaktifkan</string>
+  <string name="pref_headset_virtual_summary_off">Bilik virtual fon kepala dinyah-aktifkan</string>
+  <string name="pref_headset_virtual_enable">Aktif</string>
+  <string name="pref_room_title">Pilih jenis bilik</string>
+  <string name="dialog_room">Jenis bilik</string>
+  <string name="menu_reset">Set semula</string>
+  <string name="eq_preset_acoustic">Akustik</string>
+  <string name="eq_preset_bass_booster">Perangsang bass</string>
+  <string name="eq_preset_bass_reducer">Pengurang bass</string>
+  <string name="eq_preset_classical">Klasikal</string>
+  <string name="eq_preset_flat">Rata</string>
+  <string name="eq_preset_rock">Rock</string>
+  <string name="eq_preset_small_speakers">Pembesar suara kecil</string>
+  <string name="eq_preset_vocal_booster">Perangsang vokal</string>
+  <string name="category_wm8994_internal_speaker">Pembesar suara</string>
+  <string name="category_wm8994_signal_processing">Pemprosesan isyarat</string>
+  <string name="category_wm8994_headphone_amp">Fon kepala</string>
+  <string name="category_wm8994_codec_optimization">Optimisassi Kodeks</string>
+  <string name="category_wm8994_dac_config">Tetapan penukar Digital/Analog</string>
+  <string name="category_wm8994_analog_path">Konfigurasi laluan Analog</string>
+  <string name="category_wm8994_mic_settings">Tetapan mikrofon</string>
+  <string name="category_wm8994_microphone_recording">Mikrofon</string>
+  <string name="wm8994_settings_title_head">Tetapan suara</string>
+  <string name="wm8994_settings_title_subhead">Tetapan suara</string>
+  <string name="wm8994_settings_summary_head">Kawalan lanjutan pemproses bunyi WM8994</string>
+  <string name="pref_wm8994_microphone_recording_title">Pratetap rakaman</string>
+  <string name="help_title">Bantuan</string>
+</resources>
