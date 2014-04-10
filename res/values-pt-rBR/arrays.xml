@@ -18,37 +18,37 @@
 <resources>
   <string-array name="microphone_recording_presets">
     <item>Original</item>
-    <item>Balanced</item>
-    <item>High Sensitivity</item>
-    <item>Loud Environment</item>
+    <item>Balanceado</item>
+    <item>Alta Sensitividade</item>
+    <item>Ambiente Barulhento</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Room</item>
-    <item>Large room</item>
-    <item>Stage</item>
+    <item>Estúdio</item>
+    <item>Sala</item>
+    <item>Salão</item>
+    <item>Teatro</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Disabled</item>
-    <item>Weakest</item>
-    <item>Weaker</item>
-    <item>Weak</item>
-    <item>Strong</item>
-    <item>Stronger</item>
-    <item>Strongest</item>
+    <item>Desativado</item>
+    <item>Fraquíssimo</item>
+    <item>Muito Fraco</item>
+    <item>Fraco</item>
+    <item>Forte</item>
+    <item>Muito Forte</item>
+    <item>Fortíssimo</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>Slight</item>
-    <item>Moderate</item>
-    <item>Extreme</item>
+    <item>Leve</item>
+    <item>Moderado</item>
+    <item>Extremo</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>Slight</item>
-    <item>Moderate</item>
-    <item>Extreme</item>
+    <item>Leve</item>
+    <item>Moderado</item>
+    <item>Extremo</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Standard</item>
-    <item>Small Speakers</item>
+    <item>Padrão</item>
+    <item>Caixas de Som Pequenas</item>
   </string-array>
 </resources>

@@ -17,25 +17,25 @@
 -->
 <resources>
   <string-array name="microphone_recording_presets">
-    <item>Original</item>
-    <item>Balanced</item>
-    <item>High Sensitivity</item>
-    <item>Loud Environment</item>
+    <item>מקורי</item>
+    <item>מאוזן</item>
+    <item>רגישות גבוהה</item>
+    <item>סביבה רועשת</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Room</item>
-    <item>Large room</item>
-    <item>Stage</item>
+    <item>סטודיו</item>
+    <item>חדר</item>
+    <item>חדר גדול</item>
+    <item>במה</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Disabled</item>
-    <item>Weakest</item>
-    <item>Weaker</item>
-    <item>Weak</item>
-    <item>Strong</item>
-    <item>Stronger</item>
-    <item>Strongest</item>
+    <item>מושבת</item>
+    <item>הכי חלש</item>
+    <item>חלש יותר</item>
+    <item>חלש</item>
+    <item>חזק</item>
+    <item>חזק יותר</item>
+    <item>הכי חזק</item>
   </string-array>
   <string-array name="compression_modes">
     <item>Slight</item>
@@ -48,7 +48,7 @@
     <item>Extreme</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Standard</item>
-    <item>Small Speakers</item>
+    <item>רגיל</item>
+    <item>רמקולים קטנים</item>
   </string-array>
 </resources>
