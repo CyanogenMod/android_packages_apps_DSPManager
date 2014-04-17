@@ -17,38 +17,38 @@
 -->
 <resources>
   <string-array name="microphone_recording_presets">
-    <item>Original</item>
-    <item>Balanced</item>
-    <item>High Sensitivity</item>
-    <item>Loud Environment</item>
+    <item>標準</item>
+    <item>バランス</item>
+    <item>高感度</item>
+    <item>騒音環境</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Room</item>
-    <item>Large room</item>
-    <item>Stage</item>
+    <item>スタジオ</item>
+    <item>部屋</item>
+    <item>広い部屋</item>
+    <item>ステージ</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Disabled</item>
-    <item>Weakest</item>
-    <item>Weaker</item>
-    <item>Weak</item>
-    <item>Strong</item>
-    <item>Stronger</item>
-    <item>Strongest</item>
+    <item>無効</item>
+    <item>かなり弱い</item>
+    <item>やや弱い</item>
+    <item>弱い</item>
+    <item>強い</item>
+    <item>やや強い</item>
+    <item>かなり強い</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>Slight</item>
-    <item>Moderate</item>
-    <item>Extreme</item>
+    <item>弱い</item>
+    <item>普通</item>
+    <item>強い</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>Slight</item>
-    <item>Moderate</item>
-    <item>Extreme</item>
+    <item>弱い</item>
+    <item>普通</item>
+    <item>エクストリーム</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Standard</item>
-    <item>Small Speakers</item>
+    <item>標準</item>
+    <item>小さいスピーカー</item>
   </string-array>
 </resources>

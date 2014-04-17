@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">DSP Manager</string>
   <string name="select_configuration_title">Zvolte nastavení ke změně</string>
   <string name="headset_title">Sluchátka</string>
   <string name="speaker_title">Reproduktor</string>

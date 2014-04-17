@@ -18,7 +18,7 @@
 <resources>
   <string-array name="microphone_recording_presets">
     <item>מקורי</item>
-    <item>מאוזן</item>
+    <item>Balanced</item>
     <item>רגישות גבוהה</item>
     <item>סביבה רועשת</item>
   </string-array>
@@ -29,7 +29,7 @@
     <item>במה</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>מושבת</item>
+    <item>Disabled</item>
     <item>הכי חלש</item>
     <item>חלש יותר</item>
     <item>חלש</item>
@@ -37,18 +37,8 @@
     <item>חזק יותר</item>
     <item>הכי חזק</item>
   </string-array>
-  <string-array name="compression_modes">
-    <item>Slight</item>
-    <item>Moderate</item>
-    <item>Extreme</item>
-  </string-array>
-  <string-array name="bassboost_modes">
-    <item>Slight</item>
-    <item>Moderate</item>
-    <item>Extreme</item>
-  </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>רגיל</item>
+    <item>Standard</item>
     <item>רמקולים קטנים</item>
   </string-array>
 </resources>
