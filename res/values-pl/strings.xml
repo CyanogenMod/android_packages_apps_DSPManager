@@ -22,6 +22,7 @@
   <string name="speaker_title">Głośnik</string>
   <string name="bluetooth_title">Urządzenie Bluetooth</string>
   <string name="usb_title">USB/Stacja dokująca</string>
+  <string name="audio_effects">Efekty dźwiękowe</string>
   <string name="pref_unavailable">Ta funkcja nie jest dostępna na Twoim urządzeniu</string>
   <string name="dsp_settings_headset">Ustawienia DSP - Zestaw słuchawkowy</string>
   <string name="dsp_settings_speaker">Ustawienia DSP - Głośnik</string>
@@ -44,6 +45,7 @@
   <string name="pref_bassboost_summary_on">Podbicie basów włączone</string>
   <string name="pref_bassboost_summary_off">Podbicie basów wyłączone</string>
   <string name="pref_bassboost_enable">Włącz</string>
+  <string name="pref_headset_virtual_title">Efekt wirtualnego pokoju</string>
   <string name="pref_headset_virtual_summary_on">Efekt wirtualnego pokoju jest włączony</string>
   <string name="pref_headset_virtual_summary_off">Efekt wirtualnego pokoju jest wyłączony</string>
   <string name="pref_headset_virtual_enable">Włącz</string>
@@ -59,6 +61,8 @@
   <string name="eq_preset_r_and_b">R&amp;B</string>
   <string name="eq_preset_rock">Rock</string>
   <string name="eq_preset_small_speakers">Małe głośniki</string>
+  <string name="eq_preset_treble_booster">Podbicie tonów wysokich</string>
+  <string name="eq_preset_treble_reducer">Redukcja tonów wysokich</string>
   <string name="eq_preset_vocal_booster">Podbicie wokalu</string>
   <string name="eq_preset_custom">Własne</string>
   <string name="category_wm8994_internal_speaker">Głośnik</string>

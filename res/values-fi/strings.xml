@@ -138,6 +138,7 @@ yksityiskohdat saattavat jäädä huomioimatta taustamelun takia.
 Ainoa säädettävä vaihtoehto määrittää sen, kuinka voimakkaasti DSP Manager
 yrittää ylläpitää kuuluvuutta määrätyllä tasolla. Vastaavaa DSP efektiä ei 
 AOSP:sta löydy.
+\n\n\n
 2. <b>Basson korostus</b>
 \n\n
 Basson korostus on yksinkertainen suodatin, jota voi käyttää painottaakseen

@@ -112,7 +112,7 @@ El gestor DSP és una app d\'ajustament de so per cada sortida. <i>DSP</i> es re
 \n\n\n
 <b>Filosofia</b>
 \n\n
-EL processament de so de CyanogenMod suporta quatre categories de sortida diferents: auriculars amb cable, so USB, altaveu del telèfon i auriculars bluetooth. Hi ha un panell de configuració separada per a cada tipus de sortida. La filosofia del gestor DSP és corregir les deficiencies concretes de cada tipus de sortida per aconseguir la millor experiencia d\'audició amb cada una.
+El processament de so de CyanogenMod suporta quatre categories de sortida diferents: auriculars amb cable, so USB, altaveu del telèfon i auriculars bluetooth. Hi ha un panell de configuració separada per a cada tipus de sortida. La filosofia del gestor DSP és corregir les deficiencies concretes de cada tipus de sortida per aconseguir la millor experiencia d\'audició amb cada una.
 \n\n
 A diferència dels efectes de so AOSP, no hi ha ajustos específics per a cada app. Això ha estat una decisió intencionada del disseny: és la sortida el que ens preocupa, no quina app genera el so amb el qual el gestor DSP treballarà.
 \n\n\n
