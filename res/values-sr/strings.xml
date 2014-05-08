@@ -23,13 +23,13 @@
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dock</string>
   <string name="audio_effects">Аудио ефекти</string>
-  <string name="pref_unavailable">Функционалност није доступна на вашем уређају</string>
+  <string name="pref_unavailable">Функционалност није доступна на Вашем уређају</string>
   <string name="dsp_settings_headset">DSP подешавања - Слушалице</string>
   <string name="dsp_settings_speaker">DSP подешавања - Звучник телефона</string>
   <string name="dsp_settings_bluetooth">DSP подешавања - Bluetooth уређај</string>
   <string name="dsp_settings_usb">DSP подешавања - USB уређај</string>
   <string name="dsp_settings_wm8994">DSP подешавања - WM8994</string>
-  <string name="pref_dsp_title">Компресија динамичког опсега</string>
+  <string name="pref_dsp_title">Компресија динамичног опсега</string>
   <string name="pref_dsp_summary_on">Компресија је омогућена</string>
   <string name="pref_dsp_summary_off">Компресија је онемогућена</string>
   <string name="pref_dsp_enable">Омогућено</string>
@@ -75,7 +75,7 @@
   <string name="category_wm8994_microphone_recording">Микрофон</string>
   <string name="wm8994_settings_title_head">Подешавање звука</string>
   <string name="wm8994_settings_title_subhead">Подешавање звука</string>
-  <string name="wm8994_settings_summary_head">Напредна контрола WM8994 процесором звука</string>
+  <string name="wm8994_settings_summary_head">Напредна контрола WM8994 звучног процесора</string>
   <string name="pref_wm8994_microphone_recording_title">Снимање унапред</string>
   <string name="pref_wm8994_headphone_amp_title">Ниво појачала</string>
   <string name="pref_wm8994_headphone_amp_summary">Прилагођавање аналогног добитка</string>
@@ -98,9 +98,9 @@
   <string name="pref_wm8994_stereo_expansion_title">Стерео проширење</string>
   <string name="pref_wm8994_stereo_expansion_summary">\'Прошири\' стерео звук преко дигиталне обраде сигнала</string>
   <string name="pref_wm8994_dac_direct_title">D/AC директно</string>
-  <string name="pref_wm8994_dac_direct_summary">Приступ дигиталном / аналогном конвертору директно, заобилазећи канал са миксером. Производи чистији аудио (виши сигнал-шум однос)</string>
+  <string name="pref_wm8994_dac_direct_summary">Приступ дигиталном/аналогном конвертору директно, заобилазећи канал са миксером. Производи чистији аудио (виши сигнал-шум однос)</string>
   <string name="pref_wm8994_dac_osr128_title">Hi-fi плејбек</string>
-  <string name="pref_wm8994_dac_osr128_summary">Дигитално-аналогни конвертор 128к проузрокује - чистач звука приликом репродукције музике</string>
+  <string name="pref_wm8994_dac_osr128_summary">Дигитално-аналогни конвертор 128к проузрокује - чистији звук приликом репродукције музике</string>
   <string name="pref_wm8994_adc_osr128_title">Hi-fi снимање</string>
   <string name="pref_wm8994_adc_osr128_summary">Аналогно-дигитални конвертор 128к проузрокује - повећавање квалитета снимака</string>
   <string name="pref_wm8994_fll_tuning_title">Подешен аудио сат</string>

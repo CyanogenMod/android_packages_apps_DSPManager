@@ -19,6 +19,7 @@
   <string name="app_name">DSP 管理器</string>
   <string name="headset_title">耳機</string>
   <string name="dsp_settings_headset">數位訊號處理（DSP）設定 － 耳機</string>
+  <string name="dsp_settings_bluetooth">數位訊號處理（DSP）設定 － 藍牙裝置</string>
   <string name="pref_dsp_title">動態範圍壓縮（DRC）</string>
   <string name="pref_effect_title">選擇效果強度</string>
   <string name="dialog_effect">效果強度</string>

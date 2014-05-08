@@ -17,38 +17,38 @@
 -->
 <resources>
   <string-array name="microphone_recording_presets">
-    <item>מקורי</item>
-    <item>מאוזן</item>
-    <item>רגישות גבוהה</item>
-    <item>סביבה רועשת</item>
+    <item>Original</item>
+    <item>Balanserad</item>
+    <item>Hög känslighet</item>
+    <item>Bullrig miljö</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>סטודיו</item>
-    <item>חדר</item>
-    <item>חדר גדול</item>
-    <item>במה</item>
+    <item>Studio</item>
+    <item>Rum</item>
+    <item>Stort rum</item>
+    <item>Scen</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>מושבת</item>
-    <item>הכי חלש</item>
-    <item>חלש יותר</item>
-    <item>חלש</item>
-    <item>חזק</item>
-    <item>חזק יותר</item>
-    <item>הכי חזק</item>
+    <item>Inaktiverad</item>
+    <item>Svagast</item>
+    <item>Svagare</item>
+    <item>Svag</item>
+    <item>Stark</item>
+    <item>Starkare</item>
+    <item>Starkast</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>חלש</item>
-    <item>בינוני</item>
-    <item>חזק מאוד</item>
+    <item>Lätt</item>
+    <item>Måttlig</item>
+    <item>Extrem</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>קלוש</item>
-    <item>בינוני</item>
-    <item>חזק מאוד</item>
+    <item>Lätt</item>
+    <item>Måttlig</item>
+    <item>Extrem</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>רגיל</item>
-    <item>רמקולים קטנים</item>
+    <item>Standard</item>
+    <item>Små högtalare</item>
   </string-array>
 </resources>
