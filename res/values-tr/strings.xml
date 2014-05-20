@@ -21,7 +21,7 @@
   <string name="headset_title">Kulaklık</string>
   <string name="speaker_title">Hoparlör</string>
   <string name="bluetooth_title">Bluetooth</string>
-  <string name="usb_title">USB/Dock</string>
+  <string name="usb_title">USB/Ünite</string>
   <string name="audio_effects">Ses efektleri</string>
   <string name="pref_unavailable">Bu işlevsellik cihazınızda desteklenmiyor</string>
   <string name="dsp_settings_headset">Ses Yöneticisi Ayarları - Kulaklık</string>
@@ -45,7 +45,7 @@
   <string name="pref_bassboost_summary_on">Bas yükseltici etkin</string>
   <string name="pref_bassboost_summary_off">Bas yükseltici etkin değil</string>
   <string name="pref_bassboost_enable">Etkinleştir</string>
-  <string name="pref_headset_virtual_title">Kulaklık sanal oda efekti</string>
+  <string name="pref_headset_virtual_title">Kulaklık Sanal Oda Efekti</string>
   <string name="pref_headset_virtual_summary_on">Kulaklık sanal oda efekti etkin</string>
   <string name="pref_headset_virtual_summary_off">Kulaklık sanal oda efekti etkin değil</string>
   <string name="pref_headset_virtual_enable">Etkinleştir</string>
@@ -89,7 +89,7 @@
   <string name="pref_wm8994_bass_boost_dlg_title">Bas yükseltici</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Yükselt</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Bas yükseltme aralığı</string>
-  <string name="pref_wm8994_control_enable_title">WM8994 kontrolünü etkinleştir</string>
+  <string name="pref_wm8994_control_enable_title">WM8994 Kontrolünü etkinleştir</string>
   <string name="pref_wm8994_control_enable_summary">WM8994 ses işlemcisi için gelişmiş kontroller</string>
   <string name="pref_wm8994_speaker_tuning_title">Müzik için ayarla</string>
   <string name="pref_wm8994_speaker_tuning_summary">Daha fazla bas ve dengeli ses için donanım EQ\'sunu ayarla</string>

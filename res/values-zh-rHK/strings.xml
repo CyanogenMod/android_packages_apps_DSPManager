@@ -17,17 +17,158 @@
 -->
 <resources>
   <string name="app_name">DSP 管理器</string>
+  <string name="select_configuration_title">選擇要編輯的設置</string>
   <string name="headset_title">耳機</string>
-  <string name="dsp_settings_headset">數位訊號處理（DSP）設定 － 耳機</string>
-  <string name="dsp_settings_bluetooth">數位訊號處理（DSP）設定 － 藍牙裝置</string>
-  <string name="pref_dsp_title">動態範圍壓縮（DRC）</string>
+  <string name="speaker_title">喇叭</string>
+  <string name="bluetooth_title">藍牙</string>
+  <string name="usb_title">USB/座架</string>
+  <string name="audio_effects">音效</string>
+  <string name="pref_unavailable">此功能不可用於您的裝置上</string>
+  <string name="dsp_settings_headset">數位訊號處理 (DSP) 設定 － 耳機</string>
+  <string name="dsp_settings_speaker">數位訊號處理 (DSP) 設定 － 電話喇叭</string>
+  <string name="dsp_settings_bluetooth">數位訊號處理 (DSP) 設定 － 藍牙裝置</string>
+  <string name="dsp_settings_usb">數位訊號處理 (DSP) 設定 － USB 裝置</string>
+  <string name="dsp_settings_wm8994">數位訊號處理 (DSP) 設定 － WM8994</string>
+  <string name="pref_dsp_title">動態範圍壓縮 (DRC)</string>
+  <string name="pref_dsp_summary_on">壓縮已被啟用</string>
+  <string name="pref_dsp_summary_off">壓縮已被停用</string>
+  <string name="pref_dsp_enable">啟用</string>
   <string name="pref_effect_title">選擇效果強度</string>
   <string name="dialog_effect">效果強度</string>
+  <string name="pref_equalizer_title">等化器</string>
+  <string name="pref_equalizer_summary_on">等化器已被啟用</string>
+  <string name="pref_equalizer_summary_off">等化器已被停用</string>
+  <string name="pref_equalizer_enable">啟用</string>
+  <string name="pref_equalizer_preset_title">選擇設置</string>
+  <string name="pref_equalizer_loudness_title">響度補償</string>
   <string name="pref_bassboost_title">低音強化</string>
+  <string name="pref_bassboost_summary_on">低音強化已被啟用</string>
+  <string name="pref_bassboost_summary_off">低音強化已被停用</string>
+  <string name="pref_bassboost_enable">啟用</string>
+  <string name="pref_headset_virtual_title">耳機虛擬室內效果</string>
   <string name="pref_headset_virtual_summary_on">耳機虛擬空間已被啟用</string>
   <string name="pref_headset_virtual_summary_off">耳機虛擬空間已被停用</string>
-  <string name="eq_preset_bass_booster">低音強化器</string>
+  <string name="pref_headset_virtual_enable">啟用</string>
+  <string name="pref_room_title">選擇房間種類</string>
+  <string name="dialog_room">房間種類</string>
+  <string name="menu_reset">重設</string>
+  <string name="eq_preset_acoustic">原聲音樂</string>
+  <string name="eq_preset_bass_booster">低音強化</string>
+  <string name="eq_preset_bass_reducer">低音弱化</string>
+  <string name="eq_preset_classical">古典音樂</string>
+  <string name="eq_preset_deep">深沉</string>
+  <string name="eq_preset_flat">平淡</string>
+  <string name="eq_preset_r_and_b">節奏藍調</string>
+  <string name="eq_preset_rock">搖滾</string>
+  <string name="eq_preset_small_speakers">小型喇叭</string>
+  <string name="eq_preset_treble_booster">高音強化</string>
+  <string name="eq_preset_treble_reducer">高音弱化</string>
+  <string name="eq_preset_vocal_booster">人聲強化</string>
+  <string name="eq_preset_custom">自訂</string>
+  <string name="category_wm8994_internal_speaker">喇叭</string>
+  <string name="category_wm8994_signal_processing">訊號處理</string>
   <string name="category_wm8994_headphone_amp">耳機</string>
+  <string name="category_wm8994_codec_optimization">編解碼器優化</string>
+  <string name="category_wm8994_dac_config">數字/類比轉換器 (DAC) 設置</string>
+  <string name="category_wm8994_analog_path">類比路徑設定</string>
+  <string name="category_wm8994_mic_settings">麥克風設定</string>
+  <string name="category_wm8994_microphone_recording">麥克風</string>
+  <string name="wm8994_settings_title_head">音效設定</string>
+  <string name="wm8994_settings_title_subhead">音效設定</string>
+  <string name="wm8994_settings_summary_head">WM8994 聲音處理器進階管理</string>
+  <string name="pref_wm8994_microphone_recording_title">錄音設置</string>
+  <string name="pref_wm8994_headphone_amp_title">放大器級別</string>
+  <string name="pref_wm8994_headphone_amp_summary">自訂類比增益</string>
+  <string name="pref_wm8994_headphone_amp_dlg_title">聽筒擴音器級別</string>
+  <string name="pref_wm8994_headphone_amp_dlg_desc">類比增益</string>
   <string name="pref_wm8994_bass_boost_enable_title">低音強化</string>
+  <string name="pref_wm8994_bass_boost_enable_summary">進階低音強化管理</string>
+  <string name="pref_wm8994_bass_boost_title">低音強化範圍</string>
+  <string name="pref_wm8994_bass_boost_summary">進階動態範圍管理</string>
+  <string name="pref_wm8994_bass_boost_preset_title">低音強化設置</string>
   <string name="pref_wm8994_bass_boost_dlg_title">低音強化</string>
+  <string name="pref_wm8994_bass_boost_gain_dlg_desc">增益</string>
+  <string name="pref_wm8994_bass_boost_range_dlg_desc">低音強化範圍</string>
+  <string name="pref_wm8994_control_enable_title">啟用 WM8994 控制</string>
+  <string name="pref_wm8994_control_enable_summary">啟用 WM8994 聲音處理器進階管理</string>
+  <string name="pref_wm8994_speaker_tuning_title">音樂調整</string>
+  <string name="pref_wm8994_speaker_tuning_summary">重新配置的硬件均衡器 (EQ) 獲得更強低音和平衡的音效</string>
+  <string name="pref_wm8994_mono_downmix_title">單聲道縮混 (Downmix)</string>
+  <string name="pref_wm8994_mono_downmix_summary">把立體聲縮混 (Downmix) 合成為單聲道 (使用於立體聲輸出，例如有線聽筒)</string>
+  <string name="pref_wm8994_stereo_expansion_title">立體聲擴展</string>
+  <string name="pref_wm8994_stereo_expansion_summary">透過數位訊號處理「擴展」立體聲</string>
+  <string name="pref_wm8994_dac_direct_title">直接數字/類比 (D/AC) 轉換</string>
+  <string name="pref_wm8994_dac_direct_summary">繞過頻道混音器 (Channel Mixer)，直接存取數字/類比轉換器 (DAC)，去產生更清澈的聲音 (較高訊號噪聲比)</string>
+  <string name="pref_wm8994_dac_osr128_title">Hi-fi 回放</string>
+  <string name="pref_wm8994_dac_osr128_summary">數字/類比轉換器 (DAC) 128倍 超取樣 (Oversampling) — 使播放音樂時擁有更清澈的聲音</string>
+  <string name="pref_wm8994_adc_osr128_title">Hi-fi 錄音</string>
+  <string name="pref_wm8994_adc_osr128_summary">類比/數字轉換器 (ADC) 128倍 超取樣 (Oversampling) — 提高錄音品質</string>
+  <string name="pref_wm8994_fll_tuning_title">調整音訊時脈</string>
+  <string name="pref_wm8994_fll_tuning_summary">使用已調整的 WM8994 音訊時脈源 — 改善聲音品質</string>
+  <string name="help_title">說明</string>
+  <string name="help_text"><b>什麼是 DSP 管理器？</b>
+\n\n
+DSP 管理器是一個進行音頻調整的應用程式。 
+<i>DSP</i> 代表 Digital signal processing，中文稱為「數位訊號處理」，
+及 <i>管理器</i> 同時表達著另一個事實就是 DSP 並非在一個程式內運行; 
+只要 Android 應用程式的音響效果符合規格，
+都可啟用管理器。
+\n\n\n
+<b>理念</b>
+\n\n
+CyanogenMod 的音響處理支援四種不同的輸出類型：
+有線耳機，USB 音響，手機揚聲器和藍牙耳機。
+對每個輸出類型都有一個獨立設定畫面。
+DSP 管理器的理念是修正每個音響輸出的特定缺陷，
+以達到最優化的聽覺體驗。
+\n\n
+不像 AOSP 的音響效果，沒有獨立應用程式設定。
+這是一個精心的設計：我們關心輸出的細節，
+並非應用程式產生的音響對 DSP 管理器協調。
+\n\n\n
+<b>Features</b>
+\n\n
+1. <b>動態範圍壓縮 (DRC)</b>
+\n\n
+這種效應在平均監聽器和驅動器基礎上估計察覺到估算增益控制聲音的音量。
+主要用於嘈雜的環境，
+如在汽車或在街上，
+在那裡恬靜的音樂的部分是在被淹沒在背景的噪音。
+\n\n
+唯一可調諧決定於 DSP Manager 將如何努力維持音頻響度的目標水平。
+沒有 AOSP 相當於此 DSP 音效。
+\n\n\n
+2. <b>低音強化 (Bass boost)</b>
+\n\n
+低音強化是一個簡單的低通濾波器，用作在 55 Hz (赫茲) 及較低的頻率增加一個重點。
+大約 6 dB (分貝) 強化，由 “強度” 參數，在 55 Hz (赫茲) 頻率增加了濾光器的共振，
+使該頻率特別強調的修改。效果是為消除損耗低音頻率的，
+針對哪些沒有與用戶的耳道緊密耦合，常見小揚聲器和貼耳式耳機。
+\n\n\n
+3. <b>均衡器</b>
+\n\n
+這是一個 6 頻段均衡器，包括 16、64、250、1000、4000 和 16000 Hz (赫茲)。
+提供一些普遍的預置，並且 frequency response  (頻率反應) 也可通過輕擊均衡器曲線圖自訂。
+根據使用者的個人喜好，或者可用耳機或揚聲器的特定功能，用來調諧頻率響應。
+\n\n
+均衡器還包含一個響度補償濾波器，以進入用戶耳朵中的聲壓水平為基礎上，
+均衡進變化耳朵的頻率響應。若想達設計效果，使用有線耳機是必需的，
+並且強度參數的值必須被正確地調整。
+\n\n
+要選擇補償強度合適的值，使用最安靜的音樂音量，並選擇一些廣譜嘈雜的音樂，如搖滾或金屬。
+嘗試尋找到低音升壓回到可聽度，並與材料的其餘部分好像均衡設置。
+當補償正確配置後，低音相對於其他樂器應保持在同一水平，無論聽力水平。
+另一方面，如果音樂開始聽起來重低音較高的聽力水平，補償可能是設置太強大，應該減少。
+\n\n
+補償將被添加到用戶選擇的調整。如果只有補償需要，均衡器應保留在「平淡」的設置。
+\n\n\n
+4. <b>耳機過濾器</b>
+\n\n
+耳機過濾器是一種互饋的設計，靈感來自著名的 BS2B 模擬電路。
+效果通過不變的單聲道聲音，並通過一個低通濾波器，它在一次近似兩個頭陰影和耳間延遲，對使用者給予合適耳朵音質線索的調整差信號。
+我們的目的是為了防止所有固有的耳機，令人難以置信的立體聲分離而產生聽覺疲勞。
+效果應該使用立體聲耳機時啟用。
+\n\n
+因為混合有所降低立體聲分離，有一個哈斯效應混響，它可以被用來增加感知立體圖像的寬度。 
+這是由「房間種類」控制的控制。</string>
 </resources>

@@ -17,38 +17,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="microphone_recording_presets">
-    <item>Originalas</item>
-    <item>Balansas</item>
-    <item>Didelis jautrumas</item>
-    <item>Garsi aplinka</item>
+    <item>Original</item>
+    <item>Seimbang</item>
+    <item>Sensitivitas Tinggi</item>
+    <item>Lingkungan Berisik</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Studija</item>
-    <item>Kambarys</item>
-    <item>Didelis kambarys</item>
-    <item>Scena</item>
+    <item>Studio</item>
+    <item>Ruangan</item>
+    <item>Ruang besar</item>
+    <item>Panggung</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Išjungta</item>
-    <item>Silpniausia</item>
-    <item>Silpnesnė</item>
-    <item>Silpna</item>
-    <item>Stipri</item>
-    <item>Stipresnė</item>
-    <item>Stipriausia</item>
+    <item>Dinonaktifkan</item>
+    <item>Paling lemah</item>
+    <item>Lebih lemah</item>
+    <item>Lemah</item>
+    <item>Kuat</item>
+    <item>Lebih kuat</item>
+    <item>Paling kuat</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>Silpnas</item>
-    <item>Vidutinis</item>
-    <item>Stiprus</item>
+    <item>Sedikit</item>
+    <item>Sedang</item>
+    <item>Ekstrim</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>Silpnas</item>
-    <item>Vidutinis</item>
-    <item>Stiprus</item>
+    <item>Sedikit</item>
+    <item>Sedang</item>
+    <item>Ekstrim</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Standartinis</item>
-    <item>Maži garsiakalbiai</item>
+    <item>Standar</item>
+    <item>Speaker kecil</item>
   </string-array>
 </resources>

@@ -17,38 +17,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="microphone_recording_presets">
-    <item>Originalas</item>
-    <item>Balansas</item>
-    <item>Didelis jautrumas</item>
-    <item>Garsi aplinka</item>
+    <item>Оригінальний</item>
+    <item>Збалансований</item>
+    <item>Висока чутливість</item>
+    <item>Гучна обстановка</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Studija</item>
-    <item>Kambarys</item>
-    <item>Didelis kambarys</item>
-    <item>Scena</item>
+    <item>Студія</item>
+    <item>Кімната</item>
+    <item>Велика кімната</item>
+    <item>Сцена</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Išjungta</item>
-    <item>Silpniausia</item>
-    <item>Silpnesnė</item>
-    <item>Silpna</item>
-    <item>Stipri</item>
-    <item>Stipresnė</item>
-    <item>Stipriausia</item>
+    <item>Вимкнена</item>
+    <item>Найслабкіша</item>
+    <item>Слабкіша</item>
+    <item>Слабка</item>
+    <item>Сильна</item>
+    <item>Сильніша</item>
+    <item>Найсильніша</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>Silpnas</item>
-    <item>Vidutinis</item>
-    <item>Stiprus</item>
+    <item>Слабке</item>
+    <item>Помірне</item>
+    <item>Надмірне</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>Silpnas</item>
-    <item>Vidutinis</item>
-    <item>Stiprus</item>
+    <item>Слабка</item>
+    <item>Помірна</item>
+    <item>Надмірна</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Standartinis</item>
-    <item>Maži garsiakalbiai</item>
+    <item>Стандартний</item>
+    <item>Маленькі динаміки</item>
   </string-array>
 </resources>

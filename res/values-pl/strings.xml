@@ -106,4 +106,38 @@
   <string name="pref_wm8994_fll_tuning_title">Dostrojony zegar audio</string>
   <string name="pref_wm8994_fll_tuning_summary">Użyj wyregulowanych źródeł zegara WM8994 - poprawia jakość dźwięku</string>
   <string name="help_title">Pomoc</string>
+  <string name="help_text"><b>Czym jest Menedżer DSP?</b>
+\n\n
+Menedżer DSP jest aplikacją pozwalającą dostosować dźwięk dla każdego wyjścia audio. <i>DSP</i> oznacza Digital Singal Processing (Cyfrowe Przetwarzania Dźwięku), a <i>Menedżer</i> odnosi się do faktu, że DSP nie działa wewnątrz tej aplikacji. Menedżer działa tylko z aplikacjami zgodnymi ze specyfikacją efektów dźwiękowych Androida, np. odtwarzacze muzyki.
+\n\n\n
+<b>Zasada działania</b>
+Przetwarzanie dźwięku w CyanogenMod wspiera cztery różne urządzenia wyjścia: przewodowy zestaw słuchawkowy, USB, głośnik telefonu oraz zestaw słuchawkowy Bluetooth. Dla każdego urządzenia wyjścia dostępny jest oddzielny panel konfiguracyjny. Menedżer DSP ma na celu poprawę dźwięku dla każdego urządzenia wyjścia oraz osiągnięcie jak najlepszego brzmienia na każdym z nich.
+\n\n
+<b>Cechy</b>
+\n\n
+1. <b>Kompresja zakresu dynamiki</b>
+\n\n
+Ten efekt ocenia głośność dźwięku ustawioną przez słuchacza i podbija dźwięk na jej podstawie. Głównymi przypadkami, w których przydaje się ta funkcja jest przebywanie w miejscach, gdzie panuje szczególny hałas, jak np. na ulicy czy w samochodzie, gdzie najcichsze elementy muzyki narażone są na zagłuszenie.
+\n\n
+Ustawienie określa jak mocno DSP Manager ma utrzymywać dźwięk na określonym poziomie głośności. W źródłach AOSP nie ma odpowiednika tej funkcji.
+\n\n\n
+2. <b>Podbicie basów</b>
+\n\n
+Podbicie basów to prosty filtr, który może zostać użyty do zwiększania nacisku na częstotliwościach równych i niższych niż 55 Hz. Podbicie wynosi około 6 dB i jest modyfikowane przez parametr siły, który dodaje filtr rezonujący na częstotliwości 55 Hz. Ten efekt dźwiękowy przeznaczony jest do zwalczania zjawiska utraty basu głównie podczas korzystania z małych głośników i słuchawek, które nie przylegają dobrze do uszu słuchającego.
+\n\n\n
+3. <b>Korektor dźwięku</b>
+\n\n
+Jest to  sześciopasmowy korektor dźwięku działający w częstotliwościach 16, 64, 250, 1000, 4000 i 16000 Hz. Dostępnych jest kilka gotowych konfiguracji, a pasmo przenoszenia można zmieniać przesuwając palcem po grafie. Efekt ten powinien być stosowany do dostrajania pasma przenoszenia do preferencji użytkownika, a także stosowanych słuchawek lub głośników.
+\n\n
+Korektor dźwięku zawiera również filtr wyrównania głośności, który wyrównuje zmiany w częstotliwościach odbieranych przez ucho na podstawie poziomu ciśnienia akustycznego, które dociera do użytkownika. Wymagane jest tutaj użycie przewodowego zestawu słuchawkowego, a wartość parametru musi być ustawiona prawidłowo zanim efekt zacznie działać tak, jak został zaprojektowany.
+\n\n
+Aby wybrać odpowiednią wartość wyrównania głośności należy ustawić jak najciszej głośność muzyki i wybrać utwór z szerokim spektrum hałasu (najlepiej z gatunku rock lub metal). Warto znaleźć ustawienie, gdzie bas jest wzmocniony z powrotem do słyszalności i wydaje się wyrównany z resztą dźwięków. Po prawidłowym skonfigurowaniu wyrównania głośności dźwięków bas powinien pozostać na tym samym poziomie jak reszta instrumentów bez względu na wybrany poziom głośności. Z drugiej strony, jeśli znaczna ilość basu będzie słyszalna na wyższych poziomach głośności, wyrównanie poziomów prawdopodobnie nie jest ustawione prawidłowo i powinno zostać zredukowane.
+\n\n
+Wyrównanie głośności jest dodawane do wybranych ustawień użytkownika. Jeśli pożądane jest tylko wyrównanie głośności, to korektor dźwięków powinien zostać ustawiony na \"płaskie\".
+\n\n\n
+6. <b>Filtr zestawu słuchawkowego</b>
+\n\n
+Filtr został zainspirowany słynnym obwodem analogowym bs2b. Efekt pozostawia dźwięk mono bez zmian i reguluje różnice sygnału przez filtr tworząc w odczuciu dla użytkownika efekt akustyczny pomieszczenia. Intencją jest zapobieganie męczeniu uszu słuchającego wynikającemu z rozdzielania sygnału stereo w prawie wszystkich rodzajach słuchawek. Efekt powinien być włączony zawsze podczas korzystania ze słuchawek stereo.
+\n\n
+Ponieważ miksowanie redukuje rozdzielenie dźwięku, występuje efekt pogłosu, który może być stosowany w celu poprawienia zakresu brzmienia stereo. Można to zrobić poprzez opcję \"Typ pokoju\".</string>
 </resources>

@@ -22,7 +22,7 @@
   <string name="speaker_title">Kaiutin</string>
   <string name="bluetooth_title">Bluetooth-laite</string>
   <string name="usb_title">USB/Telakka</string>
-  <string name="audio_effects">Audio Effects</string>
+  <string name="audio_effects">Aäniefektit</string>
   <string name="pref_unavailable">Toiminto ei käytettävissä laitteellasi</string>
   <string name="dsp_settings_headset">DSP Asetukset - Kuulokkeet</string>
   <string name="dsp_settings_speaker">DSP Asetukset - Puhelimen kaiutin</string>

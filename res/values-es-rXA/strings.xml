@@ -97,7 +97,7 @@
   <string name="pref_wm8994_mono_downmix_summary">Mecer soníu estereu con mono (pa salides estereu, tales como auriculares)</string>
   <string name="pref_wm8994_stereo_expansion_title">Espansión estereu</string>
   <string name="pref_wm8994_stereo_expansion_summary">Espander el soníu estereu al traviés del procesamientu de señales dixitales</string>
-  <string name="pref_wm8994_dac_direct_title">Acceso D/A direutu</string>
+  <string name="pref_wm8994_dac_direct_title">Accesu D/A direutu</string>
   <string name="pref_wm8994_dac_direct_summary">Acceder conversor dixital/analóxicu direutamente, pasando per alto la canal del entemecedor. Fai un soníu más llimpiu (una mayor ratio de señal-a-soníu)</string>
   <string name="pref_wm8994_dac_osr128_title">Reproducción Hi-Fi</string>
   <string name="pref_wm8994_dac_osr128_summary">Sobremuestréu a 128x de conversión dixital-a-analóxicu (llimpia\'l soníu mientres se reproduz música)</string>
