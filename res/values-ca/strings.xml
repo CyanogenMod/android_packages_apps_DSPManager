@@ -51,7 +51,7 @@
   <string name="pref_headset_virtual_enable">Habilita</string>
   <string name="pref_room_title">Seleccioneu el tipus d\'habitació</string>
   <string name="dialog_room">Tipus d\'habitació</string>
-  <string name="menu_reset">Reestableix</string>
+  <string name="menu_reset">Restableix</string>
   <string name="eq_preset_acoustic">Acústic</string>
   <string name="eq_preset_bass_booster">Amplificació de greus</string>
   <string name="eq_preset_bass_reducer">Reducció de greus</string>
@@ -108,13 +108,13 @@
   <string name="help_title">Ajuda</string>
   <string name="help_text"><b>Què és el gestor DSP?</b>
 \n\n
-El gestor DSP és una app d\'ajustament de so per cada sortida. <i>DSP</i> es refereix a Digital signal processing (Processament digital de senyal), i la part <i>Gestor</i> es refereix al fet que el DSP no s\'executa dins l\'app per si mateix; el gestor només s\'habilita per les apps que compleixen amb les especificacions dels efectes de so d\'Android, p.e. la majoria de reproductors de música.
+El gestor DSP és una app de configuració del so per cada sortida. <i>DSP</i> es refereix a Digital signal processing (Processament digital de senyal), i la part <i>Gestor</i> es refereix al fet que el DSP no s\'executa dins l\'app per si mateix; el gestor només s\'habilita per les apps que compleixen amb les especificacions dels efectes de so d\'Android, p.e. la majoria de reproductors de música.
 \n\n\n
 <b>Filosofia</b>
 \n\n
 El processament de so de CyanogenMod suporta quatre categories de sortida diferents: auriculars amb cable, so USB, altaveu del telèfon i auriculars bluetooth. Hi ha un panell de configuració separada per a cada tipus de sortida. La filosofia del gestor DSP és corregir les deficiencies concretes de cada tipus de sortida per aconseguir la millor experiencia d\'audició amb cada una.
 \n\n
-A diferència dels efectes de so AOSP, no hi ha ajustos específics per a cada app. Això ha estat una decisió intencionada del disseny: és la sortida el que ens preocupa, no quina app genera el so amb el qual el gestor DSP treballarà.
+A diferència dels efectes de so AOSP, no hi ha configuracions específiques per a cada app. Això ha estat una decisió intencionada del disseny: és la sortida el que ens preocupa, no quina app genera el so amb el qual el gestor DSP treballarà.
 \n\n\n
 <b>Característiques</b>
 \n\n
@@ -136,7 +136,7 @@ L\'equalitzador també conté un filtre de compensació de greus, que equalitza 
 \n\n
 Per a seleccionar el valor adequat per a la compensació de potència, utilitza el volum de música més silenciós, i escull un espectre ampli de música sorollosa com ara rock o metal. Intenta trobar l\'ajust on els greus s\'amplifiquen audiblement i semblen equilibrats amb la resta del material. Després que la compensació s\'hagi configurat correctament, els greus haurien de mantenir-se al mateix nivell relatiu a altres instruments independentment del volum d\'audició. D\'altra banda, si la música comença a fer notar els greus en els volums més alts, la compensació estarà establerta massa forta, i s\'haurà de reduir.
 \n\n
-La compensació s\'afegeix als ajustaments escollits per l\'usuari. Si només es desitja la compensació, l\'equalitzador s\'haurà de deixar en la presintonia \'Plana\'.
+La compensació s\'afegeix a la configuració escollida per l\'usuari. Si només es desitja la compensació, l\'equalitzador s\'haurà de deixar en la presintonia \'Plana\'.
 \n\n\n
 4. <b>Filtre d\'auriculars</b>
 \n\n

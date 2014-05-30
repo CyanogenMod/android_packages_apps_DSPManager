@@ -17,7 +17,7 @@
 -->
 <resources>
   <string name="app_name">DSP 管理器</string>
-  <string name="select_configuration_title">選擇要編輯的設置</string>
+  <string name="select_configuration_title">選擇要編輯的配置</string>
   <string name="headset_title">耳機</string>
   <string name="speaker_title">喇叭</string>
   <string name="bluetooth_title">藍牙</string>
@@ -39,7 +39,7 @@
   <string name="pref_equalizer_summary_on">等化器已被啟用</string>
   <string name="pref_equalizer_summary_off">等化器已被停用</string>
   <string name="pref_equalizer_enable">啟用</string>
-  <string name="pref_equalizer_preset_title">選擇設置</string>
+  <string name="pref_equalizer_preset_title">選擇預設</string>
   <string name="pref_equalizer_loudness_title">響度補償</string>
   <string name="pref_bassboost_title">低音強化</string>
   <string name="pref_bassboost_summary_on">低音強化已被啟用</string>
@@ -69,14 +69,14 @@
   <string name="category_wm8994_signal_processing">訊號處理</string>
   <string name="category_wm8994_headphone_amp">耳機</string>
   <string name="category_wm8994_codec_optimization">編解碼器優化</string>
-  <string name="category_wm8994_dac_config">數字/類比轉換器 (DAC) 設置</string>
-  <string name="category_wm8994_analog_path">類比路徑設定</string>
+  <string name="category_wm8994_dac_config">數字/類比轉換器 (DAC) 設定</string>
+  <string name="category_wm8994_analog_path">類比路徑配置</string>
   <string name="category_wm8994_mic_settings">麥克風設定</string>
   <string name="category_wm8994_microphone_recording">麥克風</string>
   <string name="wm8994_settings_title_head">音效設定</string>
   <string name="wm8994_settings_title_subhead">音效設定</string>
   <string name="wm8994_settings_summary_head">WM8994 聲音處理器進階管理</string>
-  <string name="pref_wm8994_microphone_recording_title">錄音設置</string>
+  <string name="pref_wm8994_microphone_recording_title">錄音預設</string>
   <string name="pref_wm8994_headphone_amp_title">放大器級別</string>
   <string name="pref_wm8994_headphone_amp_summary">自訂類比增益</string>
   <string name="pref_wm8994_headphone_amp_dlg_title">聽筒擴音器級別</string>
@@ -85,7 +85,7 @@
   <string name="pref_wm8994_bass_boost_enable_summary">進階低音強化管理</string>
   <string name="pref_wm8994_bass_boost_title">低音強化範圍</string>
   <string name="pref_wm8994_bass_boost_summary">進階動態範圍管理</string>
-  <string name="pref_wm8994_bass_boost_preset_title">低音強化設置</string>
+  <string name="pref_wm8994_bass_boost_preset_title">低音強化預設</string>
   <string name="pref_wm8994_bass_boost_dlg_title">低音強化</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">增益</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">低音強化範圍</string>
@@ -94,7 +94,7 @@
   <string name="pref_wm8994_speaker_tuning_title">音樂調整</string>
   <string name="pref_wm8994_speaker_tuning_summary">重新配置的硬件均衡器 (EQ) 獲得更強低音和平衡的音效</string>
   <string name="pref_wm8994_mono_downmix_title">單聲道縮混 (Downmix)</string>
-  <string name="pref_wm8994_mono_downmix_summary">把立體聲縮混 (Downmix) 合成為單聲道 (使用於立體聲輸出，例如有線聽筒)</string>
+  <string name="pref_wm8994_mono_downmix_summary">把立體聲縮混 (Downmix) 合成為單聲道 (使用於立體聲輸出，例如：有線聽筒)</string>
   <string name="pref_wm8994_stereo_expansion_title">立體聲擴展</string>
   <string name="pref_wm8994_stereo_expansion_summary">透過數位訊號處理「擴展」立體聲</string>
   <string name="pref_wm8994_dac_direct_title">直接數字/類比 (D/AC) 轉換</string>
@@ -156,11 +156,11 @@ DSP 管理器的理念是修正每個音響輸出的特定缺陷，
 並且強度參數的值必須被正確地調整。
 \n\n
 要選擇補償強度合適的值，使用最安靜的音樂音量，並選擇一些廣譜嘈雜的音樂，如搖滾或金屬。
-嘗試尋找到低音升壓回到可聽度，並與材料的其餘部分好像均衡設置。
+嘗試尋找到低音升壓回到可聽度，並與材料的其餘部分好像均衡設定。
 當補償正確配置後，低音相對於其他樂器應保持在同一水平，無論聽力水平。
-另一方面，如果音樂開始聽起來重低音較高的聽力水平，補償可能是設置太強大，應該減少。
+另一方面，如果音樂開始聽起來重低音較高的聽力水平，補償可能是設定太強大，應該減少。
 \n\n
-補償將被添加到用戶選擇的調整。如果只有補償需要，均衡器應保留在「平淡」的設置。
+補償將被新增到用戶選擇的調整。如果只有補償需要，均衡器應保留在「平淡」的設定。
 \n\n\n
 4. <b>耳機過濾器</b>
 \n\n
