@@ -17,13 +17,13 @@
 -->
 <resources>
   <string name="app_name">DSP Менаџер</string>
-  <string name="select_configuration_title">Изаберите конфигурацију за уређивање</string>
+  <string name="select_configuration_title">Изабери конфигурацију за уређивање</string>
   <string name="headset_title">Слушалице</string>
   <string name="speaker_title">Звучник</string>
   <string name="bluetooth_title">Bluetooth</string>
-  <string name="usb_title">USB/Dock</string>
+  <string name="usb_title">USB/Doк</string>
   <string name="audio_effects">Аудио ефекти</string>
-  <string name="pref_unavailable">Функционалност није доступна на Вашем уређају</string>
+  <string name="pref_unavailable">Функционалност није доступна на твом уређају</string>
   <string name="dsp_settings_headset">DSP подешавања - Слушалице</string>
   <string name="dsp_settings_speaker">DSP подешавања - Звучник телефона</string>
   <string name="dsp_settings_bluetooth">DSP подешавања - Bluetooth уређај</string>
@@ -33,13 +33,13 @@
   <string name="pref_dsp_summary_on">Компресија је омогућена</string>
   <string name="pref_dsp_summary_off">Компресија је онемогућена</string>
   <string name="pref_dsp_enable">Омогућено</string>
-  <string name="pref_effect_title">Изаберите снагу ефекта</string>
+  <string name="pref_effect_title">Изабери снагу ефекта</string>
   <string name="dialog_effect">Снага ефекта</string>
   <string name="pref_equalizer_title">Еквилајзер</string>
   <string name="pref_equalizer_summary_on">Еквилајзер је омогућен</string>
   <string name="pref_equalizer_summary_off">Еквилајзер је онемогућен</string>
   <string name="pref_equalizer_enable">Омогућено</string>
-  <string name="pref_equalizer_preset_title">Изаберите унапред</string>
+  <string name="pref_equalizer_preset_title">Изабери унапред</string>
   <string name="pref_equalizer_loudness_title">Компензација јачине</string>
   <string name="pref_bassboost_title">Појачање басова</string>
   <string name="pref_bassboost_summary_on">Појачање басова је омогућено</string>
@@ -49,9 +49,9 @@
   <string name="pref_headset_virtual_summary_on">Слушалице - Ефекат Виртуалне Собе је омогућен</string>
   <string name="pref_headset_virtual_summary_off">Слушалице - Ефекат Виртуалне Собе је онемогућен</string>
   <string name="pref_headset_virtual_enable">Омогућено</string>
-  <string name="pref_room_title">Изаберите тип собе</string>
+  <string name="pref_room_title">Изабери тип собе</string>
   <string name="dialog_room">Тип собе</string>
-  <string name="menu_reset">Ресетовање</string>
+  <string name="menu_reset">Ресетуј</string>
   <string name="eq_preset_acoustic">Акустична</string>
   <string name="eq_preset_bass_booster">Појачање басова</string>
   <string name="eq_preset_bass_reducer">Редуктор басова</string>
@@ -70,11 +70,11 @@
   <string name="category_wm8994_headphone_amp">Слушалице</string>
   <string name="category_wm8994_codec_optimization">Оптимизација кодека</string>
   <string name="category_wm8994_dac_config">Дигитално/Аналогно подешавање конвертера</string>
-  <string name="category_wm8994_analog_path">Аналогна конфигурација стаза</string>
-  <string name="category_wm8994_mic_settings">Поставке микрофона</string>
+  <string name="category_wm8994_analog_path">Аналогна конфигурација путање</string>
+  <string name="category_wm8994_mic_settings">Подешавања микрофона</string>
   <string name="category_wm8994_microphone_recording">Микрофон</string>
-  <string name="wm8994_settings_title_head">Подешавање звука</string>
-  <string name="wm8994_settings_title_subhead">Подешавање звука</string>
+  <string name="wm8994_settings_title_head">Подешавања звука</string>
+  <string name="wm8994_settings_title_subhead">Подешавања звука</string>
   <string name="wm8994_settings_summary_head">Напредна контрола WM8994 звучног процесора</string>
   <string name="pref_wm8994_microphone_recording_title">Снимање унапред</string>
   <string name="pref_wm8994_headphone_amp_title">Ниво појачала</string>
@@ -84,15 +84,15 @@
   <string name="pref_wm8994_bass_boost_enable_title">Појачање басова</string>
   <string name="pref_wm8994_bass_boost_enable_summary">Напредне контроле за појачање басова</string>
   <string name="pref_wm8994_bass_boost_title">Опсег појачавања басова</string>
-  <string name="pref_wm8994_bass_boost_summary">Напредно управљање динамичким опсегом</string>
+  <string name="pref_wm8994_bass_boost_summary">Напредно управљање динамичним опсегом</string>
   <string name="pref_wm8994_bass_boost_preset_title">Појачање басова унапред</string>
   <string name="pref_wm8994_bass_boost_dlg_title">Појачање басова</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Добитак</string>
-  <string name="pref_wm8994_bass_boost_range_dlg_desc">Опсег појачавања басова</string>
-  <string name="pref_wm8994_control_enable_title">Омогућите WM8994 Контролу</string>
-  <string name="pref_wm8994_control_enable_summary">Напредна контрола WM8994 процесором звука</string>
+  <string name="pref_wm8994_bass_boost_range_dlg_desc">Опсег појачања басова</string>
+  <string name="pref_wm8994_control_enable_title">Омогући WM8994 Контролу</string>
+  <string name="pref_wm8994_control_enable_summary">Напредна контрола за WM8994 процесор звука</string>
   <string name="pref_wm8994_speaker_tuning_title">Мелодија за музику</string>
-  <string name="pref_wm8994_speaker_tuning_summary">Реконфигуришите хардверски ЕК за више баса и уравнотежен звук</string>
+  <string name="pref_wm8994_speaker_tuning_summary">Реконфигуриши хардверски еквилајзер за више баса и уравнотежен звук</string>
   <string name="pref_wm8994_mono_downmix_title">Моно микс</string>
   <string name="pref_wm8994_mono_downmix_summary">Мешање стерео звука у моно (за стерео излаз, као што су слушалице)</string>
   <string name="pref_wm8994_stereo_expansion_title">Стерео проширење</string>
@@ -104,7 +104,7 @@
   <string name="pref_wm8994_adc_osr128_title">Hi-fi снимање</string>
   <string name="pref_wm8994_adc_osr128_summary">Аналогно-дигитални конвертор 128к проузрокује - повећавање квалитета снимака</string>
   <string name="pref_wm8994_fll_tuning_title">Подешен аудио сат</string>
-  <string name="pref_wm8994_fll_tuning_summary">Користите подешен WM8994 избор тона сата - побољшава квалитет звука</string>
+  <string name="pref_wm8994_fll_tuning_summary">Користи подешен WM8994 избор тона сата - побољшава квалитет звука</string>
   <string name="help_title">Помоћ</string>
   <string name="help_text">
 <b>What is DSP Manager?</b>

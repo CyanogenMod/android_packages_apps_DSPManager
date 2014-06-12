@@ -39,12 +39,12 @@
   </string-array>
   <string-array name="compression_modes">
     <item>Благо</item>
-    <item>Уређуј</item>
+    <item>Уређено</item>
     <item>Екстремно</item>
   </string-array>
   <string-array name="bassboost_modes">
     <item>Благо</item>
-    <item>Уређуј</item>
+    <item>Уређено</item>
     <item>Екстремно</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
