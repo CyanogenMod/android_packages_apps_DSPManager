@@ -17,38 +17,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="microphone_recording_presets">
-    <item>Оригинал</item>
-    <item>Уравнотежено</item>
-    <item>Висока осетљивост</item>
-    <item>Гласно окружење</item>
+    <item>Original</item>
+    <item>Echilibrat</item>
+    <item>Sensibilitate ridicată</item>
+    <item>Mediu zgomotos</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Студио</item>
-    <item>Соба</item>
-    <item>Велика соба</item>
-    <item>Сцена</item>
+    <item>Studio</item>
+    <item>Cameră</item>
+    <item>Cameră mare</item>
+    <item>Stadion</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Онемогућено</item>
-    <item>Најслабије</item>
-    <item>Слабије</item>
-    <item>Слабо</item>
-    <item>Јако</item>
-    <item>Јаче</item>
-    <item>Најјаче</item>
+    <item>Dezactivat</item>
+    <item>Cel mai slab</item>
+    <item>Mai slab</item>
+    <item>Slab</item>
+    <item>Puternic</item>
+    <item>Mai puternic</item>
+    <item>Cel mai puternic</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>Благо</item>
-    <item>Уређено</item>
-    <item>Екстремно</item>
+    <item>Slab</item>
+    <item>Moderat</item>
+    <item>Extrem</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>Благо</item>
-    <item>Уређено</item>
-    <item>Екстремно</item>
+    <item>Slab</item>
+    <item>Moderat</item>
+    <item>Extrem</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Стандардно</item>
-    <item>Мали звучници</item>
+    <item>Standard</item>
+    <item>Boxe Mici</item>
   </string-array>
 </resources>
