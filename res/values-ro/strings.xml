@@ -89,10 +89,10 @@
   <string name="pref_wm8994_bass_boost_dlg_title">Amplificare bass</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Amplificare</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Interval amplificare bass</string>
-  <string name="pref_wm8994_control_enable_title">Activaţi Controlul WM8994</string>
+  <string name="pref_wm8994_control_enable_title">Activați Controlul WM8994</string>
   <string name="pref_wm8994_control_enable_summary">Controale avansate pentru procesorul de sunet WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Acordat pentru muzică</string>
-  <string name="pref_wm8994_speaker_tuning_summary">Reconfiguraţi egalizatorul pentru mai mult bass și sunet echilibrat</string>
+  <string name="pref_wm8994_speaker_tuning_summary">Reconfigurați egalizatorul pentru mai mult bass și sunet echilibrat</string>
   <string name="pref_wm8994_mono_downmix_title">Mono downmix</string>
   <string name="pref_wm8994_mono_downmix_summary">Downmix sunet stereo la mono (pentru ieșiri stereo, cum ar fi căști)</string>
   <string name="pref_wm8994_stereo_expansion_title">Expansiune stereo</string>
@@ -104,7 +104,7 @@
   <string name="pref_wm8994_adc_osr128_title">Înregistrare Hi-Fi</string>
   <string name="pref_wm8994_adc_osr128_summary">Convertor analogic-digital 128x supraeșantionare - crește calitatea înregistrării</string>
   <string name="pref_wm8994_fll_tuning_title">Ceas audio ajustat</string>
-  <string name="pref_wm8994_fll_tuning_summary">Utilizaţi sursa de ceas audio WM8994 ajustat - îmbunătățește calitatea sunetului</string>
+  <string name="pref_wm8994_fll_tuning_summary">Utilizați sursa de ceas audio WM8994 ajustat - îmbunătățește calitatea sunetului</string>
   <string name="help_title">Ghid Utilizator</string>
   <string name="help_text"><b>Ce este DSP Manager?</b>
 \n\n

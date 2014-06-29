@@ -49,8 +49,8 @@
   <string name="pref_headset_virtual_summary_on">ヘッドセットのバーチャルルーム効果は有効です</string>
   <string name="pref_headset_virtual_summary_off">ヘッドセットのバーチャルルーム効果は無効です</string>
   <string name="pref_headset_virtual_enable">有効</string>
-  <string name="pref_room_title">部屋のタイプを選択</string>
-  <string name="dialog_room">部屋のタイプ</string>
+  <string name="pref_room_title">部屋の種類を選択</string>
+  <string name="dialog_room">部屋の種類</string>
   <string name="menu_reset">リセット</string>
   <string name="eq_preset_acoustic">Acoustic</string>
   <string name="eq_preset_bass_booster">Bass booster</string>
