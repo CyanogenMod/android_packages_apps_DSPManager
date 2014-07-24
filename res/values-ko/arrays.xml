@@ -17,38 +17,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="microphone_recording_presets">
-    <item>標準</item>
-    <item>バランス</item>
-    <item>高感度</item>
-    <item>騒音環境</item>
+    <item>원본</item>
+    <item>균형</item>
+    <item>고감도</item>
+    <item>시끄러운 환경</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>スタジオ</item>
-    <item>部屋</item>
-    <item>広い部屋</item>
-    <item>ステージ</item>
+    <item>스튜디오</item>
+    <item>방</item>
+    <item>넓은 방</item>
+    <item>무대</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>無効</item>
-    <item>かなり弱い</item>
-    <item>やや弱い</item>
-    <item>弱い</item>
-    <item>強い</item>
-    <item>やや強い</item>
-    <item>かなり強い</item>
+    <item>사용 안 함</item>
+    <item>가장 약하게</item>
+    <item>더 약하게</item>
+    <item>약하게</item>
+    <item>강하게</item>
+    <item>더 강하게</item>
+    <item>가장 강하게</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>弱い</item>
-    <item>普通</item>
-    <item>強い</item>
+    <item>조금</item>
+    <item>보통</item>
+    <item>최대</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>弱い</item>
-    <item>普通</item>
-    <item>強い</item>
+    <item>조금</item>
+    <item>보통</item>
+    <item>최대</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>標準</item>
-    <item>小さいスピーカー</item>
+    <item>일반</item>
+    <item>작은 스피커</item>
   </string-array>
 </resources>

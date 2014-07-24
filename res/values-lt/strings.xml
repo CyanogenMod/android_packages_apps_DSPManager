@@ -17,7 +17,7 @@
 -->
 <resources>
   <string name="app_name">DSP Manager</string>
-  <string name="select_configuration_title">Pasirinkite redaguoti norimą konfigūraciją</string>
+  <string name="select_configuration_title">Pasirinkti redaguoti norimą konfigūraciją</string>
   <string name="headset_title">Laisvų rankų įranga</string>
   <string name="speaker_title">Garsiakalbis</string>
   <string name="bluetooth_title">Bluetooth</string>
@@ -33,7 +33,7 @@
   <string name="pref_dsp_summary_on">Dinaminė diapazono kompresija įjungta</string>
   <string name="pref_dsp_summary_off">Dinaminė diapazono kompresija išjungta</string>
   <string name="pref_dsp_enable">Įjungti</string>
-  <string name="pref_effect_title">Pasirinkite efekto stiprumą</string>
+  <string name="pref_effect_title">Pasirinkti efekto stiprumą</string>
   <string name="dialog_effect">Efekto stiprumas</string>
   <string name="pref_equalizer_title">Ekvalaizeris</string>
   <string name="pref_equalizer_summary_on">Ekvalaizeris įjungtas</string>
@@ -49,7 +49,7 @@
   <string name="pref_headset_virtual_summary_on">Laisvų rankų įrangos virtualaus kambario efektas įjungtas</string>
   <string name="pref_headset_virtual_summary_off">Laisvų rankų įrangos virtualaus kambario efektas išjungtas</string>
   <string name="pref_headset_virtual_enable">Įjungti</string>
-  <string name="pref_room_title">Pasirinkite kambario tipą</string>
+  <string name="pref_room_title">Pasirinkti kambario tipą</string>
   <string name="dialog_room">Kambario tipas</string>
   <string name="menu_reset">Atkurti</string>
   <string name="eq_preset_acoustic">Akustinis</string>

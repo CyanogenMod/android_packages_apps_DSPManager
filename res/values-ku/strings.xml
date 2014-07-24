@@ -29,19 +29,143 @@
   <string name="dsp_settings_bluetooth">ڕێکخستنەکان - ئامێری بلوتووس</string>
   <string name="dsp_settings_usb">USB ڕێکخستنەکان - ئامێرەکانی</string>
   <string name="dsp_settings_wm8994">ڕێکخستنەکان - WM8994</string>
+  <string name="pref_dsp_title">په‌ستاندنی جوڵه‌ی مه‌ودا</string>
+  <string name="pref_dsp_summary_on">په‌ستاندن کارده‌کات</string>
+  <string name="pref_dsp_summary_off">په‌ستاندن کارناکات</string>
   <string name="pref_dsp_enable">چالاککردن</string>
+  <string name="pref_effect_title">دیاری کردنی توانای کاریگه‌ر</string>
+  <string name="dialog_effect">توانای کاریگه‌ر</string>
   <string name="pref_equalizer_title">بەرز و نزمی دەنگ</string>
   <string name="pref_equalizer_summary_on">بەرز و نزمی دەنگ چالاکە</string>
   <string name="pref_equalizer_summary_off">بەرز و نزمی دەنگ ناچالاکە</string>
   <string name="pref_equalizer_enable">چالاککردن</string>
   <string name="pref_equalizer_preset_title">ناوەڕۆک دیاریبکە</string>
+  <string name="pref_equalizer_loudness_title">بژاردنی که‌مئاژاوه‌</string>
+  <string name="pref_bassboost_title">زیادکردنی به‌یس</string>
+  <string name="pref_bassboost_summary_on">زیادکه‌ری به‌یس کارده‌کات</string>
+  <string name="pref_bassboost_summary_off">زیادکه‌ری به‌یس کارناکات</string>
   <string name="pref_bassboost_enable">چالاککردن</string>
+  <string name="pref_headset_virtual_title">بیستۆکی ڕاسته‌ژووری کاریگه‌ر</string>
+  <string name="pref_headset_virtual_summary_on">بیستۆکی ڕاسته‌ ژووری کاریگه‌ر کارده‌کات</string>
+  <string name="pref_headset_virtual_summary_off">بیستۆکی ڕاسته‌ ژووری کاریگه‌ر کارناکات</string>
   <string name="pref_headset_virtual_enable">چالاککردن</string>
   <string name="pref_room_title">جۆری ژوور دیاریبکە</string>
   <string name="dialog_room">جۆری ژوور</string>
   <string name="menu_reset">ڕێکخستنەوه</string>
+  <string name="eq_preset_acoustic">ده‌نگی</string>
+  <string name="eq_preset_bass_booster">زیادکه‌ری به‌یس</string>
+  <string name="eq_preset_bass_reducer">که‌مکه‌ری به‌یس</string>
+  <string name="eq_preset_classical">كلاسیكی</string>
+  <string name="eq_preset_deep">قوڵ</string>
+  <string name="eq_preset_flat">تەخت</string>
+  <string name="eq_preset_r_and_b">R&amp;B</string>
+  <string name="eq_preset_rock">ڕۆک</string>
+  <string name="eq_preset_small_speakers">دەنگدەری بچووک</string>
+  <string name="eq_preset_treble_booster">زیادکه‌ری بێزارکه‌ر</string>
+  <string name="eq_preset_treble_reducer">که‌مکه‌ری بێزارکه‌ر</string>
+  <string name="eq_preset_vocal_booster">زیادکه‌ری وشه‌ده‌ر</string>
   <string name="eq_preset_custom">تایبەت</string>
   <string name="category_wm8994_internal_speaker">دەنگدەر</string>
+  <string name="category_wm8994_signal_processing">پرۆسه‌ی ئاماژه‌</string>
+  <string name="category_wm8994_headphone_amp">بیستۆک</string>
+  <string name="category_wm8994_codec_optimization">له‌بارکردنی کۆدێک</string>
+  <string name="category_wm8994_dac_config">ڕێکخستنی بگۆڕی ژماره‌یی/پێوه‌ری</string>
+  <string name="category_wm8994_analog_path">ڕێکخستنی ڕێره‌وی پێوه‌ر</string>
+  <string name="category_wm8994_mic_settings">ڕێکخستنی مایکرۆفۆن</string>
+  <string name="category_wm8994_microphone_recording">مایکرۆفۆن</string>
+  <string name="wm8994_settings_title_head">ڕێکخستنەکانی دەنگ</string>
+  <string name="wm8994_settings_title_subhead">ڕێکخستنەکانی دەنگ</string>
+  <string name="wm8994_settings_summary_head">سه‌رپه‌رشتی پێشکه‌وتووی پرۆسه‌ری ده‌نگی WM8994</string>
+  <string name="pref_wm8994_microphone_recording_title">ئاماده‌کراوی تۆمارکردن</string>
+  <string name="pref_wm8994_headphone_amp_title">ئاستی به‌هێزکه‌ر</string>
+  <string name="pref_wm8994_headphone_amp_summary">خواستن کردنی پێوه‌ری</string>
+  <string name="pref_wm8994_headphone_amp_dlg_title">ئاستی ده‌نگده‌ری بیستۆک</string>
+  <string name="pref_wm8994_headphone_amp_dlg_desc">زیادکه‌ری پێوه‌ر</string>
+  <string name="pref_wm8994_bass_boost_enable_title">زیادکردنی به‌یس</string>
+  <string name="pref_wm8994_bass_boost_enable_summary">سه‌رپه‌رشتیکردنی پێشکه‌وتوو بۆ زیادکردنی به‌یس</string>
+  <string name="pref_wm8994_bass_boost_title">مه‌ودای زیادکه‌ری به‌یس</string>
+  <string name="pref_wm8994_bass_boost_summary">به‌ڕێوه‌بردنی جوڵه‌ی مه‌ودای پێشکه‌وتوو</string>
+  <string name="pref_wm8994_bass_boost_preset_title">ئاماده‌کراوی زیادکه‌ری به‌یس</string>
+  <string name="pref_wm8994_bass_boost_dlg_title">زیادکه‌ری به‌یس</string>
+  <string name="pref_wm8994_bass_boost_gain_dlg_desc">زیادکردن</string>
+  <string name="pref_wm8994_bass_boost_range_dlg_desc">مه‌ودای زیادکه‌ری به‌یس</string>
   <string name="pref_wm8994_control_enable_title">WM8994 چالاککردنی کۆنترۆڵی</string>
+  <string name="pref_wm8994_control_enable_summary">سه‌رپه‌رشتی پێشکه‌وتووی پرۆسه‌ری ده‌نگی WM8994</string>
+  <string name="pref_wm8994_speaker_tuning_title">دانانی گۆرانی</string>
+  <string name="pref_wm8994_speaker_tuning_summary">دووباره‌ ڕێکخستنه‌وه‌ی هاردوێری EQ بۆ به‌یسی زیاتر و ده‌نگی ته‌رازووکراو</string>
+  <string name="pref_wm8994_mono_downmix_title">خوارمیکسی مۆنۆ</string>
+  <string name="pref_wm8994_mono_downmix_summary">خوارمیکسی ستیریۆی ده‌نگ بۆ مۆنۆ(بۆ ده‌رچه‌ی ستیریۆ، وه‌ک بیستۆک)</string>
+  <string name="pref_wm8994_stereo_expansion_title">فراوانبوونی ستیریۆ</string>
+  <string name="pref_wm8994_stereo_expansion_summary">فراوانی ستیریۆی ده‌نگ له‌گه‌ڵ ئاماژه‌ی دیجیتاڵی پرۆسه‌</string>
+  <string name="pref_wm8994_dac_direct_title">D/AC ڕاسته‌وخۆ</string>
+  <string name="pref_wm8994_dac_direct_summary">ده‌سته‌ڵاتی ژمێری/پێوه‌ری گۆڕه‌ری ڕاسته‌وخۆ، بڕینی میکسی که‌ناڵه‌کان. ده‌رکردنی ده‌نگێکی ساف(به‌رزتری ئاماژه‌-بۆ-ژاوه‌ژاوی پله‌)</string>
+  <string name="pref_wm8994_dac_osr128_title">های-فای پله‌یباک</string>
+  <string name="pref_wm8994_dac_osr128_summary">ژمێری-بۆ-پێوه‌ری گۆڕین 128x سه‌روو نمونه‌یی--ده‌نگێکی سافتر له‌کاتی گۆرانی</string>
+  <string name="pref_wm8994_adc_osr128_title">تۆمارکردنی های-فای</string>
+  <string name="pref_wm8994_adc_osr128_summary">ژمێری-بۆ-پێوه‌ری گۆڕین 128x سه‌روو نمونه‌یی--زیادکردنی کوالێتی تۆمارکردن</string>
+  <string name="pref_wm8994_fll_tuning_title">ده‌نگی کاژێری بادراو</string>
+  <string name="pref_wm8994_fll_tuning_summary">به‌کارهێنانی بادراوی  WM8994 ده‌نگی سه‌رچاوه‌ی کاژێر -- زیادکردنی کوالێتی ده‌نگ</string>
   <string name="help_title">یارمەتی</string>
+  <string name="help_text"><b>به‌ڕێوه‌به‌ری DSP چییه‌؟</b>
+\n\n
+به‌ڕێوه‌به‌ری DSP به‌رنامه‌یه‌کی نیمچه‌-ده‌رچه‌ی ده‌نگ ڕێکخه‌ره‌.<i>DSP</i>له‌ Digital signal processingـه‌وه‌ هاتووه‌ و به‌ڕێوه‌بردنیش به‌شێکه‌ له‌ به‌رنامه‌که‌.
+DSP له‌ ڕاستیدا خۆی کارناکات له‌خۆییدا؛ به‌ڕێوه‌به‌ری ته‌نیا ئه‌توانێت به‌رنامه‌که‌ کارپێبکات که‌ گونجاوه‌ بۆ کاریگه‌ری و ده‌نگی ئه‌ندرۆید و خزمه‌تگوزارییه‌کانی، وه‌ک:زۆربه‌ی لێده‌ری گۆرانییه‌کان.
+\n\n\n
+<b>فه‌لسه‌فه‌</b>
+\n\n
+ساینه‌جنمۆد و ده‌نگه‌کانی پرۆسه‌ی گونجانی چوار جۆری ده‌رچه‌ی ده‌نگی ده‌کات:
+بیستۆکی وایه‌ردار، ده‌نگی USB، بڵندگۆی ئامێر و بیستۆکی بلوتوس. ڕێکخستنی جیاواز هه‌یه‌ هه‌ریه‌که‌و به‌شی خۆی هه‌یه‌ بۆ جۆری خۆی. فه‌لسه‌فه‌ی به‌رنامه‌که‌ زۆر گونجاوه‌ بۆ هه‌ر ده‌نگێک که‌ به‌شێکه‌ له‌ گه‌شتنی ده‌نگی ڕێکخراو بۆ گوێگرتن له‌ هه‌ریه‌که‌یان
+\n\n
+جیا له‌ به‌رنامه‌ی AOSP، به‌رنامه‌ی تر نییه‌ ڕێکخستنی وه‌های هه‌بێت به‌م جۆره‌ دیزاین کرابێت و داڕێژرابێت،ده‌رچه‌ ئێمه‌ به‌لامانه‌وه‌ گرنگه‌، نه‌ک هه‌ر به‌رنامه‌یه‌ک بێت و دابهێنرێت
+\n\n\n
+<b>خزمه‌تگوزارییه‌کان</b>
+\n\n
+1.<b>که‌پسی جوڵه‌ی ماوه‌</b>
+\n\n
+ئەمە مەزەنده‌كردنه‌كەى كاريگەرى بە دەنگى بەرزى دەنگيەكە ئەوەندە لەلايەنێك تێكڕاى هەست پێکردنه‌
+گوێ گر و كۆنترۆڵێكى دەستكەوتنی هه‌یه‌ لەسەر بنەماى خه‌ملاندن. حالەتى بەكارهێنان يەكەمى
+وەكو دەوروبەرى بەهەرا لە ئوتۆمبێلە يان لەسەر شەقام، ئەو شوێنەى بەشى بێدەنگى
+مۆسيقا لە مەترسىى بوون بە لەلايەن ژاوەژاوى زەمينە دەرەوە دەخنكێنرێن. 
+\n\n\n
+2.زیادکه‌ری به‌یس
+\n\n
+جۆرە ماسييەكە فلتەرێكى لۆوپاس سادە بەهێز دەكات دەتوانێت بەكار بهێنرێت تا دووپات كردنەوەيێك زياد بكات
+لە 55 هز و دووبارە بوونەوە نزمتر. بەهێزكردنەكە لەم ناوە 6 دى بييە، و لەلايەنى گۆڕى
+هێز هۆكار، لە 55 باندى ڕيزۆنانس هزى فلتەر زياد دەكات، پێدان
+ئەوە دووپات كردنەوەى دووبارە بوونەوە زيادە. كاريگەريەكە دروست دەكرێت تا لەدەستدانى جۆرەکه بەرەنگار ببێتەوە
+دووبارە بوونەوەى باو لەگەڵ هێدسێتسى قسەكەر و سەرو-دەبيسترێت بچووك كە ناێت
+جووت بەتوندى لەگەڵ ئاودڕكەى گوێى بەكاربەر. 
+\n\n\n
+3.<b>ئیکوالایزه‌ر</b>
+\n\n\n
+ئەمە ئييكوەلايزەێكى 6-باندە لە 16، 64، 250، 1000، و 4000 16000 هز.
+هەندێك مسبقى باو دەستەبەر دەكرێن، و وەڵامەكەى دووبارە بوونەوە هەروەها دەتوانێت ببێت
+بە لێدان كەستەمايزد لەسەر هێلكاريەكەى ئييكوەلايزە. كاريگەريەكە دەبێت بەكار بهێنرێت تا نەوا بێت
+بۆ چێژى وەڵامى وەڵام كەسيى بەكاربەر، يان بۆ دياريكراو
+بەتواناييى هێدسێت يان قسەكەرى بەردەست
+\n\n
+ئييكوەلايزە هەروەها فلتەرێكى قەرەبووكردنەوەى بە دەنگى بەرز تێدا دەبێت، ئێكاليزێس كە
+گۆڕان لە وەڵامى دووبارە بوونەوەى گوێ لەسەر بنەماى ئاستى فشار ساغ كە
+دەگەن بە گوێەكەى بەكاربەر. بەكارهێنانى هێدسێتێكيى وايەدراو پێويست دەبێت، و هێزەكە
+بەهاى هۆكار بەشێوەيەكى ڕاست دەبێت تون برێت لە پێش كاريگەريەكە ئەوەندە كار دەكات
+\n\n
+بۆ دیاری کردنی بەهاى ڕاست بۆ هێزەكەى قەرەبووكردنەوە هەڵببژێرێت، بەكارهێنان بێدەنگترين مۆسيقا
+قەبارە، و وەكو هەندێك بەرد يان كانزاى مۆسيقا بەهەرا فراوان-شەبەنگ هەڵدەبژێرێت. هەوڵ بدە
+تا دانانەوەيێك بدۆزێتەوە ئەو شوێنەى جۆرە ماسييەكە بۆ ناو بيستراوى بەهێز دەكرێت و وا دەر دەكەوێت
+هاوسەنگ لەگەڵ ئەوانى ترى ماددەكە. دوايى قەرەبووكردنەوەكە بوو
+بەشێوەيەكى ڕاست ڕێكى خست، جۆرە ماسييەكە دەبێت رێلاتيڤێ تۆ هەمان ئاست بمێنێتەوە
+ئامرازى ديكە بێگوێدانەى ئاستەكەى گوێگرتن. 
+\n\n
+قەرەبووكردنەوەكە بۆ ڕاست كردنەوەكەى بەكاربەر هەڵدەبژێررێت. ئەگەر تەنها قەرەبووكردنەوە
+ئارەزوو دەكرێت، ئييكوەلايزەكە دەبێت لەكە بەجێ بهێڵرێت
+\n\n\n
+4.پاڵێوه‌ری بیستۆک
+\n\n
+فلتەرەكەى هێدسێت داڕژتنێكى كرۆسفيد نيگا بۆ دێرێت لەلايەن وەك شيوەى ناودار 
+سووڕ. كاريگەريەكە دەنگى پێشگرە: يەك نەگۆڕاو تێ دەپەڕێت، و جياوازيەكە ڕێك دەخات
+بەناو فلتەرێكى لۆپپاس هێمای هەردووك سێبەرى سەر نزيك دەكاتەوە و
+دواخستنى ئينتێراورال يەكسەر، پێدان ڕاستە جۆرێك لە پسيچۆاكۆوستيك بۆى بەكاربەر كلووز دات
+گوێ. نيازەكە ئه‌وه‌یه‌ تا شەكەتيى گوێ گر پێشگيرى بكات له‌ زه‌نگی گوێه‌وه‌
+جياكردنەوەى ئامێرى دووبلندگۆ خۆيى مه‌حاڵ لەگەڵ هەموو بیستۆک. كاريگەريەكە دەبێت ببێت
+هەر كاتى هێدسێتسى ئامێرى دووبلندگۆ توانادراو بەكارى هێنا. </string>
 </resources>
