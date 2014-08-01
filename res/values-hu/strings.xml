@@ -94,7 +94,7 @@
   <string name="pref_wm8994_speaker_tuning_title">Zenére hangolás</string>
   <string name="pref_wm8994_speaker_tuning_summary">Átállítja a hardveres hangszínszabályzót több mélyhangért és kiegyensúlyozottabb hangzásért.</string>
   <string name="pref_wm8994_mono_downmix_title">Egy hangsávra keverés</string>
-  <string name="pref_wm8994_mono_downmix_summary">Kettőről egy hangsávra kever (Sztereó kimenetekhez, mint például fülhallgatók)</string>
+  <string name="pref_wm8994_mono_downmix_summary">Kettőről egy hangsávra kever (sztereó kimenetekhez, mint például fülhallgatók)</string>
   <string name="pref_wm8994_stereo_expansion_title">Sztereó kiterjesztés</string>
   <string name="pref_wm8994_stereo_expansion_summary">“Kiterjeszti” a sztereó hangzást digitális jelfeldolgozási eszközökkel</string>
   <string name="pref_wm8994_dac_direct_title">Közvetlen D/A átalakítás</string>
