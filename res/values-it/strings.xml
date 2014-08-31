@@ -108,11 +108,11 @@
   <string name="help_title">Manuale d\'uso</string>
   <string name="help_text"><b>Che cos\'è DSP Manager?</b>
 \n
-\nDSP Manager è un\'applicazione per la regolazione dell\'audio in uscita
+\nDSP Manager è un\'app per la regolazione dell\'audio in uscita
 <i>DSP</i> sta per Digital Signal Processing, mentre <i>Manager</i> si riferisce
 al fatto che l\'elaborazione del segnale digitale non viene effettivamente
-eseguita all\'interno della stessa applicazione, il gestore può solo attivarla
-per le applicazioni che sono compatibili con le specifiche degli effetti audio di
+eseguita all\'interno della stessa app, il gestore può solo attivarla
+per le app che sono compatibili con le specifiche degli effetti audio di
 Android, vale a dire la maggior parte dei lettori musicali.
 \n
 \n<b>Filosofia</b>
@@ -124,8 +124,8 @@ correggere le particolari carenze di ogni uscita audio per raggiungere la più
 ottimale esperienza d\'ascolto.
 \n
 \nA differenza degli effetti audio AOSP, non ci sono impostazioni per ogni
-applicazione. Questa è una scelta di progettazione: è l\'output che ci interessa,
-non quale applicazione lo genera.
+app. Questa è una scelta di progettazione: è l\'output che ci interessa,
+non quale app lo genera.
 \n
 \n<b>Funzionalità</b>
 \n
