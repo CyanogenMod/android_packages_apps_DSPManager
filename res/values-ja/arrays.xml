@@ -39,12 +39,12 @@
   </string-array>
   <string-array name="compression_modes">
     <item>弱い</item>
-    <item>普通</item>
+    <item>標準</item>
     <item>強い</item>
   </string-array>
   <string-array name="bassboost_modes">
     <item>弱い</item>
-    <item>普通</item>
+    <item>標準</item>
     <item>強い</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
