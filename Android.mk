@@ -1,3 +1,5 @@
+ifneq ($(TARGET_PROVIDES_AUDIO_EFFECTS),true)
+
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -17,3 +19,5 @@ include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
