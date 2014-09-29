@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP Manager</string>
-  <string name="select_configuration_title">Kies configuratie om te bewerken</string>
-  <string name="headset_title">Headset</string>
+  <string name="headset_title">Koptelefoon</string>
   <string name="speaker_title">Luidspreker</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/dock</string>
-  <string name="audio_effects">Geluidseffecten</string>
   <string name="pref_unavailable">Functionaliteit is niet beschikbaar voor uw apparaat</string>
-  <string name="dsp_settings_headset">DSP-instellingen - Headset</string>
-  <string name="dsp_settings_speaker">DSP-instellingen - Telefoonluidspreker</string>
-  <string name="dsp_settings_bluetooth">DSP-instellingen - Bluetoothapparaat</string>
-  <string name="dsp_settings_usb">DSP-instellingen - USB-apparaat</string>
-  <string name="dsp_settings_wm8994">DSP-instellingen - WM8994</string>
   <string name="pref_dsp_title">Dynamisch bereikcompressie</string>
   <string name="pref_dsp_summary_on">Dynamisch bereikcompressie ingeschakeld</string>
   <string name="pref_dsp_summary_off">Dynamisch bereikcompressie uitgeschakeld</string>
@@ -45,13 +38,12 @@
   <string name="pref_bassboost_summary_on">Basversterker ingeschakeld</string>
   <string name="pref_bassboost_summary_off">Basversterker uitgeschakeld</string>
   <string name="pref_bassboost_enable">Inschakelen</string>
-  <string name="pref_headset_virtual_title">Headset in virtuele ruimte-effect</string>
+  <string name="pref_headset_virtual_title">Virtuele ruimte-effect</string>
   <string name="pref_headset_virtual_summary_on">\'Headset in virtuele ruimte-effect\' ingeschakeld</string>
-  <string name="pref_headset_virtual_summary_off">\'Headset in virtuele ruimte-effect\' uitgeschakeld</string>
+  <string name="pref_headset_virtual_summary_off">\'Virtuele ruimte-effect\' uitgeschakeld</string>
   <string name="pref_headset_virtual_enable">Inschakelen</string>
   <string name="pref_room_title">Type ruimte</string>
   <string name="dialog_room">Type ruimte</string>
-  <string name="menu_reset">Herstellen</string>
   <string name="eq_preset_acoustic">Akoestiek</string>
   <string name="eq_preset_bass_booster">Basversterker</string>
   <string name="eq_preset_bass_reducer">Basverzwakker</string>
@@ -67,34 +59,26 @@
   <string name="eq_preset_custom">Aangepast</string>
   <string name="category_wm8994_internal_speaker">Luidspreker</string>
   <string name="category_wm8994_signal_processing">Signaalverwerking</string>
-  <string name="category_wm8994_headphone_amp">Headset</string>
+  <string name="category_wm8994_headphone_amp">Koptelefoon</string>
   <string name="category_wm8994_codec_optimization">Codecoptimalisatie</string>
   <string name="category_wm8994_dac_config">Digitaal/analoog-conversie-instellingen</string>
-  <string name="category_wm8994_analog_path">Analoge padenconfiguratie</string>
-  <string name="category_wm8994_mic_settings">Microfooninstellingen</string>
   <string name="category_wm8994_microphone_recording">Microfoon</string>
-  <string name="wm8994_settings_title_head">Geluidsinstellingen</string>
-  <string name="wm8994_settings_title_subhead">Geluidsinstellingen</string>
-  <string name="wm8994_settings_summary_head">Geavanceerd beheer van de WM8994-geluidsprocessor</string>
   <string name="pref_wm8994_microphone_recording_title">Preset voor opnemen</string>
   <string name="pref_wm8994_headphone_amp_title">Versterkerniveau</string>
   <string name="pref_wm8994_headphone_amp_summary">Analoge gain wijzigen</string>
-  <string name="pref_wm8994_headphone_amp_dlg_title">Headsetversterkerniveau</string>
+  <string name="pref_wm8994_headphone_amp_dlg_title">Versterkerniveau koptelefoon</string>
   <string name="pref_wm8994_headphone_amp_dlg_desc">Analoge gain</string>
   <string name="pref_wm8994_bass_boost_enable_title">Basversterker</string>
   <string name="pref_wm8994_bass_boost_enable_summary">Geavanceerd beheer van basversterker</string>
   <string name="pref_wm8994_bass_boost_title">Bereik basversterker</string>
   <string name="pref_wm8994_bass_boost_summary">Geavanceerd beheer van dynamisch bereik</string>
   <string name="pref_wm8994_bass_boost_preset_title">Preset voor basversterker</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Basversterker</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Gain</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Bereik van basversterker</string>
-  <string name="pref_wm8994_control_enable_title">WM8994-beheer inschakelen</string>
-  <string name="pref_wm8994_control_enable_summary">Geavanceerde instellingen voor de WM8994-geluidsprocessor</string>
   <string name="pref_wm8994_speaker_tuning_title">Muziektoon</string>
   <string name="pref_wm8994_speaker_tuning_summary">Hardware-EQ herconfigureren voor meer bas en een evenwichtig klankbeeld</string>
   <string name="pref_wm8994_mono_downmix_title">Downmixen naar mono</string>
-  <string name="pref_wm8994_mono_downmix_summary">Stereo- naar monogeluid downmixen (voor stereo-uitvoer, zoals headsets)</string>
+  <string name="pref_wm8994_mono_downmix_summary">Stereo- naar monogeluid downmixen (voor stereo-uitvoer, zoals een koptelefoon)</string>
   <string name="pref_wm8994_stereo_expansion_title">Stereo-uitbreiding</string>
   <string name="pref_wm8994_stereo_expansion_summary">Stereogeluid \'uitbreiden\u2019 d.m.v. digitale geluidsverwerking</string>
   <string name="pref_wm8994_dac_direct_title">Directe digitaal/analoog-omzetter</string>
@@ -118,7 +102,7 @@ muziekspelers.
 \n<b>Filosofie</b>
 \n
 \nDe mogelijkheden van het geluidsverwerkingssysteem van CyanogenMod biedt
-ondersteuning voor vier uitvoersoorten: bedrade headset,
+ondersteuning voor vier uitvoersoorten: bedrade koptelefoon,
 telefoonluidspreker, USB-apparaat en bluetoothheadset. Voor elke categorie bestaat er
 een configuratiepaneel. De filosofie van DSP Manager is om de geluidsuitvoer zo
 te manipuleren, dat het geluid het best beleefd kan worden.
@@ -152,7 +136,7 @@ nadruk te leggen op frequenties tot 55 Hz. De versterking is ongeveer 6 dB en ka
 worden aangepast met de \'sterkte\'-parameter, die bijdraagt aan de respons beneden de
 55 Hz, waardoor deze frequenties extra benadrukt worden. Het effect is ontworpen om
 het verlies van lage frequenties te bestrijden zoals dat optreedt bij kleine
-luidsprekers en in-oor headsets die niet goed aansluiten op het gehoorkanaal van
+luidsprekers en in-oor koptelefoons die niet goed aansluiten op het gehoorkanaal van
 de gebruiker.
 \n
 \n3. <b>Equalizer</b>
@@ -162,11 +146,11 @@ Enkele veel voorkomende instellingen zijn kant-en-klaar beschikbaar, maar de
 frequentierespons kan ook op maat worden ingesteld door te tikken op de
 equalizergrafiek. Het effect wordt gebruikt voor het afstemmen van de frequentie
 naar de wens van de gebruiker of de specifieke mogelijkheden van de beschikbare
-headset/luidsprekers.
+koptelefoon/luidsprekers.
 \n
 \nDe equalizer bevat ook een luidheidscompensatiefilter, dat veranderingen van de
 frequentie in het oor egaliseert op basis van de geluidsdruk die het oor van de
-gebruiker bereikt. Het gebruik van een bedrade headset is noodzakelijk en de
+gebruiker bereikt. Het gebruik van een bedrade koptelefoon is noodzakelijk en de
 compensatiewaarde moet correct worden afgestemd voordat het effect werkt zoals
 ontworpen.
 \n
@@ -181,18 +165,17 @@ niveaus, is de compensatiewaarde waarschijnlijk te sterk en moet deze worden ver
 \nDe ingestelde compensatie wordt toegevoegd aan de gekozen instelling van de
 equalizer. Als enkel compensatie nodig is, moet de equalizer op \'vlak\' blijven ingesteld.
 \n
-\n4. <b>Headsetfilter</b>
+\n4. <b>Koptelefoonfilter</b>
 \n
-\nHet headsetfilter is een crossfeed-ontwerp, geïnspireerd door het beroemde bs2b
+\nHet koptelefoonfilter is een crossfeed-ontwerp, geïnspireerd door het beroemde bs2b
 analoge circuit. Het filter laat monogeluid ongewijzigd door en laat het
 verschil in signaal door een laagdoorlaatfilter gaan dat zowel hoofdschaduw als
 in-oor-vertraging nabootst, wat het juiste psychologische effect voor de oren van de
 gebruiker oplevert. Het is de bedoeling te voorkomen dat de luisteraar vermoeid wordt
-als gevolg van de onwaarschijnlijke stereoscheiding die inherent is aan alle headsets.
-Het effect moet worden ingeschakeld indien een stereoheadset wordt gebruikt.
+als gevolg van de onwaarschijnlijke stereoscheiding die inherent is aan alle koptelefoons.
+Het effect moet worden ingeschakeld indien een stereokoptelefoon wordt gebruikt.
 \n
 \nOmdat het mengen het stereobeeld enigszins vermindert, kan er een Haas-effect
 galm ontstaan, die kan worden gebruikt om de waargenomen breedte van het stereobeeld te
-verhogen. Dit kan worden afgestemd door de \'Type ruimte\'-instelling.
-    </string>
+verhogen. Dit kan worden afgestemd door de \'Type ruimte\'-instelling.</string>
 </resources>

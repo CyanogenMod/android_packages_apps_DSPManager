@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">Ecualizador</string>
-  <string name="select_configuration_title">Seleccionar configuración a editar</string>
   <string name="headset_title">Auriculares</string>
   <string name="speaker_title">Altavoz</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Base</string>
-  <string name="audio_effects">Filtros de audio</string>
   <string name="pref_unavailable">Funcionalidad no disponible para el dispositivo</string>
-  <string name="dsp_settings_headset">Ajustes - Auriculares</string>
-  <string name="dsp_settings_speaker">Ajustes - Altavoces</string>
-  <string name="dsp_settings_bluetooth">Ajustes - Bluetooth</string>
-  <string name="dsp_settings_usb">Ajustes - Dispositivo USB</string>
-  <string name="dsp_settings_wm8994">Ajustes - WM8994</string>
   <string name="pref_dsp_title">Rango de Compresión Dinámica</string>
   <string name="pref_dsp_summary_on">Compresión activada</string>
   <string name="pref_dsp_summary_off">Compresión desactivada</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Habilitar</string>
   <string name="pref_room_title">Seleccionar tipo de habitación</string>
   <string name="dialog_room">Tipo de habitación</string>
-  <string name="menu_reset">Restaurar</string>
   <string name="eq_preset_acoustic">Acústico</string>
   <string name="eq_preset_bass_booster">Potenciar bajos</string>
   <string name="eq_preset_bass_reducer">Reducir bajos</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Auriculares</string>
   <string name="category_wm8994_codec_optimization">Optimización de códec</string>
   <string name="category_wm8994_dac_config">Ajustes de conversión digital/analógico</string>
-  <string name="category_wm8994_analog_path">Configuración de ruta analógica</string>
-  <string name="category_wm8994_mic_settings">Ajustes de micrófono</string>
   <string name="category_wm8994_microphone_recording">Micrófono</string>
-  <string name="wm8994_settings_title_head">Ajustes de sonido</string>
-  <string name="wm8994_settings_title_subhead">Ajustes de sonido</string>
-  <string name="wm8994_settings_summary_head">Ajustes avanzados del procesador de sonido WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">Grabación predefinida</string>
   <string name="pref_wm8994_headphone_amp_title">Nivel del amplificador</string>
   <string name="pref_wm8994_headphone_amp_summary">Personalizar ganancia analógica</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Rango Bass Boost</string>
   <string name="pref_wm8994_bass_boost_summary">Gestión avanzada de rango dinámico</string>
   <string name="pref_wm8994_bass_boost_preset_title">Bass Boost predefinido</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Bass Boost</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Ganancia</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Rango Bass Boost</string>
-  <string name="pref_wm8994_control_enable_title">Habilitar ajustes WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">Ajustes avanzados del procesador de sonido WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Ajustes de música</string>
   <string name="pref_wm8994_speaker_tuning_summary">Reconfigurar el hardware del ecualizador para obtener un sonido más bajo y balanceado</string>
   <string name="pref_wm8994_mono_downmix_title">Mezclar mono</string>

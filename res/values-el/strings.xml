@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP Manager</string>
-  <string name="select_configuration_title">Επιλέξτε ρύθμιση για επεξεργασία</string>
   <string name="headset_title">Ακουστικά</string>
   <string name="speaker_title">Ηχείο</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Βάση σύνδεσης</string>
-  <string name="audio_effects">Ηχητικά εφέ</string>
   <string name="pref_unavailable">Η λειτουργία δεν είναι διαθέσιμη στη συσκευή σας</string>
-  <string name="dsp_settings_headset">Ρυθμίσεις DSP - Ακουστικά</string>
-  <string name="dsp_settings_speaker">Ρυθμίσεις DSP - Ηχείο τηλεφώνου</string>
-  <string name="dsp_settings_bluetooth">Ρυθμίσεις DSP - Συσκευή Bluetooth</string>
-  <string name="dsp_settings_usb">Ρυθμίσεις DSP - Συσκευή USB</string>
-  <string name="dsp_settings_wm8994">Ρυθμίσεις DSP - WM8994</string>
   <string name="pref_dsp_title">Συμπίεση δυναμικού εύρους</string>
   <string name="pref_dsp_summary_on">Συμπίεση ενεργοποιημένη</string>
   <string name="pref_dsp_summary_off">Συμπίεση απενεργοποιημένη</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Ενεργοποίηση</string>
   <string name="pref_room_title">Επιλογή τύπου δωματίου</string>
   <string name="dialog_room">Τύπος δωματίου</string>
-  <string name="menu_reset">Επαναφορά</string>
   <string name="eq_preset_acoustic">Ακουστική</string>
   <string name="eq_preset_bass_booster">Ενίσχυση μπάσων</string>
   <string name="eq_preset_bass_reducer">Μείωση μπάσων</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Ακουστικά</string>
   <string name="category_wm8994_codec_optimization">Βελτιστοποίηση κωδικοποιητή</string>
   <string name="category_wm8994_dac_config">Ρυθμίσεις μετατροπέα ψηφιακού/αναλογικού</string>
-  <string name="category_wm8994_analog_path">Ρύθμιση διαδρομής αναλογικού</string>
-  <string name="category_wm8994_mic_settings">Ρυθμίσεις μικροφώνου</string>
   <string name="category_wm8994_microphone_recording">Μικρόφωνο</string>
-  <string name="wm8994_settings_title_head">Ρυθμίσεις ήχου</string>
-  <string name="wm8994_settings_title_subhead">Ρυθμίσεις ήχου</string>
-  <string name="wm8994_settings_summary_head">Προηγμένος έλεγχος του επεξεργαστή ήχου WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">Προεπιλογές εγγραφής</string>
   <string name="pref_wm8994_headphone_amp_title">Επίπεδο ενισχυτή</string>
   <string name="pref_wm8994_headphone_amp_summary">Προσαρμογή αναλογικού κέρδους</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Εύρος ενίσχυσης μπάσων</string>
   <string name="pref_wm8994_bass_boost_summary">Προηγμένος έλεγχος δυναμικού εύρους</string>
   <string name="pref_wm8994_bass_boost_preset_title">Προεπιλογή ενίσχυσης μπάσων</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Ενίσχυση μπάσων</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Κέρδος</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Εύρος ενίσχυσης μπάσων</string>
-  <string name="pref_wm8994_control_enable_title">Ενεργοποίηση ελέγχου WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">Προηγμένος έλεγχος του επεξεργαστή ήχου WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Ρύθμιση για μουσική</string>
   <string name="pref_wm8994_speaker_tuning_summary">Ρυθμίζει τον ισοσταθμιστή για περισσότερα μπάσα και ισορροπημένο ήχο</string>
   <string name="pref_wm8994_mono_downmix_title">Μίξη στέρεο σε μόνο</string>

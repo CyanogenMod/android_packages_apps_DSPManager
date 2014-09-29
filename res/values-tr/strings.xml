@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">Ses Yöneticisi</string>
-  <string name="select_configuration_title">Düzenlemek için yapılandırma seçin</string>
   <string name="headset_title">Kulaklık</string>
   <string name="speaker_title">Hoparlör</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Ünite</string>
-  <string name="audio_effects">Ses efektleri</string>
   <string name="pref_unavailable">Bu işlevsellik cihazınızda desteklenmiyor</string>
-  <string name="dsp_settings_headset">Ses Yöneticisi Ayarları - Kulaklık</string>
-  <string name="dsp_settings_speaker">Ses Yöneticisi Ayarları - Telefon Hoparlörü</string>
-  <string name="dsp_settings_bluetooth">Ses Yöneticisi Ayarları - Bluetooth Aygıtı</string>
-  <string name="dsp_settings_usb">Ses Yöneticisi Ayarları - USB Aygıtı</string>
-  <string name="dsp_settings_wm8994">Ses Yöneticisi Ayarları - WM8994</string>
   <string name="pref_dsp_title">Dinamik alan sıkıştırması</string>
   <string name="pref_dsp_summary_on">Sıkıştırma etkin</string>
   <string name="pref_dsp_summary_off">Sıkıştırma etkin değil</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Etkinleştir</string>
   <string name="pref_room_title">Oda tipini seçin</string>
   <string name="dialog_room">Oda tipi</string>
-  <string name="menu_reset">Sıfırla</string>
   <string name="eq_preset_acoustic">Akustik</string>
   <string name="eq_preset_bass_booster">Bas yükseltici</string>
   <string name="eq_preset_bass_reducer">Bas azaltıcı</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Kulaklık</string>
   <string name="category_wm8994_codec_optimization">Codec optimizasyonu</string>
   <string name="category_wm8994_dac_config">Dijital/Analog dönüştürücü ayarları</string>
-  <string name="category_wm8994_analog_path">Analog kanal yapılandırması</string>
-  <string name="category_wm8994_mic_settings">Mikrofon ayarları</string>
   <string name="category_wm8994_microphone_recording">Mikrofon</string>
-  <string name="wm8994_settings_title_head">Ses ayarları</string>
-  <string name="wm8994_settings_title_subhead">Ses ayarları</string>
-  <string name="wm8994_settings_summary_head">WM8994 ses işlemcisinin gelişmiş ayarları</string>
   <string name="pref_wm8994_microphone_recording_title">Kaydetme ön ayarı</string>
   <string name="pref_wm8994_headphone_amp_title">Yükseltici seviyesi</string>
   <string name="pref_wm8994_headphone_amp_summary">Analog yükselticiyi özelleştir</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Bas yükseltme aralığı</string>
   <string name="pref_wm8994_bass_boost_summary">Gelişmiş dinamik alan yönetimi</string>
   <string name="pref_wm8994_bass_boost_preset_title">Bas yükseltici ön ayarı</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Bas yükseltici</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Yükselt</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Bas yükseltme aralığı</string>
-  <string name="pref_wm8994_control_enable_title">WM8994 Kontrolünü etkinleştir</string>
-  <string name="pref_wm8994_control_enable_summary">WM8994 ses işlemcisi için gelişmiş kontroller</string>
   <string name="pref_wm8994_speaker_tuning_title">Müzik için ayarla</string>
   <string name="pref_wm8994_speaker_tuning_summary">Daha fazla bas ve dengeli ses için donanım EQ\'sunu ayarla</string>
   <string name="pref_wm8994_mono_downmix_title">Mono çevrimi</string>

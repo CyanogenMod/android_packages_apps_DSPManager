@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSV Bestuurder</string>
-  <string name="select_configuration_title">Kies konfigurasie om te verander</string>
   <string name="headset_title">Oorfone</string>
   <string name="speaker_title">Luidspreker</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dok</string>
-  <string name="audio_effects">Klank effekte</string>
   <string name="pref_unavailable">Nie beskikbaar op toestel nie</string>
-  <string name="dsp_settings_headset">DSV instellings - Oorfone</string>
-  <string name="dsp_settings_speaker">DSV instellings - Luidspreker</string>
-  <string name="dsp_settings_bluetooth">DSV instellings - Bluetooth</string>
-  <string name="dsp_settings_usb">DSV instellings - USB toestel</string>
-  <string name="dsp_settings_wm8994">DSV instellings - WM8994</string>
   <string name="pref_dsp_title">Dinamiese bereik kompressie</string>
   <string name="pref_dsp_summary_on">Kompressie geaktiveer</string>
   <string name="pref_dsp_summary_off">Kompressie gedeaktiveer</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Aktiveer</string>
   <string name="pref_room_title">Kies kamer tipe</string>
   <string name="dialog_room">Kamer tipe</string>
-  <string name="menu_reset">Herstel</string>
   <string name="eq_preset_acoustic">Akoesties</string>
   <string name="eq_preset_bass_booster">Versterkte bas</string>
   <string name="eq_preset_bass_reducer">Verminderde bas</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Oorfone</string>
   <string name="category_wm8994_codec_optimization">Kodering optimalisering</string>
   <string name="category_wm8994_dac_config">Digitaal/Analoog omskakelaar instellings</string>
-  <string name="category_wm8994_analog_path">Analoog konfigurasie</string>
-  <string name="category_wm8994_mic_settings">Mikrofoon instellings</string>
   <string name="category_wm8994_microphone_recording">Mikrofoon</string>
-  <string name="wm8994_settings_title_head">Klank instellings</string>
-  <string name="wm8994_settings_title_subhead">Klank instellings</string>
-  <string name="wm8994_settings_summary_head">Gevorderde beheer van die WM8994 klank verwerker</string>
   <string name="pref_wm8994_microphone_recording_title">Opnames</string>
   <string name="pref_wm8994_headphone_amp_title">Versterker vlak</string>
   <string name="pref_wm8994_headphone_amp_summary">Verander analoog versterking</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Bas versterker reeks</string>
   <string name="pref_wm8994_bass_boost_summary">Gevorderde dinamiese omvang beheer</string>
   <string name="pref_wm8994_bass_boost_preset_title">Voorafgestelde bas versterker instellings</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Bas versterker</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Versterk</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Bas versterker reeks</string>
-  <string name="pref_wm8994_control_enable_title">Aktiveer WM8994 beheer</string>
-  <string name="pref_wm8994_control_enable_summary">Gevorderde WM8994 klank verwerker beheer</string>
   <string name="pref_wm8994_speaker_tuning_title">Musiek instemming</string>
   <string name="pref_wm8994_speaker_tuning_summary">Herkonfigureer die hardeware gelykmaker (\'EQ\') vir meer bas en gebalanseerde klank</string>
   <string name="pref_wm8994_mono_downmix_title">Mono \'downmix\'</string>

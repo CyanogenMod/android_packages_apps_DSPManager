@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">Manajer DSP</string>
-  <string name="select_configuration_title">Pilih konfigurasi untuk diubah</string>
   <string name="headset_title">Headset</string>
   <string name="speaker_title">Speaker</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dock</string>
-  <string name="audio_effects">Efek audio</string>
   <string name="pref_unavailable">Fungsi ini tidak tersedia pada perangkat anda</string>
-  <string name="dsp_settings_headset">Pengaturan DSP - Headset</string>
-  <string name="dsp_settings_speaker">Pengaturan DSP - Speaker telepon</string>
-  <string name="dsp_settings_bluetooth">Pengaturan DSP - Perangkat Bluetooth</string>
-  <string name="dsp_settings_usb">Pengaturan DSP - Perangkat USB</string>
-  <string name="dsp_settings_wm8994">Pengaturan DSP - WM8994</string>
   <string name="pref_dsp_title">Kompresi rentang dinamis</string>
   <string name="pref_dsp_summary_on">Kompresi diaktifkan</string>
   <string name="pref_dsp_summary_off">Kompresi dinonaktifkan</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Aktifkan</string>
   <string name="pref_room_title">Pilih jenis ruangan</string>
   <string name="dialog_room">Jenis ruangan</string>
-  <string name="menu_reset">Kembalikan</string>
   <string name="eq_preset_acoustic">Akustik</string>
   <string name="eq_preset_bass_booster">Penguat bass</string>
   <string name="eq_preset_bass_reducer">Peredam bass</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Headset</string>
   <string name="category_wm8994_codec_optimization">Optimasi codec</string>
   <string name="category_wm8994_dac_config">Pengaturan konverter Digital/Analog</string>
-  <string name="category_wm8994_analog_path">Konfigurasi lintasan analog</string>
-  <string name="category_wm8994_mic_settings">Pengaturan mikrofon</string>
   <string name="category_wm8994_microphone_recording">Mikrofon</string>
-  <string name="wm8994_settings_title_head">Pengaturan suara</string>
-  <string name="wm8994_settings_title_subhead">Pengaturan suara</string>
-  <string name="wm8994_settings_summary_head">Kontrol lanjut prosesor suara WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">Preset rekaman</string>
   <string name="pref_wm8994_headphone_amp_title">Tingkat penguat</string>
   <string name="pref_wm8994_headphone_amp_summary">Sesuaikan penguatan analog</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Rentang peningkatan bass</string>
   <string name="pref_wm8994_bass_boost_summary">Pengelolaan rentang dinamis lanjut</string>
   <string name="pref_wm8994_bass_boost_preset_title">Preset peningkatan bass</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Peningkatan bass</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Penguatan</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Rentang peningkatan bass</string>
-  <string name="pref_wm8994_control_enable_title">Aktifkan kontrol WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">Kontrol lanjut prosesor suara WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Selaraskan untuk musik</string>
   <string name="pref_wm8994_speaker_tuning_summary">Konfigurasi ulang perangkat keras EQ untuk lebih banyak bass dan suara seimbang</string>
   <string name="pref_wm8994_mono_downmix_title">Penggabungan mono</string>

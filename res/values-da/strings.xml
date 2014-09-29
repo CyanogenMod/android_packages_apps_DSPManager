@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP-styring</string>
-  <string name="select_configuration_title">Vælg en konfiguration, der skal redigeres</string>
   <string name="headset_title">Hovedtlf.</string>
   <string name="speaker_title">Højttaler</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dock</string>
-  <string name="audio_effects">Lydeffekter</string>
   <string name="pref_unavailable">Funktionaliteten er ikke tilgængelig på din enhed</string>
-  <string name="dsp_settings_headset">DSP-indstillinger - Hovedtelefoner</string>
-  <string name="dsp_settings_speaker">DSP-indstillinger - Højttaler</string>
-  <string name="dsp_settings_bluetooth">DSP-indstillinger - Bluetooth-enhed</string>
-  <string name="dsp_settings_usb">DSP-indstillinger - USB-enhed</string>
-  <string name="dsp_settings_wm8994">DSP-indstillinger - WM8994</string>
   <string name="pref_dsp_title">Kompression af dynamikområdet</string>
   <string name="pref_dsp_summary_on">Kompression aktiveret</string>
   <string name="pref_dsp_summary_off">Kompression deaktiveret</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Aktivér</string>
   <string name="pref_room_title">Vælg rumtype</string>
   <string name="dialog_room">Rumtype</string>
-  <string name="menu_reset">Nulstil</string>
   <string name="eq_preset_acoustic">Akustisk</string>
   <string name="eq_preset_bass_booster">Mere bas</string>
   <string name="eq_preset_bass_reducer">Mindre bas</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Hovedtelefoner</string>
   <string name="category_wm8994_codec_optimization">Codec-optimering</string>
   <string name="category_wm8994_dac_config">Indstillinger for Digital/Analog-konverter</string>
-  <string name="category_wm8994_analog_path">Analog kanalkonfigurering</string>
-  <string name="category_wm8994_mic_settings">Mikrofonindstillinger</string>
   <string name="category_wm8994_microphone_recording">Mikrofon</string>
-  <string name="wm8994_settings_title_head">Lydindstillinger</string>
-  <string name="wm8994_settings_title_subhead">Lydindstillinger</string>
-  <string name="wm8994_settings_summary_head">Avanceret styring af WM8994-codec</string>
   <string name="pref_wm8994_microphone_recording_title">Forudindstilling for optagelse</string>
   <string name="pref_wm8994_headphone_amp_title">Forstærkerniveau</string>
   <string name="pref_wm8994_headphone_amp_summary">Tilpasse analog forstærkning</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Basforstærkningsområde</string>
   <string name="pref_wm8994_bass_boost_summary">Avanceret styring af dynamikområde</string>
   <string name="pref_wm8994_bass_boost_preset_title">Forudindstilling for basforstærkning</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Basforstærkning</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Forstærkning</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Basforstærkningsområde</string>
-  <string name="pref_wm8994_control_enable_title">Aktivér WM8994 styring</string>
-  <string name="pref_wm8994_control_enable_summary">Avanceret styring for WM8994-codec</string>
   <string name="pref_wm8994_speaker_tuning_title">Indstil for musik</string>
   <string name="pref_wm8994_speaker_tuning_summary">Konfigurér hardware-EQ for mere bas og afbalanceret lyd</string>
   <string name="pref_wm8994_mono_downmix_title">Mono-downmix</string>

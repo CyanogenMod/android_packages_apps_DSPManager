@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">ڕابەر</string>
-  <string name="select_configuration_title">ڕێکخستنێک دیاریبکە بۆ دەستکاریکردن</string>
   <string name="headset_title">بیستۆک</string>
   <string name="speaker_title">دەنگدەر</string>
   <string name="bluetooth_title">بلوتووس</string>
   <string name="usb_title">USB/Dock</string>
-  <string name="audio_effects">کاریگەرییەکانی دەنگ</string>
   <string name="pref_unavailable">ئەم فرمانە لەبەردەستدا نیە لە ئامێرەکەتدا</string>
-  <string name="dsp_settings_headset">ڕێکخستنەکان - بیستۆک</string>
-  <string name="dsp_settings_speaker">ڕێکخستنەکان - دەنگدەری مۆبایل</string>
-  <string name="dsp_settings_bluetooth">ڕێکخستنەکان - ئامێری بلوتووس</string>
-  <string name="dsp_settings_usb">USB ڕێکخستنەکان - ئامێرەکانی</string>
-  <string name="dsp_settings_wm8994">ڕێکخستنەکان - WM8994</string>
   <string name="pref_dsp_title">په‌ستاندنی جوڵه‌ی مه‌ودا</string>
   <string name="pref_dsp_summary_on">په‌ستاندن کارده‌کات</string>
   <string name="pref_dsp_summary_off">په‌ستاندن کارناکات</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">چالاککردن</string>
   <string name="pref_room_title">جۆری ژوور دیاریبکە</string>
   <string name="dialog_room">جۆری ژوور</string>
-  <string name="menu_reset">ڕێکخستنەوه</string>
   <string name="eq_preset_acoustic">ده‌نگی</string>
   <string name="eq_preset_bass_booster">زیادکه‌ری به‌یس</string>
   <string name="eq_preset_bass_reducer">که‌مکه‌ری به‌یس</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">بیستۆک</string>
   <string name="category_wm8994_codec_optimization">له‌بارکردنی کۆدێک</string>
   <string name="category_wm8994_dac_config">ڕێکخستنی بگۆڕی ژماره‌یی/پێوه‌ری</string>
-  <string name="category_wm8994_analog_path">ڕێکخستنی ڕێره‌وی پێوه‌ر</string>
-  <string name="category_wm8994_mic_settings">ڕێکخستنی مایکرۆفۆن</string>
   <string name="category_wm8994_microphone_recording">مایکرۆفۆن</string>
-  <string name="wm8994_settings_title_head">ڕێکخستنەکانی دەنگ</string>
-  <string name="wm8994_settings_title_subhead">ڕێکخستنەکانی دەنگ</string>
-  <string name="wm8994_settings_summary_head">سه‌رپه‌رشتی پێشکه‌وتووی پرۆسه‌ری ده‌نگی WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">ئاماده‌کراوی تۆمارکردن</string>
   <string name="pref_wm8994_headphone_amp_title">ئاستی به‌هێزکه‌ر</string>
   <string name="pref_wm8994_headphone_amp_summary">خواستن کردنی پێوه‌ری</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">مه‌ودای زیادکه‌ری به‌یس</string>
   <string name="pref_wm8994_bass_boost_summary">به‌ڕێوه‌بردنی جوڵه‌ی مه‌ودای پێشکه‌وتوو</string>
   <string name="pref_wm8994_bass_boost_preset_title">ئاماده‌کراوی زیادکه‌ری به‌یس</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">زیادکه‌ری به‌یس</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">زیادکردن</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">مه‌ودای زیادکه‌ری به‌یس</string>
-  <string name="pref_wm8994_control_enable_title">WM8994 چالاککردنی کۆنترۆڵی</string>
-  <string name="pref_wm8994_control_enable_summary">سه‌رپه‌رشتی پێشکه‌وتووی پرۆسه‌ری ده‌نگی WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">دانانی گۆرانی</string>
   <string name="pref_wm8994_speaker_tuning_summary">دووباره‌ ڕێکخستنه‌وه‌ی هاردوێری EQ بۆ به‌یسی زیاتر و ده‌نگی ته‌رازووکراو</string>
   <string name="pref_wm8994_mono_downmix_title">خوارمیکسی مۆنۆ</string>

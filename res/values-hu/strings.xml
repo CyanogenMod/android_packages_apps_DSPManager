@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP Beállítások</string>
-  <string name="select_configuration_title">Konfiguráció kiválasztása szerkesztésre</string>
   <string name="headset_title">Fejhallgató</string>
   <string name="speaker_title">Telefon hangszóró</string>
   <string name="bluetooth_title">Bluetooth-eszköz</string>
   <string name="usb_title">USB/Dokkoló</string>
-  <string name="audio_effects">Hangeffektek</string>
   <string name="pref_unavailable">A funkció nem elérhető ezen az eszközön.</string>
-  <string name="dsp_settings_headset">DSP Beállítások - Fejhallgató</string>
-  <string name="dsp_settings_speaker">DSP Beállítások - Telefon hangszóró</string>
-  <string name="dsp_settings_bluetooth">DSP Beállítások - Bluetooth-eszköz</string>
-  <string name="dsp_settings_usb">DSP Beállítások - USB eszköz</string>
-  <string name="dsp_settings_wm8994">DSP Beállítások - WM8994</string>
   <string name="pref_dsp_title">Dinamikus Tömörítési Tartomány</string>
   <string name="pref_dsp_summary_on">Tömörítés engedélyezve</string>
   <string name="pref_dsp_summary_off">Tömörítés letiltva</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Engedélyezés</string>
   <string name="pref_room_title">Szoba típusának kiválasztása</string>
   <string name="dialog_room">Szoba típusa</string>
-  <string name="menu_reset">Visszaállítás</string>
   <string name="eq_preset_acoustic">Akusztikus</string>
   <string name="eq_preset_bass_booster">Mély kiemelés</string>
   <string name="eq_preset_bass_reducer">Mély csökkentés</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Fülhallgató</string>
   <string name="category_wm8994_codec_optimization">Kodek optimalizálás</string>
   <string name="category_wm8994_dac_config">Digitális/Analóg átalakító beállítások</string>
-  <string name="category_wm8994_analog_path">Analóg útvonal beállítások</string>
-  <string name="category_wm8994_mic_settings">Mikrofonbeállítások</string>
   <string name="category_wm8994_microphone_recording">Mikrofon</string>
-  <string name="wm8994_settings_title_head">Hangbeállítások</string>
-  <string name="wm8994_settings_title_subhead">Hangbeállítások</string>
-  <string name="wm8994_settings_summary_head">WM8994 hangfeldolgozó részletes beállításai</string>
   <string name="pref_wm8994_microphone_recording_title">Felvételi profil</string>
   <string name="pref_wm8994_headphone_amp_title">Erősítő szint</string>
   <string name="pref_wm8994_headphone_amp_summary">Analóg erősítés beállítása</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Mélyhangkiemelés tartománya</string>
   <string name="pref_wm8994_bass_boost_summary">Részletes dinamikus tartománykezelés</string>
   <string name="pref_wm8994_bass_boost_preset_title">Mélyhangkiemelési profil</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Mélyhangkiemelés</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Erősítés</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Mélyhangkiemelés tartománya</string>
-  <string name="pref_wm8994_control_enable_title">WM8994 szabályozás engedélyezése</string>
-  <string name="pref_wm8994_control_enable_summary">WM8994 hangfeldolgozó szabályozása</string>
   <string name="pref_wm8994_speaker_tuning_title">Zenére hangolás</string>
   <string name="pref_wm8994_speaker_tuning_summary">Átállítja a hardveres hangszínszabályzót több mélyhangért és kiegyensúlyozottabb hangzásért.</string>
   <string name="pref_wm8994_mono_downmix_title">Egy hangsávra keverés</string>

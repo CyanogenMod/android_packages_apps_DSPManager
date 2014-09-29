@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">Менеджер ЦОС</string>
-  <string name="select_configuration_title">Виберіть конфігурацію для редагування</string>
   <string name="headset_title">Гарнітура</string>
   <string name="speaker_title">Динамік телефону</string>
   <string name="bluetooth_title">Пристрій Bluetooth</string>
   <string name="usb_title">USB/Док</string>
-  <string name="audio_effects">Аудіо ефекти</string>
   <string name="pref_unavailable">Ця функція не підтримується на вашому пристрої</string>
-  <string name="dsp_settings_headset">Налаштування ЦОС гарнітури</string>
-  <string name="dsp_settings_speaker">Налаштування ЦОС динаміка телефону</string>
-  <string name="dsp_settings_bluetooth">Налаштування ЦОС пристрою Bluetooth</string>
-  <string name="dsp_settings_usb">Налаштування ЦОС пристрою USB</string>
-  <string name="dsp_settings_wm8994">Налаштування ЦОС WM8994</string>
   <string name="pref_dsp_title">Стиснення динамічного діапазону</string>
   <string name="pref_dsp_summary_on">Стиснення ввімкнено</string>
   <string name="pref_dsp_summary_off">Стиснення вимкнено</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Увімкнути</string>
   <string name="pref_room_title">Віртуальне оточення</string>
   <string name="dialog_room">Віртуальне оточення</string>
-  <string name="menu_reset">Скинути</string>
   <string name="eq_preset_acoustic">Акустика</string>
   <string name="eq_preset_bass_booster">Підсилені НЧ</string>
   <string name="eq_preset_bass_reducer">Послаблені НЧ</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Навушники</string>
   <string name="category_wm8994_codec_optimization">Оптимізація кодека</string>
   <string name="category_wm8994_dac_config">Налаштування ЦАП</string>
-  <string name="category_wm8994_analog_path">Налаштування аналогового шляху</string>
-  <string name="category_wm8994_mic_settings">Налаштування мікрофона</string>
   <string name="category_wm8994_microphone_recording">Мікрофон</string>
-  <string name="wm8994_settings_title_head">Налаштування звуку</string>
-  <string name="wm8994_settings_title_subhead">Налаштування звуків</string>
-  <string name="wm8994_settings_summary_head">Розширені налаштування звукового процесора WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">Попередні налаштування запису</string>
   <string name="pref_wm8994_headphone_amp_title">Рівень підсилювача</string>
   <string name="pref_wm8994_headphone_amp_summary">Налаштування аналогового підсилювача</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Діапазон підсилення НЧ</string>
   <string name="pref_wm8994_bass_boost_summary">Розширені налаштування динамічного діапазону</string>
   <string name="pref_wm8994_bass_boost_preset_title">Попередні налаштування підсилення НЧ</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Підсилення НЧ</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Підсилення</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Діапазон підсилення НЧ</string>
-  <string name="pref_wm8994_control_enable_title">Увімкнути керування WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">Розширені налаштування звукового процесора WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Налаштування для музики</string>
   <string name="pref_wm8994_speaker_tuning_summary">Налаштовує апаратний еквалайзер для більших НЧ і збалансованого звуку</string>
   <string name="pref_wm8994_mono_downmix_title">Перевід в моно</string>

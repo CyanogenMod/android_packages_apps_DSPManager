@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP Haldur</string>
-  <string name="select_configuration_title">Valige konfiguratsiooni et muuta</string>
   <string name="headset_title">Peakomplekt</string>
   <string name="speaker_title">Kõlar</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dokk</string>
-  <string name="audio_effects">Heliefektid</string>
   <string name="pref_unavailable">Funktsioon ei ole saadaval teie seadmes</string>
-  <string name="dsp_settings_headset">DSP sätted - Peakomplekt</string>
-  <string name="dsp_settings_speaker">DSP sätted - Telefonikõlar</string>
-  <string name="dsp_settings_bluetooth">DSP sätted - Bluetooth seade</string>
-  <string name="dsp_settings_usb">DSP sätted - USB seade</string>
-  <string name="dsp_settings_wm8994">DSP sätted - WM8994</string>
   <string name="pref_dsp_title">Dünaamilise ulatuse koondus</string>
   <string name="pref_dsp_summary_on">Koondus on lubatud</string>
   <string name="pref_dsp_summary_off">Koondus on keelatud</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Luba</string>
   <string name="pref_room_title">Valige toa tüüp</string>
   <string name="dialog_room">Toa tüüp</string>
-  <string name="menu_reset">Lähtesta</string>
   <string name="eq_preset_acoustic">Akustiline</string>
   <string name="eq_preset_bass_booster">Bassi võimendus</string>
   <string name="eq_preset_bass_reducer">Bassi vähendus</string>

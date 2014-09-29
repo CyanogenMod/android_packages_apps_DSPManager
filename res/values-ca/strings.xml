@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">Gestor DSP</string>
-  <string name="select_configuration_title">Selecciona la configuració a editar</string>
   <string name="headset_title">Auriculars</string>
   <string name="speaker_title">Altaveu</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Acoplament</string>
-  <string name="audio_effects">Efectes de so</string>
   <string name="pref_unavailable">La funcionalitat no està disponible pel teu dispositiu</string>
-  <string name="dsp_settings_headset">Configuració DSP - Auriculars</string>
-  <string name="dsp_settings_speaker">Configuració DSP - Altaveu del telèfon</string>
-  <string name="dsp_settings_bluetooth">Configuració DSP - Dispositiu Bluetooth</string>
-  <string name="dsp_settings_usb">Configuració DSP - Dispositiu USB</string>
-  <string name="dsp_settings_wm8994">Configuració DSP - WM8994</string>
   <string name="pref_dsp_title">Compressió del rang dinàmic</string>
   <string name="pref_dsp_summary_on">La compressió està habilitada</string>
   <string name="pref_dsp_summary_off">La compressió està deshabilitada</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Habilita</string>
   <string name="pref_room_title">Seleccioneu el tipus d\'habitació</string>
   <string name="dialog_room">Tipus d\'habitació</string>
-  <string name="menu_reset">Restableix</string>
   <string name="eq_preset_acoustic">Acústic</string>
   <string name="eq_preset_bass_booster">Amplificació de greus</string>
   <string name="eq_preset_bass_reducer">Reducció de greus</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Auriculars</string>
   <string name="category_wm8994_codec_optimization">Optimització del Codec</string>
   <string name="category_wm8994_dac_config">Configuració del convertidor Digital/Analògic</string>
-  <string name="category_wm8994_analog_path">Configuració del camí analògic</string>
-  <string name="category_wm8994_mic_settings">Configuració del micròfon</string>
   <string name="category_wm8994_microphone_recording">Micròfon</string>
-  <string name="wm8994_settings_title_head">Configuració de so</string>
-  <string name="wm8994_settings_title_subhead">Configuració de so</string>
-  <string name="wm8994_settings_summary_head">Controls avançats del processador de so WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">Presintonia de gravació</string>
   <string name="pref_wm8994_headphone_amp_title">Nivell d\'amplificació</string>
   <string name="pref_wm8994_headphone_amp_summary">Personalitza el guany analògic</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Rang d\'amplificació de greus</string>
   <string name="pref_wm8994_bass_boost_summary">Gestió avançada del rang dinàmic</string>
   <string name="pref_wm8994_bass_boost_preset_title">Presintonia d\'amplificació de greus</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Amplificació de greus</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Guany</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Rang d\'amplificació de greus</string>
-  <string name="pref_wm8994_control_enable_title">Habilita el control WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">Controls avançats del processador de so WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Optimitza per a la música</string>
   <string name="pref_wm8994_speaker_tuning_summary">Reconfigura el maquinari de l\'EQ per aconseguir més greus i un so més equilibrat</string>
   <string name="pref_wm8994_mono_downmix_title">Reducció a Mono</string>

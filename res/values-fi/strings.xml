@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP Manager</string>
-  <string name="select_configuration_title">Valitse muokattava asetus</string>
   <string name="headset_title">Kuulokkeet</string>
   <string name="speaker_title">Kaiutin</string>
   <string name="bluetooth_title">Bluetooth-laite</string>
   <string name="usb_title">USB/Telakka</string>
-  <string name="audio_effects">Aäniefektit</string>
   <string name="pref_unavailable">Toiminto ei käytettävissä laitteellasi</string>
-  <string name="dsp_settings_headset">DSP Asetukset - Kuulokkeet</string>
-  <string name="dsp_settings_speaker">DSP Asetukset - Puhelimen kaiutin</string>
-  <string name="dsp_settings_bluetooth">DSP Asetukset - Bluetooth-laite</string>
-  <string name="dsp_settings_usb">DSP asetukset - USB-laite</string>
-  <string name="dsp_settings_wm8994">DSP asetukset - WM8994</string>
   <string name="pref_dsp_title">Kompressointi</string>
   <string name="pref_dsp_summary_on">Kompressointi päällä</string>
   <string name="pref_dsp_summary_off">Kompressointi pois päältä</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Käytössä</string>
   <string name="pref_room_title">Valitse huonetyyppi</string>
   <string name="dialog_room">Huonetyyppi</string>
-  <string name="menu_reset">Palauta oletukset</string>
   <string name="eq_preset_acoustic">Akustinen</string>
   <string name="eq_preset_bass_booster">Basson korostus</string>
   <string name="eq_preset_bass_reducer">Basson vaimennus</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Kuulokkeet</string>
   <string name="category_wm8994_codec_optimization">Kodekin optimointi</string>
   <string name="category_wm8994_dac_config">Digitaali/Analogi-muuntimen asetukset</string>
-  <string name="category_wm8994_analog_path">Analogisen tiedonsiirron määrittäminen</string>
-  <string name="category_wm8994_mic_settings">Mikrofonin asetukset</string>
   <string name="category_wm8994_microphone_recording">Mikrofoni</string>
-  <string name="wm8994_settings_title_head">Ääniasetukset</string>
-  <string name="wm8994_settings_title_subhead">Ääniasetukset</string>
-  <string name="wm8994_settings_summary_head">WM8994 äänipiirin lisäohjaustyökalut</string>
   <string name="pref_wm8994_microphone_recording_title">Tallentamisen esiasetus</string>
   <string name="pref_wm8994_headphone_amp_title">Vahvistimen taso</string>
   <string name="pref_wm8994_headphone_amp_summary">Mukauta analogista vahvistusta</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Basson korostuksen alue</string>
   <string name="pref_wm8994_bass_boost_summary">Laajennettu dynaamisen alueen hallinta</string>
   <string name="pref_wm8994_bass_boost_preset_title">Basson korostuksen esiasetus</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Basson korostus</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Vahvistus</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Basson korostuksen alue</string>
-  <string name="pref_wm8994_control_enable_title">Ota WM8994:n ohjaus käyttöön</string>
-  <string name="pref_wm8994_control_enable_summary">WM8994 äänipiirin lisäohjaustyökalut</string>
   <string name="pref_wm8994_speaker_tuning_title">Viritä musiikille</string>
   <string name="pref_wm8994_speaker_tuning_summary">Määrittää laitteiston EQ:n lisäämään bassoa ja tasapainottamaan ääntä</string>
   <string name="pref_wm8994_mono_downmix_title">Mono downmix</string>

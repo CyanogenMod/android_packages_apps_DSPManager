@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP 매니저</string>
-  <string name="select_configuration_title">편집할 구성을 선택합니다</string>
   <string name="headset_title">헤드셋</string>
   <string name="speaker_title">스피커</string>
   <string name="bluetooth_title">블루투스</string>
   <string name="usb_title">USB/독</string>
-  <string name="audio_effects">음향 효과</string>
   <string name="pref_unavailable">이 기능은 이 장치에서 사용할 수 없습니다.</string>
-  <string name="dsp_settings_headset">DSP 설정 - 헤드셋</string>
-  <string name="dsp_settings_speaker">DSP 설정 - 폰 스피커</string>
-  <string name="dsp_settings_bluetooth">DSP 설정 - 블루투스 장치</string>
-  <string name="dsp_settings_usb">DSP 설정 - USB 장치</string>
-  <string name="dsp_settings_wm8994">DSP 장치 - WM8994</string>
   <string name="pref_dsp_title">다이나믹 레인지 컴프레션</string>
   <string name="pref_dsp_summary_on">컴프레션 사용함</string>
   <string name="pref_dsp_summary_off">컴프레션 사용 안 함</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">활성화</string>
   <string name="pref_room_title">공간 타입 선택</string>
   <string name="dialog_room">공간 타입</string>
-  <string name="menu_reset">재설정</string>
   <string name="eq_preset_acoustic">어쿠스틱</string>
   <string name="eq_preset_bass_booster">저음 강화</string>
   <string name="eq_preset_bass_reducer">저음 약화</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">헤드셋</string>
   <string name="category_wm8994_codec_optimization">코덱 최적화</string>
   <string name="category_wm8994_dac_config">디지털/아날로그 컨버터 설정</string>
-  <string name="category_wm8994_analog_path">아날로그 경로 구성</string>
-  <string name="category_wm8994_mic_settings">마이크 설정</string>
   <string name="category_wm8994_microphone_recording">마이크</string>
-  <string name="wm8994_settings_title_head">소리 설정</string>
-  <string name="wm8994_settings_title_subhead">소리 설정</string>
-  <string name="wm8994_settings_summary_head">WM8994 소리 프로세서 고급 설정</string>
   <string name="pref_wm8994_microphone_recording_title">녹음 프리셋</string>
   <string name="pref_wm8994_headphone_amp_title">앰프 레벨</string>
   <string name="pref_wm8994_headphone_amp_summary">아날로그 음량 사용자 정의</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">베이스 부스트 범위</string>
   <string name="pref_wm8994_bass_boost_summary">다이내믹 레인지 고급 기능</string>
   <string name="pref_wm8994_bass_boost_preset_title">베이스 부스트 프리셋</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">베이스 부스트</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">게인</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">베이스 부스트 범위</string>
-  <string name="pref_wm8994_control_enable_title">WM8994 컨트롤 활성화</string>
-  <string name="pref_wm8994_control_enable_summary">WM8994 사운드 프로세서 관련 고급 기능</string>
   <string name="pref_wm8994_speaker_tuning_title">음악 조정</string>
   <string name="pref_wm8994_speaker_tuning_summary">강한 베이스와 균형 잡힌 사운드를 위해 하드웨어 EQ 재구성</string>
   <string name="pref_wm8994_mono_downmix_title">모노 다운믹스</string>

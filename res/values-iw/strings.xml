@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">מנהל DSP</string>
-  <string name="select_configuration_title">בחר תצורה לעריכה</string>
   <string name="headset_title">אוזניות</string>
   <string name="speaker_title">רמקול</string>
   <string name="bluetooth_title">בלוטוס</string>
   <string name="usb_title">USB/Dock</string>
-  <string name="audio_effects">אפקטי שמע</string>
   <string name="pref_unavailable">אפשרות זו אינה זמינה במכשירך</string>
-  <string name="dsp_settings_headset">הגדרות DSP - אוזניות</string>
-  <string name="dsp_settings_speaker">הגדרות DSP - רמקול</string>
-  <string name="dsp_settings_bluetooth">הגדרות DSP - התקן Bluetooth</string>
-  <string name="dsp_settings_usb">הגדרות DSP - התקן USB</string>
-  <string name="dsp_settings_wm8994">הגדרות DSP - WM8994</string>
   <string name="pref_dsp_title">דחיסת הטווח הדינמי</string>
   <string name="pref_dsp_summary_on">דחיסה מופעלת</string>
   <string name="pref_dsp_summary_off">דחיסה מושבתת</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">הפעל</string>
   <string name="pref_room_title">בחר סוג חדר</string>
   <string name="dialog_room">סוג חדר</string>
-  <string name="menu_reset">איפוס</string>
   <string name="eq_preset_acoustic">אקוסטי</string>
   <string name="eq_preset_bass_booster">מגביר בס</string>
   <string name="eq_preset_bass_reducer">מפחית בס</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">אוזניות</string>
   <string name="category_wm8994_codec_optimization">אופטימיזציית קידוד</string>
   <string name="category_wm8994_dac_config">הגדרות ממיר דיגטאלי\אנלוגי</string>
-  <string name="category_wm8994_analog_path">תצורת הנתיב האנלוגי</string>
-  <string name="category_wm8994_mic_settings">הגדרות מיקרופון</string>
   <string name="category_wm8994_microphone_recording">מיקרופון</string>
-  <string name="wm8994_settings_title_head">הגדרות קול</string>
-  <string name="wm8994_settings_title_subhead">הגדרות קול</string>
-  <string name="wm8994_settings_summary_head">שליטה מתקדמת של מעבד הסאונד WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">הקלטה מראש</string>
   <string name="pref_wm8994_headphone_amp_title">עוצמת המגבר</string>
   <string name="pref_wm8994_headphone_amp_summary">התאם אישית רווח אנלוגי</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">טווח להגברת הבס</string>
   <string name="pref_wm8994_bass_boost_summary">ניהול טווח דינאמי מתקדם</string>
   <string name="pref_wm8994_bass_boost_preset_title">תבנית הגברת באס</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">הגברת בס</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">רווח</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">טווח להגברת הבס</string>
-  <string name="pref_wm8994_control_enable_title">אפשר שליטה ב-WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">שליטה מתקדמת עבור מעבד הקול WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">מוזיקה למנגינה</string>
   <string name="pref_wm8994_speaker_tuning_summary">מגדיר מחדש את חומרת ה EQ על מנת לייצר יותר בס וסאונד מאוזנים</string>
   <string name="pref_wm8994_mono_downmix_title">מצב מונו</string>

@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSPマネージャ</string>
-  <string name="select_configuration_title">編集する設定を選択</string>
   <string name="headset_title">ヘッドセット</string>
   <string name="speaker_title">スピーカー</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/ホルダー</string>
-  <string name="audio_effects">オーディオ効果</string>
   <string name="pref_unavailable">この機能はお使いの端末では利用できません。</string>
-  <string name="dsp_settings_headset">DSPの設定 - ヘッドフォン</string>
-  <string name="dsp_settings_speaker">DSPの設定 - スピーカー</string>
-  <string name="dsp_settings_bluetooth">DSPの設定 - Bluetoothデバイス</string>
-  <string name="dsp_settings_usb">DSPの設定 - USBデバイス</string>
-  <string name="dsp_settings_wm8994">DSPの設定 - WM8994</string>
   <string name="pref_dsp_title">ダイナミックレンジコンプレッション</string>
   <string name="pref_dsp_summary_on">コンプレッションは有効です</string>
   <string name="pref_dsp_summary_off">コンプレッションは無効です</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">有効</string>
   <string name="pref_room_title">部屋の種類を選択</string>
   <string name="dialog_room">部屋の種類</string>
-  <string name="menu_reset">リセット</string>
   <string name="eq_preset_acoustic">Acoustic</string>
   <string name="eq_preset_bass_booster">Bass booster</string>
   <string name="eq_preset_bass_reducer">Bass reducer</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">ヘッドセット</string>
   <string name="category_wm8994_codec_optimization">コーデックの最適化</string>
   <string name="category_wm8994_dac_config">デジタル/アナログコンバーターの設定</string>
-  <string name="category_wm8994_analog_path">アナログパスの設定</string>
-  <string name="category_wm8994_mic_settings">マイクの設定</string>
   <string name="category_wm8994_microphone_recording">マイク</string>
-  <string name="wm8994_settings_title_head">音の設定</string>
-  <string name="wm8994_settings_title_subhead">音の設定</string>
-  <string name="wm8994_settings_summary_head">WM8994サウンドプロセッサの高度な制御</string>
   <string name="pref_wm8994_microphone_recording_title">録音プリセット</string>
   <string name="pref_wm8994_headphone_amp_title">アンプレベル</string>
   <string name="pref_wm8994_headphone_amp_summary">アナログゲインをカスタマイズ</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">バスブーストのレンジ</string>
   <string name="pref_wm8994_bass_boost_summary">ダイナミックレンジの詳細設定</string>
   <string name="pref_wm8994_bass_boost_preset_title">バスブーストのプリセット</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">バスブースト</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">ゲイン</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">バスブーストのレンジ</string>
-  <string name="pref_wm8994_control_enable_title">WM8994のコントロールを有効</string>
-  <string name="pref_wm8994_control_enable_summary">WM8994サウンドプロセッサの詳細設定</string>
   <string name="pref_wm8994_speaker_tuning_title">音楽用に調整</string>
   <string name="pref_wm8994_speaker_tuning_summary">より強い低音とバランスの取れた音にするためにハードウェアEQを再構成する</string>
   <string name="pref_wm8994_mono_downmix_title">モノラルダウンミックス</string>

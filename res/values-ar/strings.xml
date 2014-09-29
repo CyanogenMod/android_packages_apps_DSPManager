@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">مدير DSP</string>
-  <string name="select_configuration_title">حدد التكوين لي التحرير</string>
   <string name="headset_title">سماعات الأذن</string>
   <string name="speaker_title">مكبّر الصوت</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dock</string>
-  <string name="audio_effects">التأثيرات الصوتية</string>
   <string name="pref_unavailable">وظيفة غير متوفرة على الجهاز الخاص بك</string>
-  <string name="dsp_settings_headset">إعدادات DSP - سماعة الرأس</string>
-  <string name="dsp_settings_speaker">إعدادات DSP - سماعة الهاتف</string>
-  <string name="dsp_settings_bluetooth">إعدادات DSP - جهاز Bluetooth</string>
-  <string name="dsp_settings_usb">إعدادات DSP -جهاز USB</string>
-  <string name="dsp_settings_wm8994">إعدادات -DSP WM8994</string>
   <string name="pref_dsp_title">ضغط مجموعة ديناميكية</string>
   <string name="pref_dsp_summary_on">يتم تمكين ضغط</string>
   <string name="pref_dsp_summary_off">يتم تعطيل ضغط</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">تمكين</string>
   <string name="pref_room_title">حدد نوع الغرفة</string>
   <string name="dialog_room">نوع الغرفة</string>
-  <string name="menu_reset">إعادة تعيين</string>
   <string name="eq_preset_acoustic">الصوتية</string>
   <string name="eq_preset_bass_booster">التقوية</string>
   <string name="eq_preset_bass_reducer">مقوي التسجيل</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">سماعات الأذن</string>
   <string name="category_wm8994_codec_optimization">الترميز الأمثل</string>
   <string name="category_wm8994_dac_config">إعدادات محول رقمي/تناظري</string>
-  <string name="category_wm8994_analog_path">تكوين مسار التناظرية</string>
-  <string name="category_wm8994_mic_settings">إعداد الميكروفون</string>
   <string name="category_wm8994_microphone_recording">الميكروفون</string>
-  <string name="wm8994_settings_title_head">إعدادات الصوت</string>
-  <string name="wm8994_settings_title_subhead">إعدادات الصوت</string>
-  <string name="wm8994_settings_summary_head">متقدمة التحكم معالج الصوت WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">تسجيل مسبق</string>
   <string name="pref_wm8994_headphone_amp_title">مستوى مكبر للصوت</string>
   <string name="pref_wm8994_headphone_amp_summary">تخصيص اكتساب التناظرية</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">مجموعة التقوية</string>
   <string name="pref_wm8994_bass_boost_summary">مجموعة ديناميكية الإدارة المتقدمة</string>
   <string name="pref_wm8994_bass_boost_preset_title">الإعداد المسبق التقوية</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">التقوية</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">مستوى ضغط الصوت</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">مجموعة التقوية</string>
-  <string name="pref_wm8994_control_enable_title">تمكين عنصر تحكم WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">متقدمة التحكم معالج الصوت WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">لحن للموسيقى</string>
   <string name="pref_wm8994_speaker_tuning_summary">يعيد تكوين الأجهزة مكافئ للصوت بأس ومتوازنة أكثر</string>
   <string name="pref_wm8994_mono_downmix_title">Mono downmix</string>

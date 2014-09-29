@@ -17,18 +17,11 @@
 -->
 <resources>
   <string name="app_name">DSP Správca</string>
-  <string name="select_configuration_title">Vyberte konfiguráciu pre upravenie</string>
   <string name="headset_title">Slúchadlá</string>
   <string name="speaker_title">Reproduktor</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Dok</string>
-  <string name="audio_effects">Zvukové efekty</string>
   <string name="pref_unavailable">Funkcia nie je k dispozícii na Vašom zariadení</string>
-  <string name="dsp_settings_headset">Nastavenia DSP - Slúchadlá</string>
-  <string name="dsp_settings_speaker">Nastavenia DSP - Reproduktor zariadenia</string>
-  <string name="dsp_settings_bluetooth">Nastavenia DSP - Bluetooth zariadenie</string>
-  <string name="dsp_settings_usb">Nastavenia DSP - USB zariadenie</string>
-  <string name="dsp_settings_wm8994">Nastavenia DSP - WM8994</string>
   <string name="pref_dsp_title">Dynamická kompresia rozsahu</string>
   <string name="pref_dsp_summary_on">Kompresia je povolená</string>
   <string name="pref_dsp_summary_off">Kompresia je zakázaná</string>
@@ -51,7 +44,6 @@
   <string name="pref_headset_virtual_enable">Povoliť</string>
   <string name="pref_room_title">Vyberte typ miestnosti</string>
   <string name="dialog_room">Typ miestnosti</string>
-  <string name="menu_reset">Obnoviť</string>
   <string name="eq_preset_acoustic">Akustika</string>
   <string name="eq_preset_bass_booster">Zosilnenie basov</string>
   <string name="eq_preset_bass_reducer">Zoslabenie basov</string>
@@ -70,12 +62,7 @@
   <string name="category_wm8994_headphone_amp">Slúchadlá</string>
   <string name="category_wm8994_codec_optimization">Optimalizácia kodeku</string>
   <string name="category_wm8994_dac_config">Nastavenia digitálne/analógového prevodníku</string>
-  <string name="category_wm8994_analog_path">Konfigurácia analógovej cesty</string>
-  <string name="category_wm8994_mic_settings">Nastavenia mikrofónu</string>
   <string name="category_wm8994_microphone_recording">Mikrofón</string>
-  <string name="wm8994_settings_title_head">Nastavenia zvuku</string>
-  <string name="wm8994_settings_title_subhead">Nastavenia zvuku</string>
-  <string name="wm8994_settings_summary_head">Pokročilé ovládanie zvukového procesora WM8994</string>
   <string name="pref_wm8994_microphone_recording_title">Predvoľba nahrávania</string>
   <string name="pref_wm8994_headphone_amp_title">Úroveň zosilňovača</string>
   <string name="pref_wm8994_headphone_amp_summary">Upraviť analógové zvyšovanie</string>
@@ -86,11 +73,8 @@
   <string name="pref_wm8994_bass_boost_title">Rozsah zosilnenia basov</string>
   <string name="pref_wm8994_bass_boost_summary">Pokročilá správa dynamického rozsahu</string>
   <string name="pref_wm8994_bass_boost_preset_title">Predvoľba zosilnenia basov</string>
-  <string name="pref_wm8994_bass_boost_dlg_title">Zosilnenie basov</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Zvyšovanie</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Rozsah zosilnenia basov</string>
-  <string name="pref_wm8994_control_enable_title">Povoliť ovládanie WM8994</string>
-  <string name="pref_wm8994_control_enable_summary">Pokročilé ovládanie zvukového procesora WM8994</string>
   <string name="pref_wm8994_speaker_tuning_title">Ladenie pre hudbu</string>
   <string name="pref_wm8994_speaker_tuning_summary">Prenastaví hardvérový ekvalizér pre viac basov a vyváženie zvuku</string>
   <string name="pref_wm8994_mono_downmix_title">Prevod na mono</string>
