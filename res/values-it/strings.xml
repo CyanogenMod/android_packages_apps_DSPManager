@@ -40,7 +40,7 @@
   <string name="pref_bassboost_enable">Attiva</string>
   <string name="pref_headset_virtual_title">Effetto stanza virtuale</string>
   <string name="pref_headset_virtual_summary_on">Effetto stanza virtuale attivato</string>
-  <string name="pref_headset_virtual_summary_off">Effetto stanza virtuale non attivato</string>
+  <string name="pref_headset_virtual_summary_off">Effetto stanza virtuale disattivato</string>
   <string name="pref_headset_virtual_enable">Attiva</string>
   <string name="pref_room_title">Seleziona stanza</string>
   <string name="dialog_room">Tipo di stanza</string>

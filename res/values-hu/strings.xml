@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Mélyhangkiemelés engedélyezve</string>
   <string name="pref_bassboost_summary_off">Mélyhangkiemelés letiltva</string>
   <string name="pref_bassboost_enable">Engedélyezés</string>
-  <string name="pref_headset_virtual_title">Fejhallgató virtuális szoba-hatás</string>
-  <string name="pref_headset_virtual_summary_on">Fejhallgató virtuális szoba-hatás engedélyezve</string>
-  <string name="pref_headset_virtual_summary_off">Fejhallgató virtuális szoba-hatás letiltva</string>
+  <string name="pref_headset_virtual_title">Virtuális szoba hatás</string>
+  <string name="pref_headset_virtual_summary_on">Virtuális szoba hatás engedélyezve</string>
+  <string name="pref_headset_virtual_summary_off">Virtuális szoba hatás letiltva</string>
   <string name="pref_headset_virtual_enable">Engedélyezés</string>
   <string name="pref_room_title">Szoba típusának kiválasztása</string>
   <string name="dialog_room">Szoba típusa</string>

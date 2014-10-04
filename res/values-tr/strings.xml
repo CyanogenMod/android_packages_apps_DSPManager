@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Bas yükseltici etkin</string>
   <string name="pref_bassboost_summary_off">Bas yükseltici etkin değil</string>
   <string name="pref_bassboost_enable">Etkinleştir</string>
-  <string name="pref_headset_virtual_title">Kulaklık Sanal Oda Efekti</string>
-  <string name="pref_headset_virtual_summary_on">Kulaklık sanal oda efekti etkin</string>
-  <string name="pref_headset_virtual_summary_off">Kulaklık sanal oda efekti etkin değil</string>
+  <string name="pref_headset_virtual_title">Sanal oda efekti</string>
+  <string name="pref_headset_virtual_summary_on">Sanal oda efekti etkinleştirildi</string>
+  <string name="pref_headset_virtual_summary_off">Sanal oda efekti devre dışı bırakıldı</string>
   <string name="pref_headset_virtual_enable">Etkinleştir</string>
   <string name="pref_room_title">Oda tipini seçin</string>
   <string name="dialog_room">Oda tipi</string>

@@ -19,7 +19,7 @@
   <string name="app_name">Effets audio</string>
   <string name="headset_title">Casque</string>
   <string name="speaker_title">Haut-parleur du téléphone</string>
-  <string name="bluetooth_title">Périphérique Bluetooth</string>
+  <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Station d\'accueil</string>
   <string name="pref_unavailable">Fonctionnalité non disponible pour votre appareil</string>
   <string name="pref_dsp_title">Compresseur audio dynamique</string>
@@ -38,12 +38,12 @@
   <string name="pref_bassboost_summary_on">L\'amplification des basses est activée</string>
   <string name="pref_bassboost_summary_off">L\'amplification des basses est désactivée</string>
   <string name="pref_bassboost_enable">Activer</string>
-  <string name="pref_headset_virtual_title">Effet chambre virtuelle</string>
-  <string name="pref_headset_virtual_summary_on">L\'effet chambre virtuelle est activé</string>
-  <string name="pref_headset_virtual_summary_off">L\'effet chambre virtuelle est désactivé</string>
+  <string name="pref_headset_virtual_title">Effet de salle virtuelle</string>
+  <string name="pref_headset_virtual_summary_on">Effet de salle virtuelle activé</string>
+  <string name="pref_headset_virtual_summary_off">Effet de salle virtuelle désactivé</string>
   <string name="pref_headset_virtual_enable">Activer</string>
-  <string name="pref_room_title">Type de chambre</string>
-  <string name="dialog_room">Type de chambre</string>
+  <string name="pref_room_title">Type de salle</string>
+  <string name="dialog_room">Type de salle</string>
   <string name="eq_preset_acoustic">Acoustique</string>
   <string name="eq_preset_bass_booster">Amplification des basses</string>
   <string name="eq_preset_bass_reducer">Réduction des basses</string>
@@ -61,7 +61,7 @@
   <string name="category_wm8994_signal_processing">Traitement du signal</string>
   <string name="category_wm8994_headphone_amp">Casque</string>
   <string name="category_wm8994_codec_optimization">Optimisation des Codecs</string>
-  <string name="category_wm8994_dac_config">Paramètre de convertion Digital/Analog</string>
+  <string name="category_wm8994_dac_config">Paramètres de conversion Digital/Analog</string>
   <string name="category_wm8994_microphone_recording">Microphone</string>
   <string name="pref_wm8994_microphone_recording_title">Réglages d\'enregistrement</string>
   <string name="pref_wm8994_headphone_amp_title">Niveau d\'amplification</string>

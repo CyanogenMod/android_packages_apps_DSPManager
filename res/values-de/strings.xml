@@ -39,8 +39,8 @@
   <string name="pref_bassboost_summary_off">Bassverstärkung ist ausgeschaltet</string>
   <string name="pref_bassboost_enable">Einschalten</string>
   <string name="pref_headset_virtual_title">Virtueller Raumklang</string>
-  <string name="pref_headset_virtual_summary_on">Virtueller Raumklang ist eingeschaltet</string>
-  <string name="pref_headset_virtual_summary_off">Virtueller Raumklang ist ausgeschaltet</string>
+  <string name="pref_headset_virtual_summary_on">Virtueller Raumklang ist aktiviert</string>
+  <string name="pref_headset_virtual_summary_off">Virtueller Raumklang ist deaktiviert</string>
   <string name="pref_headset_virtual_enable">Einschalten</string>
   <string name="pref_room_title">Raumtyp</string>
   <string name="dialog_room">Raumtyp</string>

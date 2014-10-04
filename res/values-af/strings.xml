@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Versterking geaktiveer</string>
   <string name="pref_bassboost_summary_off">Versterking gedeaktiveer</string>
   <string name="pref_bassboost_enable">Aktiveer</string>
-  <string name="pref_headset_virtual_title">Oorfone virtuele kamer effek</string>
-  <string name="pref_headset_virtual_summary_on">Virtuele kamer geaktiveer</string>
-  <string name="pref_headset_virtual_summary_off">Virtuele kamer gedeaktiveer</string>
+  <string name="pref_headset_virtual_title">Virtuele kamer effek</string>
+  <string name="pref_headset_virtual_summary_on">Virtuele kamer effek is geaktiveer</string>
+  <string name="pref_headset_virtual_summary_off">Virtuele kamer effek is afgeskakel</string>
   <string name="pref_headset_virtual_enable">Aktiveer</string>
   <string name="pref_room_title">Kies kamer tipe</string>
   <string name="dialog_room">Kamer tipe</string>

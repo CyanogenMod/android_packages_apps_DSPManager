@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Basson korostus päällä</string>
   <string name="pref_bassboost_summary_off">Basson korostus pois päältä</string>
   <string name="pref_bassboost_enable">Käytössä</string>
-  <string name="pref_headset_virtual_title">Kuulokkeiden virtuaalihuone-efekti</string>
-  <string name="pref_headset_virtual_summary_on">Kuulokkeiden virtuaalihuone-efekti päällä</string>
-  <string name="pref_headset_virtual_summary_off">Kuulokkeiden virtuaalihuone-efekti pois päältä</string>
+  <string name="pref_headset_virtual_title">Virtuaalinen tilaefekti</string>
+  <string name="pref_headset_virtual_summary_on">Virtuaalinen tilaefekti on käytössä</string>
+  <string name="pref_headset_virtual_summary_off">Virtuaalinen tilaefekti ei ole käytössä</string>
   <string name="pref_headset_virtual_enable">Käytössä</string>
   <string name="pref_room_title">Valitse huonetyyppi</string>
   <string name="dialog_room">Huonetyyppi</string>

@@ -38,9 +38,6 @@
   <string name="pref_bassboost_summary_on">Bassivõimendi on lubatud</string>
   <string name="pref_bassboost_summary_off">Bassivõimendi on keelatud</string>
   <string name="pref_bassboost_enable">Luba</string>
-  <string name="pref_headset_virtual_title">Peakomplekti Virtuaalse Toa Efekt</string>
-  <string name="pref_headset_virtual_summary_on">Peakomplekti Virtuaalse Toa Efekt on lubatud</string>
-  <string name="pref_headset_virtual_summary_off">Peakomplekti Virtuaalse Toa Efekt on keelatud</string>
   <string name="pref_headset_virtual_enable">Luba</string>
   <string name="pref_room_title">Valige toa tüüp</string>
   <string name="dialog_room">Toa tüüp</string>

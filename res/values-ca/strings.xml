@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Amplificació de greus habilitada</string>
   <string name="pref_bassboost_summary_off">Amplificació de greus deshabilitada</string>
   <string name="pref_bassboost_enable">Habilita</string>
-  <string name="pref_headset_virtual_title">Efecte d\'habitació virtual per als auriculars</string>
-  <string name="pref_headset_virtual_summary_on">Efecte d\'habitació virtual habilitat</string>
-  <string name="pref_headset_virtual_summary_off">Efecte d\'habitació virtual deshabilitat</string>
+  <string name="pref_headset_virtual_title">Efecte sala virtual</string>
+  <string name="pref_headset_virtual_summary_on">L\'efecte sala virtual està habilitat</string>
+  <string name="pref_headset_virtual_summary_off">L\'efecte sala virtual està inhabilitat</string>
   <string name="pref_headset_virtual_enable">Habilita</string>
   <string name="pref_room_title">Seleccioneu el tipus d\'habitació</string>
   <string name="dialog_room">Tipus d\'habitació</string>

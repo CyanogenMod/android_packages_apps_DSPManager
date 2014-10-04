@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Zvýraznění basů povoleno</string>
   <string name="pref_bassboost_summary_off">Zvýraznění basů zakázáno</string>
   <string name="pref_bassboost_enable">Povolit</string>
-  <string name="pref_headset_virtual_title">Efekt virtuálního prostoru pro sluchátka</string>
-  <string name="pref_headset_virtual_summary_on">Virtuální prostor povolen</string>
-  <string name="pref_headset_virtual_summary_off">Virtuální prostor zakázán</string>
+  <string name="pref_headset_virtual_title">Efekt virtuální místnosti</string>
+  <string name="pref_headset_virtual_summary_on">Efekt virtuální místnosti povolen</string>
+  <string name="pref_headset_virtual_summary_off">Efekt virtuální místnosti zakázán</string>
   <string name="pref_headset_virtual_enable">Povolit</string>
   <string name="pref_room_title">Zvolte typ prostoru</string>
   <string name="dialog_room">Typ prostoru</string>
