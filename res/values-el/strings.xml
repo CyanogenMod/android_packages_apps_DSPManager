@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Ενίσχυση μπάσων ενεργοποιημένη</string>
   <string name="pref_bassboost_summary_off">Ενίσχυση μπάσων απενεργοποιημένη</string>
   <string name="pref_bassboost_enable">Ενεργοποίηση</string>
-  <string name="pref_headset_virtual_title">Εφέ φίλτρου ακουστικών</string>
-  <string name="pref_headset_virtual_summary_on">Εφέ φίλτρου ακουστικών ενεργοποιημένο</string>
-  <string name="pref_headset_virtual_summary_off">Εφέ φίλτρου ακουστικών απενεργοποιημένο</string>
+  <string name="pref_headset_virtual_title">Εφέ εικονικού δωματίου</string>
+  <string name="pref_headset_virtual_summary_on">Το εφέ εικονικού δωματίου είναι ενεργό</string>
+  <string name="pref_headset_virtual_summary_off">Το εφέ εικονικού δωματίου είναι ανενεργό</string>
   <string name="pref_headset_virtual_enable">Ενεργοποίηση</string>
   <string name="pref_room_title">Επιλογή τύπου δωματίου</string>
   <string name="dialog_room">Τύπος δωματίου</string>

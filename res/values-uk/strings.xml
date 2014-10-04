@@ -38,9 +38,6 @@
   <string name="pref_bassboost_summary_on">Підсилення НЧ увімкнено</string>
   <string name="pref_bassboost_summary_off">Підсилення НЧ вимкнено</string>
   <string name="pref_bassboost_enable">Увімкнути</string>
-  <string name="pref_headset_virtual_title">Ефект віртуального оточення</string>
-  <string name="pref_headset_virtual_summary_on">Ефект віртуального оточення увімкнено</string>
-  <string name="pref_headset_virtual_summary_off">Ефект віртуального оточення вимкнено</string>
   <string name="pref_headset_virtual_enable">Увімкнути</string>
   <string name="pref_room_title">Віртуальне оточення</string>
   <string name="dialog_room">Віртуальне оточення</string>

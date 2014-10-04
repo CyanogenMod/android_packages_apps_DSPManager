@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Појачање басова је омогућено</string>
   <string name="pref_bassboost_summary_off">Појачање басова је онемогућено</string>
   <string name="pref_bassboost_enable">Омогућено</string>
-  <string name="pref_headset_virtual_title">Слушалице - Ефекат Виртуалне Собе</string>
-  <string name="pref_headset_virtual_summary_on">Слушалице - Ефекат Виртуалне Собе је омогућен</string>
-  <string name="pref_headset_virtual_summary_off">Слушалице - Ефекат Виртуалне Собе је онемогућен</string>
+  <string name="pref_headset_virtual_title">Ефекат виртуалне собе</string>
+  <string name="pref_headset_virtual_summary_on">Ефекат виртуалне собе је омогућен</string>
+  <string name="pref_headset_virtual_summary_off">Ефекат виртуалне собе је онемогућен</string>
   <string name="pref_headset_virtual_enable">Омогућено</string>
   <string name="pref_room_title">Изабери тип собе</string>
   <string name="dialog_room">Тип собе</string>

@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Bass Boost activado</string>
   <string name="pref_bassboost_summary_off">Bass Boost desactivado</string>
   <string name="pref_bassboost_enable">Habilitar</string>
-  <string name="pref_headset_virtual_title">Efectos de sala en auriculares</string>
-  <string name="pref_headset_virtual_summary_on">Efectos de sala activados</string>
-  <string name="pref_headset_virtual_summary_off">Efectos de sala desactivados</string>
+  <string name="pref_headset_virtual_title">Efectos de sala</string>
+  <string name="pref_headset_virtual_summary_on">Efectos de sala habilitados</string>
+  <string name="pref_headset_virtual_summary_off">Efectos de sala deshabilitados</string>
   <string name="pref_headset_virtual_enable">Habilitar</string>
   <string name="pref_room_title">Seleccionar tipo de habitación</string>
   <string name="dialog_room">Tipo de habitación</string>

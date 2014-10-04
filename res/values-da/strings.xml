@@ -38,9 +38,9 @@
   <string name="pref_bassboost_summary_on">Basforstærkning er aktiveret</string>
   <string name="pref_bassboost_summary_off">Basforstærkning er deaktiveret</string>
   <string name="pref_bassboost_enable">Aktivér</string>
-  <string name="pref_headset_virtual_title">Virtuel rumklang for hovedtelefoner</string>
-  <string name="pref_headset_virtual_summary_on">Virtuel rumklang for hovedtelefoner er aktiveret</string>
-  <string name="pref_headset_virtual_summary_off">Virtuel rumklang for hovedtelefoner er deaktiveret</string>
+  <string name="pref_headset_virtual_title">Virtuel rumeffekt</string>
+  <string name="pref_headset_virtual_summary_on">Virtuel rumeffekt er aktiveret</string>
+  <string name="pref_headset_virtual_summary_off">Virtuel rumeffekt er deaktiveret</string>
   <string name="pref_headset_virtual_enable">Aktivér</string>
   <string name="pref_room_title">Vælg rumtype</string>
   <string name="dialog_room">Rumtype</string>

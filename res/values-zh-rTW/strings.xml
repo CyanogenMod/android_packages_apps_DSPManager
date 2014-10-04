@@ -31,8 +31,6 @@
   <string name="pref_bassboost_summary_on">低音強化已被啟用</string>
   <string name="pref_bassboost_summary_off">低音強化已被停用</string>
   <string name="pref_bassboost_enable">啟用</string>
-  <string name="pref_headset_virtual_summary_on">耳機虛擬空間已被啟用</string>
-  <string name="pref_headset_virtual_summary_off">耳機虛擬空間已被停用</string>
   <string name="pref_headset_virtual_enable">啟用</string>
   <string name="eq_preset_classical">古典音樂</string>
   <string name="eq_preset_small_speakers">小型擴音器</string>
