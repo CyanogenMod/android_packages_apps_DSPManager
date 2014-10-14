@@ -49,6 +49,6 @@
   </string-array>
   <string-array name="wm8994_bassboost_modes">
     <item>Standaard</item>
-    <item>Kleine speakers</item>
+    <item>Kleine luidsprekers</item>
   </string-array>
 </resources>
