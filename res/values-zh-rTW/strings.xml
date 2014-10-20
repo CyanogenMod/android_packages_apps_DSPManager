@@ -56,7 +56,7 @@
   <string name="pref_wm8994_speaker_tuning_title">音樂調整</string>
   <string name="pref_wm8994_speaker_tuning_summary">重新配置的硬件均衡器 (EQ) 獲得更強低音和平衡的音效</string>
   <string name="pref_wm8994_stereo_expansion_title">立體聲擴展</string>
-  <string name="pref_wm8994_dac_osr128_title">Hi-fi 回放</string>
-  <string name="pref_wm8994_adc_osr128_title">Hi-fi 錄音</string>
+  <string name="pref_wm8994_dac_osr128_title">Hi-Fi 回放</string>
+  <string name="pref_wm8994_adc_osr128_title">Hi-Fi 錄音</string>
   <string name="help_title">說明</string>
 </resources>
