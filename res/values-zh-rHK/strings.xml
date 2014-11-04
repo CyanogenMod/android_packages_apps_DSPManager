@@ -77,7 +77,6 @@
   <string name="pref_wm8994_mono_downmix_title">單聲道縮混 (Downmix)</string>
   <string name="pref_wm8994_mono_downmix_summary">把立體聲縮混 (Downmix) 合成為單聲道 (使用於立體聲輸出，例如：有線聽筒)</string>
   <string name="pref_wm8994_stereo_expansion_title">立體聲擴展</string>
-  <string name="pref_wm8994_stereo_expansion_summary">透過數位訊號處理「擴展」立體聲</string>
   <string name="pref_wm8994_dac_direct_title">直接數字/類比 (D/AC) 轉換</string>
   <string name="pref_wm8994_dac_direct_summary">繞過頻道混音器 (Channel Mixer)，直接存取數字/類比轉換器 (DAC)，去產生更清澈的聲音 (較高訊號噪聲比)</string>
   <string name="pref_wm8994_dac_osr128_title">Hi-fi 回放</string>
@@ -90,7 +89,7 @@
   <string name="help_text"><b>什麼是 DSP 管理器？</b>
 \n\n
 DSP 管理器是一個進行音訊調整的應用程式。 
-<i>DSP</i> 代表 Digital signal processing，中文稱為「數位訊號處理」，
+<i>DSP</i> 代表 Digital signal processing，中文稱為「數碼訊號處理」，
 及 <i>管理器</i> 同時表達著另一個事實就是 DSP 並非在一個程式內執行； 
 只要 Android 應用程式的音響效果符合規格，
 都可啟用管理器。
@@ -98,7 +97,7 @@ DSP 管理器是一個進行音訊調整的應用程式。
 <b>理念</b>
 \n\n
 CyanogenMod 的音響處理支援四種不同的輸出類型：
-有線耳機，USB 音響，手機揚聲器和藍牙耳機。
+有綫耳機，USB 音響，手機揚聲器和藍牙耳機。
 對每個輸出類型都有一個獨立設定畫面。
 DSP 管理器的理念是修正每個音響輸出的特定缺陷，
 以達到最優化的聽覺體驗。

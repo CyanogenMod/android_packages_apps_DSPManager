@@ -38,6 +38,9 @@
   <string name="pref_bassboost_summary_on">Peningkatan bass diaktifkan</string>
   <string name="pref_bassboost_summary_off">Peningkatan bass dinonaktifkan</string>
   <string name="pref_bassboost_enable">Aktifkan</string>
+  <string name="pref_headset_virtual_title">Efek ruangan virtual</string>
+  <string name="pref_headset_virtual_summary_on">Efek ruangan virtual diaktifkan</string>
+  <string name="pref_headset_virtual_summary_off">Efek ruangan virtual dinonaktifkan</string>
   <string name="pref_headset_virtual_enable">Aktifkan</string>
   <string name="pref_room_title">Pilih jenis ruangan</string>
   <string name="dialog_room">Jenis ruangan</string>

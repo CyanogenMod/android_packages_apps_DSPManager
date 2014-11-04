@@ -38,6 +38,9 @@
   <string name="pref_bassboost_summary_on">Podbicie basów włączone</string>
   <string name="pref_bassboost_summary_off">Podbicie basów wyłączone</string>
   <string name="pref_bassboost_enable">Włącz</string>
+  <string name="pref_headset_virtual_title">Efekt wirtualnego pokoju</string>
+  <string name="pref_headset_virtual_summary_on">Efekt wirtualnego pokoju jest włączony</string>
+  <string name="pref_headset_virtual_summary_off">Efekt wirtualnego pokoju jest wyłączony</string>
   <string name="pref_headset_virtual_enable">Włącz</string>
   <string name="pref_room_title">Wybierz typ pokoju</string>
   <string name="dialog_room">Typ pokoju</string>

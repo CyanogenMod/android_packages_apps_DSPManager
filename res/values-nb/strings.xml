@@ -38,6 +38,9 @@
   <string name="pref_bassboost_summary_on">Bassforsterking er aktivert</string>
   <string name="pref_bassboost_summary_off">Bassforsterking er deaktivert</string>
   <string name="pref_bassboost_enable">Aktiver</string>
+  <string name="pref_headset_virtual_title">Virtuelt rom effekt</string>
+  <string name="pref_headset_virtual_summary_on">Virtuelt rom effekt er aktivert</string>
+  <string name="pref_headset_virtual_summary_off">Virtuelt rom effekt er deaktivert</string>
   <string name="pref_headset_virtual_enable">Aktiver</string>
   <string name="pref_room_title">Velg romtype</string>
   <string name="dialog_room">Romtype</string>

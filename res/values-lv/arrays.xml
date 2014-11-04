@@ -17,38 +17,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="microphone_recording_presets">
-    <item>Origineel</item>
-    <item>Gebalanceerd</item>
-    <item>Zeer gevoelig</item>
-    <item>Luide omgeving</item>
+    <item>Oriģināls</item>
+    <item>Līdzsvarots</item>
+    <item>Augstas jutības</item>
+    <item>Skaļa apkārtne</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Studio</item>
-    <item>Ruimte</item>
-    <item>Grote ruimte</item>
-    <item>Podium</item>
+    <item>Studija</item>
+    <item>Istaba</item>
+    <item>Liela istaba</item>
+    <item>Arēna</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
-    <item>Uitgeschakeld</item>
-    <item>Zwakst</item>
-    <item>Zwakker</item>
-    <item>Zwak</item>
-    <item>Sterk</item>
-    <item>Sterker</item>
-    <item>Sterkst</item>
+    <item>Izslēgts</item>
+    <item>Visvājākā</item>
+    <item>Vājāka</item>
+    <item>Vāja</item>
+    <item>Stipra</item>
+    <item>Stiprāka</item>
+    <item>Visstiprākā</item>
   </string-array>
   <string-array name="compression_modes">
-    <item>Licht</item>
-    <item>Normaal</item>
-    <item>Extreem</item>
+    <item>Vājš</item>
+    <item>Mērens</item>
+    <item>Ekstremāls</item>
   </string-array>
   <string-array name="bassboost_modes">
-    <item>Licht</item>
-    <item>Normaal</item>
-    <item>Extreem</item>
+    <item>Vājš</item>
+    <item>Mērens</item>
+    <item>Ekstremāls</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
-    <item>Standaard</item>
-    <item>Kleine luidsprekers</item>
+    <item>Standarta</item>
+    <item>Mazi skaļruņi</item>
   </string-array>
 </resources>
