@@ -75,7 +75,7 @@
   <string name="pref_wm8994_speaker_tuning_title">音樂調整</string>
   <string name="pref_wm8994_speaker_tuning_summary">重新配置硬件等化器以取得更強低音和平衡的音效</string>
   <string name="pref_wm8994_mono_downmix_title">單聲道縮混 (Downmix)</string>
-  <string name="pref_wm8994_mono_downmix_summary">把立體聲縮混 (Downmix) 合成為單聲道 (使用於立體聲輸出，例如：有線聽筒)</string>
+  <string name="pref_wm8994_mono_downmix_summary">把立體聲縮混 (Downmix) 合成為單聲道（使用於立體聲輸出，例如：有綫聽筒）</string>
   <string name="pref_wm8994_stereo_expansion_title">立體聲擴展</string>
   <string name="pref_wm8994_dac_direct_title">直接數字/類比 (D/AC) 轉換</string>
   <string name="pref_wm8994_dac_direct_summary">繞過頻道混音器 (Channel Mixer)，直接存取數字/類比轉換器 (DAC)，去產生更清澈的聲音 (較高訊號噪聲比)</string>
