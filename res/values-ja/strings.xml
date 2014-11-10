@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">DSPマネージャ</string>
+  <string name="app_name">DSPマネージャー</string>
   <string name="headset_title">ヘッドセット</string>
   <string name="speaker_title">スピーカー</string>
   <string name="bluetooth_title">Bluetooth</string>
@@ -90,11 +90,11 @@
   <string name="pref_wm8994_fll_tuning_title">調整されたオーディオクロック</string>
   <string name="pref_wm8994_fll_tuning_summary">調整されたオーディオクロックソースを使用する — 音質が向上します</string>
   <string name="help_title">ヘルプ</string>
-  <string name="help_text"><b>DSPマネージャとは？</b>
+  <string name="help_text"><b>DSPマネージャーとは？</b>
 \n\n
-DSPマネージャは出力ごとのオーディオ調整アプリです。<i>DSP</i>はDigital Signal Processingの略語で、
-<i>マネージャ</i>の部分はDSPがアプリ自体の内部では実際には動作しないことを表しています。
-マネージャはAndroidオーディオ効果の仕様に対応しているアプリ、つまり音楽プレイヤーアプリにのみ有効にできます。
+DSPマネージャーは出力ごとのオーディオ調整アプリです。<i>DSP</i>はDigital Signal Processingの略語で、
+<i>マネージャー</i>の部分はDSPがアプリ自体の内部では実際には動作しないことを表しています。
+マネージャーはAndroidオーディオ効果の仕様に対応しているアプリ、つまり音楽プレイヤーアプリにのみ有効にできます。
 \n\n\n
 <b>方針</b>
 \n\n
@@ -104,7 +104,7 @@ CyanogenModのオーディオ処理は4つの異なる出力カテゴリをサ�
 DSPマネージャの方針は、それぞれのオーディオ出力の特定の欠損を訂正することで、それぞれを最適なリスニング体験に近づけることです。
 \n\n
 AOSPのオーディオ効果とは異なり、アプリごとの設定はありません。
-これは故意のデザイン選択です: 重要なのは出力であって、どのアプリがDSPマネージャと動作するために音声を生成するのかではありません。
+これは故意のデザイン選択です: 重要なのは出力であって、どのアプリがDSPマネージャーと動作するために音声を生成するのかではありません。
 \n\n\n
 <b>機能</b>
 \n\n
