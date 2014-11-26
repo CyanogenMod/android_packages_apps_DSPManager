@@ -14,8 +14,4 @@
     limitations under the License.
 -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <style name="action_bar_style" parent="android:Widget.ActionBar">
-        <item name="android:background">@color/action_bar_color</item>
-    </style>
 </resources>
