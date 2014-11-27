@@ -26,13 +26,13 @@
   <string name="pref_dsp_summary_on">Kompresia je povolená</string>
   <string name="pref_dsp_summary_off">Kompresia je zakázaná</string>
   <string name="pref_dsp_enable">Povoliť</string>
-  <string name="pref_effect_title">Vyberte silu efektu</string>
+  <string name="pref_effect_title">Vybrať silu efektu</string>
   <string name="dialog_effect">Sila efektu</string>
   <string name="pref_equalizer_title">Ekvalizér</string>
   <string name="pref_equalizer_summary_on">Ekvalizér je povolený</string>
   <string name="pref_equalizer_summary_off">Ekvalizér je zakázaný</string>
   <string name="pref_equalizer_enable">Povoliť</string>
-  <string name="pref_equalizer_preset_title">Vyberte predvoľbu</string>
+  <string name="pref_equalizer_preset_title">Vybrať predvoľbu</string>
   <string name="pref_equalizer_loudness_title">Kompenzácia hlasitosti</string>
   <string name="pref_bassboost_title">Zosilnenie basov</string>
   <string name="pref_bassboost_summary_on">Zosilnenie basov je povolené</string>
@@ -42,7 +42,7 @@
   <string name="pref_headset_virtual_summary_on">Efekt virtuálnej miestnosti je povolený</string>
   <string name="pref_headset_virtual_summary_off">Efekt virtuálnej miestnosti je zakázaný</string>
   <string name="pref_headset_virtual_enable">Povoliť</string>
-  <string name="pref_room_title">Vyberte typ miestnosti</string>
+  <string name="pref_room_title">Vybrať typ miestnosti</string>
   <string name="dialog_room">Typ miestnosti</string>
   <string name="eq_preset_acoustic">Akustika</string>
   <string name="eq_preset_bass_booster">Zosilnenie basov</string>
