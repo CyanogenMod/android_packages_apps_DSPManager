@@ -29,4 +29,10 @@
     <color name="cb_shader">#ffccffff</color>
     <color name="cb_shader_alpha">#44ccffff</color>
     <color name="action_bar_color">#ff0d0d0d</color>
+    <color name="tab_text_color">#ff009688</color>
+
+    <!-- Palette colors referenced by top-level themes. -->
+    <color name="theme_primary">#ff263238</color>
+    <color name="theme_primary_dark">#ff21272b</color>
+    <color name="theme_accent">#ff009688</color>
 </resources>
