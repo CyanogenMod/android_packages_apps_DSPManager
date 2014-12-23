@@ -38,6 +38,9 @@
   <string name="pref_bassboost_summary_on">Amplificare bass activată</string>
   <string name="pref_bassboost_summary_off">Amplificare bass dezactivată</string>
   <string name="pref_bassboost_enable">Activare</string>
+  <string name="pref_headset_virtual_title">Efectul cameră virtuală</string>
+  <string name="pref_headset_virtual_summary_on">Efectul cameră virtuală este activat</string>
+  <string name="pref_headset_virtual_summary_off">Efectul cameră virtuală este dezactivat</string>
   <string name="pref_headset_virtual_enable">Activare</string>
   <string name="pref_room_title">Selectați tipul camerei</string>
   <string name="dialog_room">Tip cameră</string>

@@ -38,6 +38,9 @@
   <string name="pref_bassboost_summary_on">Basförstärkning är aktiverat</string>
   <string name="pref_bassboost_summary_off">Basförstärkning är inaktiverat</string>
   <string name="pref_bassboost_enable">Aktivera</string>
+  <string name="pref_headset_virtual_title">Virtuell rumseffekt</string>
+  <string name="pref_headset_virtual_summary_on">Virtuell rumseffekt är aktiverad</string>
+  <string name="pref_headset_virtual_summary_off">Virtuell rumseffekt är inaktiverad</string>
   <string name="pref_headset_virtual_enable">Aktivera</string>
   <string name="pref_room_title">Välj rumstyp</string>
   <string name="dialog_room">Rumstyp</string>
