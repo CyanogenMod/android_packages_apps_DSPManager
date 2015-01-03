@@ -20,22 +20,32 @@
     <item>原音</item>
     <item>平衡</item>
     <item>高靈敏度</item>
-    <item>Loud Environment</item>
+    <item>吵鬧環境</item>
   </string-array>
   <string-array name="headphone_modes">
     <item>錄音室</item>
     <item>房間</item>
     <item>大房間</item>
-    <item>Stage</item>
+    <item>舞台</item>
   </string-array>
   <string-array name="equalizer_loudness_modes">
     <item>已停用</item>
-    <item>Weakest</item>
+    <item>最弱</item>
     <item>更弱</item>
     <item>弱</item>
     <item>強</item>
     <item>更強</item>
-    <item>Strongest</item>
+    <item>最強</item>
+  </string-array>
+  <string-array name="compression_modes">
+    <item>輕微</item>
+    <item>中等</item>
+    <item>極端</item>
+  </string-array>
+  <string-array name="bassboost_modes">
+    <item>輕微</item>
+    <item>中等</item>
+    <item>極端</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
     <item>標準</item>

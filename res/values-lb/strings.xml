@@ -26,17 +26,23 @@
   <string name="pref_dsp_summary_on">Kompressioun aktivéiert</string>
   <string name="pref_dsp_summary_off">Kompressioun desaktivéiert</string>
   <string name="pref_dsp_enable">Aktivéieren</string>
+  <string name="pref_effect_title">Effektstäerkt auswielen</string>
   <string name="dialog_effect">Effektstäerkt</string>
   <string name="pref_equalizer_title">Equalizer</string>
   <string name="pref_equalizer_summary_on">Equalizer ass aktivéiert</string>
   <string name="pref_equalizer_summary_off">Equalizer ass desaktivéiert</string>
   <string name="pref_equalizer_enable">Aktivéieren</string>
+  <string name="pref_equalizer_preset_title">Virastellungen auswielen</string>
+  <string name="pref_equalizer_loudness_title">Lautstäerktkompenséierung</string>
   <string name="pref_bassboost_title">Bassverstäerkung</string>
   <string name="pref_bassboost_summary_on">Bassverstäerkung ass aktivéiert</string>
   <string name="pref_bassboost_summary_off">Bassverstäerkung ass desaktivéiert</string>
   <string name="pref_bassboost_enable">Aktivéieren</string>
+  <string name="pref_headset_virtual_title">Virtuell Raumeffekter</string>
   <string name="pref_headset_virtual_summary_on">Virtuell Raumeffekter sinn aktivéiert</string>
+  <string name="pref_headset_virtual_summary_off">Virtuell Raumeffekter sinn desaktivéiert</string>
   <string name="pref_headset_virtual_enable">Aktivéieren</string>
+  <string name="pref_room_title">Raumtyp auswielen</string>
   <string name="dialog_room">Räumtyp</string>
   <string name="eq_preset_acoustic">Akustik</string>
   <string name="eq_preset_bass_booster">Méi Bass</string>
@@ -55,20 +61,71 @@
   <string name="category_wm8994_signal_processing">Signalveraarbechtung</string>
   <string name="category_wm8994_headphone_amp">Kopfhörer</string>
   <string name="category_wm8994_codec_optimization">Codec-Optiméierung</string>
+  <string name="category_wm8994_dac_config">Digital-/Analog-Ëmwandlungs-Astellungen</string>
   <string name="category_wm8994_microphone_recording">Mikro</string>
+  <string name="pref_wm8994_microphone_recording_title">Virastellunge vun der Opnam</string>
   <string name="pref_wm8994_headphone_amp_title">Verstäerkungsniveau</string>
+  <string name="pref_wm8994_headphone_amp_summary">Analogverstäerkung upassen</string>
+  <string name="pref_wm8994_headphone_amp_dlg_title">Niveau vun der Kopfhörerverstäerkung</string>
   <string name="pref_wm8994_headphone_amp_dlg_desc">Analog Verstäerkung</string>
   <string name="pref_wm8994_bass_boost_enable_title">Bassunhiewung</string>
+  <string name="pref_wm8994_bass_boost_enable_summary">Erweidert Steierung vun der Bassverstäerkung</string>
   <string name="pref_wm8994_bass_boost_title">Bandbreet vun der Bassunhiewung</string>
+  <string name="pref_wm8994_bass_boost_summary">Erweidert, dynamesch Bandbreetesteierung</string>
   <string name="pref_wm8994_bass_boost_preset_title">Virastellung fir d\'Bassunhiewung</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Verstäerkung</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Bandbreet vun der Bassunhiewung</string>
+  <string name="pref_wm8994_speaker_tuning_title">Fir Musek ofstëmmen</string>
+  <string name="pref_wm8994_speaker_tuning_summary">Rekonfiguréiert den Hardware-Equalizer fir méi Bass a méi en ausgeglachent Klangbild</string>
   <string name="pref_wm8994_mono_downmix_title">Mono-Downmix</string>
+  <string name="pref_wm8994_mono_downmix_summary">Stereo op Mono erofmëschen (fir Stereo-Ausgäng, wéi z. B. Kopfhörer)</string>
   <string name="pref_wm8994_stereo_expansion_title">Stereo-Erweiderung</string>
+  <string name="pref_wm8994_stereo_expansion_summary">Stereo duerch digital Signalveraarbechtung \'méi breet maachen\'</string>
   <string name="pref_wm8994_dac_direct_title">Direktzougrëff D/A-Wandler</string>
+  <string name="pref_wm8994_dac_direct_summary">Direktzougrëff op den Digital-/Analog-Wandler duerch d\'Ëmgoe vum Kanalmëscher. Produzéiert e méi propperen Toun (héicht Signal-Rausch-Verhältnis)</string>
   <string name="pref_wm8994_dac_osr128_title">Hi-Fi-Ofspillen</string>
+  <string name="pref_wm8994_dac_osr128_summary">Digital-/Analog-Wandler 128x Oversampling — méi proppere Klang beim Erëmgi vu Musek</string>
   <string name="pref_wm8994_adc_osr128_title">Hi-Fi-Opnam</string>
+  <string name="pref_wm8994_adc_osr128_summary">Analog/Digital-Wandler 128x Oversampling — Erhéicht d\'Opnamqualitéit</string>
   <string name="pref_wm8994_fll_tuning_title">Stabiliséierten Audio-Takt</string>
   <string name="pref_wm8994_fll_tuning_summary">Stabiliséierte WM8994-Audio-Takt benotzen — verbessert d\'Klangqualitéit</string>
   <string name="help_title">Hëllef</string>
+  <string name="help_text"><b>Wat ass den DSP-Manager?</b>
+\n\n
+Den DSP-Manager ass eng App, mat där d\'Tounausgab beaflosst ka ginn. <i>DSP</i> steet fir "Digital Signal Processing", also "digital Signalveraarbechtung" a <i>Manager</i> bedeit, datt d\'Signalveraarbechtung net am DSP-Manager stattfënnt, mee duerch dëse gesteiert gëtt. Den DSP-Manager ka vun allen Appe benotzt ginn, déi mat den Android-Touneffekter kompatibel sinn.
+\n\n\n
+<b>Philosophie</b>
+\n\n
+CyanogenMod ënnerstëtzt véier verschidden Toun-Ausganksweeër:
+Kopfhörer, USB-Toun, Lautsprecher a Bluetooth-Apparater. Fir all Ausgankswee gëtt et en eegene Konfiguratiounspanneau, an deem déi speziell Eegeschafte vum jeeweilege Wee fir en optimaalt Héiererliefnes ugepasst kënne ginn.
+\n\n
+Am Géigesaz zu den AOSP-Touneffekter gëtt et keng applikatiounsspezifesch Astellungen. Dat gouf bewosst sou konzipéiert, well d\'Toun-Ausgab eis wichteg ass, an net d\'Applikatioun déi (Toun-)Daten un den DSP-Manager iwwergëtt.
+\n\n\
+<b>Effekter</b>
+\n\n
+1. <b>Dynamikëmfangskompressioun</b>
+\n\n
+D\'Lautstäerkt gëtt un en duerchschnëttleche Lauschterer ugepasst. D\'Tounausgab soll duerch dësen Effekt manner vun Hannergrondgeräischer wéi z. B. Stroossekaméidi, iwwertéint ginn.
+\n\n
+Den Effektstäerkt-Reegler bestëmmt, wéi stark den DSP-Manager d\'Lautstäerkt vum Toun soll beaflossen. Fir dësen DSP-Effekt gëtt et keen entspriechenden AOSP-Effekt.
+\n\n\n
+2. <b>Bassverstäerkung</b>
+\n\n
+D\'Bassverstäerkung gëtt duerch een Déifpassfilter erzeugt, woubäi versicht gëtt, d\'Betonung op d\'Frequenze vu 55Hz an drënner ze leeën. D\'Verstäerkung läit bei ongeféier 6dB a gëtt duerch de Parameter \"Intensitéit\" verännert, deen eng Filterresonanz am 55Hz-Band dobäisetzt, wouduerch dës Frequenz speziell betount gëtt. Den Effekt ass konzipéiert fir de Verloscht vu Bassfrequenzen duerch kleng Lautstprecher oder extern Kopfhörer (déi net am Auerkanal leien) ze kompenséieren.
+\n\n\n
+3. <b>Equalizer</b>
+\n\n
+Et handelt sech hei ëm een Equalizer mat Frequenzbänner bei 16, 64, 250, 1000, 4000 a 16000 Hz. Et sinn e puer gemeinsam Virastellungen disponibel, an de Frequenzgank kann duerch d\'Beréiere vun der Equalizer-Grafik ugepasst ginn. Den Effekt sollte dofir benotzt ginn, de Frequenzgank dem perséinleche Geschmack oder de Besonnerheete vun de Kopfhörer oder de Lautsprecher unzepassen.
+\n\n
+Bei Verwennung vun engem kabelgebonnene Kopfhörer erlaabt den Equalizer och eng Loudness-Kompenséierung, déi de Schalldrockpeegel auszegläichen, deen am Ouer vum Benotzer duerch d\'Frequenzverännerungen entsteet. Fir datt s de gewënschten Effekt antrëtt, muss d\'éischt am Menü de richtige Wäert gewielt ginn.
+\n\n
+Fir d\'Effektstäerkt vun der Loudness-Kompenséierung anzestellen, sollt breetbandeg Musek, z. B. Rock oder Metal, lues ofgespillt ginn. Et sollt ee versichen, eng Astellung ze fannen, bei där d\'Héierbarkeet vum Bass erhéicht gëtt, awer nach net ervirstécht. Nodeem d\'Kompenséierung richteg konfiguréiert gouf, sollt de Bass-Pegel, onofhängeg vun der Héierlautstäerkt am Verglach zum Pegel vun den aneren Instrumenter, dee selweschte bleiwen. Wa mat usteigender Héierlautstäerkt d\'Musek basslasteg gëtt, ass d\'Kompenséierung wahrscheinlich ze staark a sollt reduzéiert ginn.
+\n\n\n
+D\'Loudness-Kompenséierung wierkt zousätzlich zu der gewielter Astellung vum Equalizer. Falls nëmmen eng Kompenséierung erwënscht ass, sollt d\'Equalizer-Virastellung \"Aus\" gewielt ginn.
+\n\n
+4. <b>Virtuelle Raumklang</b>
+\n\n
+De \"Virtuelle Raumklang\" ass ee \"Crossfeed-Design\", dee vun der berühmter bs2b-Analogschaltung inspiréiert gouf. E léisst Monosignaler onverännert duerchgoen; just d\'Differenzsignal gëtt mëttels engem Déifpassfilter beaflosst. De Filter erzeugt gläichzäiteg ee Kappschieteffekt an eng interaural Zäitdifferenz, fir dem Lauschterer e korrekte psychoakusteschen Androck ze vermëttelen. Dohanner stécht d\'Ofsiicht, de Benotzer vun enger Lauschter-Ermiddung duerch onplausibel Stereo-Trennung ze schützen. Den Effekt sollte bei alle Stereo-Kopfhörer benotzt ginn.
+\n\n
+Well d\'Mëschen d\'(Stereo-)Kanaltrennung reduzéiert, entsteet en Echo-Effekt, dee fir d\'Erhéijung vun der Basisbreet verwennt ka ginn. Dësen Effekt gëtt duerch d\'Raumtyp-Astellung beaflosst.</string>
 </resources>
