@@ -38,6 +38,9 @@
   <string name="pref_bassboost_summary_on">زیادکه‌ری به‌یس کارده‌کات</string>
   <string name="pref_bassboost_summary_off">زیادکه‌ری به‌یس کارناکات</string>
   <string name="pref_bassboost_enable">چالاککردن</string>
+  <string name="pref_headset_virtual_title">کاریگەریی دیوی گریمانەکی</string>
+  <string name="pref_headset_virtual_summary_on">کاریگەریی دیوی گریمانەکی تواناپێدراوە</string>
+  <string name="pref_headset_virtual_summary_off">کاریگەریی دیوی گریمانەکی نەتواناکراوە</string>
   <string name="pref_headset_virtual_enable">چالاککردن</string>
   <string name="pref_room_title">جۆری ژوور دیاریبکە</string>
   <string name="dialog_room">جۆری ژوور</string>

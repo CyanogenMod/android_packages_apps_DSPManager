@@ -91,41 +91,23 @@
   <string name="pref_wm8994_fll_tuning_summary">Stabiliséierte WM8994-Audio-Takt benotzen — verbessert d\'Klangqualitéit</string>
   <string name="help_title">Hëllef</string>
   <string name="help_text"><b>Wat ass den DSP-Manager?</b>
-\n\n
-Den DSP-Manager ass eng App, mat där d\'Tounausgab beaflosst ka ginn. <i>DSP</i> steet fir "Digital Signal Processing", also "digital Signalveraarbechtung" a <i>Manager</i> bedeit, datt d\'Signalveraarbechtung net am DSP-Manager stattfënnt, mee duerch dëse gesteiert gëtt. Den DSP-Manager ka vun allen Appe benotzt ginn, déi mat den Android-Touneffekter kompatibel sinn.
-\n\n\n
-<b>Philosophie</b>
-\n\n
-CyanogenMod ënnerstëtzt véier verschidden Toun-Ausganksweeër:
+\n\nDen DSP-Manager ass eng App, mat där d\'Tounausgab beaflosst ka ginn. <i>DSP</i> steet fir "Digital Signal Processing", also "digital Signalveraarbechtung" a <i>Manager</i> bedeit, datt d\'Signalveraarbechtung net am DSP-Manager stattfënnt, mee duerch dëse gesteiert gëtt. Den DSP-Manager ka vun allen Appe benotzt ginn, déi mat den Android-Touneffekter kompatibel sinn.
+\n\n\n<b>Philosophie</b>
+\n\nCyanogenMod ënnerstëtzt véier verschidden Toun-Ausganksweeër:
 Kopfhörer, USB-Toun, Lautsprecher a Bluetooth-Apparater. Fir all Ausgankswee gëtt et en eegene Konfiguratiounspanneau, an deem déi speziell Eegeschafte vum jeeweilege Wee fir en optimaalt Héiererliefnes ugepasst kënne ginn.
-\n\n
-Am Géigesaz zu den AOSP-Touneffekter gëtt et keng applikatiounsspezifesch Astellungen. Dat gouf bewosst sou konzipéiert, well d\'Toun-Ausgab eis wichteg ass, an net d\'Applikatioun déi (Toun-)Daten un den DSP-Manager iwwergëtt.
-\n\n\
-<b>Effekter</b>
-\n\n
-1. <b>Dynamikëmfangskompressioun</b>
-\n\n
-D\'Lautstäerkt gëtt un en duerchschnëttleche Lauschterer ugepasst. D\'Tounausgab soll duerch dësen Effekt manner vun Hannergrondgeräischer wéi z. B. Stroossekaméidi, iwwertéint ginn.
-\n\n
-Den Effektstäerkt-Reegler bestëmmt, wéi stark den DSP-Manager d\'Lautstäerkt vum Toun soll beaflossen. Fir dësen DSP-Effekt gëtt et keen entspriechenden AOSP-Effekt.
-\n\n\n
-2. <b>Bassverstäerkung</b>
-\n\n
-D\'Bassverstäerkung gëtt duerch een Déifpassfilter erzeugt, woubäi versicht gëtt, d\'Betonung op d\'Frequenze vu 55Hz an drënner ze leeën. D\'Verstäerkung läit bei ongeféier 6dB a gëtt duerch de Parameter \"Intensitéit\" verännert, deen eng Filterresonanz am 55Hz-Band dobäisetzt, wouduerch dës Frequenz speziell betount gëtt. Den Effekt ass konzipéiert fir de Verloscht vu Bassfrequenzen duerch kleng Lautstprecher oder extern Kopfhörer (déi net am Auerkanal leien) ze kompenséieren.
-\n\n\n
-3. <b>Equalizer</b>
-\n\n
-Et handelt sech hei ëm een Equalizer mat Frequenzbänner bei 16, 64, 250, 1000, 4000 a 16000 Hz. Et sinn e puer gemeinsam Virastellungen disponibel, an de Frequenzgank kann duerch d\'Beréiere vun der Equalizer-Grafik ugepasst ginn. Den Effekt sollte dofir benotzt ginn, de Frequenzgank dem perséinleche Geschmack oder de Besonnerheete vun de Kopfhörer oder de Lautsprecher unzepassen.
-\n\n
-Bei Verwennung vun engem kabelgebonnene Kopfhörer erlaabt den Equalizer och eng Loudness-Kompenséierung, déi de Schalldrockpeegel auszegläichen, deen am Ouer vum Benotzer duerch d\'Frequenzverännerungen entsteet. Fir datt s de gewënschten Effekt antrëtt, muss d\'éischt am Menü de richtige Wäert gewielt ginn.
-\n\n
-Fir d\'Effektstäerkt vun der Loudness-Kompenséierung anzestellen, sollt breetbandeg Musek, z. B. Rock oder Metal, lues ofgespillt ginn. Et sollt ee versichen, eng Astellung ze fannen, bei där d\'Héierbarkeet vum Bass erhéicht gëtt, awer nach net ervirstécht. Nodeem d\'Kompenséierung richteg konfiguréiert gouf, sollt de Bass-Pegel, onofhängeg vun der Héierlautstäerkt am Verglach zum Pegel vun den aneren Instrumenter, dee selweschte bleiwen. Wa mat usteigender Héierlautstäerkt d\'Musek basslasteg gëtt, ass d\'Kompenséierung wahrscheinlich ze staark a sollt reduzéiert ginn.
-\n\n\n
-D\'Loudness-Kompenséierung wierkt zousätzlich zu der gewielter Astellung vum Equalizer. Falls nëmmen eng Kompenséierung erwënscht ass, sollt d\'Equalizer-Virastellung \"Aus\" gewielt ginn.
-\n\n
-4. <b>Virtuelle Raumklang</b>
-\n\n
-De \"Virtuelle Raumklang\" ass ee \"Crossfeed-Design\", dee vun der berühmter bs2b-Analogschaltung inspiréiert gouf. E léisst Monosignaler onverännert duerchgoen; just d\'Differenzsignal gëtt mëttels engem Déifpassfilter beaflosst. De Filter erzeugt gläichzäiteg ee Kappschieteffekt an eng interaural Zäitdifferenz, fir dem Lauschterer e korrekte psychoakusteschen Androck ze vermëttelen. Dohanner stécht d\'Ofsiicht, de Benotzer vun enger Lauschter-Ermiddung duerch onplausibel Stereo-Trennung ze schützen. Den Effekt sollte bei alle Stereo-Kopfhörer benotzt ginn.
-\n\n
-Well d\'Mëschen d\'(Stereo-)Kanaltrennung reduzéiert, entsteet en Echo-Effekt, dee fir d\'Erhéijung vun der Basisbreet verwennt ka ginn. Dësen Effekt gëtt duerch d\'Raumtyp-Astellung beaflosst.</string>
+\n\nAm Géigesaz zu den AOSP-Touneffekter gëtt et keng applikatiounsspezifesch Astellungen. Dat gouf bewosst sou konzipéiert, well d\'Toun-Ausgab eis wichteg ass, an net d\'Applikatioun déi (Toun-)Daten un den DSP-Manager iwwergëtt.
+\n\n\n<b>Effekter</b>
+\n\n1. <b>Dynamikëmfangskompressioun</b>
+\n\nD\'Lautstäerkt gëtt un en duerchschnëttleche Lauschterer ugepasst. D\'Tounausgab soll duerch dësen Effekt manner vun Hannergrondgeräischer wéi z. B. Stroossekaméidi, iwwertéint ginn.
+\n\nDen Effektstäerkt-Reegler bestëmmt, wéi stark den DSP-Manager d\'Lautstäerkt vum Toun soll beaflossen. Fir dësen DSP-Effekt gëtt et keen entspriechenden AOSP-Effekt.
+\n\n\n2. <b>Bassverstäerkung</b>
+\n\nD\'Bassverstäerkung gëtt duerch een Déifpassfilter erzeugt, woubäi versicht gëtt, d\'Betonung op d\'Frequenze vu 55Hz an drënner ze leeën. D\'Verstäerkung läit bei ongeféier 6dB a gëtt duerch de Parameter \"Intensitéit\" verännert, deen eng Filterresonanz am 55Hz-Band dobäisetzt, wouduerch dës Frequenz speziell betount gëtt. Den Effekt ass konzipéiert fir de Verloscht vu Bassfrequenzen duerch kleng Lautstprecher oder extern Kopfhörer (déi net am Ouerkanal leien) ze kompenséieren.
+\n\n\n3. <b>Equalizer</b>
+\n\nEt handelt sech hei ëm een Equalizer mat Frequenzbänner bei 16, 64, 250, 1000, 4000 a 16000 Hz. Et sinn e puer gemeinsam Virastellungen disponibel, an de Frequenzgank kann duerch d\'Beréiere vun der Equalizer-Grafik ugepasst ginn. Den Effekt sollte dofir benotzt ginn, de Frequenzgank dem perséinleche Geschmack oder de Besonnerheete vun de Kopfhörer oder de Lautsprecher unzepassen.
+\n\nBei Verwennung vun engem kabelgebonnene Kopfhörer erlaabt den Equalizer och eng Loudness-Kompenséierung, déi de Schalldrockpeegel auszegläichen, deen am Ouer vum Benotzer duerch d\'Frequenzverännerungen entsteet. Fir datt s de gewënschten Effekt antrëtt, muss d\'éischt am Menü de richtige Wäert gewielt ginn.
+\n\nFir d\'Effektstäerkt vun der Loudness-Kompenséierung anzestellen, sollt breetbandeg Musek, z. B. Rock oder Metal, lues ofgespillt ginn. Et sollt ee versichen, eng Astellung ze fannen, bei där d\'Héierbarkeet vum Bass erhéicht gëtt, awer nach net ervirstécht. Nodeem d\'Kompenséierung richteg konfiguréiert gouf, sollt de Bass-Pegel, onofhängeg vun der Héierlautstäerkt am Verglach zum Pegel vun den aneren Instrumenter, dee selweschte bleiwen. Wa mat usteigender Héierlautstäerkt d\'Musek basslasteg gëtt, ass d\'Kompenséierung wahrscheinlich ze staark a sollt reduzéiert ginn.
+\n\nD\'Loudness-Kompenséierung wierkt zousätzlich zu der gewielter Astellung vum Equalizer. Falls nëmmen eng Kompenséierung erwënscht ass, sollt d\'Equalizer-Virastellung \"Aus\" gewielt ginn.
+\n\n\n4. <b>Virtuelle Raumklang</b>
+\n\nDe \"Virtuelle Raumklang\" ass ee \"Crossfeed-Design\", dee vun der berühmter bs2b-Analogschaltung inspiréiert gouf. E léisst Monosignaler onverännert duerchgoen; just d\'Differenzsignal gëtt mëttels engem Déifpassfilter beaflosst. De Filter erzeugt gläichzäiteg ee Kappschieteffekt an eng interaural Zäitdifferenz, fir dem Lauschterer e korrekte psychoakusteschen Androck ze vermëttelen. Dohanner stécht d\'Ofsiicht, de Benotzer vun enger Lauschter-Ermiddung duerch onplausibel Stereo-Trennung ze schützen. Den Effekt sollte bei alle Stereo-Kopfhörer benotzt ginn.
+\n\nWell d\'Mëschen d\'(Stereo-)Kanaltrennung reduzéiert, entsteet en Echo-Effekt, dee fir d\'Erhéijung vun der Basisbreet verwennt ka ginn. Dësen Effekt gëtt duerch d\'Raumtyp-Astellung beaflosst.</string>
 </resources>
