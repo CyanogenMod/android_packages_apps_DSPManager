@@ -21,7 +21,7 @@
   <string name="speaker_title">Garsiakalbis</string>
   <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB / Dokas</string>
-  <string name="pref_unavailable">Funkcija negalima jūsų prietaise</string>
+  <string name="pref_unavailable">Funkcija negalima jūsų įrenginyje</string>
   <string name="pref_dsp_title">Dinaminė diapazono kompresija</string>
   <string name="pref_dsp_summary_on">Dinaminė diapazono kompresija įjungta</string>
   <string name="pref_dsp_summary_off">Dinaminė diapazono kompresija išjungta</string>
