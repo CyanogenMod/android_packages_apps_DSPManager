@@ -91,7 +91,7 @@
   <string name="pref_wm8994_fll_tuning_summary">Stabiliséierte WM8994-Audio-Takt benotzen — verbessert d\'Klangqualitéit</string>
   <string name="help_title">Hëllef</string>
   <string name="help_text"><b>Wat ass den DSP-Manager?</b>
-\n\nDen DSP-Manager ass eng App, mat där d\'Tounausgab beaflosst ka ginn. <i>DSP</i> steet fir "Digital Signal Processing", also "digital Signalveraarbechtung" a <i>Manager</i> bedeit, datt d\'Signalveraarbechtung net am DSP-Manager stattfënnt, mee duerch dëse gesteiert gëtt. Den DSP-Manager ka vun allen Appe benotzt ginn, déi mat den Android-Touneffekter kompatibel sinn.
+\n\nDen DSP-Manager ass eng App, mat där d\'Tounausgab beaflosst ka ginn. <i>DSP</i> steet fir "Digital Signal Processing", also "digital Signalveraarbechtung" a <i>Manager</i> bedeit, datt d\'Signalveraarbechtung net am DSP-Manager stattfënnt, mä duerch dëse gesteiert gëtt. Den DSP-Manager ka vun allen Appe benotzt ginn, déi mat den Android-Touneffekter kompatibel sinn.
 \n\n\n<b>Philosophie</b>
 \n\nCyanogenMod ënnerstëtzt véier verschidden Toun-Ausganksweeër:
 Kopfhörer, USB-Toun, Lautsprecher a Bluetooth-Apparater. Fir all Ausgankswee gëtt et en eegene Konfiguratiounspanneau, an deem déi speziell Eegeschafte vum jeeweilege Wee fir en optimaalt Héiererliefnes ugepasst kënne ginn.

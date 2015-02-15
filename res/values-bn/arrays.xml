@@ -22,4 +22,10 @@
     <item>উচ্চ সংবেদনশীলতা</item>
     <item>Loud Environment</item>
   </string-array>
+  <string-array name="headphone_modes">
+    <item>স্টুডিও</item>
+    <item>রুম</item>
+    <item>Large room</item>
+    <item>Stage</item>
+  </string-array>
 </resources>

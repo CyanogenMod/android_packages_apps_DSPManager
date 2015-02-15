@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Equalizador</string>
+  <string name="app_name">Gestor DSP</string>
   <string name="headset_title">Auriculares</string>
   <string name="speaker_title">Coluna do Telemóvel</string>
   <string name="bluetooth_title">Bluetooth</string>

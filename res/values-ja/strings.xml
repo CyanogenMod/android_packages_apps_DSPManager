@@ -80,7 +80,7 @@
   <string name="pref_wm8994_mono_downmix_title">モノラルダウンミックス</string>
   <string name="pref_wm8994_mono_downmix_summary">ステレオの音をモノラルにダウンミックスする（ヘッドホンなどのステレオ機器用）</string>
   <string name="pref_wm8994_stereo_expansion_title">ステレオ拡張</string>
-  <string name="pref_wm8994_stereo_expansion_summary">デジタル信号処理を通じてステレオの音を「拡張」する</string>
+  <string name="pref_wm8994_stereo_expansion_summary">デジタル信号処理を通してステレオの音を「拡張」する</string>
   <string name="pref_wm8994_dac_direct_title">D/Aコンバーターダイレクト</string>
   <string name="pref_wm8994_dac_direct_summary">チャンネルミキサーを通さずにデジタル/アナログコンバーターに直接アクセスして、よりクリアな音を生成させる（S/N比が高くなります）</string>
   <string name="pref_wm8994_dac_osr128_title">Hi-Fi再生</string>

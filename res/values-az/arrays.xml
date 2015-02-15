@@ -37,6 +37,16 @@
     <item>Daha güclü</item>
     <item>Ən güclü</item>
   </string-array>
+  <string-array name="compression_modes">
+    <item>Az</item>
+    <item>Orta</item>
+    <item>Yüksək</item>
+  </string-array>
+  <string-array name="bassboost_modes">
+    <item>Az</item>
+    <item>Orta</item>
+    <item>Yüksək</item>
+  </string-array>
   <string-array name="wm8994_bassboost_modes">
     <item>Standard</item>
     <item>Kiçik Səsucaldanlar</item>
