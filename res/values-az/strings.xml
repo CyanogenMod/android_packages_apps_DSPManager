@@ -64,5 +64,6 @@
   <string name="category_wm8994_microphone_recording">Mikrofon</string>
   <string name="pref_wm8994_microphone_recording_title">Səsyazma öntənzimləməsi</string>
   <string name="pref_wm8994_headphone_amp_title">Gücləndirmə səviyyəsi</string>
+  <string name="pref_wm8994_dac_direct_summary">Kanal qarışdırıcını ötürüb birbaşa rəqəmli/analoq çeviriciyə müraciət et. Daha təmiz səs meydana gətirər (aşağı siqnal-səs-küy əmsalı)</string>
   <string name="help_title">Kömək</string>
 </resources>
