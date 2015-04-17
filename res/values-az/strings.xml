@@ -16,10 +16,11 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">Səs İdarəçisi</string>
   <string name="headset_title">Qulaqlıq</string>
   <string name="speaker_title">Səsucaldan</string>
   <string name="bluetooth_title">Bluetooth</string>
-  <string name="usb_title">USB/Altlıq</string>
+  <string name="usb_title">USB/Modul</string>
   <string name="pref_unavailable">Bu funksiya cihazınızda dəstəklənmir</string>
   <string name="pref_dsp_title">Dinamik sahəsi sıxışdırılması</string>
   <string name="pref_dsp_summary_on">Sıxışdırma aktivdir</string>
@@ -34,13 +35,13 @@
   <string name="pref_equalizer_preset_title">Öntənzimləməni seçin</string>
   <string name="pref_equalizer_loudness_title">Səs tarazlayıcısı</string>
   <string name="pref_bassboost_title">Bas artırıcı</string>
-  <string name="pref_bassboost_summary_on">Bas artırıcı aktivdir</string>
-  <string name="pref_bassboost_summary_off">Bas artırıcı aktiv deyil</string>
-  <string name="pref_bassboost_enable">Aktiv</string>
+  <string name="pref_bassboost_summary_on">Bas artırıcı fəaldır</string>
+  <string name="pref_bassboost_summary_off">Bas artırıcı ləğv edildi</string>
+  <string name="pref_bassboost_enable">Fəallaşdır</string>
   <string name="pref_headset_virtual_title">Virtual otaq effekti</string>
-  <string name="pref_headset_virtual_summary_on">Virtual otaq effekti aktivdir</string>
-  <string name="pref_headset_virtual_summary_off">Virtual otaq effekti aktiv deyil</string>
-  <string name="pref_headset_virtual_enable">Aktiv</string>
+  <string name="pref_headset_virtual_summary_on">Virtual otaq effekti fəaldır</string>
+  <string name="pref_headset_virtual_summary_off">Virtual otaq effekti ləğv edildi</string>
+  <string name="pref_headset_virtual_enable">Fəallaşdır</string>
   <string name="pref_room_title">Otaq növünü seçin</string>
   <string name="dialog_room">Otaq növü</string>
   <string name="eq_preset_acoustic">Akustik</string>
@@ -57,13 +58,36 @@
   <string name="eq_preset_vocal_booster">Vokal artırıcı</string>
   <string name="eq_preset_custom">Xüsusi</string>
   <string name="category_wm8994_internal_speaker">Səsucaldan</string>
-  <string name="category_wm8994_signal_processing">Siqnal işlənməsi</string>
+  <string name="category_wm8994_signal_processing">Siqnal emalı</string>
   <string name="category_wm8994_headphone_amp">Qulaqlıq</string>
   <string name="category_wm8994_codec_optimization">Kodek optimallaşdırma</string>
   <string name="category_wm8994_dac_config">Rəqəmsal/Analoq çevirici tənzimləmələri</string>
   <string name="category_wm8994_microphone_recording">Mikrofon</string>
   <string name="pref_wm8994_microphone_recording_title">Səsyazma öntənzimləməsi</string>
   <string name="pref_wm8994_headphone_amp_title">Gücləndirmə səviyyəsi</string>
+  <string name="pref_wm8994_headphone_amp_summary">Analoq gücləndiricini özəlləşdir</string>
+  <string name="pref_wm8994_headphone_amp_dlg_title">Qulaqlıq gücləndirici səviyyəsi</string>
+  <string name="pref_wm8994_headphone_amp_dlg_desc">Analoq gücləndirici</string>
+  <string name="pref_wm8994_bass_boost_enable_title">Bas yüksəldici</string>
+  <string name="pref_wm8994_bass_boost_enable_summary">Bas yüksəltmə üçün qabaqcıl nəzarət</string>
+  <string name="pref_wm8994_bass_boost_title">Bas yüksəltmə aralığı</string>
+  <string name="pref_wm8994_bass_boost_summary">Qabaqcıl dinamik aralıq idarəetməsi</string>
+  <string name="pref_wm8994_bass_boost_preset_title">Bas artırıcı öntənzimləməsi</string>
+  <string name="pref_wm8994_bass_boost_gain_dlg_desc">Gücləndir</string>
+  <string name="pref_wm8994_bass_boost_range_dlg_desc">Bas artırma məsafəsi</string>
+  <string name="pref_wm8994_speaker_tuning_title">Musiqi üçün tənzimlə</string>
+  <string name="pref_wm8994_speaker_tuning_summary">Daha çox bas və tarazlı səs üçün avadanlıq EQ\'nu nizamla</string>
+  <string name="pref_wm8994_mono_downmix_title">Mono çevirmə</string>
+  <string name="pref_wm8994_mono_downmix_summary">Stereo səsi monoya çevir (qulaqlıq kimi stereo çıxışlar üçündür)</string>
+  <string name="pref_wm8994_stereo_expansion_title">Stereo genişlətmə</string>
+  <string name="pref_wm8994_stereo_expansion_summary">Rəqəmli siqnal emalı ilə stereo səsi “Genişlət”</string>
+  <string name="pref_wm8994_dac_direct_title">D/AC birbaşa</string>
   <string name="pref_wm8994_dac_direct_summary">Kanal qarışdırıcını ötürüb birbaşa rəqəmli/analoq çeviriciyə müraciət et. Daha təmiz səs meydana gətirər (aşağı siqnal-səs-küy əmsalı)</string>
-  <string name="help_title">Kömək</string>
+  <string name="pref_wm8994_dac_osr128_title">Hi-fi çalma</string>
+  <string name="pref_wm8994_dac_osr128_summary">128x nümunələmə ilə rəqəmlidən-analoqa çevirici — musiqi çalarkən təmiz səs</string>
+  <string name="pref_wm8994_adc_osr128_title">Hi-fi səsyazma</string>
+  <string name="pref_wm8994_adc_osr128_summary">128x nümunələmə ilə analoqdan-rəqəmliyə çevirici — yazılan səslərin keyfiyyətini artırar</string>
+  <string name="pref_wm8994_fll_tuning_title">Tənzimli səs saatı</string>
+  <string name="pref_wm8994_fll_tuning_summary">Tənzimli WM8994 səs saatı mənbəyi — səsin keyfiyyətini artırar</string>
+  <string name="help_title">Yardım</string>
 </resources>
