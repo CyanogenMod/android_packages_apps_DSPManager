@@ -16,9 +16,10 @@
      limitations under the License.
 -->
 <resources>
+  <string name="app_name">DSP kudeatzailea</string>
   <string name="headset_title">Aurikularrak</string>
   <string name="speaker_title">Bozgorailua</string>
-  <string name="bluetooth_title">Bluetooth-a</string>
+  <string name="bluetooth_title">Bluetooth</string>
   <string name="usb_title">USB/Oinarria</string>
   <string name="pref_unavailable">Gailu honetan ez dago funtzionalitate hau eskuragarri</string>
   <string name="pref_dsp_title">Konpresio dinamikoaren heina</string>
@@ -79,8 +80,53 @@
   <string name="pref_wm8994_dac_direct_title">D/A sarbide zuzena</string>
   <string name="pref_wm8994_dac_direct_summary">Digital/analogiko konbertsorera zuzenean sartu, kanal nahastailetik pasatu gabe. Souni garbiagoa lortzen da (seinaletik-soinurako ratio altuagoa)</string>
   <string name="pref_wm8994_dac_osr128_title">Hi-Fi erreproduzkioa</string>
-  <string name="pref_wm8994_dac_osr128_summary">128x -eko gainlaginketa digitaletik-analogikorako konbertsioan (soinua musika erreproduzitu bitartean garbitzen du)</string>
+  <string name="pref_wm8994_dac_osr128_summary">128x -eko gainlaginketa digitaletik-analogikorako konbertsioan — soinu garbiagoa musika entzutean</string>
   <string name="pref_wm8994_adc_osr128_title">Hi-Fi grabazioa</string>
   <string name="pref_wm8994_adc_osr128_summary">128x -eko gainlaginketa analogikotik-digitalerako konbertsioan (Grabazioen kalitatea handitzen du)</string>
   <string name="help_title">Laguntza</string>
+  <string name="help_text">
+<b>¿Zer da DSP Manager?</b>
+\n\n
+DSP Manager (Ekualizadorea) soinuen doiketarako aplikazio bat da.
+<i>DSP</i> -k Digital Signal Processing esan nahi du(Seinale Digitalaren Prozesatzea),
+eta <i>Manager</i> -ek (Kudeatzailea) oraingoz DSP-ak ez duela bere baitan funtzionatzen esan nahi du, kudeatzailea izanda Android-en audio xehetasunekin bateragarriak diren beste aplikazioentzako erabilpena baimentzen duena, musika erreproduzigailu gehienak kasu.
+\n\n\n
+<b>Filosofia</b>
+\n\n
+CyanogenMod-en audio prozesatzeak lau audio irteera kategoria jasaten ditu: Kabledun aurikularrak, telefonoaren barne bozgorailuak, USB audioa eta Bluetooth aurikularrak. Audio irteerako kategoria bakoitzak banakako ezarpen panel bat dauka.DSP Manager-en filosofia audio irteeran gabezia partikularrak zuzentzea da, bakoitzean esperientziarik onena lortzeko.
+\n\n
+AOSP audio efektuekin ez bezala, hemen ez daude aplikazio bakoitzerako ezarpenak. Hau nahita aukeratu da: audio irteeran fokatzea eta ez DSP Manager-ekin funtziona dezaketen audioa sortzen duten aplikazioetan.
+\n\n\n
+<b>Ezaugarriak</b>
+\n\n
+Gainerako dokumentuak audio efektu bakoitza eta eszenatoki bakoitzean bere erabilpena deskribatzen du.
+\n\n
+1. <b>Konpresio Dinamikoaren Heina (DRC)</b>
+\n\n
+Efektu honek sumaturiko zarata murrizpena estimatzen du entzulearen batez-besteko gisa eta estimazioan oinarrituriko irabazte kontrol bat zuzentzen du. Erabilera nagusia 
+zarata-maila altuko inguruneak, autoak edo kalea kasu, 
+non musikaren bolumen baxuko atalak atzeko zaraten erruz ez sumatzeko arriskuan dauden.
+\n\n
+Ezarpenek DSP Manager-ek zarata murrizketa aukeratutako mailan mantentzeko erabiliko duen indarra determinatuko dute. Ez dago AOSP-ren baliokiderik DSP efektu honentzat.
+\n\n
+2. <b>Baxu indartzailea</b>
+\n\n
+Baxu indartzailea 55Hz edo gutxiagoko maiztasunak nabarmentzeko maila baxuko iragazki sinple bat da.Onura 6 dB ingurukoa da, \u00ABIntentsitatea\u00BB parametroaren bidez eraldatua, zeinak 55Hz-tako bandan erresonantziarako iragazki bat jartzen duen, maiztasun hori nabarmenduz. Efektua bozgorailu eta aurikular supra-auraletan (zeinak ez diren erabiltzailearen kanal auditiboetara guztiz akoplatzen)  suertatzen den maiztasun galeraren kontra egiteko dago diseinatuta.
+\n\n
+3. <b>Ekualizadorea</b>
+\n\n
+Hau sei bandatako ekualizadore bat da, 16, 64, 250, 1000, 4000 eta 16000 Hz-tako bandekin. Ezarpen lehenetsi batzuk ematen dira, erantzun maiztasun pertsonalizagarria izanik, ekualizadorearen grafikoaren gainean sakatuz. Efektua erabiltzaileak maiztasun erantzuna gustura doitzeko erabili behar da, baita aurikularren edota bozgorailuen ezaugarri eta gaitasunetara doitzeko.
+\n\n
+Ekualizadoreak soinuaren doiketarako iragazki bat ere badu, belarriko maiztasun erantzunaren aldaketa berdintzen duena, erabiltzailearen belarrian sorturiko sinuaren presioaren mailan oinarrituta. Kabledun aurikularren erabilera beharrezkoa da, eta bere intentsitatearen balioa modu egoki batean doitu behar da efektuak diseinatu zen bezala lan egin ahal izateko.
+\n\n
+Soinuaren doiketaren balio egokiena aukeratzeko, musika bolumen baxuan entzun, eta aukera ezazu soinu espektro handia duen musika mota bat, rock-a edo metal-a kasu. Saia zaitez baxuak entzungarriak eta beste soinuekin orekan izan arte indartzen direneko ezarpena bilatzen. Behin doiketa modu egokian izanda baxuak beste soinuekiko maila erlatibo berdina mantendu beharko lukete, soinuaren bolumena edozein delarik. Bestalde, soinuaren bolumena altua denean maiztasun baxuko soinuak gehiegi entzuten badira, doiketa indartsuegia ezarrita egongo da, eta murriztu egin beharko da.
+\n\n
+Doiketa erabiltzailearen ezarpenen barnean gehitu egin da. Doiketa baino ez erabili nahi bada, ekualizadorea \u00ABLaua\u00BB moduan ezarri beharko da.
+\n\n
+4. <b>Aurikularren iragazkia</b>
+\n\n
+Aurikularren iragazkia \u00ABbs2b\u00BB zirkuitu famatuan oinarrituriko diseinua da. Efektuak Mono soinua aldaketarik gabe uzten du, eta maila baxuko iragazki baten bidez seinale ezberdintasuna ezartzen du, zeinak bai buruko soinua batia soinu iteraurala gerturatzen ditu, erabiltzailearen belarriari efektu psikoakustiko zuzena ematen. Helburua estereoak duen banaketak sortzen duen nekea ekiditea da, edozein aurikularrekin gertatzen den bezala. Efektua estereo aurikularrak erabiltzen direnean gaitu behar da.
+\n\n
+Nahasketaren ondorioz, estereo banaketa zerbait murrizten da, Haas erreberberazio efektu bat lortzen, zeina sumaturiko estereo irudiaren zabalera handitzeko erabili daitekeen. Hau \u00ABGela mota\u00BB ezarpenaren bidez kudeatzen da. 
+</string>
 </resources>
