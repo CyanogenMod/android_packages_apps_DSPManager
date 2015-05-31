@@ -23,7 +23,7 @@
     <item>Ingurune zaratatsua</item>
   </string-array>
   <string-array name="headphone_modes">
-    <item>Ikasgela</item>
+    <item>Estudioa</item>
     <item>Gela</item>
     <item>Gela handia</item>
     <item>Eszenatokia</item>
@@ -34,18 +34,18 @@
     <item>Ahula</item>
     <item>Arina</item>
     <item>Neurritsua</item>
-    <item>Sendoa</item>
-    <item>Oso sendoa</item>
+    <item>Indartsuagoa</item>
+    <item>Indartsuena</item>
   </string-array>
   <string-array name="compression_modes">
     <item>Arina</item>
     <item>Neurritsua</item>
-    <item>Sendoa</item>
+    <item>Extremoa</item>
   </string-array>
   <string-array name="bassboost_modes">
     <item>Arina</item>
     <item>Neurritsua</item>
-    <item>Sendoa</item>
+    <item>Extremoa</item>
   </string-array>
   <string-array name="wm8994_bassboost_modes">
     <item>Estandarra</item>
