@@ -26,20 +26,23 @@
   <string name="pref_dsp_summary_on">Konpresioa gaituta</string>
   <string name="pref_dsp_summary_off">Konpresioa ezgaituta</string>
   <string name="pref_dsp_enable">Gaitu</string>
-  <string name="pref_effect_title">Efektuaren intentsitatea</string>
+  <string name="pref_effect_title">Hautatu efektuaren intentsitatea</string>
   <string name="dialog_effect">Efektuaren intentsitatea</string>
   <string name="pref_equalizer_title">Ekualizadorea</string>
   <string name="pref_equalizer_summary_on">Ekualizadorea gaituta dago</string>
-  <string name="pref_equalizer_summary_off">Ekualizadorea ez dago gaituta</string>
+  <string name="pref_equalizer_summary_off">Ekualizadorea ezgaituta dago</string>
   <string name="pref_equalizer_enable">Gaitu</string>
   <string name="pref_equalizer_preset_title">Lehenetsiak</string>
   <string name="pref_equalizer_loudness_title">Soinuaren orekatzea</string>
   <string name="pref_bassboost_title">Baxuen indartzea</string>
   <string name="pref_bassboost_summary_on">Baxuen indartzea gaituta dago</string>
-  <string name="pref_bassboost_summary_off">Baxuen indartzea ez dago gaituta</string>
+  <string name="pref_bassboost_summary_off">Baxuen indartzea ezgaituta dago</string>
   <string name="pref_bassboost_enable">Gaitu</string>
+  <string name="pref_headset_virtual_title">Gela efektua</string>
+  <string name="pref_headset_virtual_summary_on">Gela efektua gaituta dago</string>
+  <string name="pref_headset_virtual_summary_off">Gela efektua ezgaituta dago</string>
   <string name="pref_headset_virtual_enable">Gaitu</string>
-  <string name="pref_room_title">Aukeratu gela mota</string>
+  <string name="pref_room_title">Hautatu gela mota</string>
   <string name="dialog_room">Gela mota</string>
   <string name="eq_preset_acoustic">Akustikoa</string>
   <string name="eq_preset_bass_booster">Baxuak indartu</string>
@@ -61,7 +64,7 @@
   <string name="category_wm8994_dac_config">Digital/analogiko konbertsio ezarpenak</string>
   <string name="category_wm8994_microphone_recording">Mikrofonoa</string>
   <string name="pref_wm8994_microphone_recording_title">Grabazio lehenetsia</string>
-  <string name="pref_wm8994_headphone_amp_title">Amplifikadorearen maila</string>
+  <string name="pref_wm8994_headphone_amp_title">Anplifikadorearen maila</string>
   <string name="pref_wm8994_headphone_amp_summary">Irabazte analogikoa pertsonalizatu</string>
   <string name="pref_wm8994_headphone_amp_dlg_title">Aurikularren anplifikadore maila</string>
   <string name="pref_wm8994_headphone_amp_dlg_desc">Irabazte analogikoa</string>
@@ -72,17 +75,20 @@
   <string name="pref_wm8994_bass_boost_preset_title">Baxuen indartze lehenetsia</string>
   <string name="pref_wm8994_bass_boost_gain_dlg_desc">Irabaztea</string>
   <string name="pref_wm8994_bass_boost_range_dlg_desc">Baxuen indartze heina</string>
+  <string name="pref_wm8994_speaker_tuning_title">Doitu musikarako</string>
   <string name="pref_wm8994_speaker_tuning_summary">Soinu baxuago eta orekatuagoa lortzeko ekualizadorearen hardware-a birkonfiguratu</string>
   <string name="pref_wm8994_mono_downmix_title">Mono-a nahastu</string>
-  <string name="pref_wm8994_mono_downmix_summary">Estereo soinua mono soinuarekin nahastu (estereo irteeretarako, aurikularrak kasu)</string>
+  <string name="pref_wm8994_mono_downmix_summary">Nahastu-murriztu estereo soinua mono soinura (estereo irteeretarako, aurikularrak kasu)</string>
   <string name="pref_wm8994_stereo_expansion_title">Estereo hedapena</string>
   <string name="pref_wm8994_stereo_expansion_summary">Seinale digitalen prozesatzearen bidez estereo soinua hedatu</string>
   <string name="pref_wm8994_dac_direct_title">D/A sarbide zuzena</string>
-  <string name="pref_wm8994_dac_direct_summary">Digital/analogiko konbertsorera zuzenean sartu, kanal nahastailetik pasatu gabe. Souni garbiagoa lortzen da (seinaletik-soinurako ratio altuagoa)</string>
+  <string name="pref_wm8994_dac_direct_summary">Atzitu bihurgailu digital/analogikoa zuzenean, kanal nahastailetik pasatu gabe. Soinu garbiagoa lortzen da (seinale-zarata ratio hobea)</string>
   <string name="pref_wm8994_dac_osr128_title">Hi-Fi erreproduzkioa</string>
   <string name="pref_wm8994_dac_osr128_summary">128x -eko gainlaginketa digitaletik-analogikorako konbertsioan — soinu garbiagoa musika entzutean</string>
   <string name="pref_wm8994_adc_osr128_title">Hi-Fi grabazioa</string>
   <string name="pref_wm8994_adc_osr128_summary">128x -eko gainlaginketa analogikotik-digitalerako konbertsioan (Grabazioen kalitatea handitzen du)</string>
+  <string name="pref_wm8994_fll_tuning_title">Audio erloju doitua</string>
+  <string name="pref_wm8994_fll_tuning_summary">Erabili WM8994 audio erloju iturburu doitua  — soinuaren kalitatea hobetzen du</string>
   <string name="help_title">Laguntza</string>
   <string name="help_text">
 <b>¿Zer da DSP Manager?</b>
@@ -95,7 +101,7 @@ eta <i>Manager</i> -ek (Kudeatzailea) oraingoz DSP-ak ez duela bere baitan funtz
 \n\n
 CyanogenMod-en audio prozesatzeak lau audio irteera kategoria jasaten ditu: Kabledun aurikularrak, telefonoaren barne bozgorailuak, USB audioa eta Bluetooth aurikularrak. Audio irteerako kategoria bakoitzak banakako ezarpen panel bat dauka.DSP Manager-en filosofia audio irteeran gabezia partikularrak zuzentzea da, bakoitzean esperientziarik onena lortzeko.
 \n\n
-AOSP audio efektuekin ez bezala, hemen ez daude aplikazio bakoitzerako ezarpenak. Hau nahita aukeratu da: audio irteeran fokatzea eta ez DSP Manager-ekin funtziona dezaketen audioa sortzen duten aplikazioetan.
+AOSP audio efektuekin ez bezala, hemen ez daude aplikazio bakoitzerako ezarpenak. Hau nahita hautatu da: audio irteeran fokatzea eta ez DSP Manager-ekin funtziona dezaketen audioa sortzen duten aplikazioetan.
 \n\n\n
 <b>Ezaugarriak</b>
 \n\n
@@ -107,7 +113,7 @@ Efektu honek sumaturiko zarata murrizpena estimatzen du entzulearen batez-bestek
 zarata-maila altuko inguruneak, autoak edo kalea kasu, 
 non musikaren bolumen baxuko atalak atzeko zaraten erruz ez sumatzeko arriskuan dauden.
 \n\n
-Ezarpenek DSP Manager-ek zarata murrizketa aukeratutako mailan mantentzeko erabiliko duen indarra determinatuko dute. Ez dago AOSP-ren baliokiderik DSP efektu honentzat.
+Ezarpenek DSP Manager-ek zarata murrizketa hautatutako mailan mantentzeko erabiliko duen indarra determinatuko dute. Ez dago AOSP-ren baliokiderik DSP efektu honentzat.
 \n\n
 2. <b>Baxu indartzailea</b>
 \n\n
@@ -127,6 +133,6 @@ Doiketa erabiltzailearen ezarpenen barnean gehitu egin da. Doiketa baino ez erab
 \n\n
 Aurikularren iragazkia \u00ABbs2b\u00BB zirkuitu famatuan oinarrituriko diseinua da. Efektuak Mono soinua aldaketarik gabe uzten du, eta maila baxuko iragazki baten bidez seinale ezberdintasuna ezartzen du, zeinak bai buruko soinua batia soinu iteraurala gerturatzen ditu, erabiltzailearen belarriari efektu psikoakustiko zuzena ematen. Helburua estereoak duen banaketak sortzen duen nekea ekiditea da, edozein aurikularrekin gertatzen den bezala. Efektua estereo aurikularrak erabiltzen direnean gaitu behar da.
 \n\n
-Nahasketaren ondorioz, estereo banaketa zerbait murrizten da, Haas erreberberazio efektu bat lortzen, zeina sumaturiko estereo irudiaren zabalera handitzeko erabili daitekeen. Hau \u00ABGela mota\u00BB ezarpenaren bidez kudeatzen da. 
+Nahasketaren ondorioz, estereo banaketa zerbait murrizten da, Haas erreberberazio efektu bat lortzen, zeina sumaturiko estereo irudiaren zabalera handitzeko erabili daitekeen. Hau \'Gela mota\' ezarpenaren bidez kudeatzen da. 
 </string>
 </resources>
