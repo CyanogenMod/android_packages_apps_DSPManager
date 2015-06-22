@@ -92,35 +92,35 @@
   <string name="help_title">Ajuda</string>
   <string name="help_text"><b>Què és el gestor DSP?</b>
 \n\n
-El gestor DSP és una app de configuració del so per cada sortida. <i>DSP</i> es refereix a Digital signal processing (Processament digital de senyal), i la part <i>Gestor</i> es refereix al fet que el DSP no s\'executa dins l\'app per si mateix; el gestor només s\'habilita per les apps que compleixen amb les especificacions dels efectes de so d\'Android, p.e. la majoria de reproductors de música.
+El gestor DSP és una aplicació de configuració del so per cada sortida. <i>DSP</i> es refereix a Digital signal processing (Processament digital de senyal), i la part <i>Gestor</i> es refereix al fet que el DSP no s\'executa dins l\'aplicació per si mateix; el gestor només s\'habilita per les aplicacions que compleixen amb les especificacions dels efectes de so d\'Android, p.e. la majoria de reproductors de música.
 \n\n\n
 <b>Filosofia</b>
 \n\n
-El processament de so de CyanogenMod suporta quatre categories de sortida diferents: auriculars amb cable, so USB, altaveu del telèfon i auriculars bluetooth. Hi ha un panell de configuració separada per a cada tipus de sortida. La filosofia del gestor DSP és corregir les deficiencies concretes de cada tipus de sortida per aconseguir la millor experiencia d\'audició amb cada una.
+El processament de so de CyanogenMod suporta quatre categories de sortida diferents: auriculars amb cable, so USB, altaveu del telèfon i auriculars bluetooth. Hi ha un panell de configuració separada per a cada tipus de sortida. La filosofia del gestor DSP és corregir les deficiències concretes de cada tipus de sortida per aconseguir la millor experiència d\'audició amb cada una.
 \n\n
-A diferència dels efectes de so AOSP, no hi ha configuracions específiques per a cada app. Això ha estat una decisió intencionada del disseny: és la sortida el que ens preocupa, no quina app genera el so amb el qual el gestor DSP treballarà.
+A diferència dels efectes de so AOSP, no hi ha configuracions específiques per a cada aplicació. Això ha estat una decisió intencionada del disseny: és la sortida el que ens preocupa, no quina aplicació genera el so amb el qual el gestor DSP treballarà.
 \n\n\n
 <b>Característiques</b>
 \n\n
 1. <b>Compressió del rang dinàmic (DRC)</b>
 \n\n
-Aquest efecte estima el volum del so tal com el percep l\'oient mitjà i estableix un control de guany basat en aquesta estimació. La utilització principal és en entorns sorollosos com ara en cotxes o al carrer, on les parts més silencioses de la música corren el risc de quedar diluides en el soroll de fons.
+Aquest efecte estima el volum del so tal com el percep l\'oient mitjà i estableix un control de guany basat en aquesta estimació. La utilització principal és en entorns sorollosos com ara en cotxes o al carrer, on les parts més silencioses de la música corren el risc de quedar diluïdes en el soroll de fons.
 \n\n
 Aquest únic paràmetre determina com el gestor DSP intentarà mantenir el volum de so cap al nivell objectiu. No hi ha cap equivalència AOSP per aquest efecte DSP.
 \n\n\n
 2. <b>Amplificació de greus</b>
 \n\n
-L\'amplificació de greus és un simple filtre de pas que pot ser utilitzat per afegir èmfasis a 55 Hz o en freqüències més baixes. L\'amplificació és del voltant de 6 dB, i modificat pel paràmtre de \'potència\', que afegeix ressonància al filtre a la banda de 55 Hz, donant a aquesta freqüència un ènfasis extra. L\'efecte està dissenyat per combatre la pèrdua de les freqüències baixas comuna en els altaveus petits i els auriculars supra-aurals que no s\'ajusten correctament al canal auditiu de l\'orella de l\'usuari.
+L\'amplificació de greus és un simple filtre de pas que pot ser utilitzat per afegir èmfasis a 55 Hz o en freqüències més baixes. L\'amplificació és del voltant de 6 dB, i modificat pel paràmetre de \'potència\', que afegeix ressonància al filtre a la banda de 55 Hz, donant a aquesta freqüència un èmfasis extra. L\'efecte està dissenyat per combatre la pèrdua de les freqüències baixes comuna en els altaveus petits i els auriculars supra-aurals que no s\'ajusten correctament al canal auditiu de l\'orella de l\'usuari.
 \n\n\n
 3. <b>Equalitzador</b>
 \n\n
-Aquest és un equalitzador de 6-bandes amb bandes a 16, 64, 250, 1000, 4000 i 16000 Hz. Es proveeixen algunes presintonies habituals, i la freqüència de resposta també pot ser personalitzada picant sobre la gràfica de l\'equalitzador. L\'efecte hauria de ser utilitzat per optimitzar la freqüència de resposta al gust personal de l\'usuari, o per a les característiques particulars dels altaveus o auriculars disponibles.
+Aquest és un equalitzador de 6-bandes amb bandes a 16, 64, 250, 1000, 4000 i 16000 Hz. Es proveeixen algunes pre-sintonies habituals, i la freqüència de resposta també pot ser personalitzada picant sobre la gràfica de l\'equalitzador. L\'efecte hauria de ser utilitzat per optimitzar la freqüència de resposta al gust personal de l\'usuari, o per a les característiques particulars dels altaveus o auriculars disponibles.
 \n\n
-L\'equalitzador també conté un filtre de compensació de greus, que equalitza els canvis en la reposta de la freqüència auditiva basat en el nivell de pressió sonora que arriba a l\'orella de l\'usuari. És necessari l\'us d\'uns auriculars amb cable, i el paràmetre de del valor de potència s\'ha d\'haver ajustat correctament abans que l\'efecte funcioni com està dissenyat.
+L\'equalitzador també conté un filtre de compensació de greus, que equalitza els canvis en la resposta de la freqüència auditiva basat en el nivell de pressió sonora que arriba a l\'orella de l\'usuari. És necessari l\'ús d\'uns auriculars amb cable, i el paràmetre de del valor de potència s\'ha d\'haver ajustat correctament abans que l\'efecte funcioni com està dissenyat.
 \n\n
-Per a seleccionar el valor adequat per a la compensació de potència, utilitza el volum de música més silenciós, i escull un espectre ampli de música sorollosa com ara rock o metal. Intenta trobar l\'ajust on els greus s\'amplifiquen audiblement i semblen equilibrats amb la resta del material. Després que la compensació s\'hagi configurat correctament, els greus haurien de mantenir-se al mateix nivell relatiu a altres instruments independentment del volum d\'audició. D\'altra banda, si la música comença a fer notar els greus en els volums més alts, la compensació estarà establerta massa forta, i s\'haurà de reduir.
+Per a seleccionar el valor adequat per a la compensació de potència, utilitza el volum de música més silenciós, i escull un espectre ampli de música sorollosa com ara rock o metall. Intenta trobar l\'ajust on els greus s\'amplifiquen audíblement i semblen equilibrats amb la resta del material. Després que la compensació s\'hagi configurat correctament, els greus haurien de mantenir-se al mateix nivell relatiu a altres instruments independentment del volum d\'audició. D\'altra banda, si la música comença a fer notar els greus en els volums més alts, la compensació estarà establerta massa forta, i s\'haurà de reduir.
 \n\n
-La compensació s\'afegeix a la configuració escollida per l\'usuari. Si només es desitja la compensació, l\'equalitzador s\'haurà de deixar en la presintonia \'Plana\'.
+La compensació s\'afegeix a la configuració escollida per l\'usuari. Si només es desitja la compensació, l\'equalitzador s\'haurà de deixar en la pre-sintonia \'Plana\'.
 \n\n\n
 4. <b>Filtre d\'auriculars</b>
 \n\n

@@ -83,7 +83,7 @@
   <string name="pref_wm8994_stereo_expansion_summary">通过信号处理来“扩展”立体声</string>
   <string name="pref_wm8994_dac_direct_title">直接数模转换</string>
   <string name="pref_wm8994_dac_direct_summary">绕过频道混音器，直接访问数模转换器，来产生更清晰的音频 (较高的信噪比)</string>
-  <string name="pref_wm8994_dac_osr128_title">Hi-Fi 回放</string>
+  <string name="pref_wm8994_dac_osr128_title">Hi-Fi 播放</string>
   <string name="pref_wm8994_dac_osr128_summary">数模转换器 128 倍过密采样，使播放音乐时的音质更加清晰</string>
   <string name="pref_wm8994_adc_osr128_title">Hi-Fi 录音</string>
   <string name="pref_wm8994_adc_osr128_summary">数模转换器 128 倍过密采样，提高录音品质</string>
