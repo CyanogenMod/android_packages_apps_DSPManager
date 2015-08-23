@@ -26,8 +26,8 @@
   <string name="pref_dsp_summary_on">Compresie activată</string>
   <string name="pref_dsp_summary_off">Compresie dezactivată</string>
   <string name="pref_dsp_enable">Activare</string>
-  <string name="pref_effect_title">Selectați Puterea Efectului</string>
-  <string name="dialog_effect">Putera Efectului</string>
+  <string name="pref_effect_title">Selectați puterea efectului</string>
+  <string name="dialog_effect">Puterea efectului</string>
   <string name="pref_equalizer_title">Egalizator</string>
   <string name="pref_equalizer_summary_on">Egalizator activat</string>
   <string name="pref_equalizer_summary_off">Egalizator dezactivat</string>
